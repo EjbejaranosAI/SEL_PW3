@@ -2,7 +2,10 @@
 name = "sel_pw3"
 version = "0.1.0"
 description = ""
-authors = ["Santiago del Rey Juarez <santiago.del.rey@estudiantat.upc.edu>"]
+authors = ["Edison Bejarano Sepulveda <edison.bejarano@estudiantat.upc.edu>",
+    "Grecia Carolina Reyes Fernandez <grecia.carolina.reyes@estudiantat.upc.edu>",
+    "Santiago del Rey Juarez <santiago.del.rey@estudiantat.upc.edu>",
+    "Yazmina Zurita Martel <yazmina.martel@estudiantat.upc.edu>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
