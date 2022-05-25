@@ -30,4 +30,4 @@ def count_ingredients(data: pd.Series):
     series = data.apply(lambda x: x.strip("[]").replace("'", "").split(", "))
     for s in series:
         ingredients = ingredients + s.unique().tolist()
-    return len(ingredients), list(ingredients)
+    return len(ingredients), ingredients
