@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ET
 import os
+import pandas as pd
 # Function to get the path of the current file  
 def get_path():
     path = os.path.dirname(os.path.abspath(__file__))
@@ -18,3 +19,20 @@ def read_xml(path):
     root = tree.getroot()
     return root
 
+
+def count_ingredients(data: pd.Series):
+    """
+    :param data: DataFrame column of ingredients
+    :return: number and list of ingredients
+    """
+    df = data.str.split(r"[|]|'|,", expand=True)
+    ingredients = []
+    for c in df.columns:
+        ingredients = ingredients + list(df[c].unique())
+    ingredients = set(ingredients)
+    for e in [",", "[", "]", "", None]:
+        try:
+            ingredients.remove(e)
+        except KeyError:
+            continue
+    return len(ingredients), list(ingredients)
