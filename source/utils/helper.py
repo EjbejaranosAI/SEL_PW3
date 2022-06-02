@@ -1,10 +1,13 @@
 import os
 import xml.etree.ElementTree as ET
+from typing import Union
 
 import pandas as pd
-
-
 # Function to get the path of the current file
+from matplotlib import pyplot as plt
+from pandas import DataFrame
+
+
 def get_path():
     path = os.path.dirname(os.path.abspath(__file__))
     return path
@@ -36,3 +39,12 @@ def count_ingredients(data: pd.Series):
     for s in series:
         ingredients = ingredients + s.unique().tolist()
     return len(ingredients), ingredients
+
+
+def bar_plot(df: DataFrame, column: Union[int, str]):
+    if isinstance(column, str):
+        series = df[column]
+    else:
+        series = df.iloc[:, column]
+    series.value_counts().plot.bar()
+    plt.show()
