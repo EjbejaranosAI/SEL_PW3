@@ -288,5 +288,3 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
-
-/data/recipes_w_search_terms.csv

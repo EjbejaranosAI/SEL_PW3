@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 from typing import Union
 
 import pandas as pd
+
 # Function to get the path of the current file
 from matplotlib import pyplot as plt
 from pandas import DataFrame
