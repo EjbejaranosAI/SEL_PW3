@@ -1,5 +1,5 @@
 # SEL_PW3
-Authors: Yasemina, Santi, Grecia and Edison.
+Authors: Yazmina, Santiago, Grecia and Edison.
 
 ## How to run the Coctail CBR
 
