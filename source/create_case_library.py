@@ -5,7 +5,7 @@ from lxml import etree
 from lxml.etree import SubElement
 from pandas import DataFrame
 
-from definitions import CASE_BASE, DATA_PATH
+from definitions import CASE_BASE, CASE_LIBRARY, DATA_PATH
 
 
 def add_ingredient(id, row, ingredients):
@@ -86,11 +86,31 @@ def add_preparation(cocktail, row):
     steps = row["Steps"].split(". ")
     for s in steps:
         if s:
+
             step = etree.SubElement(cocktail_preparation, "step")
-            step.text = s
+            step.text = s.strip(" .")
+
+
+def create_case_library(output_file):
+    root = etree.parse(CASE_BASE).getroot()
+    categories = {category.text for category in root.findall("cocktail/category")}
+    glass_types = {glass.text for glass in root.findall("cocktail/glass")}
+    case_library = etree.Element("case_library")
+    for cat in categories:
+        category = etree.SubElement(case_library, "category", type=cat)
+        for g in glass_types:
+            cocktail_list = root.xpath("//cocktail[category=$cat and glass=$g]", cat=cat, g=g)
+            if cocktail_list:
+                glass = etree.SubElement(category, "glass", type=g)
+                cocktails = etree.SubElement(glass, "cocktails")
+                cocktails.extend(cocktail_list)
+
+    tree = etree.ElementTree(case_library)
+    tree.write(output_file, pretty_print=True, encoding="utf-8")
 
 
 if __name__ == "__main__":
     df = pd.read_pickle(os.path.join(DATA_PATH, "processed-cocktails-data.pkl"))
     df = df.sort_values("Cocktail")
     create_case_base(df, CASE_BASE)
+    create_case_library(CASE_LIBRARY)

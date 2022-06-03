@@ -26,7 +26,7 @@
     <preparation>
       <step>fill pint glass half full with bass</step>
       <step>next pour guiness over a spoon slowly until glass is full</step>
-      <step>if done correctly the guiness will stay on top and the bass on bottom hence the name black &amp; tan.</step>
+      <step>if done correctly the guiness will stay on top and the bass on bottom hence the name black &amp; tan</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -41,7 +41,7 @@
       <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="1/2" quantity="15.0" unit="ml" garnish_type="">root beer</ingredient>
     </ingredients>
     <preparation>
-      <step>carefully to avoid explosive head formation: pour beer glass half full of favorite rootbeer and top off with guinness.</step>
+      <step>carefully to avoid explosive head formation: pour beer glass half full of favorite rootbeer and top off with guinness</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -73,7 +73,7 @@
     <preparation>
       <step>use a 15 oz glass</step>
       <step>add campari first</step>
-      <step>fill with beer.</step>
+      <step>fill with beer</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -88,7 +88,7 @@
       <ingredient id="ingr1" alc_type="beer" basic_taste="" measure="1 bottle" quantity="330.0" unit="ml" garnish_type="">corona</ingredient>
     </ingredients>
     <preparation>
-      <step>pour the corona into an 18oz beer glass pour the rum into the beer.</step>
+      <step>pour the corona into an 18oz beer glass pour the rum into the beer</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -106,7 +106,7 @@
     <preparation>
       <step>pour the lager first then add the blackcurrant cordial</step>
       <step>top up with the cider</step>
-      <step>the colour sholud be very dark approaching the colour of guiness.</step>
+      <step>the colour sholud be very dark approaching the colour of guiness</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -141,7 +141,7 @@
     <preparation>
       <step>add the ingredients in the order listed in the recipe</step>
       <step>care must be taken when adding the guinness to prevent an excess of foam</step>
-      <step>do not add ice.</step>
+      <step>do not add ice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -161,7 +161,7 @@
       <step>the bottle should be filled to the top</step>
       <step>plug the bottle with your thumb or the palm of your hand</step>
       <step>turn the bottle upside-down so the rum and beer mix</step>
-      <step>turn the bottle rightside-up, unplug, and drink.</step>
+      <step>turn the bottle rightside-up, unplug, and drink</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -179,7 +179,7 @@
     <preparation>
       <step>fill a pint glass almost full with beer</step>
       <step>then fill the rest with orange juice (careful not to fill it to the top)</step>
-      <step>then take the shot of amaretto and drop it in.</step>
+      <step>then take the shot of amaretto and drop it in</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -196,7 +196,7 @@
     <preparation>
       <step>pour ingredients into a pint glass</step>
       <step>drink</step>
-      <step>fall over.</step>
+      <step>fall over</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -213,7 +213,7 @@
     </ingredients>
     <preparation>
       <step>put blackcurrant squash in first up to about 1cm in glass</step>
-      <step>then add the larger and cider one after another.</step>
+      <step>then add the larger and cider one after another</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -248,7 +248,7 @@
     <preparation>
       <step>blend with ice</step>
       <step>serve in a wine glass</step>
-      <step>garnish with carrot.</step>
+      <step>garnish with carrot</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -267,7 +267,7 @@
     <preparation>
       <step>combine all ingredients in glass mixer</step>
       <step>chill and strain into cocktail glass</step>
-      <step>garnish with sliced strawberry.</step>
+      <step>garnish with sliced strawberry</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -303,7 +303,7 @@
       <step>rub the rim of an old fashioned glass with lemon, and dip repeatedly into granulated sugar until it has a good "frosted" rim</step>
       <step>shake a jigger of amaretto with the juice of 1/2 a lemon</step>
       <step>strain into glass and add ice</step>
-      <step>garnish with a marachino cherry.</step>
+      <step>garnish with a marachino cherry</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -337,7 +337,7 @@
       <ingredient id="ingr3" alc_type="triple sec" basic_taste="" measure="1 shot" quantity="25.0" unit="ml" garnish_type="">grand marnier</ingredient>
     </ingredients>
     <preparation>
-      <step>pour all ingredients into a cocktail shaker, mix and serve over ice into a chilled glass.</step>
+      <step>pour all ingredients into a cocktail shaker, mix and serve over ice into a chilled glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -354,7 +354,7 @@
       <ingredient id="ingr3" alc_type="gin" basic_taste="" measure="2 shots" quantity="50.0" unit="ml" garnish_type="">gin</ingredient>
     </ingredients>
     <preparation>
-      <step>put all ingredients into a shaker and mix, then strain contents into a chilled cocktail glass.</step>
+      <step>put all ingredients into a shaker and mix, then strain contents into a chilled cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -375,7 +375,7 @@
       <step>add all ingredients except lemon to shaker filled with ice</step>
       <step>cover and shake vigorously</step>
       <step>strain contents into ice filled collins glass</step>
-      <step>garnish with lemon.</step>
+      <step>garnish with lemon</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -392,7 +392,7 @@
     </ingredients>
     <preparation>
       <step>mix the vodka and cranberry juice together in a shaker and strain into a glass</step>
-      <step>top up with champagne.</step>
+      <step>top up with champagne</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -410,7 +410,7 @@
     </ingredients>
     <preparation>
       <step>shake it up it tasts better that way, but you can stir it if you want</step>
-      <step>6 of those and you will be wasted for the rest of the night.</step>
+      <step>6 of those and you will be wasted for the rest of the night</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -428,7 +428,7 @@
       <ingredient id="ingr4" alc_type="gin" basic_taste="" measure="2 shots" quantity="50.0" unit="ml" garnish_type="">gin</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all the ingredients in a cocktail shaker and ice then strain in a cold glass.</step>
+      <step>shake all the ingredients in a cocktail shaker and ice then strain in a cold glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -445,7 +445,7 @@
       <ingredient id="ingr3" alc_type="gin" basic_taste="" measure="1 shot" quantity="25.0" unit="ml" garnish_type="">gin</ingredient>
     </ingredients>
     <preparation>
-      <step>shake together all the ingredients and strain into a cold glass.</step>
+      <step>shake together all the ingredients and strain into a cold glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -477,7 +477,7 @@
       <ingredient id="ingr1" alc_type="gin" basic_taste="" measure="1 1/2 shot" quantity="37.5" unit="ml" garnish_type="">gin</ingredient>
     </ingredients>
     <preparation>
-      <step>shake together all the ingredients and strain into a cold glass.</step>
+      <step>shake together all the ingredients and strain into a cold glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -495,7 +495,7 @@
     <preparation>
       <step>combine ingredients in the order listed into a shaker</step>
       <step>fill half full with ice and shake well</step>
-      <step>strain into glass with ice and garnish with a cherry and orange wedge.</step>
+      <step>strain into glass with ice and garnish with a cherry and orange wedge</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -515,7 +515,7 @@
       <ingredient id="ingr6" alc_type="rum" basic_taste="" measure="1 shot" quantity="25.0" unit="ml" garnish_type="">rum</ingredient>
     </ingredients>
     <preparation>
-      <step>shake together all the ingredients and strain into a cold glass.</step>
+      <step>shake together all the ingredients and strain into a cold glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -546,7 +546,7 @@
       <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="2 shots" quantity="50.0" unit="ml" garnish_type="">absolut vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>place ice cubes in the hurricane glass </step>
+      <step>place ice cubes in the hurricane glass</step>
       <step>add the 2 heaping shots of absolute vodka (note: you can add as many shots of absolute as you want!) fill the rest of glass with the arizona icetea with lemon</step>
       <step>stir to mix using a spoon</step>
       <step>drink up and enjoy!!!!!!!</step>
@@ -574,7 +574,7 @@
       <step>add splashes of the three juices, heavy on the pineapple</step>
       <step>top off with grenadine</step>
       <step>crushed ice should already be in glass</step>
-      <step>top off the glass with a pineapple wedge.</step>
+      <step>top off the glass with a pineapple wedge</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -591,7 +591,7 @@
     </ingredients>
     <preparation>
       <step>pour vodka, gin and lime cordial into glass, and top up with crushed ice</step>
-      <step>wait for ice to melt slightly and sip without a straw.</step>
+      <step>wait for ice to melt slightly and sip without a straw</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -609,7 +609,7 @@
     <preparation>
       <step>add all ingredients into cocktail shaker filled with ice</step>
       <step>shake well and strain into cocktail glass</step>
-      <step>garnish with a cherry.</step>
+      <step>garnish with a cherry</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -631,7 +631,7 @@
     </ingredients>
     <preparation>
       <step>now stir vigorously and then pour over a large cup of ice</step>
-      <step>now drink it with a straw and stir occasionally.</step>
+      <step>now drink it with a straw and stir occasionally</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -650,7 +650,7 @@
     <preparation>
       <step>add all ingredients into cocktail shaker filled with ice</step>
       <step>shake well and double strain into large cocktail glass</step>
-      <step>garnish with lime wheel.</step>
+      <step>garnish with lime wheel</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -667,7 +667,7 @@
       <ingredient id="ingr3" alc_type="" basic_taste="sour" measure="1 splash" quantity="6.0" unit="ml" garnish_type="">cranberry juice</ingredient>
     </ingredients>
     <preparation>
-      <step>pour all ingredients in mixing glass half filled with ice, shake and strain into chilled martini glass.</step>
+      <step>pour all ingredients in mixing glass half filled with ice, shake and strain into chilled martini glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -683,7 +683,7 @@
     </ingredients>
     <preparation>
       <step>pour 1oz of spiced rum into a highball glass with ice</step>
-      <step>fill with ginger ale.</step>
+      <step>fill with ginger ale</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -702,7 +702,7 @@
       <step>muddle the sugar into the lime wedges in an old-fashioned glass.&#13;
 fill the glass with ice cubes.&#13;
 pour the cachaca into the glass.&#13;
-stir well.</step>
+stir well</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -723,7 +723,7 @@ stir well.</step>
       <step>pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well.&#13;
 rub the rim of a martini glass with the wedge of lemon.&#13;
 strain the contents of the cocktail shaker into the glass and add the olive.&#13;
-a dirty martini contains a splash of olive brine or olive juice and is typically garnished with an olive.</step>
+a dirty martini contains a splash of olive brine or olive juice and is typically garnished with an olive</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -798,7 +798,7 @@ garnish with a couple of lavender sprigs</step>
     <preparation>
       <step>pour all ingredients into shaker with ice cubes</step>
       <step>shake well and strain into a chilled cocktail glass</step>
-      <step>squeeze oil from lemon peel onto the drink.</step>
+      <step>squeeze oil from lemon peel onto the drink</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -816,7 +816,7 @@ garnish with a couple of lavender sprigs</step>
     </ingredients>
     <preparation>
       <step>shake well and serve in a cocktail glass</step>
-      <step>this is a home cocktail of american/internet bar del pozzo, pavia, italy.</step>
+      <step>this is a home cocktail of american/internet bar del pozzo, pavia, italy</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -837,7 +837,7 @@ garnish with a couple of lavender sprigs</step>
       <step>half-fill a tall glass with ice</step>
       <step>mix the gin and grenadine together and pour over the ice</step>
       <step>add the lime or lemon juice and top off with soda water</step>
-      <step>decorate the glass with lime and/or lemon slices.</step>
+      <step>decorate the glass with lime and/or lemon slices</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -853,7 +853,7 @@ garnish with a couple of lavender sprigs</step>
       <ingredient id="ingr2" alc_type="" basic_taste="sour" measure="4 cl" quantity="40.0" unit="ml" garnish_type="">lime juice</ingredient>
     </ingredients>
     <preparation>
-      <step>shake with ice and strain into cocktail glass.</step>
+      <step>shake with ice and strain into cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -871,7 +871,7 @@ garnish with a couple of lavender sprigs</step>
     </ingredients>
     <preparation>
       <step>pour irish cream, vodka, and bourbon in a glass</step>
-      <step>add some ice and mix in the orange juice.</step>
+      <step>add some ice and mix in the orange juice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -910,7 +910,7 @@ garnish with a couple of lavender sprigs</step>
       <ingredient id="ingr2" alc_type="triple sec" basic_taste="" measure="1 1/2 shot" quantity="37.5" unit="ml" garnish_type="">cointreau</ingredient>
     </ingredients>
     <preparation>
-      <step>shake and strain into a chilled cocktail glass rimmed with sugar.</step>
+      <step>shake and strain into a chilled cocktail glass rimmed with sugar</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -944,7 +944,7 @@ garnish with a couple of lavender sprigs</step>
       <ingredient id="ingr4" alc_type="vermouth" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml" garnish_type="">sweet vermouth</ingredient>
     </ingredients>
     <preparation>
-      <step>stirred over ice, strained into a chilled glass, garnished, and served up.</step>
+      <step>stirred over ice, strained into a chilled glass, garnished, and served up</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -963,7 +963,7 @@ garnish with a couple of lavender sprigs</step>
     </ingredients>
     <preparation>
       <step>stir all ingredients (except cherry) with ice and strain into a cocktail glass</step>
-      <step>top with the cherry and serve.</step>
+      <step>top with the cherry and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -982,7 +982,7 @@ garnish with a couple of lavender sprigs</step>
       <step>straight: pour all ingredients into mixing glass with ice cubes</step>
       <step>stir well</step>
       <step>strain in chilled martini cocktail glass</step>
-      <step>squeeze oil from lemon peel onto the drink, or garnish with olive.</step>
+      <step>squeeze oil from lemon peel onto the drink, or garnish with olive</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1020,7 +1020,7 @@ garnish with a couple of lavender sprigs</step>
       <step>of rum with ice(set aside)</step>
       <step>second: mix daiquiri with 2.5 oz</step>
       <step>of rum with ice</step>
-      <step>third: while frozen, add pina colda mix then daiquiri mix in glass (making sure they do not get mixed together).</step>
+      <step>third: while frozen, add pina colda mix then daiquiri mix in glass (making sure they do not get mixed together)</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1038,7 +1038,7 @@ garnish with a couple of lavender sprigs</step>
     <preparation>
       <step>if available, rim cocktail (martini) glass with sugar syrup then dip into chocolate flakes or powder</step>
       <step>add ingredients into shaker with ice</step>
-      <step>shake well then strain into cocktail glass.</step>
+      <step>shake well then strain into cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1059,7 +1059,7 @@ garnish with a couple of lavender sprigs</step>
       <step>muddle mint leaves with sugar and lime juice</step>
       <step>add a splash of soda water and fill the glass with cracked ice</step>
       <step>pour the rum and top with soda water</step>
-      <step>garnish and serve with straw.</step>
+      <step>garnish and serve with straw</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1078,7 +1078,7 @@ garnish with a couple of lavender sprigs</step>
     </ingredients>
     <preparation>
       <step>put mint with lemon juice in a glas, mash the mint with a spoon, ice, rum &amp; fill up with club soda</step>
-      <step>top it with angostura.</step>
+      <step>top it with angostura</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1097,7 +1097,7 @@ garnish with a couple of lavender sprigs</step>
     <preparation>
       <step>serve in a chilled cocktail glass</step>
       <step>lemon and sugar the rim</step>
-      <step>stir and strain.</step>
+      <step>stir and strain</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1118,7 +1118,7 @@ garnish with a couple of lavender sprigs</step>
       <step>muddle until dissolved.&#13;
 fill the glass with ice cubes and add whiskey.&#13;
 &#13;
-garnish with orange twist, and a cocktail cherry.</step>
+garnish with orange twist, and a cocktail cherry</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1151,7 +1151,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>pour gin and cranberry into a highball filled with ice cubes</step>
-      <step>add grenadine and stir.</step>
+      <step>add grenadine and stir</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1192,7 +1192,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <step>pour the tequila and orange juice into glass over ice</step>
       <step>add the grenadine, which will sink to the bottom</step>
       <step>stir gently to create the sunrise effect</step>
-      <step>garnish and serve.</step>
+      <step>garnish and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1208,7 +1208,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml" garnish_type="">creme de cacao</ingredient>
     </ingredients>
     <preparation>
-      <step>pour ingredients into glass, and drop in a blue whale! the blue whale isn't really necessary, but it makes the drink more "fun".</step>
+      <step>pour ingredients into glass, and drop in a blue whale! the blue whale isn't really necessary, but it makes the drink more "fun"</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1224,7 +1224,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="0.75 cl" quantity="7.5" unit="ml" garnish_type="">lillet blanc</ingredient>
     </ingredients>
     <preparation>
-      <step>shake over ice until well chilled, then strain into a deep goblet and garnish with a thin slice of lemon peel.</step>
+      <step>shake over ice until well chilled, then strain into a deep goblet and garnish with a thin slice of lemon peel</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1258,7 +1258,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>mix kool-aid to taste then add rum and ammaretto</step>
-      <step>shake well to disolve the sugar in the kool-aid..</step>
+      <step>shake well to disolve the sugar in the kool-aid</step>
       <step>serve cold</step>
     </preparation>
     <utility>1.0</utility>
@@ -1275,7 +1275,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>prepare like a martini</step>
-      <step>garnish with a green olive.</step>
+      <step>garnish with a green olive</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1295,7 +1295,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     <preparation>
       <step>build into a suiting glass, with no ice</step>
       <step>cream on top if wanted</step>
-      <step>served directly.</step>
+      <step>served directly</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1313,7 +1313,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>fill mug almost to top with coffee.add milk, triple sec and brandy</step>
-      <step>stir.</step>
+      <step>stir</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1328,7 +1328,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr1" alc_type="" basic_taste="bitter" measure="3 parts" quantity="90.0" unit="ml" garnish_type="">coffee</ingredient>
     </ingredients>
     <preparation>
-      <step>pour it in and mix it.</step>
+      <step>pour it in and mix it</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1345,7 +1345,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     <preparation>
       <step>fill coffe mug half full of coffee</step>
       <step>fill the other half full of peach schnapps</step>
-      <step>stir and drink while hot.</step>
+      <step>stir and drink while hot</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1362,7 +1362,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>mix the whisky and baileys cream in a beer-glass (at least 50 cl)</step>
-      <step>fill the rest of the glass with coffee.</step>
+      <step>fill the rest of the glass with coffee</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1379,7 +1379,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     <preparation>
       <step>pour hot damn 100 in bottom of a jar or regular glass</step>
       <step>fill the rest of the glass with sweet tea</step>
-      <step>stir with spoon, straw, or better yet a cinnamon stick and leave it in.</step>
+      <step>stir with spoon, straw, or better yet a cinnamon stick and leave it in</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1410,7 +1410,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="2 tsp" quantity="8.0" unit="gr" garnish_type="">kahlua</ingredient>
     </ingredients>
     <preparation>
-      <step>mix together in a coffee mug and chill before serving.</step>
+      <step>mix together in a coffee mug and chill before serving</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1428,7 +1428,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>heat the coffee, whiskey and sugar; do not boil</step>
-      <step>pour into glass and top with cream; serve hot.</step>
+      <step>pour into glass and top with cream; serve hot</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1447,7 +1447,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     <preparation>
       <step>stir the rum, coffee and water together</step>
       <step>top with the whipped cream</step>
-      <step>sprinkle with a pinch of well ground coffee and drink with a straw.</step>
+      <step>sprinkle with a pinch of well ground coffee and drink with a straw</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1464,7 +1464,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>stir</step>
-      <step>add whipped cream to the top.</step>
+      <step>add whipped cream to the top</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1500,7 +1500,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     <preparation>
       <step>pour 6 oz</step>
       <step>of coffee in a mug or irish coffee cup</step>
-      <step>add coca mix and chambord, mix well and top off with whipped cream.</step>
+      <step>add coca mix and chambord, mix well and top off with whipped cream</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1533,7 +1533,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr1" alc_type="" basic_taste="bitter" measure="1 part" quantity="30.0" unit="ml" garnish_type="">coffee</ingredient>
     </ingredients>
     <preparation>
-      <step>add your gm and then add your coffee.</step>
+      <step>add your gm and then add your coffee</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1551,7 +1551,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>mix coffee, jack daniels and amaretto</step>
-      <step>add cream on top.</step>
+      <step>add cream on top</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1567,7 +1567,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="2 cl" quantity="20.0" unit="ml" garnish_type="">white creme de menthe</ingredient>
     </ingredients>
     <preparation>
-      <step>add all and pour black coffee and add whipped cream on top.</step>
+      <step>add all and pour black coffee and add whipped cream on top</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1590,7 +1590,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     <preparation>
       <step>combine all ingredients</step>
       <step>blend until smooth</step>
-      <step>garnish with chocolate shavings if desired.</step>
+      <step>garnish with chocolate shavings if desired</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1606,7 +1606,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1 shot" quantity="25.0" unit="ml" garnish_type="">kahlua</ingredient>
     </ingredients>
     <preparation>
-      <step>mix in highball glass over ice, shake well.</step>
+      <step>mix in highball glass over ice, shake well</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1625,7 +1625,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <step>leave ice-cream out for about 10 minutes</step>
       <step>add ingredients in order, stir with chopstick (butter knife or spoon works too)</step>
       <step>consume immediately and often</step>
-      <step>nice and light, great for following a heavy drink.</step>
+      <step>nice and light, great for following a heavy drink</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1643,7 +1643,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>in a blender put ice cubes, chocolate syrup, cherry brandy, vodka, and milk</step>
-      <step>blend very well.</step>
+      <step>blend very well</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1664,7 +1664,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <step>fill glass with ice</step>
       <step>add all liquers</step>
       <step>add milk</step>
-      <step>shake.</step>
+      <step>shake</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1687,7 +1687,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <step>place the snickers bars in a plastic bag and roll over them with a rolling pin until crushed</step>
       <step>add crushed snickers pieces, ice cream, milk, caramel sauce, chocolate sauce, and chocolate liquor to a blender</step>
       <step>blend until shake is thick and frothy</step>
-      <step>pour into glasses and top with chocolate liquor and whip cream.</step>
+      <step>pour into glasses and top with chocolate liquor and whip cream</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1705,7 +1705,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>blend together in a blender</step>
-      <step>serve in a chilled beer mug with fresh blueberries and caramel for topping.</step>
+      <step>serve in a chilled beer mug with fresh blueberries and caramel for topping</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1727,7 +1727,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>blend liqeuors with ice-cream, milk and syrup</step>
-      <step>pour into parfait glass, top with whipped cream and garnish with banana and cherry.</step>
+      <step>pour into parfait glass, top with whipped cream and garnish with banana and cherry</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1746,7 +1746,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <step>fill a tumbler with ice cubes</step>
       <step>add a shot of tia maria and a shot of jamaican light rum</step>
       <step>fill the tumbler with milk</step>
-      <step>blend until smooth and serve immediately.</step>
+      <step>blend until smooth and serve immediately</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1777,7 +1777,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="" quantity="0.0" unit="" garnish_type="nan">milk</ingredient>
     </ingredients>
     <preparation>
-      <step>put 2 shots godiva liquour into a glass, add as much or as little milk as you would like.</step>
+      <step>put 2 shots godiva liquour into a glass, add as much or as little milk as you would like</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1796,7 +1796,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>blend with ice until smooth</step>
-      <step>serve in a tulip glass, top with whip cream.</step>
+      <step>serve in a tulip glass, top with whip cream</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1820,7 +1820,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     <preparation>
       <step>fill 14oz glass with ice and alcohol</step>
       <step>fill 2/3 glass with cola and remainder with sweet &amp; sour</step>
-      <step>top with dash of bitters and lemon wedge.</step>
+      <step>top with dash of bitters and lemon wedge</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1835,7 +1835,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="2-3 oz" quantity="75.0" unit="ml" garnish_type="">peach vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>pour 2oz vodka into a low ball glass, top up with coke.</step>
+      <step>pour 2oz vodka into a low ball glass, top up with coke</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1854,7 +1854,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <step>fill glass with crushed ice</step>
       <step>add vodka</step>
       <step>add a splash of grand-marnier</step>
-      <step>fill with o.j.</step>
+      <step>fill with o.j</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1872,7 +1872,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr4" alc_type="schnapps" basic_taste="" measure="" quantity="0.0" unit="" garnish_type="nan">blueberry schnapps</ingredient>
     </ingredients>
     <preparation>
-      <step>mix equal amounts into a glass with ice.</step>
+      <step>mix equal amounts into a glass with ice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1893,7 +1893,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <step>add 4 oz</step>
       <step>7-up</step>
       <step>add lemon juice for flavor</step>
-      <step>if you are weak, top up glass with more 7-up.</step>
+      <step>if you are weak, top up glass with more 7-up</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1912,7 +1912,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     <preparation>
       <step>shake rum, amaretto, and orange juice in a shaker filled with ice</step>
       <step>strain over ice into a highball glass</step>
-      <step>add grenadine and garnish with a pineapple wedge and a strawberry.</step>
+      <step>add grenadine and garnish with a pineapple wedge and a strawberry</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1930,7 +1930,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     <preparation>
       <step>pour the rum and ginger beer into a highball glass almost filled with ice cubes</step>
       <step>stir well</step>
-      <step>garnish with the lemon twist.</step>
+      <step>garnish with the lemon twist</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1953,7 +1953,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <step>shake well</step>
       <step>strain into a highball glass almost filled with ice cubes</step>
       <step>top with the ginger ale</step>
-      <step>garnish with the lemon twist.</step>
+      <step>garnish with the lemon twist</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1988,7 +1988,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr1" alc_type="brandy" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml" garnish_type="">applejack</ingredient>
     </ingredients>
     <preparation>
-      <step>shake ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>shake ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2022,7 +2022,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients (except for the cherry) with ice and strain into a cocktail glass</step>
-      <step>top with the cherry and serve.</step>
+      <step>top with the cherry and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2039,7 +2039,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>pour all of the ingredients into a highball glass almost filled with ice cubes</step>
-      <step>stir well.</step>
+      <step>stir well</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2076,7 +2076,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>stir ingredients together</step>
-      <step>serve over ice.</step>
+      <step>serve over ice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2096,7 +2096,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>combine and shake all ingredients (except mint) with ice and strain into an old-fashioned glass over ice cubes</step>
-      <step>add the sprig of mint and serve.</step>
+      <step>add the sprig of mint and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2114,7 +2114,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     <preparation>
       <step>in a shaker half-filled with ice cubes, combine all of the ingredients</step>
       <step>shake well</step>
-      <step>strain into a cocktail glass.</step>
+      <step>strain into a cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2134,7 +2134,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <step>fill blender up with ice</step>
       <step>fill half with bartons vodka</step>
       <step>put 10 tsp of sugar, add 1/2 can lemonade concentrate, fill to top with water</step>
-      <step>blend for 60 seconds.</step>
+      <step>blend for 60 seconds</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2150,7 +2150,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr2" alc_type="brandy" basic_taste="" measure="1 1/2 oz dry" quantity="45.0" unit="ml" garnish_type="">sherry dry</ingredient>
     </ingredients>
     <preparation>
-      <step>stir all ingredients with ice, strain contents into a cocktail glass, and serve.</step>
+      <step>stir all ingredients with ice, strain contents into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2168,7 +2168,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>pour schnapps, orange juice, and cranberry juice over ice in a highball glass</step>
-      <step>top with club soda and serve.</step>
+      <step>top with club soda and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2187,7 +2187,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     <preparation>
       <step>in a mixing glass half-filled with ice cubes, combine all of the ingredients</step>
       <step>stir well</step>
-      <step>strain into a cocktail glass.</step>
+      <step>strain into a cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2205,7 +2205,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients (except lime wedge) with ice and strain into a cocktail glass</step>
-      <step>add the wedge of lime and serve.</step>
+      <step>add the wedge of lime and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2221,7 +2221,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr2" alc_type="brandy" basic_taste="" measure="1 oz" quantity="30.0" unit="ml" garnish_type="">apricot brandy</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2256,7 +2256,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>pour all ingredients (except for lemon juice) over ice in a highball glass</step>
-      <step>stir, add a dash of lemon juice, and serve.</step>
+      <step>stir, add a dash of lemon juice, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2274,7 +2274,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>stir all ingredients with ice, strain contents into a cocktail glass</step>
-      <step>drop in a twist of lemon and serve.</step>
+      <step>drop in a twist of lemon and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2292,7 +2292,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients with ice and strain contents into a cocktail glass</step>
-      <step>sprinkle nutmeg on top and serve.</step>
+      <step>sprinkle nutmeg on top and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2308,7 +2308,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 tblsp" quantity="14.0" unit="gr" garnish_type="">pineapple juice</ingredient>
     </ingredients>
     <preparation>
-      <step>combine and shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>combine and shake all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2324,7 +2324,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 oz" quantity="30.0" unit="ml" garnish_type="">pineapple juice</ingredient>
     </ingredients>
     <preparation>
-      <step>combine and shake all ingredients with ice, strain contents into a cocktail glass, and serve.</step>
+      <step>combine and shake all ingredients with ice, strain contents into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2359,7 +2359,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients (except lemon peel) with ice and strain into a cocktail glass</step>
-      <step>top with the twist of lemon peel and serve.</step>
+      <step>top with the twist of lemon peel and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2375,7 +2375,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr2" alc_type="gin" basic_taste="" measure="1 oz" quantity="30.0" unit="ml" garnish_type="">gin</ingredient>
     </ingredients>
     <preparation>
-      <step>stir all ingredients with ice, strain contents into a cocktail glass, and serve.</step>
+      <step>stir all ingredients with ice, strain contents into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2393,7 +2393,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     <preparation>
       <step>in a shaker half-filled with ice cubes, combine all of the ingredients</step>
       <step>shake well</step>
-      <step>strain into a cocktail glass.</step>
+      <step>strain into a cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2410,7 +2410,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>pour in order into coffee cup</step>
-      <step>top with whipped creme and chocolate shcvings.</step>
+      <step>top with whipped creme and chocolate shcvings</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2426,7 +2426,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml" garnish_type="">amaretto</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2441,7 +2441,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml" garnish_type="">amaretto</ingredient>
     </ingredients>
     <preparation>
-      <step>shake well with cracked ice, strain contents into a cocktail glass, and serve.</step>
+      <step>shake well with cracked ice, strain contents into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2475,7 +2475,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>pour amaretto and lime juice over ice in a collins glass</step>
-      <step>fill with club soda and serve.</step>
+      <step>fill with club soda and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2492,7 +2492,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>combine all ingredients in a blender and blend at high speed until smooth</step>
-      <step>serve in chilled glass garnished with bittersweet chocolate shavings.</step>
+      <step>serve in chilled glass garnished with bittersweet chocolate shavings</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2508,7 +2508,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>shake and strain</step>
-      <step>garnish with a cherry and an orange slice.</step>
+      <step>garnish with a cherry and an orange slice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2523,7 +2523,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml" garnish_type="">amaretto</ingredient>
     </ingredients>
     <preparation>
-      <step>shake ingredients well with cracked ice, strain into a cocktail glass, and serve.</step>
+      <step>shake ingredients well with cracked ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2540,7 +2540,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>mix together the amaretto and orange juice</step>
-      <step>pour into glass and then add the grenadine untill you see the sunrise.</step>
+      <step>pour into glass and then add the grenadine untill you see the sunrise</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2557,7 +2557,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>shake ingredients in bartender's mixer quickly, just 5 shakes</step>
-      <step>strain out ice, serve in glass immediately with a slice of orange.</step>
+      <step>strain out ice, serve in glass immediately with a slice of orange</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2575,7 +2575,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     <preparation>
       <step>pour hot tea into a pousse-cafe glass, using a spoon in glass to prevent cracking</step>
       <step>add amaretto, but do not stir</step>
-      <step>top with chilled whipped cream and serve.</step>
+      <step>top with chilled whipped cream and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2592,7 +2592,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="twist of" quantity="1.0" unit="" garnish_type="twist">orange peel</ingredient>
     </ingredients>
     <preparation>
-      <step>pour the campari and vermouth over ice into glass, add a splash of soda water and garnish with half orange slice.</step>
+      <step>pour the campari and vermouth over ice into glass, add a splash of soda water and garnish with half orange slice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2608,7 +2608,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr2" alc_type="gin" basic_taste="" measure="1 oz" quantity="30.0" unit="ml" garnish_type="">gin</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice and strain contents into a cocktail glass.</step>
+      <step>shake all ingredients with ice and strain contents into a cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2624,7 +2624,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr2" alc_type="triple sec" basic_taste="" measure="1 oz" quantity="30.0" unit="ml" garnish_type="">triple sec</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2646,7 +2646,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <step>in a shaker half-filled with ice cubes, combine the rum, apricot brandy, triple sec, lemon juice, and egg white</step>
       <step>shake well</step>
       <step>strain into an old-fashioned glass almost filled with ice cubes</step>
-      <step>garnish with the orange slice.</step>
+      <step>garnish with the orange slice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2664,7 +2664,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>in an old-fashioned glass almost filled with ice cubes, combine all of the ingredients</step>
-      <step>stir well.</step>
+      <step>stir well</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2680,7 +2680,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>put creme de menthe into a champagne flute</step>
-      <step>fill with chilled champagne and serve.</step>
+      <step>fill with chilled champagne and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2699,7 +2699,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     <preparation>
       <step>in a shaker half-filled with ice cubes, combine the gin, grand marnier, and lemon juice</step>
       <step>shake well</step>
-      <step>strain into a sour glass and garnish with the lemon twist.</step>
+      <step>strain into a sour glass and garnish with the lemon twist</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2715,7 +2715,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <ingredient id="ingr2" alc_type="bitters" basic_taste="" measure="2 dashes" quantity="2.0" unit="ml" garnish_type="">bitters</ingredient>
     </ingredients>
     <preparation>
-      <step>stir all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>stir all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2734,7 +2734,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>shake all the ingredients, top the drink with soda</step>
-      <step>garnish with a slice of orange.</step>
+      <step>garnish with a slice of orange</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2771,7 +2771,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>mix and fill up with soda water</step>
-      <step>drunk by finns on a sunny day any time of the year and day.</step>
+      <step>drunk by finns on a sunny day any time of the year and day</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2793,7 +2793,7 @@ garnish with orange twist, and a cocktail cherry.</step>
       <step>layer the finlandia vodka, lemon and apple juices, pisang ambon, and top up with lemonade</step>
       <step>stir slightly and garnish with a spiralled cucumber skin and a red cherry</step>
       <step>the cucumber provides zest and looks attractive</step>
-      <step>this drink, created by timo haimi, took first prize in the 1991 finlandia vodka long drink competition.</step>
+      <step>this drink, created by timo haimi, took first prize in the 1991 finlandia vodka long drink competition</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2811,7 +2811,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>shake together with ice</step>
-      <step>strain into glass and serve.</step>
+      <step>strain into glass and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2830,7 +2830,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     <preparation>
       <step>in a mixing glass half-filled with ice cubes, combine all of the ingredients</step>
       <step>stir well</step>
-      <step>strain into a cocktail glass.</step>
+      <step>strain into a cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2851,7 +2851,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     <preparation>
       <step>pour all ingredients into shaker with ice cubes</step>
       <step>shake well</step>
-      <step>strain in chilled cocktail glass.</step>
+      <step>strain in chilled cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2870,7 +2870,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>shake pour ingredients with ice</step>
-      <step>strain into glass, top with sparkling wine.</step>
+      <step>strain into glass, top with sparkling wine</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2886,7 +2886,7 @@ garnish with orange twist, and a cocktail cherry.</step>
     </ingredients>
     <preparation>
       <step>pour peach purée into chilled flute, add sparkling wine</step>
-      <step>stir gently.</step>
+      <step>stir gently</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2909,7 +2909,7 @@ add peach schnapps.&#13;
 add peach nectar.&#13;
 shake.&#13;
 strain into glass.&#13;
-add lemon twist peel.</step>
+add lemon twist peel</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2947,7 +2947,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="rum" basic_taste="" measure="1 oz" quantity="30.0" unit="ml" garnish_type="">light rum</ingredient>
     </ingredients>
     <preparation>
-      <step>pour all ingredients into shaker with ice cubes, shake, strain into chilled cocktail glass.</step>
+      <step>pour all ingredients into shaker with ice cubes, shake, strain into chilled cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2963,7 +2963,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour the ingredients into an old fashioned glass filled with ice cubes</step>
-      <step>stir gently.</step>
+      <step>stir gently</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -2980,7 +2980,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>stir sloe gin and vermouth with ice and strain into a cocktail glass</step>
-      <step>add the twist of lemon peel and serve.</step>
+      <step>add the twist of lemon peel and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3000,7 +3000,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients (except lemon slice) with cracked ice and strain into an old-fashioned glass over ice cubes</step>
-      <step>add the slice of lemon and serve.</step>
+      <step>add the slice of lemon and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3020,7 +3020,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>stirring gently, pour all ingredients into highball glass</step>
-      <step>garnish.</step>
+      <step>garnish</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3038,7 +3038,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour vodka and curacao over ice in a highball glass</step>
-      <step>fill with lemonade, top with the cherry, and serve.</step>
+      <step>fill with lemonade, top with the cherry, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3057,7 +3057,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>rub rim of cocktail glass with lime juice</step>
       <step>dip rim in coarse salt</step>
-      <step>shake tequila, blue curacao, and lime juice with ice, strain into the salt-rimmed glass, and serve.</step>
+      <step>shake tequila, blue curacao, and lime juice with ice, strain into the salt-rimmed glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3077,7 +3077,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a shaker half-filled with ice cubes, combine all of the ingredients</step>
       <step>shake well</step>
-      <step>strain into an old-fashioned glass alomst filled with ice cubes.</step>
+      <step>strain into an old-fashioned glass alomst filled with ice cubes</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3098,7 +3098,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a mixing glass half-filled with crushed ice, combine the gin, triple sec, curacao, and bitters</step>
       <step>stir well</step>
-      <step>strain into a cocktail glass and garnish with the lemon twist and the cherry.</step>
+      <step>strain into a cocktail glass and garnish with the lemon twist and the cherry</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3116,7 +3116,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>stir all ingredients (except lemon peel) with ice and strain into a cocktail glass</step>
-      <step>add the twist of lemon peel and serve.</step>
+      <step>add the twist of lemon peel and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3136,7 +3136,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a mixing glass half-filled with ice cubes, combine the gin, vermouth, bitters, and maraschino liqueur</step>
       <step>stir well</step>
-      <step>strain into a cocktail glass and garnish with the cherry.</step>
+      <step>strain into a cocktail glass and garnish with the cherry</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3153,7 +3153,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="brandy" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml" garnish_type="">brandy</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3173,7 +3173,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake juice of lemon, powdered sugar, blended whiskey, and egg white with cracked ice and strain into a whiskey sour glass</step>
-      <step>add the slice of lemon, top with the cherry, and serve.</step>
+      <step>add the slice of lemon, top with the cherry, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3195,7 +3195,7 @@ add lemon twist peel.</step>
       <step>shake well</step>
       <step>strain well</step>
       <step>strain into a highball glass</step>
-      <step>garnish with the lemon twist.</step>
+      <step>garnish with the lemon twist</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3215,7 +3215,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a shaker half-filled with ice cubes, combine the bourbon, lemon juice, and sugar</step>
       <step>shake well</step>
-      <step>strain into a whiskey sour glass, garnish with the orange slice and cherry.</step>
+      <step>strain into a whiskey sour glass, garnish with the orange slice and cherry</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3235,7 +3235,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a shaker half-filled with ice cubes, combine all of the ingredients</step>
       <step>shake well</step>
-      <step>strain into a sour glass.</step>
+      <step>strain into a sour glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3255,7 +3255,7 @@ add lemon twist peel.</step>
       <step>fill glass with crushed ice</step>
       <step>build gin, lemon juice and simple syrup over</step>
       <step>stir, and then pour blackberry liqueur over in a circular fashion to create marbling effect</step>
-      <step>garnish with two blackberries and lemon slice.</step>
+      <step>garnish with two blackberries and lemon slice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3273,7 +3273,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients (except nutmeg) with ice and strain contents into a cocktail glass</step>
-      <step>sprinkle nutmeg on top and serve.</step>
+      <step>sprinkle nutmeg on top and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3296,7 +3296,7 @@ add lemon twist peel.</step>
       <step>add crushed ice until the glass is almost full</step>
       <step>add the brandy</step>
       <step>stir well</step>
-      <step>garnish with the cherry and the orange and lemon slices.</step>
+      <step>garnish with the cherry and the orange and lemon slices</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3316,7 +3316,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a shaker half-filled with ice cubes, combine the brandy, egg, sugar, and cream</step>
       <step>shake well</step>
-      <step>strain into a sour glass and garnish with the nutmeg.</step>
+      <step>strain into a sour glass and garnish with the nutmeg</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3335,7 +3335,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake brandy, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass</step>
-      <step>decorate with the lemon slice, top with the cherry, and serve.</step>
+      <step>decorate with the lemon slice, top with the cherry, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3352,7 +3352,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>place lime and sugar into old fashioned glass and muddle (mash the two ingredients together using a muddler or a wooden spoon)</step>
-      <step>fill the glass with ice and add the cachaça.</step>
+      <step>fill the glass with ice and add the cachaça</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3391,7 +3391,7 @@ add lemon twist peel.</step>
       <step>shake all ingredients (except carbonated water) with ice and strain into a collins glass over shaved ice</step>
       <step>fill with carbonated water and stir</step>
       <step>decorate with slices of orange and lemon</step>
-      <step>add the cherry and serve with a straw.</step>
+      <step>add the cherry and serve with a straw</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3413,7 +3413,7 @@ add lemon twist peel.</step>
       <step>shake well</step>
       <step>strain into chilled cocktail glass</step>
       <step>garnish with a lemon twist and a maraschino cherry</step>
-      <step>serve without a straw.</step>
+      <step>serve without a straw</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3433,7 +3433,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a shaker half-filled with ice cubes, combine all of the ingredients</step>
       <step>shake well</step>
-      <step>strain into a sour glass.</step>
+      <step>strain into a sour glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3453,7 +3453,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>add dash of angostura bitter onto sugar cube and drop it into champagne flute</step>
       <step>add cognac followed by gently pouring chilled champagne</step>
-      <step>garnish with orange slice and maraschino cherry.</step>
+      <step>garnish with orange slice and maraschino cherry</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3469,7 +3469,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="" basic_taste="cream" measure="1 tblsp" quantity="14.0" unit="gr" garnish_type="">light cream</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3489,7 +3489,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients (except carbonated water) with ice and strain into a highball glass over two ice cubes</step>
-      <step>fill with carbonated water, stir, and serve.</step>
+      <step>fill with carbonated water, stir, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3506,7 +3506,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>combine all ingredients in an electric blender and blend at a low speed for a short length of time</step>
-      <step>pour into a chilled champagne flute and serve.</step>
+      <step>pour into a chilled champagne flute and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3524,7 +3524,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a shaker half-filled with ice cubes, combine all of the ingredients</step>
       <step>shake well</step>
-      <step>strain into a cocktail glass.</step>
+      <step>strain into a cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3546,7 +3546,7 @@ add lemon twist peel.</step>
       <step>in an old-fashioned glass, muddle the bitters and water into the sugar cube, using the back of a teaspoon</step>
       <step>almost fill the glass with ice cubes and add the bourbon</step>
       <step>garnish with the orange slice and the cherry</step>
-      <step>serve with a swizzle stick.</step>
+      <step>serve with a swizzle stick</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3562,7 +3562,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="vermouth" basic_taste="" measure="1 oz" quantity="30.0" unit="ml" garnish_type="">sweet vermouth</ingredient>
     </ingredients>
     <preparation>
-      <step>stir all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>stir all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3579,7 +3579,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="" basic_taste="sour" measure="juice of 1/2" quantity="22.5" unit="ml" garnish_type="">lemon</ingredient>
     </ingredients>
     <preparation>
-      <step>dry shake ingredients to emulsify, add ice, shake and served straight up.</step>
+      <step>dry shake ingredients to emulsify, add ice, shake and served straight up</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3617,7 +3617,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>build all ingredients in a collins glass filled with ice</step>
-      <step>garnish with lime wedge.</step>
+      <step>garnish with lime wedge</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3635,7 +3635,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>pour all ingredients into shaker with ice cubes</step>
       <step>shake well</step>
-      <step>strain in chilled cocktail glass.</step>
+      <step>strain in chilled cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3651,7 +3651,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>in a highball glass filled with ice add 6cl dark rum and top with ginger beer</step>
-      <step>garnish with lime wedge.</step>
+      <step>garnish with lime wedge</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3670,7 +3670,7 @@ add lemon twist peel.</step>
       <step>pour all ingredients into a mixing glass with ice</step>
       <step>stir</step>
       <step>strain into a cocktail glass</step>
-      <step>garnish with a sprig of fresh mint in the drink.</step>
+      <step>garnish with a sprig of fresh mint in the drink</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3688,7 +3688,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a highball glass almost filled with ice cubes, combine the gin and ginger ale</step>
       <step>stir well</step>
-      <step>garnish with the lime wedge.</step>
+      <step>garnish with the lime wedge</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3707,7 +3707,7 @@ add lemon twist peel.</step>
       <step>in a mixing glass half-filled with ice cubes, combine the scotch and vermouth</step>
       <step>stir well</step>
       <step>strain into a cocktail glass</step>
-      <step>garnish with the lemon twist.</step>
+      <step>garnish with the lemon twist</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3725,7 +3725,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>stir all ingredients (except lemon peel) with ice and strain into a cocktail glass</step>
-      <step>add the twist of lemon peel and serve.</step>
+      <step>add the twist of lemon peel and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3767,7 +3767,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>rub rim of cocktail glass with lemon juice and dip rim of glass in powdered sugar</step>
       <step>shake all ingredients (except cherry) with ice and strain into sugar-rimmed glass</step>
-      <step>top with the cherry and serve.</step>
+      <step>top with the cherry and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3782,7 +3782,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr1" alc_type="sambuca" basic_taste="" measure="1/4 glass" quantity="87.5" unit="ml" garnish_type="">sambuca</ingredient>
     </ingredients>
     <preparation>
-      <step>bang 'em both in.</step>
+      <step>bang 'em both in</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3798,7 +3798,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>in an old-fashioned glass almost filled with ice cubes, combine the gin and triple sec</step>
-      <step>stir well.</step>
+      <step>stir well</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3815,7 +3815,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1/4 tsp" quantity="1.0" unit="gr" garnish_type="">sugar syrup</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3831,7 +3831,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml" garnish_type="">creme de cacao</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a chilled cocktail glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a chilled cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3853,7 +3853,7 @@ add lemon twist peel.</step>
       <step>combine gin, sugar, and lemon juice in a cocktail shaker filled with ice</step>
       <step>shake vigorously and strain into a chilled champagne glass</step>
       <step>top up with champagne</step>
-      <step>stir gently.</step>
+      <step>stir gently</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3869,7 +3869,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour all ingredients directly into old fashioned glass filled with ice cubes</step>
-      <step>stir gently.</step>
+      <step>stir gently</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3889,7 +3889,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients (except slices of lemon and lime) with ice and strain into a whiskey sour glass</step>
-      <step>decorate with the slices of lemon and lime and serve.</step>
+      <step>decorate with the slices of lemon and lime and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3908,7 +3908,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>combine all ingredients (except for the cherry) in an electric blender and blend at a low speed for five seconds, then blend at a high speed until firm</step>
-      <step>pour contents into a champagne flute, top with the cherry, and serve.</step>
+      <step>pour contents into a champagne flute, top with the cherry, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3927,7 +3927,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>combine all ingredients with 1 cup of crushed ice in an electric blender</step>
       <step>blend at a low speed for a short length of time</step>
-      <step>pour into an old-fashioned glass and serve.</step>
+      <step>pour into an old-fashioned glass and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3946,7 +3946,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>combine all ingredients with 1 cup of crushed ice in an electric blender</step>
       <step>blend at a low speed for a short length of time</step>
-      <step>pour into a champagne flute and serve.</step>
+      <step>pour into a champagne flute and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3963,7 +3963,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>pour the galliano liqueur over ice</step>
       <step>fill the remainder of the glass with ginger ale and thats all there is to it</step>
-      <step>you now have a your very own gg.</step>
+      <step>you now have a your very own gg</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -3981,7 +3981,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>in an old-fashioned glass almost filled with ice cubes, combine all of the ingredients</step>
-      <step>stir well.</step>
+      <step>stir well</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4000,7 +4000,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr5" alc_type="vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml" garnish_type="">vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>add all ingredients in collins glass with ice and stir.</step>
+      <step>add all ingredients in collins glass with ice and stir</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4018,7 +4018,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>pour the gin and the tonic water into a highball glass almost filled with ice cubes</step>
       <step>stir well</step>
-      <step>garnish with the lime wedge.</step>
+      <step>garnish with the lime wedge</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4040,7 +4040,7 @@ add lemon twist peel.</step>
       <step>carbonated water in a collins glass</step>
       <step>fill glass with ice and add gin</step>
       <step>fill with carbonated water and stir</step>
-      <step>add the lemon peel and the orange spiral so that the end of the orange spiral dangles over rim of glass.</step>
+      <step>add the lemon peel and the orange spiral so that the end of the orange spiral dangles over rim of glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4061,7 +4061,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a shaker half-filled with ice cubes, combine the wine, lemon juice, sugar, and grenadine</step>
       <step>shake well</step>
-      <step>pour into an old-fashioned glass and garnish with the cherry and the orange slice.</step>
+      <step>pour into an old-fashioned glass and garnish with the cherry and the orange slice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4080,7 +4080,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>shake all ingredients with ice cubes, except soda water</step>
       <step>pour into glass</step>
-      <step>top with soda water.</step>
+      <step>top with soda water</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4101,7 +4101,7 @@ add lemon twist peel.</step>
       <step>dissolve powdered sugar in mixture of water and juice of lemon</step>
       <step>add gin</step>
       <step>pour into an old-fashioned glass over ice cubes and stir</step>
-      <step>add the twist of orange peel and serve.</step>
+      <step>add the twist of orange peel and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4122,7 +4122,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>muddle sugar with carbonated water and mint sprigs in an old-fashioned glass</step>
       <step>add gin and 1 ice cube</step>
-      <step>stir, add the orange slice and the cherry, and serve.</step>
+      <step>stir, add the orange slice and the cherry, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4142,7 +4142,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a shaker half-filled with ice cubes, combine the gin, lemon juice, and sugar</step>
       <step>shake well</step>
-      <step>strain into a sour glass and garnish with the orange slice and the cherry.</step>
+      <step>strain into a sour glass and garnish with the orange slice and the cherry</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4163,7 +4163,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>stir gin, grenadine, and powdered sugar with ice and strain into a highball glass over ice cubes</step>
       <step>fill with carbonated water and stir</step>
-      <step>decorate with the pineapple chunks and the strawberries and serve.</step>
+      <step>decorate with the pineapple chunks and the strawberries and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4185,7 +4185,7 @@ add lemon twist peel.</step>
       <step>shake well</step>
       <step>almost fill a colling glass with ice cubes</step>
       <step>stir until the glass is frosted</step>
-      <step>strain the mixture in the shaker into the glass and add the club soda.</step>
+      <step>strain the mixture in the shaker into the glass and add the club soda</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4204,7 +4204,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>mix powdered sugar and water in an old-fashioned glass</step>
       <step>add gin and one ice cube</step>
-      <step>stir, add the twist of lemon peel, and serve.</step>
+      <step>stir, add the twist of lemon peel, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4239,7 +4239,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="" basic_taste="cream" measure="1 oz" quantity="30.0" unit="ml" garnish_type="">heavy cream</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients well with cracked ice, strain into a champagne flute, and serve.</step>
+      <step>shake all ingredients well with cracked ice, strain into a champagne flute, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4255,7 +4255,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour all ingredients directly into old fashioned glass filled with ice cubes</step>
-      <step>stir gently.</step>
+      <step>stir gently</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4270,7 +4270,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml" garnish_type="">vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>pour vodka and amaretto into an old-fashioned glass over ice and serve.</step>
+      <step>pour vodka and amaretto into an old-fashioned glass over ice and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4288,7 +4288,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake with cracked ice</step>
-      <step>strain into glass and serve.</step>
+      <step>strain into glass and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4305,7 +4305,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="triple sec" basic_taste="" measure="1 1/2 cl" quantity="15.0" unit="ml" garnish_type="">blue curacao</ingredient>
     </ingredients>
     <preparation>
-      <step>serve in an old fashioned glass.</step>
+      <step>serve in an old fashioned glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4325,7 +4325,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a shaker half-filled with ice cubes, combine the gin, triple sec, pineapple juice, and grenadine</step>
       <step>shake well</step>
-      <step>pour into an old-fashioned glass and garnish with the pineapple slice.</step>
+      <step>pour into an old-fashioned glass and garnish with the pineapple slice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4342,7 +4342,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour ingredients into a cocktail shaker with ice</step>
-      <step>shake briskly and then strain into a chilled cocktail glass.</step>
+      <step>shake briskly and then strain into a chilled cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4359,7 +4359,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>mix kahlua and 151 in glass</step>
-      <step>quickly add ice and pour grenadine over ice to give ice red tint.</step>
+      <step>quickly add ice and pour grenadine over ice to give ice red tint</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4377,7 +4377,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>served over ice</step>
-      <step>sounds nasty, but tastes great.</step>
+      <step>sounds nasty, but tastes great</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4413,7 +4413,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>stir the vodka and orange juice with ice in the glass, then float the galliano on top</step>
-      <step>garnish and serve.</step>
+      <step>garnish and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4431,7 +4431,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a shaker half-filled with ice cubes, combine all of the ingredients</step>
       <step>shake well</step>
-      <step>strain into a cocktail glass.</step>
+      <step>strain into a cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4447,7 +4447,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 tblsp" quantity="14.0" unit="gr" garnish_type="">pineapple juice</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4465,7 +4465,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour all ingredients into a shaker with ice</step>
-      <step>shake.</step>
+      <step>shake</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4483,7 +4483,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>stir all ingredients (except olive) with ice and strain into a cocktail glass</step>
-      <step>add the olive and serve.</step>
+      <step>add the olive and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4503,7 +4503,7 @@ add lemon twist peel.</step>
       <step>pour brandy and ginger ale directly into highball glass with ice cubes</step>
       <step>stir gently</step>
       <step>garnish with lemon zest</step>
-      <step>if desired, add dashes of angostura bitter.</step>
+      <step>if desired, add dashes of angostura bitter</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4520,7 +4520,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>put vodka in glass fill with iced tea</step>
-      <step>stir in lemon to taste.</step>
+      <step>stir in lemon to taste</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4539,7 +4539,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients (except carbonated water) with ice and strain into a highball glass over two ice cubes</step>
-      <step>fill with carbonated water, stir, and serve.</step>
+      <step>fill with carbonated water, stir, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4559,7 +4559,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour all ingredients (except orange slice and cherry) into a collins glass over ice cubes</step>
-      <step>garnish with the slice of orange, add the cherry on top, and serve.</step>
+      <step>garnish with the slice of orange, add the cherry on top, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4575,7 +4575,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="brandy" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml" garnish_type="">apple brandy</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4610,7 +4610,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients (except carbonated water) with ice and strain into a highball glass over two ice cubes</step>
-      <step>fill with carbonated water, stir, and serve.</step>
+      <step>fill with carbonated water, stir, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4628,7 +4628,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a mixing glass half-filled with ice cubes, combine all of the ingredients</step>
       <step>stir well</step>
-      <step>strain into a cocktail glass.</step>
+      <step>strain into a cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4650,7 +4650,7 @@ add lemon twist peel.</step>
       <step>pour all ingredients directly into highball glass filled with ice</step>
       <step>stir gently</step>
       <step>garnish</step>
-      <step>add a dash of angostura bitters.</step>
+      <step>add a dash of angostura bitters</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4667,7 +4667,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients together with ice</step>
-      <step>strain into glass, garnish and serve.</step>
+      <step>strain into glass, garnish and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4683,7 +4683,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>put a copper coin in a coffe-cup and fill up with coffee until you no longer see the coin, then add alcohol until you see the coin</step>
-      <step>norwegian speciality.</step>
+      <step>norwegian speciality</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4698,7 +4698,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml" garnish_type="">benedictine</ingredient>
     </ingredients>
     <preparation>
-      <step>pour the bourbon and benedictine into a brandy snifter.</step>
+      <step>pour the bourbon and benedictine into a brandy snifter</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4716,7 +4716,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a shaker half-filled with ice cubes combine the courbon and benedictine</step>
       <step>shake and strain into a cocktail glass</step>
-      <step>garnish with the lemon twist.</step>
+      <step>garnish with the lemon twist</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4731,7 +4731,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr1" alc_type="champagne" basic_taste="" measure="5 parts" quantity="150.0" unit="ml" garnish_type="">champagne</ingredient>
     </ingredients>
     <preparation>
-      <step>add the crème de cassis to the bottom of the glass, then top up with wine.</step>
+      <step>add the crème de cassis to the bottom of the glass, then top up with wine</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4780,7 +4780,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>mix in highball glass</step>
       <step>stirr</step>
-      <step>garnish with slice of kiwi.</step>
+      <step>garnish with slice of kiwi</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4800,7 +4800,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients (except carbonated water) with ice and strain into a cocktail glass over two ice cubes</step>
-      <step>fill with carbonated water, stir, and serve.</step>
+      <step>fill with carbonated water, stir, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4820,7 +4820,7 @@ add lemon twist peel.</step>
       <step>in a mixing glass half-filled with ice cubes, combine the scotch, drambuie, and vermouth</step>
       <step>stir well</step>
       <step>strain into a cocktail glass</step>
-      <step>garnish with the lemon twist.</step>
+      <step>garnish with the lemon twist</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4838,7 +4838,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a mixing glass half-filled with ice cubes, combine all of the ingredients</step>
       <step>stir well</step>
-      <step>strain into a cocktail glass.</step>
+      <step>strain into a cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4853,7 +4853,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr1" alc_type="vermouth" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml" garnish_type="">sweet vermouth</ingredient>
     </ingredients>
     <preparation>
-      <step>stir ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>stir ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4876,7 +4876,7 @@ add lemon twist peel.</step>
       <step>carbonated water in a collins glass</step>
       <step>fill glass with ice, add gin and vermouth, and stir</step>
       <step>fill with carbonated water and stir again</step>
-      <step>add the twist of lemon peel and the orange spiral so that the end dangles over rim of glass.</step>
+      <step>add the twist of lemon peel and the orange spiral so that the end dangles over rim of glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4896,7 +4896,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>mix all contents in a highball glass and sitr gently</step>
-      <step>add dash of coca-cola for the coloring and garnish with lemon or lime twist.</step>
+      <step>add dash of coca-cola for the coloring and garnish with lemon or lime twist</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4917,7 +4917,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>combine all ingredients (except cola) and pour over ice in a highball glass</step>
       <step>add the splash of cola for color</step>
-      <step>decorate with a slice of lemon and serve.</step>
+      <step>decorate with a slice of lemon and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4951,7 +4951,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour the rum and tia maria into an old-fashioned glass almost filled with ice cubes</step>
-      <step>stir well.</step>
+      <step>stir well</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4971,7 +4971,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>shake all ingredients with ice</step>
       <step>strain into glass</step>
-      <step>garnish and serve with straw.</step>
+      <step>garnish and serve with straw</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -4991,7 +4991,7 @@ add lemon twist peel.</step>
       <step>rub the rim of the glass with the lime slice to make the salt stick to it</step>
       <step>take care to moisten only the outer rim and sprinkle the salt on it</step>
       <step>the salt should present to the lips of the imbiber and never mix into the cocktail</step>
-      <step>shake the other ingredients with ice, then carefully pour into the glass.</step>
+      <step>shake the other ingredients with ice, then carefully pour into the glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5009,7 +5009,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a shaker half-filled with ice cubes, combine all of the ingredients</step>
       <step>shake well</step>
-      <step>strain into a cocktail glass.</step>
+      <step>strain into a cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5045,7 +5045,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>ensure both ingredients are well chilled, then mix into the glass</step>
-      <step>serve cold.</step>
+      <step>serve cold</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5065,7 +5065,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients (except carbonated water) with ice and strain into a collins glass over ice cubes</step>
-      <step>fill with carbonated water, stir, and serve.</step>
+      <step>fill with carbonated water, stir, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5082,7 +5082,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 tsp" quantity="4.0" unit="gr" garnish_type="">grenadine</ingredient>
     </ingredients>
     <preparation>
-      <step>shake well over ice cubes in a shaker, strain into a chilled cocktail glass.</step>
+      <step>shake well over ice cubes in a shaker, strain into a chilled cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5099,7 +5099,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour all of the ingredients into an old-fashioned glass almost filled with ice cubes</step>
-      <step>stir well.</step>
+      <step>stir well</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5120,7 +5120,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>pour all ingredients into a shaker of ice</step>
       <step>shake well</step>
-      <step>serve on the rocks.</step>
+      <step>serve on the rocks</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5136,7 +5136,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="gin" basic_taste="" measure="1 oz" quantity="30.0" unit="ml" garnish_type="">gin</ingredient>
     </ingredients>
     <preparation>
-      <step>stir into glass over ice, garnish and serve.</step>
+      <step>stir into glass over ice, garnish and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5157,7 +5157,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>shake blended whiskey, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass</step>
       <step>float claret on top</step>
-      <step>decorate with the half-slice of lemon and the cherry and serve.</step>
+      <step>decorate with the half-slice of lemon and the cherry and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5175,7 +5175,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake brandy, gin, and orange juice with ice and strain into a highball glass over ice cubes</step>
-      <step>fill with ginger ale, stir, and serve.</step>
+      <step>fill with ginger ale, stir, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5215,7 +5215,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>blend vodka, kahlua, bailey's, ice-cream and the oreo well in a blender</step>
       <step>pour into a large frosted glass</step>
-      <step>garnish with whipped cream and a cherry.</step>
+      <step>garnish with whipped cream and a cherry</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5233,7 +5233,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr4" alc_type="creamy liqueur" basic_taste="" measure="1/2 oz white" quantity="15.0" unit="ml" garnish_type="">creme de cacao white</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a chilled cocktail glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a chilled cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5249,7 +5249,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="" basic_taste="sour" measure="12 oz frozen" quantity="360.0" unit="ml" garnish_type="">lemonade frozen</ingredient>
     </ingredients>
     <preparation>
-      <step>add ingredients and mix in blender.</step>
+      <step>add ingredients and mix in blender</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5266,7 +5266,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake together over ice</step>
-      <step>strain into cocktail glass and serve chilled.</step>
+      <step>strain into cocktail glass and serve chilled</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5283,7 +5283,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>mix with crushed ice in blender until smooth</step>
-      <step>pour into chilled glass, garnish and serve.</step>
+      <step>pour into chilled glass, garnish and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5301,7 +5301,7 @@ add lemon twist peel.</step>
       <step>pour the bitters into a wine glass</step>
       <step>swirl the glass to coat the inside with the bitters, shake out the excess</step>
       <step>pour the gin into the glass</step>
-      <step>do not add ice.</step>
+      <step>do not add ice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5318,7 +5318,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 tsp" quantity="4.0" unit="gr" garnish_type="">grenadine</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5366,7 +5366,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr1" alc_type="gin" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml" garnish_type="">gin</ingredient>
     </ingredients>
     <preparation>
-      <step>shake ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>shake ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5382,7 +5382,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour carefully into a pousse-cafe glass, so that creme de menthe floats on grenadine</step>
-      <step>serve without mixing.</step>
+      <step>serve without mixing</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5397,7 +5397,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr1" alc_type="port" basic_taste="" measure="2 1/2 oz" quantity="75.0" unit="ml" garnish_type="">port</ingredient>
     </ingredients>
     <preparation>
-      <step>stir ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>stir ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5416,7 +5416,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients (except nutmeg) with ice and strain into a whiskey sour glass</step>
-      <step>sprinkle nutmeg on top and serve.</step>
+      <step>sprinkle nutmeg on top and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5433,7 +5433,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake ingredients together in a mixer with ice</step>
-      <step>strain into glass, garnish and serve.</step>
+      <step>strain into glass, garnish and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5450,7 +5450,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="brandy" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml" garnish_type="">brandy</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5466,7 +5466,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="rum" basic_taste="" measure="1 1/2" quantity="37.5" unit="ml" garnish_type="">light rum</ingredient>
     </ingredients>
     <preparation>
-      <step>stir all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>stir all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5482,7 +5482,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="vodka" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml" garnish_type="">lime vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5499,7 +5499,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour red wine and grenadine into a collins glass over ice cubes</step>
-      <step>fill with lemon-lime soda, stir, and serve.</step>
+      <step>fill with lemon-lime soda, stir, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5515,7 +5515,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1 1/2 tsp" quantity="6.0" unit="gr" garnish_type="">benedictine</ingredient>
     </ingredients>
     <preparation>
-      <step>stir all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>stir all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5534,7 +5534,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a shaker half-filled with ice cubes, combine the rum, kahlua, and cream</step>
       <step>shake well</step>
-      <step>strain into a cocktail glass and garnish with the nutmeg.</step>
+      <step>strain into a cocktail glass and garnish with the nutmeg</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5572,7 +5572,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour all ingredients over ice in a very tall glass</step>
-      <step>sip cautiously.</step>
+      <step>sip cautiously</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5587,7 +5587,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="12 oz" quantity="360.0" unit="ml" garnish_type="">7-up</ingredient>
     </ingredients>
     <preparation>
-      <step>pour beer into large mug, slowly add the 7-up (or sprite).</step>
+      <step>pour beer into large mug, slowly add the 7-up (or sprite)</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5607,7 +5607,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake together in a cocktail shaker, then strain into chilled glass</step>
-      <step>garnish and serve.</step>
+      <step>garnish and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5625,7 +5625,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients (except cola) with ice and strain into a chilled collins glass</step>
-      <step>fill with cola and serve.</step>
+      <step>fill with cola and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5644,7 +5644,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients (except carbonated water) with ice and strain into a highball glass over two ice cubes</step>
-      <step>fill with carbonated water, stir, and serve.</step>
+      <step>fill with carbonated water, stir, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5667,7 +5667,7 @@ add lemon twist peel.</step>
       <step>add crushed ice until the glass is almost full</step>
       <step>add the rum</step>
       <step>stir well</step>
-      <step>garnish with the cherry and the orange and lemon slices.</step>
+      <step>garnish with the cherry and the orange and lemon slices</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5684,7 +5684,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour the rum and soda into a collins glass almost filled with ice cubes</step>
-      <step>stir well and garnish with the lemon wedge.</step>
+      <step>stir well and garnish with the lemon wedge</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5702,7 +5702,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients (except nutmeg) with ice and strain into a collins glass</step>
-      <step>sprinkle nutmeg on top and serve.</step>
+      <step>sprinkle nutmeg on top and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5723,7 +5723,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>stir powdered sugar, water, and bitters in an old-fashioned glass</step>
       <step>when sugar has dissolved add ice cubes and light rum</step>
-      <step>add the twist of lime peel, float 151 proof rum on top, and serve.</step>
+      <step>add the twist of lime peel, float 151 proof rum on top, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5739,7 +5739,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour rum into a highball glass over ice cubes</step>
-      <step>add orange juice, stir, and serve.</step>
+      <step>add orange juice, stir, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5759,7 +5759,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a shaker half-filled with ice cubes, combine the rum, lemon juice, and sugar</step>
       <step>shake well</step>
-      <step>strain into a sour glass and garnish with the orange slice and the cherry.</step>
+      <step>strain into a sour glass and garnish with the orange slice and the cherry</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5778,7 +5778,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>dissolve powdered sugar in water in an old-fashioned glass</step>
       <step>add rum and one ice cube and stir</step>
-      <step>add the twist of lemon peel and serve.</step>
+      <step>add the twist of lemon peel and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5795,7 +5795,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="2.5 cl" quantity="25.0" unit="ml" garnish_type="">vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>pour the ingredients into an highball glass, top with sparkling wine.</step>
+      <step>pour the ingredients into an highball glass, top with sparkling wine</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5813,7 +5813,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>pour the scotch and drambuie into an old-fashioned glass almost filled with ice cubes</step>
       <step>stir well</step>
-      <step>garnish with the lemon twist.</step>
+      <step>garnish with the lemon twist</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5849,7 +5849,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>take a tall glass and put in a few ice cubes, fill the vodka over it and fill with juice then the "creme", to end fill in the grenadine but very carefully at the side of the glass so it will lay down in the bottom</step>
-      <step>garnish with orange and strawberry.</step>
+      <step>garnish with orange and strawberry</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5871,7 +5871,7 @@ add lemon twist peel.</step>
       <step>rinse a chilled old-fashioned glass with the absinthe, add crushed ice, and set it aside</step>
       <step>stir the remaining ingredients over ice and set it aside</step>
       <step>discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass</step>
-      <step>add the lemon peel for garnish.</step>
+      <step>add the lemon peel for garnish</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5887,7 +5887,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1 oz" quantity="30.0" unit="ml" garnish_type="">amaretto</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients well with cracked ice, strain into a cocktail glass, and serve.</step>
+      <step>shake all ingredients well with cracked ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5906,7 +5906,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour scotch, brandy, and curacao over ice in an old-fashioned glass</step>
-      <step>add the orange slice, top with the mint sprig, and serve.</step>
+      <step>add the orange slice, top with the mint sprig, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5925,7 +5925,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake scotch, juice of lime, and powdered sugar with ice and strain into a whiskey sour glass</step>
-      <step>decorate with 1/2 slice lemon, top with the cherry, and serve.</step>
+      <step>decorate with 1/2 slice lemon, top with the cherry, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5945,7 +5945,7 @@ add lemon twist peel.</step>
       <step>stir</step>
       <step>caution: use only high quality vodka</step>
       <step>cheap vodka can cause the bailey's to curdle</step>
-      <step>test your brand of vodka by mixing 1 tsp each of vodka and bailey's first.</step>
+      <step>test your brand of vodka by mixing 1 tsp each of vodka and bailey's first</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5961,7 +5961,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>mix in a highball glass with ice</step>
-      <step>garnish and serve.</step>
+      <step>garnish and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5978,7 +5978,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>build all ingredients in a highball glass filled with ice</step>
-      <step>garnish with lime wedge.</step>
+      <step>garnish with lime wedge</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -5996,7 +5996,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>build all ingredients in a highball glass filled with ice</step>
-      <step>garnish with orange slice.</step>
+      <step>garnish with orange slice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6013,7 +6013,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="" basic_taste="spicy" measure="1 tsp" quantity="4.0" unit="gr" garnish_type="">anisette</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6033,7 +6033,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>shake sherry, powdered sugar, and egg with ice and strain into a collins glass</step>
       <step>fill with milk and stir</step>
-      <step>sprinkle nutmeg on top and serve.</step>
+      <step>sprinkle nutmeg on top and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6052,7 +6052,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients (except nutmeg) with ice and strain into a whiskey sour glass</step>
-      <step>sprinkle nutmeg on top and serve.</step>
+      <step>sprinkle nutmeg on top and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6069,7 +6069,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour all ingredients into cocktail shaker filled with ice</step>
-      <step>shake well and strain into cocktail glass.</step>
+      <step>shake well and strain into cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6085,7 +6085,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="triple sec" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml" garnish_type="">triple sec</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6107,7 +6107,7 @@ add lemon twist peel.</step>
       <step>pour all ingredients into cocktail shaker filled with ice cubes</step>
       <step>shake well</step>
       <step>strain into highball glass</step>
-      <step>garnish with pineapple and cocktail cherry.</step>
+      <step>garnish with pineapple and cocktail cherry</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6123,7 +6123,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="bitters" basic_taste="" measure="1 dash" quantity="1.0" unit="ml" garnish_type="">orange bitters</ingredient>
     </ingredients>
     <preparation>
-      <step>stir all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>stir all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6141,7 +6141,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>place one ice cube in the glass and add 1 1/2 oz of advocaat</step>
       <step>fill up the glass with lemonade and decorate with a slice of lemon</step>
-      <step>serve at once.</step>
+      <step>serve at once</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6179,7 +6179,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>fill glass with ice and add shots of bacardi and malibu</step>
       <step>add splash of pineapple juice and top with orange juice</step>
-      <step>add grenadine for color and garnish with cherries.</step>
+      <step>add grenadine for color and garnish with cherries</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6195,7 +6195,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="campari" basic_taste="" measure="4 cl" quantity="40.0" unit="ml" garnish_type="">campari</ingredient>
     </ingredients>
     <preparation>
-      <step>build into glass over ice, garnish and serve.</step>
+      <step>build into glass over ice, garnish and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6211,7 +6211,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour in a mixing glass with ice, stir and strain into a cocktail glass</step>
-      <step>may also be served on rocks in a rocks glass.</step>
+      <step>may also be served on rocks in a rocks glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6227,7 +6227,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 oz" quantity="30.0" unit="ml" garnish_type="">orange juice</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a chilled whiskey sour glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a chilled whiskey sour glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6247,7 +6247,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>pour all ingredients into shaker with ice cubes</step>
       <step>shake well</step>
-      <step>strain in chilled cocktail glass.</step>
+      <step>strain in chilled cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6267,7 +6267,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>rub rim of cocktail glass with lemon juice and dip rim in salt</step>
-      <step>shake schnapps, tequila, triple sec, lemon juice, and strawberries with ice, strain into the salt-rimmed glass, and serve.</step>
+      <step>shake schnapps, tequila, triple sec, lemon juice, and strawberries with ice, strain into the salt-rimmed glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6284,7 +6284,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="ouzo" basic_taste="" measure="1 part" quantity="30.0" unit="ml" garnish_type="">ouzo</ingredient>
     </ingredients>
     <preparation>
-      <step>lots of ice and soda top up in tall glass with cherry and a grin.</step>
+      <step>lots of ice and soda top up in tall glass with cherry and a grin</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6303,7 +6303,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients (except ginger ale) with ice and strain into a collins glass over ice cubes</step>
-      <step>fill with ginger ale, stir, and serve.</step>
+      <step>fill with ginger ale, stir, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6322,7 +6322,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake tequila, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass</step>
-      <step>add the half-slice of lemon, top with the cherry, and serve.</step>
+      <step>add the half-slice of lemon, top with the cherry, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6340,7 +6340,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>in a shaker half-filled with ice cubes, combine all of the ingredients</step>
       <step>shake well</step>
-      <step>strain into a cocktail glass.</step>
+      <step>strain into a cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6363,7 +6363,7 @@ add lemon twist peel.</step>
       <step>shake well</step>
       <step>strain into a collins glass alomst filled with ice cubes</step>
       <step>add the club soda</step>
-      <step>stir and garnish with the cherry and the orange slice.</step>
+      <step>stir and garnish with the cherry and the orange slice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6379,7 +6379,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="2 spoons" quantity="10.0" unit="ml" garnish_type="">agave syrup</ingredient>
     </ingredients>
     <preparation>
-      <step>shake and strain into a chilled cocktail glass.</step>
+      <step>shake and strain into a chilled cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6398,7 +6398,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>stir all ingredients (except orange peel) with ice and strain into a cocktail glass</step>
-      <step>add the twist of orange peel and serve.</step>
+      <step>add the twist of orange peel and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6418,7 +6418,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>stir all ingredients with ice and strain into a cocktail glass</step>
-      <step>garnish with a cherry and a twist of lemon zest.</step>
+      <step>garnish with a cherry and a twist of lemon zest</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6434,7 +6434,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 tblsp" quantity="14.0" unit="gr" garnish_type="">orange juice</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6458,7 +6458,7 @@ add lemon twist peel.</step>
       <step>the second step is to fill half the glass with ice and add one or two shooter glasses full of high quality tequila</step>
       <step>the next stage is to add the flavouring elements</step>
       <step>this is done by squeezing a fresh lime into the glass, adding a few grains of salt, adding citrus-flavoured soda pop, until the glass is 4/5 full, and then adding spicy viuda de sanchez (or orange juice, lime juice and pico de gallo)</step>
-      <step>the final step is to stir the ingredients so that the flavours are properly blended.</step>
+      <step>the final step is to stir the ingredients so that the flavours are properly blended</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6474,7 +6474,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="rum" basic_taste="" measure="3 oz" quantity="90.0" unit="ml" garnish_type="">light rum</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into an old-fashioned glass over ice cubes, and serve.</step>
+      <step>shake all ingredients with ice, strain into an old-fashioned glass over ice cubes, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6491,7 +6491,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>stir vermouth and creme de cassis in a highball glass with ice cubes</step>
-      <step>fill with carbonated water, stir again, and serve.</step>
+      <step>fill with carbonated water, stir again, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6509,7 +6509,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr4" alc_type="" basic_taste="sour" measure="juice of 1/2" quantity="22.5" unit="ml" garnish_type="">lemon</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into an old-fashioned glass over ice cubes, and serve.</step>
+      <step>shake all ingredients with ice, strain into an old-fashioned glass over ice cubes, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6525,7 +6525,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour the rum and cherry brandy into an old-fashioned glass almost filled with ice cubes</step>
-      <step>stir well.</step>
+      <step>stir well</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6541,7 +6541,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="gin" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml" garnish_type="">gin</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6560,7 +6560,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake all ingredients (except orange slice) with ice and strain into a collins glass over ice cubes</step>
-      <step>add the slice of orange and serve.</step>
+      <step>add the slice of orange and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6576,7 +6576,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour vodka into a highball glass over ice cubes</step>
-      <step>fill with tonic water, stir, and serve.</step>
+      <step>fill with tonic water, stir, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6592,7 +6592,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="" basic_taste="salty" measure="1" quantity="30.0" unit="ml" garnish_type="">olive</ingredient>
     </ingredients>
     <preparation>
-      <step>shake the vodka and vermouth together with a number of ice cubes, strain into a cocktail glass, add the olive and serve.</step>
+      <step>shake the vodka and vermouth together with a number of ice cubes, strain into a cocktail glass, add the olive and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6607,7 +6607,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr1" alc_type="" basic_taste="bitter" measure="" quantity="0.0" unit="" garnish_type="nan">schweppes russchian</ingredient>
     </ingredients>
     <preparation>
-      <step>mix it as a ordinary drink .</step>
+      <step>mix it as a ordinary drink</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6623,7 +6623,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="triple sec" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml" garnish_type="">triple sec</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
+      <step>shake all ingredients with ice, strain into a cocktail glass, and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6643,7 +6643,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>shake with ice</step>
       <step>strain into chilled glass, garnish and serve</step>
-      <step>if served 'on the rocks', strain ingredients into old-fashioned glass filled with ice.</step>
+      <step>if served 'on the rocks', strain ingredients into old-fashioned glass filled with ice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6658,7 +6658,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr1" alc_type="wine" basic_taste="" measure="1 oz green ginger" quantity="30.0" unit="ml" garnish_type="">green ginger wine</ingredient>
     </ingredients>
     <preparation>
-      <step>pour both of the ingredients into a wine goblet with no ice.</step>
+      <step>pour both of the ingredients into a wine goblet with no ice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6675,7 +6675,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>add all ingredients into cocktail shaker filled with ice</step>
-      <step>shake well and strain into large cocktail glass.</step>
+      <step>shake well and strain into large cocktail glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6692,7 +6692,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour vodka and coffee liqueur over ice cubes in an old-fashioned glass</step>
-      <step>fill with light cream and serve.</step>
+      <step>fill with light cream and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6723,7 +6723,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>serve without ice</step>
-      <step>at least the juice shold have room temperature.</step>
+      <step>at least the juice shold have room temperature</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6740,7 +6740,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>fill glass with ice</step>
       <step>pour in chambord, then fill with zima</step>
-      <step>mix and enjoy.</step>
+      <step>mix and enjoy</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6758,7 +6758,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>put ice in glass</step>
       <step>pour in shots</step>
-      <step>fill with sour mix.</step>
+      <step>fill with sour mix</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6774,7 +6774,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="bitters" basic_taste="" measure="" quantity="0.0" unit="" garnish_type="nan">bitter lemon</ingredient>
     </ingredients>
     <preparation>
-      <step>mix, pour over ice and top up with bitter lemon.</step>
+      <step>mix, pour over ice and top up with bitter lemon</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6792,7 +6792,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>fill absolut into a glass</step>
       <step>add lime juice</step>
-      <step>add ice and lime wedges.</step>
+      <step>add ice and lime wedges</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6828,7 +6828,7 @@ add lemon twist peel.</step>
       <step>shake sour mix, tequila and amaretto with ice</step>
       <step>strain into highball glass</step>
       <step>add a splash of oj</step>
-      <step>garnish with orange slice and a cherry.</step>
+      <step>garnish with orange slice and a cherry</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6845,7 +6845,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>just mix the two liquids and sprinkle in the cinnamon</step>
-      <step>serve either cold or heated.</step>
+      <step>serve either cold or heated</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6862,7 +6862,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="whisky" basic_taste="" measure="2 oz" quantity="60.0" unit="ml" garnish_type="">southern comfort</ingredient>
     </ingredients>
     <preparation>
-      <step>mix all ingredients, and pour over ice.</step>
+      <step>mix all ingredients, and pour over ice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6879,7 +6879,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>after pouring in your ingredients, and adding 3-5 ice cubes, according to taste</step>
-      <step>stir the drink with a stirrer to get the vanilla off the bottom.</step>
+      <step>stir the drink with a stirrer to get the vanilla off the bottom</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6896,7 +6896,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="" basic_taste="cream" measure="1 package" quantity="60.0" unit="ml" garnish_type="">cream</ingredient>
     </ingredients>
     <preparation>
-      <step>pour ingredients over ice and stir.</step>
+      <step>pour ingredients over ice and stir</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6912,7 +6912,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour the raspberry vodka and soda into a highball glass almost filled with ice cubes</step>
-      <step>stir well.</step>
+      <step>stir well</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6930,7 +6930,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>blend all ingredients, save nutmeg</step>
-      <step>pour into large white wine glass and sprinkle nutmeg on top.</step>
+      <step>pour into large white wine glass and sprinkle nutmeg on top</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6947,7 +6947,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>place all ingredients in a blender and blend until smooth</step>
-      <step>this makes one drink.</step>
+      <step>this makes one drink</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6968,7 +6968,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>add ice to blender (or to glass if prefer on the rocks) then fruit, and fruite juice depending on personal prefference then add the rum, vodka, tequila, and triple sec</step>
       <step>blend till smooth, rim glass with sugar or salt and pour mixture in</step>
-      <step>garnish with lemon or lime slice.</step>
+      <step>garnish with lemon or lime slice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -6988,7 +6988,7 @@ add lemon twist peel.</step>
       <step>fill the blender with 3/4 ice</step>
       <step>add sweet &amp; sour mix to the top of the ice</step>
       <step>add about 1" of pineapple juice, 1/2" of melon liqeur, and 1/2 to 1/4" of amaretto</step>
-      <step>then blend the mix until it is of margaritta consistency or thinner.</step>
+      <step>then blend the mix until it is of margaritta consistency or thinner</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7012,7 +7012,7 @@ add lemon twist peel.</step>
       <step>if you use the whole all spice and cloves, tie them in cheesecloth</step>
       <step>heat the mixture</step>
       <step>stir occasionally</step>
-      <step>if you want an alcoholic drink, rum would be nice.</step>
+      <step>if you want an alcoholic drink, rum would be nice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7046,7 +7046,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour all ingrediants into a large punch bowl</step>
-      <step>add ice and 4 oranges that are peeled and divided.</step>
+      <step>add ice and 4 oranges that are peeled and divided</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7064,7 +7064,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>fill glass with ice and fish, add vodka, grape soda and orange juice</step>
-      <step>do not stir!!!!! serve well chilled.</step>
+      <step>do not stir!!!!! serve well chilled</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7081,7 +7081,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>blend all ingredients in a blender on high until ice is finely crushed</step>
       <step>it should be of a slushy consistency</step>
-      <step>pour immediately and serve.</step>
+      <step>pour immediately and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7104,7 +7104,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>combine all the ingredients in a large punch bowl with a block of ice</step>
       <step>if found too dry, sugar syrup may be added</step>
-      <step>decorate with twists of lemon peel.</step>
+      <step>decorate with twists of lemon peel</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7122,7 +7122,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>mix all ingredients in a pitcher</step>
-      <step>mix thoroughly and pour into whatever is available, the bigger the better! this drink packs a big punch, so don't over do it.</step>
+      <step>mix thoroughly and pour into whatever is available, the bigger the better! this drink packs a big punch, so don't over do it</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7141,7 +7141,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>add all ingredients to large bowl</step>
       <step>stir gently</step>
-      <step>serve chilled.</step>
+      <step>serve chilled</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7162,7 +7162,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>mix all ingredients together</step>
       <step>slowly and gently</step>
-      <step>works best if ice is added to punch bowl and soda's are very cold.</step>
+      <step>works best if ice is added to punch bowl and soda's are very cold</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7182,7 +7182,7 @@ add lemon twist peel.</step>
       <step>start with the sprite</step>
       <step>next comes the tequila</step>
       <step>after that, add the minute maid fruit punch, then float the 151</step>
-      <step>rocks optional.</step>
+      <step>rocks optional</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7218,7 +7218,7 @@ add lemon twist peel.</step>
       <step>serve immediately</step>
       <step>sprinkle nutmeg over each serving</step>
       <step>serve in a punch bowl or another big bowl</step>
-      <step>note: for a nonalcoholic eggnog, prepare eggnog as above, except omit the bourbon and rum and increase the milk to 3 cups.</step>
+      <step>note: for a nonalcoholic eggnog, prepare eggnog as above, except omit the bourbon and rum and increase the milk to 3 cups</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7242,7 +7242,7 @@ add lemon twist peel.</step>
       <step>mix well</step>
       <step>chill over night</step>
       <step>sprinkle with nutmeg</step>
-      <step>makes 6 servings.</step>
+      <step>makes 6 servings</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7269,7 +7269,7 @@ add lemon twist peel.</step>
       <step>just before serving, pour into bowl or pitcher</step>
       <step>garnish or add stir-ins, if desired</step>
       <step>choose 1 or several of: chocolate curls, cinnamon sticks, extracts of flavorings, flavored brandy or liqueur, fruit juice or nectar, ground nutmeg, maraschino cherries, orange slices, peppermint sticks or candy canes, plain brandy, run or whiskey, sherbet or ice-cream, whipping cream, whipped</step>
-      <step>serve immediately.</step>
+      <step>serve immediately</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7292,7 +7292,7 @@ add lemon twist peel.</step>
       <step>strain the spiced water and mix with the wine</step>
       <step>heat slowly until short of boiling temperature</step>
       <step>(to remove alcohol, let it boil for a while.) you may add lemon or orange juice to taste</step>
-      <step>serve in irish coffee cup.</step>
+      <step>serve in irish coffee cup</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7311,7 +7311,7 @@ add lemon twist peel.</step>
       <step>combine vodka and ginger beer in a highball glass filled with ice</step>
       <step>add lime juice</step>
       <step>stir gently</step>
-      <step>garnish.</step>
+      <step>garnish</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7349,7 +7349,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>simmer 3 cups water with, sugar, cloves, cinnamon sticks, and lemon peel in a stainless steel pot for 10 minutes</step>
-      <step>add wine heat to a "coffee temperature" (do not boil) then add the brandy.</step>
+      <step>add wine heat to a "coffee temperature" (do not boil) then add the brandy</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7388,7 +7388,7 @@ add lemon twist peel.</step>
       <step>shake well</step>
       <step>pour into large glass, filled with ice</step>
       <step>add angostura bitters, "on top"</step>
-      <step>garnish with cocktail cherry and pineapple.</step>
+      <step>garnish with cocktail cherry and pineapple</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7405,7 +7405,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="355 ml frozen" quantity="355.0" unit="ml" garnish_type="">fruit punch frozen</ingredient>
     </ingredients>
     <preparation>
-      <step>mix all ingredients in a punch bowl and serve.</step>
+      <step>mix all ingredients in a punch bowl and serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7423,7 +7423,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr4" alc_type="" basic_taste="sweet" measure="3-4 oz" quantity="105.0" unit="ml" garnish_type="">pineapple juice</ingredient>
     </ingredients>
     <preparation>
-      <step>mix all ingredients in glass &amp; add ice.</step>
+      <step>mix all ingredients in glass &amp; add ice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7444,7 +7444,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>mix all together in a pitcher and refrigerate</step>
       <step>add cloves and cinnamon sticks to taste</step>
-      <step>serve in wine glasses.</step>
+      <step>serve in wine glasses</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7467,7 +7467,7 @@ add lemon twist peel.</step>
       <step>mix wine, sugar and fruit, and let sit in the fridge for 18-24 hours</step>
       <step>the mixture will have a somewhat syrupy consistency</step>
       <step>before serving stir in brandy and cut the mixture with soda water until it have a thinner, more wine like consistency</step>
-      <step>serve from a pitcher in wine glasses.</step>
+      <step>serve from a pitcher in wine glasses</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7484,7 +7484,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1/3 part" quantity="10.0" unit="ml" garnish_type="">orange juice</ingredient>
     </ingredients>
     <preparation>
-      <step>throw it all together and serve real cold.</step>
+      <step>throw it all together and serve real cold</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7503,7 +7503,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr5" alc_type="" basic_taste="sour" measure="1" quantity="30.0" unit="ml" garnish_type="">lemon</ingredient>
     </ingredients>
     <preparation>
-      <step>combine all ingredients in a punch bowl.</step>
+      <step>combine all ingredients in a punch bowl</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7520,7 +7520,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>mix wine and soft drink</step>
       <step>pour into glass</step>
-      <step>add ice.</step>
+      <step>add ice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7538,7 +7538,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr4" alc_type="" basic_taste="sweet" measure="3" quantity="3.0" unit="" garnish_type="slice">orange</ingredient>
     </ingredients>
     <preparation>
-      <step>combine all of the ingredients and pour over a block of ice.</step>
+      <step>combine all of the ingredients and pour over a block of ice</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7555,7 +7555,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>pour zima in a collins glass over ice and then pour the shot of midori</step>
       <step>don't stir</step>
-      <step>garnish with a cherry.</step>
+      <step>garnish with a cherry</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7571,7 +7571,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="" basic_taste="sour" measure="or lime" quantity="20.0" unit="ml" garnish_type="">lemon</ingredient>
     </ingredients>
     <preparation>
-      <step>pour 5cl of cointreau on ice, add 2cl of fresh lemon (or lime) juice, stir gently, and finally add slices of lemon/lime in glass.</step>
+      <step>pour 5cl of cointreau on ice, add 2cl of fresh lemon (or lime) juice, stir gently, and finally add slices of lemon/lime in glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7593,7 +7593,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake ingredients in a mixing tin filled with ice cubes</step>
-      <step>strain into a rocks glass.</step>
+      <step>strain into a rocks glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7610,7 +7610,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="schnapps" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml" garnish_type="">goldschlager</ingredient>
     </ingredients>
     <preparation>
-      <step>add over ice,shake and pour.</step>
+      <step>add over ice,shake and pour</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7641,8 +7641,8 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml" garnish_type="">jack daniels</ingredient>
     </ingredients>
     <preparation>
-      <step>put them them in a glass..</step>
-      <step>and slam it to tha head.</step>
+      <step>put them them in a glass</step>
+      <step>and slam it to tha head</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7676,7 +7676,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>drop shot glass with banana &amp; melon liquers into a 9 oz hi- ball glass containing soda water and cranberry juice</step>
-      <step>drink in one shot.</step>
+      <step>drink in one shot</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7692,7 +7692,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="brandy" basic_taste="" measure="1/3" quantity="10.0" unit="ml" garnish_type="">cognac</ingredient>
     </ingredients>
     <preparation>
-      <step>layered in a shot glass.</step>
+      <step>layered in a shot glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7707,7 +7707,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="1 oz bacardi" quantity="30.0" unit="ml" garnish_type="">151 proof rum</ingredient>
     </ingredients>
     <preparation>
-      <step>poor in the 151 first followed by the 101 served with a coke or dr pepper chaser.</step>
+      <step>poor in the 151 first followed by the 101 served with a coke or dr pepper chaser</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7724,7 +7724,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml" garnish_type="">absolut kurant</ingredient>
     </ingredients>
     <preparation>
-      <step>shake absolut kurant, midori, and cranberry juice in shaker with ice: strain into rocks glass: splash of seven on top.absolut sex.</step>
+      <step>shake absolut kurant, midori, and cranberry juice in shaker with ice: strain into rocks glass: splash of seven on top.absolut sex</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7765,7 +7765,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr1" alc_type="schnapps" basic_taste="" measure="1 part" quantity="30.0" unit="ml" garnish_type="">apple schnapps</ingredient>
     </ingredients>
     <preparation>
-      <step>pour into a shot glass and present to consumer, they are expected to cover the top of the shotglass with thier palm, raise the glass, slam it on the bar and the swallow quickly.</step>
+      <step>pour into a shot glass and present to consumer, they are expected to cover the top of the shotglass with thier palm, raise the glass, slam it on the bar and the swallow quickly</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7816,7 +7816,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>layer ingredients into a shot glass</step>
-      <step>serve with a stirrer.</step>
+      <step>serve with a stirrer</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7850,7 +7850,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>pour kahlua, almost filling shot glass</step>
       <step>then, carefully pour baileys, using wall of shot glass</step>
-      <step>this will give the "guinness" its "head".</step>
+      <step>this will give the "guinness" its "head"</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7898,7 +7898,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>layered erin first, then sambuca and then avocart(should sit in middle of other two</step>
-      <step>to drink: use a straw to suck up avocart then shot the rest and then suck fumes up through straw.</step>
+      <step>to drink: use a straw to suck up avocart then shot the rest and then suck fumes up through straw</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7913,7 +7913,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr1" alc_type="tequila" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml" garnish_type="">tequila</ingredient>
     </ingredients>
     <preparation>
-      <step>pour tabasco into bottom of shot glass and fill with tequila.</step>
+      <step>pour tabasco into bottom of shot glass and fill with tequila</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -7965,7 +7965,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="schnapps" basic_taste="" measure="1/4" quantity="7.5" unit="ml" garnish_type="">peach schnapps</ingredient>
     </ingredients>
     <preparation>
-      <step>layer in order into a shot glass.</step>
+      <step>layer in order into a shot glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8022,7 +8022,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>pour into shot glass</step>
       <step>put in mouth</step>
-      <step>repeat as deemed necessary.</step>
+      <step>repeat as deemed necessary</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8054,7 +8054,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="" basic_taste="spicy" measure="1 dash" quantity="1.0" unit="ml" garnish_type="">tabasco sauce</ingredient>
     </ingredients>
     <preparation>
-      <step>cover bottom of shot glass with tabasco sauce and then fill with half firewater and half absolut peppar.</step>
+      <step>cover bottom of shot glass with tabasco sauce and then fill with half firewater and half absolut peppar</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8109,7 +8109,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>coat the rim of a shot glass with sugar using sugar syrup to stick</step>
       <step>add the chambord raspberry liqueur to the shot glass, and carefully layer the baileys irish cream on top</step>
-      <step>serve.</step>
+      <step>serve</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8129,7 +8129,7 @@ add lemon twist peel.</step>
       <step>mix jello and water until jello is completely disolved</step>
       <step>add the two cups of vodka and mix together</step>
       <step>pour mixture into plastic shot glasses and chill until firm</step>
-      <step>then, eat away...</step>
+      <step>then, eat away</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8160,7 +8160,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>add kool aid to a double shot glass, and top with rum</step>
-      <step>slam and shoot.</step>
+      <step>slam and shoot</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8179,7 +8179,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour into a large glass with ice and stir</step>
-      <step>add a little cranberry juice to taste.</step>
+      <step>add a little cranberry juice to taste</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8197,7 +8197,7 @@ add lemon twist peel.</step>
       <step>fill half the shot glass with the kool-aid first</step>
       <step>then put a paper towel over the top of the glass and slowly pour in the vodka</step>
       <step>if you do it right, you should be able to see that the two liquids are separated, with the vodka on top</step>
-      <step>now slam it! the last thing you'll taste is the kool-aid.</step>
+      <step>now slam it! the last thing you'll taste is the kool-aid</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8218,7 +8218,7 @@ add lemon twist peel.</step>
       <step>mix galliano and absolut citron in a shot glass, lay lemon wedge sprinkled with sugar over glass and pour a rum over wedge and glass</step>
       <step>light rum with a lighter and let burn for a second</step>
       <step>do shot quickly and suck on lemon</step>
-      <step>if it is done correctly, this will taste like a shot of sweet lemonade.</step>
+      <step>if it is done correctly, this will taste like a shot of sweet lemonade</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8234,7 +8234,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="tequila" basic_taste="" measure="2/5" quantity="12.0" unit="ml" garnish_type="">tequila</ingredient>
     </ingredients>
     <preparation>
-      <step>first you put rhe absinthe, then put tequila, then put the granadine syrup.</step>
+      <step>first you put rhe absinthe, then put tequila, then put the granadine syrup</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8251,7 +8251,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>shake over ice, strain</step>
-      <step>serves two.</step>
+      <step>serves two</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8315,7 +8315,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr1" alc_type="whisky" basic_taste="" measure="1 part" quantity="30.0" unit="ml" garnish_type="">crown royal</ingredient>
     </ingredients>
     <preparation>
-      <step>into a shot glass layer the crown royal on top of the frangelico.</step>
+      <step>into a shot glass layer the crown royal on top of the frangelico</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8333,7 +8333,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>pour all the ingredients into tumbler over ice</step>
-      <step>strain into glass.</step>
+      <step>strain into glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8349,7 +8349,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1 part" quantity="30.0" unit="ml" garnish_type="">jim beam</ingredient>
     </ingredients>
     <preparation>
-      <step>pour one part jack daneils and one part jim beam into shot glass then float wild turkey on top.</step>
+      <step>pour one part jack daneils and one part jim beam into shot glass then float wild turkey on top</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8365,7 +8365,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>fill shot glass with tequila</step>
-      <step>add drops of tobasco sauce.</step>
+      <step>add drops of tobasco sauce</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8383,7 +8383,7 @@ add lemon twist peel.</step>
     </ingredients>
     <preparation>
       <step>mix all ingredients and shake well</step>
-      <step>sweet at first, with a bite at the end...</step>
+      <step>sweet at first, with a bite at the end</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8399,7 +8399,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 splash" quantity="6.0" unit="ml" garnish_type="">pineapple juice</ingredient>
     </ingredients>
     <preparation>
-      <step>shake with ice and strain into a shot glass.</step>
+      <step>shake with ice and strain into a shot glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8417,7 +8417,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>fill glass with rocks, add straw before putting in liquor</step>
       <step>then add the ingredients in order, trying to keep layered as much as possible (i.e</step>
-      <step>chambord on bottom, then vodka, then soda on top).</step>
+      <step>chambord on bottom, then vodka, then soda on top)</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8451,7 +8451,7 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="2 cl" quantity="20.0" unit="ml" garnish_type="">vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>just pour all ingredients in the glass and stir...</step>
+      <step>just pour all ingredients in the glass and stir</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8471,7 +8471,7 @@ add lemon twist peel.</step>
       <step>pour shot of rum over slice of orange</step>
       <step>fill the remaining space in glass half way full of surge or similar drink</step>
       <step>finish off glass with cranberry juice</step>
-      <step>be carefull, warm surge may foam over the glass.</step>
+      <step>be carefull, warm surge may foam over the glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8490,7 +8490,7 @@ add lemon twist peel.</step>
       <step>scoop two large scoops of vanilla ice-cream into frosted beer mug</step>
       <step>next, add 2 ounces maker's mark</step>
       <step>then, pour in coke</step>
-      <step>gently stir and enjoy.</step>
+      <step>gently stir and enjoy</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8543,7 +8543,7 @@ add lemon twist peel.</step>
       <step>add one share of the liqueur</step>
       <step>then you add one share of soda</step>
       <step>for a sour sling use tonic (most people prefer the drink without tonic)</step>
-      <step>afterwards you fill the glass with orange juice and ice cubes.</step>
+      <step>afterwards you fill the glass with orange juice and ice cubes</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8576,7 +8576,7 @@ add lemon twist peel.</step>
     <preparation>
       <step>get a shot glass and pour in three shots of the schnapps</step>
       <step>do the same with the surge cola</step>
-      <step>then down it like scheetz would.</step>
+      <step>then down it like scheetz would</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>

@@ -1,46 +1,63 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import List
+from xml.etree.ElementTree import Element
+
+from lxml import etree, objectify
 
 
 @dataclass
 class Ingredient:
-    __slots__ = ["id", "name", "measure", "quantity", "unit"]
-    id: str
-    name: str
-    measure: str
-    quantity: float
-    unit: str
+    id: str = ""
+    name: str = ""
+    measure: str = ""
+    quantity: float = 0.0
+    unit: str = ""
+
+    def from_element(self, element: Element):
+        self.id = element.id
+        self.name = element.name
+        self.measure = element.measure
+        self.quantity = float(element.quantity)
+        self.unit = element.unit
 
 
 @dataclass
 class AlcoholicIngredient(Ingredient):
-    __slots__ = ["alc_type"]
-    alc_type: str
+    alc_type: str = ""
 
 
 @dataclass
 class NonAlcoholicIngredient(Ingredient):
-    __slots__ = ["basic_taste"]
-    basic_taste: str
+    basic_taste: str = ""
 
 
 @dataclass
 class GarnishIngredient(Ingredient):
-    __slots__ = ["garnish_type"]
-    garnish_type: str
+    garnish_type: str = ""
 
 
 @dataclass
 class Cocktail:
-    __slots__ = ["name", "category", "glass", "ingredients", "preparation", "utility", "derivation", "evaluation"]
-    name: str
-    category: str
-    glass: str
-    ingredients: List[Ingredient]
-    preparation: List[str]
-    utility: float
-    derivation: str
-    evaluation: str
+    name: str = ""
+    category: str = ""
+    glass: str = ""
+    ingredients: List[Ingredient] = field(default_factory=list)
+    preparation: List[str] = field(default_factory=list)
+    utility: float = 0.0
+    derivation: str = ""
+    evaluation: str = ""
+
+    def from_element(self, element: Element):
+        self.name = element.name
+        self.category = element.category
+        self.glass = element.glass
+        self.ingredients = [Ingredient().from_element(ingredient) for ingredient in element.ingredients]
+        self.preparation = [step.text for step in element.preparation.step]
+        self.utility = float(element.utility)
+        self.derivation = element.derivation
+        self.evaluation = element.evaluation
+
+        return self
 
     def similarity(self, other):
         # TODO: define similarity of a cocktail to another.
