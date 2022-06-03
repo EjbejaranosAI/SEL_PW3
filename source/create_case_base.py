@@ -1,10 +1,11 @@
 import os
-from pathlib import Path
 
 import pandas as pd
 from lxml import etree
 from lxml.etree import SubElement
 from pandas import DataFrame
+
+from definitions import CASE_BASE, DATA_PATH
 
 
 def add_ingredient(id, row, ingredients):
@@ -90,8 +91,6 @@ def add_preparation(cocktail, row):
 
 
 if __name__ == "__main__":
-    data_folder = os.path.join(Path(os.path.dirname(__file__)).parent, "data")
-    df = pd.read_pickle(os.path.join(data_folder, "processed-cocktails-data.pkl"))
+    df = pd.read_pickle(os.path.join(DATA_PATH, "processed-cocktails-data.pkl"))
     df = df.sort_values("Cocktail")
-    xml_file = os.path.join(data_folder, "case_base.xml")
-    create_case_base(df, xml_file)
+    create_case_base(df, CASE_BASE)
