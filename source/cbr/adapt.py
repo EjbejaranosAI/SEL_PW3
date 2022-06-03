@@ -20,13 +20,35 @@ def adapt_glass(glass, recipe):
     recipe.find("glass").text = glass
 
 
+def adapt_category(category, recipe):
+    # TODO: adapt category if there is time
+    return recipe
+
+
 def subsumed(a, b):
     return a in b
 
 
 def adapt(query, recipe):
+    alc_types = set()
+    basic_tastes = set()
+    ingredients = set()
+    for ing in recipe.find("ingredients"):
+        if ing.attrib["alc_type"]:
+            alc_types.add(ing.attrib["alc_type"])
+        if ing.attrib["basic_taste"]:
+            basic_tastes.add(ing.attrib["basic_taste"])
+        ingredients.add(ing.text)
+
+    if not subsumed(query["category"], recipe.find("category").text):
+        adapt_category(query["category"], recipe)
+
     if not subsumed(query["glass"], recipe.find("glass").text):
         adapt_glass(query["glass"], recipe)
+
+    # for alc in query["alc_type"]:
+    #      if not subsumed(alc, alc_types):
+    #          adapt_alc_type(alc, recipe)
 
 
 if __name__ == "__main__":
@@ -41,3 +63,5 @@ if __name__ == "__main__":
              }
     recipe = random_recipe(xml_file)
     adapt(query, recipe)
+    print(recipe)
+
