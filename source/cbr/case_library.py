@@ -1,6 +1,63 @@
+from typing import Dict, List, Union
+
 from lxml import objectify
 
 from definitions import CASE_LIBRARY
+
+
+def _include_to_list(include_list: List[str], elements: Union[str, List[str]], is_exclusion=False):
+    if include_list:
+        if isinstance(elements, str):
+            if is_exclusion:
+                include_list.append(f"or @type!='{elements}'")
+            else:
+                include_list.append(f"or @type='{elements}'")
+        elif is_exclusion:
+            for inclusion in elements:
+                include_list.append(f"or @type!='{inclusion}'")
+        else:
+            for inclusion in elements:
+                include_list.append(f"or @type='{inclusion}'")
+    else:
+        if isinstance(elements, str):
+            if is_exclusion:
+                include_list = [f"@type!='{elements}'"]
+            else:
+                include_list = [f"@type='{elements}'"]
+        elif is_exclusion:
+            include_list = [f"@type!='{elements[0]}'"]
+            if len(elements) > 1:
+                for inclusion in elements[1:]:
+                    include_list.append(f"or @type!='{inclusion}'")
+        else:
+            include_list = [f"@type='{elements[0]}'"]
+            if len(elements) > 1:
+                for inclusion in elements[1:]:
+                    include_list.append(f"or @type='{inclusion}'")
+
+    return include_list
+
+
+def _include_to_dict(include_dict: Dict, key: str, elements: Union[str, List[str]], is_exclusion=False):
+    constraints_dict = include_dict.get(key, dict())
+    include_constraints = constraints_dict.get("include", [])
+    if include_constraints:
+        if isinstance(elements, str):
+            include_constraints.append(f"or @{key}='{elements}'")
+        else:
+            for inclusion in elements:
+                include_constraints.append(f"or @{key}='{inclusion}'")
+    else:
+        if isinstance(elements, str):
+            include_dict[key] = {"include": [f"@{key}='{elements}'"]}
+        else:
+            include_dict[key] = {"include": [f"@{key}='{elements[0]}'"]}
+            if len(elements) > 1:
+                include_constraints = include_dict[key]["include"]
+                for inclusion in elements[1:]:
+                    include_constraints.append(f"or @{key}='{inclusion}'")
+
+    return include_dict
 
 
 class CaseLibrary:
@@ -19,24 +76,36 @@ class CaseLibrary:
 
 
 class ConstraintsBuilder:
-    def __init__(self, category_constraint="", glass_constraint=""):
+    def __init__(self, include_category="", include_glass=""):
         self.constraints = "./"
-        if category_constraint:
-            self.category_constraints = [f"@type='{category_constraint}'"]
+        if include_category:
+            self.include_category = [f"@type='{include_category}'"]
         else:
-            self.category_constraints = []
-        if glass_constraint:
-            self.glass_constraint = [f"@type='{glass_constraint}'"]
+            self.include_category = []
+        if include_glass:
+            self.include_glass = [f"@type='{include_glass}'"]
         else:
-            self.glass_constraint = []
+            self.include_glass = []
+        self.exclude_category = []
+        self.exclude_glass = []
         self.ingredient_constraints = dict()
 
-    def or_category(self, category):
-        self.category_constraints.append(f"or @type='{category}'")
+    def filter_category(self, include: Union[str, List[str], None] = None, exclude: Union[str, List[str], None] = None):
+        if include is not None:
+            self.include_category = _include_to_list(self.include_category, include)
+
+        if exclude is not None:
+            self.exclude_category = _include_to_list(self.exclude_category, exclude, is_exclusion=True)
+
         return self
 
-    def or_glass(self, glass_type):
-        self.glass_constraint.append(f"or @type='{glass_type}'")
+    def filter_glass(self, include: Union[str, List[str], None] = None, exclude: Union[str, List[str], None] = None):
+        if include is not None:
+            self.include_glass = _include_to_list(self.include_glass, include)
+
+        if exclude is not None:
+            self.exclude_glass = _include_to_list(self.exclude_glass, exclude, is_exclusion=True)
+
         return self
 
     # def and_alc_type(self, alc_type):
@@ -47,12 +116,36 @@ class ConstraintsBuilder:
     #         alc_constraints.append([f"@alc_type='{alc_type}'"])
     #     return self
 
-    def or_alc_type(self, alc_type):
-        alc_constraints = self.ingredient_constraints.get("alc_type", [])
-        if alc_constraints:
-            alc_constraints.append(f"or @acl_type='{alc_type}'")
-        else:
-            self.ingredient_constraints["alc_type"] = [f"@alc_type='{alc_type}'"]
+    def filter_alc_type(self, include=None, exclude=None):
+        if include is not None:
+            self.ingredient_constraints = _include_to_dict(self.ingredient_constraints, "alc_type", include)
+            # alc_constraints = self.ingredient_constraints.get("alc_type", dict())
+            # include_constraints = alc_constraints.get('include', [])
+            # if include_constraints:
+            #     if isinstance(include, str):
+            #         include_constraints.append(f"or @acl_type='{include}'")
+            #     else:
+            #         for inclusion in include:
+            #             include_constraints.append(f"or @acl_type='{inclusion}'")
+            # else:
+            #     if isinstance(include, str):
+            #         self.ingredient_constraints["alc_type"] = {"include": [f"@alc_type='{include}'"]}
+            #     else:
+            #         self.ingredient_constraints["alc_type"] = {"include": [f"@alc_type='{include[0]}'"]}
+            #         if len(include) > 1:
+            #             for inclusion in include:
+            #                 include_constraints.append(f"or @acl_type='{inclusion}'")
+
+        if exclude is not None:
+            alc_constraints = self.ingredient_constraints.get("alc_type", dict())
+            exclude_constraints = alc_constraints.get("exclude", [])
+            if exclude_constraints:
+                exclude_constraints.append(f"or @acl_type!='{exclude}'")
+            elif alc_constraints:
+                self.ingredient_constraints["alc_type"]["exclude"] = [f"@alc_type!='{exclude}'"]
+            else:
+                self.ingredient_constraints["alc_type"] = {"exclude": [f"@alc_type!='{exclude}'"]}
+
         return self
 
     # def and_basic_taste(self, basic_taste):
@@ -63,44 +156,79 @@ class ConstraintsBuilder:
     #         taste_constraints.append([f"@basic_taste='{basic_taste}'"])
     #     return self
 
-    def or_basic_taste(self, basic_taste):
-        taste_constraints = self.ingredient_constraints.get("basic_taste", [])
-        if taste_constraints:
-            taste_constraints.append(f"or @basic_taste='{basic_taste}'")
-        else:
-            self.ingredient_constraints["basic_taste"] = [f"@basic_taste='{basic_taste}'"]
+    def filter_taste(self, include=None, exclude=None):
+        if include is not None:
+            taste_constraints = self.ingredient_constraints.get("basic_taste", dict())
+            include_constraints = taste_constraints.get("include", [])
+            if include_constraints:
+                include_constraints.append(f"or @basic_taste='{include}'")
+            else:
+                self.ingredient_constraints["basic_taste"] = {"include": [f"@basic_taste='{include}'"]}
+
+        if exclude is not None:
+            taste_constraints = self.ingredient_constraints.get("basic_taste", dict())
+            exclude_constraints = taste_constraints.get("exclude", [])
+            if exclude_constraints:
+                exclude_constraints.append(f"or @basic_taste!='{exclude}'")
+            else:
+                self.ingredient_constraints["basic_taste"] = {"exclude": [f"@basic_taste!='{exclude}'"]}
+
         return self
 
-    def or_garnish_type(self, garnish_type):
-        garnish_constraints = self.ingredient_constraints.get("garnish_type", [])
-        if garnish_constraints:
-            garnish_constraints.append(f"or @garnish_type='{garnish_type}'")
-        else:
-            self.ingredient_constraints["garnish_type"] = [f"@garnish_type='{garnish_type}'"]
+    def filter_garnish_type(self, include=None, exclude=None):
+        if include is not None:
+            garnish_constraints = self.ingredient_constraints.get("garnish_type", dict())
+            include_constraints = garnish_constraints.get("include", [])
+            if include_constraints:
+                include_constraints.append(f"or @garnish_type='{include}'")
+            else:
+                self.ingredient_constraints["garnish_type"] = {"include": [f"@garnish_type='{include}'"]}
+
+        if exclude is not None:
+            garnish_constraints = self.ingredient_constraints.get("garnish_type", dict())
+            exclude_constraints = garnish_constraints.get("exclude", [])
+            if exclude_constraints:
+                exclude_constraints.append(f"or @garnish_type!='{exclude}'")
+            else:
+                self.ingredient_constraints["garnish_type"] = {"exclude": [f"@garnish_type!='{exclude}'"]}
+
         return self
 
     def build(self):
         constraints = "./category"
-        if self.category_constraints:
-            cat_constraints = str.join(" ", self.category_constraints)
+        if self.include_category:
+            cat_constraints = str.join(" ", self.include_category)
+            constraints += f"[{cat_constraints}]"
+        if self.exclude_category:
+            cat_constraints = str.join(" ", self.exclude_category)
             constraints += f"[{cat_constraints}]"
         constraints += "/glass"
-        if self.glass_constraint:
-            glass_constraint = str.join(" ", self.glass_constraint)
+        if self.include_glass:
+            glass_constraint = str.join(" ", self.include_glass)
+            constraints += f"[{glass_constraint}]"
+        if self.exclude_glass:
+            glass_constraint = str.join(" ", self.exclude_glass)
             constraints += f"[{glass_constraint}]"
         constraints += "/cocktails/cocktail"
         if self.ingredient_constraints:
             for attr, values in self.ingredient_constraints.items():
-                constraints += f"[descendant::ingredient[{' '.join(values)}]]"
-            # ingredient_constraints = str.join(" ", self.ingredient_constraints)
-            # constraints += f"[{ingredient_constraints}]"
+                if "include" in values.keys():
+                    constraints += f"[descendant::ingredient[{' '.join(values['include'])}]]"
+                if "exclude" in values.keys():
+                    constraints += f"[descendant::ingredient[{' '.join(values['exclude'])}]]"
 
         return constraints
 
 
 if __name__ == "__main__":
     cl = CaseLibrary()
-    constraints = ConstraintsBuilder().or_alc_type("rum").or_alc_type("creamy liqueur").or_basic_taste("cream")
+    constraints = (
+        ConstraintsBuilder()
+        .filter_category(include="ordinary drink", exclude="shot")
+        .filter_alc_type(include=["creamy liqueur", "vodka"], exclude="rum")
+        .filter_taste(include="cream")
+    )
+    # constraints = ConstraintsBuilder().filter_category(include=["ordinary drink", "shot"])
     print(constraints.build())
     print(cl.findall(constraints))
     # print(cl.findall(
