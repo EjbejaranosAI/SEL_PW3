@@ -55,9 +55,9 @@ def replace_ingredient(ingr1, ingr1_id, ingr2, recipe):
     if ingr1.text != ingr2.text:
         if subsumed(ingr1.attrib["basic_taste"], ingr2.attrib["basic_taste"]) \
                 and subsumed(ingr1.attrib["alc_type"], ingr2.attrib["alc_type"]):
-            recipe.find("ingredients/ingredient[.='{}']".format(ingr1.text)).text = ingr2.text
+            ingr1.text = ingr2.text
             for step in recipe.findall("preparation/step"):
-                step.text = step.text.replace(ingr1_id, ingr2.text)
+                step.text = step.text.replace(ingr1_id, f"{ingr1.attrib['measure']} of {ingr2.text}")
             # substrings = ordered_combinations(ingr1.text)
             # for step in recipe.findall("preparation/step"):
             #     org_step = step
@@ -109,7 +109,7 @@ def build_ingredient(ingr_text, path_case_library):
 
 
 def replace_ids(recipe):
-    map = {ingr.attrib["id"]: ingr.text for ingr in recipe.findall("ingredients/ingredient")}
+    map = {ingr.attrib["id"]: f"{ingr.attrib['measure']} of {ingr.text}" for ingr in recipe.findall("ingredients/ingredient")}
     for step in recipe.findall("preparation/step"):
         step.text = re.sub('|'.join(re.escape(k) for k in map), lambda x: map[x.group()], step.text)
 
@@ -127,7 +127,8 @@ def adapt(query, recipes):
         ingredients.add(ing.text)
 
     for exc_ingr in query["exc_ingredients"]:
-        if subsumed(exc_ingr.text, ingredients):
+        if subsumed(exc_ingr, ingredients):
+            exc_ingr = recipe.find("ingredients/ingredient[.='{}']".format(exc_ingr))
             exclude_ingredient(exc_ingr, query["ingredients"], recipes)
 
     if not subsumed(query["category"], recipe.find("category").text):
@@ -163,7 +164,7 @@ if __name__ == "__main__":
              "ingredients": ["orange juice", "rum"],
              "exc_ingredients": ["light rum jamaican", "milk", "tequila"]
              }
-    query["exc_ingredients"] = [build_ingredient(exc_ingr, xml_file) for exc_ingr in query["exc_ingredients"]]
+    #query["exc_ingredients"] = [build_ingredient(exc_ingr, xml_file) for exc_ingr in query["exc_ingredients"]]
     query["ingredients"] = [build_ingredient(ingr, xml_file) for ingr in query["ingredients"]]
     recipes = [random_recipe(xml_file) for _ in range(5)]
 
