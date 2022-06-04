@@ -10,7 +10,7 @@ from xml.etree.ElementTree import Element
 from source.utils.helper import read_xml
 
 
-random.seed(31)
+random.seed(30)
 
 
 def random_recipe(path):
@@ -129,7 +129,6 @@ def adapt(query, recipes):
         if ing.attrib["basic_taste"]:
             basic_tastes.add(ing.attrib["basic_taste"])
         ingredients.add(ing.text)
-
 
     for exc_ingr in query["exc_ingredients"]:
         if subsumed(exc_ingr.text, ingredients):
