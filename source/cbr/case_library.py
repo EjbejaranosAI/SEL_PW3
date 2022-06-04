@@ -1,7 +1,6 @@
-from lxml import etree, objectify
+from lxml import objectify
 
 from definitions import CASE_LIBRARY
-from source.entity.cocktail import Cocktail, CocktailList
 
 
 class CaseLibrary:
@@ -11,8 +10,12 @@ class CaseLibrary:
         self.cocktails = None
 
     def findall(self, constraints):
-        cocktails = self.case_library.xpath(f"./{constraints}//cocktail")
-        return cocktails
+        if isinstance(constraints, str):
+            return self.case_library.xpath(constraints)
+        elif isinstance(constraints, ConstraintsBuilder):
+            return self.case_library.xpath(constraints.build())
+        else:
+            raise TypeError("constraints must be string or ConstraintsBuilder.")
 
 
 class ConstraintsBuilder:
@@ -26,7 +29,7 @@ class ConstraintsBuilder:
             self.glass_constraint = [f"@type='{glass_constraint}'"]
         else:
             self.glass_constraint = []
-        self.ingredient_constraints = []
+        self.ingredient_constraints = dict()
 
     def or_category(self, category):
         self.category_constraints.append(f"or @type='{category}'")
@@ -36,19 +39,69 @@ class ConstraintsBuilder:
         self.glass_constraint.append(f"or @type='{glass_type}'")
         return self
 
-    def and_ingredient(self, ingredient):
-        if self.ingredient_constraints:
-            self.ingredient_constraints.append(f"and ingredient='{ingredient}'")
+    # def and_alc_type(self, alc_type):
+    #     alc_constraints = self.ingredient_constraints.get('alc_type', [])
+    #     if alc_constraints:
+    #         alc_constraints.append((f"and @acl_type='{alc_type}'"))
+    #     else:
+    #         alc_constraints.append([f"@alc_type='{alc_type}'"])
+    #     return self
+
+    def or_alc_type(self, alc_type):
+        alc_constraints = self.ingredient_constraints.get('alc_type', [])
+        if alc_constraints:
+            alc_constraints.append(f"or @acl_type='{alc_type}'")
         else:
-            self.ingredient_constraints = [f"ingredient='{ingredient}'"]
+            self.ingredient_constraints['alc_type'] = [f"@alc_type='{alc_type}'"]
+        return self
+
+    # def and_basic_taste(self, basic_taste):
+    #     taste_constraints = self.ingredient_constraints.get('basic_taste', [])
+    #     if taste_constraints:
+    #         taste_constraints.append(f"and @basic_taste='{basic_taste}'")
+    #     else:
+    #         taste_constraints.append([f"@basic_taste='{basic_taste}'"])
+    #     return self
+
+    def or_basic_taste(self, basic_taste):
+        taste_constraints = self.ingredient_constraints.get('basic_taste', [])
+        if taste_constraints:
+            taste_constraints.append(f"or @basic_taste='{basic_taste}'")
+        else:
+            self.ingredient_constraints['basic_taste'] = [f"@basic_taste='{basic_taste}'"]
+        return self
+
+    def or_garnish_type(self, garnish_type):
+        garnish_constraints = self.ingredient_constraints.get('garnish_type', [])
+        if garnish_constraints:
+            garnish_constraints.append(f"or @garnish_type='{garnish_type}'")
+        else:
+            self.ingredient_constraints["garnish_type"] = [f"@garnish_type='{garnish_type}'"]
+        return self
 
     def build(self):
-        cat_constraints = str.join(" ", self.category_constraints)
-        glass_constraint = str.join(" ", self.glass_constraint)
-        ingredient_constraints = str.join(" ", self.ingredient_constraints)
-        return f"category[{cat_constraints}]/glass[{glass_constraint}]/cocktails/cocktail[{ingredient_constraints}]"
+        constraints = "./category"
+        if self.category_constraints:
+            cat_constraints = str.join(" ", self.category_constraints)
+            constraints += f"[{cat_constraints}]"
+        constraints += "/glass"
+        if self.glass_constraint:
+            glass_constraint = str.join(" ", self.glass_constraint)
+            constraints += f"[{glass_constraint}]"
+        constraints += "/cocktails/cocktail"
+        if self.ingredient_constraints:
+            for attr, values in self.ingredient_constraints.items():
+                constraints += f"[descendant::ingredient[{' '.join(values)}]]"
+            # ingredient_constraints = str.join(" ", self.ingredient_constraints)
+            # constraints += f"[{ingredient_constraints}]"
+
+        return constraints
 
 
 if __name__ == "__main__":
     cl = CaseLibrary()
-    print(cl.findall("./category[@type='beer']"))
+    constraints = ConstraintsBuilder().or_alc_type("rum").or_alc_type("creamy liqueur").or_basic_taste("cream")
+    print(constraints.build())
+    print(cl.findall(constraints))
+    # print(cl.findall(
+    #     "./category/glass//cocktail[descendant::ingredient[@alc_type='rum' or @alc_type='creamy liqueur']][descendant::ingredient[@basic_taste='cream']]"))
