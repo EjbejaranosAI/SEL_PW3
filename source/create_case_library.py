@@ -63,9 +63,10 @@ def add_preparation(cocktail, row, ingredients_list):
             else:
                 for permutation in permutations(combination):
                     seen_permutations.append(permutation)
-                    match = re.search(
-                        r"\s?({}\.?)?\s?{}\b".format(measure, " ".join(permutation)), preparation, flags=re.IGNORECASE
-                    )
+                    pattern = r"\s?({}\.?\s?(of)?)?\s?{}\b".format(measure, " ".join(permutation))
+                    if "coffee" in permutation:
+                        pattern += r"(?!\scup)"
+                    match = re.search(pattern, preparation, flags=re.IGNORECASE)
                     if match is not None and len(match.group()) > longest_match:
                         longest_match = len(match.group())
                         best_match = match

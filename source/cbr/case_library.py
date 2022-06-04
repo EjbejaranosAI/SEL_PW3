@@ -48,11 +48,11 @@ class ConstraintsBuilder:
     #     return self
 
     def or_alc_type(self, alc_type):
-        alc_constraints = self.ingredient_constraints.get('alc_type', [])
+        alc_constraints = self.ingredient_constraints.get("alc_type", [])
         if alc_constraints:
             alc_constraints.append(f"or @acl_type='{alc_type}'")
         else:
-            self.ingredient_constraints['alc_type'] = [f"@alc_type='{alc_type}'"]
+            self.ingredient_constraints["alc_type"] = [f"@alc_type='{alc_type}'"]
         return self
 
     # def and_basic_taste(self, basic_taste):
@@ -64,15 +64,15 @@ class ConstraintsBuilder:
     #     return self
 
     def or_basic_taste(self, basic_taste):
-        taste_constraints = self.ingredient_constraints.get('basic_taste', [])
+        taste_constraints = self.ingredient_constraints.get("basic_taste", [])
         if taste_constraints:
             taste_constraints.append(f"or @basic_taste='{basic_taste}'")
         else:
-            self.ingredient_constraints['basic_taste'] = [f"@basic_taste='{basic_taste}'"]
+            self.ingredient_constraints["basic_taste"] = [f"@basic_taste='{basic_taste}'"]
         return self
 
     def or_garnish_type(self, garnish_type):
-        garnish_constraints = self.ingredient_constraints.get('garnish_type', [])
+        garnish_constraints = self.ingredient_constraints.get("garnish_type", [])
         if garnish_constraints:
             garnish_constraints.append(f"or @garnish_type='{garnish_type}'")
         else:
