@@ -50,28 +50,29 @@ def add_preparation(cocktail, row, ingredients_list):
     cocktail_preparation = etree.SubElement(cocktail, "preparation")
     preparation = row["Steps"]
     preparation = re.sub(r"&", "and", preparation)
-    for id, measure, ingredient in ingredients_list:
+    for ingr_id, measure, ingredient in ingredients_list:
         ingredient_w = ingredient.split()
-        # pattern = r"\b({})?\s?{}".format(measure, ingredient)
         pattern = ""
         longest_match = 0
         best_match = None
         seen_permutations = []
+        # Search for the longest match for all possible permutations in the ingredient name
         for combination in powerset(ingredient_w):
             if combination in seen_permutations:
                 continue
             else:
                 for permutation in permutations(combination):
                     seen_permutations.append(permutation)
-                    # pattern += r"|\b({})?\s?{}\b".format(measure, " ".join(permutation))
-                    match = re.search(r"\s?({}\.?)?\s?{}\b".format(measure, " ".join(permutation)), preparation, flags=re.IGNORECASE)
+                    match = re.search(
+                        r"\s?({}\.?)?\s?{}\b".format(measure, " ".join(permutation)), preparation, flags=re.IGNORECASE
+                    )
                     if match is not None and len(match.group()) > longest_match:
                         longest_match = len(match.group())
                         best_match = match
 
-        # pattern = pattern[1:]  # remove first OR operator
+        # If there is a match replace by the ingredient ID
         if best_match:
-            preparation = re.sub(best_match.re, f" {id}", preparation)
+            preparation = re.sub(best_match.re, f" {ingr_id}", preparation)
 
     steps = re.split(r"(?<!(oz|ml|gr))\. |\b\d+\.", preparation)
     for s in steps:

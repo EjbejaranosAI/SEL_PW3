@@ -2,9 +2,10 @@ import os
 import sys
 from pathlib import Path
 
-sys.path.append('..')
+sys.path.append("..")
 
 import random
+
 from source.utils.helper import read_xml
 
 
@@ -43,8 +44,9 @@ def include_ingredient(ing, recipe):
 
 
 def replace_ingredient(ingr1, ingr2, recipe):
-    if subsumed(ingr1.attrib["basic_taste"], ingr2.attrib["basic_taste"]) \
-            and subsumed(ingr1.attrib["alc_type"], ingr2.attrib["alc_type"]):
+    if subsumed(ingr1.attrib["basic_taste"], ingr2.attrib["basic_taste"]) and subsumed(
+        ingr1.attrib["alc_type"], ingr2.attrib["alc_type"]
+    ):
         recipe.find("ingredients/ingredient[.=ingr1.text]").text = ingr2.text
         return True
     return False
@@ -106,12 +108,13 @@ def adapt(query, recipes):
 if __name__ == "__main__":
     data_folder = os.path.join(Path(os.path.dirname(__file__)).parent.parent, "data")
     xml_file = os.path.join(data_folder, "case_base.xml")
-    query = {"category": "ordinary drink",
-             "glass": "xxx",
-             "alc_type": ["vermouth", "whisky"],
-             "basic_taste": ["sweet", "sour"],
-             "ingredients": ["whisky", "cherry liqueur"],
-             "exclude_ingredients": ["dry vermouth", "lemon peel"]
-             }
+    query = {
+        "category": "ordinary drink",
+        "glass": "xxx",
+        "alc_type": ["vermouth", "whisky"],
+        "basic_taste": ["sweet", "sour"],
+        "ingredients": ["whisky", "cherry liqueur"],
+        "exclude_ingredients": ["dry vermouth", "lemon peel"],
+    }
     recipes = [random_recipe(xml_file) for _ in range(5)]
     adapt(query, recipes)

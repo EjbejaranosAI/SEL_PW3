@@ -1,6 +1,6 @@
 import os
 import xml.etree.ElementTree as ET
-from itertools import combinations, chain
+from itertools import chain, combinations
 from typing import Union
 
 import pandas as pd
