@@ -1,4 +1,6 @@
 import os
+import re
+from itertools import permutations
 
 import pandas as pd
 from lxml import etree
@@ -6,6 +8,7 @@ from lxml.etree import SubElement
 from pandas import DataFrame
 
 from definitions import CASE_BASE, CASE_LIBRARY, DATA_PATH
+from source.utils.helper import powerset
 
 
 def add_ingredient(id, row, ingredients):
@@ -43,52 +46,81 @@ def add_ingredient(id, row, ingredients):
     ingredient.text = row["Ingredient"]
 
 
+def add_preparation(cocktail, row, ingredients_list):
+    cocktail_preparation = etree.SubElement(cocktail, "preparation")
+    preparation = row["Steps"]
+    preparation = re.sub(r"&", "and", preparation)
+    for id, measure, ingredient in ingredients_list:
+        ingredient_w = ingredient.split()
+        # pattern = r"\b({})?\s?{}".format(measure, ingredient)
+        pattern = ""
+        longest_match = 0
+        best_match = None
+        seen_permutations = []
+        for combination in powerset(ingredient_w):
+            if combination in seen_permutations:
+                continue
+            else:
+                for permutation in permutations(combination):
+                    seen_permutations.append(permutation)
+                    # pattern += r"|\b({})?\s?{}\b".format(measure, " ".join(permutation))
+                    match = re.search(r"\s?({}\.?)?\s?{}\b".format(measure, " ".join(permutation)), preparation, flags=re.IGNORECASE)
+                    if match is not None and len(match.group()) > longest_match:
+                        longest_match = len(match.group())
+                        best_match = match
+
+        # pattern = pattern[1:]  # remove first OR operator
+        if best_match:
+            preparation = re.sub(best_match.re, f" {id}", preparation)
+
+    steps = re.split(r"(?<!(oz|ml|gr))\. |\b\d+\.", preparation)
+    for s in steps:
+        if s:
+            step = etree.SubElement(cocktail_preparation, "step")
+            step.text = s.strip(" .")
+
+
 def create_case_base(data: DataFrame, output_file):
     # Sort the cocktails by category while keeping the ingredients for the same recipe grouped.
     data = data.sort_values(by=["Category", "Cocktail"])
+    grouped_data = data.groupby(["Cocktail"])
     cocktails = etree.Element("cocktails")
-    previous_cocktail = ""
-    cocktail_ingredients = None
-    ingredient_idx = 0
 
-    for idx, row in data.iterrows():
-        name = row["Cocktail"]
-        if name == previous_cocktail:
+    for group_name, df_group in grouped_data:
+        ingredient_idx = 0
+        ingredients_list = []
+        # Initialize cocktail element with the first row of the recipe.
+        first_row = df_group.iloc[0]
+        cocktail = etree.SubElement(cocktails, "cocktail")
+        cocktail_name = etree.SubElement(cocktail, "name")
+        cocktail_name.text = group_name
+        cocktail_category = etree.SubElement(cocktail, "category")
+        cocktail_category.text = first_row["Category"]
+        cocktail_glass = etree.SubElement(cocktail, "glass")
+        cocktail_glass.text = first_row["Glass"]
+        cocktail_ingredients = etree.SubElement(cocktail, "ingredients")
+        add_ingredient(ingredient_idx, first_row, cocktail_ingredients)
+        ingredients_list.append((f"ingr{ingredient_idx}", first_row["Measure"], first_row["Ingredient"]))
+        ingredient_idx += 1
+
+        # Add the rest of the ingredients
+        for idx, row in df_group.iloc[1:].iterrows():
             add_ingredient(ingredient_idx, row, cocktail_ingredients)
+            ingredients_list.append((f"ingr{ingredient_idx}", row["Measure"], row["Ingredient"]))
             ingredient_idx += 1
-        else:
-            ingredient_idx = 0
-            cocktail = etree.SubElement(cocktails, "cocktail")
-            cocktail_name = etree.SubElement(cocktail, "name")
-            cocktail_name.text = name
-            cocktail_category = etree.SubElement(cocktail, "category")
-            cocktail_category.text = row["Category"]
-            cocktail_glass = etree.SubElement(cocktail, "glass")
-            cocktail_glass.text = row["Glass"]
-            cocktail_ingredients = etree.SubElement(cocktail, "ingredients")
-            add_ingredient(ingredient_idx, row, cocktail_ingredients)
-            ingredient_idx += 1
-            add_preparation(cocktail, row)
-            utility = etree.SubElement(cocktail, "utility")
-            utility.text = str(1.0)
-            derivation = etree.SubElement(cocktail, "derivation")
-            derivation.text = "Original"
-            evaluation = etree.SubElement(cocktail, "evaluation")
-            evaluation.text = "Success"
-        previous_cocktail = name
+
+        add_preparation(cocktail, first_row, ingredients_list)
+
+        # Add default evaluation metrics
+        utility = etree.SubElement(cocktail, "utility")
+        utility.text = str(1.0)
+        derivation = etree.SubElement(cocktail, "derivation")
+        derivation.text = "Original"
+        evaluation = etree.SubElement(cocktail, "evaluation")
+        evaluation.text = "Success"
 
     tree = etree.ElementTree(cocktails)
     tree.write(output_file, pretty_print=True, encoding="utf-8")
-
-
-def add_preparation(cocktail, row):
-    cocktail_preparation = etree.SubElement(cocktail, "preparation")
-    steps = row["Steps"].split(". ")
-    for s in steps:
-        if s:
-
-            step = etree.SubElement(cocktail_preparation, "step")
-            step.text = s.strip(" .")
 
 
 def create_case_library(output_file):

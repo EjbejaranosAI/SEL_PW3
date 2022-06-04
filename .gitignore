@@ -1,3 +1,6 @@
+### Custom exclusions
+.idea/**/other.xml
+
 ### VisualStudioCode template
 .vscode/*
 !.vscode/settings.json
