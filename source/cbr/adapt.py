@@ -7,7 +7,7 @@ sys.path.append("..")
 
 import random
 from itertools import combinations_with_replacement
-from xml.etree.ElementTree import Element
+from xml.etree.ElementTree import Element, SubElement
 from source.utils.helper import read_xml
 
 
@@ -40,8 +40,13 @@ def adapt_basic_taste(taste, recipe):
     pass
 
 
-def include_ingredient(ing, recipe):
-    pass
+def include_ingredient(ingr, recipe):
+    ingr.attrib["id"] = f"ingr0{len(recipe.findall('ingredients/ingredient'))}"
+    ingr.attrib["measure"] = "some"
+    recipe.find("ingredients").append(ingr)
+    step = Element("step")
+    step.text = f"add some {ingr.text} to taste"
+    recipe.find("preparation").insert(0, step)
 
 
 def ordered_combinations(ingr):
@@ -114,8 +119,7 @@ def replace_ids(recipe):
         step.text = re.sub('|'.join(re.escape(k) for k in map), lambda x: map[x.group()], step.text)
 
 
-def adapt(query, recipes):
-    recipe = recipes[0]
+def update_ingr_list(recipe):
     alc_types = set()
     basic_tastes = set()
     ingredients = set()
@@ -125,11 +129,19 @@ def adapt(query, recipes):
         if ing.attrib["basic_taste"]:
             basic_tastes.add(ing.attrib["basic_taste"])
         ingredients.add(ing.text)
+    return alc_types, basic_tastes, ingredients
+
+
+def adapt(query, recipes):
+    recipe = recipes[0]
+    alc_types, basic_tastes, ingredients = update_ingr_list(recipe)
 
     for exc_ingr in query["exc_ingredients"]:
         if subsumed(exc_ingr, ingredients):
             exc_ingr = recipe.find("ingredients/ingredient[.='{}']".format(exc_ingr))
             exclude_ingredient(exc_ingr, query["ingredients"], recipes)
+
+    alc_types, basic_tastes, ingredients = update_ingr_list(recipe)
 
     if not subsumed(query["category"], recipe.find("category").text):
         adapt_category(query["category"], recipe)
@@ -141,9 +153,13 @@ def adapt(query, recipes):
         if not subsumed(alc, alc_types):
             adapt_alc_type(alc, recipe)
 
+    alc_types, basic_tastes, ingredients = update_ingr_list(recipe)
+
     for taste in query["basic_taste"]:
         if not subsumed(taste, basic_tastes):
             adapt_basic_taste(taste, recipe)
+
+    alc_types, basic_tastes, ingredients = update_ingr_list(recipe)
 
     for ingr in query["ingredients"]:
         if not subsumed(ingr, ingredients):
