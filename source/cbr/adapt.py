@@ -1,5 +1,6 @@
 import os
 import sys
+import re
 from pathlib import Path
 
 sys.path.append("..")
@@ -15,10 +16,6 @@ random.seed(30)
 
 def random_recipe(path):
     root = read_xml(path)
-    # xml_recipe = root[random.randint(0, len(root)-1)]
-    # recipe = {}
-    # for att in xml_recipe:
-    #     recipe[att.tag] = att.text
     return root[random.randint(0, len(root) - 1)]
 
 
@@ -54,56 +51,49 @@ def ordered_combinations(ingr):
     return substrings
 
 
-def replace_ingredient(ingr1, ingr2, recipe):
+def replace_ingredient(ingr1, ingr1_id, ingr2, recipe):
     if ingr1.text != ingr2.text:
         if subsumed(ingr1.attrib["basic_taste"], ingr2.attrib["basic_taste"]) \
                 and subsumed(ingr1.attrib["alc_type"], ingr2.attrib["alc_type"]):
             recipe.find("ingredients/ingredient[.='{}']".format(ingr1.text)).text = ingr2.text
-            substrings = ordered_combinations(ingr1.text)
             for step in recipe.findall("preparation/step"):
-                org_step = step
-                for sub in substrings:
-                    step.text = step.text.replace(sub, ingr2.text)
-                    if step.text != org_step:
-                        break
+                step.text = step.text.replace(ingr1_id, ingr2.text)
+            # substrings = ordered_combinations(ingr1.text)
+            # for step in recipe.findall("preparation/step"):
+            #     org_step = step
+            #     for sub in substrings:
+            #         step.text = step.text.replace(sub, ingr2.text)
+            #         if step.text != org_step:
+            #             break
             return True
     return False
 
 
-# def replace_ingredient(ingr1, ingr2, recipe, path_case_library):
-#     if not isinstance(ingr1, Element):
-#         ingr1 = build_ingredient(ingr1, path_case_library)
-#     if not isinstance(ingr2, Element):
-#         ingr2 = build_ingredient(ingr2, path_case_library)
-#     return replace_ingredient_(ingr1, ingr2, recipe)
-
-
 def count_ingr_ids(step):
-    # TODO
-    return -1
+    return step.text.count("ingr")
 
 
-def delete_ingredient(ingr, recipe):
+def delete_ingredient(ingr, ingr_id, recipe):
     recipe.find("ingredients").remove(recipe.find("ingredients/ingredient[.='{}']".format(ingr.text)))
     for step in recipe.findall("preparation/step"):
-        if subsumed(ingr.text, step.text):
+        if subsumed(ingr_id, step.text):
             if count_ingr_ids(step) > 1:
-                # TODO
-                pass
+                step.text = step.text.replace(ingr_id, "[IGNORE]")
             else:
                 recipe.find("preparation").remove(step)
 
 
 def exclude_ingredient(exc_ingr, inc_ingrs, recipes):
+    exc_ingr_id = recipes[0].find("ingredients/ingredient[.='{}']".format(exc_ingr.text)).attrib["id"]
     replaced = False
     for ingr in inc_ingrs:
-        if replace_ingredient(exc_ingr, ingr, recipes[0]):
+        if replace_ingredient(exc_ingr, exc_ingr_id, ingr, recipes[0]):
             return
-    for recipe in recipes:
+    for recipe in recipes[1:]:
         for ingr in recipe.findall("ingredients/ingredient"):
-            if replace_ingredient(exc_ingr, ingr, recipes[0]):
+            if replace_ingredient(exc_ingr, exc_ingr_id, ingr, recipes[0]):
                 return
-    delete_ingredient(exc_ingr, recipes[0])
+    delete_ingredient(exc_ingr, exc_ingr_id, recipes[0])
 
 
 def build_ingredient(ingr_text, path_case_library):
@@ -116,6 +106,12 @@ def build_ingredient(ingr_text, path_case_library):
     ingr = Element("ingredient", attrib=attribs)
     ingr.text = ingr_text
     return ingr
+
+
+def replace_ids(recipe):
+    map = {ingr.attrib["id"]: ingr.text for ingr in recipe.findall("ingredients/ingredient")}
+    for step in recipe.findall("preparation/step"):
+        step.text = re.sub('|'.join(re.escape(k) for k in map), lambda x: map[x.group()], step.text)
 
 
 def adapt(query, recipes):
@@ -152,6 +148,8 @@ def adapt(query, recipes):
         if not subsumed(ingr, ingredients):
             include_ingredient(ingr, recipe)
 
+    replace_ids(recipe)
+
     return recipe
 
 
@@ -163,7 +161,7 @@ if __name__ == "__main__":
              "alc_type": ["vermouth", "whisky"],
              "basic_taste": ["sweet", "sour"],
              "ingredients": ["orange juice", "rum"],
-             "exc_ingredients": ["blackcurrant cordial", "cider"]
+             "exc_ingredients": ["light rum jamaican", "milk", "tequila"]
              }
     query["exc_ingredients"] = [build_ingredient(exc_ingr, xml_file) for exc_ingr in query["exc_ingredients"]]
     query["ingredients"] = [build_ingredient(ingr, xml_file) for ingr in query["ingredients"]]
