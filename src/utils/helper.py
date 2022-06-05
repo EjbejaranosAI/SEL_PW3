@@ -1,4 +1,5 @@
 import os
+import re
 import xml.etree.ElementTree as ET
 from itertools import chain, combinations
 from typing import Union
@@ -55,3 +56,9 @@ def bar_plot(df: DataFrame, column: Union[int, str]):
         series = df.iloc[:, column]
     series.value_counts().plot.bar()
     plt.show()
+
+
+def replace_ids(recipe):
+    equiv = {ingr.attrib["id"]: f"{ingr.attrib['measure']} of {ingr.text}" for ingr in recipe.findall("ingredients/ingredient")}
+    for step in recipe.findall("preparation/step"):
+        step.text = re.sub('|'.join(re.escape(k) for k in equiv), lambda x: equiv[x.group()], step.text)
