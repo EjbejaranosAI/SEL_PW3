@@ -98,9 +98,14 @@ def exclude_ingredient(exc_ingr, inc_ingrs, recipes):
         for ingr in recipe.findall("ingredients/ingredient"):
             if replace_ingredient(exc_ingr, exc_ingr_id, ingr, recipes[0]):
                 return
-    exc_ingr.text = search_ingredient(CASE_BASE, basic_taste=exc_ingr.attrib["basic_taste"], alc_type=exc_ingr.attrib["alc_type"]).text
-    if not exc_ingr.text:
-        delete_ingredient(exc_ingr, exc_ingr_id, recipes[0])
+    while True:
+        similar_ingr = search_ingredient(CASE_BASE, basic_taste=exc_ingr.attrib["basic_taste"], alc_type=exc_ingr.attrib["alc_type"])
+        if not similar_ingr:
+            delete_ingredient(exc_ingr, exc_ingr_id, recipes[0])
+            return
+        if exc_ingr.text != similar_ingr.text:
+            exc_ingr.text = similar_ingr.text
+            return
 
 
 def search_ingredient(path_case_library, ingr_text=None, basic_taste=None, alc_type=None):
