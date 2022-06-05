@@ -32,12 +32,18 @@ def subsumed(a, b):
     return a in b
 
 
-def adapt_alc_type(alc, recipe):
-    pass
-
-
-def adapt_basic_taste(taste, recipe):
-    pass
+def adapt_alcs_and_tastes(exc_ingrs, recipes, alc_type="", basic_taste=""):
+    for recipe in recipes[1:]:
+        similar_ingrs = recipe.findall("ingredients/ingredient[@basic_taste='{}'][@alc_type='{}']".format(basic_taste, alc_type))
+        for si in similar_ingrs:
+            if not subsumed(si.text, exc_ingrs):
+                include_ingredient(si, recipes[0])
+                return
+    while True:
+        similar_ingr = search_ingredient(CASE_BASE, basic_taste=basic_taste, alc_type=alc_type)
+        if not subsumed(similar_ingr.text, exc_ingrs):
+            include_ingredient(similar_ingr, recipes[0])
+            return
 
 
 def include_ingredient(ingr, recipe):
@@ -90,7 +96,6 @@ def delete_ingredient(ingr, ingr_id, recipe):
 
 def exclude_ingredient(exc_ingr, inc_ingrs, recipes):
     exc_ingr_id = recipes[0].find("ingredients/ingredient[.='{}']".format(exc_ingr.text)).attrib["id"]
-    replaced = False
     for ingr in inc_ingrs:
         if replace_ingredient(exc_ingr, exc_ingr_id, ingr, recipes[0]):
             return
@@ -156,15 +161,13 @@ def adapt(query, recipes):
 
     alc_types, basic_tastes, ingredients = update_ingr_list(recipe)
 
-    for alc in query["alc_type"]:
-        if not subsumed(alc, alc_types):
-            adapt_alc_type(alc, recipe)
+    for alc_type in query["alc_type"]:
+        if not subsumed(alc_type, alc_types):
+            adapt_alcs_and_tastes(query["exc_ingredients"], recipes, alc_type=alc_type)
 
-    alc_types, basic_tastes, ingredients = update_ingr_list(recipe)
-
-    for taste in query["basic_taste"]:
-        if not subsumed(taste, basic_tastes):
-            adapt_basic_taste(taste, recipe)
+    for basic_taste in query["basic_taste"]:
+        if not subsumed(basic_taste, basic_tastes):
+            adapt_alcs_and_tastes(query["exc_ingredients"], recipes, basic_taste=basic_taste)
 
     return recipe
 
@@ -174,7 +177,7 @@ if __name__ == "__main__":
     query = {"category": "ordinary drink",
              "glass": "xxx",
              "alc_type": ["vermouth", "whisky"],
-             "basic_taste": ["sweet", "sour"],
+             "basic_taste": ["sweet", "sour", "salty"],
              "ingredients": ["orange juice", "rum"],
              "exc_ingredients": ["lemon juice", "gin", "orange"]
              }
