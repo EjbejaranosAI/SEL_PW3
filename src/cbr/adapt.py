@@ -9,7 +9,7 @@ import random
 from itertools import combinations_with_replacement
 from xml.etree.ElementTree import Element, SubElement
 from src.utils.helper import read_xml
-
+from definitions import CASE_BASE
 
 random.seed(10)
 
@@ -98,8 +98,9 @@ def exclude_ingredient(exc_ingr, inc_ingrs, recipes):
         for ingr in recipe.findall("ingredients/ingredient"):
             if replace_ingredient(exc_ingr, exc_ingr_id, ingr, recipes[0]):
                 return
-
-    delete_ingredient(exc_ingr, exc_ingr_id, recipes[0])
+    exc_ingr.text = search_ingredient(CASE_BASE, basic_taste=exc_ingr.attrib["basic_taste"], alc_type=exc_ingr.attrib["alc_type"]).text
+    if not exc_ingr.text:
+        delete_ingredient(exc_ingr, exc_ingr_id, recipes[0])
 
 
 def search_ingredient(path_case_library, ingr_text=None, basic_taste=None, alc_type=None):
@@ -110,6 +111,8 @@ def search_ingredient(path_case_library, ingr_text=None, basic_taste=None, alc_t
         return random.choice(root.findall("cocktail/ingredients/ingredient[@basic_taste='{}']".format(basic_taste)))
     if alc_type:
         return random.choice(root.findall("cocktail/ingredients/ingredient[@alc_type='{}']".format(alc_type)))
+    else:
+        return
 
 
 def update_ingr_list(recipe):
@@ -163,7 +166,6 @@ def adapt(query, recipes):
 
 if __name__ == "__main__":
     data_folder = os.path.join(Path(os.path.dirname(__file__)).parent.parent, "data")
-    xml_file = os.path.join(data_folder, "case_base.xml")
     query = {"category": "ordinary drink",
              "glass": "xxx",
              "alc_type": ["vermouth", "whisky"],
@@ -171,8 +173,8 @@ if __name__ == "__main__":
              "ingredients": ["orange juice", "rum"],
              "exc_ingredients": ["lemon juice", "gin", "orange"]
              }
-    query["ingredients"] = [search_ingredient(xml_file, ingr_text=ingr) for ingr in query["ingredients"]]
-    recipes = [random_recipe(xml_file) for _ in range(5)]
+    query["ingredients"] = [search_ingredient(CASE_BASE, ingr_text=ingr) for ingr in query["ingredients"]]
+    recipes = [random_recipe(CASE_BASE) for _ in range(5)]
 
     print(f"Ingredients before: {[e.text for e in recipes[0].findall('ingredients/ingredient')]}")
     print(f"Steps before: {[e.text for e in recipes[0].findall('preparation/step')]}")
