@@ -5,50 +5,6 @@ from lxml import objectify
 from definitions import CASE_LIBRARY
 
 
-
-class CaseLibrary:
-    def __init__(self):
-        self.ET = objectify.parse(CASE_LIBRARY)
-        self.case_library = self.ET.getroot()
-        self.cocktails = None
-
-    def findall(self, constraints):
-        if isinstance(constraints, str):
-            return self.case_library.xpath(constraints)
-        elif isinstance(constraints, ConstraintsBuilder):
-            return self.case_library.xpath(constraints.build())
-        else:
-            raise TypeError("constraints must be string or ConstraintsBuilder.")
-
-
-
-
-class ConstraintsBuilder:
-    def __init__(self, include_dict: Dict = None, exclude_dict: Dict = None):
-        self.include_dict = include_dict if include_dict else dict()
-        self.exclude_dict = exclude_dict if exclude_dict else dict()
-
-    def include(self, key: str, elements: Union[str, List[str]]):
-        self.include_dict = _include_to_dict(self.include_dict, key, elements)
-        return self
-
-    def exclude(self, key: str, elements: Union[str, List[str]]):
-        self.exclude_dict = _include_to_dict(self.exclude_dict, key, elements, is_exclusion=True)
-        return self
-
-    def build(self):
-        include_list = []
-        for key, value in self.include_dict.items():
-            include_list = _include_to_list(include_list, value["include"])
-        for key, value in self.exclude_dict.items():
-            include_list = _include_to_list(include_list, value["include"], is_exclusion=True)
-
-        if include_list:
-            return f"//cocktail[{' and '.join(include_list)}]"
-        else:
-            return "//cocktail"
-
-
 def _include_to_list(include_list: List[str], elements: Union[str, List[str]], is_exclusion=False):
     if include_list:
         if isinstance(elements, str):
@@ -84,27 +40,58 @@ def _include_to_list(include_list: List[str], elements: Union[str, List[str]], i
 
 def _include_to_dict(include_dict: Dict, key: str, elements: Union[str, List[str]], is_exclusion=False):
     constraints_dict = include_dict.get(key, dict())
-    include_constraints = constraints_dict.get("include", [])
+    if is_exclusion:
+        include_constraints = constraints_dict.get("exclude", [])
+    else:
+        include_constraints = constraints_dict.get("include", [])
     if include_constraints:
         if isinstance(elements, str):
-            include_constraints.append(f"or @{key}='{elements}'")
+            if is_exclusion:
+                include_constraints.append(f"and @{key}!='{elements}'")
+            else:
+                include_constraints.append(f"and @{key}='{elements}'")
         else:
-            for inclusion in elements:
-                include_constraints.append(f"or @{key}='{inclusion}'")
+            if is_exclusion:
+                for inclusion in elements:
+                    include_constraints.append(f"and @{key}!='{inclusion}'")
+            else:
+                for inclusion in elements:
+                    include_constraints.append(f"and @{key}='{inclusion}'")
     else:
         if isinstance(elements, str):
-            include_dict[key] = {"include": [f"@{key}='{elements}'"]}
+            if is_exclusion:
+                include_dict[key] = {"exclude": [f"@{key}!='{elements}'"]}
+            else:
+                include_dict[key] = {"include": [f"@{key}='{elements}'"]}
         else:
-            include_dict[key] = {"include": [f"@{key}='{elements[0]}'"]}
-            if len(elements) > 1:
-                include_constraints = include_dict[key]["include"]
-                for inclusion in elements[1:]:
-                    include_constraints.append(f"or @{key}='{inclusion}'")
-
+            if is_exclusion:
+                include_dict[key] = {"exclude": [f"@{key}!='{elements[0]}'"]}
+                if len(elements) > 1:
+                    include_constraints = include_dict[key]["exclude"]
+                    for inclusion in elements[1:]:
+                        include_constraints.append(f"and @{key}!='{inclusion}'")
+            else:
+                include_dict[key] = {"include": [f"@{key}='{elements[0]}'"]}
+                if len(elements) > 1:
+                    include_constraints = include_dict[key]["include"]
+                    for inclusion in elements[1:]:
+                        include_constraints.append(f"and @{key}='{inclusion}'")
     return include_dict
 
 
+class CaseLibrary:
+    def __init__(self):
+        self.ET = objectify.parse(CASE_LIBRARY)
+        self.case_library = self.ET.getroot()
+        self.cocktails = None
 
+    def findall(self, constraints):
+        if isinstance(constraints, str):
+            return self.case_library.xpath(constraints)
+        elif isinstance(constraints, ConstraintsBuilder):
+            return self.case_library.xpath(constraints.build())
+        else:
+            raise TypeError("constraints must be string or ConstraintsBuilder.")
 
 
 class ConstraintsBuilder:
@@ -151,33 +138,10 @@ class ConstraintsBuilder:
     def filter_alc_type(self, include=None, exclude=None):
         if include is not None:
             self.ingredient_constraints = _include_to_dict(self.ingredient_constraints, "alc_type", include)
-            # alc_constraints = self.ingredient_constraints.get("alc_type", dict())
-            # include_constraints = alc_constraints.get('include', [])
-            # if include_constraints:
-            #     if isinstance(include, str):
-            #         include_constraints.append(f"or @acl_type='{include}'")
-            #     else:
-            #         for inclusion in include:
-            #             include_constraints.append(f"or @acl_type='{inclusion}'")
-            # else:
-            #     if isinstance(include, str):
-            #         self.ingredient_constraints["alc_type"] = {"include": [f"@alc_type='{include}'"]}
-            #     else:
-            #         self.ingredient_constraints["alc_type"] = {"include": [f"@alc_type='{include[0]}'"]}
-            #         if len(include) > 1:
-            #             for inclusion in include:
-            #                 include_constraints.append(f"or @acl_type='{inclusion}'")
-
         if exclude is not None:
-            alc_constraints = self.ingredient_constraints.get("alc_type", dict())
-            exclude_constraints = alc_constraints.get("exclude", [])
-            if exclude_constraints:
-                exclude_constraints.append(f"or @acl_type!='{exclude}'")
-            elif alc_constraints:
-                self.ingredient_constraints["alc_type"]["exclude"] = [f"@alc_type!='{exclude}'"]
-            else:
-                self.ingredient_constraints["alc_type"] = {"exclude": [f"@alc_type!='{exclude}'"]}
-
+            self.ingredient_constraints = _include_to_dict(
+                self.ingredient_constraints, "alc_type", exclude, is_exclusion=True
+            )
         return self
 
     # def and_basic_taste(self, basic_taste):
@@ -190,40 +154,20 @@ class ConstraintsBuilder:
 
     def filter_taste(self, include=None, exclude=None):
         if include is not None:
-            taste_constraints = self.ingredient_constraints.get("basic_taste", dict())
-            include_constraints = taste_constraints.get("include", [])
-            if include_constraints:
-                include_constraints.append(f"or @basic_taste='{include}'")
-            else:
-                self.ingredient_constraints["basic_taste"] = {"include": [f"@basic_taste='{include}'"]}
-
+            self.ingredient_constraints = _include_to_dict(self.ingredient_constraints, "basic_taste", include)
         if exclude is not None:
-            taste_constraints = self.ingredient_constraints.get("basic_taste", dict())
-            exclude_constraints = taste_constraints.get("exclude", [])
-            if exclude_constraints:
-                exclude_constraints.append(f"or @basic_taste!='{exclude}'")
-            else:
-                self.ingredient_constraints["basic_taste"] = {"exclude": [f"@basic_taste!='{exclude}'"]}
-
+            self.ingredient_constraints = _include_to_dict(
+                self.ingredient_constraints, "basic_taste", exclude, is_exclusion=True
+            )
         return self
 
     def filter_garnish_type(self, include=None, exclude=None):
         if include is not None:
-            garnish_constraints = self.ingredient_constraints.get("garnish_type", dict())
-            include_constraints = garnish_constraints.get("include", [])
-            if include_constraints:
-                include_constraints.append(f"or @garnish_type='{include}'")
-            else:
-                self.ingredient_constraints["garnish_type"] = {"include": [f"@garnish_type='{include}'"]}
-
+            self.ingredient_constraints = _include_to_dict(self.ingredient_constraints, "garnish_type", include)
         if exclude is not None:
-            garnish_constraints = self.ingredient_constraints.get("garnish_type", dict())
-            exclude_constraints = garnish_constraints.get("exclude", [])
-            if exclude_constraints:
-                exclude_constraints.append(f"or @garnish_type!='{exclude}'")
-            else:
-                self.ingredient_constraints["garnish_type"] = {"exclude": [f"@garnish_type!='{exclude}'"]}
-
+            self.ingredient_constraints = _include_to_dict(
+                self.ingredient_constraints, "garnish_type", exclude, is_exclusion=True
+            )
         return self
 
     def build(self):
@@ -241,7 +185,7 @@ class ConstraintsBuilder:
         if self.exclude_glass:
             glass_constraint = str.join(" ", self.exclude_glass)
             constraints += f"[{glass_constraint}]"
-        constraints += "/cocktails/cocktail"
+        constraints += "//cocktail"
         if self.ingredient_constraints:
             for attr, values in self.ingredient_constraints.items():
                 if "include" in values.keys():
@@ -250,18 +194,3 @@ class ConstraintsBuilder:
                     constraints += f"[descendant::ingredient[{' '.join(values['exclude'])}]]"
 
         return constraints
-
-
-if __name__ == "__main__":
-    cl = CaseLibrary()
-    constraints = (
-        ConstraintsBuilder()
-        .filter_category(include="ordinary drink", exclude="shot")
-        .filter_alc_type(include=["creamy liqueur", "vodka"], exclude="rum")
-        .filter_taste(include="cream")
-    )
-    # constraints = ConstraintsBuilder().filter_category(include=["ordinary drink", "shot"])
-    print(constraints.build())
-    print(cl.findall(constraints))
-    # print(cl.findall(
-    #     "./category/glass//cocktail[descendant::ingredient[@alc_type='rum' or @alc_type='creamy liqueur']][descendant::ingredient[@basic_taste='cream']]"))

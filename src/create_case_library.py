@@ -8,7 +8,7 @@ from lxml.etree import SubElement
 from pandas import DataFrame
 
 from definitions import CASE_BASE, CASE_LIBRARY, DATA_PATH
-from source.utils.helper import powerset
+from src.utils.helper import powerset
 
 
 def add_ingredient(id, row, ingredients):
