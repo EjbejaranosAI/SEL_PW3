@@ -5,6 +5,50 @@ from lxml import objectify
 from definitions import CASE_LIBRARY
 
 
+
+class CaseLibrary:
+    def __init__(self):
+        self.ET = objectify.parse(CASE_LIBRARY)
+        self.case_library = self.ET.getroot()
+        self.cocktails = None
+
+    def findall(self, constraints):
+        if isinstance(constraints, str):
+            return self.case_library.xpath(constraints)
+        elif isinstance(constraints, ConstraintsBuilder):
+            return self.case_library.xpath(constraints.build())
+        else:
+            raise TypeError("constraints must be string or ConstraintsBuilder.")
+
+
+
+
+class ConstraintsBuilder:
+    def __init__(self, include_dict: Dict = None, exclude_dict: Dict = None):
+        self.include_dict = include_dict if include_dict else dict()
+        self.exclude_dict = exclude_dict if exclude_dict else dict()
+
+    def include(self, key: str, elements: Union[str, List[str]]):
+        self.include_dict = _include_to_dict(self.include_dict, key, elements)
+        return self
+
+    def exclude(self, key: str, elements: Union[str, List[str]]):
+        self.exclude_dict = _include_to_dict(self.exclude_dict, key, elements, is_exclusion=True)
+        return self
+
+    def build(self):
+        include_list = []
+        for key, value in self.include_dict.items():
+            include_list = _include_to_list(include_list, value["include"])
+        for key, value in self.exclude_dict.items():
+            include_list = _include_to_list(include_list, value["include"], is_exclusion=True)
+
+        if include_list:
+            return f"//cocktail[{' and '.join(include_list)}]"
+        else:
+            return "//cocktail"
+
+
 def _include_to_list(include_list: List[str], elements: Union[str, List[str]], is_exclusion=False):
     if include_list:
         if isinstance(elements, str):
@@ -60,19 +104,7 @@ def _include_to_dict(include_dict: Dict, key: str, elements: Union[str, List[str
     return include_dict
 
 
-class CaseLibrary:
-    def __init__(self):
-        self.ET = objectify.parse(CASE_LIBRARY)
-        self.case_library = self.ET.getroot()
-        self.cocktails = None
 
-    def findall(self, constraints):
-        if isinstance(constraints, str):
-            return self.case_library.xpath(constraints)
-        elif isinstance(constraints, ConstraintsBuilder):
-            return self.case_library.xpath(constraints.build())
-        else:
-            raise TypeError("constraints must be string or ConstraintsBuilder.")
 
 
 class ConstraintsBuilder:

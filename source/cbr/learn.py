@@ -2,6 +2,21 @@
 import xml.etree.ElementTree as ET
 # Create a function to learn from the ConstraintsBuildeR and return the root
 # element of the xml file
+
+#Learn the case and store  in the case case_library
+def learn_case(root: ET.Element, case_library: dict) -> None:
+    # Get the case name
+    case_name = root.find("caseName").text
+    # Get the case ingredients
+    case_ingredients = root.find("caseIngredients").text
+    # Get the case score
+    case_score = root.find("caseScore").text
+    # Store the case in the case_library
+    case_library[case_name] = [case_ingredients, case_score]
+    print("Learned case: " + case_name)
+
+
+
 def learn_from_cbr(cbr_path: str, cbr_file: str) -> ET.Element:
     import zipfile
     import xml.etree.ElementTree as ET
@@ -14,8 +29,4 @@ def learn_from_cbr(cbr_path: str, cbr_file: str) -> ET.Element:
     root = tree.getroot()
     return root
 
-# Evaluate the learning rate of the ConstraintsBuildeR
-def evaluate_learning_rate(root: ET.Element) -> float:
-    # Get the learning rate
-    learning_rate = root.find("learningRate").text
-    return float(learning_rate)
+
