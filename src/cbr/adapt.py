@@ -98,12 +98,18 @@ def exclude_ingredient(exc_ingr, inc_ingrs, recipes):
         for ingr in recipe.findall("ingredients/ingredient"):
             if replace_ingredient(exc_ingr, exc_ingr_id, ingr, recipes[0]):
                 return
+
     delete_ingredient(exc_ingr, exc_ingr_id, recipes[0])
 
 
-def search_ingredient(ingr_text, path_case_library):
+def search_ingredient(path_case_library, ingr_text=None, basic_taste=None, alc_type=None):
     root = read_xml(path_case_library)
-    return random.choice(root.findall("cocktail/ingredients/ingredient[.='{}']".format(ingr_text)))
+    if ingr_text:
+        return random.choice(root.findall("cocktail/ingredients/ingredient[.='{}']".format(ingr_text)))
+    if basic_taste:
+        return random.choice(root.findall("cocktail/ingredients/ingredient[@basic_taste='{}']".format(basic_taste)))
+    if alc_type:
+        return random.choice(root.findall("cocktail/ingredients/ingredient[@alc_type='{}']".format(alc_type)))
 
 
 def update_ingr_list(recipe):
@@ -165,8 +171,7 @@ if __name__ == "__main__":
              "ingredients": ["orange juice", "rum"],
              "exc_ingredients": ["lemon juice", "gin", "orange"]
              }
-    #query["exc_ingredients"] = [build_ingredient(exc_ingr, xml_file) for exc_ingr in query["exc_ingredients"]]
-    query["ingredients"] = [search_ingredient(ingr, xml_file) for ingr in query["ingredients"]]
+    query["ingredients"] = [search_ingredient(xml_file, ingr_text=ingr) for ingr in query["ingredients"]]
     recipes = [random_recipe(xml_file) for _ in range(5)]
 
     print(f"Ingredients before: {[e.text for e in recipes[0].findall('ingredients/ingredient')]}")
