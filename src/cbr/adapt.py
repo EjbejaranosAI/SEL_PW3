@@ -105,7 +105,7 @@ def exclude_ingredient(exc_ingr, inc_ingrs, recipes):
                 return
     while True:
         similar_ingr = search_ingredient(CASE_BASE, basic_taste=exc_ingr.attrib["basic_taste"], alc_type=exc_ingr.attrib["alc_type"])
-        if not similar_ingr:
+        if similar_ingr is None:
             delete_ingredient(exc_ingr, exc_ingr_id, recipes[0])
             return
         if exc_ingr.text != similar_ingr.text:
