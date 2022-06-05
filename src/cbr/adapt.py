@@ -1,6 +1,6 @@
 import os
 import sys
-import re
+import random
 from pathlib import Path
 
 sys.path.append("..")
@@ -8,10 +8,10 @@ sys.path.append("..")
 import random
 from itertools import combinations_with_replacement
 from xml.etree.ElementTree import Element, SubElement
-from source.utils.helper import read_xml
+from src.utils.helper import read_xml
 
 
-random.seed(30)
+random.seed(10)
 
 
 def random_recipe(path):
@@ -41,19 +41,19 @@ def adapt_basic_taste(taste, recipe):
 
 
 def include_ingredient(ingr, recipe):
-    ingr.attrib["id"] = f"ingr0{len(recipe.findall('ingredients/ingredient'))}"
+    ingr.attrib["id"] = f"ingr{len(recipe.findall('ingredients/ingredient'))}"
     ingr.attrib["measure"] = "some"
     recipe.find("ingredients").append(ingr)
     step = Element("step")
-    step.text = f"add some {ingr.text} to taste"
+    step.text = f"add {ingr.attrib['id']} to taste"
     recipe.find("preparation").insert(0, step)
 
 
-def ordered_combinations(ingr):
-    split = ingr.split()
-    c = list(combinations_with_replacement(range(len(split)), 2))
-    substrings = sorted([" ".join(split[start:end + 1]) for start, end in c], key=len, reverse=True)
-    return substrings
+# def ordered_combinations(ingr):
+#     split = ingr.split()
+#     c = list(combinations_with_replacement(range(len(split)), 2))
+#     substrings = sorted([" ".join(split[start:end + 1]) for start, end in c], key=len, reverse=True)
+#     return substrings
 
 
 def replace_ingredient(ingr1, ingr1_id, ingr2, recipe):
@@ -61,8 +61,8 @@ def replace_ingredient(ingr1, ingr1_id, ingr2, recipe):
         if subsumed(ingr1.attrib["basic_taste"], ingr2.attrib["basic_taste"]) \
                 and subsumed(ingr1.attrib["alc_type"], ingr2.attrib["alc_type"]):
             ingr1.text = ingr2.text
-            for step in recipe.findall("preparation/step"):
-                step.text = step.text.replace(ingr1_id, f"{ingr1.attrib['measure']} of {ingr2.text}")
+            # for step in recipe.findall("preparation/step"):
+            #     step.text = step.text.replace(ingr1_id, f"{ingr1.attrib['measure']} of {ingr2.text}")
             # substrings = ordered_combinations(ingr1.text)
             # for step in recipe.findall("preparation/step"):
             #     org_step = step
@@ -101,22 +101,9 @@ def exclude_ingredient(exc_ingr, inc_ingrs, recipes):
     delete_ingredient(exc_ingr, exc_ingr_id, recipes[0])
 
 
-def build_ingredient(ingr_text, path_case_library):
+def search_ingredient(ingr_text, path_case_library):
     root = read_xml(path_case_library)
-    twin = root.find("cocktail/ingredients/ingredient[.='{}']".format(ingr_text))
-    attribs = {
-                "basic_taste": twin.attrib["basic_taste"],
-                "alc_type": twin.attrib["alc_type"]
-                }
-    ingr = Element("ingredient", attrib=attribs)
-    ingr.text = ingr_text
-    return ingr
-
-
-def replace_ids(recipe):
-    map = {ingr.attrib["id"]: f"{ingr.attrib['measure']} of {ingr.text}" for ingr in recipe.findall("ingredients/ingredient")}
-    for step in recipe.findall("preparation/step"):
-        step.text = re.sub('|'.join(re.escape(k) for k in map), lambda x: map[x.group()], step.text)
+    return random.choice(root.findall("cocktail/ingredients/ingredient[.='{}']".format(ingr_text)))
 
 
 def update_ingr_list(recipe):
@@ -136,6 +123,12 @@ def adapt(query, recipes):
     recipe = recipes[0]
     alc_types, basic_tastes, ingredients = update_ingr_list(recipe)
 
+    if not subsumed(query["category"], recipe.find("category").text):
+        adapt_category(query["category"], recipe)
+
+    if not subsumed(query["glass"], recipe.find("glass").text):
+        adapt_glass(query["glass"], recipe)
+
     for exc_ingr in query["exc_ingredients"]:
         if subsumed(exc_ingr, ingredients):
             exc_ingr = recipe.find("ingredients/ingredient[.='{}']".format(exc_ingr))
@@ -143,11 +136,11 @@ def adapt(query, recipes):
 
     alc_types, basic_tastes, ingredients = update_ingr_list(recipe)
 
-    if not subsumed(query["category"], recipe.find("category").text):
-        adapt_category(query["category"], recipe)
+    for ingr in query["ingredients"]:
+        if not subsumed(ingr.text, ingredients):
+            include_ingredient(ingr, recipe)
 
-    if not subsumed(query["glass"], recipe.find("glass").text):
-        adapt_glass(query["glass"], recipe)
+    alc_types, basic_tastes, ingredients = update_ingr_list(recipe)
 
     for alc in query["alc_type"]:
         if not subsumed(alc, alc_types):
@@ -158,14 +151,6 @@ def adapt(query, recipes):
     for taste in query["basic_taste"]:
         if not subsumed(taste, basic_tastes):
             adapt_basic_taste(taste, recipe)
-
-    alc_types, basic_tastes, ingredients = update_ingr_list(recipe)
-
-    for ingr in query["ingredients"]:
-        if not subsumed(ingr, ingredients):
-            include_ingredient(ingr, recipe)
-
-    replace_ids(recipe)
 
     return recipe
 
@@ -178,10 +163,10 @@ if __name__ == "__main__":
              "alc_type": ["vermouth", "whisky"],
              "basic_taste": ["sweet", "sour"],
              "ingredients": ["orange juice", "rum"],
-             "exc_ingredients": ["light rum jamaican", "milk", "tequila"]
+             "exc_ingredients": ["lemon juice", "gin", "orange"]
              }
     #query["exc_ingredients"] = [build_ingredient(exc_ingr, xml_file) for exc_ingr in query["exc_ingredients"]]
-    query["ingredients"] = [build_ingredient(ingr, xml_file) for ingr in query["ingredients"]]
+    query["ingredients"] = [search_ingredient(ingr, xml_file) for ingr in query["ingredients"]]
     recipes = [random_recipe(xml_file) for _ in range(5)]
 
     print(f"Ingredients before: {[e.text for e in recipes[0].findall('ingredients/ingredient')]}")
