@@ -30,8 +30,8 @@ def add_ingredient(id, row, ingredients):
         quantity = value_gr
         unit = "gr"
     else:
-        quantity = row["Garnish_amount"]
-        garnish_type = row["Garnish_type"]
+        quantity = 0.0 if isinstance(row["Garnish_amount"], float) else row["Garnish_amount"]
+        garnish_type = "" if isinstance(row["Garnish_type"], float) else row["Garnish_type"]
 
     ingredient = SubElement(
         ingredients,

@@ -1,11 +1,11 @@
 # This Python file uses the following encoding: utf-8
 import os
-from pathlib import Path
 import sys
+from pathlib import Path
 
-from PySide6.QtWidgets import QApplication, QWidget, QLabel, QScrollArea, QCheckBox
 from PySide6.QtCore import QFile
 from PySide6.QtUiTools import QUiLoader
+from PySide6.QtWidgets import QApplication, QCheckBox, QLabel, QScrollArea, QWidget
 
 
 class Widget(QWidget):
@@ -32,6 +32,7 @@ class Widget(QWidget):
         vbox = scroll.layout()
         for i in range(10):
             vbox.addWidget(QCheckBox("Text"))
+
 
 if __name__ == "__main__":
     app = QApplication([])

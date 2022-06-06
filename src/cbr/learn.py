@@ -1,9 +1,10 @@
-#Define ET to be the ElementTree library
+# Define ET to be the ElementTree library
 import xml.etree.ElementTree as ET
+
 # Create a function to learn from the ConstraintsBuildeR and return the root
 # element of the xml file
 
-#Learn the case and store  in the case case_library
+# Learn the case and store  in the case case_library
 def learn_case(root: ET.Element, case_library: dict) -> None:
     # Get the case name
     case_name = root.find("caseName").text
@@ -16,10 +17,9 @@ def learn_case(root: ET.Element, case_library: dict) -> None:
     print("Learned case: " + case_name)
 
 
-
 def learn_from_cbr(cbr_path: str, cbr_file: str) -> ET.Element:
-    import zipfile
     import xml.etree.ElementTree as ET
+    import zipfile
 
     zip_ref = zipfile.ZipFile(cbr_path, "r")
     zip_ref.extractall(cbr_file)
@@ -28,5 +28,3 @@ def learn_from_cbr(cbr_path: str, cbr_file: str) -> ET.Element:
     tree = ET.parse(cbr_file)
     root = tree.getroot()
     return root
-
-
