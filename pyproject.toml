@@ -8,19 +8,21 @@ authors = ["Edison Bejarano Sepulveda <edison.bejarano@estudiantat.upc.edu>",
     "Yazmina Zurita Martel <yazmina.martel@estudiantat.upc.edu>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9, <3.11"
 numpy = "^1.22.4"
 scikit-learn = "^1.1.1"
 pandas = "^1.4.2"
 matplotlib = "^3.5.2"
 lxml = "^4.9.0"
 Pattern = "^3.6"
+PySide6 = "^6.3.0"
 
 [tool.poetry.dev-dependencies]
 black = { extras = ["jupyter"], version = "^22.3.0" }
 isort = "^5.10.1"
 jupyter = "^1.0.0"
 pytest = "^7.1.2"
+python-language-server = "^0.36.2"
 
 [tool.isort]
 profile = "black"
