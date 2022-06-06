@@ -1,7 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List
+from xml.etree.ElementTree import Element
 
-from lxml.objectify import Element
+from lxml import etree, objectify
 
 
 @dataclass
@@ -18,7 +19,6 @@ class Ingredient:
         self.measure = element.measure
         self.quantity = float(element.quantity)
         self.unit = element.unit
-        return self
 
 
 @dataclass
@@ -56,6 +56,7 @@ class Cocktail:
         self.utility = float(element.utility)
         self.derivation = element.derivation
         self.evaluation = element.evaluation
+
         return self
 
     def similarity(self, other):

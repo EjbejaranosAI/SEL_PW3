@@ -59,9 +59,6 @@ def bar_plot(df: DataFrame, column: Union[int, str]):
 
 
 def replace_ids(recipe):
-    equiv = {
-        ingr.attrib["id"]: f"{ingr.attrib['measure']} of {ingr.text}"
-        for ingr in recipe.findall("ingredients/ingredient")
-    }
+    equiv = {ingr.attrib["id"]: f"{ingr.attrib['measure']} of {ingr.text}" for ingr in recipe.findall("ingredients/ingredient")}
     for step in recipe.findall("preparation/step"):
-        step.text = re.sub("|".join(re.escape(k) for k in equiv), lambda x: equiv[x.group()], step.text)
+        step.text = re.sub('|'.join(re.escape(k) for k in equiv), lambda x: equiv[x.group()], step.text)

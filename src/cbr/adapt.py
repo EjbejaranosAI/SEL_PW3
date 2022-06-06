@@ -1,3 +1,4 @@
+import json
 import os
 import sys
 import random
@@ -7,7 +8,7 @@ sys.path.append("..")
 
 import random
 from itertools import combinations_with_replacement
-from xml.etree.ElementTree import Element, SubElement
+from xml.etree.ElementTree import Element, SubElement, tostring
 from src.utils.helper import read_xml
 from definitions import CASE_BASE
 
@@ -181,12 +182,16 @@ if __name__ == "__main__":
              "ingredients": ["orange juice", "rum"],
              "exc_ingredients": ["lemon juice", "gin", "orange"]
              }
+    with open(os.path.join("..", "utils", "test-query.json"), "w") as f:
+        json.dump(query, f)
     query["ingredients"] = [search_ingredient(CASE_BASE, ingr_text=ingr) for ingr in query["ingredients"]]
     recipes = [random_recipe(CASE_BASE) for _ in range(5)]
 
     print(f"Ingredients before: {[e.text for e in recipes[0].findall('ingredients/ingredient')]}")
     print(f"Steps before: {[e.text for e in recipes[0].findall('preparation/step')]}")
     output = adapt(query, recipes)
+    with open(os.path.join("..", "utils", "test-recipe.xml"), "wb") as f:
+        f.write(tostring(output))
     print(f"Ingredients after: {[e.text for e in output.findall('ingredients/ingredient')]}")
     print(f"Steps after: {[e.text for e in output.findall('preparation/step')]}")
 

@@ -1,9 +1,6 @@
-import os
 import shutil
-
+import os
 import numpy as np
-
-
 # This script is going to have different functions to do the evaluation in the CBR
 def get_jaccard_simmularity(list1, list2):
     """

@@ -1,0 +1,27 @@
+<cocktail>
+    <name>French 75</name>
+    <category>ordinary drink</category>
+    <glass>xxx</glass>
+    <ingredients>
+      <ingredient id="ingr0" alc_type="" basic_taste="sweet" measure="1" quantity="1.0" unit="" garnish_type="slice">orange juice</ingredient>
+      <ingredient id="ingr1" alc_type="champagne" basic_taste="" measure="4 oz chilled" quantity="120.0" unit="ml" garnish_type="">champagne</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sour" measure="1 1/2 oz" quantity="45.0" unit="ml" garnish_type="">lime juice</ingredient>
+      <ingredient id="ingr3" alc_type="gin" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml" garnish_type="">sloe gin</ingredient>
+      <ingredient id="ingr4" alc_type="" basic_taste="sweet" measure="1" quantity="1.0" unit="" garnish_type="berry">maraschino cherry</ingredient>
+      <ingredient id="ingr5" alc_type="" basic_taste="sweet" measure="2 tsp superfine" quantity="10.0" unit="ml" garnish_type="">sugar superfine</ingredient>
+    <ingredient id="ingr6" alc_type="rum" basic_taste="" measure="some" quantity="30.0" unit="ml" garnish_type="">rum</ingredient>
+    <ingredient id="ingr7" alc_type="vermouth" basic_taste="" measure="some" quantity="22.5" unit="ml" garnish_type="">sweet vermouth</ingredient>
+    <ingredient id="ingr8" alc_type="whisky" basic_taste="" measure="some" quantity="10.0" unit="ml" garnish_type="">jim beam</ingredient>
+      <ingredient id="ingr9" alc_type="" basic_taste="salty" measure="some" quantity="60.0" unit="ml" garnish_type="">tomato juice</ingredient>
+      </ingredients>
+    <preparation>
+      <step>add ingr9 to taste</step><step>add ingr8 to taste</step><step>add ingr7 to taste</step><step>add ingr6 to taste</step><step>combine ingr3, ingr5, and ingr2 in a cocktail shaker filled with ice</step>
+      <step>shake vigorously and strain into a chilled ingr1 glass</step>
+      <step>top up with ingr1</step>
+      <step>stir gently</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  
