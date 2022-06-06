@@ -87,8 +87,9 @@ def _include_to_dict(include_dict: Dict, key: str, elements: Union[str, List[str
 
 
 class CaseLibrary:
-    def __init__(self):
-        self.ET = objectify.parse(CASE_LIBRARY)
+    def __init__(self, case_library_file):
+        self.case_library_path = case_library_file
+        self.ET = objectify.parse(self.case_library_path)
         self.case_library = self.ET.getroot()
         self.cocktails = None
 
@@ -99,6 +100,12 @@ class CaseLibrary:
             return self.case_library.xpath(constraints.build())
         else:
             raise TypeError("constraints must be string or ConstraintsBuilder.")
+
+    def remove_case(self, case):
+        parent = case.getparent()
+        parent.remove(case)
+        self.ET.write()
+        self.ET.write(self.case_library_path, pretty_print=True, encoding="utf-8")
 
 
 class ConstraintsBuilder:
