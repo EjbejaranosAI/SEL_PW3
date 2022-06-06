@@ -149,7 +149,7 @@ class CaseLibrary:
         Parameters
         ----------
         constraints: str or ConstraintsBuilder
-            The constraints to search for cases. It can be a string with a complex search pattern or a
+            The constraints to search for cases. It can be a string with a complex search pattern for XPath search or a
             ConstraintsBuilder object.
 
         Returns
@@ -185,7 +185,7 @@ class CaseLibrary:
 
     def add_case(self, case):
         """
-        Add a case from the case library.
+        Add a case from the case library. The new case will obtain a unique ID before being added to the case library.
 
         After adding the case the XML file is updated.
 
@@ -213,7 +213,8 @@ class CaseLibrary:
 
 
 class ConstraintsBuilder:
-    """A builder for the constraints used in :meth:`CaseLibrary.findall`.
+    """
+    A builder for the constraints used in :meth:`CaseLibrary.findall`.
 
     Parameters
     ----------
@@ -244,12 +245,13 @@ class ConstraintsBuilder:
 
     Examples
     --------
+    You can chain multiple filters of the same or different types.
     >>> from definitions import CASE_LIBRARY
     >>> from src.cbr.case_library import ConstraintsBuilder, CaseLibrary
     >>> case_library = CaseLibrary(CASE_LIBRARY)
-    >>> builder = ConstraintsBuilder()
-    >>> builder.filter_category().filter_glass(include="hurricane glass").filter_alc_type(include=["rum"])
-    ...     .filter_taste(include="sweet")
+    >>> builder = ConstraintsBuilder(include_category="cocktail", include_glass="hurricane glass")
+    ...     .filter_alc_type(include="rum").filter_taste(include="sweet")
+    ...     .filter_ingredient(include=["banana", "sugar"], exclude="coffee")
     >>> cocktails = case_library.findall(builder)
     """
 
@@ -268,6 +270,34 @@ class ConstraintsBuilder:
         self.ingredient_constraints = dict()
 
     def filter_category(self, include: Union[str, List[str], None] = None, exclude: Union[str, List[str], None] = None):
+        """
+        Add a filter for the cocktail category.
+
+        Parameters
+        ----------
+        include : str or list of str or None, default None
+            Categories that the cases must include.
+
+        exclude : str or list of str or None, default None
+            Categories that the cases must not include.
+
+        Returns
+        -------
+        self : ConstraintsBuilder
+            The ConstraintsBuilder.
+
+        Examples
+        --------
+        Add multime conditions at the same time.
+
+        >>> builder = ConstraintsBuilder().filter_category(include="ordinary drink", exclude=["shot", "cocktail"])
+
+        Add only inclusion or exclusions.
+
+        >>> builder = ConstraintsBuilder().filter_category(include="ordinary drink")
+        >>> builder.filter_category(exclude=["shot", "cocktail"])
+        """
+
         if include is not None:
             self.include_category = _include_to_list(self.include_category, include)
 
@@ -277,6 +307,34 @@ class ConstraintsBuilder:
         return self
 
     def filter_glass(self, include: Union[str, List[str], None] = None, exclude: Union[str, List[str], None] = None):
+        """
+        Add a filter for the glass type.
+
+        Parameters
+        ----------
+        include : str or list of str or None, default None
+            Glass types that the cases must include.
+
+        exclude : str or list of str or None, default None
+            Glass types that the cases must not include.
+
+        Returns
+        -------
+        self : ConstraintsBuilder
+            The ConstraintsBuilder.
+
+        Examples
+        --------
+        Add multime conditions at the same time.
+
+        >>> builder = ConstraintsBuilder().filter_glass(include="shot glass",
+        ...     exclude=["hurricane glass", "martini glass"])
+
+        Add only inclusion or exclusions.
+
+        >>> builder = ConstraintsBuilder().filter_glass(include="shot glass")
+        >>> builder.filter_glass(exclude=["hurricane glass", "martini glass"])
+        """
         if include is not None:
             self.include_glass = _include_to_list(self.include_glass, include)
 
@@ -286,6 +344,33 @@ class ConstraintsBuilder:
         return self
 
     def filter_alc_type(self, include=None, exclude=None):
+        """
+        Add a filter for the alcohol type.
+
+        Parameters
+        ----------
+        include : str or list of str or None, default None
+            Alcohol types that the cases must include.
+
+        exclude : str or list of str or None, default None
+            Alcohol types that the cases must not include.
+
+        Returns
+        -------
+        self : ConstraintsBuilder
+            The ConstraintsBuilder.
+
+        Examples
+        --------
+        Add multime conditions at the same time.
+
+        >>> builder = ConstraintsBuilder().filter_alc_type(include="gin", exclude=["rum", "vodka"])
+
+        Add only inclusion or exclusions.
+
+        >>> builder = ConstraintsBuilder().filter_alc_type(include="gin")
+        >>> builder.filter_alc_type(exclude=["rum", "vodka"])
+        """
         if include is not None:
             self.ingredient_constraints = _include_to_dict(self.ingredient_constraints, "alc_type", include)
         if exclude is not None:
@@ -295,6 +380,33 @@ class ConstraintsBuilder:
         return self
 
     def filter_taste(self, include=None, exclude=None):
+        """
+        Add a filter for the basic taste type.
+
+        Parameters
+        ----------
+        include : str or list of str or None, default None
+            Basic taste types that the cases must include.
+
+        exclude : str or list of str or None, default None
+            Basic taste types that the cases must not include.
+
+        Returns
+        -------
+        self : ConstraintsBuilder
+            The ConstraintsBuilder.
+
+        Examples
+        --------
+        Add multime conditions at the same time.
+
+        >>> builder = ConstraintsBuilder().filter_taste(include="sweet", exclude=["sour", "salty"])
+
+        Add only inclusion or exclusions.
+
+        >>> builder = ConstraintsBuilder().filter_taste(include="sweet")
+        >>> builder.filter_taste(exclude=["sour", "salty"])
+        """
         if include is not None:
             self.ingredient_constraints = _include_to_dict(self.ingredient_constraints, "basic_taste", include)
         if exclude is not None:
@@ -304,6 +416,33 @@ class ConstraintsBuilder:
         return self
 
     def filter_garnish_type(self, include=None, exclude=None):
+        """
+        Add a filter for the garnish type.
+
+        Parameters
+        ----------
+        include : str or list of str or None, default None
+            Garnish types that the cases must include.
+
+        exclude : str or list of str or None, default None
+            Garnish types that the cases must not include.
+
+        Returns
+        -------
+        self : ConstraintsBuilder
+            The ConstraintsBuilder.
+
+        Examples
+        --------
+        Add multime conditions at the same time.
+
+        >>> builder = ConstraintsBuilder().filter_garnish_type(include="slice", exclude="berry")
+
+        Add only inclusion or exclusions.
+
+        >>> builder = ConstraintsBuilder().filter_garnish_type(include="slice")
+        >>> builder.filter_garnish_type(exclude=["berry", "wedge"])
+        """
         if include is not None:
             self.ingredient_constraints = _include_to_dict(self.ingredient_constraints, "garnish_type", include)
         if exclude is not None:
@@ -313,6 +452,33 @@ class ConstraintsBuilder:
         return self
 
     def filter_ingredient(self, include=None, exclude=None):
+        """
+        Add a filter for the ingredient name.
+
+        Parameters
+        ----------
+        include : str or list of str or None, default None
+            Ingredients that the cases must include.
+
+        exclude : str or list of str or None, default None
+            Ingredients that the cases must not include.
+
+        Returns
+        -------
+        self : ConstraintsBuilder
+            The ConstraintsBuilder.
+
+        Examples
+        --------
+        Add multime conditions at the same time.
+
+        >>> builder = ConstraintsBuilder().filter_ingredient(include="chocolate", exclude="strawberry")
+
+        Add only inclusion or exclusions.
+
+        >>> builder = ConstraintsBuilder().filter_ingredient(include="chocolate")
+        >>> builder.filter_garnish_type(exclude=["strawberry", "coffee"])
+        """
         if include is not None:
             self.ingredient_constraints = _include_to_dict(self.ingredient_constraints, "ingredient", include)
         if exclude is not None:
@@ -322,6 +488,14 @@ class ConstraintsBuilder:
         return self
 
     def build(self):
+        """
+        Build the `ConstraintsBuilder`.
+
+        Returns
+        -------
+        constraints: str
+            An XPath pattern with the constraints.
+        """
         constraints = "./category"
         if self.include_category:
             cat_constraints = str.join(" ", self.include_category)
