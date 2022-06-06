@@ -1,8 +1,7 @@
+import uuid
 from typing import Dict, List, Union
 
-from lxml import etree, objectify
-
-from definitions import CASE_LIBRARY
+from lxml import objectify
 
 
 def _include_to_list(include_list: List[str], elements: Union[str, List[str]], is_exclusion=False):
@@ -87,11 +86,54 @@ def _include_to_dict(include_dict: Dict, key: str, elements: Union[str, List[str
 
 
 class CaseLibrary:
+    """
+    Case library for the CBR.
+
+    Parameters
+    ----------
+    case_library_file: str
+        Path to the case library file.
+
+    Attributes
+    ----------
+    case_library_file : str
+        Path to the case library file.
+
+    ET: lxml ElementTree
+        Element tree representing the case library.
+
+    case_library: lxml ObjectifiedElement
+        Root of the case library.
+
+    drink_types: set of str
+        Set of the available drink types.
+
+    glass_types: set of str
+        Set of the available glass types.
+
+    alc_types: set of str
+        Set of the available alcohol types.
+
+    taste_types: set of str
+        Set of the available basic tastes.
+
+    garnish_types: set of str
+        Set of the available garnish types.
+
+    ingredients: set of str
+        Set of the available ingredients.
+
+    See Also
+    --------
+    CaseLibrary.findall : Find all the cases matching a constraint.
+    CaseLibrary.remove_case: Remove a case from the case library.
+    CaseLibrary.add_case: Add a case to the case library.
+    """
+
     def __init__(self, case_library_file):
         self.case_library_path = case_library_file
         self.ET = objectify.parse(self.case_library_path)
         self.case_library = self.ET.getroot()
-        self.cocktails = None
         self.drink_types = set()
         self.glass_types = set()
         self.alc_types = set()
@@ -101,6 +143,24 @@ class CaseLibrary:
         self._initialize_type_sets()
 
     def findall(self, constraints):
+        """
+        Find all the cases matching a constraint.
+
+        Parameters
+        ----------
+        constraints: str or ConstraintsBuilder
+            The constraints to search for cases. It can be a string with a complex search pattern or a
+            ConstraintsBuilder object.
+
+        Returns
+        -------
+        cases : list of :class:`lxml.objectify.ObjectifiedElement`
+            A list of cases that match the given constraint.
+
+        See Also
+        --------
+        :class:`ConstraintsBuilder` : A builder for the constraints used in :meth:`CaseLibrary.findall`.
+        """
         if isinstance(constraints, str):
             return self.case_library.xpath(constraints)
         elif isinstance(constraints, ConstraintsBuilder):
@@ -109,10 +169,36 @@ class CaseLibrary:
             raise TypeError("constraints must be string or ConstraintsBuilder.")
 
     def remove_case(self, case):
+        """
+        Remove a case from the case library.
+
+        After removing the case the XML file is updated.
+
+        Parameters
+        ----------
+        case : :class:`lxml.objectify.ObjectifiedElement`
+            The case to remove from the case library
+        """
         parent = case.getparent()
         parent.remove(case)
-        self.ET.write()
         self.ET.write(self.case_library_path, pretty_print=True, encoding="utf-8")
+
+    def add_case(self, case):
+        """
+        Add a case from the case library.
+
+        After adding the case the XML file is updated.
+
+        Parameters
+        ----------
+        case : :class:`lxml.objectify.ObjectifiedElement`
+            The case to add to the case library.
+        """
+        drink_type = case.category
+        glass_type = case.glass
+        parent = self.case_library.find(f"./category[@type='{drink_type}']/glass[@type='{glass_type}']")
+        case.set("id", str(uuid.uuid1().int))
+        parent.append(case)
 
     def _initialize_type_sets(self):
         self.drink_types = set(self.case_library.xpath("./category/@type"))
@@ -127,6 +213,46 @@ class CaseLibrary:
 
 
 class ConstraintsBuilder:
+    """A builder for the constraints used in :meth:`CaseLibrary.findall`.
+
+    Parameters
+    ----------
+    include_category : str, optional
+        A drink category to include in the search.
+
+    include_glass : str, optional
+        A glass type to include in the search.
+
+    Attributes
+    ----------
+    constraints : str
+        The search pattern with the constraints.
+
+    include_category : list of str
+        The list of drink categories to include in the search.
+
+    exclude_category : list of str
+        The list of drink categories to exclude in the search.
+
+    include_glass : list of str
+        The list of glass types to include in the search.
+
+    exclude_glass : list of str
+        The list of glass types to exclude in the search.
+
+    ingredient_constraints : dict of dict of list of str
+
+    Examples
+    --------
+    >>> from definitions import CASE_LIBRARY
+    >>> from src.cbr.case_library import ConstraintsBuilder, CaseLibrary
+    >>> case_library = CaseLibrary(CASE_LIBRARY)
+    >>> builder = ConstraintsBuilder()
+    >>> builder.filter_category().filter_glass(include="hurricane glass").filter_alc_type(include=["rum"])
+    ...     .filter_taste(include="sweet")
+    >>> cocktails = case_library.findall(builder)
+    """
+
     def __init__(self, include_category="", include_glass=""):
         self.constraints = "./"
         if include_category:
