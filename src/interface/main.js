@@ -1,17 +1,16 @@
 window.addEventListener('load', () => {
-	const form = document.querySelector("#new-ingredient-form");
-    const input_ingridient = document.querySelector("#new-ingredient-input");
-    const input_alchool = document.querySelector("#new-achool-input");
+	const form = document.querySelector("#new-task-form");
+	const input = document.querySelector("#new-task-ingredient");
+    const list = document.querySelector("#task-list");
 	const list_el = document.querySelector("#tasks");
 
 	form.addEventListener('submit', (e) => {
 		e.preventDefault();
 
-		const ingridient = input_ingredient.value;
-        const task = input_alchool.value;
+		const task = input.value;
 
 		const task_el = document.createElement('div');
-		task_el.classList.add('ingridient');
+		task_el.classList.add('task');
 
 		const task_content_el = document.createElement('div');
 		task_content_el.classList.add('content');
@@ -44,7 +43,7 @@ window.addEventListener('load', () => {
 
 		list_el.appendChild(task_el);
 
-		input_ingridient.value = '';
+		input.value = '';
 
 		task_edit_el.addEventListener('click', (e) => {
 			if (task_edit_el.innerText.toLowerCase() == "edit") {

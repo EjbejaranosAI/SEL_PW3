@@ -1,56 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>COKCTAILS CBR</title>
-    <link rel="stylesheet" href="main.css" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task List 2021</title>
 
+	<link rel="stylesheet" href="main.css" />
 </head>
-
 <body>
 	
 	<header>
-		<h1>CBR - Cocktails</h1>
-		<form id="new-ingridient-form">
+		<h1>CBR - Recomender Cocktails system</h1>
+		<form id="new-task-form">
 			<input 
 				type="text" 
-				name="new-ingredint-input" 
-				id="new-ingredient-input" 
-				placeholder="Ingridient?" />
+				name="new-task-input" 
+				id="new-task-ingredient" 
+				placeholder="Ingredient?" />
+
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="Alchool types?" />
 
             <input 
 				type="text" 
-				name="new-alchool-input" 
-				id="new-alchool-input" 
-				placeholder="Alchool type?" />
-            
-            <input 
-				type="text" 
-				name="new-alchool-input" 
-				id="new-alchool-input" 
+				name="new-task-input" 
+				id="new-task-input" 
 				placeholder="Glass type?" />
 
             <input 
 				type="text" 
-				name="new-alchool-input" 
-				id="new-alchool-input" 
-				placeholder="Basic  tastes type?" />
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="Basic tastes?" />
+       
+            <div>
+    
+                </div>   
+            <select name="categories" id="new-task-input">
+                <option value="r">Cocktails</option>
+                <option value="a">Shot</option>
+                <option value="v">Beer</option>
+                </select>
+
 			<input 
 				type="submit"
-				id="new-cocktail-submit" 
-				value="Add ingredient" />
+				id="new-task-submit" 
+				value="Add recomendation" />
+            
 		</form>
-
 	</header>
 	<main>
 		<section class="task-list">
-			<h2>Your order is going to have</h2>
+			<h2>Tasks</h2>
 
 			<div id="tasks">
-            
 
+				<!-- <div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> -->
 
 			</div>
 		</section>

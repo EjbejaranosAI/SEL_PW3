@@ -38,6 +38,7 @@ header h1{
 
 #new-task-form {
 	display: flex;;
+    flex-direction: column;;
 }
 
 input, button {
@@ -47,7 +48,19 @@ input, button {
 	background: none;
 }
 
-#new-ingredient-input {
+#new-task-input {
+	flex: 1 1 0%;
+	background-color: var(--darker);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: var(--light);
+	font-size: 1.25rem;
+    grid-column-gap: 20px;
+}
+
+
+#new-task-ingredient {
 	flex: 1 1 0%;
 	background-color: var(--darker);
 	padding: 1rem;
@@ -57,21 +70,11 @@ input, button {
 	font-size: 1.25rem;
 }
 
-#new-alchool-input {
-	flex: 1 1 0%;
-	background-color: var(--darker);
-	padding: 1rem;
-	border-radius: 1rem;
-	margin-right: 1rem;
-	color: var(--light);
-	font-size: 1.25rem;
-}
-
-#new-cocktail-input::placeholder {
+#new-task-input::placeholder {
 	color: var(--grey);
 }
 
-#new-cocktail-submit {
+#new-task-submit {
 	color: var(--pink);
 	font-size: 1.25rem;
 	font-weight: 700;
@@ -87,7 +90,7 @@ input, button {
 }
 
 #new-task-submit:active {
-	opacity: 0.6;
+	opacity: 0.5;
 }
 
 main {
