@@ -1,7 +1,7 @@
 <cocktail>
     <name>French 75</name>
     <category>ordinary drink</category>
-    <glass>xxx</glass>
+    <glass>old-fashioned glass</glass>
     <ingredients>
       <ingredient id="ingr0" alc_type="" basic_taste="sweet" measure="1" quantity="1.0" unit="" garnish_type="slice">orange juice</ingredient>
       <ingredient id="ingr1" alc_type="champagne" basic_taste="" measure="4 oz chilled" quantity="120.0" unit="ml" garnish_type="">champagne</ingredient>
