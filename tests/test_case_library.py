@@ -43,6 +43,13 @@ def test_filter_garnish_type(builder):
     assert False
 
 
+def test_filter_ingredient(builder):
+    builder.filter_ingredient(include=["sugar", "orange juice"], exclude="banana")
+    assert ["text()='sugar'", "and text()='orange juice'"] == builder.ingredient_constraints["ingredient"][
+        "include"
+    ] and ["text()!='banana'"] == builder.ingredient_constraints["ingredient"]["exclude"]
+
+
 def test_search_all_cocktails(builder):
     assert builder.build() == "./category/glass//cocktail"
 

@@ -1,6 +1,6 @@
 from typing import Dict, List, Union
 
-from lxml import objectify
+from lxml import etree, objectify
 
 from definitions import CASE_LIBRARY
 
@@ -39,7 +39,13 @@ def _include_to_list(include_list: List[str], elements: Union[str, List[str]], i
 
 
 def _include_to_dict(include_dict: Dict, key: str, elements: Union[str, List[str]], is_exclusion=False):
-    constraints_dict = include_dict.get(key, dict())
+    constraints_dict = include_dict.get(key, {key: []})
+
+    if key != "ingredient":
+        search_key = f"@{key}"
+    else:
+        search_key = "text()"
+
     if is_exclusion:
         include_constraints = constraints_dict.get("exclude", [])
     else:
@@ -47,35 +53,36 @@ def _include_to_dict(include_dict: Dict, key: str, elements: Union[str, List[str
     if include_constraints:
         if isinstance(elements, str):
             if is_exclusion:
-                include_constraints.append(f"and @{key}!='{elements}'")
+                include_constraints.append(f"and {search_key}!='{elements}'")
             else:
-                include_constraints.append(f"and @{key}='{elements}'")
+                include_constraints.append(f"and {search_key}='{elements}'")
         else:
             if is_exclusion:
                 for inclusion in elements:
-                    include_constraints.append(f"and @{key}!='{inclusion}'")
+                    include_constraints.append(f"and {search_key}!='{inclusion}'")
             else:
                 for inclusion in elements:
-                    include_constraints.append(f"and @{key}='{inclusion}'")
+                    include_constraints.append(f"and {search_key}='{inclusion}'")
     else:
+        include_dict[key] = constraints_dict
         if isinstance(elements, str):
             if is_exclusion:
-                include_dict[key] = {"exclude": [f"@{key}!='{elements}'"]}
+                include_dict[key]["exclude"] = [f"{search_key}!='{elements}'"]
             else:
-                include_dict[key] = {"include": [f"@{key}='{elements}'"]}
+                include_dict[key]["include"] = [f"{search_key}='{elements}'"]
         else:
             if is_exclusion:
-                include_dict[key] = {"exclude": [f"@{key}!='{elements[0]}'"]}
+                include_dict[key]["exclude"] = [f"{search_key}!='{elements[0]}'"]
                 if len(elements) > 1:
                     include_constraints = include_dict[key]["exclude"]
                     for inclusion in elements[1:]:
-                        include_constraints.append(f"and @{key}!='{inclusion}'")
+                        include_constraints.append(f"and {search_key}!='{inclusion}'")
             else:
-                include_dict[key] = {"include": [f"@{key}='{elements[0]}'"]}
+                include_dict[key]["include"] = [f"{search_key}='{elements[0]}'"]
                 if len(elements) > 1:
                     include_constraints = include_dict[key]["include"]
                     for inclusion in elements[1:]:
-                        include_constraints.append(f"and @{key}='{inclusion}'")
+                        include_constraints.append(f"and {search_key}='{inclusion}'")
     return include_dict
 
 
@@ -167,6 +174,15 @@ class ConstraintsBuilder:
         if exclude is not None:
             self.ingredient_constraints = _include_to_dict(
                 self.ingredient_constraints, "garnish_type", exclude, is_exclusion=True
+            )
+        return self
+
+    def filter_ingredient(self, include=None, exclude=None):
+        if include is not None:
+            self.ingredient_constraints = _include_to_dict(self.ingredient_constraints, "ingredient", include)
+        if exclude is not None:
+            self.ingredient_constraints = _include_to_dict(
+                self.ingredient_constraints, "ingredient", exclude, is_exclusion=True
             )
         return self
 
