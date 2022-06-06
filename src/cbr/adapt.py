@@ -1,7 +1,7 @@
 import json
 import os
-import sys
 import random
+import sys
 from pathlib import Path
 
 sys.path.append("..")
@@ -9,8 +9,9 @@ sys.path.append("..")
 import random
 from itertools import combinations_with_replacement
 from xml.etree.ElementTree import Element, SubElement, tostring
-from src.utils.helper import read_xml
+
 from definitions import CASE_BASE
+from src.utils.helper import read_xml
 
 random.seed(10)
 
@@ -35,7 +36,9 @@ def subsumed(a, b):
 
 def adapt_alcs_and_tastes(exc_ingrs, recipes, alc_type="", basic_taste=""):
     for recipe in recipes[1:]:
-        similar_ingrs = recipe.findall("ingredients/ingredient[@basic_taste='{}'][@alc_type='{}']".format(basic_taste, alc_type))
+        similar_ingrs = recipe.findall(
+            "ingredients/ingredient[@basic_taste='{}'][@alc_type='{}']".format(basic_taste, alc_type)
+        )
         for si in similar_ingrs:
             if not subsumed(si.text, exc_ingrs):
                 include_ingredient(si, recipes[0])
@@ -65,8 +68,9 @@ def include_ingredient(ingr, recipe):
 
 def replace_ingredient(ingr1, ingr1_id, ingr2, recipe):
     if ingr1.text != ingr2.text:
-        if subsumed(ingr1.attrib["basic_taste"], ingr2.attrib["basic_taste"]) \
-                and subsumed(ingr1.attrib["alc_type"], ingr2.attrib["alc_type"]):
+        if subsumed(ingr1.attrib["basic_taste"], ingr2.attrib["basic_taste"]) and subsumed(
+            ingr1.attrib["alc_type"], ingr2.attrib["alc_type"]
+        ):
             ingr1.text = ingr2.text
             # for step in recipe.findall("preparation/step"):
             #     step.text = step.text.replace(ingr1_id, f"{ingr1.attrib['measure']} of {ingr2.text}")
@@ -105,7 +109,9 @@ def exclude_ingredient(exc_ingr, inc_ingrs, recipes):
             if replace_ingredient(exc_ingr, exc_ingr_id, ingr, recipes[0]):
                 return
     while True:
-        similar_ingr = search_ingredient(CASE_BASE, basic_taste=exc_ingr.attrib["basic_taste"], alc_type=exc_ingr.attrib["alc_type"])
+        similar_ingr = search_ingredient(
+            CASE_BASE, basic_taste=exc_ingr.attrib["basic_taste"], alc_type=exc_ingr.attrib["alc_type"]
+        )
         if similar_ingr is None:
             delete_ingredient(exc_ingr, exc_ingr_id, recipes[0])
             return
@@ -175,13 +181,14 @@ def adapt(query, recipes):
 
 if __name__ == "__main__":
     data_folder = os.path.join(Path(os.path.dirname(__file__)).parent.parent, "data")
-    query = {"category": "ordinary drink",
-             "glass": "xxx",
-             "alc_type": ["vermouth", "whisky"],
-             "basic_taste": ["sweet", "sour", "salty"],
-             "ingredients": ["orange juice", "rum"],
-             "exc_ingredients": ["lemon juice", "gin", "orange"]
-             }
+    query = {
+        "category": "ordinary drink",
+        "glass": "xxx",
+        "alc_type": ["vermouth", "whisky"],
+        "basic_taste": ["sweet", "sour", "salty"],
+        "ingredients": ["orange juice", "rum"],
+        "exc_ingredients": ["lemon juice", "gin", "orange"],
+    }
     with open(os.path.join("..", "utils", "test-query.json"), "w") as f:
         json.dump(query, f)
     query["ingredients"] = [search_ingredient(CASE_BASE, ingr_text=ingr) for ingr in query["ingredients"]]

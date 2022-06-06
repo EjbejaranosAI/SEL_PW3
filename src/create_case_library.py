@@ -6,9 +6,9 @@ import pandas as pd
 from lxml import etree
 from lxml.etree import SubElement
 from pandas import DataFrame
+from source.utils.helper import powerset
 
 from definitions import CASE_BASE, CASE_LIBRARY, DATA_PATH
-from source.utils.helper import powerset
 
 
 def add_ingredient(id, row, ingredients):
@@ -29,8 +29,8 @@ def add_ingredient(id, row, ingredients):
         quantity = value_gr
         unit = "gr"
     else:
-        quantity = row["Garnish_amount"]
-        garnish_type = row["Garnish_type"]
+        quantity = 0.0 if isinstance(row["Garnish_amount"], float) else row["Garnish_amount"]
+        garnish_type = "" if isinstance(row["Garnish_type"], float) else row["Garnish_type"]
 
     ingredient = SubElement(
         ingredients,
