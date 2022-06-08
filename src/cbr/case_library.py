@@ -42,8 +42,10 @@ def _include_to_dict(include_dict: Dict, key: str, elements: Union[str, List[str
 
     if key != "ingredient":
         search_key = f"@{key}"
+        append_search_key = f"and {search_key}"
     else:
         search_key = "text()"
+        append_search_key = search_key
 
     if is_exclusion:
         include_constraints = constraints_dict.get("exclude", [])
@@ -52,16 +54,16 @@ def _include_to_dict(include_dict: Dict, key: str, elements: Union[str, List[str
     if include_constraints:
         if isinstance(elements, str):
             if is_exclusion:
-                include_constraints.append(f"and {search_key}!='{elements}'")
+                include_constraints.append(f"{append_search_key}!='{elements}'")
             else:
-                include_constraints.append(f"and {search_key}='{elements}'")
+                include_constraints.append(f"{append_search_key}='{elements}'")
         else:
             if is_exclusion:
                 for inclusion in elements:
-                    include_constraints.append(f"and {search_key}!='{inclusion}'")
+                    include_constraints.append(f"{append_search_key}!='{inclusion}'")
             else:
                 for inclusion in elements:
-                    include_constraints.append(f"and {search_key}='{inclusion}'")
+                    include_constraints.append(f"{append_search_key}='{inclusion}'")
     else:
         include_dict[key] = constraints_dict
         if isinstance(elements, str):
@@ -75,13 +77,13 @@ def _include_to_dict(include_dict: Dict, key: str, elements: Union[str, List[str
                 if len(elements) > 1:
                     include_constraints = include_dict[key]["exclude"]
                     for inclusion in elements[1:]:
-                        include_constraints.append(f"and {search_key}!='{inclusion}'")
+                        include_constraints.append(f"{append_search_key}!='{inclusion}'")
             else:
                 include_dict[key]["include"] = [f"{search_key}='{elements[0]}'"]
                 if len(elements) > 1:
                     include_constraints = include_dict[key]["include"]
                     for inclusion in elements[1:]:
-                        include_constraints.append(f"and {search_key}='{inclusion}'")
+                        include_constraints.append(f"{append_search_key}='{inclusion}'")
     return include_dict
 
 
@@ -168,21 +170,6 @@ class CaseLibrary:
         else:
             raise TypeError("constraints must be string or ConstraintsBuilder.")
 
-    def remove_case(self, case):
-        """
-        Remove a case from the case library.
-
-        After removing the case the XML file is updated.
-
-        Parameters
-        ----------
-        case : :class:`lxml.objectify.ObjectifiedElement`
-            The case to remove from the case library
-        """
-        parent = case.getparent()
-        parent.remove(case)
-        self.ET.write(self.case_library_path, pretty_print=True, encoding="utf-8")
-
     def add_case(self, case):
         """
         Add a case from the case library. The new case will obtain a unique ID before being added to the case library.
@@ -199,6 +186,22 @@ class CaseLibrary:
         parent = self.case_library.find(f"./category[@type='{drink_type}']/glass[@type='{glass_type}']")
         case.set("id", str(uuid.uuid1().int))
         parent.append(case)
+        self.ET.write(self.tmp_case_library, pretty_print=True, encoding="utf-8")
+
+    def remove_case(self, case):
+        """
+        Remove a case from the case library.
+
+        After removing the case the XML file is updated.
+
+        Parameters
+        ----------
+        case : :class:`lxml.objectify.ObjectifiedElement`
+            The case to remove from the case library
+        """
+        parent = case.getparent()
+        parent.remove(case)
+        self.ET.write(self.tmp_case_library, pretty_print=True, encoding="utf-8")
 
     def _initialize_type_sets(self):
         self.drink_types = set(self.case_library.xpath("./category/@type"))
@@ -218,10 +221,10 @@ class ConstraintsBuilder:
 
     Parameters
     ----------
-    include_category : str, optional
+    include_category : str, default ""
         A drink category to include in the search.
 
-    include_glass : str, optional
+    include_glass : str, default ""
         A glass type to include in the search.
 
     Attributes
@@ -229,13 +232,13 @@ class ConstraintsBuilder:
     constraints : str
         The search pattern with the constraints.
 
-    include_category : list of str
+    include_categories : list of str
         The list of drink categories to include in the search.
 
     exclude_category : list of str
         The list of drink categories to exclude in the search.
 
-    include_glass : list of str
+    include_glasses : list of str
         The list of glass types to include in the search.
 
     exclude_glass : list of str
@@ -258,13 +261,13 @@ class ConstraintsBuilder:
     def __init__(self, include_category="", include_glass=""):
         self.constraints = "./"
         if include_category:
-            self.include_category = [f"@type='{include_category}'"]
+            self.include_categories = [f"@type='{include_category}'"]
         else:
-            self.include_category = []
+            self.include_categories = []
         if include_glass:
-            self.include_glass = [f"@type='{include_glass}'"]
+            self.include_glasses = [f"@type='{include_glass}'"]
         else:
-            self.include_glass = []
+            self.include_glasses = []
         self.exclude_category = []
         self.exclude_glass = []
         self.ingredient_constraints = dict()
@@ -299,7 +302,7 @@ class ConstraintsBuilder:
         """
 
         if include is not None:
-            self.include_category = _include_to_list(self.include_category, include)
+            self.include_categories = _include_to_list(self.include_categories, include)
 
         if exclude is not None:
             self.exclude_category = _include_to_list(self.exclude_category, exclude, is_exclusion=True)
@@ -336,7 +339,7 @@ class ConstraintsBuilder:
         >>> builder.filter_glass(exclude=["hurricane glass", "martini glass"])
         """
         if include is not None:
-            self.include_glass = _include_to_list(self.include_glass, include)
+            self.include_glasses = _include_to_list(self.include_glasses, include)
 
         if exclude is not None:
             self.exclude_glass = _include_to_list(self.exclude_glass, exclude, is_exclusion=True)
@@ -497,15 +500,15 @@ class ConstraintsBuilder:
             An XPath pattern with the constraints.
         """
         constraints = "./category"
-        if self.include_category:
-            cat_constraints = str.join(" ", self.include_category)
+        if self.include_categories:
+            cat_constraints = str.join(" ", self.include_categories)
             constraints += f"[{cat_constraints}]"
         if self.exclude_category:
             cat_constraints = str.join(" ", self.exclude_category)
             constraints += f"[{cat_constraints}]"
         constraints += "/glass"
-        if self.include_glass:
-            glass_constraint = str.join(" ", self.include_glass)
+        if self.include_glasses:
+            glass_constraint = str.join(" ", self.include_glasses)
             constraints += f"[{glass_constraint}]"
         if self.exclude_glass:
             glass_constraint = str.join(" ", self.exclude_glass)
@@ -513,9 +516,17 @@ class ConstraintsBuilder:
         constraints += "//cocktail"
         if self.ingredient_constraints:
             for attr, values in self.ingredient_constraints.items():
-                if "include" in values.keys():
-                    constraints += f"[descendant::ingredient[{' '.join(values['include'])}]]"
-                if "exclude" in values.keys():
-                    constraints += f"[descendant::ingredient[{' '.join(values['exclude'])}]]"
+                if attr != "ingredient":
+                    if "include" in values.keys():
+                        constraints += f"[descendant::ingredient[{' '.join(values['include'])}]]"
+                    if "exclude" in values.keys():
+                        constraints += f"[descendant::ingredient[{' '.join(values['exclude'])}]]"
+                else:
+                    if "include" in values.keys():
+                        for value in values["include"]:
+                            constraints += f"[descendant::ingredient[{value}]]"
+                    if "exclude" in values.keys():
+                        for value in values["exclude"]:
+                            constraints += f"[descendant::ingredient[{value}]]"
 
         return constraints

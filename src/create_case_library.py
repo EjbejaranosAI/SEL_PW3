@@ -1,14 +1,15 @@
 import os
 import re
+import uuid
 from itertools import permutations
 
 import pandas as pd
 from lxml import etree
 from lxml.etree import SubElement
 from pandas import DataFrame
-from source.utils.helper import powerset
 
 from definitions import CASE_BASE, CASE_LIBRARY, DATA_PATH
+from src.utils.helper import powerset
 
 
 def add_ingredient(id, row, ingredients):
@@ -93,7 +94,7 @@ def create_case_base(data: DataFrame, output_file):
         ingredients_list = []
         # Initialize cocktail element with the first row of the recipe.
         first_row = df_group.iloc[0]
-        cocktail = etree.SubElement(cocktails, "cocktail")
+        cocktail = etree.SubElement(cocktails, "cocktail", id=str(uuid.uuid1().int))
         cocktail_name = etree.SubElement(cocktail, "name")
         cocktail_name.text = group_name
         cocktail_category = etree.SubElement(cocktail, "category")

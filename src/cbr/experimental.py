@@ -3,7 +3,7 @@ from copy import deepcopy
 from lxml import etree
 
 from definitions import CASE_LIBRARY
-from src.cbr.case_library import CaseLibrary
+from src.cbr.case_library import CaseLibrary, ConstraintsBuilder
 
 if __name__ == "__main__":
     cl = CaseLibrary(CASE_LIBRARY)
@@ -11,13 +11,9 @@ if __name__ == "__main__":
     a = c[0]
     print(type(a))
     b = deepcopy(a)
-    # print(b.get("id"))
-    # etree.dump(a.getparent())
     cl.add_case(b)
-    # etree.dump(b.getparent())
-    # etree.dump(a)
-    # etree.dump(b)
-    # etree.dump(cl.case_library)
+    ingredients = cl.findall(ConstraintsBuilder().filter_ingredient(["banana", "cherry"]))
+    etree.dump(ingredients[0])
     print(cl.drink_types)
     print(cl.glass_types)
     print(cl.alc_types)
