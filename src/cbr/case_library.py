@@ -472,11 +472,11 @@ class ConstraintsBuilder:
         --------
         Add multime conditions at the same time.
 
-        >>> builder = ConstraintsBuilder().filter_ingredient(include="chocolate", exclude="strawberry")
+        >>> builder = ConstraintsBuilder().filter_ingredient(include="banana", exclude="strawberry")
 
         Add only inclusion or exclusions.
 
-        >>> builder = ConstraintsBuilder().filter_ingredient(include="chocolate")
+        >>> builder = ConstraintsBuilder().filter_ingredient(include="banana")
         >>> builder.filter_garnish_type(exclude=["strawberry", "coffee"])
         """
         if include is not None:
