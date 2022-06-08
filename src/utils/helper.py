@@ -5,8 +5,6 @@ from itertools import chain, combinations
 from typing import Union
 
 import pandas as pd
-
-# Function to get the path of the current file
 from matplotlib import pyplot as plt
 from pandas import DataFrame
 
@@ -16,6 +14,7 @@ def powerset(iterable):
     return chain.from_iterable(combinations(s, r) for r in range(1, len(s) + 1))
 
 
+# Function to get the path of the current file
 def get_path():
     path = os.path.dirname(os.path.abspath(__file__))
     return path
