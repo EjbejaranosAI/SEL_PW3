@@ -73,7 +73,8 @@ def count_ingr_ids(step):
 
 def delete_ingredient(ingr, recipe):
     recipe.find("ingredients").remove(recipe.find("ingredients/ingredient[.='{}']".format(ingr.text)))
-    for step in recipe.findall("preparation/step"):
+    #for step in recipe.findall("preparation/step"):
+    for step in recipe.preparation.iterchildren():
         if subsumed(ingr.attrib["id"], step.text):
             if count_ingr_ids(step) > 1:
                 step._setText(step.text.replace(ingr.attrib["id"], "[IGNORE]"))
