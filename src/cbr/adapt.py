@@ -5,7 +5,7 @@ import copy
 
 from pathlib import Path
 from itertools import combinations_with_replacement
-from lxml.objectify import StringElement
+from lxml.objectify import StringElement, Element, SubElement
 
 from definitions import CASE_LIBRARY as CASE_LIBRARY_PATH
 from case_library import CaseLibrary, ConstraintsBuilder
@@ -34,8 +34,8 @@ def search_ingredient(ingr_text=None, basic_taste=None, alc_type=None):
 
 def adapt_alcs_and_tastes(exc_ingrs, recipe, recipes, alc_type="", basic_taste=""):
     for rec in recipes[1:]:
-        similar_ingrs = rec.findall(
-            "ingredients/ingredient[@basic_taste='{}'][@alc_type='{}']".format(basic_taste, alc_type)
+        similar_ingrs = rec.ingredients.findall(
+            "ingredient[@basic_taste='{}'][@alc_type='{}']".format(basic_taste, alc_type)
         )
         for si in similar_ingrs:
             if not subsumed(si.text, exc_ingrs):
@@ -47,14 +47,14 @@ def adapt_alcs_and_tastes(exc_ingrs, recipe, recipes, alc_type="", basic_taste="
             include_ingredient(similar_ingr, recipe)
             return
 
-# TODO: insert step does not work
+
 def include_ingredient(ingr, recipe):
     ingr.attrib["id"] = f"ingr{len(recipe.findall('ingredients/ingredient'))}"
     ingr.attrib["measure"] = "some"
     recipe.find("ingredients").append(ingr)
-    step = StringElement("step")
-    step._setText("add {ingr.attrib['id']} to taste")
-    recipe.find("preparation").insert(0, step)
+    step = SubElement(recipe.preparation, "step")
+    step._setText(f"add {ingr.attrib['id']} to taste")
+    recipe.preparation.insert(1, step)
 
 
 def replace_ingredient(ingr1, ingr2):
@@ -72,35 +72,35 @@ def count_ingr_ids(step):
 
 
 def delete_ingredient(ingr, recipe):
-    recipe.find("ingredients").remove(recipe.find("ingredients/ingredient[.='{}']".format(ingr.text)))
-    #for step in recipe.findall("preparation/step"):
+    recipe.ingredients.remove(ingr)
     for step in recipe.preparation.iterchildren():
         if subsumed(ingr.attrib["id"], step.text):
             if count_ingr_ids(step) > 1:
                 step._setText(step.text.replace(ingr.attrib["id"], "[IGNORE]"))
             else:
-                recipe.find("preparation").remove(step)
+                recipe.preparation.remove(step)
 
 
 def exclude_ingredient(exc_ingr, recipe, inc_ingrs, recipes):
-    for ingr in inc_ingrs:
-        if replace_ingredient(exc_ingr, ingr):
-            return
-    for _ in recipes[1:]:
-        for ingr in recipe.findall("ingredients/ingredient"):
+    if not exc_ingr.attrib["alc_type"]:
+        for ingr in inc_ingrs:
             if replace_ingredient(exc_ingr, ingr):
                 return
-    for _ in range(20):
-        similar_ingr = search_ingredient(
-            basic_taste=exc_ingr.attrib["basic_taste"],
-            alc_type=exc_ingr.attrib["alc_type"]
-        )
-        if similar_ingr is None:
-            delete_ingredient(exc_ingr, recipe)
-            return
-        if exc_ingr.text != similar_ingr.text:
-            exc_ingr._setText(similar_ingr.text)
-            return
+        for _ in recipes[1:]:
+            for ingr in recipe.ingredients.iterchildren():
+                if replace_ingredient(exc_ingr, ingr):
+                    return
+        for _ in range(20):
+            similar_ingr = search_ingredient(
+                basic_taste=exc_ingr.attrib["basic_taste"],
+                alc_type=exc_ingr.attrib["alc_type"]
+            )
+            if similar_ingr is None:
+                delete_ingredient(exc_ingr, recipe)
+                return
+            if exc_ingr.text != similar_ingr.text:
+                exc_ingr._setText(similar_ingr.text)
+                return
     delete_ingredient(exc_ingr, recipe)
     return
 
@@ -109,7 +109,7 @@ def update_ingr_list(recipe):
     alc_types = set()
     basic_tastes = set()
     ingredients = set()
-    for ing in recipe.find("ingredients/ingredient"):
+    for ing in recipe.ingredients.iterchildren():
         if ing.attrib["alc_type"]:
             alc_types.add(ing.attrib["alc_type"])
         if ing.attrib["basic_taste"]:
