@@ -11,7 +11,10 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Cocktail Creator</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_10">
@@ -27,7 +30,7 @@
        <enum>QFrame::NoFrame</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page">
        <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -165,7 +168,7 @@
             <item>
              <widget class="QLabel" name="label_alc_type">
               <property name="text">
-               <string>Alcohol type</string>
+               <string>Alcohol type:</string>
               </property>
              </widget>
             </item>
@@ -175,7 +178,7 @@
            </layout>
           </item>
           <item>
-           <widget class="QTextBrowser" name="textBrowser_alc_type"/>
+           <widget class="QListWidget" name="list_alc_includes"/>
           </item>
          </layout>
         </item>
@@ -193,7 +196,7 @@
             <item>
              <widget class="QLabel" name="label_basic_taste">
               <property name="text">
-               <string>Basic taste</string>
+               <string>Basic taste:</string>
               </property>
              </widget>
             </item>
@@ -203,7 +206,7 @@
            </layout>
           </item>
           <item>
-           <widget class="QTextBrowser" name="textBrowser_basic_taste"/>
+           <widget class="QListWidget" name="list_taste_includes"/>
           </item>
          </layout>
         </item>
@@ -231,7 +234,7 @@
            </layout>
           </item>
           <item>
-           <widget class="QTextBrowser" name="textBrowser_ingredient"/>
+           <widget class="QListWidget" name="list_ingredient_includes"/>
           </item>
          </layout>
         </item>
@@ -250,7 +253,7 @@
       <item>
        <widget class="QPushButton" name="btn_back">
         <property name="text">
-         <string>Back</string>
+         <string>&amp;Back</string>
         </property>
         <property name="shortcut">
          <string>Alt+B</string>
@@ -282,7 +285,7 @@
          <enum>Qt::RightToLeft</enum>
         </property>
         <property name="text">
-         <string>Next</string>
+         <string>&amp;Next</string>
         </property>
         <property name="shortcut">
          <string>Alt+N</string>
@@ -304,16 +307,16 @@
    </property>
    <widget class="QMenu" name="menuFile">
     <property name="title">
-     <string>File</string>
+     <string>&amp;About</string>
     </property>
-    <addaction name="actionA"/>
+    <addaction name="user_manual"/>
    </widget>
    <addaction name="menuFile"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionA">
+  <action name="user_manual">
    <property name="text">
-    <string>A</string>
+    <string>User &amp;Manual</string>
    </property>
   </action>
  </widget>

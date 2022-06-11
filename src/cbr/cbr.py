@@ -4,37 +4,27 @@ import copy
 from lxml.objectify import SubElement
 
 from definitions import CASE_LIBRARY as CASE_LIBRARY_PATH
-from case_library import CaseLibrary
-from utils.helper import replace_ingredient, count_ingr_ids
+from src.cbr.case_library import CaseLibrary
+from src.utils.helper import replace_ingredient, count_ingr_ids
 
 random.seed(10)
 
 
 class CBR:
-    def __init__(self, query, recipes):
+    def __init__(self):
         """
         Case-Based Reasoning system
-
-        Parameters
-        ----------
-        query : :class: `entity.query.Query`
-            User query with recipe requirements.
-
-        recipes : list of :class:`lxml.objectify.ObjectifiedElement`
-            List of recipes similar to the query.
 
         Attributes
         ----------
         """
         self.case_library = CaseLibrary(CASE_LIBRARY_PATH)
-        self.query = query
-        self.sim_recipes = recipes[1:]
-        self.recipe = copy.deepcopy(recipes[0])
+        self.query = None
+        self.sim_recipes = []
+        self.recipe = None
         self.ingredients = None
         self.basic_tastes = None
         self.alc_types = None
-        self.update_ingr_list()
-        self.query.set_ingredients([self.search_ingredient(ingr) for ingr in self.query.get_ingredients()])
 
     def search_ingredient(self, ingr_text=None, basic_taste=None, alc_type=None):
         if ingr_text:
@@ -80,6 +70,7 @@ class CBR:
         to include or in the list of similar recipes.
         If such an ingredient is not found or the ingredient to exclude is
         an alcohol, deletes it from the recipe ingredients and preparation.
+
         Parameters
         ----------
         exc_ingr: :class:`lxml.objectify.ObjectifiedElement`
@@ -110,6 +101,7 @@ class CBR:
     def include_ingredient(self, ingr, measure="some"):
         """
         Includes an ingredient in the recipe.
+
         Parameters
         ----------
         ingr : :class:`lxml.objectify.ObjectifiedElement`
@@ -132,6 +124,7 @@ class CBR:
         Finds an ingredient with a certain alcohol type or basic taste
         in the list of similar recipes or de case library and includes it
         in the recipe.
+
         Parameters
         ----------
         alc_type : str
@@ -152,6 +145,30 @@ class CBR:
             if ingr.text not in self.query.get_exc_ingredients():
                 self.include_ingredient(ingr)
                 return
+
+    def retrieve(self, query, recipes):
+        """
+
+        Parameters
+        ----------
+        query : :class: `entity.query.Query` or None
+            User query with recipe requirements.
+
+        recipes : list of :class:`lxml.objectify.ObjectifiedElement` or None
+            List of recipes similar to the query.
+
+        Returns
+        -------
+
+        """
+        self.query = query
+        self.sim_recipes = recipes[1:]
+        self.recipe = copy.deepcopy(recipes[0])
+        self.ingredients = None
+        self.basic_tastes = None
+        self.alc_types = None
+        self.update_ingr_list()
+        self.query.set_ingredients([self.search_ingredient(ingr) for ingr in self.query.get_ingredients()])
 
     def adapt(self):
         """

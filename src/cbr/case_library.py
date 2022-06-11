@@ -186,7 +186,7 @@ class CaseLibrary:
         parent = self.case_library.find(f"./category[@type='{drink_type}']/glass[@type='{glass_type}']")
         case.set("id", str(uuid.uuid1().int))
         parent.append(case)
-        self.ET.write(self.tmp_case_library, pretty_print=True, encoding="utf-8")
+        self.ET.write(self.case_library_path, pretty_print=True, encoding="utf-8")
 
     def remove_case(self, case):
         """
@@ -201,18 +201,18 @@ class CaseLibrary:
         """
         parent = case.getparent()
         parent.remove(case)
-        self.ET.write(self.tmp_case_library, pretty_print=True, encoding="utf-8")
+        self.ET.write(self.case_library_path, pretty_print=True, encoding="utf-8")
 
     def _initialize_type_sets(self):
-        self.drink_types = set(self.case_library.xpath("./category/@type"))
-        self.glass_types = set(self.case_library.xpath(".//glass/@type"))
-        self.alc_types = set(self.case_library.xpath(".//ingredient/@alc_type"))
+        self.drink_types = sorted(set(self.case_library.xpath("./category/@type")))
+        self.glass_types = sorted(set(self.case_library.xpath(".//glass/@type")))
+        self.alc_types = sorted(set(self.case_library.xpath(".//ingredient/@alc_type")))
         self.alc_types.remove("")
-        self.taste_types = set(self.case_library.xpath(".//ingredient/@basic_taste"))
+        self.taste_types = sorted(set(self.case_library.xpath(".//ingredient/@basic_taste")))
         self.taste_types.remove("")
-        self.garnish_types = set(self.case_library.xpath(".//ingredient/@garnish_type"))
+        self.garnish_types = sorted(set(self.case_library.xpath(".//ingredient/@garnish_type")))
         self.garnish_types.remove("")
-        self.ingredients = set(self.case_library.xpath(".//ingredient/text()"))
+        self.ingredients = sorted(set(self.case_library.xpath(".//ingredient/text()")))
 
 
 class ConstraintsBuilder:
