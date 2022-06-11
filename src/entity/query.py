@@ -34,22 +34,22 @@ class Query:
         self.alc_types = None
         self.basic_tastes = None
 
-    def set_category(self, category: str):
+    def set_category(self, category):
         self.category = category
 
     def set_glass(self, glass: str):
         self.glass = glass
 
-    def set_ingredients(self, ingredients: list[str]):
+    def set_ingredients(self, ingredients):
         self.ingredients = ingredients
 
-    def set_exc_ingredients(self, exc_ingredients: list[str]):
+    def set_exc_ingredients(self, exc_ingredients):
         self.exc_ingredients = exc_ingredients
 
-    def set_alc_types(self, alc_types: list[str]):
+    def set_alc_types(self, alc_types):
         self.alc_types = alc_types
 
-    def set_basic_tastes(self, basic_taste: list[str]):
+    def set_basic_tastes(self, basic_taste):
         self.basic_tastes = basic_taste
 
     def get_category(self):
