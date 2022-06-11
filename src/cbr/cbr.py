@@ -17,10 +17,11 @@ class CBR:
 
         Parameters
         ----------
-        query : Query
-            User query with recipe requirements
+        query : :class: `entity.query.Query`
+            User query with recipe requirements.
 
-        recipes : list of lxml ObjectifiedElement
+        recipes : list of :class:`lxml.objectify.ObjectifiedElement`
+            List of recipes similar to the query.
 
         Attributes
         ----------
@@ -74,14 +75,15 @@ class CBR:
 
     def exclude_ingredient(self, exc_ingr):
         """
-
+        When the ingredient is not alcohol, replaces it in the recipe by an
+        ingredient with the same basic_taste in the list of ingredients
+        to include or in the list of similar recipes.
+        If such an ingredient is not found or the ingredient to exclude is
+        an alcohol, deletes it from the recipe ingredients and preparation.
         Parameters
         ----------
-        exc_ingr
-
-        Returns
-        -------
-
+        exc_ingr: :class:`lxml.objectify.ObjectifiedElement`
+            Ingredient to exclude.
         """
         if not exc_ingr.attrib["alc_type"]:
             for ingr in self.query.get_ingredients():
@@ -106,6 +108,15 @@ class CBR:
         return
 
     def include_ingredient(self, ingr, measure="some"):
+        """
+        Includes an ingredient in the recipe.
+        Parameters
+        ----------
+        ingr : :class:`lxml.objectify.ObjectifiedElement`
+            Ingredient to include in the recipe.
+        measure : str
+            Quantity of the ingredient to include.
+        """
         ingr.attrib["id"] = f"ingr{len(self.recipe.ingredients.ingredient[:])}"
         ingr.attrib["measure"] = measure
         self.recipe.ingredients.append(ingr)
@@ -117,6 +128,17 @@ class CBR:
         self.recipe.preparation.insert(1, step)
 
     def adapt_alcs_and_tastes(self, alc_type="", basic_taste=""):
+        """
+        Finds an ingredient with a certain alcohol type or basic taste
+        in the list of similar recipes or de case library and includes it
+        in the recipe.
+        Parameters
+        ----------
+        alc_type : str
+            Type of alcohol to include.
+        basic_taste
+            Type of basic taste to include.
+        """
         for recipe in self.sim_recipes:
             ingrs = recipe.ingredients.findall(
                 "ingredient[@basic_taste='{}'][@alc_type='{}']".format(basic_taste, alc_type)
@@ -132,6 +154,11 @@ class CBR:
                 return
 
     def adapt(self):
+        """
+        Adapts the recipe according the user requirements
+        by excluding ingredients and including other ingredients,
+        alcohol types and basic tastes.
+        """
         for exc_ingr in self.query.get_exc_ingredients():
             if exc_ingr in self.ingredients:
                 exc_ingr = self.recipe.find("ingredients/ingredient[.='{}']".format(exc_ingr))
