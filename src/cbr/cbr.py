@@ -12,6 +12,19 @@ random.seed(10)
 
 class CBR:
     def __init__(self, query, recipes):
+        """
+        Case-Based Reasoning system
+
+        Parameters
+        ----------
+        query : Query
+            User query with recipe requirements
+
+        recipes : list of lxml ObjectifiedElement
+
+        Attributes
+        ----------
+        """
         self.case_library = CaseLibrary(CASE_LIBRARY_PATH)
         self.query = query
         self.sim_recipes = recipes[1:]
@@ -20,7 +33,7 @@ class CBR:
         self.basic_tastes = None
         self.alc_types = None
         self.update_ingr_list()
-        self.query["ingredients"] = [self.search_ingredient(ingr) for ingr in self.query["ingredients"]]
+        self.query.set_ingredients([self.search_ingredient(ingr) for ingr in self.query.get_ingredients()])
 
     def search_ingredient(self, ingr_text=None, basic_taste=None, alc_type=None):
         if ingr_text:
@@ -60,8 +73,18 @@ class CBR:
         return None
 
     def exclude_ingredient(self, exc_ingr):
+        """
+
+        Parameters
+        ----------
+        exc_ingr
+
+        Returns
+        -------
+
+        """
         if not exc_ingr.attrib["alc_type"]:
-            for ingr in self.query["ingredients"]:
+            for ingr in self.query.get_ingredients():
                 if replace_ingredient(exc_ingr, ingr):
                     return
             for recipe in self.sim_recipes:
@@ -99,24 +122,24 @@ class CBR:
                 "ingredient[@basic_taste='{}'][@alc_type='{}']".format(basic_taste, alc_type)
             )
             for ingr in ingrs:
-                if ingr.text not in self.query["exc_ingredients"]:
+                if ingr.text not in self.query.get_exc_ingredients():
                     self.include_ingredient(ingr, ingr.attrib["measure"])
                     return
         while True:
             ingr = self.search_ingredient(basic_taste=basic_taste, alc_type=alc_type)
-            if ingr.text not in self.query["exc_ingredients"]:
+            if ingr.text not in self.query.get_exc_ingredients():
                 self.include_ingredient(ingr)
                 return
 
     def adapt(self):
-        for exc_ingr in self.query["exc_ingredients"]:
+        for exc_ingr in self.query.get_exc_ingredients():
             if exc_ingr in self.ingredients:
                 exc_ingr = self.recipe.find("ingredients/ingredient[.='{}']".format(exc_ingr))
                 self.exclude_ingredient(exc_ingr)
 
         self.update_ingr_list()
 
-        for ingr in self.query["ingredients"]:
+        for ingr in self.query.get_ingredients():
             if ingr.text not in self.ingredients:
                 measure = self.search_ingr_measure(ingr.text)
                 if measure:
@@ -126,10 +149,10 @@ class CBR:
 
         self.update_ingr_list()
 
-        for alc_type in self.query["alc_type"]:
+        for alc_type in self.query.get_alc_types():
             if alc_type not in self.alc_types:
                 self.adapt_alcs_and_tastes(alc_type=alc_type)
 
-        for basic_taste in self.query["basic_taste"]:
+        for basic_taste in self.query.get_basic_tastes():
             if basic_taste not in self.basic_tastes:
                 self.adapt_alcs_and_tastes(basic_taste=basic_taste)

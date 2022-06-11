@@ -26,7 +26,7 @@ class Query:
     def set_alc_types(self, alc_types: list[str]):
         self.alc_types = alc_types
 
-    def set_basic_taste(self, basic_taste: list[str]):
+    def set_basic_tastes(self, basic_taste: list[str]):
         self.basic_tastes = basic_taste
 
     def get_category(self):
@@ -44,5 +44,5 @@ class Query:
     def get_alc_types(self):
         return self.alc_types
 
-    def get_basic_taste(self):
+    def get_basic_tastes(self):
         return self.basic_tastes
