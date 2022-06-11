@@ -4,6 +4,29 @@ from dataclasses import dataclass
 @dataclass
 class Query:
     def __init__(self):
+        """
+        Wrapper class for user queries.
+
+        Attributes
+        ----------
+        category : str
+            Category of the recipe.
+
+        glass : str
+            Glass to serve the recipe in.
+
+        ingredients : list[str]
+            Ingredients to include in the recipe.
+
+        exc_ingredients : list[str]
+            Ingredient to exclude from the recipe.
+
+        alc_types : list[str]
+            Alcohol types to include in the recipe.
+
+        basic_tastes : list[str]
+            Basic tastes to include in the recipe.
+        """
         self.category = None
         self.glass = None
         self.ingredients = None
