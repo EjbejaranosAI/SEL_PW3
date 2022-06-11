@@ -1,11 +1,9 @@
-import json
 import os
 import random
 import copy
 
 from pathlib import Path
-from itertools import combinations_with_replacement
-from lxml.objectify import StringElement, Element, SubElement
+from lxml.objectify import SubElement
 
 from definitions import CASE_LIBRARY as CASE_LIBRARY_PATH
 from case_library import CaseLibrary, ConstraintsBuilder
