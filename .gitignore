@@ -125,6 +125,7 @@ target_wrapper.*
 
 # QtCreator
 *.autosave
+*.pyproject.user
 
 # QtCreator Qml
 *.qmlproject.user
