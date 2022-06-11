@@ -41,3 +41,15 @@ def evaluate_adapted_solution(root: ET.Element) -> float:
     # Get the adapted solution
     adapted_solution = root.find("adaptedSolution").text
     return float(adapted_solution)
+
+# Evaluate similarity between two solutions using the ConstraintsBuilder
+def evaluate_similarity(root: ET.Element) -> float:
+    # Get the adapted solution
+    adapted_solution = root.find("adaptedSolution").text
+    # Get the original solution
+    original_solution = root.find("originalSolution").text
+    # Get the similarity between the two solutions
+    similarity = get_jaccard_simmularity(adapted_solution, original_solution)
+    return similarity
+
+    

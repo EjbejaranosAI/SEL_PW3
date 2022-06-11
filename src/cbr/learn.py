@@ -28,3 +28,18 @@ def learn_from_cbr(cbr_path: str, cbr_file: str) -> ET.Element:
     tree = ET.parse(cbr_file)
     root = tree.getroot()
     return root
+
+
+
+# Function to learn from the ConstraintsBuilder and return the root element of the xml file
+def learn_from_cbr(cbr_path: str, cbr_file: str) -> ET.Element:
+    import xml.etree.ElementTree as ET
+    import zipfile
+
+    zip_ref = zipfile.ZipFile(cbr_path, "r")
+    zip_ref.extractall(cbr_file)
+    zip_ref.close()
+
+    tree = ET.parse(cbr_file)
+    root = tree.getroot()
+    return root
