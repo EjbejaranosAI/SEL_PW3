@@ -39,7 +39,7 @@ def adapt_alcs_and_tastes(exc_ingrs, recipe, recipes, alc_type="", basic_taste="
         )
         for si in similar_ingrs:
             if not subsumed(si.text, exc_ingrs):
-                include_ingredient(si, recipe)
+                include_ingredient(si, recipe, si.attrib["measure"])
                 return
     while True:
         similar_ingr = search_ingredient(basic_taste=basic_taste, alc_type=alc_type)
@@ -48,12 +48,15 @@ def adapt_alcs_and_tastes(exc_ingrs, recipe, recipes, alc_type="", basic_taste="
             return
 
 
-def include_ingredient(ingr, recipe):
+def include_ingredient(ingr, recipe, measure="some"):
     ingr.attrib["id"] = f"ingr{len(recipe.findall('ingredients/ingredient'))}"
-    ingr.attrib["measure"] = "some"
+    ingr.attrib["measure"] = measure
     recipe.find("ingredients").append(ingr)
     step = SubElement(recipe.preparation, "step")
-    step._setText(f"add {ingr.attrib['id']} to taste")
+    if measure == "some":
+        step._setText(f"add {ingr.attrib['id']} to taste")
+    else:
+        step._setText(f"add {measure} of {ingr.attrib['id']}")
     recipe.preparation.insert(1, step)
 
 
@@ -86,8 +89,8 @@ def exclude_ingredient(exc_ingr, recipe, inc_ingrs, recipes):
         for ingr in inc_ingrs:
             if replace_ingredient(exc_ingr, ingr):
                 return
-        for _ in recipes[1:]:
-            for ingr in recipe.ingredients.iterchildren():
+        for rec in recipes[1:]:
+            for ingr in rec.ingredients.iterchildren():
                 if replace_ingredient(exc_ingr, ingr):
                     return
         for _ in range(20):
@@ -131,7 +134,11 @@ def adapt(query, recipes):
 
     for ingr in query["ingredients"]:
         if not subsumed(ingr.text, ingredients):
-            include_ingredient(ingr, recipe)
+            measure = search_ingr_measure(ingr.text, recipes[1:])
+            if measure:
+                include_ingredient(ingr, recipe, measure)
+            else:
+                include_ingredient(ingr, recipe)
 
     alc_types, basic_tastes, ingredients = update_ingr_list(recipe)
 
@@ -144,6 +151,14 @@ def adapt(query, recipes):
             adapt_alcs_and_tastes(query["exc_ingredients"], recipe, recipes, basic_taste=basic_taste)
 
     return recipe
+
+
+def search_ingr_measure(ingr_text, recipes):
+    for rec in recipes:
+        for ingr in rec.ingredients.iterchildren():
+            if ingr.text == ingr_text:
+                return ingr.attrib["measure"]
+    return None
 
 
 if __name__ == "__main__":
