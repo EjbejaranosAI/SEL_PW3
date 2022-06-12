@@ -11,6 +11,8 @@ random.seed(10)
 
 
 class CBR:
+    USER_THRESHOLD = 0.85
+    USER_SCORE_THRESHOLD = 0.85
     def __init__(self):
         """
         Case-Based Reasoning system
@@ -233,3 +235,35 @@ class CBR:
         self.similarity_evaluation_score = self.evaluation_score * self.similarity_score
 
         return self.evaluation_score * self.similarity_evaluation_score
+
+    # Learning the adapted recipe in the case_library if the score_percent is lower than the EVALUATION_THRESHOLD and the USER_THRESHOLD is equal or higher than the USER_SCORE_THRESHOLD
+    def learn(self, query):
+        """
+        Learns the recipe according to the user requirements and the adapted_solution.
+
+        Parameters
+        ----------
+        query :  User query with recipe requirements and adapted_solution.
+
+        Returns
+        -------
+        score : float with the evaluation between the user requirements 
+        and the adapted_solution requirements.
+        
+        """
+        if self.score_percent < self.EVALUATION_THRESHOLD and self.USER_THRESHOLD >= self.USER_SCORE_THRESHOLD:
+            self.adapted_solution.save()
+            return True
+        #else: get another recipe from the case_library and adapt it again until the score_percent is lower than the EVALUATION_THRESHOLD 
+        else:   
+            self.adapted_solution = self.get_random_recipe()
+            self.adapt()
+            self.adapted_solution.save()
+            #EVALUATE THE RECIPE AGAIN
+            self.evaluate(query)
+            print("Adapted solution: {}".format(self.adapted_solution.get_recipe_name()))
+            #learn the score again the retrieved recipe and the adapted solution again until the USER_THRESHOLD is equal or higher than the USER_SCORE_THRESHOLD
+            self.learn(query)
+            return False
+            
+
