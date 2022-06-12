@@ -20,25 +20,24 @@ def get_jaccard_simmularity(list1, list2):
     return jaccard_metric
 
 # Fucntion to evaluate the similarity between all the cases in the case_library with the new solution
-# and return the mean of the similarity
-# The similarity is computed using the jaccard index
-# The case_library is a list of the cases
-# The new_solution is the new solution
-# The mean_similarity is the mean of the similarity
-def evaluate_similarity_all_cases(case_library: list, new_solution: list) -> float:
-    # Initialize the mean_similarity
-    mean_similarity = 0
-    # For each case in the case_library
-    # Compute the similarity between the new solution and the case
-    # Add the similarity to the mean_similarity
-    # Divide by the number of cases
-    # Return the mean_similarity
-    for case in case_library:
-        similarity = get_jaccard_simmularity(new_solution, case)
-        mean_similarity += similarity
-    mean_similarity /= len(case_library)
-    return mean_similarity 
-
+# and return the score similarity and the case that has the highest similarity with the new solution
+def evaluate_similarity_with_case_library(root: ET.Element, case_library: list) -> tuple:
+    # Get the adapted solution
+    adapted_solution = root.find("adaptedSolution").text
+    # Get the original solution
+    original_solution = root.find("originalSolution").text
+    # Get the similarity between the two solutions
+    similarity = get_jaccard_simmularity(adapted_solution, original_solution)
+    # Get the case that has the highest similarity with the new solution
+    case_with_highest_similarity = get_case_with_highest_similarity(adapted_solution, case_library)
+    return similarity, case_with_highest_similarity
+#Function yo get case with highest similarity with the new solution
+def get_case_with_highest_similarity(adapted_solution, case_library):
+    # Get the similarity between the two solutions
+    similarity = get_jaccard_simmularity(adapted_solution, case_library)
+    # Get the case that has the highest similarity with the new solution
+    case_with_highest_similarity = case_library[similarity.index(max(similarity))]
+    return case_with_highest_similarity
 
 def get_pearson_corr_metric(item1, item2, mean1, mean2):
     """
