@@ -3,7 +3,7 @@ import random
 
 from lxml.objectify import SubElement
 
-from definitions import CASE_LIBRARY as CASE_LIBRARY_PATH
+from definitions import CASE_LIBRARY_FILE as CASE_LIBRARY_PATH
 from src.cbr.case_library import CaseLibrary
 from src.utils.helper import count_ingr_ids, replace_ingredient
 

@@ -12,7 +12,7 @@ from pandas import DataFrame
 
 sys.path.append(os.fspath(Path(__file__).resolve().parent.parent))
 
-from definitions import CASE_BASE, CASE_LIBRARY, DATA_PATH
+from definitions import CASE_BASE_FILE, CASE_LIBRARY_FILE, DATA_PATH
 from src.utils.helper import powerset
 
 
@@ -131,7 +131,7 @@ def create_case_base(data: DataFrame, output_file):
 
 
 def create_case_library(output_file):
-    root = etree.parse(CASE_BASE).getroot()
+    root = etree.parse(CASE_BASE_FILE).getroot()
     categories = {category.text for category in root.findall("cocktail/category")}
     glass_types = {glass.text for glass in root.findall("cocktail/glass")}
     case_library = etree.Element("case_library")
@@ -151,5 +151,5 @@ def create_case_library(output_file):
 if __name__ == "__main__":
     df = pd.read_pickle(os.path.join(DATA_PATH, "processed-cocktails-data.pkl"))
     df = df.sort_values("Cocktail")
-    create_case_base(df, CASE_BASE)
-    create_case_library(CASE_LIBRARY)
+    create_case_base(df, CASE_BASE_FILE)
+    create_case_library(CASE_LIBRARY_FILE)

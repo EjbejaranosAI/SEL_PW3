@@ -1,5 +1,6 @@
 import uuid
 from typing import Dict, List, Union
+
 from lxml import objectify
 
 
@@ -213,18 +214,30 @@ class CaseLibrary:
         self.garnish_types.remove("")
         self.ingredients = sorted(set(self.case_library.xpath(".//ingredient/text()")))
 
-        #Retrieve: Get dicts of alcohol types and basic tastes
+        # Retrieve: Get dicts of alcohol types and basic tastes
         self.alcohol_dict = {atype: set() for atype in self.alc_types}
         self.basic_dict = {btype: set() for btype in self.taste_types}
 
-        #Retrieve: Define weight structure
+        # Retrieve: Define weight structure
         self.sim_weights = {}
-        self.similarity_cases = ["ingr_match", "ingr_alc_type_match", "ingr_basic_taste_match", "alc_type_match",
-                                 "basic_taste_match", "glasstype_match", "exc_ingr_match", "exc_ingr_alc_type_match",
-                                 "exc_ingr_basic_taste_match", "exc_alc_type", "exc_basic_taste"]
+        self.similarity_cases = [
+            "ingr_match",
+            "ingr_alc_type_match",
+            "ingr_basic_taste_match",
+            "alc_type_match",
+            "basic_taste_match",
+            "glasstype_match",
+            "exc_ingr_match",
+            "exc_ingr_alc_type_match",
+            "exc_ingr_basic_taste_match",
+            "exc_alc_type",
+            "exc_basic_taste",
+        ]
         self.similarity_weights_values = [1.0, 0.6, 0.6, 0.8, 0.8, 0.4, -1.0, -0.6, -0.6, -1.0, -1.0]
-        [self.sim_weights.update({sim_case: sim_weight})
-         for sim_case, sim_weight in zip(self.similarity_cases, self.similarity_weights_values)]
+        [
+            self.sim_weights.update({sim_case: sim_weight})
+            for sim_case, sim_weight in zip(self.similarity_cases, self.similarity_weights_values)
+        ]
 
 
 class ConstraintsBuilder:
@@ -261,9 +274,9 @@ class ConstraintsBuilder:
     Examples
     --------
     You can chain multiple filters of the same or different types.
-    >>> from definitions import CASE_LIBRARY
+    >>> from definitions import CASE_LIBRARY_FILE
     >>> from src.cbr.case_library import ConstraintsBuilder, CaseLibrary
-    >>> case_library = CaseLibrary(CASE_LIBRARY)
+    >>> case_library = CaseLibrary(CASE_LIBRARY_FILE)
     >>> builder = ConstraintsBuilder(include_category="cocktail", include_glass="hurricane glass")
     ...     .filter_alc_type(include="rum").filter_taste(include="sweet")
     ...     .filter_ingredient(include=["banana", "sugar"], exclude="coffee")

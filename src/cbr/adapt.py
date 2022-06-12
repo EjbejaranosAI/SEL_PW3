@@ -6,7 +6,7 @@ from pathlib import Path
 from case_library import CaseLibrary, ConstraintsBuilder
 from lxml.objectify import SubElement
 
-from definitions import CASE_LIBRARY as CASE_LIBRARY_PATH
+from definitions import CASE_LIBRARY_FILE as CASE_LIBRARY_PATH
 
 random.seed(10)
 

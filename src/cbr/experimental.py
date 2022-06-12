@@ -2,11 +2,11 @@ from copy import deepcopy
 
 from lxml import etree
 
-from definitions import CASE_LIBRARY
+from definitions import CASE_LIBRARY_FILE
 from src.cbr.case_library import CaseLibrary, ConstraintsBuilder
 
 if __name__ == "__main__":
-    cl = CaseLibrary(CASE_LIBRARY)
+    cl = CaseLibrary(CASE_LIBRARY_FILE)
     c = cl.findall(".//cocktail")
     a = c[0]
     print(type(a))
