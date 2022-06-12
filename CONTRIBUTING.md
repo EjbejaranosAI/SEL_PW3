@@ -1,4 +1,4 @@
-TThis project is a great work done by 4 upc AI masters students in year 2022 for SEL award.
+This project is a great work done by 4 upc AI masters students in year 2022 for SEL award.
 All this work was organized using agile methodologies.
 
 Authors:  
