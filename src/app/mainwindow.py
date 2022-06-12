@@ -35,10 +35,11 @@ class MainWindow:
         ui_file.open(QFile.ReadOnly)
         self.window = loader.load(ui_file)
         ui_file.close()
-        self.window.show()
+        self.window.showMaximized()
 
     def init_ui(self):
         self.window.main_widget.setCurrentIndex(0)
+        self.window.query_buttons.setVisible(False)
 
         self.init_buttons()
         self.init_scroll_areas()
@@ -61,21 +62,29 @@ class MainWindow:
     def init_line_edits(self):
         self.init_completers()
 
-        self.window.lineEdit_alc_type.setCompleter(self.alc_completer)
-        self.window.lineEdit_alc_type.returnPressed.connect(
-            lambda: self._include_to_list(self.window.list_alc_includes, self.window.lineEdit_alc_type, self.cbr.case_library.alc_types))
-        self.window.list_alc_includes.itemDoubleClicked.connect(lambda: _remove_from(
-            self.window.list_alc_includes))
+        self.window.input_include_alc.setCompleter(self.alc_completer)
+        self.window.input_include_alc.returnPressed.connect(
+            lambda: self._include_to_list(self.window.list_alc_includes, self.window.input_include_alc,
+                                          self.cbr.case_library.alc_types))
+        self.window.list_alc_includes.itemDoubleClicked.connect(lambda: _remove_from(self.window.list_alc_includes))
+
+        self.window.input_exclude_alc.setCompleter(self.alc_completer)
+        self.window.input_exclude_alc.returnPressed.connect(
+            lambda: self._include_to_list(self.window.list_alc_excludes, self.window.input_exclude_alc,
+                                          self.cbr.case_library.alc_types))
+        self.window.list_alc_excludes.itemDoubleClicked.connect(lambda: _remove_from(self.window.list_alc_excludes))
 
         self.window.lineEdit_basic_taste.setCompleter(self.taste_completer)
         self.window.lineEdit_basic_taste.returnPressed.connect(
-            lambda: self._include_to_list(self.window.list_taste_includes, self.window.lineEdit_basic_taste, self.cbr.case_library.taste_types))
+            lambda: self._include_to_list(self.window.list_taste_includes, self.window.lineEdit_basic_taste,
+                                          self.cbr.case_library.taste_types))
         self.window.list_taste_includes.itemDoubleClicked.connect(lambda: _remove_from(
             self.window.list_taste_includes))
 
         self.window.lineEdit_ingredient.setCompleter(self.ingredients_completer)
         self.window.lineEdit_ingredient.returnPressed.connect(
-            lambda: self._include_to_list(self.window.list_ingredient_includes, self.window.lineEdit_ingredient, self.cbr.case_library.ingredients))
+            lambda: self._include_to_list(self.window.list_ingredient_includes, self.window.lineEdit_ingredient,
+                                          self.cbr.case_library.ingredients))
         self.window.list_ingredient_includes.itemDoubleClicked.connect(lambda: _remove_from(
             self.window.list_ingredient_includes))
 
