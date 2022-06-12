@@ -199,3 +199,27 @@ class CBR:
         for basic_taste in self.query.get_basic_tastes():
             if basic_taste not in self.basic_tastes:
                 self.adapt_alcs_and_tastes(basic_taste=basic_taste)
+    def evaulutaion(self, query):
+        """
+        Evaluates the new recipe with the given.
+
+        Parameters
+        ----------
+        query : recipe adapted and previus recipe.
+
+        Returns
+        -------
+        score : float with the evaluation between the two recipes.
+        """
+        score = 0
+        for ingr in query.get_ingredients():
+            if ingr.text in self.ingredients:
+                score += 1
+        for alc_type in query.get_alc_types():
+            if alc_type in self.alc_types:
+                score += 1
+        for basic_taste in query.get_basic_tastes():
+            if basic_taste in self.basic_tastes:
+                score += 1
+        return score
+        
