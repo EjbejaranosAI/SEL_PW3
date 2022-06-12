@@ -142,6 +142,8 @@ class CaseLibrary:
         self.taste_types = set()
         self.garnish_types = set()
         self.ingredients = set()
+        self.alcohol_dict = dict()
+        self.taste_dict = dict()
         self._initialize_type_sets()
 
     def findall(self, constraints):
@@ -206,38 +208,47 @@ class CaseLibrary:
     def _initialize_type_sets(self):
         self.drink_types = sorted(set(self.case_library.xpath("./category/@type")))
         self.glass_types = sorted(set(self.case_library.xpath(".//glass/@type")))
-        self.alc_types = sorted(set(self.case_library.xpath(".//ingredient/@alc_type")))
-        self.alc_types.remove("")
-        self.taste_types = sorted(set(self.case_library.xpath(".//ingredient/@basic_taste")))
-        self.taste_types.remove("")
-        self.garnish_types = sorted(set(self.case_library.xpath(".//ingredient/@garnish_type")))
-        self.garnish_types.remove("")
-        self.ingredients = sorted(set(self.case_library.xpath(".//ingredient/text()")))
+        for ingredient in self.case_library.xpath(".//ingredient"):
+            name = ingredient.text
+            self.ingredients.add(name)
+            alc_type = ingredient.attrib["alc_type"]
+            basic_taste = ingredient.attrib["basic_taste"]
+            garnish_type = ingredient.attrib["garnish_type"]
 
-        # Retrieve: Get dicts of alcohol types and basic tastes
-        self.alcohol_dict = {atype: set() for atype in self.alc_types}
-        self.basic_dict = {btype: set() for btype in self.taste_types}
+            if alc_type:
+                self.alc_types.add(alc_type)
+                if alc_type in self.alcohol_dict.keys():
+                    self.alcohol_dict[alc_type].add(name)
+                else:
+                    self.alcohol_dict[alc_type] = set(name)
+            elif basic_taste:
+                self.taste_types.add(basic_taste)
+                if basic_taste in self.taste_dict.keys():
+                    self.taste_dict[basic_taste].add(name)
+                else:
+                    self.taste_dict[basic_taste] = set(name)
+            elif garnish_type:
+                self.garnish_types.add(garnish_type)
+
+        self.alc_types = sorted(self.alc_types)
+        self.taste_types = sorted(self.taste_types)
+        self.garnish_types = sorted(self.garnish_types)
+        self.ingredients = sorted(self.ingredients)
 
         # Retrieve: Define weight structure
-        self.sim_weights = {}
-        self.similarity_cases = [
-            "ingr_match",
-            "ingr_alc_type_match",
-            "ingr_basic_taste_match",
-            "alc_type_match",
-            "basic_taste_match",
-            "glasstype_match",
-            "exc_ingr_match",
-            "exc_ingr_alc_type_match",
-            "exc_ingr_basic_taste_match",
-            "exc_alc_type",
-            "exc_basic_taste",
-        ]
-        self.similarity_weights_values = [1.0, 0.6, 0.6, 0.8, 0.8, 0.4, -1.0, -0.6, -0.6, -1.0, -1.0]
-        [
-            self.sim_weights.update({sim_case: sim_weight})
-            for sim_case, sim_weight in zip(self.similarity_cases, self.similarity_weights_values)
-        ]
+        self.sim_weights = {
+            "ingr_match": 1.0,
+            "ingr_alc_type_match": 0.6,
+            "ingr_basic_taste_match": 0.6,
+            "alc_type_match": 0.8,
+            "basic_taste_match": 0.8,
+            "glass_type_match": 0.4,
+            "exc_ingr_match": -1.0,
+            "exc_ingr_alc_type_match": -0.6,
+            "exc_ingr_basic_taste_match": -0.6,
+            "exc_alc_type": -1.0,
+            "exc_basic_taste": -1.0,
+        }
 
 
 class ConstraintsBuilder:

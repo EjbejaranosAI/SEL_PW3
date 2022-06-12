@@ -49,133 +49,137 @@ def similarity_cocktal(cl, constraints, cocktail):
     cumulative_norm_score = 0
 
     # Get cocktails ingredients and alc_type
-    c_ingredients = [i.text for i in cocktail.findall("ingredients/ingredient")]
-    c_ingredients_atype = [i.attrib["alc_type"] for i in cocktail.findall("ingredients/ingredient")]
-    c_ingredients_btype = [i.attrib["basic_taste"] for i in cocktail.findall("ingredients/ingredient")]
+    c_ingredients = set()
+    c_ingredients_atype = set()
+    c_ingredients_btype = set()
+    for ingredient in cocktail.ingredients.iterchildren():
+        c_ingredients.add(ingredient.text)
+        c_ingredients_atype.add(ingredient.attrib["alc_type"])
+        c_ingredients_btype.add(ingredient.attrib["basic_taste"])
 
     # Evaluate each constraint one by one
     for key in constraints:
-        if constraints[key]:
+        if key == "ingredients":
+            for ingredient in constraints[key]:
+                # Get ingredient alcohol_type, if any
+                ingredient_alc_type = None
+                ingredient_basic_taste = None
+                for alcohol, ingredients in cl.alcohol_dict.items():
+                    if ingredient in ingredients:
+                        ingredient_alc_type = alcohol
+                        break
+                # If the ingredient is not alcoholic, get its basic_taste
+                if ingredient_alc_type is None:
+                    for taste, ingredients in cl.taste_dict.items():
+                        if ingredient in ingredients:
+                            ingredient_basic_taste = taste
+                            break
 
-            # Ingredient constraint has highest importance
-            if key == "ingredients":
-                for ingredient in constraints[key]:
-                    # Get ingredient alcohol_type, if any
-                    ingredient_alc_type = [k for k in cl.alcohol_dict if ingredient in cl.alcohol_dict[k]]
-                    if ingredient_alc_type:
-                        itype = "alcohol"
-                        ingredient_alc_type = ingredient_alc_type[0]
-                    # If the ingredient is not alcoholic, get its basic_taste
-                    else:
-                        itype = "non-alcohol"
-                        ingredient_basic_taste = [k for k in cl.basic_dict if ingredient in cl.basic_dict[k]]
+                # Increase similarity - if constraint ingredient is used in cocktail
+                if ingredient in c_ingredients:
+                    sim += cl.sim_weights["ingr_match"]
+                    cumulative_norm_score += cl.sim_weights["ingr_match"]
 
-                    # Increase similarity - if constraint ingredient is used in cocktail
-                    if ingredient in c_ingredients:
-                        sim += cl.sim_weights["ingr_match"]
-                        cumulative_norm_score += cl.sim_weights["ingr_match"]
+                # Increase similarity - if constraint ingredient alc_type is used in cocktail
+                elif ingredient_alc_type is not None and ingredient_alc_type in c_ingredients_atype:
+                    sim += cl.sim_weights["ingr_alc_type_match"]
+                    cumulative_norm_score += cl.sim_weights["ingr_match"]
 
-                    # Increase similarity - if constraint ingredient alc_type is used in cocktail
-                    elif itype == "alcohol" and ingredient_alc_type in c_ingredients_atype:
-                        sim += cl.sim_weights["ingr_alc_type_match"]
-                        cumulative_norm_score += cl.sim_weights["ingr_match"]
+                # Increase similarity if constraint ingredient basic_taste is used in cocktail
+                elif ingredient_basic_taste is not None and ingredient_basic_taste in c_ingredients_btype:
+                    sim += cl.sim_weights["ingr_basic_taste_match"]
+                    cumulative_norm_score += cl.sim_weights["ingr_match"]
 
-                    # Increase similarity if constraint ingredient basic_taste is used in cocktail
-                    elif itype == "non-alcohol" and ingredient_basic_taste in c_ingredients_btype:
-                        sim += cl.sim_weights["ingr_basic_taste_match"]
-                        cumulative_norm_score += cl.sim_weights["ingr_match"]
-
-                    # In case the constraint is not fulfilled we add the weight to the normalization score
-                    else:
-                        cumulative_norm_score += cl.sim_weights["ingr_match"]
-
-            # Increase similarity if alc_type is a match. Alc_type has a lot of importance,
-            # but less than the ingredient constraints
-            elif key == "alc_type":
-                for atype in constraints[key]:
-                    matches = [i for i in cocktail.find("ingredients/ingredient") if atype == i.attrib["alc_type"]]
-                    if len(matches) > 0:
-                        sim += cl.sim_weights["alc_type_match"]
-                        cumulative_norm_score += cl.sim_weights["alc_type_match"]
-                    # In case the constraint is not fulfilled we add the weight to the normalization score
-                    else:
-                        cumulative_norm_score += cl.sim_weights["alc_type_match"]
-
-            # Increase similarity if basic_taste is a match. Basic_taste has a lot of importance,
-            # but less than the ingredient constraints
-            elif key == "basic_taste":
-                for btype in constraints[key]:
-                    matches = [i for i in cocktail.find("ingredients/ingredient") if btype == i.attrib["basic_taste"]]
-                    if len(matches) > 0:
-                        sim += cl.sim_weights["basic_taste_match"]
-                        cumulative_norm_score += cl.sim_weights["basic_taste_match"]
-                    # In case the constraint is not fulfilled we add the weight to the normalization score
-                    else:
-                        cumulative_norm_score += cl.sim_weights["basic_taste_match"]
-
-            # Increase similarity if glasstype is a match. Glasstype is not very relevant for the case
-            elif key == "glasstype":
-                if cocktail.find(key).text in constraints[key]:
-                    sim += cl.sim_weights["glasstype_match"]
-                    cumulative_norm_score += cl.sim_weights["glasstype_match"]
                 # In case the constraint is not fulfilled we add the weight to the normalization score
                 else:
-                    cumulative_norm_score += cl.sim_weights["glasstype_match"]
+                    cumulative_norm_score += cl.sim_weights["ingr_match"]
 
-            # If one of the excluded elements in the constraint is found in the cocktail, similarity is reduced
-            elif key == "exc_ingredients":
-                for ingredient in constraints[key]:
-                    # Get excluded_ingredient alcohol_type, if any
-                    exc_ingredient_alc_type = [k for k in cl.alcohol_dict if ingredient in cl.alcohol_dict[k]]
-                    if exc_ingredient_alc_type:
-                        itype = "alcohol"
-                        exc_ingredient_alc_type = exc_ingredient_alc_type[0]
+        # Increase similarity if alc_type is a match. Alc_type has a lot of importance,
+        # but less than the ingredient constraints
+        elif key == "alc_type":
+            for btype in constraints[key]:
+                if btype in c_ingredients_atype:
+                    sim += cl.sim_weights["alc_type_match"]
+                    cumulative_norm_score += cl.sim_weights["alc_type_match"]
+                # In case the constraint is not fulfilled we add the weight to the normalization score
+                else:
+                    cumulative_norm_score += cl.sim_weights["alc_type_match"]
 
-                    # If the excluded_ingredient is not alcoholic, get its basic_taste
-                    else:
-                        itype = "non-alcohol"
-                        exc_ingredient_basic_taste = [k for k in cl.basic_dict if ingredient in cl.basic_dict[k]]
+        # Increase similarity if basic_taste is a match. Basic_taste has a lot of importance,
+        # but less than the ingredient constraints
+        elif key == "basic_taste":
+            for btype in constraints[key]:
+                if btype in c_ingredients_btype:
+                    sim += cl.sim_weights["basic_taste_match"]
+                    cumulative_norm_score += cl.sim_weights["basic_taste_match"]
+                # In case the constraint is not fulfilled we add the weight to the normalization score
+                else:
+                    cumulative_norm_score += cl.sim_weights["basic_taste_match"]
 
-                    # Decrease similarity if ingredient excluded is found in cocktail
-                    if ingredient in c_ingredients:
-                        sim += cl.sim_weights["exc_ingr_match"]
-                        cumulative_norm_score += cl.sim_weights["ingr_match"]
+        # Increase similarity if glasstype is a match. Glasstype is not very relevant for the case
+        elif key == "glass":
+            if cocktail.glass.text in constraints[key]:
+                sim += cl.sim_weights["glass_type_match"]
+                cumulative_norm_score += cl.sim_weights["glass_type_match"]
+            # In case the constraint is not fulfilled we add the weight to the normalization score
+            else:
+                cumulative_norm_score += cl.sim_weights["glass_type_match"]
 
-                    # Decrease similarity if excluded ingredient alc_type is used in cocktail
-                    elif itype == "alcohol" and exc_ingredient_alc_type in c_ingredients_atype:
-                        sim += cl.sim_weights["exc_ingr_alc_type_match"]
-                        cumulative_norm_score += cl.sim_weights["ingr_match"]
+        # If one of the excluded elements in the constraint is found in the cocktail, similarity is reduced
+        elif key == "exc_ingredients":
+            for ingredient in constraints[key]:
+                # Get excluded_ingredient alcohol_type, if any
+                exc_ingredient_alc_type = None
+                exc_ingredient_basic_taste = None
+                for alcohol, ingredients in cl.alcohol_dict.items():
+                    if ingredient in ingredients:
+                        exc_ingredient_alc_type = alcohol
+                        break
+                # If the ingredient is not alcoholic, get its basic_taste
+                if exc_ingredient_alc_type is None:
+                    for taste, ingredients in cl.taste_dict.items():
+                        if ingredient in ingredients:
+                            exc_ingredient_basic_taste = taste
+                            break
 
-                    # Decrease similarity if excluded ingredient basic_taste is used in cocktail
-                    elif itype == "non-alcohol" and exc_ingredient_basic_taste in c_ingredients_btype:
-                        sim += cl.sim_weights["exc_ingr_basic_taste_match"]
-                        cumulative_norm_score += cl.sim_weights["ingr_match"]
+                # Decrease similarity if ingredient excluded is found in cocktail
+                if ingredient in c_ingredients:
+                    sim += cl.sim_weights["exc_ingr_match"]
+                    cumulative_norm_score += cl.sim_weights["ingr_match"]
 
-                    # In case the constraint is not fulfilled we add the weight to the normalization score
-                    else:
-                        cumulative_norm_score += cl.sim_weights["ingr_match"]
+                # Decrease similarity if excluded ingredient alc_type is used in cocktail
+                elif exc_ingredient_alc_type is not None and exc_ingredient_alc_type in c_ingredients_atype:
+                    sim += cl.sim_weights["exc_ingr_alc_type_match"]
+                    cumulative_norm_score += cl.sim_weights["ingr_match"]
 
-            # If one of the excluded alcohol_types is found in the cocktail, similarity is reduced
-            elif key == "exc_alc_type":
-                for atype in constraints[key]:
-                    matches = [i for i in cocktail.find("ingredients/ingredient") if atype == i.attrib["alc_type"]]
-                    if len(matches) > 0:
-                        sim += cl.sim_weights["exc_alc_type"]
-                        cumulative_norm_score += cl.sim_weights["ingr_match"]
-                    # In case the constraint is not fulfilled we add the weight to the normalization score
-                    else:
-                        cumulative_norm_score += cl.sim_weights["ingr_match"]
+                # Decrease similarity if excluded ingredient basic_taste is used in cocktail
+                elif exc_ingredient_basic_taste is not None and exc_ingredient_basic_taste in c_ingredients_btype:
+                    sim += cl.sim_weights["exc_ingr_basic_taste_match"]
+                    cumulative_norm_score += cl.sim_weights["ingr_match"]
 
-            # If one of the excluded basic_tastes is found in the cocktail, similarity is reduced
-            elif key == "exc_basic_taste":
-                for atype in constraints[key]:
-                    matches = [i for i in cocktail.find("ingredients/ingredient") if atype == i.attrib["basic_taste"]]
-                    if len(matches) > 0:
-                        sim += cl.sim_weights["exc_basic_taste"]
-                        cumulative_norm_score += cl.sim_weights["ingr_match"]
-                    # In case the constraint is not fulfilled we add the weight to the normalization score
-                    else:
-                        cumulative_norm_score += cl.sim_weights["ingr_match"]
+                # In case the constraint is not fulfilled we add the weight to the normalization score
+                else:
+                    cumulative_norm_score += cl.sim_weights["ingr_match"]
+
+        # If one of the excluded alcohol_types is found in the cocktail, similarity is reduced
+        elif key == "exc_alc_type":
+            for btype in constraints[key]:
+                if btype in c_ingredients_atype:
+                    sim += cl.sim_weights["exc_alc_type"]
+                    cumulative_norm_score += cl.sim_weights["ingr_match"]
+                # In case the constraint is not fulfilled we add the weight to the normalization score
+                else:
+                    cumulative_norm_score += cl.sim_weights["ingr_match"]
+
+        # If one of the excluded basic_tastes is found in the cocktail, similarity is reduced
+        elif key == "exc_basic_taste":
+            for btype in constraints[key]:
+                if btype in c_ingredients_atype:
+                    sim += cl.sim_weights["exc_basic_taste"]
+                    cumulative_norm_score += cl.sim_weights["ingr_match"]
+                # In case the constraint is not fulfilled we add the weight to the normalization score
+                else:
+                    cumulative_norm_score += cl.sim_weights["ingr_match"]
 
     # Normalization of similarity
     if cumulative_norm_score == 0:

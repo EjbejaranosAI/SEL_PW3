@@ -13,6 +13,7 @@ random.seed(10)
 class CBR:
     USER_THRESHOLD = 0.85
     USER_SCORE_THRESHOLD = 0.85
+
     def __init__(self):
         """
         Case-Based Reasoning system
@@ -201,7 +202,7 @@ class CBR:
         for basic_taste in self.query.get_basic_tastes():
             if basic_taste not in self.basic_tastes:
                 self.adapt_alcs_and_tastes(basic_taste=basic_taste)
-    
+
     # EVALUATION
     def evaluate(self, query):
         """
@@ -214,7 +215,7 @@ class CBR:
         Returns
         -------
         score : float with the evaluation between the user requirements and the adapted_solution requirements.
-        
+
         """
         score = 0
         for ingr in self.query.get_ingredients():
@@ -226,10 +227,12 @@ class CBR:
         for basic_taste in self.query.get_basic_tastes():
             if basic_taste in self.adapted_solution.get_basic_tastes():
                 score += 1
-        
+
         self.score_percent = (score / len(self.query.get_ingredients())) * 100
-        self.evaluation_score = score / (len(query.get_ingredients()) + len(query.get_alc_types()) + len(query.get_basic_tastes()))
-        
+        self.evaluation_score = score / (
+            len(query.get_ingredients()) + len(query.get_alc_types()) + len(query.get_basic_tastes())
+        )
+
         # Evaluate the similarity between the retrieved recipe and the adapted_solution
         self.similarity_score = self.similarity(self.adapted_solution)
         self.similarity_evaluation_score = self.evaluation_score * self.similarity_score
@@ -247,23 +250,21 @@ class CBR:
 
         Returns
         -------
-        score : float with the evaluation between the user requirements 
+        score : float with the evaluation between the user requirements
         and the adapted_solution requirements.
-        
+
         """
         if self.score_percent < self.EVALUATION_THRESHOLD and self.USER_THRESHOLD >= self.USER_SCORE_THRESHOLD:
             self.adapted_solution.save()
             return True
-        #else: get another recipe from the case_library and adapt it again until the score_percent is lower than the EVALUATION_THRESHOLD 
-        else:   
+        # else: get another recipe from the case_library and adapt it again until the score_percent is lower than the EVALUATION_THRESHOLD
+        else:
             self.adapted_solution = self.get_random_recipe()
             self.adapt()
             self.adapted_solution.save()
-            #EVALUATE THE RECIPE AGAIN
+            # EVALUATE THE RECIPE AGAIN
             self.evaluate(query)
             print("Adapted solution: {}".format(self.adapted_solution.get_recipe_name()))
-            #learn the score again the retrieved recipe and the adapted solution again until the USER_THRESHOLD is equal or higher than the USER_SCORE_THRESHOLD
+            # learn the score again the retrieved recipe and the adapted solution again until the USER_THRESHOLD is equal or higher than the USER_SCORE_THRESHOLD
             self.learn(query)
             return False
-            
-
