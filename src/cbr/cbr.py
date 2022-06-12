@@ -268,3 +268,86 @@ class CBR:
             # learn the score again the retrieved recipe and the adapted solution again until the USER_THRESHOLD is equal or higher than the USER_SCORE_THRESHOLD
             self.learn(query)
             return False
+            
+    # function to ask the user for the USER_SCORE_THRESHOLD value in the recipe file and return the result to the main function to be used in the learning process
+    def get_user_threshold(self):
+        """
+        Asks the user for the USER_SCORE_THRESHOLD value in the recipe file and
+        return the result to the main function to be used in the learning process.
+
+            Returns
+            -------
+            user_threshold : float
+                User threshold value.
+        """
+        user_threshold = input("Please enter the USER_SCORE_THRESHOLD value: ")
+        # updated the user_score_threshold in the class with the user input istance variable
+        self.USER_SCORE_THRESHOLD = float(user_threshold)
+        return self.USER_SCORE_THRESHOLD
+
+
+    # Function to know how many recipes are available in the case_library
+    def get_recipe_count(self):
+        """
+        Returns the number of recipes in the case_library.
+        """
+        return self.recipe.objects.count()
+    #Function to give the user requirements to the recipe
+    def get_user_requirements(self):
+        """
+        Asks the user for the user requirements and returns the result to the main function to be used in the learning process.
+
+            Returns
+            -------
+            user_requirements : User query with recipe requirements.
+        """
+        user_requirements = input("Please enter the user requirements: ")
+
+
+        return user_requirements
+
+    #Function to give information about the recipe available in the case_library
+    def get_recipe_info(self):
+        """
+        Returns the information about the recipes in the case_library.
+        """
+        info = self.recipe.objects.all()
+        for i in info:
+            print(i)
+
+        return info
+    # Function to return the list of recipes
+    def get_recipe_list(self):
+        """
+        Returns the list of recipes in the case_library.
+        """
+        list_recipes = self.recipe.objects.all()
+        return list_recipes
+
+    # Function to return the list of ingredients
+    def get_ingredient_list(self):
+        """
+        Returns the list of ingredients in the case_library.
+        """
+        ingredient_list = self.ingredient.objects.all()
+        return ingredient_list
+
+    # Function to return the list of alc_types
+    def get_alc_type_list(self):
+        """
+        Returns the list of alc_types in the case_library.
+        """
+        alc_type_list =  self.alc_type.objects.all()
+        return alc_type_list
+
+    # Function to return the list of basic_tastes
+    def get_basic_taste_list(self):
+        """
+        Returns the list of basic_tastes in the case_library.
+        """
+        basic_taste_list = self.basic_taste.objects.all()
+        return basic_taste_list
+
+
+
+
