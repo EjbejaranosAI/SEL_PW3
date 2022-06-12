@@ -1,6 +1,5 @@
 import uuid
 from typing import Dict, List, Union
-
 from lxml import objectify
 
 
