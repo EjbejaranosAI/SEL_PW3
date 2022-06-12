@@ -78,6 +78,7 @@ def evaluate_similarity(root: ET.Element) -> float:
 
 
 # Create a class that implements the evaluation of the solution
+
 class Evaluation:
     def __init__(self, root: ET.Element):
         self.root = root

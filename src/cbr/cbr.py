@@ -199,27 +199,37 @@ class CBR:
         for basic_taste in self.query.get_basic_tastes():
             if basic_taste not in self.basic_tastes:
                 self.adapt_alcs_and_tastes(basic_taste=basic_taste)
-    def evaulutaion(self, query):
+    
+    # EVALUATION
+    def evaluate(self, query):
         """
-        Evaluates the new recipe with the given.
+        Evaluates the recipe according to the user requirements and the adapted_solution.
 
         Parameters
         ----------
-        query : recipe adapted and previus recipe.
+        query :  User query with recipe requirements and adapted_solution.
 
         Returns
         -------
-        score : float with the evaluation between the two recipes.
+        score : float with the evaluation between the user requirements and the adapted_solution requirements.
+        
         """
         score = 0
-        for ingr in query.get_ingredients():
-            if ingr.text in self.ingredients:
+        for ingr in self.query.get_ingredients():
+            if ingr.text in self.adapted_solution.get_ingredients():
                 score += 1
-        for alc_type in query.get_alc_types():
-            if alc_type in self.alc_types:
+        for alc_type in self.query.get_alc_types():
+            if alc_type in self.adapted_solution.get_alc_types():
                 score += 1
-        for basic_taste in query.get_basic_tastes():
-            if basic_taste in self.basic_tastes:
+        for basic_taste in self.query.get_basic_tastes():
+            if basic_taste in self.adapted_solution.get_basic_tastes():
                 score += 1
-        return score
         
+        self.score_percent = (score / len(self.query.get_ingredients())) * 100
+        self.evaluation_score = score / (len(query.get_ingredients()) + len(query.get_alc_types()) + len(query.get_basic_tastes()))
+        
+        # Evaluate the similarity between the retrieved recipe and the adapted_solution
+        self.similarity_score = self.similarity(self.adapted_solution)
+        self.similarity_evaluation_score = self.evaluation_score * self.similarity_score
+
+        return self.evaluation_score * self.similarity_evaluation_score
