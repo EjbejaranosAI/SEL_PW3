@@ -36,9 +36,12 @@ def learn_from_cbr(cbr_path: str, cbr_file: str) -> ET.Element:
 
 
 # Create a class that implements the learning of the solution from the ConstraintsBuilder and storage in the case_library
+
 class Learning:
     def __init__(self, root: ET.Element, case_library: dict):
         self.root = root
+        
+        
         self.case_library = case_library
         self.learn_case(root, case_library)
     
@@ -87,4 +90,28 @@ class Learning:
     # output is the score of the case
     def print_score(self, score: str) -> None:
         print("The score of the case is " + score)
+    
+# conditional where the learn class is used to determine if the user input is more than 0.8 
+# if it is, the case is learned and the score is printed
+# if it is not, the case is not learned and the score is printed
+if __name__ == "__main__":
+    # Create a case_library dictionary
+    case_library = {}
+    # Create a learning object
+    learning = Learning(root, case_library)
+    # Learn the case
+    learning.learn_from_cbr(root, case_library)
+    # Ask the user the score of the case
+    user_score = learning.ask_user_score(evaluation)
+    # Print the score of the case
+    learning.print_score(user_score)
+    # If the user score is more than 0.8, the case is learned and the score is printed
+    if float(user_score) > 0.8:
+        learning.learn_case(root, case_library)
+        learning.print_score(user_score)
+    # If the user score is less than 0.8, the case is not learned and the score is printed
+    else:
+        learning.print_score(user_score)
+    # Print the case library
+    print(case_library)
     
