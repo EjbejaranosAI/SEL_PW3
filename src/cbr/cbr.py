@@ -283,4 +283,29 @@ class CBR:
         return self.USER_SCORE_THRESHOLD
 
 
+    # Function to know how many recipes are available in the case_library
+    def get_recipe_count(self):
+        """
+        Returns the number of recipes in the case_library.
+        """
+        return self.recipe.objects.count()
+    #Function to give the user requirements to the recipe
+    def get_user_requirements(self):
+        """
+        Asks the user for the user requirements and returns the result to the main function to be used in the learning process.
+            
+            Returns
+            -------
+            user_requirements : User query with recipe requirements.
+        """
+        user_requirements = input("Please enter the user requirements: ")
+        return user_requirements
 
+    #Function to give information about the recipe available in the case_library
+    def get_recipe_info(self):
+        """
+        Returns the information about the recipes in the case_library.
+        """
+        return self.recipe.objects.all()
+
+    
