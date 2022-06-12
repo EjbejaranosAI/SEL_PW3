@@ -19,6 +19,26 @@ def get_jaccard_simmularity(list1, list2):
 
     return jaccard_metric
 
+# Fucntion to evaluate the similarity between all the cases in the case_library with the new solution
+# and return the mean of the similarity
+# The similarity is computed using the jaccard index
+# The case_library is a list of the cases
+# The new_solution is the new solution
+# The mean_similarity is the mean of the similarity
+def evaluate_similarity_all_cases(case_library: list, new_solution: list) -> float:
+    # Initialize the mean_similarity
+    mean_similarity = 0
+    # For each case in the case_library
+    # Compute the similarity between the new solution and the case
+    # Add the similarity to the mean_similarity
+    # Divide by the number of cases
+    # Return the mean_similarity
+    for case in case_library:
+        similarity = get_jaccard_simmularity(new_solution, case)
+        mean_similarity += similarity
+    mean_similarity /= len(case_library)
+    return mean_similarity 
+
 
 def get_pearson_corr_metric(item1, item2, mean1, mean2):
     """
