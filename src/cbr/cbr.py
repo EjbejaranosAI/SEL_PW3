@@ -299,6 +299,8 @@ class CBR:
             user_requirements : User query with recipe requirements.
         """
         user_requirements = input("Please enter the user requirements: ")
+        
+
         return user_requirements
 
     #Function to give information about the recipe available in the case_library
@@ -306,6 +308,43 @@ class CBR:
         """
         Returns the information about the recipes in the case_library.
         """
-        return self.recipe.objects.all()
+        info = self.recipe.objects.all()
+        for i in info:
+            print(i)
+
+        return info 
+    # Function to return the list of recipes
+    def get_recipe_list(self):
+        """
+        Returns the list of recipes in the case_library.
+        """
+        list_recipes = self.recipe.objects.all()
+        return list_recipes         
+
+    # Function to return the list of ingredients
+    def get_ingredient_list(self):
+        """
+        Returns the list of ingredients in the case_library.
+        """
+        ingredient_list = self.ingredient.objects.all()
+        return ingredient_list
+
+    # Function to return the list of alc_types
+    def get_alc_type_list(self):
+        """
+        Returns the list of alc_types in the case_library.
+        """
+        alc_type_list =  self.alc_type.objects.all()
+        return alc_type_list
+
+    # Function to return the list of basic_tastes
+    def get_basic_taste_list(self):
+        """
+        Returns the list of basic_tastes in the case_library.
+        """
+        basic_taste_list = self.basic_taste.objects.all()
+        return basic_taste_list
+
+
 
     
