@@ -266,4 +266,21 @@ class CBR:
             self.learn(query)
             return False
             
+    # function to ask the user for the USER_SCORE_THRESHOLD value in the recipe file and return the result to the main function to be used in the learning process
+    def get_user_threshold(self):
+        """
+        Asks the user for the USER_SCORE_THRESHOLD value in the recipe file and 
+        return the result to the main function to be used in the learning process.
+            
+            Returns
+            -------
+            user_threshold : float
+                User threshold value.
+        """
+        user_threshold = input("Please enter the USER_SCORE_THRESHOLD value: ")
+        # updated the user_score_threshold in the class with the user input istance variable
+        self.USER_SCORE_THRESHOLD = float(user_threshold)
+        return self.USER_SCORE_THRESHOLD
+
+
 
