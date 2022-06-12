@@ -214,6 +214,19 @@ class CaseLibrary:
         self.garnish_types.remove("")
         self.ingredients = sorted(set(self.case_library.xpath(".//ingredient/text()")))
 
+        #ADDED Get dicts of alcohol types and basic tastes
+        self.alcohol_dict = {atype: set() for atype in self.alc_types}
+        self.basic_dict = {btype: set() for btype in self.taste_types}
+
+        #ADDED Define weight structure
+        self.similarity_weights = {}
+        self.similarity_cases = ["ingr_match", "ingr_alc_type_match", "ingr_basic_taste_match", "alc_type_match",
+                                 "basic_taste_match", "glasstype_match", "exc_ingr_match", "exc_ingr_alc_type_match",
+                                 "exc_ingr_basic_taste_match", "exc_alc_type", "exc_basic_taste"]
+        self.similarity_weights_values = [1.0, 0.6, 0.6, 0.8, 0.8, 0.4, -1.0, -0.6, -0.6, -1.0, -1.0]
+        [self.similarity_weights.update({sim_case: sim_weight})
+         for sim_case, sim_weight in zip(self.similarity_cases, self.similarity_weights_values)]
+
 
 class ConstraintsBuilder:
     """
