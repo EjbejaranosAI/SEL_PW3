@@ -1,4 +1,3 @@
-# This Python file uses the following encoding: utf-8
 import os
 import sys
 from pathlib import Path
@@ -6,8 +5,14 @@ from pathlib import Path
 from PySide6 import QtWidgets
 from PySide6.QtCore import QFile, Qt
 from PySide6.QtUiTools import QUiLoader
-from PySide6.QtWidgets import QApplication, QCheckBox, QScrollArea, QPushButton, QStackedWidget, QMainWindow, QLineEdit, \
-    QCompleter, QListWidget, QListWidgetItem, QHBoxLayout, QLabel, QMessageBox
+from PySide6.QtWidgets import (
+    QApplication,
+    QCheckBox,
+    QCompleter,
+    QListWidget,
+    QListWidgetItem,
+    QMessageBox,
+)
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", ".."))
 from src.cbr.cbr import CBR
@@ -64,29 +69,37 @@ class MainWindow:
 
         self.window.input_include_alc.setCompleter(self.alc_completer)
         self.window.input_include_alc.returnPressed.connect(
-            lambda: self._include_to_list(self.window.list_alc_includes, self.window.input_include_alc,
-                                          self.cbr.case_library.alc_types))
+            lambda: self._include_to_list(
+                self.window.list_alc_includes, self.window.input_include_alc, self.cbr.case_library.alc_types
+            )
+        )
         self.window.list_alc_includes.itemDoubleClicked.connect(lambda: _remove_from(self.window.list_alc_includes))
 
         self.window.input_exclude_alc.setCompleter(self.alc_completer)
         self.window.input_exclude_alc.returnPressed.connect(
-            lambda: self._include_to_list(self.window.list_alc_excludes, self.window.input_exclude_alc,
-                                          self.cbr.case_library.alc_types))
+            lambda: self._include_to_list(
+                self.window.list_alc_excludes, self.window.input_exclude_alc, self.cbr.case_library.alc_types
+            )
+        )
         self.window.list_alc_excludes.itemDoubleClicked.connect(lambda: _remove_from(self.window.list_alc_excludes))
 
         self.window.lineEdit_basic_taste.setCompleter(self.taste_completer)
         self.window.lineEdit_basic_taste.returnPressed.connect(
-            lambda: self._include_to_list(self.window.list_taste_includes, self.window.lineEdit_basic_taste,
-                                          self.cbr.case_library.taste_types))
-        self.window.list_taste_includes.itemDoubleClicked.connect(lambda: _remove_from(
-            self.window.list_taste_includes))
+            lambda: self._include_to_list(
+                self.window.list_taste_includes, self.window.lineEdit_basic_taste, self.cbr.case_library.taste_types
+            )
+        )
+        self.window.list_taste_includes.itemDoubleClicked.connect(lambda: _remove_from(self.window.list_taste_includes))
 
         self.window.lineEdit_ingredient.setCompleter(self.ingredients_completer)
         self.window.lineEdit_ingredient.returnPressed.connect(
-            lambda: self._include_to_list(self.window.list_ingredient_includes, self.window.lineEdit_ingredient,
-                                          self.cbr.case_library.ingredients))
-        self.window.list_ingredient_includes.itemDoubleClicked.connect(lambda: _remove_from(
-            self.window.list_ingredient_includes))
+            lambda: self._include_to_list(
+                self.window.list_ingredient_includes, self.window.lineEdit_ingredient, self.cbr.case_library.ingredients
+            )
+        )
+        self.window.list_ingredient_includes.itemDoubleClicked.connect(
+            lambda: _remove_from(self.window.list_ingredient_includes)
+        )
 
     def init_completers(self):
         self.alc_completer = QCompleter(self.cbr.case_library.alc_types, self.window)
@@ -99,9 +112,13 @@ class MainWindow:
     def _include_to_list(self, widget_list, line_edit, types):
         text = line_edit.text().strip()
         if text not in types:
-            button = QMessageBox.critical(self.window, "Error", f"There is no alcohol named {text}.",
-                                          buttons=QtWidgets.QMessageBox.Close,
-                                          defaultButton=QtWidgets.QMessageBox.Close)
+            button = QMessageBox.critical(
+                self.window,
+                "Error",
+                f"There is no alcohol named {text}.",
+                buttons=QtWidgets.QMessageBox.Close,
+                defaultButton=QtWidgets.QMessageBox.Close,
+            )
         else:
             items = widget_list.findItems(text, Qt.MatchExactly)
             line_edit.clear()

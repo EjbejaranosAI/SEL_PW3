@@ -1,5 +1,5 @@
 <cocktails>
-  <cocktail id="74429152107626634127754406833201449245">
+  <cocktail id="325946780326435503982182582611975964957">
     <name>'57 Chevy with a White License Plate</name>
     <category>cocktail</category>
     <glass>highball glass</glass>
@@ -16,7 +16,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74434302809699848965656004147534989597">
+  <cocktail id="325951930790824231274828261099459414301">
     <name>1-900-FUK-MEUP</name>
     <category>shot</category>
     <glass>old-fashioned glass</glass>
@@ -38,7 +38,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74438264851650862297927434062739638557">
+  <cocktail id="325955892912003407122536371886207895837">
     <name>110 in the shade</name>
     <category>beer</category>
     <glass>beer glass</glass>
@@ -54,7 +54,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74438661071691596134312084940262836509">
+  <cocktail id="325956289132044140956835293186305132829">
     <name>151 Florida Bushwacker</name>
     <category>milk / float / shake</category>
     <glass>beer mug</glass>
@@ -77,7 +77,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74445396653927746315566351095554214173">
+  <cocktail id="325963024793508453653117538546956470557">
     <name>155 Belmont</name>
     <category>cocktail</category>
     <glass>white wine glass</glass>
@@ -96,7 +96,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74446585314049947823882634197432895773">
+  <cocktail id="325964212978261680075407569223995984157">
     <name>24k nightmare</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -113,7 +113,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74447377754131415496158228843328801053">
+  <cocktail id="325965005735255797803925362711513631005">
     <name>252</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -128,7 +128,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74448962555066188324626752192025823517">
+  <cocktail id="325966591011559545719516764994314537245">
     <name>3 Wise Men</name>
     <category>shot</category>
     <glass>collins glass</glass>
@@ -145,7 +145,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74450151215188389831432640568875125021">
+  <cocktail id="325967383213956525848914904366565394717">
     <name>3-Mile Long Island Iced Tea</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -169,7 +169,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74452132236163896499685188088829937949">
+  <cocktail id="325969760296516441323891053745648535837">
     <name>410 Gone</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -184,7 +184,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74452924597017201656818243213844646173">
+  <cocktail id="325970156041188200071585854493719628061">
     <name>50/50</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -203,7 +203,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74453717116326831841706761764923083037">
+  <cocktail id="325971344780538564095354581065837938973">
     <name>501 Blue</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -221,7 +221,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74454905697220870834625207542044002589">
+  <cocktail id="325972533995257903203156998702660684061">
     <name>69 Special</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -240,7 +240,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74455698058074175990473610873351276829">
+  <cocktail id="325973325801514070762048883114722560285">
     <name>747</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -256,7 +256,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74457282938237111335675288836321413405">
+  <cocktail id="325974910998589656161258130079208540445">
     <name>9 1/2 Weeks</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -275,7 +275,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74458867739171884165574830966615410973">
+  <cocktail id="325976099500255532642953575386144147741">
     <name>A Day at the Beach</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -294,7 +294,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74459660258481514353644298229500971293">
+  <cocktail id="325977288318834059178668411643617446173">
     <name>A Furlong Too Late</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -312,7 +312,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74460848839375553343663270271525423389">
+  <cocktail id="325978080679687364334901028318134765853">
     <name>A Gilligan's Island</name>
     <category>cocktail</category>
     <glass>collins glass</glass>
@@ -329,7 +329,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74461641358685183531728515409760323869">
+  <cocktail id="325979269419037728355405771060316309789">
     <name>A Night In Old Mandalay</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -352,7 +352,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74463226159619956360846401529728829725">
+  <cocktail id="325980854219972501188981657861428185373">
     <name>A Piece of Ass</name>
     <category>other/unknown</category>
     <glass>highball glass</glass>
@@ -370,7 +370,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74463622300432527680809772067174320413">
+  <cocktail id="325981250440013235022406036408885414173">
     <name>A Splash of Nash</name>
     <category>shot</category>
     <glass>highball glass</glass>
@@ -388,7 +388,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74466792060758398369578321328379103517">
+  <cocktail id="325984420200339105711398639751551879453">
     <name>A True Amaretto Sour</name>
     <category>cocktail</category>
     <glass>old-fashioned glass</glass>
@@ -407,7 +407,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74467584421611703526612860211545082141">
+  <cocktail id="325985212640420573383105936419468970269">
     <name>A midsummernight dream</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -427,7 +427,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74468773002505742519972095802194888989">
+  <cocktail id="325986401300542774888320928227949644061">
     <name>A. J.</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -442,7 +442,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74469169301774638872881328336248604957">
+  <cocktail id="325986797362127183699449894947576449309">
     <name>A.D.M. (After Dinner Mint)</name>
     <category>cocktail</category>
     <glass>irish coffee cup</glass>
@@ -459,7 +459,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74473923783807119873585375040318572829">
+  <cocktail id="325991551923387827215833535428091545885">
     <name>A1</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -476,7 +476,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74475112443929321384221574900246481181">
+  <cocktail id="325992740583510028723571105977853118749">
     <name>ABC</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -492,7 +492,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74476301024823360378577513383428720925">
+  <cocktail id="325993929243632230229472333779554371869">
     <name>ACID</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -507,7 +507,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74477885825758133206671112063147149597">
+  <cocktail id="325995513965338840546004880542057990429">
     <name>AT&amp;T</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -523,7 +523,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74478678265839600879070837173772454173">
+  <cocktail id="325996306484648470732544531306521135389">
     <name>Abbey Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -541,7 +541,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74479470705921068550124830420744112413">
+  <cocktail id="325997098528589125834748468356269312285">
     <name>Abbey Martini</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -558,7 +558,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74480263146002536222505415232953092381">
+  <cocktail id="325998287584852139912056952518610356509">
     <name>Abilene</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -575,7 +575,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74481055506855841380535531108744661277">
+  <cocktail id="325999079787249120039504188827279657245">
     <name>Absolut Evergreen</name>
     <category>other/unknown</category>
     <glass>collins glass</glass>
@@ -591,7 +591,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74481847946937309049942614266982271261">
+  <cocktail id="325999872227330587712487411564626151709">
     <name>Absolut Sex</name>
     <category>shot</category>
     <glass>old-fashioned glass</glass>
@@ -608,7 +608,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74483829047140978230098487275832051997">
+  <cocktail id="326001853010621606833811797421092866333">
     <name>Absolut Stress #2</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -628,7 +628,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74485413848075751059148256451436579101">
+  <cocktail id="326003438128469029723166575252160743709">
     <name>Absolut Summertime</name>
     <category>cocktail</category>
     <glass>collins glass</glass>
@@ -649,7 +649,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74487394869051257725343784841589917981">
+  <cocktail id="326005419070216373871284061589317454109">
     <name>Absolut limousine</name>
     <category>other/unknown</category>
     <glass>collins glass</glass>
@@ -667,7 +667,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74488187388360887914205604163915974941">
+  <cocktail id="326006607809566737895784904575860181277">
     <name>Absolutely Cranberry Smash</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -684,7 +684,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74489375969254926907617194100233963805">
+  <cocktail id="326007399932735555512448804327966214429">
     <name>Absolutely Fabulous</name>
     <category>cocktail</category>
     <glass>champagne flute</glass>
@@ -701,7 +701,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74489772189295660740185325768537377053">
+  <cocktail id="326008192531273348211627274695469271325">
     <name>Absolutely Screwed Up</name>
     <category>cocktail</category>
     <glass>collins glass</glass>
@@ -719,7 +719,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74490960770189699734117644411770079517">
+  <cocktail id="326009381349851874745900114647253879069">
     <name>Acapulco</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -739,7 +739,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74492545650352635081238981715906890013">
+  <cocktail id="326010965913102160031642897734752897309">
     <name>Ace</name>
     <category>cocktail</category>
     <glass>martini glass</glass>
@@ -757,7 +757,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74493338090434102750017531251149605149">
+  <cocktail id="326011758511639952733233608652666276125">
     <name>Adam</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -775,7 +775,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74494130451287407908089023948517640477">
+  <cocktail id="326012550951721420408424721107331156253">
     <name>Adam &amp; Eve</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -792,7 +792,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74496507771531810923976244413945186589">
+  <cocktail id="326014928430422148451463641173778073885">
     <name>Adam Bomb</name>
     <category>punch / party drink</category>
     <glass>margarita/coupette glass</glass>
@@ -813,7 +813,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74498092572466583752139930362864568605">
+  <cocktail id="326016117090544349959364185735055116573">
     <name>Adam Sunrise</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -833,7 +833,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74498488792507317589765604412705048861">
+  <cocktail id="326016909451397655114252196445825632541">
     <name>Addington</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -850,7 +850,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74499677294173194070843775095714187549">
+  <cocktail id="326017701812250960273145596075188783389">
     <name>Addison</name>
     <category>cocktail</category>
     <glass>martini glass</glass>
@@ -865,7 +865,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74500073514213927906123355214671350045">
+  <cocktail id="326018098111519856621650589648650864925">
     <name>Addison Special</name>
     <category>cocktail</category>
     <glass>old-fashioned glass</glass>
@@ -883,7 +883,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74500469813482824253349889443913632029">
+  <cocktail id="326018890630829486808926578952189085981">
     <name>Adios Amigos Cocktail</name>
     <category>cocktail</category>
     <glass>martini glass</glass>
@@ -903,7 +903,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74502847133727227271060786283449518365">
+  <cocktail id="326020871414120505930955496675362572573">
     <name>Adonis Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -919,7 +919,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74503639494580532430090982751494048029">
+  <cocktail id="326021664012658298634715816713761687837">
     <name>Affair</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -937,7 +937,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74504432093118325128069525293279578397">
+  <cocktail id="326022852514324175112588268887013165341">
     <name>Affinity</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -956,7 +956,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74505620594784201606636376234076244253">
+  <cocktail id="326024041095218214105866439684370303261">
     <name>After Dinner Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -974,7 +974,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74506412955637506764846073145009211677">
+  <cocktail id="326024833772984169319603388996079946013">
     <name>After Five</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -996,7 +996,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74508790275881909783134556636755364125">
+  <cocktail id="326026814873187838498635332422924077341">
     <name>After Supper Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1012,7 +1012,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74509186495922643617797425081739479325">
+  <cocktail id="326027607075584818631349528495803173149">
     <name>After sex</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -1029,7 +1029,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74510771376085578961028215257781602589">
+  <cocktail id="326029192272660404028263909975167174941">
     <name>Afternoon</name>
     <category>coffee / tea</category>
     <glass>collins glass</glass>
@@ -1049,7 +1049,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74512752397061085626259128902747523357">
+  <cocktail id="326030776756682526802020613930618292509">
     <name>Alabama Slammer</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -1067,7 +1067,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74513544837142553301278260146642192669">
+  <cocktail id="326031965733717378365996442672327657757">
     <name>Alaska Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1085,7 +1085,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74514733418036592292156293817587566877">
+  <cocktail id="326033153997698767305779047450805635357">
     <name>Alexander</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1103,7 +1103,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74519487979297235809789964669674686749">
+  <cocktail id="326038304303631169570547946797263063325">
     <name>Alfie Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1119,7 +1119,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74520676560191274801811068221042034973">
+  <cocktail id="326039097060625287298837464078668368157">
     <name>Algonquin</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1135,7 +1135,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74521469000272742477474495686627395869">
+  <cocktail id="326040285403834838751699959748691855645">
     <name>Alice in Wonderland</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -1151,7 +1151,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74522261361126047631862043888806365469">
+  <cocktail id="326041077843916306425464275546410420509">
     <name>Allegheny</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1170,7 +1170,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74523450100476411655447248776109328669">
+  <cocktail id="326042266741722995476077331044980066589">
     <name>Allies Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1186,7 +1186,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74523846241288982974693702547872778525">
+  <cocktail id="326042662644851079251428797502289447197">
     <name>Almeria</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1204,7 +1204,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74524242461329716811659880727280191773">
+  <cocktail id="326043455084932546926144780196266739997">
     <name>Almond Chocolate Coffee</name>
     <category>ordinary drink</category>
     <glass>coffee mug</glass>
@@ -1221,7 +1221,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74528996943362197814238269301266417949">
+  <cocktail id="326047813267696131578093039122625431837">
     <name>Almond Joy</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1237,7 +1237,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74529393163402931652106856256008194333">
+  <cocktail id="326048606420831061876270973790339827997">
     <name>Amaretto And Cream</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1252,7 +1252,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74529789383443665488672495543556344093">
+  <cocktail id="326049002403187308170751228388706715933">
     <name>Amaretto Mist</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -1269,7 +1269,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74530185603484399322802531857627187485">
+  <cocktail id="326049398623228042004924893324167711005">
     <name>Amaretto Rose</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -1286,7 +1286,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74530581823525133159907477200552954141">
+  <cocktail id="326049795001725100872434826048934611229">
     <name>Amaretto Shake</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -1303,7 +1303,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74531374263606600829083469402911115549">
+  <cocktail id="326050586966437593457692531927039707421">
     <name>Amaretto Sour</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -1319,7 +1319,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74531770404419172152058903666137336093">
+  <cocktail id="326050983661847302380841744093314124061">
     <name>Amaretto Stinger</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1334,7 +1334,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74536524965679815670569932020631570717">
+  <cocktail id="326055737985423458354159622540764743965">
     <name>Amaretto Stone Sour</name>
     <category>other/unknown</category>
     <glass>collins glass</glass>
@@ -1350,7 +1350,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74537317405761283344234042726641142045">
+  <cocktail id="326056530425504926027398143081987803421">
     <name>Amaretto Stone Sour #3</name>
     <category>other/unknown</category>
     <glass>highball glass</glass>
@@ -1370,7 +1370,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74538109766614588500452022702369507613">
+  <cocktail id="326057323024042718724463580799323965725">
     <name>Amaretto Sunrise</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -1387,7 +1387,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74538902206696056173130408039938361629">
+  <cocktail id="326058115067983373827532490452503988509">
     <name>Amaretto Sunset</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -1404,7 +1404,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74539694567549361328879732179443484957">
+  <cocktail id="326058907666521166529361329200714582301">
     <name>Amaretto Sweet &amp; Sour</name>
     <category>punch / party drink</category>
     <glass>margarita/coupette glass</glass>
@@ -1424,7 +1424,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74542468107834498178800161566953408797">
+  <cocktail id="326061680810665490805301820940449319197">
     <name>Amaretto Tea</name>
     <category>ordinary drink</category>
     <glass>pousse cafe glass</glass>
@@ -1442,7 +1442,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74542864327875232015376215428639852829">
+  <cocktail id="326062077268390712186930568695800760605">
     <name>Americano</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -1459,7 +1459,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74544845348850738682444879196549646621">
+  <cocktail id="326064058527050706395880547794776590621">
     <name>Angel Face</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1475,7 +1475,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74545241568891472518379451586312505629">
+  <cocktail id="326064850729447686523476684366125828381">
     <name>Apple Cider Punch #1</name>
     <category>punch / party drink</category>
     <glass>collins glass</glass>
@@ -1499,7 +1499,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74548411329217343207913612784170273053">
+  <cocktail id="326067624269732823375627239994114279709">
     <name>Apple Grande</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -1514,7 +1514,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74548807470029914525520756291570862365">
+  <cocktail id="326068020648229882241983688264320911645">
     <name>Apple Pie with A Crust</name>
     <category>other/unknown</category>
     <glass>collins glass</glass>
@@ -1531,7 +1531,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74549599830883219683550590692385720605">
+  <cocktail id="326068812850626862366689358299828422941">
     <name>Apple Slammer</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -1546,7 +1546,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74550392270964687356520865580803524893">
+  <cocktail id="326069604815339354956914816041899886877">
     <name>Applecar</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1562,7 +1562,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74550788491005421190881429900800395549">
+  <cocktail id="326070001431520901362061702923912841501">
     <name>Applejack</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -1578,7 +1578,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74552373371168356536718396886206482717">
+  <cocktail id="326071586073999349161654773914214435101">
     <name>Apricot Lady</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -1600,7 +1600,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74553957775962316795261348151668607261">
+  <cocktail id="326073567411887505884452507641202444573">
     <name>Apricot punch</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -1619,7 +1619,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74555146832225330874167765756796045597">
+  <cocktail id="326074756309694194936888676563927009565">
     <name>Archbishop</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -1637,7 +1637,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74556731712388266216790569983143151901">
+  <cocktail id="326076341189857130282129479548659927325">
     <name>Arctic Fish</name>
     <category>punch / party drink</category>
     <glass>beer pilsner</glass>
@@ -1655,7 +1655,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74557524073241571375249935198418471197">
+  <cocktail id="326077132996113297839313655277018253597">
     <name>Arctic Mouthwash</name>
     <category>punch / party drink</category>
     <glass>cocktail glass</glass>
@@ -1672,7 +1672,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74558316513323039048994829222744000797">
+  <cocktail id="326077925436194765510736380743480871197">
     <name>Arise My Love</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -1688,7 +1688,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74563071074583682565961122905050155293">
+  <cocktail id="326082680472824384113888804637397846301">
     <name>Arizona Antifreeze</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -1704,7 +1704,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74565448236371760550231887688873904413">
+  <cocktail id="326085057238471649531002585208912709917">
     <name>Arizona Stingers</name>
     <category>cocktail</category>
     <glass>hurricane glass</glass>
@@ -1722,7 +1722,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74567033116534695896565095058220878109">
+  <cocktail id="326086642277090909903414791043034745117">
     <name>Arizona Twister</name>
     <category>cocktail</category>
     <glass>hurricane glass</glass>
@@ -1747,7 +1747,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74570202797632404069105455813371463965">
+  <cocktail id="326089812275101268132846994886055266589">
     <name>Army special</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -1764,7 +1764,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74571391378526443063258450838345320733">
+  <cocktail id="326091396917579715931964091690739140893">
     <name>Arthur Tompkins</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -1783,7 +1783,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74572580117876807084051423956678576413">
+  <cocktail id="326092189278433021092471468836561193245">
     <name>Artillery</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1799,7 +1799,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74573372478730112244671672568161601821">
+  <cocktail id="326092981797742651276409446391287744797">
     <name>Artillery Punch</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -1822,7 +1822,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74575353578933781424352697291300505885">
+  <cocktail id="326094962818718157941123853453989611805">
     <name>Atlantic Sun</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -1841,7 +1841,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74578523180803327082572988407518431517">
+  <cocktail id="326098132737500353657954673865872738589">
     <name>Atomic Lokade</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -1861,7 +1861,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74579315620884794751620628020496533789">
+  <cocktail id="326099321080709905107129284391033211165">
     <name>Auburn Headbanger</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -1879,7 +1879,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74579711840925528591558056054061631773">
+  <cocktail id="326099717459206963975081977254165973277">
     <name>Autodafé</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -1896,7 +1896,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74580504281006996262820622258775886109">
+  <cocktail id="326100509740832106615767011916315461917">
     <name>Avalanche</name>
     <category>milk / float / shake</category>
     <glass>highball glass</glass>
@@ -1912,7 +1912,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74581296641860301418580642447396014365">
+  <cocktail id="326101302180913574288548980045313837341">
     <name>Avalon</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -1934,7 +1934,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74582485301982502924886912740583901469">
+  <cocktail id="326102490841035775794664128829315189021">
     <name>Aviation</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -1952,7 +1952,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74583277742063970598369753561591810333">
+  <cocktail id="326103283518801731009072958910433167645">
     <name>Aztec Punch</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -1970,7 +1970,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74584070102917275754201831344249866525">
+  <cocktail id="326104076117339523713573839612558018845">
     <name>B-52</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -1987,7 +1987,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74585654983080211100074264176721496349">
+  <cocktail id="326105660125992671397361389669407099165">
     <name>B-53</name>
     <category>shot</category>
     <glass>collins glass</glass>
@@ -2004,7 +2004,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74586447423161678770779228452571941149">
+  <cocktail id="326106453120671276671207722527766186269">
     <name>Baby Eskimo</name>
     <category>milk / float / shake</category>
     <glass>collins glass</glass>
@@ -2023,7 +2023,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74587239863243146443540085958317017373">
+  <cocktail id="326107245164611931771680588470743828765">
     <name>Baby Guinness</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -2040,7 +2040,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74588428523365347950966063708859894045">
+  <cocktail id="326108830124003029627920337844200376605">
     <name>Bacardi Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -2058,7 +2058,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74589617104259386945927173391970044189">
+  <cocktail id="326110018942581556167127434137722784029">
     <name>Bailey's Dream Shake</name>
     <category>soft drink / soda</category>
     <glass>collins glass</glass>
@@ -2075,7 +2075,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74590805685153425938606646913863616797">
+  <cocktail id="326111207444247432646935589725813442845">
     <name>Balmoral</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -2094,7 +2094,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74591598362919381153445007809442056477">
+  <cocktail id="326112395945913309124343326712515627293">
     <name>Banana Daiquiri</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -2115,7 +2115,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74592786785357095117329530816279447837">
+  <cocktail id="326113584685263673147495060135684180253">
     <name>Barracuda</name>
     <category>ordinary drink</category>
     <glass>margarita glass</glass>
@@ -2134,7 +2134,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74593579146210400276693838081679526173">
+  <cocktail id="326114377125345140818408597369277221149">
     <name>Belgian Blue</name>
     <category>soft drink / soda</category>
     <glass>highball glass</glass>
@@ -2151,7 +2151,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74594371586291867948999269075106760989">
+  <cocktail id="326115169327742120949022708640918112541">
     <name>Bellini</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -2167,7 +2167,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74595164026373335619518459866328172829">
+  <cocktail id="326115565468554692270468326405721917725">
     <name>Bellini Martini</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -2190,7 +2190,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74596352607267374614036246461119039773">
+  <cocktail id="326116754445589543833869383244988123421">
     <name>Bermuda Highball</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -2211,7 +2211,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74597541346617738634098792014888143133">
+  <cocktail id="326117942947255420310976504956563327261">
     <name>Berry Deadly</name>
     <category>punch / party drink</category>
     <glass>collins glass</glass>
@@ -2230,7 +2230,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74604276849625726302233479306917808413">
+  <cocktail id="326125074353391491758532505394161748253">
     <name>Between The Sheets</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -2247,7 +2247,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74605465509747927811195747480347445533">
+  <cocktail id="326126263251198180810165063258377390365">
     <name>Bible Belt</name>
     <category>other/unknown</category>
     <glass>highball glass</glass>
@@ -2264,7 +2264,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74606257870601232970337126564192684317">
+  <cocktail id="326127055849735973513048025794369390877">
     <name>Big Red</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -2279,7 +2279,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74606654090641966803785711959647029533">
+  <cocktail id="326127451990548544834265648828037564701">
     <name>Black &amp; Tan</name>
     <category>beer</category>
     <glass>pint glass</glass>
@@ -2296,7 +2296,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74607050389910863157526703049880733981">
+  <cocktail id="326128244589086337534591411200613255453">
     <name>Black Forest Shake</name>
     <category>milk / float / shake</category>
     <glass>collins glass</glass>
@@ -2314,7 +2314,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74607842750764168311693574870318549277">
+  <cocktail id="326129037266852292749932204929620216093">
     <name>Black Russian</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -2330,7 +2330,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74608635190845635984800365122441021725">
+  <cocktail id="326129433169980376528388621855024843037">
     <name>Black and Brown</name>
     <category>beer</category>
     <glass>beer pilsner</glass>
@@ -2345,7 +2345,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74609427947839753716417198103542991133">
+  <cocktail id="326130225530833681685583882949892606237">
     <name>Blackthorn</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -2362,7 +2362,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74610220071008571326999549508838590749">
+  <cocktail id="326131018050143311872546309129375156509">
     <name>Bleeding Surgeon</name>
     <category>soft drink / soda</category>
     <glass>collins glass</glass>
@@ -2382,7 +2382,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74611408651902610322520512920626235677">
+  <cocktail id="326131810490224779541303748041364572445">
     <name>Blind Russian</name>
     <category>milk / float / shake</category>
     <glass>collins glass</glass>
@@ -2403,7 +2403,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74613389672878116986063421130258352413">
+  <cocktail id="326133791273515798665098639768420714781">
     <name>Bloody Maria</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -2423,7 +2423,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74614974632269214847318491638745368861">
+  <cocktail id="326135376549819546579910356365733103901">
     <name>Bloody Mary</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -2443,7 +2443,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74616163133935091326284192621541034269">
+  <cocktail id="326136961509210644440268366123443259677">
     <name>Blue Lagoon</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -2461,7 +2461,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74616559353975825160950157291268966685">
+  <cocktail id="326137357333110565704406683734752200989">
     <name>Blue Margarita</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -2480,7 +2480,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74617351794057292833339749302732687645">
+  <cocktail id="326137753790835787084362907178488924445">
     <name>Blue Mountain</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -2500,7 +2500,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74618540454179494342723948466251598109">
+  <cocktail id="326139338433314234880937721993522153757">
     <name>Bluebird</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -2521,7 +2521,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74619332894260962014563819848199407901">
+  <cocktail id="326140130635711215010049038364504852765">
     <name>Bob Marley</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -2537,7 +2537,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74620917695195734844849264171563714845">
+  <cocktail id="326141319454289741549422486369263257885">
     <name>Bobby Burns Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -2555,7 +2555,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74621710135277202515887213344862865693">
+  <cocktail id="326142508035183780542188654183983712541">
     <name>Boomerang</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -2575,7 +2575,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74622502496130507674679000507633469725">
+  <cocktail id="326143300554493410729829153582362233117">
     <name>Boozy Snickers Milkshake</name>
     <category>milk / float / shake</category>
     <glass>mason jar</glass>
@@ -2598,7 +2598,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74624483596334176850639207513634212125">
+  <cocktail id="326145281575468917396007793473912932637">
     <name>Boston Sidecar</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -2615,7 +2615,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74625672177228215847587530532321593629">
+  <cocktail id="326146470156362956387477487545904105757">
     <name>Boston Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -2635,7 +2635,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74626860837350417352455182219541317917">
+  <cocktail id="326147658737256995381081606366292183325">
     <name>Bourbon Sling</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -2657,7 +2657,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74627653277431885025803478001681533213">
+  <cocktail id="326148451335794788081208365930333440285">
     <name>Bourbon Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -2677,7 +2677,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74628445638285190184445520476842068253">
+  <cocktail id="326149243696648093237035095688433994013">
     <name>Boxcar</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -2697,7 +2697,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74629238078366657852853930417710270749">
+  <cocktail id="326150035978273235882884914698247309597">
     <name>Brain Fart</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -2718,7 +2718,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74635973581374645524670873355068737821">
+  <cocktail id="326156375102784164686760142296564730141">
     <name>Brainteaser</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -2735,7 +2735,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74636765942227950681447299684591044893">
+  <cocktail id="326157564475959828823366799122675108125">
     <name>Bramble</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -2755,7 +2755,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74638747200887944889739190288017361181">
+  <cocktail id="326159545338479010460672801405597485341">
     <name>Brandon and Will's Coke Float</name>
     <category>soft drink / soda</category>
     <glass>beer mug</glass>
@@ -2774,7 +2774,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74639539640969412561360918563014412573">
+  <cocktail id="326160337461647828074498026017576552733">
     <name>Brandy Alexander</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -2792,7 +2792,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74644690422270789914913399206168594717">
+  <cocktail id="326165488480633692971682314871960340765">
     <name>Brandy Cobbler</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -2815,7 +2815,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74645482862352257587250918346940844317">
+  <cocktail id="326166280524574348072828750434206583069">
     <name>Brandy Flip</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -2835,7 +2835,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74646671443246296579720411536208267549">
+  <cocktail id="326167469580837362149951461111918594333">
     <name>Brandy Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -2854,7 +2854,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74647463883327764250986918390596471069">
+  <cocktail id="326168261624778017252625461372773566749">
     <name>Brave Bull Shooter</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -2869,7 +2869,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74647860024140335574233413056395053341">
+  <cocktail id="326168658161731401142502582044432107805">
     <name>Bruce's Puce</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -2887,7 +2887,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74649444825075108401457817008030976285">
+  <cocktail id="326170242645753523916679246665135524125">
     <name>Bruised Heart</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -2904,7 +2904,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74651029626009881234800924003403139357">
+  <cocktail id="326172223825185355610338067455526930717">
     <name>Bubble Gum</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -2921,7 +2921,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74652218286132082738788684913425352989">
+  <cocktail id="326173412406079394605287073714638522653">
     <name>Buccaneer</name>
     <category>beer</category>
     <glass>beer pilsner</glass>
@@ -2936,7 +2936,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74652614506172816577888724891276249373">
+  <cocktail id="326173808626120128439741650676856752413">
     <name>Bumble Bee #1</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -2958,7 +2958,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74654199307107589405542096707419212061">
+  <cocktail id="326175393664739388813971340435599493405">
     <name>Butter Baby</name>
     <category>milk / float / shake</category>
     <glass>beer mug</glass>
@@ -2976,7 +2976,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74654991747189057078764291699993053469">
+  <cocktail id="326176185946364531455390743311987083549">
     <name>Cafe Savoy</name>
     <category>coffee / tea</category>
     <glass>coffee mug</glass>
@@ -2994,7 +2994,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74655784187270524748112546588098136349">
+  <cocktail id="326176978465674161641467367739761199389">
     <name>Caipirinha</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -3011,7 +3011,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74656180407311258585710636090220972317">
+  <cocktail id="326177374844171220503975208653403031837">
     <name>Caipirissima</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -3028,7 +3028,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74656576627351992420939832188346927389">
+  <cocktail id="326178166967340038120263902261553760541">
     <name>California Lemonade</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -3050,7 +3050,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74658161428286765251239913210500188445">
+  <cocktail id="326179355627462239626815618734433339677">
     <name>California Root Beer</name>
     <category>soft drink / soda</category>
     <glass>highball glass</glass>
@@ -3066,7 +3066,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74658557727555661602993128015203240221">
+  <cocktail id="326179751847502973465150046775631251741">
     <name>Campari Beer</name>
     <category>beer</category>
     <glass>beer mug</glass>
@@ -3083,7 +3083,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74658953789140070410909620825631328541">
+  <cocktail id="326180148067543707302049515385558239517">
     <name>Caribbean Boilermaker</name>
     <category>beer</category>
     <glass>beer pilsner</glass>
@@ -3098,7 +3098,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74659350009180804242945483312974891293">
+  <cocktail id="326180940428397012456269585976594368797">
     <name>Casino</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3120,7 +3120,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74660538669303005754495350947305589021">
+  <cocktail id="326182129088519213968359322616256104733">
     <name>Casino Royale</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -3140,7 +3140,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74661727408653369773336858052103866653">
+  <cocktail id="326183317510956927930418761874101602589">
     <name>Champagne Cocktail</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -3160,7 +3160,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74662520007191162476193080465308354845">
+  <cocktail id="326184110188722883146540367188503922973">
     <name>Cherry Electric Lemonade</name>
     <category>cocktail</category>
     <glass>pint glass</glass>
@@ -3182,7 +3182,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74664897089751077946699970164179699997">
+  <cocktail id="326186091130470227297429256146353752349">
     <name>Cherry Rum</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3198,7 +3198,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74665689450604383107426616316859353373">
+  <cocktail id="326187280265961403892176271214604814621">
     <name>Chicago Fizz</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -3218,7 +3218,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74666481811457688265276869682532813085">
+  <cocktail id="326188072151445733961615334677769718045">
     <name>Chocolate Black Russian</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -3235,7 +3235,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74667274251539155936003507531589978397">
+  <cocktail id="326188864353842714092255341647267989789">
     <name>Chocolate Milk</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -3253,7 +3253,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74668066612392461093719497333372455197">
+  <cocktail id="326189657031608669307326763823562852637">
     <name>Chocolate Monkey</name>
     <category>milk / float / shake</category>
     <glass>parfait glass</glass>
@@ -3275,7 +3275,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74670443932636864110805801199587395869">
+  <cocktail id="326192430017296668559611193698047854877">
     <name>Citrus Coke</name>
     <category>soft drink / soda</category>
     <glass>highball glass</glass>
@@ -3292,7 +3292,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74671236372718331782286229036275697949">
+  <cocktail id="326192826791934539995091010367864015133">
     <name>City Slicker</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3310,7 +3310,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74671632513530903101395885969357768989">
+  <cocktail id="326193223249659761372026162886565267741">
     <name>Classic Old-Fashioned</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -3332,7 +3332,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74672821173653104609717235620817242397">
+  <cocktail id="326194411830553800366402367568070674717">
     <name>Clove Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3348,7 +3348,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74673613613734572283472262744304355613">
+  <cocktail id="326195203874494455469209505492909787421">
     <name>Clover Club</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3365,7 +3365,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74674009833775306117916143657407580445">
+  <cocktail id="326195996473032248166172486318723270941">
     <name>Cosmopolitan</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -3384,7 +3384,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74675198414669345109532486192265005341">
+  <cocktail id="326197185133154449676544381175519873309">
     <name>Cosmopolitan Martini</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -3401,7 +3401,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74675990854750812783486797599263263005">
+  <cocktail id="326197581273967020998809091122551687453">
     <name>Cream Soda</name>
     <category>cocktail</category>
     <glass>highball glass</glass>
@@ -3417,7 +3417,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74676387074791546618091682199044983069">
+  <cocktail id="326198373714048488668097110365640689949">
     <name>Cuba Libra</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -3438,7 +3438,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74677179514873014290060750595302983965">
+  <cocktail id="326199166074901793825211306667215784221">
     <name>Cuba Libre</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -3455,7 +3455,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74677971875726319447013380260246161693">
+  <cocktail id="326199562374170690177543796973989366045">
     <name>Daiquiri</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3473,7 +3473,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74678764315807787122457820193950632221">
+  <cocktail id="326200354893480320364994019288111483165">
     <name>Damned if you do</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -3490,7 +3490,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74679160535848520955436905328251603229">
+  <cocktail id="326200750955064729170576240116678101277">
     <name>Danbooka</name>
     <category>coffee / tea</category>
     <glass>coffee mug</glass>
@@ -3505,7 +3505,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74679556755889254790899162707093981469">
+  <cocktail id="326201146778964650435824413561157159197">
     <name>Dark Caipirinha</name>
     <category>cocktail</category>
     <glass>highball glass</glass>
@@ -3524,7 +3524,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74679952975929988628313730524401469725">
+  <cocktail id="326201939535958768164718539092536953117">
     <name>Dark and Stormy</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -3540,7 +3540,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74680745336783293787342238142585735453">
+  <cocktail id="326202335914455827027957651995673069853">
     <name>Darkwood Sling</name>
     <category>soft drink / soda</category>
     <glass>cocktail glass</glass>
@@ -3560,7 +3560,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74681933996905495295860620277742668061">
+  <cocktail id="326203524416121703508868063592562657565">
     <name>Derby</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3579,7 +3579,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74682726436986962965000583683081865501">
+  <cocktail id="326204316776975008663881049192992704797">
     <name>Diesel</name>
     <category>beer</category>
     <glass>pint glass</glass>
@@ -3597,7 +3597,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74683122894712184343602349538886912285">
+  <cocktail id="326205109296284638852929204949901216029">
     <name>Dirty Martini</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -3618,7 +3618,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74684311317149898310060961207743252765">
+  <cocktail id="326206298114863165389239079308140841245">
     <name>Dirty Nipple</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -3634,7 +3634,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74684707457962469633878005651334334749">
+  <cocktail id="326206694255675736712042532360596850973">
     <name>Downshift</name>
     <category>punch / party drink</category>
     <glass>hurricane glass</glass>
@@ -3654,7 +3654,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74686688558166138811355081306828802333">
+  <cocktail id="326208279215066834566255380426759964957">
     <name>Dragonfly</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -3672,7 +3672,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74687084698978710130913127877810948381">
+  <cocktail id="326209073398167877555190706770283956509">
     <name>Dry Rob Roy</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3691,7 +3691,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74688273359100911640768516152343496989">
+  <cocktail id="326209863540632632313325944392671136029">
     <name>Dubonnet Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3709,7 +3709,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74688669579141645479160646563767093533">
+  <cocktail id="326210656139170425012381973145305057565">
     <name>Duchamp's Punch</name>
     <category>cocktail</category>
     <glass>old-fashioned glass</glass>
@@ -3731,7 +3731,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74690254380076418307535438745219467549">
+  <cocktail id="326212241019333360357339893778443766045">
     <name>Egg Nog #4</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -3767,7 +3767,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74693027920361555156597932403715311901">
+  <cocktail id="326215014480390334691428451427108096285">
     <name>Egg Nog - Healthy</name>
     <category>punch / party drink</category>
     <glass>collins glass</glass>
@@ -3791,7 +3791,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74695405240605958175923651184640231709">
+  <cocktail id="326216996055962978960839376318644979997">
     <name>Egg-Nog - Classic Cooked</name>
     <category>punch / party drink</category>
     <glass>pitcher</glass>
@@ -3818,7 +3818,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74696197601459263329357280690746788125">
+  <cocktail id="326217788020675471543448965615856224541">
     <name>English Highball</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -3839,7 +3839,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74696989962312568489375735802022431005">
+  <cocktail id="326218976522341348025488091869355542813">
     <name>English Rose Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3860,7 +3860,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74698178622434769994888528135862978845">
+  <cocktail id="326219768803966490667784007823220115741">
     <name>Espresso Martini</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -3876,7 +3876,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74698574842475503833049286116430416157">
+  <cocktail id="326220561798645095938087133674745465117">
     <name>Fahrenheit 5000</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -3892,7 +3892,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74699367282556971503509367162542590237">
+  <cocktail id="326221353525673100981680541428828440861">
     <name>Flaming Dr. Pepper</name>
     <category>shot</category>
     <glass>collins glass</glass>
@@ -3911,7 +3911,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74701348303532478170282482204906195229">
+  <cocktail id="326222938801976848899996340011211786525">
     <name>Flaming Lamborghini</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -3930,7 +3930,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74703329324507984834161190061754124573">
+  <cocktail id="326225159567372123728818670369508788509">
     <name>Flander's Flake-Out</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -3945,7 +3945,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74703725544548718669541538222373701917">
+  <cocktail id="326225316042993089401097649751250536733">
     <name>Flying Dutchman</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -3961,7 +3961,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74704121764589452505592078302541351197">
+  <cocktail id="326225712183805660721096486135761570077">
     <name>Flying Scotchman</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3978,7 +3978,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74704517905402023828685169106032625949">
+  <cocktail id="326226504623887128394597622830255671581">
     <name>Foxy Lady</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3994,7 +3994,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74706102785564959172912943649583892765">
+  <cocktail id="326228089504050063737211138382371326237">
     <name>Freddy Kruger</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -4010,7 +4010,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74706499005605693008877352386878081309">
+  <cocktail id="326228485724090797574486094611230329117">
     <name>French 75</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -4032,7 +4032,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74707687744956057033214376936975206685">
+  <cocktail id="326229674384212999082781267089855711517">
     <name>French Connection</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -4048,7 +4048,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74708083885768628354247070910944479517">
+  <cocktail id="326230070208112920345743300773490821405">
     <name>French Martini</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -4066,7 +4066,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74708876325850096026647077496546494749">
+  <cocktail id="326230863123563363103892306931872008477">
     <name>Frisco Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -4086,7 +4086,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74710064985972297533744855424244746525">
+  <cocktail id="326232051862913727125799920957979461917">
     <name>Frozen Daiquiri</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -4105,7 +4105,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74710857346825602689905414504724138269">
+  <cocktail id="326232844144538869767184983887208352029">
     <name>Frozen Mint Daiquiri</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -4124,7 +4124,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74711649786907070363474668143582218525">
+  <cocktail id="326233636267707687383754026572162894109">
     <name>Frozen Pineapple Daiquiri</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -4143,7 +4143,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74712046006947804197964148002912569629">
+  <cocktail id="326234032883889233789112864111638972701">
     <name>Fuzzy Asshole</name>
     <category>coffee / tea</category>
     <glass>coffee mug</glass>
@@ -4160,7 +4160,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74712442147760375521897441611885152541">
+  <cocktail id="326234428866245480084187030910865344797">
     <name>GG</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -4177,7 +4177,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74712838367801109358130658951938017565">
+  <cocktail id="326234825086286213920817409443056945437">
     <name>Gagliardo</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -4195,7 +4195,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74714819468004778535140204671116085533">
+  <cocktail id="326236805948805395558417271601665247517">
     <name>Gentleman's Club</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -4213,7 +4213,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74715215688045512371001030616980752669">
+  <cocktail id="326237202327302454419196011733373520157">
     <name>Gideon's Green Dinosaur</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -4232,7 +4232,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74716800488980285200440361160352827677">
+  <cocktail id="326238787207465389767130811720204126493">
     <name>Gin And Tonic</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -4250,7 +4250,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74717196709021019034920833820428437789">
+  <cocktail id="326239579489090532410116059892033095965">
     <name>Gin Cooler</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -4271,7 +4271,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74718385369143220544295181359762475293">
+  <cocktail id="326240768386897221459848943138428520733">
     <name>Gin Daisy</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -4292,7 +4292,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74719573950037259536787474022143461661">
+  <cocktail id="326241956967791260451611089711222065437">
     <name>Gin Fizz</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -4311,7 +4311,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74719970249306155888130579785779087645">
+  <cocktail id="326242353187831994288399657180325054749">
     <name>Gin Rickey</name>
     <category>cocktail</category>
     <glass>highball glass</glass>
@@ -4332,7 +4332,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74720762610159461044990885658361170205">
+  <cocktail id="326243145469457136933021400866749778205">
     <name>Gin Sling</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -4353,7 +4353,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74721554971012766204998644720521808157">
+  <cocktail id="326243541689497870769987297571180480797">
     <name>Gin Smash</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -4374,7 +4374,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74722347411094233874322129810676353309">
+  <cocktail id="326244730349620072275469690607536277789">
     <name>Gin Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -4394,7 +4394,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74722743631134967710354092542381099293">
+  <cocktail id="326245126569660806109856713575343950109">
     <name>Gin Squirt</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -4415,7 +4415,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74723932212029006705266507054520305949">
+  <cocktail id="326245919168198598813609152314395167005">
     <name>Gin Swizzle</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -4437,7 +4437,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74724724652110474376875287480588667165">
+  <cocktail id="326247107669864475290584825211846494493">
     <name>Gin Toddy</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -4456,7 +4456,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74725517092191942048109424712655145245">
+  <cocktail id="326247900109945942961690609854532913437">
     <name>Girl From Ipanema</name>
     <category>ordinary drink</category>
     <glass>wine glass</glass>
@@ -4475,7 +4475,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74726705673085981041786445552011282717">
+  <cocktail id="326248692550027410635361757434960251165">
     <name>Gluehwein</name>
     <category>punch / party drink</category>
     <glass>irish coffee cup</glass>
@@ -4498,7 +4498,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74727894333208182551620723203290532125">
+  <cocktail id="326249881130921449628032505232575793437">
     <name>Godchild</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -4514,7 +4514,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74728290553248916387707010605500434717">
+  <cocktail id="326250673491774754788273325575452854557">
     <name>Godfather</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -4530,7 +4530,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74728686773289650223007982822687607069">
+  <cocktail id="326250673571002917302752991526180456733">
     <name>Godmother</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -4545,7 +4545,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74729082993330384060851518504502135069">
+  <cocktail id="326251069791043651136201858396611512605">
     <name>Golden dream</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -4563,7 +4563,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74729875433411851732167283479814703389">
+  <cocktail id="326251861834984306238410861995940481309">
     <name>Grand Blue</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -4580,7 +4580,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74731856454387358394388385198813579549">
+  <cocktail id="326253842935187975416544337297124198685">
     <name>Grass Skirt</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -4600,7 +4600,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74732648894468826066039668346365249821">
+  <cocktail id="326255031991450989494385653590378514717">
     <name>Grasshopper</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -4617,7 +4617,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74742157937761950588236970783178852637">
+  <cocktail id="326264540876287788988189107353948621085">
     <name>Green Goblin</name>
     <category>beer</category>
     <glass>pint glass</glass>
@@ -4633,7 +4633,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74742950377843418260088664114148509981">
+  <cocktail id="326265333395597419176270396565856028957">
     <name>Grim Reaper</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -4650,7 +4650,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74743346518655989583377098551476979997">
+  <cocktail id="326265729377953665469335957931275159837">
     <name>Grizzly Bear</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -4668,7 +4668,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74743742738696723419643811413758413085">
+  <cocktail id="326266521580350645598258967542838429981">
     <name>H.D.</name>
     <category>coffee / tea</category>
     <glass>beer mug</glass>
@@ -4685,7 +4685,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74745327618859658761492277979174504733">
+  <cocktail id="326267710715841822189468686578766678301">
     <name>Happy Skipper</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -4704,7 +4704,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74746119979712963919446395611254196509">
+  <cocktail id="326268502839010639803825054471798753565">
     <name>Harvey Wallbanger</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -4721,7 +4721,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74746912419794431592756973746515183901">
+  <cocktail id="326269295358320269988962959852242831645">
     <name>Havana Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -4739,7 +4739,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74747704859875899261155250588221802781">
+  <cocktail id="326270087719173575148855595648928811293">
     <name>Hawaiian Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -4755,7 +4755,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74748101079916633097038313057246611741">
+  <cocktail id="326270483780757983956847523753115355421">
     <name>Hemingway Special</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -4773,7 +4773,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74749289740038834605131386502593743133">
+  <cocktail id="326271672757792835520506974621001943325">
     <name>Herbal flame</name>
     <category>coffee / tea</category>
     <glass>mason jar</glass>
@@ -4790,7 +4790,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74750874540973607434606182893031360797">
+  <cocktail id="326273257241814958291146343209382545693">
     <name>Highland Fling Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -4808,7 +4808,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74751666981055075109075874982386829597">
+  <cocktail id="326274049840352750995443998978322303261">
     <name>Horse's Neck</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -4828,7 +4828,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74752855561949114103132887040302352669">
+  <cocktail id="326275238738159440043025287502741473565">
     <name>Hot Creamy Bush</name>
     <category>coffee / tea</category>
     <glass>irish coffee cup</glass>
@@ -4844,7 +4844,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74754440442112049444932095484794079517">
+  <cocktail id="326276822984497075273975749353655339293">
     <name>Ice Pick #1</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -4861,7 +4861,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74755232802965354602925619613613263133">
+  <cocktail id="326277615899947518030198903721382218013">
     <name>Iced Coffee Fillip</name>
     <category>coffee / tea</category>
     <glass>coffee mug</glass>
@@ -4876,7 +4876,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74755629102234250954404959265976846621">
+  <cocktail id="326278408260800823189745043821737380125">
     <name>Imperial Cocktail</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -4892,7 +4892,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74756421463087556110746506756481190173">
+  <cocktail id="326278804322385231996326500817626827037">
     <name>Imperial Fizz</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -4911,7 +4911,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74757610202437920131396209111668721949">
+  <cocktail id="326279992665594783447409230209908836637">
     <name>Irish Coffee</name>
     <category>coffee / tea</category>
     <glass>irish coffee cup</glass>
@@ -4929,7 +4929,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74758402484063062775755055169845692701">
+  <cocktail id="326280785739501551231634420083297978653">
     <name>Irish Curdling Cow</name>
     <category>cocktail</category>
     <glass>highball glass</glass>
@@ -4947,7 +4947,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74759987364225998118378703821122930973">
+  <cocktail id="326282370302751836522168751699342493981">
     <name>Irish Russian</name>
     <category>beer</category>
     <glass>highball glass</glass>
@@ -4966,7 +4966,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74760779804307465790663024191296866589">
+  <cocktail id="326283162742833304194166249068248271133">
     <name>Irish Spring</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -4986,7 +4986,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74762760825282972458577801739198892317">
+  <cocktail id="326285540221534032235568673620099434781">
     <name>Jack Rose Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -5002,7 +5002,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74763553265364440127962929849253071133">
+  <cocktail id="326285936124662116013907152530262296861">
     <name>Jack's Vanilla Coke</name>
     <category>other/unknown</category>
     <glass>old-fashioned glass</glass>
@@ -5019,7 +5019,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74764345705445907800308611764349929757">
+  <cocktail id="326286728643971746199282341316073457949">
     <name>Jackhammer</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -5034,7 +5034,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74765138066299212957589722727114443037">
+  <cocktail id="326287521400965863929735275268476864797">
     <name>Jam Donut</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -5053,7 +5053,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74767911527356187297365200805240867101">
+  <cocktail id="326290294465882025696155408672149047581">
     <name>Jamaica Kiss</name>
     <category>milk / float / shake</category>
     <glass>hurricane glass</glass>
@@ -5072,7 +5072,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74769496486747285154242772475923761437">
+  <cocktail id="326291879346044961041323591112890616093">
     <name>Jamaican Coffee</name>
     <category>coffee / tea</category>
     <glass>champagne flute</glass>
@@ -5091,7 +5091,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74770685067641324146460064086058436893">
+  <cocktail id="326292671865354591224812053129810250013">
     <name>Japanese Fizz</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -5111,7 +5111,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74771477428494629307865346407587481885">
+  <cocktail id="326293860367020467704083998887267109149">
     <name>Jello shots</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -5131,7 +5131,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74771873648535363141939650676269615389">
+  <cocktail id="326294256745517526568975651378671487261">
     <name>Jelly Bean</name>
     <category>shot</category>
     <glass>cordial glass</glass>
@@ -5146,7 +5146,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74772666088616830812359480800712165661">
+  <cocktail id="326294653044786422919965224571558529309">
     <name>Jewel Of The Nile</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -5164,7 +5164,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74773458607926460998179681524702873885">
+  <cocktail id="326295445326411565561533527710626056477">
     <name>Jitterbug</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -5187,7 +5187,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74775043408861233830164390282469411101">
+  <cocktail id="326297030127346338393729061225948875037">
     <name>John Collins</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -5209,7 +5209,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74776628209796006660636733990369593629">
+  <cocktail id="326298614928281111224230396856450255133">
     <name>Kamikaze</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -5226,7 +5226,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74777024429836740496520359409347823901">
+  <cocktail id="326299011227550007574738647839162075421">
     <name>Karsk</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -5242,7 +5242,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74777420570649311818486987356043053341">
+  <cocktail id="326299803271490662675191810533769971997">
     <name>Kentucky B And B</name>
     <category>ordinary drink</category>
     <glass>brandy snifter</glass>
@@ -5257,7 +5257,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74777816790690045654704442097400121629">
+  <cocktail id="326300199808444046566034671850522773789">
     <name>Kentucky Colonel</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -5275,7 +5275,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74778609230771513325662452377313446173">
+  <cocktail id="326300595553115805315223260299997317405">
     <name>Kioki Coffee</name>
     <category>coffee / tea</category>
     <glass>coffee mug</glass>
@@ -5292,7 +5292,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74778609309999675838232592086035958045">
+  <cocktail id="326300992248525514239616028913379412253">
     <name>Kir</name>
     <category>ordinary drink</category>
     <glass>wine glass</glass>
@@ -5307,7 +5307,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74779797890893714831029440673217874205">
+  <cocktail id="326302180829419553234076113137944594717">
     <name>Kir Royale</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -5322,7 +5322,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74780194110934448668684106645659552029">
+  <cocktail id="326302180908647715747148967155072338205">
     <name>Kiss me Quick</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -5339,7 +5339,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74781382850284812689551389157844420893">
+  <cocktail id="326303369647998079767821468983373433117">
     <name>Kiwi Lemon</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -5356,7 +5356,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74782175131909955331706849098330376477">
+  <cocktail id="326304162167307709954161553989348722973">
     <name>Kool First Aid</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -5372,7 +5372,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74786929613942436338273175142353176861">
+  <cocktail id="326309312790152762277634432323739289885">
     <name>Kool-Aid Shot</name>
     <category>shot</category>
     <glass>old-fashioned glass</glass>
@@ -5391,7 +5391,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74788118274064637844822076865465649437">
+  <cocktail id="326310501212590476242124689480458012957">
     <name>Kool-Aid Slammer</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -5409,7 +5409,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74788910714146105514903574067901991197">
+  <cocktail id="326310897432631210078577457302345189661">
     <name>Kurant Tea</name>
     <category>coffee / tea</category>
     <glass>champagne flute</glass>
@@ -5426,7 +5426,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74790495515080878347465025052948662557">
+  <cocktail id="326312482392022307938232905518185548061">
     <name>Lady Love Fizz</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -5446,7 +5446,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74791287955162346017258573354210003229">
+  <cocktail id="326313670893688184419456598764154095901">
     <name>Lemon Drop</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -5462,7 +5462,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74792080395243813688012514276008102173">
+  <cocktail id="326314068619064006025821080605276080413">
     <name>Lemon Shot</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -5483,7 +5483,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74794061416219320356919772591791900957">
+  <cocktail id="326316048293160749947754362626509211933">
     <name>Limona Corona</name>
     <category>beer</category>
     <glass>beer glass</glass>
@@ -5503,7 +5503,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74794457636260054191757718472290044189">
+  <cocktail id="326316840733242217619306285107282020637">
     <name>Loch Lomond</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -5523,7 +5523,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74795250076341521862101268878044006685">
+  <cocktail id="326317632856411035234719028587909187869">
     <name>London Town</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -5541,7 +5541,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74795646296382255698036967167713708317">
+  <cocktail id="326318029314136256613726962835107711261">
     <name>Lone Tree Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -5556,7 +5556,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74796042437194827019223346478966999325">
+  <cocktail id="326318425375720665422853516570414909725">
     <name>Lone Tree Cooler</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -5578,7 +5578,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74797627317357762364818807934355343645">
+  <cocktail id="326320010652024413337953182068902299933">
     <name>Long Island Iced Tea</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -5598,7 +5598,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74798419757439230036422521810842913053">
+  <cocktail id="326320802458280580891460731651466037533">
     <name>Long Island Tea</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -5619,7 +5619,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74798815977479963874594257315502065949">
+  <cocktail id="326321198599093152215292131318869362973">
     <name>Long vodka</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -5637,7 +5637,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74800796998455470537722834359416097053">
+  <cocktail id="326323179778524983908744349476355148061">
     <name>Lord And Lady</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -5653,7 +5653,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74801589438536938210525350161714350365">
+  <cocktail id="326323971901693801524741716483610347805">
     <name>Lunch Box</name>
     <category>beer</category>
     <glass>pint glass</glass>
@@ -5671,7 +5671,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74801985658577672044810760662929475869">
+  <cocktail id="326324368042506372846487668048564422941">
     <name>Mai Tai</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -5691,7 +5691,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74803966679553178712886260422533286173">
+  <cocktail id="326326745917347913460212705585318431005">
     <name>Malibu Twister</name>
     <category>cocktail</category>
     <glass>highball glass</glass>
@@ -5707,7 +5707,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74804759119634646382432955169219381533">
+  <cocktail id="326327537882060406047816505394306844957">
     <name>Manhattan</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -5725,7 +5725,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74806740061381990536646626551975479581">
+  <cocktail id="326328726938323420128429505783230990621">
     <name>Margarita</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -5745,7 +5745,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74807928800732354557395126623988451613">
+  <cocktail id="326329519378404887797406776652031428893">
     <name>Martinez Cocktail</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -5764,7 +5764,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74809117381626393552006925861000677661">
+  <cocktail id="326330708038527089306459116818008475933">
     <name>Martini</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -5783,7 +5783,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74809909821707861222372712789914781981">
+  <cocktail id="326331103941655173083259334980447602973">
     <name>Mary Pickford</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -5801,7 +5801,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74811098481830062729303294581446904093">
+  <cocktail id="326332292760233699622072366306575091997">
     <name>Miami Vice</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -5821,7 +5821,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74813871942887037069169126127097448733">
+  <cocktail id="326335066775887811556851771390505093405">
     <name>Midnight Cowboy</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -5839,7 +5839,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74814664382968504738394094975403264285">
+  <cocktail id="326335858819828466661131867868471068957">
     <name>Midnight Manx</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -5859,7 +5859,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74816645403944011403735909761193183517">
+  <cocktail id="326337839761575810809432312940489705757">
     <name>Midnight Mint</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -5877,7 +5877,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74821796106017226242977327964669446429">
+  <cocktail id="326343386366777109429043614961049635101">
     <name>Mimosa</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -5893,7 +5893,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74822588546098693914393579506667718941">
+  <cocktail id="326343782666046005777134840318747052317">
     <name>Mississippi Planters Punch</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -5913,7 +5913,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74823777126992732910732509200776530205">
+  <cocktail id="326345367783893428665781708583387629853">
     <name>Mocha-Berry</name>
     <category>coffee / tea</category>
     <glass>irish coffee cup</glass>
@@ -5931,7 +5931,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74825362007155668253329980679219677469">
+  <cocktail id="326347349438694235446274052031824365853">
     <name>Mojito</name>
     <category>cocktail</category>
     <glass>highball glass</glass>
@@ -5952,7 +5952,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74826550588049707245037521106531354909">
+  <cocktail id="326348141324178565517067291607944235293">
     <name>Mojito #3</name>
     <category>cocktail</category>
     <glass>collins glass</glass>
@@ -5971,7 +5971,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74828927987522272777751627353476663581">
+  <cocktail id="326350518565194806016430211891817974045">
     <name>Monkey Gland</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -5988,7 +5988,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74829720269147415419369751563421976861">
+  <cocktail id="326351310529907298604188541463020538141">
     <name>Monkey Wrench</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -6005,7 +6005,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74830116568416311769105635210039757085">
+  <cocktail id="326352103524585903878714073440182438173">
     <name>Moranguito</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -6021,7 +6021,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74830512867685208121622491626558818589">
+  <cocktail id="326352499506942150170552122432166398237">
     <name>Moscow Mule</name>
     <category>punch / party drink</category>
     <glass>copper mug</glass>
@@ -6040,7 +6040,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74831305149310350764741158937348639005">
+  <cocktail id="326353291947023617843760243675904706845">
     <name>Mother's Milk</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -6057,7 +6057,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74832097589391818434296297933336054045">
+  <cocktail id="326353688325520676707884032430842415389">
     <name>Mudslinger</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -6074,7 +6074,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74832889950245123591675643662972586269">
+  <cocktail id="326354876906414715701773285402638387485">
     <name>Mulled Wine</name>
     <category>punch / party drink</category>
     <glass>collins glass</glass>
@@ -6095,7 +6095,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74834474751179896423931412823311485213">
+  <cocktail id="326356065883449567264460803175943080221">
     <name>National Aquarium</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -6116,7 +6116,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74835267270489526608073459736153262365">
+  <cocktail id="326357253830518306141919660765988882717">
     <name>Negroni</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -6132,7 +6132,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74836059631342831767241578942786013469">
+  <cocktail id="326357650446699852550571474058002925853">
     <name>New York Lemonade</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -6151,7 +6151,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74838040731546500948384584694960064797">
+  <cocktail id="326360027212347117965397144543836866845">
     <name>New York Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -6172,7 +6172,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74839229312440539940284935481318541597">
+  <cocktail id="326360819810884910666572679871102028061">
     <name>Nutty Irishman</name>
     <category>milk / float / shake</category>
     <glass>highball glass</glass>
@@ -6188,7 +6188,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74840814192603475281819838922678962461">
+  <cocktail id="326362404770276008527549090152645495069">
     <name>Old Fashioned</name>
     <category>cocktail</category>
     <glass>old-fashioned glass</glass>
@@ -6208,7 +6208,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74841606632684942955941346465843349789">
+  <cocktail id="326363197289585638709981176581970037021">
     <name>Orange Crush</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -6224,7 +6224,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74842399072766410627515786944753010973">
+  <cocktail id="326363989333526293813925191937743489309">
     <name>Orange Oasis</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -6242,7 +6242,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74843587732888612133914662505278703901">
+  <cocktail id="326365177835192170292196775627970677021">
     <name>Orange Push-up</name>
     <category>ordinary drink</category>
     <glass>hurricane glass</glass>
@@ -6262,7 +6262,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74844380172970079807009349333402618141">
+  <cocktail id="326365970671414450534790318474636134685">
     <name>Orange Whip</name>
     <category>other/unknown</category>
     <glass>collins glass</glass>
@@ -6279,7 +6279,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74844776313782651129017635576651024669">
+  <cocktail id="326366366812227021855806123950002768157">
     <name>Oreo Mudslide</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -6299,7 +6299,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74845964894676690123351900486626543901">
+  <cocktail id="326367555710033710908520390149717461277">
     <name>Orgasm</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6317,7 +6317,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74851115675978067477675341090991212829">
+  <cocktail id="326373102552919497067339558172545616157">
     <name>Owen's Grandmother's Revenge</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -6333,7 +6333,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74851511896018801312268966691704506653">
+  <cocktail id="326373498852188393416227076239357479197">
     <name>Paradise</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6350,7 +6350,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74852700556141002820707972883429034269">
+  <cocktail id="326374291133813536062186951965064661277">
     <name>Pina Colada</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -6367,7 +6367,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74853492916994307978651112991417010461">
+  <cocktail id="326375479952392062598698643881605826845">
     <name>Pink Gin</name>
     <category>ordinary drink</category>
     <glass>white wine glass</glass>
@@ -6385,7 +6385,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74853889137035041814581463256529209629">
+  <cocktail id="326375876013976471407205389718196160797">
     <name>Pink Lady</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6402,7 +6402,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74854681656344671998242469434172475677">
+  <cocktail id="326376668533286101592798158661004658973">
     <name>Pink Panty Pulldowns</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -6418,7 +6418,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74855077797157243321871207118344128797">
+  <cocktail id="326377064674098672912506794344527005981">
     <name>Pink Penocha</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -6436,7 +6436,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74856266378051282314798941569696499997">
+  <cocktail id="326378253175764549392179560468819839261">
     <name>Pisco Sour</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -6452,7 +6452,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74857058818132749986925073002959046941">
+  <cocktail id="326379046804268454779051004440683579677">
     <name>Planter's Punch</name>
     <category>punch / party drink</category>
     <glass>collins glass</glass>
@@ -6473,7 +6473,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74858247478254951496124343106779056413">
+  <cocktail id="326380234196740056059960918877761014045">
     <name>Popped cherry</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -6490,7 +6490,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74859039839108256652658138006376778013">
+  <cocktail id="326381026795277848760735633838190201117">
     <name>Poppy Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6505,7 +6505,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74863794400368900169380111408898083101">
+  <cocktail id="326385781277310329761250529357910608157">
     <name>Port And Starboard</name>
     <category>ordinary drink</category>
     <glass>pousse cafe glass</glass>
@@ -6521,7 +6521,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74868548961629543687052062857817852189">
+  <cocktail id="326390535838570973279391981067983751453">
     <name>Port Wine Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6536,7 +6536,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74868945102442115005849564041727805725">
+  <cocktail id="326390931979383544600989032370257889565">
     <name>Port Wine Flip</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -6555,7 +6555,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74869737542523582679849474394953189661">
+  <cocktail id="326392120877190233648995348109510150429">
     <name>Porto flip</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6572,7 +6572,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74870529982605050350554720145780345117">
+  <cocktail id="326392912921130888751287105351992051997">
     <name>Quaker's Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6589,7 +6589,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74871322422686518024297643845268900125">
+  <cocktail id="326393705519668681451125634539881597213">
     <name>Quarter Deck Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6605,7 +6605,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74872114783539823178980740772994058525">
+  <cocktail id="326394497484381174037316429965782518045">
     <name>Queen Bee</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6621,7 +6621,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74873303443662024687024837572393535773">
+  <cocktail id="326395686223731538058146557781041580317">
     <name>Queen Charlotte</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -6638,7 +6638,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74874095883743492359167013079328590109">
+  <cocktail id="326396478980725655789736369164379326749">
     <name>Queen Elizabeth</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6654,7 +6654,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74874888323824960035094182598091835677">
+  <cocktail id="326396875279994552141698719876778395933">
     <name>Quentin</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6673,7 +6673,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74875680684678265188786487607795484957">
+  <cocktail id="326398063464747778559721871381861075229">
     <name>Quick F**K</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -6690,7 +6690,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74877265564841200536547899008972327197">
+  <cocktail id="326399252204098142582705564243933366557">
     <name>Quick-sand</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -6706,7 +6706,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74878058004922668205517570053401577757">
+  <cocktail id="326400044485723285229396149009181411613">
     <name>Radioactive Long Island Iced Tea</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -6728,7 +6728,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74880831386751480031190558649592678685">
+  <cocktail id="326402818422149234649873498852688234781">
     <name>Radler</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -6743,7 +6743,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74881227606792213865251915069346122013">
+  <cocktail id="326403214483733643458037408167644989725">
     <name>Raspberry Cooler</name>
     <category>other/unknown</category>
     <glass>highball glass</glass>
@@ -6759,7 +6759,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74881623826832947699808667448110319901">
+  <cocktail id="326404007319955923701549403863317317917">
     <name>Red Snapper</name>
     <category>shot</category>
     <glass>old-fashioned glass</glass>
@@ -6775,7 +6775,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74882416266914415373818147950543866141">
+  <cocktail id="326404799680809228858013111493714086173">
     <name>Rose</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6795,7 +6795,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74883604847808454364766268890690193693">
+  <cocktail id="326405988182475105338853717296379431197">
     <name>Royal Bitch</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -6810,7 +6810,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74884397367118084555054321920009144605">
+  <cocktail id="326406384244059514146882800097491781917">
     <name>Royal Fizz</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -6828,7 +6828,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74885585948012123545482277103194179869">
+  <cocktail id="326407969203450612005143821278707550493">
     <name>Royal Flush</name>
     <category>shot</category>
     <glass>old-fashioned glass</glass>
@@ -6846,7 +6846,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74887566968987630212423432706654046493">
+  <cocktail id="326409950145197956156206943247141275933">
     <name>Royal Gin Fizz</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -6865,7 +6865,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74888359409069097881998274951011207453">
+  <cocktail id="326410742585279423826409474689563199773">
     <name>Ruby Tuesday</name>
     <category>cocktail</category>
     <glass>highball glass</glass>
@@ -6882,7 +6882,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74889151849150565554273306646953691421">
+  <cocktail id="326411535421501704068070490938386254109">
     <name>Rum Cobbler</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -6905,7 +6905,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74890736650085338383864633677749520669">
+  <cocktail id="326413120143208314385402989584701557021">
     <name>Rum Cooler</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -6922,7 +6922,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74895887431386715740489413691700513053">
+  <cocktail id="326418270607597041678877330403621177629">
     <name>Rum Milk Punch</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -6940,7 +6940,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74896679792240020895888020010224159005">
+  <cocktail id="326418666748409613000890401721473665309">
     <name>Rum Old-fashioned</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -6961,7 +6961,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74898660813215527561696238832423635229">
+  <cocktail id="326421044147882178532241043181232556317">
     <name>Rum Punch</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -6978,7 +6978,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74901434274272501898828948354213710109">
+  <cocktail id="326423817688167315382810272390060542237">
     <name>Rum Runner</name>
     <category>punch / party drink</category>
     <glass>cocktail glass</glass>
@@ -6996,7 +6996,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74902622934394703408164452346761677085">
+  <cocktail id="326425402251417600669161041427254577437">
     <name>Rum Screwdriver</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -7012,7 +7012,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74903415374476171077157767289234622749">
+  <cocktail id="326425798550686497020547212862326933789">
     <name>Rum Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -7032,7 +7032,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74904207893785801267034585377579305245">
+  <cocktail id="326426590832311639666806577963254253853">
     <name>Rum Toddy</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -7051,7 +7051,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74905396474679840260038318072643553565">
+  <cocktail id="326428176029387225067940550818487699741">
     <name>Russian Spring Punch</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -7068,7 +7068,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74907377495655346923434859294386129181">
+  <cocktail id="326429760592637510354116805370121128221">
     <name>Rusty Nail</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -7086,7 +7086,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74907773715696080757884088232046856477">
+  <cocktail id="326430552557350002940084954089443920157">
     <name>Salty Dog</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -7104,7 +7104,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74908566076549385919607155802282232093">
+  <cocktail id="326430949252759711861866760818857969949">
     <name>San Francisco</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -7122,7 +7122,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74910150956712321260813296470844606749">
+  <cocktail id="326432930590647868584706434317375867165">
     <name>Sangria #1</name>
     <category>punch / party drink</category>
     <glass>pitcher</glass>
@@ -7143,7 +7143,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74911735757647094088880717977728944413">
+  <cocktail id="326434119092313745062986180781927663901">
     <name>Sangria - The World's Best</name>
     <category>punch / party drink</category>
     <glass>pitcher</glass>
@@ -7166,7 +7166,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74912924417769295598856014592340232477">
+  <cocktail id="326435703417879542804756289461400471837">
     <name>Sazerac</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -7188,7 +7188,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74914113077891497107265184436533430557">
+  <cocktail id="326436892632598881915750914809098766621">
     <name>Scooter</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7204,7 +7204,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74914509297932230942871557003451664669">
+  <cocktail id="326437288535726965691406092766278945053">
     <name>Scotch Cobbler</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -7223,7 +7223,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74915301658785536102246278842990037277">
+  <cocktail id="326437684518083211986249168609625868573">
     <name>Scotch Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -7242,7 +7242,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74915697878826269936474549923932899613">
+  <cocktail id="326438476878936517145602216875957520669">
     <name>Screaming Orgasm</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7262,7 +7262,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74917282679761042765233836923572029725">
+  <cocktail id="326440061679871289972872782723773991197">
     <name>Screwdriver</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -7278,7 +7278,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74917282758989205282379352378726254877">
+  <cocktail id="326440061759099452486739396175225784605">
     <name>Sea breeze</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -7295,7 +7295,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74918075119842510436151596281815730461">
+  <cocktail id="326440854436865407702039094557632989469">
     <name>Sex on the Beach</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -7313,7 +7313,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74919263779964711945820085171812403485">
+  <cocktail id="326442042780074959155141969857767377181">
     <name>Shanghai Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7330,7 +7330,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74920848660127647291327726434467023133">
+  <cocktail id="326443231757109810716330070430134405405">
     <name>Shark Attack</name>
     <category>cocktail</category>
     <glass>pitcher</glass>
@@ -7352,7 +7352,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74921244800940218611556246399973951773">
+  <cocktail id="326444024276419440905890229169679599901">
     <name>Sherry Eggnog</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -7372,7 +7372,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74922037241021686282245448077128599837">
+  <cocktail id="326444817033413558632154815468628445469">
     <name>Sherry Flip</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -7391,7 +7391,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74923225901143887789825955589885626653">
+  <cocktail id="326446005376623110084366259517520185629">
     <name>Shot-gun</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -7407,7 +7407,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74924018420453517979058758931516328221">
+  <cocktail id="326446797262107440153497107881186920733">
     <name>Sidecar</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7424,7 +7424,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74924414482037926785025756053246413085">
+  <cocktail id="326447193482148173993638886747843954973">
     <name>Sidecar Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7440,7 +7440,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74925206922119394457789991258712017181">
+  <cocktail id="326447986318370454233382213980337309981">
     <name>Singapore Sling</name>
     <category>ordinary drink</category>
     <glass>hurricane glass</glass>
@@ -7462,7 +7462,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74925999362200862129970165887503010077">
+  <cocktail id="326448778520767434361867811478092220701">
     <name>Sloe Gin Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7478,7 +7478,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74927187943094901120601627478849849629">
+  <cocktail id="326449967260117798388018379303136102685">
     <name>Smut</name>
     <category>punch / party drink</category>
     <glass>beer mug</glass>
@@ -7495,7 +7495,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74928376603217102629844807679036721437">
+  <cocktail id="326451155999468162407040874817959332125">
     <name>Snake Bite (UK)</name>
     <category>beer</category>
     <glass>pint glass</glass>
@@ -7512,7 +7512,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74933527384518479984278586474271967517">
+  <cocktail id="326456306701541377246414304785512892701">
     <name>Snakebite and Black</name>
     <category>beer</category>
     <glass>pint glass</glass>
@@ -7529,7 +7529,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74934319745371785142179786810730055965">
+  <cocktail id="326456702921582111083798754780312340765">
     <name>Snowball</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -7547,7 +7547,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74935112185453252810072253119287626013">
+  <cocktail id="326457495440891741267114109686554921245">
     <name>Sol Y Sombra</name>
     <category>ordinary drink</category>
     <glass>brandy snifter</glass>
@@ -7564,7 +7564,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74935508405493986647148769489565616413">
+  <cocktail id="326457891264791662532699490153133345053">
     <name>Space Odyssey</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -7585,7 +7585,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74937489505697655827051315019375806749">
+  <cocktail id="326459872602679819257487814915419113757">
     <name>Spritz</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -7601,7 +7601,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74938281945779123499863119495905511709">
+  <cocktail id="326460665121989449442291890973484353821">
     <name>Stinger</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7617,7 +7617,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74943036427811604501113227654794152221">
+  <cocktail id="326465419604021930445084763479724099869">
     <name>Stone Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -7633,7 +7633,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74944621228746377330214788226113440029">
+  <cocktail id="326467004325728540762062040705430554909">
     <name>Strawberry Daiquiri</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7653,7 +7653,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74945809809640416323750227152184117533">
+  <cocktail id="326468193144307067297765055013882005789">
     <name>Strawberry Margarita</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7673,7 +7673,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74946602328950046510949373787080329501">
+  <cocktail id="326468985425932209942723724247429384477">
     <name>Sunny Holiday Punch</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -7692,7 +7692,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74948583270697390663880082225989257501">
+  <cocktail id="326470966526135879119832067683432892701">
     <name>Surf City Lifesaver</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -7709,7 +7709,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74950564370901059841423585975987439901">
+  <cocktail id="326472551564755139494035298794364832029">
     <name>Swedish Coffee</name>
     <category>coffee / tea</category>
     <glass>coffee mug</glass>
@@ -7727,7 +7727,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74950960590941793679370422974254778653">
+  <cocktail id="326472947626339548298261091710162798877">
     <name>Sweet Tooth</name>
     <category>milk / float / shake</category>
     <glass>highball glass</glass>
@@ -7742,7 +7742,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74951356810982527517278134950759336221">
+  <cocktail id="326473740145649178486886190577075194141">
     <name>Talos Coffee</name>
     <category>coffee / tea</category>
     <glass>brandy snifter</glass>
@@ -7757,7 +7757,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74951752951795098834906389081413224733">
+  <cocktail id="326474135890320937235694506333013641501">
     <name>Tennesee Mud</name>
     <category>coffee / tea</category>
     <glass>coffee mug</glass>
@@ -7775,7 +7775,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74952545471104729021747499545933482269">
+  <cocktail id="326474928488858729936643454304026724637">
     <name>Tequila Fizz</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -7794,7 +7794,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74953734051998768017006691229380217117">
+  <cocktail id="326476117148980931443628079291087292701">
     <name>Tequila Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -7813,7 +7813,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74954526492080235689865783501997312285">
+  <cocktail id="326476513685934315335646661585560504605">
     <name>Tequila Sunrise</name>
     <category>cocktail</category>
     <glass>highball glass</glass>
@@ -7832,7 +7832,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74954922712120969522494432290293516573">
+  <cocktail id="326476909668290561633048344967207291165">
     <name>Tequila Surprise</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -7848,7 +7848,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74955318852933540845713060933397743901">
+  <cocktail id="326477305888331295467688976889031264541">
     <name>Texas Rattlesnake</name>
     <category>shot</category>
     <glass>highball glass</glass>
@@ -7866,7 +7866,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74957299953137210027362158693697554717">
+  <cocktail id="326479286671622314590455922001140091165">
     <name>Texas Sling</name>
     <category>milk / float / shake</category>
     <glass>wine glass</glass>
@@ -7885,7 +7885,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74959280974112716689142470599167543581">
+  <cocktail id="326481267930282308798114493906967431453">
     <name>The Evil Blue Thing</name>
     <category>cocktail</category>
     <glass>old-fashioned glass</glass>
@@ -7901,7 +7901,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74961261995088223356506683092623526173">
+  <cocktail id="326483249109714140492227333834793126173">
     <name>Thriller</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7919,7 +7919,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74962450655210424866191779006246127901">
+  <cocktail id="326484437769836342000234275937266796829">
     <name>Tom Collins</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -7942,7 +7942,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74964035535373360208698334067211733277">
+  <cocktail id="326486022649999277341559199046001068317">
     <name>Tommy's Margarita</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -7958,7 +7958,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74964827896226665367114915086027032861">
+  <cocktail id="326486815090080745014184104137994897693">
     <name>Turf Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7977,7 +7977,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74966016556348866872868368524955191581">
+  <cocktail id="326488003591746621494357051295902566685">
     <name>Turkeyball</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -7993,7 +7993,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74966808996430334545377305926544230685">
+  <cocktail id="326488796111056251679971775286894496029">
     <name>Tuxedo Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -8013,7 +8013,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74967997577324373537940248808079591709">
+  <cocktail id="326489984295809478102307404910161135901">
     <name>Valencia Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -8029,7 +8029,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74968790017405841213383844316853930269">
+  <cocktail id="326490380832762861996724716956162558237">
     <name>Vampiro</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -8053,7 +8053,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74970771038381347875568917238833842461">
+  <cocktail id="326492758153007265012168895808247531805">
     <name>Van Vleet</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -8069,7 +8069,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74971563557690978062804655620702439709">
+  <cocktail id="326493550910001382742780018697562327325">
     <name>Vermouth Cassis</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -8086,7 +8086,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74973148358625750891208721199732721949">
+  <cocktail id="326495135552479830542743229282238433565">
     <name>Vesper</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -8102,7 +8102,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74973940719479056051797444613824153885">
+  <cocktail id="326495531534836076833954996451041184029">
     <name>Vesuvio</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -8120,7 +8120,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74974733159560523723215385005682690333">
+  <cocktail id="326496324133373869537835224829519038749">
     <name>Veteran</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -8136,7 +8136,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74975525599641991395231178248074660125">
+  <cocktail id="326497116414999012181133191700473547037">
     <name>Victor</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -8152,7 +8152,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74975525678870153907312395922250762525">
+  <cocktail id="326497512635039746016829073309985769757">
     <name>Victory Collins</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -8171,7 +8171,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74977903078342719437848448799409015069">
+  <cocktail id="326499493656015252678800225249665583389">
     <name>Vodka And Tonic</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -8187,7 +8187,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74978299139927128246389816058134759709">
+  <cocktail id="326499889717599661487200855020036000029">
     <name>Vodka Fizz</name>
     <category>other/unknown</category>
     <glass>white wine glass</glass>
@@ -8205,7 +8205,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74978695280739699566464087736404248861">
+  <cocktail id="326500286333781207894564638818622081309">
     <name>Vodka Martini</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -8221,7 +8221,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74979487720821167238804140151966894365">
+  <cocktail id="326501078456950025508940147010070481181">
     <name>Vodka Russian</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -8236,7 +8236,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74979883940861901075495035804151286045">
+  <cocktail id="326501474835447084373911175444907264285">
     <name>Waikiki Beachcomber</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -8252,7 +8252,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74980676301715206232738992069989992733">
+  <cocktail id="326502266958615901987796072751948990749">
     <name>Whiskey Sour</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -8272,7 +8272,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74981468741796673904604759149795182877">
+  <cocktail id="326503059477925532177401830437721311517">
     <name>Whisky Mac</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -8287,7 +8287,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74981864961837407740721164374513125661">
+  <cocktail id="326503455856422591041465102072666229021">
     <name>White Lady</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -8304,7 +8304,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74982657322690712899710828445911320861">
+  <cocktail id="326504247821135083626848064315407567133">
     <name>White Russian</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -8321,7 +8321,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74983449842000343085432512928053299485">
+  <cocktail id="326505040498901038840817793432856922397">
     <name>Whitecap Margarita</name>
     <category>other/unknown</category>
     <glass>margarita/coupette glass</glass>
@@ -8338,7 +8338,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74985827083016583586623050235709327645">
+  <cocktail id="326507417819145441856823514863479654685">
     <name>Wine Cooler</name>
     <category>punch / party drink</category>
     <glass>collins glass</glass>
@@ -8355,7 +8355,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74990581644277227105187840310755297565">
+  <cocktail id="326512568204306006640301241685742291229">
     <name>Wine Punch</name>
     <category>punch / party drink</category>
     <glass>collins glass</glass>
@@ -8373,7 +8373,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74991770225171266098327806894547503389">
+  <cocktail id="326513757339797183233094538940644690205">
     <name>Yellow Bird</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -8390,7 +8390,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74992562586024571253979740692110739741">
+  <cocktail id="326514945999919384738522044356541909277">
     <name>Zambeer</name>
     <category>soft drink / soda</category>
     <glass>collins glass</glass>
@@ -8406,7 +8406,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74993355026106038928142906531828304157">
+  <cocktail id="326515341823819306003133239928724752669">
     <name>Zenmeister</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -8421,7 +8421,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74993751246146772763729857325353503005">
+  <cocktail id="326515737885403714810566440204140644637">
     <name>Ziemes Martini Apfelsaft</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -8437,7 +8437,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74994147466187506598881084854930606365">
+  <cocktail id="326516530959310482599121841119246518557">
     <name>Zima Blaster</name>
     <category>ordinary drink</category>
     <glass>hurricane glass</glass>
@@ -8454,7 +8454,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74995336126309708107508397806074562845">
+  <cocktail id="326517719381748196563452783439147010333">
     <name>Zimadori Zinger</name>
     <category>punch / party drink</category>
     <glass>collins glass</glass>
@@ -8471,7 +8471,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74996524707203747099474332262006622493">
+  <cocktail id="326518907962642235555400703496569587997">
     <name>Zinger</name>
     <category>soft drink / soda</category>
     <glass>highball glass</glass>
@@ -8488,7 +8488,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74997317147285214771960751665458809117">
+  <cocktail id="326519304341139294421777980915052808477">
     <name>Zipperhead</name>
     <category>shot</category>
     <glass>whiskey sour glass</glass>
@@ -8506,7 +8506,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74998902027448150115789957641987787037">
+  <cocktail id="326521285124430313543680516373683210525">
     <name>Zippy's Revenge</name>
     <category>cocktail</category>
     <glass>old-fashioned glass</glass>
@@ -8524,7 +8524,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="74999694388301455272141919706630424861">
+  <cocktail id="326522077564511781215028650971317504285">
     <name>Zizi Coin-coin</name>
     <category>punch / party drink</category>
     <glass>margarita/coupette glass</glass>
@@ -8540,7 +8540,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="75000090608342189107176335120872605981">
+  <cocktail id="326522473863780677567499345491656018205">
     <name>Zorbatini</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -8556,7 +8556,7 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-  <cocktail id="75000486828382922944471276073078065437">
+  <cocktail id="326522870479962223974483982496612845853">
     <name>Zorro</name>
     <category>coffee / tea</category>
     <glass>coffee mug</glass>

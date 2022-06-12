@@ -72,8 +72,10 @@ def count_ingr_ids(step):
 
 def replace_ingredient(ingr1, ingr2):
     if ingr1.text != ingr2.text:
-        if ingr1.attrib["basic_taste"] == ingr2.attrib["basic_taste"] \
-                and ingr1.attrib["alc_type"] == ingr2.attrib["alc_type"]:
+        if (
+            ingr1.attrib["basic_taste"] == ingr2.attrib["basic_taste"]
+            and ingr1.attrib["alc_type"] == ingr2.attrib["alc_type"]
+        ):
             ingr1._setText(ingr2.text)
             return True
     return False

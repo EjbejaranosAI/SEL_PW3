@@ -17,9 +17,6 @@ def learn_case(root: ET.Element, case_library: dict) -> None:
     print("Learned case: " + case_name)
 
 
-
-
-
 # Function to learn from the ConstraintsBuilder and return the root element of the xml file
 def learn_from_cbr(cbr_path: str, cbr_file: str) -> ET.Element:
     import xml.etree.ElementTree as ET
@@ -34,19 +31,16 @@ def learn_from_cbr(cbr_path: str, cbr_file: str) -> ET.Element:
     return root
 
 
-
 # Create a class that implements the learning of the solution from the ConstraintsBuilder and storage in the case_library
+
 
 class Learning:
     def __init__(self, root: ET.Element, case_library: dict):
         self.root = root
-        
-        
+
         self.case_library = case_library
         self.learn_case(root, case_library)
-    
 
-    
     def learn_from_cbr(self, cbr_path: str, cbr_file: str) -> ET.Element:
         import xml.etree.ElementTree as ET
         import zipfile
@@ -58,7 +52,7 @@ class Learning:
         tree = ET.parse(cbr_file)
         root = tree.getroot()
         return root
-    
+
     # function to Storage in the case_library
     # input is the root element of the xml file learned from the ConstraintsBuilder
     # output is the case_library
@@ -85,13 +79,15 @@ class Learning:
         user_score = input("What is the score of the case " + case_name + "? ")
         # Return the score of the case
         return user_score
+
     # function to print the score of the case
     # input is the score of the case
     # output is the score of the case
     def print_score(self, score: str) -> None:
         print("The score of the case is " + score)
-    
-# conditional where the learn class is used to determine if the user input is more than 0.8 
+
+
+# conditional where the learn class is used to determine if the user input is more than 0.8
 # if it is, the case is learned and the score is printed
 # if it is not, the case is not learned and the score is printed
 if __name__ == "__main__":
@@ -114,4 +110,3 @@ if __name__ == "__main__":
         learning.print_score(user_score)
     # Print the case library
     print(case_library)
-    

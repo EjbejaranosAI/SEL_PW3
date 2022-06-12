@@ -1,12 +1,12 @@
+import copy
 import os
 import random
-import copy
-
 from pathlib import Path
+
+from case_library import CaseLibrary, ConstraintsBuilder
 from lxml.objectify import SubElement
 
 from definitions import CASE_LIBRARY as CASE_LIBRARY_PATH
-from case_library import CaseLibrary, ConstraintsBuilder
 
 random.seed(10)
 
@@ -93,8 +93,7 @@ def exclude_ingredient(exc_ingr, recipe, inc_ingrs, recipes):
                     return
         for _ in range(20):
             similar_ingr = search_ingredient(
-                basic_taste=exc_ingr.attrib["basic_taste"],
-                alc_type=exc_ingr.attrib["alc_type"]
+                basic_taste=exc_ingr.attrib["basic_taste"], alc_type=exc_ingr.attrib["alc_type"]
             )
             if similar_ingr is None:
                 delete_ingredient(exc_ingr, recipe)

@@ -1,13 +1,16 @@
 import os
 import re
+import sys
 import uuid
 from itertools import permutations
+from pathlib import Path
 
 import pandas as pd
 from lxml import etree
 from lxml.etree import SubElement
 from pandas import DataFrame
 
+sys.path.append(os.fspath(Path(__file__).resolve().parent.parent))
 from definitions import CASE_BASE, CASE_LIBRARY, DATA_PATH
 from src.utils.helper import powerset
 

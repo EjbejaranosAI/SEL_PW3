@@ -1,11 +1,11 @@
-import random
 import copy
+import random
 
 from lxml.objectify import SubElement
 
 from definitions import CASE_LIBRARY as CASE_LIBRARY_PATH
 from src.cbr.case_library import CaseLibrary
-from src.utils.helper import replace_ingredient, count_ingr_ids
+from src.utils.helper import count_ingr_ids, replace_ingredient
 
 random.seed(10)
 
@@ -86,8 +86,7 @@ class CBR:
                         return
             for _ in range(20):
                 ingr = self.search_ingredient(
-                    basic_taste=exc_ingr.attrib["basic_taste"],
-                    alc_type=exc_ingr.attrib["alc_type"]
+                    basic_taste=exc_ingr.attrib["basic_taste"], alc_type=exc_ingr.attrib["alc_type"]
                 )
                 if ingr is None:
                     self.delete_ingredient(exc_ingr)
