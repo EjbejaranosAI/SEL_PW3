@@ -2,6 +2,7 @@ import json
 import os
 import random
 import copy
+import numpy as np
 
 from pathlib import Path
 from itertools import combinations_with_replacement
@@ -16,15 +17,6 @@ CASE_LIBRARY_PATH = "C:/Users/greci/Documents/Maestria/FIB/UPC - SEL/Proyecto/Pr
 
 random.seed(10)
 
-
-def random_choice(elements, n):
-    return elements[random.randint(0, n)]
-
-
-def subsumed(a, b):
-    return a in b
-
-
 def search_ingredient(ingr_text=None, basic_taste=None, alc_type=None):
     if ingr_text:
         return random.choice(CASE_LIBRARY.findall(".//ingredient[.='{}']".format(ingr_text)))
@@ -34,92 +26,6 @@ def search_ingredient(ingr_text=None, basic_taste=None, alc_type=None):
         return random.choice(CASE_LIBRARY.findall(".//ingredient[@alc_type='{}']".format(alc_type)))
     else:
         return
-
-
-def adapt_alcs_and_tastes(exc_ingrs, recipe, recipes, alc_type="", basic_taste=""):
-    for rec in recipes[1:]:
-        similar_ingrs = rec.ingredients.findall(
-            "ingredient[@basic_taste='{}'][@alc_type='{}']".format(basic_taste, alc_type)
-        )
-        for si in similar_ingrs:
-            if not subsumed(si.text, exc_ingrs):
-                include_ingredient(si, recipe)
-                return
-    while True:
-        similar_ingr = search_ingredient(basic_taste=basic_taste, alc_type=alc_type)
-        if not subsumed(similar_ingr.text, exc_ingrs):
-            include_ingredient(similar_ingr, recipe)
-            return
-
-
-def include_ingredient(ingr, recipe):
-    ingr.attrib["id"] = f"ingr{len(recipe.findall('ingredients/ingredient'))}"
-    ingr.attrib["measure"] = "some"
-    recipe.find("ingredients").append(ingr)
-    step = SubElement(recipe.preparation, "step")
-    step._setText(f"add {ingr.attrib['id']} to taste")
-    recipe.preparation.insert(1, step)
-
-
-def replace_ingredient(ingr1, ingr2):
-    if ingr1.text != ingr2.text:
-        if subsumed(ingr1.attrib["basic_taste"], ingr2.attrib["basic_taste"]) and subsumed(
-            ingr1.attrib["alc_type"], ingr2.attrib["alc_type"]
-        ):
-            ingr1._setText(ingr2.text)
-            return True
-    return False
-
-
-def count_ingr_ids(step):
-    return step.text.count("ingr")
-
-
-def delete_ingredient(ingr, recipe):
-    recipe.ingredients.remove(ingr)
-    for step in recipe.preparation.iterchildren():
-        if subsumed(ingr.attrib["id"], step.text):
-            if count_ingr_ids(step) > 1:
-                step._setText(step.text.replace(ingr.attrib["id"], "[IGNORE]"))
-            else:
-                recipe.preparation.remove(step)
-
-
-def exclude_ingredient(exc_ingr, recipe, inc_ingrs, recipes):
-    if not exc_ingr.attrib["alc_type"]:
-        for ingr in inc_ingrs:
-            if replace_ingredient(exc_ingr, ingr):
-                return
-        for _ in recipes[1:]:
-            for ingr in recipe.ingredients.iterchildren():
-                if replace_ingredient(exc_ingr, ingr):
-                    return
-        for _ in range(20):
-            similar_ingr = search_ingredient(
-                basic_taste=exc_ingr.attrib["basic_taste"],
-                alc_type=exc_ingr.attrib["alc_type"]
-            )
-            if similar_ingr is None:
-                delete_ingredient(exc_ingr, recipe)
-                return
-            if exc_ingr.text != similar_ingr.text:
-                exc_ingr._setText(similar_ingr.text)
-                return
-    delete_ingredient(exc_ingr, recipe)
-    return
-
-
-def update_ingr_list(recipe):
-    alc_types = set()
-    basic_tastes = set()
-    ingredients = set()
-    for ing in recipe.ingredients.iterchildren():
-        if ing.attrib["alc_type"]:
-            alc_types.add(ing.attrib["alc_type"])
-        if ing.attrib["basic_taste"]:
-            basic_tastes.add(ing.attrib["basic_taste"])
-        ingredients.add(ing.text)
-    return alc_types, basic_tastes, ingredients
 
 # Define a structure that stores all the cases of the dataset divided by category
 
@@ -152,7 +58,7 @@ def compute_similarity(cl, constraints, cocktail):
         if constraints[key]:
 
             # Ingredient constraint has highest importance
-            if key == "ingredients/ingredient":
+            if key == "ingredients":
                 for ingredient in constraints[key]:
                     # Get ingredient alcohol_type, if any
                     ingredient_alc_type = [k for k in cl.alcohol_dict if ingredient in cl.alcohol_dict[k]]
@@ -162,7 +68,7 @@ def compute_similarity(cl, constraints, cocktail):
                     # If the ingredient is not alcoholic, get its basic_taste
                     else:
                         itype = "non-alcohol"
-                        ingredient_basic_taste = [k for k in cl.basic_dict if ingredient in cl.basic_dict[k]][0]
+                        ingredient_basic_taste = [k for k in cl.basic_dict if ingredient in cl.basic_dict[k]]
 
                     # Increase similarity if constraint ingredient is used in cocktail
                     if ingredient in c_ingredients:
@@ -229,7 +135,7 @@ def compute_similarity(cl, constraints, cocktail):
                     else:
                         itype = "non-alcohol"
                         exc_ingredient_basic_taste = \
-                            [k for k in cl.basic_dict if ingredient in cl.basic_dict[k]][0]
+                            [k for k in cl.basic_dict if ingredient in cl.basic_dict[k]]
 
                     # Decrease similarity if ingredient excluded is found in cocktail
                     if ingredient in c_ingredients:
@@ -290,28 +196,49 @@ def retrieval(query, constraints, cl):
     # SELECTION PHASE
     # Compute similarity with each of the cocktails of the searching list    
     sim_list = [compute_similarity(cl, query,c) for c in searching_list]
+
+    # Max index
+    max_indices = np.argwhere(np.array(sim_list) == np.amax(np.array(sim_list))).flatten().tolist()
+    if len(max_indices) > 1:
+        index_retrieved = random.choice(max_indices)
+    else:
+        index_retrieved = max_indices[0]
     
-    return searching_list, sim_list
+    # Retrieve case with higher similarity
+    retrieved_case = searching_list[index_retrieved]
+    
+    return searching_list,sim_list,index_retrieved,retrieved_case
 
 if __name__ == "__main__":
     data_folder = os.path.join(Path(os.path.dirname(__file__)).parent.parent, "data")
     query = {
-        "category": "coffee / tea",
-        "glass": "irish coffee cup",
-        "alc_type": ["whisky"],
-        "basic_taste": ["salty"],
-        "ingredients": ["orange juice", "rum"],
-        "exc_ingredients": ["mint", "gin", "orange"],
+        "category": "cocktail",
+        "glass": "collins glass",
+        "alc_type": ["vodka"],
+        "basic_taste": ["bitter"],
+        "ingredients": ["strawberries", "vodka"],
+        "exc_ingredients": ["mint", "gin", "lemon"],
     }
 
     CONSTRAINT = ConstraintsBuilder(include_category=query["category"], include_glass=query["glass"])
     CASE_LIBRARY = CaseLibrary(CASE_LIBRARY_PATH)
     query["ingredients"] = [search_ingredient(ingr) for ingr in query["ingredients"]]
     
-    output,simlist = retrieval(query, CONSTRAINT,CASE_LIBRARY)
-    print(f"Category: {[e.text for e in output[2].findall('category')]}")
-    print(f"Ingredients: {[e.text for e in output[2].findall('ingredients/ingredient')]}")
-    print(f"Steps: {[e.text for e in output[2].findall('preparation/step')]}")
-    print(simlist)
+    recipes,sim_list,index_retrieved,retrieved_case = retrieval(query, CONSTRAINT,CASE_LIBRARY)
+
+    i = len(recipes)-1
+    print(f"Similarity List: {i}")
+    print(f"Category: {[e.text for e in recipes[i].findall('category')]}")
+    print(f"Ingredients: {[e.text for e in recipes[i].findall('ingredients/ingredient')]}")
+    print(f"Steps: {[e.text for e in recipes[i].findall('preparation/step')]}")    
+    #########################
+    print(f"Similarity List: {sim_list}")
+    #########################
+    print(f"Index Max Similarity: {[index_retrieved]}")
+    #########################
+    print(f"Category-Retrieved Case: {[e.text for e in retrieved_case.findall('category')]}")
+    print(f"Ingredients-Retrieved Case: {[e.text for e in retrieved_case.findall('ingredients/ingredient')]}")
+    print(f"Steps-Retrieved Case: {[e.text for e in retrieved_case.findall('preparation/step')]}") 
 
     print("Done")
+
