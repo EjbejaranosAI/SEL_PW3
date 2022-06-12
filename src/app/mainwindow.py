@@ -14,7 +14,8 @@ from PySide6.QtWidgets import (
     QMessageBox,
 )
 
-sys.path.append(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.append(os.fspath(Path(__file__).resolve().parent.parent))
+
 from src.cbr.cbr import CBR
 
 
@@ -51,13 +52,15 @@ class MainWindow:
         self.init_line_edits()
 
     def init_scroll_areas(self):
-        vbox = self.window.drink_categories.layout()
+        drink_types = self.window.drink_type
+        drink_types.addItem("Any")
         for drink in self.cbr.case_library.drink_types:
-            vbox.addWidget(QCheckBox(f"{drink}"))
+            drink_types.addItem(drink)
 
-        vbox = self.window.glass_categories.layout()
+        glass_types = self.window.glass_type
+        glass_types.addItem("Any")
         for glass in self.cbr.case_library.glass_types:
-            vbox.addWidget(QCheckBox(f"{glass}"))
+            glass_types.addItem(glass)
 
     def init_buttons(self):
         self.window.btn_next.clicked.connect(self.next_page)

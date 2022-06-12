@@ -11,6 +11,7 @@ from lxml.etree import SubElement
 from pandas import DataFrame
 
 sys.path.append(os.fspath(Path(__file__).resolve().parent.parent))
+
 from definitions import CASE_BASE, CASE_LIBRARY, DATA_PATH
 from src.utils.helper import powerset
 

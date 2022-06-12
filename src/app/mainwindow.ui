@@ -33,7 +33,7 @@
        <number>0</number>
       </property>
       <widget class="QWidget" name="page">
-       <layout class="QGridLayout" name="gridLayout" rowstretch="0,1,2,0,0">
+       <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0">
         <item row="2" column="2">
          <layout class="QVBoxLayout" name="verticalLayout_10">
           <item>
@@ -76,79 +76,22 @@
           </item>
          </layout>
         </item>
-        <item row="2" column="1">
-         <layout class="QVBoxLayout" name="verticalLayout_12">
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_10">
-            <item>
-             <widget class="QLabel" name="label_4">
-              <property name="text">
-               <string>Not has alcohol:</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="input_exclude_alc"/>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <widget class="QListWidget" name="list_alc_excludes"/>
-          </item>
-         </layout>
-        </item>
-        <item row="2" column="3">
-         <layout class="QVBoxLayout" name="verticalLayout_9">
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_7">
-            <item>
-             <widget class="QLabel" name="label_basic_taste">
-              <property name="text">
-               <string>Not has taste:</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_basic_taste"/>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <widget class="QListWidget" name="list_taste_includes"/>
-          </item>
-         </layout>
-        </item>
         <item row="1" column="0" colspan="2">
-         <layout class="QVBoxLayout" name="verticalLayout_2">
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,2">
           <item>
            <widget class="QLabel" name="label">
             <property name="text">
-             <string>Type of drink</string>
+             <string>Type of drink:</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QScrollArea" name="drink_type">
-            <property name="widgetResizable">
-             <bool>true</bool>
-            </property>
-            <widget class="QWidget" name="drink_categories">
-             <property name="geometry">
-              <rect>
-               <x>0</x>
-               <y>0</y>
-               <width>503</width>
-               <height>135</height>
-              </rect>
-             </property>
-             <layout class="QVBoxLayout" name="verticalLayout"/>
-            </widget>
-           </widget>
+           <widget class="QComboBox" name="drink_type"/>
           </item>
          </layout>
         </item>
         <item row="1" column="2" colspan="2">
-         <layout class="QVBoxLayout" name="verticalLayout_3">
+         <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="0,2">
           <item>
            <widget class="QLabel" name="label_2">
             <property name="text">
@@ -157,22 +100,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QScrollArea" name="glass_type">
-            <property name="widgetResizable">
-             <bool>true</bool>
-            </property>
-            <widget class="QWidget" name="glass_categories">
-             <property name="geometry">
-              <rect>
-               <x>0</x>
-               <y>0</y>
-               <width>503</width>
-               <height>135</height>
-              </rect>
-             </property>
-             <layout class="QVBoxLayout" name="verticalLayout_6"/>
-            </widget>
-           </widget>
+           <widget class="QComboBox" name="glass_type"/>
           </item>
          </layout>
         </item>
@@ -369,16 +297,10 @@
  </widget>
  <tabstops>
   <tabstop>lineEdit_new_name</tabstop>
-  <tabstop>drink_type</tabstop>
-  <tabstop>glass_type</tabstop>
   <tabstop>input_include_alc</tabstop>
   <tabstop>list_alc_includes</tabstop>
-  <tabstop>input_exclude_alc</tabstop>
-  <tabstop>list_alc_excludes</tabstop>
   <tabstop>lineEdit_basic_taste_2</tabstop>
   <tabstop>list_taste_includes_2</tabstop>
-  <tabstop>lineEdit_basic_taste</tabstop>
-  <tabstop>list_taste_includes</tabstop>
   <tabstop>btn_next</tabstop>
   <tabstop>btn_back</tabstop>
   <tabstop>pushButton_2</tabstop>
