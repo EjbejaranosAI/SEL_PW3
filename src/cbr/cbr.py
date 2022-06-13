@@ -1,5 +1,6 @@
 import copy
 import random
+import re
 from typing import Tuple
 
 import numpy as np
@@ -115,6 +116,7 @@ class CBR:
             Quantity of the ingredient to include.
         """
         ingr.attrib["id"] = f"ingr{len(self.recipe.ingredients.ingredient[:])}"
+        measure = re.sub(r"\sof\b", "", measure)
         ingr.attrib["measure"] = measure
         self.recipe.ingredients.append(ingr)
         step = SubElement(self.recipe.preparation, "step")
@@ -443,7 +445,7 @@ class CBR:
 
         self.score_percent = (score / len(self.query.get_ingredients())) * 100
         self.evaluation_score = score / (
-                len(query.get_ingredients()) + len(query.get_alc_types()) + len(query.get_basic_tastes())
+            len(query.get_ingredients()) + len(query.get_alc_types()) + len(query.get_basic_tastes())
         )
 
         # Evaluate the similarity between the retrieved recipe and the adapted_solution

@@ -2,7 +2,7 @@ import os
 import sys
 from pathlib import Path
 
-from PySide6 import QtCore, QtWidgets
+from PySide6 import QtWidgets
 from PySide6.QtCore import QFile, Qt
 from PySide6.QtUiTools import QUiLoader
 from PySide6.QtWidgets import (
@@ -41,16 +41,14 @@ class MainWindow:
         self.window.showMaximized()
 
     def init_ui(self):
-        self.window.main_widget.setCurrentIndex(0)
-
         self._init_buttons()
         self._init_scroll_areas()
         self._init_line_edits()
         self._init_score()
 
     def _init_buttons(self):
-        self.window.btn_search.clicked.connect(self._go_to_results_page)
-        self.window.btn_reset.clicked.connect(self._go_to_home_page)
+        self.window.btn_search.clicked.connect(self._send_query)
+        self.window.btn_reset.clicked.connect(self._reset)
         self.window.btn_add_ingr.clicked.connect(
             lambda: self._include_to_list(
                 self.window.list_ingredient_includes, self.window.input_ingredient, self.ingredients
@@ -151,27 +149,28 @@ class MainWindow:
         line_edit.setCompleter(completer)
         del item
 
-    def _go_to_results_page(self):
+    def _send_query(self):
         query = Query()
         query.category = self.window.drink_type.currentText()
         query.glass = self.window.glass_type.currentText()
-        query.alc_types = [self.window.list_alc_includes.item(i).text() for i in
-                       range(self.window.list_alc_includes.count())]
-        query.basic_tastes = [self.window.list_taste_includes.item(i).text() for i in
-                         range(self.window.list_taste_includes.count())]
-        query.ingredients = [self.window.list_ingredient_includes.item(i).text() for i in
-                              range(self.window.list_ingredient_includes.count())]
-        query.exc_ingredients = [self.window.list_ingredient_excludes.item(i).text() for i in
-                              range(self.window.list_ingredient_excludes.count())]
+        query.alc_types = [
+            self.window.list_alc_includes.item(i).text() for i in range(self.window.list_alc_includes.count())
+        ]
+        query.basic_tastes = [
+            self.window.list_taste_includes.item(i).text() for i in range(self.window.list_taste_includes.count())
+        ]
+        query.ingredients = [
+            self.window.list_ingredient_includes.item(i).text()
+            for i in range(self.window.list_ingredient_includes.count())
+        ]
+        query.exc_ingredients = [
+            self.window.list_ingredient_excludes.item(i).text()
+            for i in range(self.window.list_ingredient_excludes.count())
+        ]
         self.cbr.retrieve(query)
         retrieved_case, adapted_case = self.cbr.adapt()
-        self.window.main_widget.setCurrentIndex(1)
         self.window.retrieved_case.setPlainText(str(retrieved_case))
         self.window.adapted_case.setPlainText(str(adapted_case))
-
-    def _go_to_home_page(self):
-        self._reset()
-        self.window.main_widget.setCurrentIndex(0)
 
     def _reset(self):
         self.alc_types = self.cbr.case_library.alc_types.copy()
@@ -185,6 +184,8 @@ class MainWindow:
         self.window.list_taste_includes.clear()
         self.window.list_ingredient_includes.clear()
         self.window.list_ingredient_excludes.clear()
+        self.window.retrieved_case.clear()
+        self.window.adapted_case.clear()
 
     def _init_score(self):
         self.window.score_slider.valueChanged.connect(self._update_score)

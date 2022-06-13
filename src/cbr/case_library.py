@@ -584,6 +584,10 @@ class ConstraintsBuilder:
             The ConstraintsBuilder.
         """
 
-        return self.filter_category(include=query.category).filter_glass(include=query.glass).filter_alc_type(
-            include=query.alc_types).filter_taste(include=query.basic_tastes).filter_ingredient(
-            include=query.ingredients, exclude=query.exc_ingredients)
+        return (
+            self.filter_category(include=query.category)
+            .filter_glass(include=query.glass)
+            .filter_alc_type(include=query.alc_types)
+            .filter_taste(include=query.basic_tastes)
+            .filter_ingredient(include=query.ingredients, exclude=query.exc_ingredients)
+        )

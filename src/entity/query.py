@@ -32,6 +32,7 @@ class Query:
     exc_basic_tastes : list of str
         Basic tastes to exclude from the recipe.
     """
+
     category = None
     glass = None
     ingredients = None
