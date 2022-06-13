@@ -17,7 +17,7 @@
    <locale language="English" country="UnitedStates"/>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_5">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
      <widget class="QStackedWidget" name="main_widget">
       <property name="sizePolicy">
@@ -33,90 +33,183 @@
        <number>0</number>
       </property>
       <widget class="QWidget" name="page">
-       <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0">
-        <item row="2" column="2">
-         <layout class="QVBoxLayout" name="verticalLayout_10">
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="9" column="0">
+           <widget class="QListWidget" name="list_ingredient_includes"/>
+          </item>
+          <item row="3" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_11">
             <item>
-             <widget class="QLabel" name="label_basic_taste_2">
+             <layout class="QHBoxLayout" name="horizontalLayout_9">
+              <item>
+               <widget class="QLabel" name="include_alc_label">
+                <property name="text">
+                 <string>Has alcohol:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="input_include_alc"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QListWidget" name="list_alc_includes"/>
+            </item>
+           </layout>
+          </item>
+          <item row="8" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Has:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="0,2">
+            <item>
+             <widget class="QLabel" name="label_2">
               <property name="text">
-               <string>Has taste:</string>
+               <string>Type of glass</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="lineEdit_basic_taste_2"/>
+             <widget class="QComboBox" name="glass_type"/>
             </item>
            </layout>
           </item>
-          <item>
-           <widget class="QListWidget" name="list_taste_includes_2"/>
-          </item>
-         </layout>
-        </item>
-        <item row="2" column="0">
-         <layout class="QVBoxLayout" name="verticalLayout_11">
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item row="2" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,2">
             <item>
-             <widget class="QLabel" name="include_alc_label">
+             <widget class="QLabel" name="label">
               <property name="text">
-               <string>Has alcohol:</string>
+               <string>Type of drink:</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="input_include_alc"/>
+             <widget class="QComboBox" name="drink_type"/>
             </item>
            </layout>
           </item>
-          <item>
-           <widget class="QListWidget" name="list_alc_includes"/>
+          <item row="9" column="1">
+           <widget class="QListWidget" name="list_ingredient_excludes"/>
           </item>
-         </layout>
-        </item>
-        <item row="1" column="0" colspan="2">
-         <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,2">
-          <item>
-           <widget class="QLabel" name="label">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>New cocktail name:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_new_name"/>
+            </item>
+           </layout>
+          </item>
+          <item row="3" column="1">
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <item>
+               <widget class="QLabel" name="label_basic_taste">
+                <property name="text">
+                 <string>Has taste:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="input_basic_taste"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QListWidget" name="list_taste_includes"/>
+            </item>
+           </layout>
+          </item>
+          <item row="8" column="1">
+           <widget class="QLabel" name="label_6">
             <property name="text">
-             <string>Type of drink:</string>
+             <string>Not has:</string>
             </property>
            </widget>
           </item>
-          <item>
-           <widget class="QComboBox" name="drink_type"/>
+          <item row="7" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>Ingredient:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="input_ingredient"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_add_ingr">
+              <property name="text">
+               <string>&amp;Include</string>
+              </property>
+              <property name="shortcut">
+               <string>Alt+I</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_exclude_ingr">
+              <property name="text">
+               <string>&amp;Exclude</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </item>
          </layout>
         </item>
-        <item row="1" column="2" colspan="2">
-         <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="0,2">
-          <item>
-           <widget class="QLabel" name="label_2">
-            <property name="text">
-             <string>Type of glass</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="glass_type"/>
-          </item>
-         </layout>
-        </item>
-        <item row="0" column="0" colspan="2">
-         <layout class="QHBoxLayout" name="horizontalLayout_4">
-          <item>
-           <widget class="QLabel" name="label_3">
-            <property name="text">
-             <string>New cocktail name:</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="lineEdit_new_name"/>
-          </item>
-         </layout>
+        <item>
+         <widget class="QWidget" name="nav_bar" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>845</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_search">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::RightToLeft</enum>
+             </property>
+             <property name="text">
+              <string>&amp;Search</string>
+             </property>
+             <property name="shortcut">
+              <string>Alt+N</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -126,147 +219,123 @@
          <enum>QLayout::SetDefaultConstraint</enum>
         </property>
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_7">
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_5">
-            <item>
-             <widget class="QLabel" name="label_alc_type">
-              <property name="text">
-               <string>Alcohol type:</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_alc_type"/>
-            </item>
-           </layout>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>Retrieved cocktail:</string>
+            </property>
+           </widget>
           </item>
-          <item>
-           <widget class="QListWidget" name="list_alc_includes_1"/>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>Adapted cocktail:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QTextBrowser" name="textBrowser"/>
+          </item>
+          <item row="1" column="1">
+           <widget class="QTextBrowser" name="textBrowser_2"/>
           </item>
          </layout>
         </item>
         <item>
-         <widget class="Line" name="line_2">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="Line" name="line">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <layout class="QVBoxLayout" name="verticalLayout_8">
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_6">
-            <item>
-             <widget class="QLabel" name="label_ingredient">
-              <property name="text">
-               <string>Ingredient:</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineEdit_ingredient"/>
-            </item>
-           </layout>
+           <widget class="QLabel" name="score_label">
+            <property name="text">
+             <string>Score: 0.0</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
           </item>
           <item>
-           <widget class="QListWidget" name="list_ingredient_includes"/>
+           <widget class="QSlider" name="score_slider">
+            <property name="maximum">
+             <number>100</number>
+            </property>
+            <property name="singleStep">
+             <number>1</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>10</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_evaluate">
+            <property name="text">
+             <string>&amp;Send</string>
+            </property>
+            <property name="shortcut">
+             <string>Ctrl+S</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_reset">
+            <property name="text">
+             <string>R&amp;eset</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+E</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
        </layout>
       </widget>
-     </widget>
-    </item>
-    <item>
-     <widget class="QWidget" name="query_buttons" native="true">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
-        <widget class="QPushButton" name="pushButton">
-         <property name="text">
-          <string>PushButton</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_2">
-         <property name="text">
-          <string>PushButton</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item>
-     <widget class="QWidget" name="nav_bar" native="true">
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
-       <item>
-        <widget class="QPushButton" name="btn_back">
-         <property name="text">
-          <string>&amp;Back</string>
-         </property>
-         <property name="shortcut">
-          <string>Alt+B</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>845</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QPushButton" name="btn_next">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="layoutDirection">
-          <enum>Qt::RightToLeft</enum>
-         </property>
-         <property name="text">
-          <string>&amp;Next</string>
-         </property>
-         <property name="shortcut">
-          <string>Alt+N</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
      </widget>
     </item>
    </layout>
@@ -277,7 +346,7 @@
      <x>0</x>
      <y>0</y>
      <width>1056</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -299,16 +368,9 @@
   <tabstop>lineEdit_new_name</tabstop>
   <tabstop>input_include_alc</tabstop>
   <tabstop>list_alc_includes</tabstop>
-  <tabstop>lineEdit_basic_taste_2</tabstop>
-  <tabstop>list_taste_includes_2</tabstop>
-  <tabstop>btn_next</tabstop>
-  <tabstop>btn_back</tabstop>
-  <tabstop>pushButton_2</tabstop>
-  <tabstop>pushButton</tabstop>
-  <tabstop>list_alc_includes_1</tabstop>
-  <tabstop>lineEdit_alc_type</tabstop>
-  <tabstop>lineEdit_ingredient</tabstop>
-  <tabstop>list_ingredient_includes</tabstop>
+  <tabstop>input_basic_taste</tabstop>
+  <tabstop>list_taste_includes</tabstop>
+  <tabstop>btn_search</tabstop>
  </tabstops>
  <resources/>
  <connections/>

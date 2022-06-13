@@ -268,7 +268,7 @@ class CBR:
             # learn the score again the retrieved recipe and the adapted solution again until the USER_THRESHOLD is equal or higher than the USER_SCORE_THRESHOLD
             self.learn(query)
             return False
-            
+
     # function to ask the user for the USER_SCORE_THRESHOLD value in the recipe file and return the result to the main function to be used in the learning process
     def get_user_threshold(self):
         """
@@ -285,14 +285,14 @@ class CBR:
         self.USER_SCORE_THRESHOLD = float(user_threshold)
         return self.USER_SCORE_THRESHOLD
 
-
     # Function to know how many recipes are available in the case_library
     def get_recipe_count(self):
         """
         Returns the number of recipes in the case_library.
         """
         return self.recipe.objects.count()
-    #Function to give the user requirements to the recipe
+
+    # Function to give the user requirements to the recipe
     def get_user_requirements(self):
         """
         Asks the user for the user requirements and returns the result to the main function to be used in the learning process.
@@ -303,10 +303,9 @@ class CBR:
         """
         user_requirements = input("Please enter the user requirements: ")
 
-
         return user_requirements
 
-    #Function to give information about the recipe available in the case_library
+    # Function to give information about the recipe available in the case_library
     def get_recipe_info(self):
         """
         Returns the information about the recipes in the case_library.
@@ -316,6 +315,7 @@ class CBR:
             print(i)
 
         return info
+
     # Function to return the list of recipes
     def get_recipe_list(self):
         """
@@ -337,7 +337,7 @@ class CBR:
         """
         Returns the list of alc_types in the case_library.
         """
-        alc_type_list =  self.alc_type.objects.all()
+        alc_type_list = self.alc_type.objects.all()
         return alc_type_list
 
     # Function to return the list of basic_tastes
@@ -347,7 +347,3 @@ class CBR:
         """
         basic_taste_list = self.basic_taste.objects.all()
         return basic_taste_list
-
-
-
-
