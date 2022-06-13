@@ -1,10 +1,13 @@
 import copy
 import random
+from typing import Tuple
 
+import numpy as np
 from lxml.objectify import SubElement
 
 from definitions import CASE_LIBRARY_FILE as CASE_LIBRARY_PATH
-from src.cbr.case_library import CaseLibrary
+from entity.cocktail import Cocktail
+from src.cbr.case_library import CaseLibrary, ConstraintsBuilder
 from src.utils.helper import count_ingr_ids, replace_ingredient
 
 random.seed(10)
@@ -148,7 +151,7 @@ class CBR:
                 self.include_ingredient(ingr)
                 return
 
-    def retrieve(self, query, recipes):
+    def retrieve(self, query):
         """
 
         Parameters
@@ -159,24 +162,230 @@ class CBR:
         recipes : list of :class:`lxml.objectify.ObjectifiedElement` or None
             List of recipes similar to the query.
 
-        Returns
-        -------
-
         """
         self.query = query
-        self.sim_recipes = recipes[1:]
-        self.recipe = copy.deepcopy(recipes[0])
         self.ingredients = None
         self.basic_tastes = None
         self.alc_types = None
+
+        # 1. SEARCHING
+        # Filter elements that correspond to the category constraint
+        # If category constraints is not empty
+        list_recipes = self.case_library.findall(ConstraintsBuilder().from_query(self.query))
+
+        # If we have less than 5 recipes matching the user constraints,
+        # we relax them progressively until having at least 5 recipes.
+        counter = 0
+        soft_query = copy.deepcopy(self.query)
+        while len(list_recipes) < 5:
+            if counter == 0:
+                soft_query.exc_ingredients = []
+            elif counter == 1:
+                soft_query.ingredients = []
+            elif counter == 2:
+                soft_query.basic_tastes = []
+            elif counter == 3:
+                soft_query.alc_types = []
+            elif counter == 4:
+                soft_query.glass = ""
+            else:
+                soft_query.category = ""
+
+            aux_recipes = self.case_library.findall(ConstraintsBuilder().from_query(soft_query))
+            list_recipes += aux_recipes
+            counter += 1
+
+        # 2. SELECTION
+        # Compute similarity with each of the cocktails of the searching list
+        sim_list = [self._similarity_cocktail(c) for c in list_recipes]
+
+        # Max index
+        max_indices = np.argwhere(np.array(sim_list) == np.amax(np.array(sim_list))).flatten().tolist()
+        if len(max_indices) > 1:
+            index_retrieved = random.choice(max_indices)
+        else:
+            index_retrieved = max_indices[0]
+
+        # Retrieve case with higher similarity
+        self.retrieved_case = list_recipes[index_retrieved]
+
+        list_recipes.remove(self.retrieved_case)
+        sim_list.remove(sim_list[index_retrieved])
+
+        sorted_sim = np.flip(np.argsort(sim_list))
+        self.sim_recipes = [copy.deepcopy(list_recipes[i]) for i in sorted_sim[:4]]
+        self.recipe = copy.deepcopy(self.retrieved_case)
         self.update_ingr_list()
         self.query.set_ingredients([self.search_ingredient(ingr) for ingr in self.query.get_ingredients()])
 
-    def adapt(self):
+    def _similarity_cocktail(self, cocktail):
+        """Similarity between a set of constraints and a particular cocktail.
+
+        Start with similarity 0, then each constraint is evaluated one by one and increase
+        The similarity is according to the feature weight
+
+        Parameters
+        ----------
+        cocktail : lxml.objectify.ObjectifiedElement
+            cocktail Element
+
+        Returns
+        -------
+        float:
+            normalized similarity
+        """
+        # Start with cumulative similarity equal to 0
+        sim = 0
+
+        # Initialization variable  - normalize final cumulated similarity
+        cumulative_norm_score = 0
+
+        # Get cocktails ingredients and alc_type
+        c_ingredients = set()
+        c_ingredients_atype = set()
+        c_ingredients_btype = set()
+        for ingredient in cocktail.ingredients.iterchildren():
+            c_ingredients.add(ingredient.text)
+            c_ingredients_atype.add(ingredient.attrib["alc_type"])
+            c_ingredients_btype.add(ingredient.attrib["basic_taste"])
+
+        # Evaluate each constraint one by one
+        for ingredient in self.query.ingredients:
+            # Get ingredient alcohol_type, if any
+            ingredient_alc_type = None
+            ingredient_basic_taste = None
+            for alcohol, ingredients in self.case_library.alcohol_dict.items():
+                if ingredient in ingredients:
+                    ingredient_alc_type = alcohol
+                    break
+            # If the ingredient is not alcoholic, get its basic_taste
+            if ingredient_alc_type is None:
+                for taste, ingredients in self.case_library.taste_dict.items():
+                    if ingredient in ingredients:
+                        ingredient_basic_taste = taste
+                        break
+
+            # Increase similarity - if constraint ingredient is used in cocktail
+            if ingredient in c_ingredients:
+                sim += self.case_library.sim_weights["ingr_match"]
+                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+
+            # Increase similarity - if constraint ingredient alc_type is used in cocktail
+            elif ingredient_alc_type is not None and ingredient_alc_type in c_ingredients_atype:
+                sim += self.case_library.sim_weights["ingr_alc_type_match"]
+                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+
+            # Increase similarity if constraint ingredient basic_taste is used in cocktail
+            elif ingredient_basic_taste is not None and ingredient_basic_taste in c_ingredients_btype:
+                sim += self.case_library.sim_weights["ingr_basic_taste_match"]
+                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+
+            # In case the constraint is not fulfilled we add the weight to the normalization score
+            else:
+                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+
+        # Increase similarity if alc_type is a match. Alc_type has a lot of importance,
+        # but less than the ingredient constraints
+        for alc_type in self.query.alc_types:
+            if alc_type in c_ingredients_atype:
+                sim += self.case_library.sim_weights["alc_type_match"]
+                cumulative_norm_score += self.case_library.sim_weights["alc_type_match"]
+            # In case the constraint is not fulfilled we add the weight to the normalization score
+            else:
+                cumulative_norm_score += self.case_library.sim_weights["alc_type_match"]
+
+        # Increase similarity if basic_taste is a match. Basic_taste has a lot of importance,
+        # but less than the ingredient constraints
+        for basic_taste in self.query.basic_tastes:
+            if basic_taste in c_ingredients_btype:
+                sim += self.case_library.sim_weights["basic_taste_match"]
+                cumulative_norm_score += self.case_library.sim_weights["basic_taste_match"]
+            # In case the constraint is not fulfilled we add the weight to the normalization score
+            else:
+                cumulative_norm_score += self.case_library.sim_weights["basic_taste_match"]
+
+        # Increase similarity if glass type is a match. Glass type is not very relevant for the case
+        if cocktail.glass.text == self.query.glass:
+            sim += self.case_library.sim_weights["glass_type_match"]
+            cumulative_norm_score += self.case_library.sim_weights["glass_type_match"]
+        # In case the constraint is not fulfilled we add the weight to the normalization score
+        else:
+            cumulative_norm_score += self.case_library.sim_weights["glass_type_match"]
+
+        # If one of the excluded elements in the constraint is found in the cocktail, similarity is reduced
+        for ingredient in self.query.exc_ingredients:
+            # Get excluded_ingredient alcohol_type, if any
+            exc_ingredient_alc_type = None
+            exc_ingredient_basic_taste = None
+            for alcohol, ingredients in self.case_library.alcohol_dict.items():
+                if ingredient in ingredients:
+                    exc_ingredient_alc_type = alcohol
+                    break
+            # If the ingredient is not alcoholic, get its basic_taste
+            if exc_ingredient_alc_type is None:
+                for taste, ingredients in self.case_library.taste_dict.items():
+                    if ingredient in ingredients:
+                        exc_ingredient_basic_taste = taste
+                        break
+
+            # Decrease similarity if ingredient excluded is found in cocktail
+            if ingredient in c_ingredients:
+                sim += self.case_library.sim_weights["exc_ingr_match"]
+                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+
+            # Decrease similarity if excluded ingredient alc_type is used in cocktail
+            elif exc_ingredient_alc_type is not None and exc_ingredient_alc_type in c_ingredients_atype:
+                sim += self.case_library.sim_weights["exc_ingr_alc_type_match"]
+                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+
+            # Decrease similarity if excluded ingredient basic_taste is used in cocktail
+            elif exc_ingredient_basic_taste is not None and exc_ingredient_basic_taste in c_ingredients_btype:
+                sim += self.case_library.sim_weights["exc_ingr_basic_taste_match"]
+                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+
+            # In case the constraint is not fulfilled we add the weight to the normalization score
+            else:
+                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+
+        # TODO: Check if below code is used.
+        # If one of the excluded alcohol_types is found in the cocktail, similarity is reduced
+        # for alc_type in self.query.exc_alc_types:
+        #     if alc_type in c_ingredients_atype:
+        #         sim += self.case_library.sim_weights["exc_alc_type"]
+        #         cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+        #     # In case the constraint is not fulfilled we add the weight to the normalization score
+        #     else:
+        #         cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+
+        # If one of the excluded basic_tastes is found in the cocktail, similarity is reduced
+        # for basit_taste in self.query.exc_basic_tastes:
+        #     if basit_taste in c_ingredients_atype:
+        #         sim += self.case_library.sim_weights["exc_basic_taste"]
+        #         cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+        #     # In case the constraint is not fulfilled we add the weight to the normalization score
+        #     else:
+        #         cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+
+        # Normalization of similarity
+        if cumulative_norm_score == 0:
+            normalized_sim = 1.0
+        else:
+            normalized_sim = sim / cumulative_norm_score
+
+        return normalized_sim * float(cocktail.find("utility").text)
+
+    def adapt(self) -> Tuple[Cocktail, Cocktail]:
         """
         Adapts the recipe according the user requirements
         by excluding ingredients and including other ingredients,
         alcohol types and basic tastes.
+
+        Returns
+        -------
+        retrieved_case: `Cocktail`
+            The retrieved case being adapted.
+        adapted_case: `Cocktail`
+            The adapted case.
         """
         for exc_ingr in self.query.get_exc_ingredients():
             if exc_ingr in self.ingredients:
@@ -202,6 +411,10 @@ class CBR:
         for basic_taste in self.query.get_basic_tastes():
             if basic_taste not in self.basic_tastes:
                 self.adapt_alcs_and_tastes(basic_taste=basic_taste)
+
+        retrieved_case = Cocktail().from_element(self.retrieved_case)
+        adapted_case = Cocktail().from_element(self.recipe)
+        return retrieved_case, adapted_case
 
     # EVALUATION
     def evaluate(self, query):
@@ -230,7 +443,7 @@ class CBR:
 
         self.score_percent = (score / len(self.query.get_ingredients())) * 100
         self.evaluation_score = score / (
-            len(query.get_ingredients()) + len(query.get_alc_types()) + len(query.get_basic_tastes())
+                len(query.get_ingredients()) + len(query.get_alc_types()) + len(query.get_basic_tastes())
         )
 
         # Evaluate the similarity between the retrieved recipe and the adapted_solution

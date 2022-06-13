@@ -1,9 +1,7 @@
+import re
 from dataclasses import dataclass, field
 from typing import List
 from xml.etree.ElementTree import Element
-
-from _distutils_hack import override
-from lxml import etree, objectify
 
 
 @dataclass
@@ -13,6 +11,9 @@ class Ingredient:
     measure: str = ""
     quantity: float = 0.0
     unit: str = ""
+
+    def __str__(self):
+        return f"{self.measure} {self.name}"
 
     def from_element(self, element: Element):
         self.id = element.attrib["id"]
@@ -64,6 +65,32 @@ class Cocktail:
     derivation: str = ""
     evaluation: str = ""
 
+    def __str__(self):
+        output = f"""{self.name}
+Type of drink: {self.category}
+Glass: {self.glass}
+Ingredients:
+"""
+
+        max_per_line = 4
+        steps = self.preparation.copy()
+        for i, ingredient in enumerate(self.ingredients):
+            steps = [re.sub(f"\\b{ingredient.id}\\b", str(ingredient), step) for step in steps]
+            if i == 0:
+                output += f"        {ingredient}"
+            else:
+                if i % max_per_line == 0:
+                    output += f"\n        {ingredient}"
+                else:
+                    output += f", {ingredient}"
+
+        output += "\nPreparation:"
+        for i, step in enumerate(steps):
+
+            output += f"\n        {i}. {step}"
+        output += "\n"
+        return output
+
     def from_element(self, element: Element):
         self.name = element.name
         self.category = element.category
@@ -81,10 +108,6 @@ class Cocktail:
         self.evaluation = element.evaluation
 
         return self
-
-    def similarity(self, other):
-        # TODO: define similarity of a cocktail to another.
-        pass
 
 
 @dataclass

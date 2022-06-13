@@ -28,19 +28,24 @@ def search_ingredient(ingr_text=None, basic_taste=None, alc_type=None):
 # Define a structure that stores all the cases of the dataset divided by category
 
 
-def similarity_cocktal(cl, constraints, cocktail):
+def similarity_cocktail(cl, constraints, cocktail):
     """Similarity between a set of constraints and a particular cocktail.
 
     Start with similarity 0, then each constraint is evaluated one by one and increase
     The similarity is according to the feature weight
 
-    Args:
-        cl: case library
-        constraints (dict): dictionary containing a set of constraints
-        cocktail (Element): cocktail Element
+    Parameters
+    ----------
+    cl : CaseLibrary
+    constraints : dict
+        Dictionary containing a set of constraints.
+    cocktail : lxml.objectify.ObjectifiedElement
+        cocktail Element
 
-    Returns:
-        float: normalized similarity
+    Returns
+    -------
+    float:
+        normalized similarity
     """
     # Start with cumulative similarity equal to 0
     sim = 0
@@ -198,7 +203,7 @@ def retrieve(query, constraints, cl):
 
     # 2. SELECTION
     # Compute similarity with each of the cocktails of the searching list
-    sim_list = [similarity_cocktal(cl, query, c) for c in list_recipes]
+    sim_list = [similarity_cocktail(cl, query, c) for c in list_recipes]
 
     # Max index
     max_indices = np.argwhere(np.array(sim_list) == np.amax(np.array(sim_list))).flatten().tolist()

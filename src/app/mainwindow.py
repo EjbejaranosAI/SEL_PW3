@@ -14,6 +14,8 @@ from PySide6.QtWidgets import (
     QMessageBox,
 )
 
+from entity.query import Query
+
 sys.path.append(os.fspath(Path(__file__).resolve().parent.parent))
 
 from src.cbr.cbr import CBR
@@ -123,7 +125,8 @@ class MainWindow:
 
     def _include_to_list(self, widget_list: QListWidgetItem, line_edit: QLineEdit, types):
         text = line_edit.text().strip()
-        if text not in types:
+        items = widget_list.findItems(text, Qt.MatchExactly)
+        if text not in types and not items:
             button = QMessageBox.critical(
                 self.window,
                 "Error",
@@ -132,7 +135,6 @@ class MainWindow:
                 defaultButton=QtWidgets.QMessageBox.Close,
             )
         else:
-            items = widget_list.findItems(text, Qt.MatchExactly)
             if not items:
                 QListWidgetItem(text, widget_list)
                 types.remove(text)
@@ -150,7 +152,22 @@ class MainWindow:
         del item
 
     def _go_to_results_page(self):
+        query = Query()
+        query.category = self.window.drink_type.currentText()
+        query.glass = self.window.glass_type.currentText()
+        query.alc_types = [self.window.list_alc_includes.item(i).text() for i in
+                       range(self.window.list_alc_includes.count())]
+        query.basic_tastes = [self.window.list_taste_includes.item(i).text() for i in
+                         range(self.window.list_taste_includes.count())]
+        query.ingredients = [self.window.list_ingredient_includes.item(i).text() for i in
+                              range(self.window.list_ingredient_includes.count())]
+        query.exc_ingredients = [self.window.list_ingredient_excludes.item(i).text() for i in
+                              range(self.window.list_ingredient_excludes.count())]
+        self.cbr.retrieve(query)
+        retrieved_case, adapted_case = self.cbr.adapt()
         self.window.main_widget.setCurrentIndex(1)
+        self.window.retrieved_case.setPlainText(str(retrieved_case))
+        self.window.adapted_case.setPlainText(str(adapted_case))
 
     def _go_to_home_page(self):
         self._reset()

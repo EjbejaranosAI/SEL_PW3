@@ -3,6 +3,8 @@ from typing import Dict, List, Union
 
 from lxml import objectify
 
+from entity.query import Query
+
 
 def _include_to_list(include_list: List[str], elements: Union[str, List[str]], is_exclusion=False):
     if include_list:
@@ -337,10 +339,10 @@ class ConstraintsBuilder:
         >>> builder.filter_category(exclude=["shot", "cocktail"])
         """
 
-        if include is not None:
+        if include is not None and include:
             self.include_categories = _include_to_list(self.include_categories, include)
 
-        if exclude is not None:
+        if exclude is not None and exclude:
             self.exclude_category = _include_to_list(self.exclude_category, exclude, is_exclusion=True)
 
         return self
@@ -374,10 +376,10 @@ class ConstraintsBuilder:
         >>> builder = ConstraintsBuilder().filter_glass(include="shot glass")
         >>> builder.filter_glass(exclude=["hurricane glass", "martini glass"])
         """
-        if include is not None:
+        if include is not None and include:
             self.include_glasses = _include_to_list(self.include_glasses, include)
 
-        if exclude is not None:
+        if exclude is not None and exclude:
             self.exclude_glass = _include_to_list(self.exclude_glass, exclude, is_exclusion=True)
 
         return self
@@ -410,9 +412,9 @@ class ConstraintsBuilder:
         >>> builder = ConstraintsBuilder().filter_alc_type(include="gin")
         >>> builder.filter_alc_type(exclude=["rum", "vodka"])
         """
-        if include is not None:
+        if include is not None and include:
             self.ingredient_constraints = _include_to_dict(self.ingredient_constraints, "alc_type", include)
-        if exclude is not None:
+        if exclude is not None and exclude:
             self.ingredient_constraints = _include_to_dict(
                 self.ingredient_constraints, "alc_type", exclude, is_exclusion=True
             )
@@ -446,9 +448,9 @@ class ConstraintsBuilder:
         >>> builder = ConstraintsBuilder().filter_taste(include="sweet")
         >>> builder.filter_taste(exclude=["sour", "salty"])
         """
-        if include is not None:
+        if include is not None and include:
             self.ingredient_constraints = _include_to_dict(self.ingredient_constraints, "basic_taste", include)
-        if exclude is not None:
+        if exclude is not None and exclude:
             self.ingredient_constraints = _include_to_dict(
                 self.ingredient_constraints, "basic_taste", exclude, is_exclusion=True
             )
@@ -482,9 +484,9 @@ class ConstraintsBuilder:
         >>> builder = ConstraintsBuilder().filter_garnish_type(include="slice")
         >>> builder.filter_garnish_type(exclude=["berry", "wedge"])
         """
-        if include is not None:
+        if include is not None and include:
             self.ingredient_constraints = _include_to_dict(self.ingredient_constraints, "garnish_type", include)
-        if exclude is not None:
+        if exclude is not None and exclude:
             self.ingredient_constraints = _include_to_dict(
                 self.ingredient_constraints, "garnish_type", exclude, is_exclusion=True
             )
@@ -518,9 +520,9 @@ class ConstraintsBuilder:
         >>> builder = ConstraintsBuilder().filter_ingredient(include="banana")
         >>> builder.filter_garnish_type(exclude=["strawberry", "coffee"])
         """
-        if include is not None:
+        if include is not None and include:
             self.ingredient_constraints = _include_to_dict(self.ingredient_constraints, "ingredient", include)
-        if exclude is not None:
+        if exclude is not None and exclude:
             self.ingredient_constraints = _include_to_dict(
                 self.ingredient_constraints, "ingredient", exclude, is_exclusion=True
             )
@@ -566,3 +568,22 @@ class ConstraintsBuilder:
                             constraints += f"[descendant::ingredient[{value}]]"
 
         return constraints
+
+    def from_query(self, query: Query):
+        """
+        Adds filters to the ConstraintsBuilder from a :class:`Query`.
+
+        Parameters
+        ----------
+        query : `entity.query.Query`
+            The query from where to extract the filters.
+
+        Returns
+        -------
+        self : ConstraintsBuilder
+            The ConstraintsBuilder.
+        """
+
+        return self.filter_category(include=query.category).filter_glass(include=query.glass).filter_alc_type(
+            include=query.alc_types).filter_taste(include=query.basic_tastes).filter_ingredient(
+            include=query.ingredients, exclude=query.exc_ingredients)
