@@ -158,7 +158,7 @@ class CBR:
             step._setText(f"add {ingr.attrib['id']} to taste")
         else:
             step._setText(f"add {ingr.attrib['id']}")
-        self.recipe.preparation.insert(1, step)
+        self.adapted_recipe.preparation.insert(1, step)
 
     def adapt_alcs_and_tastes(self, alc_type="", basic_taste=""):
         """
