@@ -355,10 +355,10 @@
                <item>
                 <widget class="QPushButton" name="btn_evaluate">
                  <property name="text">
-                  <string>Se&amp;nd</string>
+                  <string>Ev&amp;aluate</string>
                  </property>
                  <property name="shortcut">
-                  <string>Alt+N</string>
+                  <string>Alt+A</string>
                  </property>
                 </widget>
                </item>
@@ -390,17 +390,7 @@
            </spacer>
           </item>
           <item>
-           <widget class="QPushButton" name="btn_reset">
-            <property name="text">
-             <string>R&amp;eset</string>
-            </property>
-            <property name="shortcut">
-             <string>Alt+E</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="btn_search">
+           <widget class="QPushButton" name="btn_run">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -411,10 +401,10 @@
              <enum>Qt::RightToLeft</enum>
             </property>
             <property name="text">
-             <string>S&amp;earch</string>
+             <string>&amp;Run</string>
             </property>
             <property name="shortcut">
-             <string>Alt+E</string>
+             <string>Alt+R</string>
             </property>
            </widget>
           </item>
@@ -450,6 +440,25 @@
    </property>
   </action>
  </widget>
+ <tabstops>
+  <tabstop>lineEdit_new_name</tabstop>
+  <tabstop>drink_type</tabstop>
+  <tabstop>glass_type</tabstop>
+  <tabstop>input_include_alc</tabstop>
+  <tabstop>list_alc_includes</tabstop>
+  <tabstop>input_basic_taste</tabstop>
+  <tabstop>list_taste_includes</tabstop>
+  <tabstop>input_ingredient</tabstop>
+  <tabstop>btn_add_ingr</tabstop>
+  <tabstop>btn_exclude_ingr</tabstop>
+  <tabstop>list_ingredient_includes</tabstop>
+  <tabstop>list_ingredient_excludes</tabstop>
+  <tabstop>btn_run</tabstop>
+  <tabstop>score_slider</tabstop>
+  <tabstop>btn_evaluate</tabstop>
+  <tabstop>retrieved_case</tabstop>
+  <tabstop>adapted_case</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

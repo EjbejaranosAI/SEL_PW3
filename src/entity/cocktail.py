@@ -64,6 +64,8 @@ class Cocktail:
     utility: float = 0.0
     derivation: str = ""
     evaluation: str = ""
+    success_count: int = 0
+    failure_count: int = 0
 
     def __str__(self):
         output = f"""{self.name}
@@ -106,11 +108,7 @@ Ingredients:
         self.utility = float(element.utility)
         self.derivation = element.derivation
         self.evaluation = element.evaluation
+        self.success_count = element.success_count
+        self.failure_count = element.failure_count
 
         return self
-
-
-@dataclass
-class CocktailList:
-    __slots__ = ["cocktails"]
-    cocktails: List[Cocktail]

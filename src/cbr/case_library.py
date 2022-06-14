@@ -150,6 +150,18 @@ class CaseLibrary:
         self.ingredients_onto = {"alcoholic": dict(), "non-alcoholic": dict()}
         self._initialize_type_sets()
 
+    def get_system_successes(self):
+        return self.case_library.success_count
+
+    def get_system_failures(self):
+        return self.case_library.failure_count
+
+    def increase_system_successes(self):
+        self.case_library.success_count += 1
+
+    def increase_system_failures(self):
+        self.case_library.failure_count += 1
+
     def findall(self, constraints):
         """
         Find all the cases matching a constraint.
@@ -191,6 +203,7 @@ class CaseLibrary:
         glass_type = case.glass
         parent = self.case_library.find(f"./category[@type='{drink_type}']/glass[@type='{glass_type}']")
         case.set("id", str(uuid.uuid1().int))
+        case.derivation = "adapted"
         parent.append(case)
         self.ET.write(self.case_library_path, pretty_print=True, encoding="utf-8")
 

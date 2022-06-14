@@ -1,3 +1,4 @@
+import logging
 import os
 import sys
 from pathlib import Path
@@ -14,6 +15,7 @@ from PySide6.QtWidgets import (
     QMessageBox,
 )
 
+from definitions import LOG_FILE
 from entity.query import Query
 
 sys.path.append(os.fspath(Path(__file__).resolve().parent.parent))
@@ -31,6 +33,13 @@ class MainWindow:
         self.load_ui()
         self.init_ui()
 
+        logging.basicConfig(
+            filename=LOG_FILE,
+            format="%(asctime)s [%(name)s] - %(levelname)s: %(message)s",
+            filemode="w",
+            level=logging.INFO,
+        )
+
     def load_ui(self):
         loader = QUiLoader()
         path = os.fspath(Path(__file__).resolve().parent / "mainwindow.ui")
@@ -45,10 +54,16 @@ class MainWindow:
         self._init_scroll_areas()
         self._init_line_edits()
         self._init_score()
+        self._init_sliders()
+
+    def _init_sliders(self):
+        self.window.score_slider.setValue(50)
+        self.window.score_slider.setEnabled(False)
 
     def _init_buttons(self):
-        self.window.btn_search.clicked.connect(self._send_query)
-        self.window.btn_reset.clicked.connect(self._reset)
+        self.window.btn_run.clicked.connect(self._send_query)
+        self.window.btn_evaluate.clicked.connect(self._send_evaluation)
+        self.window.btn_evaluate.setEnabled(False)
         self.window.btn_add_ingr.clicked.connect(
             lambda: self._include_to_list(
                 self.window.list_ingredient_includes, self.window.input_ingredient, self.ingredients
@@ -181,29 +196,44 @@ class MainWindow:
                 self.window.list_ingredient_excludes.item(i).text()
                 for i in range(self.window.list_ingredient_excludes.count())
             ]
-            retrieved_case, adapted_case, score = self.cbr.run_query(query, recipe_name)
+            retrieved_case, adapted_case = self.cbr.run_query(query, recipe_name)
             self._reset()
             self.window.retrieved_case.setPlainText(str(retrieved_case))
             self.window.adapted_case.setPlainText(str(adapted_case))
-            self.window.score_slider.value(score * 10)
+            self.window.btn_evaluate.setEnabled(True)
+            self.window.score_slider.setEnabled(True)
+            self.window.btn_run.setEnabled(False)
 
     def _reset(self):
         self.alc_types = self.cbr.case_library.alc_types.copy()
         self.taste_types = self.cbr.case_library.taste_types.copy()
         self.ingredients = self.cbr.case_library.ingredients.copy()
         self._init_completers()
-        self.window.lineEdit_new_name.clear()
-        self.window.input_include_alc.clear()
-        self.window.input_basic_taste.clear()
-        self.window.input_ingredient.clear()
+        self._clear_line_edits()
         self.window.drink_type.setCurrentIndex(0)
         self.window.glass_type.setCurrentIndex(0)
+        self._clear_item_lists()
+        self.window.retrieved_case.clear()
+        self.window.adapted_case.clear()
+
+    def _clear_item_lists(self):
         self.window.list_alc_includes.clear()
         self.window.list_taste_includes.clear()
         self.window.list_ingredient_includes.clear()
         self.window.list_ingredient_excludes.clear()
-        self.window.retrieved_case.clear()
-        self.window.adapted_case.clear()
+
+    def _clear_line_edits(self):
+        self.window.lineEdit_new_name.clear()
+        self.window.input_include_alc.clear()
+        self.window.input_basic_taste.clear()
+        self.window.input_ingredient.clear()
+
+    def _send_evaluation(self):
+        score = self.window.score_slider.value() / 100
+        self.cbr.evaluation(score)
+        self._init_sliders()
+        self.window.btn_evaluate.setEnabled(False)
+        self.window.btn_run.setEnabled(True)
 
     def _init_score(self):
         self.window.score_slider.valueChanged.connect(self._update_score)

@@ -1,6 +1,3 @@
-import os
-import shutil
-
 import numpy as np
 
 
@@ -117,25 +114,21 @@ class Evaluation:
     def get_adapted_solution_score(self):
         return self.adapted_solution_score
 
-    # Create a function to evaluate the adapted_recipe and the query. 
+    # Create a function to evaluate the adapted_recipe and the query.
     # This function should return the score based on the similarity between the adapted_recipe and the query
     def evaluation(self):
-        #compute the similarity between the adapted_recipe and the query
-        #return the score
-        
+        # compute the similarity between the adapted_recipe and the query
+        # return the score
+
         similarity_ing = 0.0
         similarity_alc = 0.0
         similarity_taste = 0.0
-        
+
         """
         Evaluates the adapted recipe and the query.
         Returns the score based on the similarity between the adapted_recipe and the query.
         """
 
-        
-        
-        
-        
         # Initialize score
 
         score = 0
@@ -152,18 +145,42 @@ class Evaluation:
         for ingredient in adapted_recipe_ingredients:
             if ingredient.text in query_ingredients:
                 similarity_ing += self.calculate_ingr_sim(ingredient)
-                #if the similarity is higher than 0.9 we add the score to the total score
-                score += 3.5 if similarity_ing >= 0.85 else 2 if similarity_ing >= 0.65 else 1 if similarity_ing >= 0.35 else 0
+                # if the similarity is higher than 0.9 we add the score to the total score
+                score += (
+                    3.5
+                    if similarity_ing >= 0.85
+                    else 2
+                    if similarity_ing >= 0.65
+                    else 1
+                    if similarity_ing >= 0.35
+                    else 0
+                )
         for alc_type in adapted_recipe_alc_types:
             if alc_type in query_alc_types:
 
                 similarity_alc += self.similarity(alc_type)
-                #if the similarity is higher than 0.9 we add the score to the total score
-                score += 3.5 if similarity_alc >= 0.85 else 2 if similarity_alc >= 0.65 else 1 if similarity_alc >= 0.35 else 0
-        for basic_taste in adapted_recipe_basic_tastes: 
+                # if the similarity is higher than 0.9 we add the score to the total score
+                score += (
+                    3.5
+                    if similarity_alc >= 0.85
+                    else 2
+                    if similarity_alc >= 0.65
+                    else 1
+                    if similarity_alc >= 0.35
+                    else 0
+                )
+        for basic_taste in adapted_recipe_basic_tastes:
             if basic_taste in query_basic_tastes:
                 similarity_taste += self.similarity(basic_taste)
-                #if the similarity is higher than 0.9 we add the score to the total score
-                score += 3 if similarity_taste >= 0.85 else 2 if similarity_taste >= 0.65 else 1 if similarity_taste >= 0.35 else 0
+                # if the similarity is higher than 0.9 we add the score to the total score
+                score += (
+                    3
+                    if similarity_taste >= 0.85
+                    else 2
+                    if similarity_taste >= 0.65
+                    else 1
+                    if similarity_taste >= 0.35
+                    else 0
+                )
         self.similarity_evaluation_score = score
-        return self.similarity_evaluation_score 
+        return self.similarity_evaluation_score
