@@ -419,7 +419,7 @@ class CBR:
     def evaluation(self):
         similarity_ing = 0.0
         similarity_alc = 0.0
-        similarity_btype = 0.0
+        similarity_taste = 0.0
         """
         Evaluates the adapted recipe and the query.
         Returns the score based on the similarity between the adapted_recipe and the query.
