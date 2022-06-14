@@ -406,38 +406,41 @@ class CBR:
             if basic_taste not in self.basic_tastes:
                 self.adapt_alcs_and_tastes(basic_taste=basic_taste)
 
-    # EVALUATION
-    def evaluate(self):
+    # Create a function to evaluate the adapted_recipe and the query. 
+    # This function should return the score based on the similarity between the adapted_recipe and the query
+    def evaluation(self):
         """
-        Evaluates the recipe according to the user requirements and the adapted_solution.
-
-        Returns
-        -------
-        score : float
-            Evaluation between the user requirements and the adapted solution requirements.
-
+        Evaluates the adapted recipe and the query.
+        Returns the score based on the similarity between the adapted_recipe and the query.
         """
+        # Initialize score
         score = 0
-        for ingredient in self.query.get_ingredients():
-            if ingredient.text in self.adapted_recipe.get_ingredients():
-                score += 1
-        for alc_type in self.query.get_alc_types():
-            if alc_type in self.adapted_recipe.get_alc_types():
-                score += 1
-        for basic_taste in self.query.get_basic_tastes():
-            if basic_taste in self.adapted_recipe.get_basic_tastes():
-                score += 1
-
-        self.score_percent = (score / len(self.query.get_ingredients())) * 100
-        self.evaluation_score = score / (
-            len(self.query.get_ingredients()) + len(self.query.get_alc_types()) + len(self.query.get_basic_tastes())
-        )
-
-        # Evaluate the similarity between the retrieved recipe and the adapted_solution
-        self.similarity_score = self._similarity_cocktail(self.adapted_recipe)
-        self.similarity_evaluation_score = self.evaluation_score * self.similarity_score
-
-        return self.evaluation_score * self.similarity_evaluation_score
+        # Get the parameters from the adapted_recipe
+        adapted_recipe_ingredients = self.adapted_recipe.find("ingredients")
+        adapted_recipe_alc_types = self.adapted_recipe.find("alc_types")
+        adapted_recipe_basic_tastes = self.adapted_recipe.find("basic_tastes")
+        # Get the parameters from the query
+        query_ingredients = self.query.get_ingredients()
+        query_alc_types = self.query.get_alc_types()
+        query_basic_tastes = self.query.get_basic_tastes()
+        # Calculate the score based on the similarity between the adapted_recipe and the query (using the function above)
+        for ingredient in adapted_recipe_ingredients:
+            if ingredient.text in query_ingredients:
+                similarity_ing += self.similarity(ingredient)
+                #if the similarity is higher than 0.9 we add the score to the total score
+                score += 3.5 if similarity_ing >= 0.85 else 2 if similarity_ing >= 0.65 else 1 if similarity_ing >= 0.35 else 0
+        for alc_type in adapted_recipe_alc_types:
+            if alc_type in query_alc_types:
+                similarity += self.similarity(alc_type)
+                #if the similarity is higher than 0.9 we add the score to the total score
+                score += 3.5 if similarity >= 0.85 else 2 if similarity >= 0.65 else 1 if similarity >= 0.35 else 0
+        for basic_taste in adapted_recipe_basic_tastes: 
+            if basic_taste in query_basic_tastes:
+                similarity += self.similarity(basic_taste)
+                #if the similarity is higher than 0.9 we add the score to the total score
+                score += 3 if similarity >= 0.85 else 2 if similarity >= 0.65 else 1 if similarity >= 0.35 else 0
+        self.similarity_evaluation_score = score
+        return self.similarity_evaluation_score 
 
     # Learning the adapted recipe in the case_library if the score_percent is lower than the EVALUATION_THRESHOLD
     # and the USER_THRESHOLD is equal or higher than the USER_SCORE_THRESHOLD
