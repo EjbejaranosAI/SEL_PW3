@@ -28,9 +28,6 @@ class Query:
 
     basic_tastes : list of str
         Basic tastes to include in the recipe.
-
-    exc_basic_tastes : list of str
-        Basic tastes to exclude from the recipe.
     """
 
     category = None
@@ -40,7 +37,6 @@ class Query:
     alc_types = None
     exc_alc_types = None
     basic_tastes = None
-    exc_basic_tastes = None
 
     def set_category(self, category):
         self.category = category
@@ -56,6 +52,9 @@ class Query:
 
     def set_alc_types(self, alc_types):
         self.alc_types = alc_types
+
+    def set_exc_alc_types(self, exc_alc_types):
+        self.exc_alc_types = exc_alc_types
 
     def set_basic_tastes(self, basic_taste):
         self.basic_tastes = basic_taste
@@ -74,6 +73,9 @@ class Query:
 
     def get_alc_types(self):
         return self.alc_types
+
+    def get_exc_alc_types(self):
+        return self.exc_alc_types
 
     def get_basic_tastes(self):
         return self.basic_tastes

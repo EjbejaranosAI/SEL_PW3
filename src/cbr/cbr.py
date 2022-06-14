@@ -7,7 +7,9 @@ import numpy as np
 from lxml.objectify import SubElement
 
 from definitions import CASE_LIBRARY_FILE as CASE_LIBRARY_PATH
+from definitions import USER_SCORE_THRESHOLD, USER_THRESHOLD
 from entity.cocktail import Cocktail
+from entity.query import Query
 from src.cbr.case_library import CaseLibrary, ConstraintsBuilder
 from src.utils.helper import count_ingr_ids, replace_ingredient
 
@@ -15,9 +17,6 @@ random.seed(10)
 
 
 class CBR:
-    USER_THRESHOLD = 0.85
-    USER_SCORE_THRESHOLD = 0.85
-
     def __init__(self):
         """
         Case-Based Reasoning system
@@ -25,15 +24,50 @@ class CBR:
         Attributes
         ----------
         """
+        self.USER_THRESHOLD = USER_THRESHOLD
+        self.USER_SCORE_THRESHOLD = USER_SCORE_THRESHOLD
+        self.EVALUATION_THRESHOLD = 0.6
         self.case_library = CaseLibrary(CASE_LIBRARY_PATH)
         self.query = None
         self.sim_recipes = []
-        self.recipe = None
+        self.adapted_recipe = None
         self.ingredients = None
         self.basic_tastes = None
         self.alc_types = None
+        self.score_percent = 0.0
+        self.evaluation_score = 0.0
+        self.similarity_score = 0.0
+        self.similarity_evaluation_score = 0.0
 
-    def search_ingredient(self, ingr_text=None, basic_taste=None, alc_type=None):
+    def run_query(self, query, new_name) -> Tuple[Cocktail, Cocktail, float]:
+        """
+        Run the CBR and obtain a new case based on the given query.
+
+        Parameters
+        ----------
+        query : `entity.query.Query`
+            User query with recipe requirements.
+        new_name : str
+            The name for the adapted recipe.
+
+        Returns
+        -------
+        retrieved_case: `Cocktail`
+            The retrieved case being adapted.
+        adapted_case: `Cocktail`
+            The adapted case.
+        score : float
+            Score of the adapted case given by the :class:`CBR`
+        """
+        self.retrieve(query)
+        self.adapt(new_name)
+        score = self.evaluate()
+        self.learn()
+        retrieved_case = Cocktail().from_element(self.retrieved_case)
+        adapted_case = Cocktail().from_element(self.adapted_recipe)
+        return retrieved_case, adapted_case, score
+
+    def _search_ingredient(self, ingr_text=None, basic_taste=None, alc_type=None):
         if ingr_text:
             return random.choice(self.case_library.findall(".//ingredient[.='{}']".format(ingr_text)))
         if basic_taste:
@@ -47,7 +81,7 @@ class CBR:
         self.alc_types = set()
         self.basic_tastes = set()
         self.ingredients = set()
-        for ing in self.recipe.ingredients.iterchildren():
+        for ing in self.adapted_recipe.ingredients.iterchildren():
             if ing.attrib["alc_type"]:
                 self.alc_types.add(ing.attrib["alc_type"])
             if ing.attrib["basic_taste"]:
@@ -55,13 +89,13 @@ class CBR:
             self.ingredients.add(ing.text)
 
     def delete_ingredient(self, ingr):
-        self.recipe.ingredients.remove(ingr)
-        for step in self.recipe.preparation.iterchildren():
+        self.adapted_recipe.ingredients.remove(ingr)
+        for step in self.adapted_recipe.preparation.iterchildren():
             if ingr.attrib["id"] in step.text:
                 if count_ingr_ids(step) > 1:
                     step._setText(step.text.replace(ingr.attrib["id"], "[IGNORE]"))
                 else:
-                    self.recipe.preparation.remove(step)
+                    self.adapted_recipe.preparation.remove(step)
 
     def search_ingr_measure(self, ingr_text):
         for recipe in self.sim_recipes:
@@ -92,7 +126,7 @@ class CBR:
                     if replace_ingredient(exc_ingr, ingr):
                         return
             for _ in range(20):
-                ingr = self.search_ingredient(
+                ingr = self._search_ingredient(
                     basic_taste=exc_ingr.attrib["basic_taste"], alc_type=exc_ingr.attrib["alc_type"]
                 )
                 if ingr is None:
@@ -115,16 +149,16 @@ class CBR:
         measure : str
             Quantity of the ingredient to include.
         """
-        ingr.attrib["id"] = f"ingr{len(self.recipe.ingredients.ingredient[:])}"
+        ingr.attrib["id"] = f"ingr{len(self.adapted_recipe.ingredients.ingredient[:])}"
         measure = re.sub(r"\sof\b", "", measure)
         ingr.attrib["measure"] = measure
-        self.recipe.ingredients.append(ingr)
-        step = SubElement(self.recipe.preparation, "step")
+        self.adapted_recipe.ingredients.append(ingr)
+        step = SubElement(self.adapted_recipe.preparation, "step")
         if measure == "some":
             step._setText(f"add {ingr.attrib['id']} to taste")
         else:
             step._setText(f"add {measure} of {ingr.attrib['id']}")
-        self.recipe.preparation.insert(1, step)
+        self.adapted_recipe.preparation.insert(1, step)
 
     def adapt_alcs_and_tastes(self, alc_type="", basic_taste=""):
         """
@@ -148,22 +182,19 @@ class CBR:
                     self.include_ingredient(ingr, ingr.attrib["measure"])
                     return
         while True:
-            ingr = self.search_ingredient(basic_taste=basic_taste, alc_type=alc_type)
+            ingr = self._search_ingredient(basic_taste=basic_taste, alc_type=alc_type)
             if ingr.text not in self.query.get_exc_ingredients():
                 self.include_ingredient(ingr)
                 return
 
-    def retrieve(self, query):
+    def retrieve(self, query: Query):
         """
+        Retrieves the 5 most similar cases for the given query.
 
         Parameters
         ----------
-        query : :class: `entity.query.Query` or None
+        query : :class:`entity.query.Query`
             User query with recipe requirements.
-
-        recipes : list of :class:`lxml.objectify.ObjectifiedElement` or None
-            List of recipes similar to the query.
-
         """
         self.query = query
         self.ingredients = None
@@ -216,9 +247,9 @@ class CBR:
 
         sorted_sim = np.flip(np.argsort(sim_list))
         self.sim_recipes = [copy.deepcopy(list_recipes[i]) for i in sorted_sim[:4]]
-        self.recipe = copy.deepcopy(self.retrieved_case)
+        self.adapted_recipe = copy.deepcopy(self.retrieved_case)
         self.update_ingr_list()
-        self.query.set_ingredients([self.search_ingredient(ingr) for ingr in self.query.get_ingredients()])
+        self.query.set_ingredients([self._search_ingredient(ingr) for ingr in self.query.get_ingredients()])
 
     def _similarity_cocktail(self, cocktail):
         """Similarity between a set of constraints and a particular cocktail.
@@ -254,36 +285,22 @@ class CBR:
         # Evaluate each constraint one by one
         for ingredient in self.query.ingredients:
             # Get ingredient alcohol_type, if any
-            ingredient_alc_type = None
-            ingredient_basic_taste = None
-            for alcohol, ingredients in self.case_library.alcohol_dict.items():
-                if ingredient in ingredients:
-                    ingredient_alc_type = alcohol
-                    break
-            # If the ingredient is not alcoholic, get its basic_taste
-            if ingredient_alc_type is None:
-                for taste, ingredients in self.case_library.taste_dict.items():
-                    if ingredient in ingredients:
-                        ingredient_basic_taste = taste
-                        break
-
-            # Increase similarity - if constraint ingredient is used in cocktail
+            ingredient_alc_type = self.case_library.ingredients_onto["alcoholic"].get(ingredient, None)
+            ingredient_basic_taste = self.case_library.ingredients_onto["non-alcoholic"].get(ingredient, None)
             if ingredient in c_ingredients:
+                # Increase similarity - if constraint ingredient is used in cocktail
                 sim += self.case_library.sim_weights["ingr_match"]
                 cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
-
-            # Increase similarity - if constraint ingredient alc_type is used in cocktail
             elif ingredient_alc_type is not None and ingredient_alc_type in c_ingredients_atype:
+                # Increase similarity - if constraint ingredient alc_type is used in cocktail
                 sim += self.case_library.sim_weights["ingr_alc_type_match"]
                 cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
-
-            # Increase similarity if constraint ingredient basic_taste is used in cocktail
             elif ingredient_basic_taste is not None and ingredient_basic_taste in c_ingredients_btype:
+                # Increase similarity if constraint ingredient basic_taste is used in cocktail
                 sim += self.case_library.sim_weights["ingr_basic_taste_match"]
                 cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
-
-            # In case the constraint is not fulfilled we add the weight to the normalization score
             else:
+                # In case the constraint is not fulfilled we add the weight to the normalization score
                 cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
 
         # Increase similarity if alc_type is a match. Alc_type has a lot of importance,
@@ -316,57 +333,33 @@ class CBR:
 
         # If one of the excluded elements in the constraint is found in the cocktail, similarity is reduced
         for ingredient in self.query.exc_ingredients:
-            # Get excluded_ingredient alcohol_type, if any
-            exc_ingredient_alc_type = None
-            exc_ingredient_basic_taste = None
-            for alcohol, ingredients in self.case_library.alcohol_dict.items():
-                if ingredient in ingredients:
-                    exc_ingredient_alc_type = alcohol
-                    break
-            # If the ingredient is not alcoholic, get its basic_taste
-            if exc_ingredient_alc_type is None:
-                for taste, ingredients in self.case_library.taste_dict.items():
-                    if ingredient in ingredients:
-                        exc_ingredient_basic_taste = taste
-                        break
-
-            # Decrease similarity if ingredient excluded is found in cocktail
+            # Get ingredient alcohol_type, if any
+            exc_ingredient_alc_type = self.case_library.ingredients_onto["alcoholic"].get(ingredient, None)
+            exc_ingredient_basic_taste = self.case_library.ingredients_onto["non-alcoholic"].get(ingredient, None)
             if ingredient in c_ingredients:
+                # Decrease similarity if ingredient excluded is found in cocktail
                 sim += self.case_library.sim_weights["exc_ingr_match"]
                 cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
-
-            # Decrease similarity if excluded ingredient alc_type is used in cocktail
             elif exc_ingredient_alc_type is not None and exc_ingredient_alc_type in c_ingredients_atype:
+                # Decrease similarity if excluded ingredient alc_type is used in cocktail
                 sim += self.case_library.sim_weights["exc_ingr_alc_type_match"]
                 cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
-
-            # Decrease similarity if excluded ingredient basic_taste is used in cocktail
             elif exc_ingredient_basic_taste is not None and exc_ingredient_basic_taste in c_ingredients_btype:
+                # Decrease similarity if excluded ingredient basic_taste is used in cocktail
                 sim += self.case_library.sim_weights["exc_ingr_basic_taste_match"]
                 cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
-
-            # In case the constraint is not fulfilled we add the weight to the normalization score
             else:
+                # In case the constraint is not fulfilled we add the weight to the normalization score
                 cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
 
-        # TODO: Check if below code is used.
         # If one of the excluded alcohol_types is found in the cocktail, similarity is reduced
-        # for alc_type in self.query.exc_alc_types:
-        #     if alc_type in c_ingredients_atype:
-        #         sim += self.case_library.sim_weights["exc_alc_type"]
-        #         cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
-        #     # In case the constraint is not fulfilled we add the weight to the normalization score
-        #     else:
-        #         cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
-
-        # If one of the excluded basic_tastes is found in the cocktail, similarity is reduced
-        # for basit_taste in self.query.exc_basic_tastes:
-        #     if basit_taste in c_ingredients_atype:
-        #         sim += self.case_library.sim_weights["exc_basic_taste"]
-        #         cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
-        #     # In case the constraint is not fulfilled we add the weight to the normalization score
-        #     else:
-        #         cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+        for alc_type in self.query.exc_alc_types:
+            if alc_type in c_ingredients_atype:
+                sim += self.case_library.sim_weights["exc_alc_type"]
+                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+            else:
+                # In case the constraint is not fulfilled we add the weight to the normalization score
+                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
 
         # Normalization of similarity
         if cumulative_norm_score == 0:
@@ -376,22 +369,21 @@ class CBR:
 
         return normalized_sim * float(cocktail.find("utility").text)
 
-    def adapt(self) -> Tuple[Cocktail, Cocktail]:
+    def adapt(self, new_name):
         """
         Adapts the recipe according the user requirements
         by excluding ingredients and including other ingredients,
         alcohol types and basic tastes.
 
-        Returns
-        -------
-        retrieved_case: `Cocktail`
-            The retrieved case being adapted.
-        adapted_case: `Cocktail`
-            The adapted case.
+        Parameters
+        ----------
+        new_name : str
+            The name for the adapted recipe.
         """
+        self.adapted_recipe.name = new_name
         for exc_ingr in self.query.get_exc_ingredients():
             if exc_ingr in self.ingredients:
-                exc_ingr = self.recipe.find("ingredients/ingredient[.='{}']".format(exc_ingr))
+                exc_ingr = self.adapted_recipe.find("ingredients/ingredient[.='{}']".format(exc_ingr))
                 self.exclude_ingredient(exc_ingr)
 
         self.update_ingr_list()
@@ -414,54 +406,44 @@ class CBR:
             if basic_taste not in self.basic_tastes:
                 self.adapt_alcs_and_tastes(basic_taste=basic_taste)
 
-        retrieved_case = Cocktail().from_element(self.retrieved_case)
-        adapted_case = Cocktail().from_element(self.recipe)
-        return retrieved_case, adapted_case
-
     # EVALUATION
-    def evaluate(self, query):
+    def evaluate(self):
         """
         Evaluates the recipe according to the user requirements and the adapted_solution.
 
-        Parameters
-        ----------
-        query :  User query with recipe requirements and adapted_solution.
-
         Returns
         -------
-        score : float with the evaluation between the user requirements and the adapted_solution requirements.
+        score : float
+            Evaluation between the user requirements and the adapted solution requirements.
 
         """
         score = 0
-        for ingr in self.query.get_ingredients():
-            if ingr.text in self.adapted_solution.get_ingredients():
+        for ingredient in self.query.get_ingredients():
+            if ingredient.text in self.adapted_recipe.get_ingredients():
                 score += 1
         for alc_type in self.query.get_alc_types():
-            if alc_type in self.adapted_solution.get_alc_types():
+            if alc_type in self.adapted_recipe.get_alc_types():
                 score += 1
         for basic_taste in self.query.get_basic_tastes():
-            if basic_taste in self.adapted_solution.get_basic_tastes():
+            if basic_taste in self.adapted_recipe.get_basic_tastes():
                 score += 1
 
         self.score_percent = (score / len(self.query.get_ingredients())) * 100
         self.evaluation_score = score / (
-            len(query.get_ingredients()) + len(query.get_alc_types()) + len(query.get_basic_tastes())
+            len(self.query.get_ingredients()) + len(self.query.get_alc_types()) + len(self.query.get_basic_tastes())
         )
 
         # Evaluate the similarity between the retrieved recipe and the adapted_solution
-        self.similarity_score = self.similarity(self.adapted_solution)
+        self.similarity_score = self._similarity_cocktail(self.adapted_recipe)
         self.similarity_evaluation_score = self.evaluation_score * self.similarity_score
 
         return self.evaluation_score * self.similarity_evaluation_score
 
-    # Learning the adapted recipe in the case_library if the score_percent is lower than the EVALUATION_THRESHOLD and the USER_THRESHOLD is equal or higher than the USER_SCORE_THRESHOLD
-    def learn(self, query):
+    # Learning the adapted recipe in the case_library if the score_percent is lower than the EVALUATION_THRESHOLD
+    # and the USER_THRESHOLD is equal or higher than the USER_SCORE_THRESHOLD
+    def learn(self):
         """
-        Learns the recipe according to the user requirements and the adapted_solution.
-
-        Parameters
-        ----------
-        query :  User query with recipe requirements and adapted_solution.
+        Learn the recipe according to the user requirements and the adapted_solution.
 
         Returns
         -------
@@ -470,21 +452,25 @@ class CBR:
 
         """
         if self.score_percent < self.EVALUATION_THRESHOLD and self.USER_THRESHOLD >= self.USER_SCORE_THRESHOLD:
-            self.adapted_solution.save()
+            self.adapted_recipe.save()
             return True
-        # else: get another recipe from the case_library and adapt it again until the score_percent is lower than the EVALUATION_THRESHOLD
         else:
-            self.adapted_solution = self.get_random_recipe()
-            self.adapt()
-            self.adapted_solution.save()
+            # get another recipe from the case_library and adapt it again until the score_percent is lower than
+            # the EVALUATION_THRESHOLD
+            name = self.adapted_recipe.name
+            self.adapted_recipe = self.get_random_recipe()
+            self.adapt(name)
+            self.adapted_recipe.save()
             # EVALUATE THE RECIPE AGAIN
-            self.evaluate(query)
-            print("Adapted solution: {}".format(self.adapted_solution.get_recipe_name()))
-            # learn the score again the retrieved recipe and the adapted solution again until the USER_THRESHOLD is equal or higher than the USER_SCORE_THRESHOLD
-            self.learn(query)
+            self.evaluate()
+            print("Adapted solution: {}".format(self.adapted_recipe.get_recipe_name()))
+            # learn the score again the retrieved recipe and the adapted solution again until the USER_THRESHOLD is
+            # equal or higher than the USER_SCORE_THRESHOLD
+            self.learn()
             return False
 
-    # function to ask the user for the USER_SCORE_THRESHOLD value in the recipe file and return the result to the main function to be used in the learning process
+    # function to ask the user for the USER_SCORE_THRESHOLD value in the recipe file and return the result to the main
+    # function to be used in the learning process
     def get_user_threshold(self):
         """
         Asks the user for the USER_SCORE_THRESHOLD value in the recipe file and
@@ -496,7 +482,7 @@ class CBR:
                 User threshold value.
         """
         user_threshold = input("Please enter the USER_SCORE_THRESHOLD value: ")
-        # updated the user_score_threshold in the class with the user input istance variable
+        # updated the user_score_threshold in the class with the user input instance variable
         self.USER_SCORE_THRESHOLD = float(user_threshold)
         return self.USER_SCORE_THRESHOLD
 
@@ -505,7 +491,7 @@ class CBR:
         """
         Returns the number of recipes in the case_library.
         """
-        return self.recipe.objects.count()
+        return self.adapted_recipe.objects.count()
 
     # Function to give the user requirements to the recipe
     def get_user_requirements(self):
@@ -525,7 +511,7 @@ class CBR:
         """
         Returns the information about the recipes in the case_library.
         """
-        info = self.recipe.objects.all()
+        info = self.adapted_recipe.objects.all()
         for i in info:
             print(i)
 
@@ -536,7 +522,7 @@ class CBR:
         """
         Returns the list of recipes in the case_library.
         """
-        list_recipes = self.recipe.objects.all()
+        list_recipes = self.adapted_recipe.objects.all()
         return list_recipes
 
     # Function to return the list of ingredients

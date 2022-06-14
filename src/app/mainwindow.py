@@ -125,7 +125,7 @@ class MainWindow:
         text = line_edit.text().strip()
         items = widget_list.findItems(text, Qt.MatchExactly)
         if text not in types and not items:
-            button = QMessageBox.critical(
+            QMessageBox.critical(
                 self.window,
                 "Error",
                 f"There is no alcohol named {text}.",
@@ -150,27 +150,42 @@ class MainWindow:
         del item
 
     def _send_query(self):
-        query = Query()
-        query.category = self.window.drink_type.currentText()
-        query.glass = self.window.glass_type.currentText()
-        query.alc_types = [
-            self.window.list_alc_includes.item(i).text() for i in range(self.window.list_alc_includes.count())
-        ]
-        query.basic_tastes = [
-            self.window.list_taste_includes.item(i).text() for i in range(self.window.list_taste_includes.count())
-        ]
-        query.ingredients = [
-            self.window.list_ingredient_includes.item(i).text()
-            for i in range(self.window.list_ingredient_includes.count())
-        ]
-        query.exc_ingredients = [
-            self.window.list_ingredient_excludes.item(i).text()
-            for i in range(self.window.list_ingredient_excludes.count())
-        ]
-        self.cbr.retrieve(query)
-        retrieved_case, adapted_case = self.cbr.adapt()
-        self.window.retrieved_case.setPlainText(str(retrieved_case))
-        self.window.adapted_case.setPlainText(str(adapted_case))
+        recipe_name = self.window.lineEdit_new_name.text()
+        if not recipe_name:
+            self._show_warning("No name found", "Please enter a recipe name.")
+        else:
+            query = Query()
+            query.category = self.window.drink_type.currentText()
+            query.glass = self.window.glass_type.currentText()
+            query.alc_types = [
+                self.window.list_alc_includes.item(i).text() for i in range(self.window.list_alc_includes.count())
+            ]
+            query.basic_tastes = [
+                self.window.list_taste_includes.item(i).text() for i in range(self.window.list_taste_includes.count())
+            ]
+            query.ingredients = [
+                self.window.list_ingredient_includes.item(i).text()
+                for i in range(self.window.list_ingredient_includes.count())
+            ]
+            query.exc_ingredients = []
+            query.exc_alc_types = []
+            alcoholic_ingredients = self.cbr.case_library.ingredients_onto["alcoholic"]
+            for i in range(self.window.list_ingredient_excludes.count()):
+                ingredient = self.window.list_ingredient_excludes.item(i).text()
+                query.exc_ingredients.append(ingredient)
+                alcohol = alcoholic_ingredients.get(ingredient, None)
+                if alcohol is not None and alcohol not in query.alc_types:
+                    query.exc_alc_types.append(alcohol)
+
+            query.exc_ingredients = [
+                self.window.list_ingredient_excludes.item(i).text()
+                for i in range(self.window.list_ingredient_excludes.count())
+            ]
+            retrieved_case, adapted_case, score = self.cbr.run_query(query, recipe_name)
+            self._reset()
+            self.window.retrieved_case.setPlainText(str(retrieved_case))
+            self.window.adapted_case.setPlainText(str(adapted_case))
+            self.window.score_slider.value(score * 10)
 
     def _reset(self):
         self.alc_types = self.cbr.case_library.alc_types.copy()
@@ -178,6 +193,9 @@ class MainWindow:
         self.ingredients = self.cbr.case_library.ingredients.copy()
         self._init_completers()
         self.window.lineEdit_new_name.clear()
+        self.window.input_include_alc.clear()
+        self.window.input_basic_taste.clear()
+        self.window.input_ingredient.clear()
         self.window.drink_type.setCurrentIndex(0)
         self.window.glass_type.setCurrentIndex(0)
         self.window.list_alc_includes.clear()
@@ -192,6 +210,15 @@ class MainWindow:
 
     def _update_score(self):
         self.window.score_label.setText(f"Score: {self.window.score_slider.value() / 10}")
+
+    def _show_warning(self, title, message):
+        QMessageBox.critical(
+            self.window,
+            title,
+            message,
+            buttons=QMessageBox.Close,
+            defaultButton=QMessageBox.Close,
+        )
 
 
 if __name__ == "__main__":

@@ -127,6 +127,9 @@ class CaseLibrary:
     ingredients: set of str
         Set of the available ingredients.
 
+    ingredients_onto: dict of dict of str
+        Ontology of ingredients
+
     See Also
     --------
     CaseLibrary.findall : Find all the cases matching a constraint.
@@ -144,8 +147,7 @@ class CaseLibrary:
         self.taste_types = set()
         self.garnish_types = set()
         self.ingredients = set()
-        self.alcohol_dict = dict()
-        self.taste_dict = dict()
+        self.ingredients_onto = {"alcoholic": dict(), "non-alcoholic": dict()}
         self._initialize_type_sets()
 
     def findall(self, constraints):
@@ -219,16 +221,16 @@ class CaseLibrary:
 
             if alc_type:
                 self.alc_types.add(alc_type)
-                if alc_type in self.alcohol_dict.keys():
-                    self.alcohol_dict[alc_type].add(name)
+                if alc_type in self.ingredients_onto["alcoholic"].keys():
+                    self.ingredients_onto["alcoholic"][name] = alc_type
                 else:
-                    self.alcohol_dict[alc_type] = set(name)
+                    self.ingredients_onto["alcoholic"][name] = alc_type
             elif basic_taste:
                 self.taste_types.add(basic_taste)
-                if basic_taste in self.taste_dict.keys():
-                    self.taste_dict[basic_taste].add(name)
+                if basic_taste in self.ingredients_onto["non-alcoholic"].keys():
+                    self.ingredients_onto["non-alcoholic"][name] = basic_taste
                 else:
-                    self.taste_dict[basic_taste] = set(name)
+                    self.ingredients_onto["non-alcoholic"][name] = basic_taste
             elif garnish_type:
                 self.garnish_types.add(garnish_type)
 
