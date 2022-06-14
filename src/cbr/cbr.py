@@ -419,6 +419,8 @@ class CBR:
             self.retrieved_case.failure_count += 1
             for recipe in self.sim_recipes:
                 recipe.failure_count += 1
+        self.learn(self)
+
 
     # Create a function to learn the cases adapted to the case_library
     def learn(self):
@@ -426,6 +428,12 @@ class CBR:
             # self.adapted_recipe.learn = "learning"
             self.case_library.add_case(self.adapted_recipe)
             self.logger.info("Learning: Sucess")
+            self.case_library.get_system_successes()
+            
+            self.retrieved_case.success_count += 1
+            for recipe in self.sim_recipes:
+                recipe.success_count += 1
+
         else:
             # self.adapted_recipe.learn = "not learning"
             self.logger.info("Learning: Failure")
