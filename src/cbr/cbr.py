@@ -406,6 +406,14 @@ class CBR:
             if basic_taste not in self.basic_tastes:
                 self.adapt_alcs_and_tastes(basic_taste=basic_taste)
 
+    # Function to calculate the similarity between adapted recipe and original recipe
+    def calculate_similarity(self):
+        """
+        Calculates the similarity between the adapted recipe and the original recipe.
+        """
+        self.similarity = self.calculate_similarity_between_recipes(self.original_recipe, self.adapted_recipe)
+        
+
     # Create a function to evaluate the adapted_recipe and the query. 
     # This function should return the score based on the similarity between the adapted_recipe and the query
     def evaluation(self):
