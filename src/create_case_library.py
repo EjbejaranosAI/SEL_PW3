@@ -125,6 +125,8 @@ def create_case_base(data: DataFrame, output_file):
         derivation.text = "original"
         evaluation = etree.SubElement(cocktail, "evaluation")
         evaluation.text = "success"
+        score = etree.SubElement(cocktail, "score")
+        score.text = str(1.0)
         success_count = etree.SubElement(cocktail, "success_count")
         success_count.text = "0"
         failure_count = etree.SubElement(cocktail, "failure_count")

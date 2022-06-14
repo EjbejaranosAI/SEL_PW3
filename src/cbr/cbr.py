@@ -402,11 +402,8 @@ class CBR:
             if basic_taste not in self.basic_tastes:
                 self.adapt_alcohols_and_tastes(basic_taste=basic_taste)
 
-
-
-
     def evaluation(self, user_score):
-        self.adapted_recipe.score = USER_THRESHOLD
+        self.adapted_recipe.score = user_score
         if user_score > self.USER_SCORE_THRESHOLD:
             self.adapted_recipe.evaluation = "success"
             self.logger.info("Evaluation: success")
@@ -422,51 +419,15 @@ class CBR:
             for recipe in self.sim_recipes:
                 recipe.failure_count += 1
 
-    # Function to calculate the similarity of the ingredient to the query
-    def calculate_ingr_sim(self, ingr):
-        """
-        Calculates the similarity of the ingredient of the adapted recipe to the query.
-        """
-
-        # Get ingredient alcohol_type, if any
-        ingr_alc_type = self.case_library.ingredients_onto["alcoholic"].get(ingr.text, None)
-        ingr_basic_taste = self.case_library.ingredients_onto["non-alcoholic"].get(ingr.text, None)
-        # Get query alcohol_type, if any
-        query_alc_type = self.query.get_alc_types()
-        query_basic_taste = self.query.get_basic_tastes()
-
-    def calculate_alc_sim(self, alc_type):
-        """
-        Calculates the similarity of the alcohol type of the adapted recipe to the query.
-        """
-        # Get cocktail alcohol_type, if any
-        cocktail_alc_type = self.case_library.cocktails_onto["alcoholic"].get(self.adapted_recipe.name, None)
-        # Get query alcohol_type, if any
-        query_alc_type = self.query.get_alc_types()
-        # If the cocktail alcohol_type is a match, similarity is increased
-
-    def evaluation(self, user_score):
-        if user_score > self.USER_SCORE_THRESHOLD:
-            self.adapted_recipe.evaluation = "success"
-            self.logger.info("Evaluation: success")
-            self.retrieved_case.success_count += 1
-            for recipe in self.sim_recipes:
-                recipe.success_count += 1
-
-            # self.learn(self.adapted_recipe, self.adapted_recipe.eval)
-
-
     # Create a function to learn the cases adapted to the case_library
-    def Learning(self):
-        if self.adapted_recipe.eval == "Success":
-            self.adapted_recipe.learn = "Learning"
+    def learn(self):
+        if self.adapted_recipe.eval == "success":
+            self.adapted_recipe.learn = "learning"
             self.case_library.add_case(self.adapted_recipe)
-            self.adapted_recipe.learn.verboseprint(f'Learning: Success')
-        elif self.adapted_recipe.eval == "Failure":
-            self.adapted_recipe.learn = "Not learning"
-            self.adapted_recipe.learn.verboseprint(f'Learning: Failure')
-
-
+            self.logger.info("Learning: Sucess")
+        elif self.adapted_recipe.eval == "failure":
+            self.adapted_recipe.learn = "not learning"
+            self.logger.info("Learning: Failure")
 
     # Create a function to forget the case from the case library that has less success or with the highest similarity
     def forget_case(self):
@@ -479,6 +440,7 @@ class CBR:
         # If the highest success is less than the highest similarity, we forget the case with the highest success
         if highest_success.success < highest_similarity.success:
             self.case_library.forget_case(highest_success)
-        # If the highest success is greater than or equal to the highest similarity, we forget the case with the highest similarity
+        # If the highest success is greater than or equal to the highest similarity,
+        # we forget the case with the highest similarity
         else:
             self.case_library.forget_case(highest_similarity)
