@@ -412,7 +412,7 @@ class CBR:
         Calculates the similarity between the adapted recipe and the original recipe.
         """
         self.similarity = self.calculate_similarity_between_recipes(self.original_recipe, self.adapted_recipe)
-        
+
 
     # Create a function to evaluate the adapted_recipe and the query. 
     # This function should return the score based on the similarity between the adapted_recipe and the query
@@ -431,6 +431,7 @@ class CBR:
         query_ingredients = self.query.get_ingredients()
         query_alc_types = self.query.get_alc_types()
         query_basic_tastes = self.query.get_basic_tastes()
+
         # Calculate the score based on the similarity between the adapted_recipe and the query (using the function above)
         for ingredient in adapted_recipe_ingredients:
             if ingredient.text in query_ingredients:
@@ -439,50 +440,61 @@ class CBR:
                 score += 3.5 if similarity_ing >= 0.85 else 2 if similarity_ing >= 0.65 else 1 if similarity_ing >= 0.35 else 0
         for alc_type in adapted_recipe_alc_types:
             if alc_type in query_alc_types:
-                similarity += self.similarity(alc_type)
+                similarity_alc += self.similarity(alc_type)
                 #if the similarity is higher than 0.9 we add the score to the total score
-                score += 3.5 if similarity >= 0.85 else 2 if similarity >= 0.65 else 1 if similarity >= 0.35 else 0
+                score += 3.5 if similarity_alc >= 0.85 else 2 if similarity_alc >= 0.65 else 1 if similarity_alc >= 0.35 else 0
         for basic_taste in adapted_recipe_basic_tastes: 
             if basic_taste in query_basic_tastes:
-                similarity += self.similarity(basic_taste)
+                similarity_taste += self.similarity(basic_taste)
                 #if the similarity is higher than 0.9 we add the score to the total score
-                score += 3 if similarity >= 0.85 else 2 if similarity >= 0.65 else 1 if similarity >= 0.35 else 0
+                score += 3 if similarity_taste >= 0.85 else 2 if similarity_taste >= 0.65 else 1 if similarity_taste >= 0.35 else 0
         self.similarity_evaluation_score = score
         return self.similarity_evaluation_score 
 
-    # Learning the adapted recipe in the case_library if the score_percent is lower than the EVALUATION_THRESHOLD
-    # and the USER_THRESHOLD is equal or higher than the USER_SCORE_THRESHOLD
-    def learn(self):
-        """
-        Learn the recipe according to the user requirements and the adapted_solution.
-
-        Returns
-        -------
-        score : float with the evaluation between the user requirements
-        and the adapted_solution requirements.
-
-        """
-        if self.score_percent < self.EVALUATION_THRESHOLD and self.USER_THRESHOLD >= self.USER_SCORE_THRESHOLD:
-            self.adapted_recipe.save()
-            return True
+    # Create a function to learn the cases adapted to the case_library
+    def Learning(self):
+        #Ask the user to put as input an score using the get_user_score function
+        self.USER_THRESHOLD = self.get_user_score()
+        
+        if self.similarity_evaluation_score > self.EVALUATION_THRESHOLD and self.USER_THRESHOLD >= self.USER_SCORE_THRESHOLD:
+            #If the score is higher than the threshold we add the adapted recipe to the case_library
+            self.case_library.add_recipe(self.adapted_recipe)
+            
+            #Function to forget the case from the case library that has less success or with the highest similarity
+            #self.forget_case()
         else:
-            # get another recipe from the case_library and adapt it again until the score_percent is lower than
-            # the EVALUATION_THRESHOLD
-            name = self.adapted_recipe.name
-            self.adapted_recipe = self.get_random_recipe()
-            self.adapt(name)
-            self.adapted_recipe.save()
-            # EVALUATE THE RECIPE AGAIN
-            self.evaluate()
-            print("Adapted solution: {}".format(self.adapted_recipe.get_recipe_name()))
-            # learn the score again the retrieved recipe and the adapted solution again until the USER_THRESHOLD is
-            # equal or higher than the USER_SCORE_THRESHOLD
-            self.learn()
-            return False
+            #If the score is lower than the threshold we forget the adapted recipe and adapt a new recipe to the case
+            
+            self.adapt(self.adapted_recipe.name)
+            self.calculate_similarity()
+            self.evaluation()
+            #THIS LINES CAN BE DELETED OR NOT, DEPPEND THE FLOW OF THE PROGRAM
+            self.case_library.add_case(self.adapted_recipe)
+            
+            
+            #self.forget_case()
+
+
+        
+    # Create a function to forget the case from the case library that has less success or with the highest similarity
+    def forget_case(self):
+        #Get the cases from the case library
+        cases = self.case_library.get_cases()
+        #Get the cases with the highest success
+        highest_success = max(cases, key=lambda x: x.success)
+        #Get the cases with the highest similarity
+        highest_similarity = max(cases, key=lambda x: x.similarity)
+        #If the highest success is less than the highest similarity, we forget the case with the highest success
+        if highest_success.success < highest_similarity.success:
+            self.case_library.forget_case(highest_success)
+        #If the highest success is greater than or equal to the highest similarity, we forget the case with the highest similarity
+        else:
+            self.case_library.forget_case(highest_similarity)
+        
 
     # function to ask the user for the USER_SCORE_THRESHOLD value in the recipe file and return the result to the main
     # function to be used in the learning process
-    def get_user_threshold(self):
+    def get_user_score(self):
         """
         Asks the user for the USER_SCORE_THRESHOLD value in the recipe file and
         return the result to the main function to be used in the learning process.
