@@ -403,35 +403,17 @@ class CBR:
             if basic_taste not in self.basic_tastes:
                 self.adapt_alcs_and_tastes(basic_taste=basic_taste)
 
-    # Function to calculate the similarity of the ingredient to the query
-    def calculate_ingr_sim(self, ingr):
-        '''
-        Calculates the similarity of the ingredient of the adapted recipe to the query.
-        '''
-        
-        # Get ingredient alcohol_type, if any
-        ingr_alc_type = self.case_library.ingredients_onto["alcoholic"].get(ingr.text, None)
-        ingr_basic_taste = self.case_library.ingredients_onto["non-alcoholic"].get(ingr.text, None)
-        # Get query alcohol_type, if any    
-        query_alc_type = self.query.get_alc_types()
-        query_basic_taste = self.query.get_basic_tastes()
-    def calculate_alc_sim(self, alc_type):
-        '''
-        Calculates the similarity of the alcohol type of the adapted recipe to the query.
-        '''
-        # Get cocktail alcohol_type, if any
-        cocktail_alc_type = self.case_library.cocktails_onto["alcoholic"].get(self.adapted_recipe.name, None)
-        # Get query alcohol_type, if any
-        query_alc_type = self.query.get_alc_types()
-        # If the cocktail alcohol_type is a match, similarity is increased
-    def evaluation(self,USER_THRESHOLD):
+
+
+
+    def evaluation(self):
          #evaluattion = self._similarity_cocktail(self.adapted_recipe, self.query)
+        self.adapted_recipe.score = USER_THRESHOLD
         if USER_THRESHOLD > USER_SCORE_THRESHOLD:
            self.adapted_recipe.eval = "Success"
            self.adapted_recipe.eval.verboseprint(f'Evaluation: Success')
-
-
-           self.learn(self.adapted_recipe,self.adapted_recipe.eval)
+           self.learn(self.adapted_recipe,self.adapted_recipe.eval)     #learn the recipe
+        
         else:
             self.adapted_recipe.eval = "Failure"
             self.adapted_recipe.eval.verboseprint(f'Evaluation: Failure')
@@ -440,26 +422,15 @@ class CBR:
 
     # Create a function to learn the cases adapted to the case_library
     def Learning(self):
-        #Ask the user to put as input an score using the get_user_score function
-        self.USER_THRESHOLD = self.get_user_score()
-        
-        if self.similarity_evaluation_score > self.EVALUATION_THRESHOLD and self.USER_THRESHOLD >= self.USER_SCORE_THRESHOLD:
-            #If the score is higher than the threshold we add the adapted recipe to the case_library
+        if self.adapted_recipe.eval == "Success":
+            self.adapted_recipe.learn = "Learning"
             self.case_library.add_case(self.adapted_recipe)
-            
-            #Function to forget the case from the case library that has less success or with the highest similarity
-            #self.forget_case()
+            self.adapted_recipe.learn.verboseprint(f'Learning: Success')
         else:
-            #If the score is lower than the threshold we forget the adapted recipe and adapt a new recipe to the case
-            
-            self.adapt(self.adapted_recipe.name)
-            self.calculate_similarity()
-            self.evaluation()
-            #THIS LINES CAN BE DELETED OR NOT, DEPPEND THE FLOW OF THE PROGRAM
-            self.case_library.add_case(self.adapted_recipe)
-            
-            
-            #self.forget_case()
+            self.adapted_recipe.learn = "Not learning"
+            self.adapted_recipe.learn.verboseprint(f'Learning: Failure')
+
+
 
 
         
