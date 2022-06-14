@@ -407,6 +407,7 @@ class CBR:
         if user_score > self.USER_SCORE_THRESHOLD:
             self.adapted_recipe.evaluation = "success"
             self.logger.info("Evaluation: success")
+            self.case_library.increase_system_successes()
             self.retrieved_case.success_count += 1
             for recipe in self.sim_recipes:
                 recipe.success_count += 1
@@ -415,6 +416,7 @@ class CBR:
         else:
             self.adapted_recipe.evaluation = "failure"
             self.logger.info("Evaluation: failure")
+            self.case_library.increase_system_failures()
             self.retrieved_case.failure_count += 1
             for recipe in self.sim_recipes:
                 recipe.failure_count += 1
