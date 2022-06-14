@@ -34,10 +34,7 @@ class CBR:
         self.ingredients = None
         self.basic_tastes = None
         self.alc_types = None
-        self.score_percent = 0.0
-        self.evaluation_score = 0.0
-        self.similarity_score = 0.0
-        self.similarity_evaluation_score = 0.0
+        self.adapted_recipe.eval = None
 
     def run_query(self, query, new_name) -> Tuple[Cocktail, Cocktail, float]:
         """
@@ -406,49 +403,40 @@ class CBR:
             if basic_taste not in self.basic_tastes:
                 self.adapt_alcs_and_tastes(basic_taste=basic_taste)
 
-    # Function to calculate the similarity between adapted recipe and original recipe
-    
-
-    # Create a function to evaluate the adapted_recipe and the query. 
-    # This function should return the score based on the similarity between the adapted_recipe and the query
-    def evaluation(self):
-        similarity_ing = 0.0
-        similarity_alc = 0.0
-        similarity_taste = 0.0
+    # Function to calculate the similarity of the ingredient to the query
+    def calculate_ingr_sim(self, ingr):
+        '''
+        Calculates the similarity of the ingredient of the adapted recipe to the query.
+        '''
         
-        """
-        Evaluates the adapted recipe and the query.
-        Returns the score based on the similarity between the adapted_recipe and the query.
-        """
-        # Initialize score
-        score = 0
-        # Get the parameters from the adapted_recipe
-        adapted_recipe_ingredients = self.adapted_recipe.find("ingredients")
-        adapted_recipe_alc_types = self.adapted_recipe.find("alc_types")
-        adapted_recipe_basic_tastes = self.adapted_recipe.find("basic_tastes")
-        # Get the parameters from the query
-        query_ingredients = self.query.get_ingredients()
-        query_alc_types = self.query.get_alc_types()
-        query_basic_tastes = self.query.get_basic_tastes()
+        # Get ingredient alcohol_type, if any
+        ingr_alc_type = self.case_library.ingredients_onto["alcoholic"].get(ingr.text, None)
+        ingr_basic_taste = self.case_library.ingredients_onto["non-alcoholic"].get(ingr.text, None)
+        # Get query alcohol_type, if any    
+        query_alc_type = self.query.get_alc_types()
+        query_basic_taste = self.query.get_basic_tastes()
+    def calculate_alc_sim(self, alc_type):
+        '''
+        Calculates the similarity of the alcohol type of the adapted recipe to the query.
+        '''
+        # Get cocktail alcohol_type, if any
+        cocktail_alc_type = self.case_library.cocktails_onto["alcoholic"].get(self.adapted_recipe.name, None)
+        # Get query alcohol_type, if any
+        query_alc_type = self.query.get_alc_types()
+        # If the cocktail alcohol_type is a match, similarity is increased
+    def evaluation(self,USER_THRESHOLD):
+         #evaluattion = self._similarity_cocktail(self.adapted_recipe, self.query)
+        if USER_THRESHOLD > USER_SCORE_THRESHOLD:
+           self.adapted_recipe.eval = "Success"
+           self.adapted_recipe.eval.verboseprint(f'Evaluation: Success')
 
-        # Calculate the score based on the similarity between the adapted_recipe and the query (using the function above)
-        for ingredient in adapted_recipe_ingredients:
-            if ingredient.text in query_ingredients:
-                similarity_ing += self.similarity(ingredient)
-                #if the similarity is higher than 0.9 we add the score to the total score
-                score += 3.5 if similarity_ing >= 0.85 else 2 if similarity_ing >= 0.65 else 1 if similarity_ing >= 0.35 else 0
-        for alc_type in adapted_recipe_alc_types:
-            if alc_type in query_alc_types:
-                similarity_alc += self.similarity(alc_type)
-                #if the similarity is higher than 0.9 we add the score to the total score
-                score += 3.5 if similarity_alc >= 0.85 else 2 if similarity_alc >= 0.65 else 1 if similarity_alc >= 0.35 else 0
-        for basic_taste in adapted_recipe_basic_tastes: 
-            if basic_taste in query_basic_tastes:
-                similarity_taste += self.similarity(basic_taste)
-                #if the similarity is higher than 0.9 we add the score to the total score
-                score += 3 if similarity_taste >= 0.85 else 2 if similarity_taste >= 0.65 else 1 if similarity_taste >= 0.35 else 0
-        self.similarity_evaluation_score = score
-        return self.similarity_evaluation_score 
+
+           self.learn(self.adapted_recipe,self.adapted_recipe.eval)
+        else:
+            self.adapted_recipe.eval = "Failure"
+            self.adapted_recipe.eval.verboseprint(f'Evaluation: Failure')
+       
+
 
     # Create a function to learn the cases adapted to the case_library
     def Learning(self):
@@ -491,82 +479,4 @@ class CBR:
             self.case_library.forget_case(highest_similarity)
         
 
-    # function to ask the user for the USER_SCORE_THRESHOLD value in the recipe file and return the result to the main
-    # function to be used in the learning process
-    def get_user_score(self):
-        """
-        Asks the user for the USER_SCORE_THRESHOLD value in the recipe file and
-        return the result to the main function to be used in the learning process.
-
-            Returns
-            -------
-            user_threshold : float
-                User threshold value.
-        """
-        user_threshold = input("Please enter the USER_SCORE_THRESHOLD value: ")
-        # updated the user_score_threshold in the class with the user input instance variable
-        self.USER_SCORE_THRESHOLD = float(user_threshold)
-        return self.USER_SCORE_THRESHOLD
-
-    # Function to know how many recipes are available in the case_library
-    def get_recipe_count(self):
-        """
-        Returns the number of recipes in the case_library.
-        """
-        return self.adapted_recipe.objects.count()
-
-    # Function to give the user requirements to the recipe
-    def get_user_requirements(self):
-        """
-        Asks the user for the user requirements and returns the result to the main function to be used in the learning process.
-
-            Returns
-            -------
-            user_requirements : User query with recipe requirements.
-        """
-        user_requirements = input("Please enter the user requirements: ")
-
-        return user_requirements
-
-    # Function to give information about the recipe available in the case_library
-    def get_recipe_info(self):
-        """
-        Returns the information about the recipes in the case_library.
-        """
-        info = self.adapted_recipe.objects.all()
-        for i in info:
-            print(i)
-
-        return info
-
-    # Function to return the list of recipes
-    def get_recipe_list(self):
-        """
-        Returns the list of recipes in the case_library.
-        """
-        list_recipes = self.adapted_recipe.objects.all()
-        return list_recipes
-
-    # Function to return the list of ingredients
-    def get_ingredient_list(self):
-        """
-        Returns the list of ingredients in the case_library.
-        """
-        ingredient_list = self.ingredient.objects.all()
-        return ingredient_list
-
-    # Function to return the list of alc_types
-    def get_alc_type_list(self):
-        """
-        Returns the list of alc_types in the case_library.
-        """
-        alc_type_list = self.alc_type.objects.all()
-        return alc_type_list
-
-    # Function to return the list of basic_tastes
-    def get_basic_taste_list(self):
-        """
-        Returns the list of basic_tastes in the case_library.
-        """
-        basic_taste_list = self.basic_taste.objects.all()
-        return basic_taste_list
+ 
