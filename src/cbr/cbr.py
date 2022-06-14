@@ -403,7 +403,6 @@ class CBR:
                 self.adapt_alcohols_and_tastes(basic_taste=basic_taste)
 
     def evaluation(self, user_score):
-        self.adapted_recipe.score = user_score
         if user_score > self.USER_SCORE_THRESHOLD:
             self.adapted_recipe.evaluation = "success"
             self.logger.info("Evaluation: success")
@@ -424,11 +423,11 @@ class CBR:
     # Create a function to learn the cases adapted to the case_library
     def learn(self):
         if self.adapted_recipe.evaluation == "success":
-            self.adapted_recipe.learn = "learning"
+            # self.adapted_recipe.learn = "learning"
             self.case_library.add_case(self.adapted_recipe)
             self.logger.info("Learning: Sucess")
         else:
-            self.adapted_recipe.learn = "not learning"
+            # self.adapted_recipe.learn = "not learning"
             self.logger.info("Learning: Failure")
 
     # Create a function to forget the case from the case library that has less success or with the highest similarity
