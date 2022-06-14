@@ -402,6 +402,26 @@ class CBR:
             if basic_taste not in self.basic_tastes:
                 self.adapt_alcohols_and_tastes(basic_taste=basic_taste)
 
+
+
+
+    def evaluation(self, user_score):
+        self.adapted_recipe.score = USER_THRESHOLD
+        if user_score > self.USER_SCORE_THRESHOLD:
+            self.adapted_recipe.evaluation = "success"
+            self.logger.info("Evaluation: success")
+            self.retrieved_case.success_count += 1
+            for recipe in self.sim_recipes:
+                recipe.success_count += 1
+
+            # self.learn(self.adapted_recipe, self.adapted_recipe.eval)
+        else:
+            self.adapted_recipe.evaluation = "failure"
+            self.logger.info("Evaluation: failure")
+            self.retrieved_case.failure_count += 1
+            for recipe in self.sim_recipes:
+                recipe.failure_count += 1
+
     # Function to calculate the similarity of the ingredient to the query
     def calculate_ingr_sim(self, ingr):
         """
@@ -434,37 +454,19 @@ class CBR:
                 recipe.success_count += 1
 
             # self.learn(self.adapted_recipe, self.adapted_recipe.eval)
-        else:
-            self.adapted_recipe.evaluation = "failure"
-            self.logger.info("Evaluation: failure")
-            self.retrieved_case.failure_count += 1
-            for recipe in self.sim_recipes:
-                recipe.failure_count += 1
+
 
     # Create a function to learn the cases adapted to the case_library
     def Learning(self):
-        # Ask the user to put as input an score using the get_user_score function
-        self.USER_THRESHOLD = self.get_user_score()
-
-        if (
-            self.similarity_evaluation_score > self.EVALUATION_THRESHOLD
-            and self.USER_THRESHOLD >= self.USER_SCORE_THRESHOLD
-        ):
-            # If the score is higher than the threshold we add the adapted recipe to the case_library
+        if self.adapted_recipe.eval == "Success":
+            self.adapted_recipe.learn = "Learning"
             self.case_library.add_case(self.adapted_recipe)
+            self.adapted_recipe.learn.verboseprint(f'Learning: Success')
+        elif self.adapted_recipe.eval == "Failure":
+            self.adapted_recipe.learn = "Not learning"
+            self.adapted_recipe.learn.verboseprint(f'Learning: Failure')
 
-            # Function to forget the case from the case library that has less success or with the highest similarity
-            # self.forget_case()
-        else:
-            # If the score is lower than the threshold we forget the adapted recipe and adapt a new recipe to the case
 
-            self.adapt(self.adapted_recipe.name)
-            self.calculate_similarity()
-            self.evaluation()
-            # THIS LINES CAN BE DELETED OR NOT, DEPPEND THE FLOW OF THE PROGRAM
-            self.case_library.add_case(self.adapted_recipe)
-
-            # self.forget_case()
 
     # Create a function to forget the case from the case library that has less success or with the highest similarity
     def forget_case(self):
