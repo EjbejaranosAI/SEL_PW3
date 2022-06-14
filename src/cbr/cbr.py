@@ -407,12 +407,7 @@ class CBR:
                 self.adapt_alcs_and_tastes(basic_taste=basic_taste)
 
     # Function to calculate the similarity between adapted recipe and original recipe
-    def calculate_similarity(self):
-        """
-        Calculates the similarity between the adapted recipe and the original recipe.
-        """
-        self.similarity = self.calculate_similarity_between_recipes(self.original_recipe, self.adapted_recipe)
-
+    
 
     # Create a function to evaluate the adapted_recipe and the query. 
     # This function should return the score based on the similarity between the adapted_recipe and the query
@@ -420,6 +415,7 @@ class CBR:
         similarity_ing = 0.0
         similarity_alc = 0.0
         similarity_taste = 0.0
+        
         """
         Evaluates the adapted recipe and the query.
         Returns the score based on the similarity between the adapted_recipe and the query.
@@ -461,7 +457,7 @@ class CBR:
         
         if self.similarity_evaluation_score > self.EVALUATION_THRESHOLD and self.USER_THRESHOLD >= self.USER_SCORE_THRESHOLD:
             #If the score is higher than the threshold we add the adapted recipe to the case_library
-            self.case_library.add_recipe(self.adapted_recipe)
+            self.case_library.add_case(self.adapted_recipe)
             
             #Function to forget the case from the case library that has less success or with the highest similarity
             #self.forget_case()
