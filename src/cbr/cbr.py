@@ -426,7 +426,7 @@ class CBR:
             self.adapted_recipe.learn = "Learning"
             self.case_library.add_case(self.adapted_recipe)
             self.adapted_recipe.learn.verboseprint(f'Learning: Success')
-        else:
+        elif self.adapted_recipe.eval == "Failure":
             self.adapted_recipe.learn = "Not learning"
             self.adapted_recipe.learn.verboseprint(f'Learning: Failure')
 
