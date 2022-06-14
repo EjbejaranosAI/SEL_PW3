@@ -423,26 +423,26 @@ class CBR:
 
     # Create a function to learn the cases adapted to the case_library
     def learn(self):
-        if self.adapted_recipe.eval == "success":
+        if self.adapted_recipe.evaluation == "success":
             self.adapted_recipe.learn = "learning"
             self.case_library.add_case(self.adapted_recipe)
             self.logger.info("Learning: Sucess")
-        elif self.adapted_recipe.eval == "failure":
+        else:
             self.adapted_recipe.learn = "not learning"
             self.logger.info("Learning: Failure")
 
     # Create a function to forget the case from the case library that has less success or with the highest similarity
     def forget_case(self):
         # Get the cases from the case library
-        cases = self.case_library.get_cases()
+        cases = self.case_library.findall(ConstraintsBuilder())
         # Get the cases with the highest success
-        highest_success = max(cases, key=lambda x: x.success)
+        highest_success = max(cases, key=lambda x: x.success_count)
         # Get the cases with the highest similarity
         highest_similarity = max(cases, key=lambda x: x.similarity)
         # If the highest success is less than the highest similarity, we forget the case with the highest success
-        if highest_success.success < highest_similarity.success:
-            self.case_library.forget_case(highest_success)
+        if highest_success.success_count < highest_similarity.success_count:
+            self.case_library.remove_case(highest_success)
         # If the highest success is greater than or equal to the highest similarity,
         # we forget the case with the highest similarity
         else:
-            self.case_library.forget_case(highest_similarity)
+            self.case_library.remove_case(highest_similarity)

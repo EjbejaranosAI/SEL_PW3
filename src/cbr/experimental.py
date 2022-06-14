@@ -1,22 +1,14 @@
-from copy import deepcopy
-
-from lxml import etree
-
-from definitions import CASE_LIBRARY_FILE
-from src.cbr.case_library import CaseLibrary, ConstraintsBuilder
+from entity.query import Query
+from src.cbr.cbr import CBR
 
 if __name__ == "__main__":
-    cl = CaseLibrary(CASE_LIBRARY_FILE)
-    c = cl.findall(".//cocktail")
-    a = c[0]
-    print(type(a))
-    b = deepcopy(a)
-    cl.add_case(b)
-    ingredients = cl.findall(ConstraintsBuilder().filter_ingredient(["banana", "cherry"]))
-    etree.dump(ingredients[0])
-    print(cl.drink_types)
-    print(cl.glass_types)
-    print(cl.alc_types)
-    print(cl.taste_types)
-    print(cl.garnish_types)
-    print(cl.ingredients)
+    cbr = CBR()
+    query = Query()
+    query.category = "cocktail"
+    query.glass = "hurricane glass"
+    query.alc_types = ["vodka"]
+    query.basic_tastes = ["bitter"]
+    query.ingredients = ["strawberries", "vodka"]
+    query.exc_ingredients = ["mint", "gin", "lemon"]
+    cbr.run_query(query, "New recipe")
+    cbr.forget_case()

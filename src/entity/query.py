@@ -30,13 +30,13 @@ class Query:
         Basic tastes to include in the recipe.
     """
 
-    category = None
-    glass = None
-    ingredients = None
-    exc_ingredients = None
-    alc_types = None
-    exc_alc_types = None
-    basic_tastes = None
+    category = ""
+    glass = ""
+    ingredients = []
+    exc_ingredients = []
+    alc_types = []
+    exc_alc_types = []
+    basic_tastes = []
 
     def set_category(self, category):
         self.category = category
