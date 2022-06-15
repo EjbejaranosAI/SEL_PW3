@@ -438,18 +438,29 @@ class CBR:
             # self.adapted_recipe.learn = "not learning"
             self.logger.info("Learning: Failure")
 
+
+
+
     # Create a function to forget the case from the case library that has less success or with the highest similarity
     def forget_case(self):
-        # Get the cases from the case library
-        cases = self.case_library.findall(ConstraintsBuilder())
-        # Get the cases with the highest success
-        highest_success = max(cases, key=lambda x: x.success_count)
-        # Get the cases with the highest similarity
-        highest_similarity = max(cases, key=lambda x: x.similarity)
-        # If the highest success is less than the highest similarity, we forget the case with the highest success
-        if highest_success.success_count < highest_similarity.success_count:
-            self.case_library.remove_case(highest_success)
-        # If the highest success is greater than or equal to the highest similarity,
-        # we forget the case with the highest similarity
-        else:
-            self.case_library.remove_case(highest_similarity)
+        #Rename variables
+        UaS = self.retrieved_case.success_count    # Success count of the retrieved case
+        UaF = self.retrieved_case.failure_count   # Failure count of the retrieved case   
+        S = self.case_library.get_system_successes()   # Success count of the case library
+        F = self.case_library.get_system_failures()   # Failure count of the case library
+
+        utility_forget_measure = ((UaS/S) - (UaF/F) + 1)/2
+        #SOTRAGE UTILITY FORGET MEASURE
+        self.case_library.utility_forget_measure = utility_forget_measure   # Update the utility forget measure
+
+        #Forget the case with the lowest utility forget measure
+        #search the case with the lowest utility forget measure
+        lowest_utility_forget_measure = self.case_library.utility_forget_measure
+        for case in self.case_library.cases:
+            if case.utility_forget_measure < lowest_utility_forget_measure:
+                lowest_utility_forget_measure = case.utility_forget_measure
+                lowest_case = case
+
+        #Forget the case
+        self.case_library.forget_case(lowest_case)
+
