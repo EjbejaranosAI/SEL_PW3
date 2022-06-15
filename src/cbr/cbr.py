@@ -433,7 +433,8 @@ class CBR:
             self.retrieved_case.success_count += 1
             for recipe in self.sim_recipes:
                 recipe.success_count += 1
-
+            #forget  uneseful and not exceptional cases
+        
         else:
             # self.adapted_recipe.learn = "not learning"
             self.logger.info("Learning: Failure")
@@ -449,18 +450,14 @@ class CBR:
         S = self.case_library.get_system_successes()   # Success count of the case library
         F = self.case_library.get_system_failures()   # Failure count of the case library
 
-        utility_forget_measure = ((UaS/S) - (UaF/F) + 1)/2
-        #SOTRAGE UTILITY FORGET MEASURE
-        self.case_library.utility_forget_measure = utility_forget_measure   # Update the utility forget measure
-
-        #Forget the case with the lowest utility forget measure
-        #search the case with the lowest utility forget measure
-        lowest_utility_forget_measure = self.case_library.utility_forget_measure
-        for case in self.case_library.cases:
-            if case.utility_forget_measure < lowest_utility_forget_measure:
-                lowest_utility_forget_measure = case.utility_forget_measure
-                lowest_case = case
-
-        #Forget the case
-        self.case_library.forget_case(lowest_case)
-
+        self.utility_forget_measure = ((UaS/S) - (UaF/F) + 1)/2
+        
+        #forget  uneseful and not exceptional cases
+        #Search the case with the lowest utility_forget_measure
+        for recipe in self.case_library.get_cases():
+            if recipe.utility_forget_measure < self.utility_forget_measure:
+                self.utility_forget_measure = recipe.utility_forget_measure
+                self.forget_recipe = recipe
+        #Delete the case with the lowest utility_forget_measure
+        self.case_library.delete_case(self.forget_recipe)
+        self.logger.info("Forgeting: {}".format(self.forget_recipe.name))
