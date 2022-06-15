@@ -434,6 +434,8 @@ class CBR:
             for recipe in self.sim_recipes:
                 recipe.success_count += 1
             #forget  uneseful and not exceptional cases
+            self.case_library.forget_cases(self.adapted_recipe)
+            self.logger.info("Forgetting: Sucess")
         
         else:
             # self.adapted_recipe.learn = "not learning"
@@ -443,21 +445,33 @@ class CBR:
 
 
     # Create a function to forget the case from the case library that has less success or with the highest similarity
-    def forget_case(self):
+    def forget_cases(self):
         #Rename variables
         UaS = self.retrieved_case.success_count    # Success count of the retrieved case
         UaF = self.retrieved_case.failure_count   # Failure count of the retrieved case   
         S = self.case_library.get_system_successes()   # Success count of the case library
         F = self.case_library.get_system_failures()   # Failure count of the case library
 
-        self.utility_forget_measure = ((UaS/S) - (UaF/F) + 1)/2
+        self.case_library.utility_forget_measure = ((UaS/S) - (UaF/F) + 1)/2
         
         #forget  uneseful and not exceptional cases
-        #Search the case with the lowest utility_forget_measure
-        for recipe in self.case_library.get_cases():
+        #Search the case with the lowest utility_forget_measure and remove it from the case library
+        for self.adapted_recipe in self.case_library.get_cases():
+            if self.adapted_recipe.utility_forget_measure < self.case_library.utility_forget_measure:
+                self.case_library.remove_case(self.adapted_recipe)
+                self.logger.info("Forgetting: Failure")
+
+
+
+
+
+
+ '''       for recipe in self.case_library.get_cases():
             if recipe.utility_forget_measure < self.utility_forget_measure:
                 self.utility_forget_measure = recipe.utility_forget_measure
                 self.forget_recipe = recipe
         #Delete the case with the lowest utility_forget_measure
         self.case_library.delete_case(self.forget_recipe)
-        self.logger.info("Forgeting: {}".format(self.forget_recipe.name))
+        self.logger.info("Forgeting: {}".format(self.forget_recipe.name))'''
+
+
