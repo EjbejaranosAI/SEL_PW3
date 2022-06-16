@@ -6916,7 +6916,6 @@ add ingr0 twist peel</step>
           <glass>old-fashioned glass</glass>
           <ingredients>
             <ingredient id="ingr0" alc_type="" basic_taste="cream" measure="" quantity="0.0" unit="" garnish_type="">light cream</ingredient>
-            <ingredient id="ingr1" alc_type="" basic_taste="bitter" measure="1 oz" quantity="30.0" unit="ml" garnish_type="">coffee liqueur</ingredient>
             <ingredient id="ingr2" alc_type="vodka" basic_taste="" measure="2 oz" quantity="60.0" unit="ml" garnish_type="">vodka</ingredient>
           </ingredients>
           <preparation>
@@ -7716,12 +7715,12 @@ add ingr0 twist peel</step>
           <preparation>
             <step>pour all ingredients into shot glass ingr1 slam !!!!</step>
           </preparation>
-          <utility>1.0</utility>
+          <utility xmlns:py="http://codespeak.net/lxml/objectify/pytype" py:pytype="float">0.5</utility>
           <derivation>original</derivation>
           <evaluation>success</evaluation>
           <UaS>0</UaS>
           <UaF>0</UaF>
-          <success_count>0</success_count>
+          <success_count xmlns:py="http://codespeak.net/lxml/objectify/pytype" py:pytype="int">1</success_count>
           <failure_count>0</failure_count>
         </cocktail>
         <cocktail id="39751984681864282326908524311835011200">
@@ -7896,18 +7895,17 @@ add ingr0 twist peel</step>
           <ingredients>
             <ingredient id="ingr0" alc_type="schnapps" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml" garnish_type="">peachtree schnapps</ingredient>
             <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml" garnish_type="">chambord raspberry liqueur</ingredient>
-            <ingredient id="ingr2" alc_type="vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml" garnish_type="">vodka</ingredient>
             <ingredient id="ingr3" alc_type="" basic_taste="sour" measure="1/2 oz" quantity="15.0" unit="ml" garnish_type="">cranberry juice</ingredient>
           </ingredients>
           <preparation>
             <step>pour all ingredients in a mixing tin over ice, stir, and strain into shot glass</step>
           </preparation>
-          <utility>1.0</utility>
+          <utility xmlns:py="http://codespeak.net/lxml/objectify/pytype" py:pytype="float">0.5</utility>
           <derivation>original</derivation>
           <evaluation>success</evaluation>
           <UaS>0</UaS>
           <UaF>0</UaF>
-          <success_count>0</success_count>
+          <success_count xmlns:py="http://codespeak.net/lxml/objectify/pytype" py:pytype="int">1</success_count>
           <failure_count>0</failure_count>
         </cocktail>
         <cocktail id="39839076635648899973988165147017046144">
@@ -8032,12 +8030,12 @@ add ingr0 twist peel</step>
           <preparation>
             <step>cover bottom of shot glass with ingr2 and then fill with half ingr0 and half ingr1</step>
           </preparation>
-          <utility>1.0</utility>
+          <utility xmlns:py="http://codespeak.net/lxml/objectify/pytype" py:pytype="float">0.5</utility>
           <derivation>original</derivation>
           <evaluation>success</evaluation>
           <UaS>0</UaS>
           <UaF>0</UaF>
-          <success_count>0</success_count>
+          <success_count xmlns:py="http://codespeak.net/lxml/objectify/pytype" py:pytype="int">1</success_count>
           <failure_count>0</failure_count>
         </cocktail>
         <cocktail id="39906507090939490234152950039951140992">
@@ -8052,12 +8050,12 @@ add ingr0 twist peel</step>
           <preparation>
             <step>make it an ample size shot!!</step>
           </preparation>
-          <utility>1.0</utility>
+          <utility xmlns:py="http://codespeak.net/lxml/objectify/pytype" py:pytype="float">0.5</utility>
           <derivation>original</derivation>
           <evaluation>success</evaluation>
           <UaS>0</UaS>
           <UaF>0</UaF>
-          <success_count>0</success_count>
+          <success_count xmlns:py="http://codespeak.net/lxml/objectify/pytype" py:pytype="int">1</success_count>
           <failure_count>0</failure_count>
         </cocktail>
         <cocktail id="39977386585828813970557029416489412736">
@@ -8186,12 +8184,12 @@ add ingr0 twist peel</step>
           <preparation>
             <step>first you put rhe ingr0, then put ingr2, then put the granadine syrup</step>
           </preparation>
-          <utility>1.0</utility>
+          <utility xmlns:py="http://codespeak.net/lxml/objectify/pytype" py:pytype="float">0.9999950000499995</utility>
           <derivation>original</derivation>
           <evaluation>success</evaluation>
-          <UaS>0</UaS>
+          <UaS xmlns:py="http://codespeak.net/lxml/objectify/pytype" py:pytype="int">1</UaS>
           <UaF>0</UaF>
-          <success_count>0</success_count>
+          <success_count xmlns:py="http://codespeak.net/lxml/objectify/pytype" py:pytype="int">1</success_count>
           <failure_count>0</failure_count>
         </cocktail>
         <cocktail id="40064897815049457099897277468015552640">
@@ -8336,6 +8334,30 @@ add ingr0 twist peel</step>
           <failure_count>0</failure_count>
         </cocktail>
       </cocktails>
+      <cocktail id="49981536332391573499308084407389350016">
+        <name xmlns:py="http://codespeak.net/lxml/objectify/pytype" py:pytype="str">sdfa</name>
+        <category>shot</category>
+        <glass>shot glass</glass>
+        <ingredients>
+          <ingredient id="ingr0" alc_type="absinthe" basic_taste="" measure="2/5" quantity="12.0" unit="ml" garnish_type="">absinthe</ingredient>
+          <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="1/5" quantity="6.0" unit="ml" garnish_type="">grenadine</ingredient>
+          <ingredient id="ingr2" alc_type="tequila" basic_taste="" measure="2/5" quantity="12.0" unit="ml" garnish_type="">tequila</ingredient>
+          <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml" garnish_type="">vodka</ingredient>
+          <ingredient id="ingr4" alc_type="" basic_taste="bitter" measure="some" quantity="30.0" unit="ml" garnish_type="">coffee liqueur</ingredient>
+        </ingredients>
+        <preparation>
+          <step>first you put rhe ingr0, then put ingr2, then put the granadine syrup</step>
+          <step>add ingr4 to taste</step>
+          <step>add ingr3</step>
+        </preparation>
+        <utility>1.0</utility>
+        <derivation xmlns:py="http://codespeak.net/lxml/objectify/pytype" py:pytype="str">adapted</derivation>
+        <evaluation xmlns:py="http://codespeak.net/lxml/objectify/pytype" py:pytype="str">success</evaluation>
+        <UaS>0</UaS>
+        <UaF>0</UaF>
+        <success_count>0</success_count>
+        <failure_count>0</failure_count>
+      </cocktail>
     </glass>
     <glass type="old-fashioned glass">
       <cocktails>
