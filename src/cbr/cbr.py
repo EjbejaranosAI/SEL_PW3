@@ -22,10 +22,7 @@ def _compute_utility(case):
 class CBR:
     def __init__(self, seed=None):
         """
-        Case-Based Reasoning system
-
-        Attributes
-        ----------
+        Case-Based Reasoning system.
         """
         self.UTILITY_THRESHOLD = 0.8
         self.USER_SCORE_THRESHOLD = USER_SCORE_THRESHOLD
@@ -34,7 +31,7 @@ class CBR:
         self.basic_tastes = set()
         self.ingredients = set()
         self.query = None
-        self.retrieved_case = None
+        self.retrieved_recipe = None
         self.sim_recipes = []
         self.adapted_recipe = None
         self.logger = logging.getLogger("CBR")
@@ -65,7 +62,7 @@ class CBR:
         self.adapt(new_name)
         # score = self.evaluate()
         # self.learn()
-        retrieved_case = Cocktail().from_element(self.retrieved_case)
+        retrieved_case = Cocktail().from_element(self.retrieved_recipe)
         adapted_case = Cocktail().from_element(self.adapted_recipe)
         return retrieved_case, adapted_case
 
@@ -239,14 +236,14 @@ class CBR:
             index_retrieved = max_indices[0]
 
         # Retrieve case with higher similarity
-        self.retrieved_case = list_recipes[index_retrieved]
+        self.retrieved_recipe = list_recipes[index_retrieved]
 
-        list_recipes.remove(self.retrieved_case)
+        list_recipes.remove(self.retrieved_recipe)
         sim_list.remove(sim_list[index_retrieved])
 
         sorted_sim = np.flip(np.argsort(sim_list))
         self.sim_recipes = [list_recipes[i] for i in sorted_sim[:4]]
-        self.adapted_recipe = copy.deepcopy(self.retrieved_case)
+        self.adapted_recipe = copy.deepcopy(self.retrieved_recipe)
         self.update_ingr_list()
         self.query.set_ingredients([self._search_ingredient(ingr) for ingr in self.query.get_ingredients()])
 
@@ -409,18 +406,18 @@ class CBR:
         if user_score > self.USER_SCORE_THRESHOLD:
             self.adapted_recipe.evaluation = "success"
             self.logger.info("Evaluation: success")
-            self.retrieved_case.UaS += 1
-            self.retrieved_case.success_count += 1
-            self.retrieved_case.utility = _compute_utility(self.retrieved_case)
+            self.retrieved_recipe.UaS += 1
+            self.retrieved_recipe.success_count += 1
+            self.retrieved_recipe.utility = _compute_utility(self.retrieved_recipe)
             for recipe in self.sim_recipes:
                 recipe.success_count += 1
                 recipe.utility = _compute_utility(recipe)
         else:
             self.adapted_recipe.evaluation = "failure"
             self.logger.info("Evaluation: failure")
-            self.retrieved_case.UaF += 1
-            self.retrieved_case.failure_count += 1
-            self.retrieved_case.utility = _compute_utility(self.retrieved_case)
+            self.retrieved_recipe.UaF += 1
+            self.retrieved_recipe.failure_count += 1
+            self.retrieved_recipe.utility = _compute_utility(self.retrieved_recipe)
             for recipe in self.sim_recipes:
                 recipe.failure_count += 1
                 recipe.utility = _compute_utility(recipe)

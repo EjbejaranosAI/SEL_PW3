@@ -212,7 +212,7 @@ class MainWindow:
             retrieved_case, adapted_case = self.cbr.run_query(query, recipe_name)
             self.logger.info(f"The system spent {time.perf_counter() - start_time} seconds to answer the query.")
             self._reset()
-            self.window.retrieved_case.setPlainText(str(retrieved_case))
+            self.window.retrieved_recipe.setPlainText(str(retrieved_case))
             self.window.adapted_case.setPlainText(str(adapted_case))
             self.window.btn_evaluate.setEnabled(True)
             self.window.score_slider.setEnabled(True)
@@ -227,7 +227,7 @@ class MainWindow:
         self.window.drink_type.setCurrentIndex(0)
         self.window.glass_type.setCurrentIndex(0)
         self._clear_item_lists()
-        self.window.retrieved_case.clear()
+        self.window.retrieved_recipe.clear()
         self.window.adapted_case.clear()
         self._reset_slider()
 
