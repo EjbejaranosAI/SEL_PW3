@@ -17,11 +17,10 @@ from PySide6.QtWidgets import (
     QMessageBox,
 )
 
-from definitions import LOG_FILE, USER_MANUAL_FILE
-from entity.query import Query
-
 sys.path.append(os.fspath(Path(__file__).resolve().parent.parent.parent))
 
+from definitions import LOG_FILE, USER_MANUAL_FILE
+from entity.query import Query
 from src.cbr.cbr import CBR
 
 
