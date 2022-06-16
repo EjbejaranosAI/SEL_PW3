@@ -1,6 +1,7 @@
 import logging
 import os
 import sys
+import time
 from pathlib import Path
 
 from PySide6 import QtWidgets
@@ -32,6 +33,8 @@ class MainWindow:
         self.window = None
         self.load_ui()
         self.init_ui()
+        self.logger = logging.getLogger("GUI")
+        self.logger.setLevel(logging.INFO)
 
         logging.basicConfig(
             filename=LOG_FILE,
@@ -196,7 +199,9 @@ class MainWindow:
                 self.window.list_ingredient_excludes.item(i).text()
                 for i in range(self.window.list_ingredient_excludes.count())
             ]
+            start_time = time.perf_counter()
             retrieved_case, adapted_case = self.cbr.run_query(query, recipe_name)
+            self.logger.info(f"The system spent {time.perf_counter() - start_time} seconds to answer the query.")
             self._reset()
             self.window.retrieved_case.setPlainText(str(retrieved_case))
             self.window.adapted_case.setPlainText(str(adapted_case))

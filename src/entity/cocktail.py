@@ -13,7 +13,7 @@ class Ingredient:
     unit: str = ""
 
     def __str__(self):
-        return f"{self.measure} of {self.name}"
+        return f"{self.measure} {self.name}" if self.measure == "some" else f"{self.measure} of {self.name}"
 
     def from_element(self, element: Element):
         self.id = element.attrib["id"]

@@ -150,18 +150,6 @@ class CaseLibrary:
         self.ingredients_onto = {"alcoholic": dict(), "non-alcoholic": dict()}
         self._initialize_type_sets()
 
-    def get_system_successes(self):
-        return self.case_library.success_count
-
-    def get_system_failures(self):
-        return self.case_library.failure_count
-
-    def increase_system_successes(self):
-        self.case_library.success_count += 1
-
-    def increase_system_failures(self):
-        self.case_library.failure_count += 1
-
     def findall(self, constraints):
         """
         Find all the cases matching a constraint.

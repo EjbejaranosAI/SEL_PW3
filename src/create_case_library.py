@@ -125,6 +125,10 @@ def create_case_base(data: DataFrame, output_file):
         derivation.text = "original"
         evaluation = etree.SubElement(cocktail, "evaluation")
         evaluation.text = "success"
+        used_and_successful = etree.SubElement(cocktail, "UaS")
+        used_and_successful.text = "0"
+        used_and_failure = etree.SubElement(cocktail, "UaF")
+        used_and_failure.text = "0"
         success_count = etree.SubElement(cocktail, "success_count")
         success_count.text = "0"
         failure_count = etree.SubElement(cocktail, "failure_count")
@@ -139,11 +143,6 @@ def create_case_library(output_file):
     categories = {category.text for category in root.findall("cocktail/category")}
     glass_types = {glass.text for glass in root.findall("cocktail/glass")}
     case_library = etree.Element("case_library")
-    evaluation = etree.SubElement(case_library, "evaluation")
-    success_count = etree.SubElement(evaluation, "success_count")
-    success_count.text = "0"
-    failure_count = etree.SubElement(evaluation, "failure_count")
-    failure_count.text = "0"
     for cat in categories:
         category = etree.SubElement(case_library, "category", type=cat)
         for g in glass_types:
