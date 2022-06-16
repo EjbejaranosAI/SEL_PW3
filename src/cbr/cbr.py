@@ -8,11 +8,15 @@ import numpy as np
 from lxml.objectify import SubElement
 
 from definitions import CASE_LIBRARY_FILE as CASE_LIBRARY_PATH
-from definitions import USER_SCORE_THRESHOLD, USER_THRESHOLD
+from definitions import USER_SCORE_THRESHOLD
 from entity.cocktail import Cocktail
 from entity.query import Query
 from src.cbr.case_library import CaseLibrary, ConstraintsBuilder
 from src.utils.helper import count_ingr_ids, replace_ingredient
+
+
+def _compute_utility(case):
+    return ((case.UaS / (case.success_count + 1e-5)) - (case.UaF / (case.failure_count + 1e-5)) + 1) / 2
 
 
 class CBR:
@@ -23,9 +27,8 @@ class CBR:
         Attributes
         ----------
         """
-        self.USER_THRESHOLD = USER_THRESHOLD
+        self.UTILITY_THRESHOLD = 0.8
         self.USER_SCORE_THRESHOLD = USER_SCORE_THRESHOLD
-        self.EVALUATION_THRESHOLD = 0.6
         self.case_library = CaseLibrary(CASE_LIBRARY_PATH)
         self.alc_types = set()
         self.basic_tastes = set()
@@ -406,72 +409,48 @@ class CBR:
         if user_score > self.USER_SCORE_THRESHOLD:
             self.adapted_recipe.evaluation = "success"
             self.logger.info("Evaluation: success")
-            self.case_library.increase_system_successes()
+            self.retrieved_case.UaS += 1
             self.retrieved_case.success_count += 1
+            self.retrieved_case.utility = _compute_utility(self.retrieved_case)
             for recipe in self.sim_recipes:
                 recipe.success_count += 1
-
-            # self.learn(self.adapted_recipe, self.adapted_recipe.eval)
+                recipe.utility = _compute_utility(recipe)
         else:
             self.adapted_recipe.evaluation = "failure"
             self.logger.info("Evaluation: failure")
-            self.case_library.increase_system_failures()
+            self.retrieved_case.UaF += 1
             self.retrieved_case.failure_count += 1
+            self.retrieved_case.utility = _compute_utility(self.retrieved_case)
             for recipe in self.sim_recipes:
                 recipe.failure_count += 1
-        self.learn(self)
-
+                recipe.utility = _compute_utility(recipe)
+        self.learn()
 
     # Create a function to learn the cases adapted to the case_library
     def learn(self):
         if self.adapted_recipe.evaluation == "success":
-            # self.adapted_recipe.learn = "learning"
             self.case_library.add_case(self.adapted_recipe)
-            self.logger.info("Learning: Sucess")
-            self.case_library.get_system_successes()
-            
-            self.retrieved_case.success_count += 1
-            for recipe in self.sim_recipes:
-                recipe.success_count += 1
-            #forget  uneseful and not exceptional cases
-            self.case_library.forget_cases(self.adapted_recipe)
-            self.logger.info("Forgetting: Sucess")
-        
+            self.logger.info("Learning: learning the new case")
+            self.forget_cases()
         else:
-            # self.adapted_recipe.learn = "not learning"
-            self.logger.info("Learning: Failure")
-
-
-
+            self.logger.info("Learning: There is nothing to learn.")
 
     # Create a function to forget the case from the case library that has less success or with the highest similarity
     def forget_cases(self):
-        #Rename variables
-        UaS = self.retrieved_case.success_count    # Success count of the retrieved case
-        UaF = self.retrieved_case.failure_count   # Failure count of the retrieved case   
-        S = self.case_library.get_system_successes()   # Success count of the case library
-        F = self.case_library.get_system_failures()   # Failure count of the case library
-
-        self.case_library.utility_forget_measure = ((UaS/S) - (UaF/F) + 1)/2
-        
-        #forget  uneseful and not exceptional cases
-        #Search the case with the lowest utility_forget_measure and remove it from the case library
-        for self.adapted_recipe in self.case_library.get_cases():
-            if self.adapted_recipe.utility_forget_measure < self.case_library.utility_forget_measure:
-                self.case_library.remove_case(self.adapted_recipe)
-                self.logger.info("Forgetting: Failure")
-
-
-
-
-
-
- '''       for recipe in self.case_library.get_cases():
-            if recipe.utility_forget_measure < self.utility_forget_measure:
-                self.utility_forget_measure = recipe.utility_forget_measure
-                self.forget_recipe = recipe
-        #Delete the case with the lowest utility_forget_measure
-        self.case_library.delete_case(self.forget_recipe)
-        self.logger.info("Forgeting: {}".format(self.forget_recipe.name))'''
-
-
+        for recipe in self.case_library.findall(f".//cocktail[utility < {self.UTILITY_THRESHOLD}]"):
+            alc_types = (ingredient.attrib["alc_type"] for ingredient in recipe.ingredients.iterchildren())
+            basic_tastes = (ingredient.attrib["basic_taste"] for ingredient in recipe.ingredients.iterchildren())
+            if (
+                len(
+                    self.case_library.findall(
+                        ConstraintsBuilder(recipe.category, recipe.glass)
+                        .filter_alc_type(list(alc_types))
+                        .filter_taste(list(basic_tastes))
+                    )
+                )
+                > 1
+            ):
+                self.case_library.remove_case(recipe)
+                self.logger.info(
+                    f"Learning: Remove case {recipe.name} with utility {recipe.utility} from the Case Library."
+                )

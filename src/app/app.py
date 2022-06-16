@@ -1,9 +1,9 @@
 import logging
 import os
 import sys
+import time
 from pathlib import Path
 
-from PySide6 import QtWidgets
 from PySide6.QtCore import QFile, Qt
 from PySide6.QtUiTools import QUiLoader
 from PySide6.QtWidgets import (
@@ -32,6 +32,8 @@ class MainWindow:
         self.window = None
         self.load_ui()
         self.init_ui()
+        self.logger = logging.getLogger("GUI")
+        self.logger.setLevel(logging.INFO)
 
         logging.basicConfig(
             filename=LOG_FILE,
@@ -42,7 +44,7 @@ class MainWindow:
 
     def load_ui(self):
         loader = QUiLoader()
-        path = os.fspath(Path(__file__).resolve().parent / "mainwindow.ui")
+        path = os.fspath(Path(__file__).resolve().parent / "app.ui")
         ui_file = QFile(path)
         ui_file.open(QFile.ReadOnly)
         self.window = loader.load(ui_file)
@@ -66,14 +68,14 @@ class MainWindow:
         self.window.btn_evaluate.setEnabled(False)
         self.window.btn_add_ingr.clicked.connect(
             lambda: self._include_to_list(
-                self.window.list_ingredient_includes, self.window.input_ingredient, self.ingredients
+                self.window.list_ingredient_includes, self.window.input_ingredient, self.ingredients, "ingredient"
             )
             if self.window.input_ingredient.text().strip() != ""
             else None
         )
         self.window.btn_exclude_ingr.clicked.connect(
             lambda: self._include_to_list(
-                self.window.list_ingredient_excludes, self.window.input_ingredient, self.ingredients
+                self.window.list_ingredient_excludes, self.window.input_ingredient, self.ingredients, "ingredient"
             )
             if self.window.input_ingredient.text().strip() != ""
             else None
@@ -94,7 +96,9 @@ class MainWindow:
         self._init_completers()
 
         self.window.input_include_alc.returnPressed.connect(
-            lambda: self._include_to_list(self.window.list_alc_includes, self.window.input_include_alc, self.alc_types)
+            lambda: self._include_to_list(
+                self.window.list_alc_includes, self.window.input_include_alc, self.alc_types, "alcohol"
+            )
         )
         self.window.list_alc_includes.itemDoubleClicked.connect(
             lambda: self._remove_from(self.window.list_alc_includes, self.window.input_include_alc, self.alc_types)
@@ -102,7 +106,7 @@ class MainWindow:
 
         self.window.input_basic_taste.returnPressed.connect(
             lambda: self._include_to_list(
-                self.window.list_taste_includes, self.window.input_basic_taste, self.taste_types
+                self.window.list_taste_includes, self.window.input_basic_taste, self.taste_types, "basic taste"
             )
         )
         self.window.list_taste_includes.itemDoubleClicked.connect(
@@ -136,16 +140,16 @@ class MainWindow:
         ingredients_completer.setModelSorting(QCompleter.CaseInsensitivelySortedModel)
         self.window.input_ingredient.setCompleter(ingredients_completer)
 
-    def _include_to_list(self, widget_list: QListWidgetItem, line_edit: QLineEdit, types):
+    def _include_to_list(self, widget_list: QListWidgetItem, line_edit: QLineEdit, types, filter_type):
         text = line_edit.text().strip()
         items = widget_list.findItems(text, Qt.MatchExactly)
         if text not in types and not items:
             QMessageBox.critical(
                 self.window,
                 "Error",
-                f"There is no alcohol named {text}.",
-                buttons=QtWidgets.QMessageBox.Close,
-                defaultButton=QtWidgets.QMessageBox.Close,
+                f"There is no {filter_type} named {text}.",
+                buttons=QMessageBox.Close,
+                defaultButton=QMessageBox.Close,
             )
         else:
             if not items:
@@ -196,7 +200,9 @@ class MainWindow:
                 self.window.list_ingredient_excludes.item(i).text()
                 for i in range(self.window.list_ingredient_excludes.count())
             ]
+            start_time = time.perf_counter()
             retrieved_case, adapted_case = self.cbr.run_query(query, recipe_name)
+            self.logger.info(f"The system spent {time.perf_counter() - start_time} seconds to answer the query.")
             self._reset()
             self.window.retrieved_case.setPlainText(str(retrieved_case))
             self.window.adapted_case.setPlainText(str(adapted_case))
@@ -215,6 +221,7 @@ class MainWindow:
         self._clear_item_lists()
         self.window.retrieved_case.clear()
         self.window.adapted_case.clear()
+        self._reset_slider()
 
     def _clear_item_lists(self):
         self.window.list_alc_includes.clear()
@@ -249,6 +256,10 @@ class MainWindow:
             buttons=QMessageBox.Close,
             defaultButton=QMessageBox.Close,
         )
+
+    def _reset_slider(self):
+        self.window.score_label.setText(f"Score: 5.0")
+        self.window.score_slider.setValue(50)
 
 
 if __name__ == "__main__":
