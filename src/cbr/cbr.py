@@ -9,8 +9,8 @@ from lxml.objectify import SubElement
 
 from definitions import CASE_LIBRARY_FILE as CASE_LIBRARY_PATH
 from definitions import USER_SCORE_THRESHOLD
-from entity.cocktail import Cocktail
-from entity.query import Query
+from src.entity.cocktail import Cocktail
+from src.entity.query import Query
 from src.cbr.case_library import CaseLibrary, ConstraintsBuilder
 from src.utils.helper import count_ingr_ids, replace_ingredient
 

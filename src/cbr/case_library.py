@@ -3,7 +3,7 @@ from typing import Dict, List, Union
 
 from lxml import objectify
 
-from entity.query import Query
+from src.entity.query import Query
 
 
 def _include_to_list(include_list: List[str], elements: Union[str, List[str]], is_exclusion=False):
