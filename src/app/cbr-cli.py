@@ -1,9 +1,10 @@
 import random
 import re
-from entity.query import Query
+
 from cbr.case_library import CaseLibrary
 from cbr.cbr import CBR
 from definitions import CASE_LIBRARY_FILE
+from entity.query import Query
 
 case_library = CaseLibrary(CASE_LIBRARY_FILE)
 query = Query()
@@ -37,30 +38,30 @@ print(">> Welcome to CBR Cocktails.")
 print('>> Please, enter the name of the recipe and your preferences. Write "suggest" to see examples.\n')
 
 messages = [
-            ">> Type of drink (e.g.: beer, ordinary drink): ",
-            ">> Type of glass (e.g.: old-fashioned glass, pint glass): ",
-            ">> Ingredients (e.g: cherry, rum): ",
-            ">> Ingredients to exclude (e.g: banana, vodka): ",
-            ">> Taste of the drink (e.g.: sour, salty): ",
-            ">> Type of alcohol (e.g.: gin, triple sec): "
-             ]
+    ">> Type of drink (e.g.: beer, ordinary drink): ",
+    ">> Type of glass (e.g.: old-fashioned glass, pint glass): ",
+    ">> Ingredients (e.g: cherry, rum): ",
+    ">> Ingredients to exclude (e.g: banana, vodka): ",
+    ">> Taste of the drink (e.g.: sour, salty): ",
+    ">> Type of alcohol (e.g.: gin, triple sec): ",
+]
 actions = [
-            query.set_category,
-            query.set_glass,
-            query.set_ingredients,
-            query.set_exc_ingredients,
-            query.set_basic_tastes,
-            query.set_alc_types
-            ]
+    query.set_category,
+    query.set_glass,
+    query.set_ingredients,
+    query.set_exc_ingredients,
+    query.set_basic_tastes,
+    query.set_alc_types,
+]
 
 suggestion_pools = [
-                case_library.drink_types,
-                case_library.glass_types,
-                case_library.ingredients,
-                case_library.ingredients,
-                case_library.taste_types,
-                case_library.alc_types
-                ]
+    case_library.drink_types,
+    case_library.glass_types,
+    case_library.ingredients,
+    case_library.ingredients,
+    case_library.taste_types,
+    case_library.alc_types,
+]
 
 recipe_name = input(">> Name of the recipe: ")
 for message, action, suggestion_pool in zip(messages, actions, suggestion_pools):
@@ -93,6 +94,3 @@ while True:
         score = float(score)
         cbr.evaluation(score)
         break
-
-
-

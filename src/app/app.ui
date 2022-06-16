@@ -142,6 +142,13 @@
              <item>
               <widget class="QLineEdit" name="input_include_alc"/>
              </item>
+             <item>
+              <widget class="QPushButton" name="btn_add_alcohol">
+               <property name="text">
+                <string>Add</string>
+               </property>
+              </widget>
+             </item>
             </layout>
            </item>
            <item>
@@ -169,6 +176,13 @@
              </item>
              <item>
               <widget class="QLineEdit" name="input_basic_taste"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_add_taste">
+               <property name="text">
+                <string>Add</string>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -247,6 +261,44 @@
           </layout>
          </item>
         </layout>
+       </item>
+       <item>
+        <widget class="QWidget" name="nav_bar" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>845</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_run">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="text">
+             <string>&amp;Run</string>
+            </property>
+            <property name="shortcut">
+             <string>Alt+R</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
        </item>
        <item>
         <widget class="Line" name="line_3">
@@ -382,44 +434,6 @@
        <item>
         <layout class="QVBoxLayout" name="verticalLayout_2"/>
        </item>
-       <item>
-        <widget class="QWidget" name="nav_bar" native="true">
-         <layout class="QHBoxLayout" name="horizontalLayout_5">
-          <item>
-           <spacer name="horizontalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>845</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QPushButton" name="btn_run">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="layoutDirection">
-             <enum>Qt::RightToLeft</enum>
-            </property>
-            <property name="text">
-             <string>&amp;Run</string>
-            </property>
-            <property name="shortcut">
-             <string>Alt+R</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
       </layout>
      </widget>
     </item>
@@ -431,7 +445,7 @@
      <x>0</x>
      <y>0</y>
      <width>1056</width>
-     <height>25</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
