@@ -447,6 +447,9 @@
    <property name="text">
     <string>User &amp;Manual</string>
    </property>
+   <property name="shortcut">
+    <string>Alt+M</string>
+   </property>
   </action>
  </widget>
  <tabstops>

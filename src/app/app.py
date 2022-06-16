@@ -4,6 +4,8 @@ import sys
 import time
 from pathlib import Path
 
+import webbrowser as wb
+
 from PySide6.QtCore import QFile, Qt
 from PySide6.QtUiTools import QUiLoader
 from PySide6.QtWidgets import (
@@ -15,12 +17,17 @@ from PySide6.QtWidgets import (
     QMessageBox,
 )
 
-from definitions import LOG_FILE
+from definitions import LOG_FILE, USER_MANUAL_FILE
 from entity.query import Query
 
 sys.path.append(os.fspath(Path(__file__).resolve().parent.parent))
 
 from src.cbr.cbr import CBR
+
+
+def _open_user_manual():
+    print(f'Opening User Manual...')
+    wb.open_new(r'file://{}'.format(USER_MANUAL_FILE))
 
 
 class MainWindow:
@@ -57,6 +64,7 @@ class MainWindow:
         self._init_line_edits()
         self._init_score()
         self._init_sliders()
+        self.window.user_manual.triggered.connect(_open_user_manual)
 
     def _init_sliders(self):
         self.window.score_slider.setValue(50)

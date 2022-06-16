@@ -14,4 +14,6 @@ if not os.path.exists(LOGS_PATH):
 
 LOG_FILE = os.path.join(LOGS_PATH, "logfile.log")
 
+USER_MANUAL_FILE = os.path.join(ROOT_PATH, "documentation", "User-Manual.pdf")
+
 USER_SCORE_THRESHOLD = 0.65
