@@ -101,6 +101,9 @@ while True:
         cbr.evaluation(score)
         break
 
+print("\n>> Evaluation sent.")
+print("\n>> Done.")
+
 
 
 
