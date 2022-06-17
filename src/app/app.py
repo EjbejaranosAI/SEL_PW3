@@ -2,10 +2,10 @@ import logging
 import os
 import sys
 import time
+import webbrowser as wb
 from pathlib import Path
 
-import webbrowser as wb
-
+from PySide6 import QtGui
 from PySide6.QtCore import QFile, Qt
 from PySide6.QtUiTools import QUiLoader
 from PySide6.QtWidgets import (
@@ -25,8 +25,8 @@ from src.cbr.cbr import CBR
 
 
 def _open_user_manual():
-    print(f'Opening User Manual...')
-    wb.open_new(r'file://{}'.format(USER_MANUAL_FILE))
+    print(f"Opening User Manual...")
+    wb.open_new(r"file://{}".format(USER_MANUAL_FILE))
 
 
 class MainWindow:
@@ -55,6 +55,8 @@ class MainWindow:
         ui_file.open(QFile.ReadOnly)
         self.window = loader.load(ui_file)
         ui_file.close()
+        pixmap = QtGui.QPixmap(os.path.join(os.path.dirname(__file__), "icon.ico"))
+        self.window.setWindowIcon(pixmap)
         self.window.showMaximized()
 
     def init_ui(self):
@@ -73,6 +75,16 @@ class MainWindow:
         self.window.btn_run.clicked.connect(self._send_query)
         self.window.btn_evaluate.clicked.connect(self._send_evaluation)
         self.window.btn_evaluate.setEnabled(False)
+        self.window.btn_add_alcohol.clicked.connect(
+            lambda: self._include_to_list(
+                self.window.list_alc_includes, self.window.input_include_alc, self.alc_types, "alcohol"
+            )
+        )
+        self.window.btn_add_taste.clicked.connect(
+            lambda: self._include_to_list(
+                self.window.list_taste_includes, self.window.input_basic_taste, self.taste_types, "basic taste"
+            )
+        )
         self.window.btn_add_ingr.clicked.connect(
             lambda: self._include_to_list(
                 self.window.list_ingredient_includes, self.window.input_ingredient, self.ingredients, "ingredient"
@@ -248,6 +260,16 @@ class MainWindow:
         self._init_sliders()
         self.window.btn_evaluate.setEnabled(False)
         self.window.btn_run.setEnabled(True)
+        self.window.retrieved_case.clear()
+        self.window.adapted_case.clear()
+        self._reset_slider()
+        QMessageBox.information(
+            self.window,
+            "Evaluation completed",
+            "Your evaluation has been registered.",
+            buttons=QMessageBox.Close,
+            defaultButton=QMessageBox.Close,
+        )
 
     def _init_score(self):
         self.window.score_slider.valueChanged.connect(self._update_score)
@@ -256,7 +278,7 @@ class MainWindow:
         self.window.score_label.setText(f"Score: {self.window.score_slider.value() / 10}")
 
     def _show_warning(self, title, message):
-        QMessageBox.critical(
+        QMessageBox.warning(
             self.window,
             title,
             message,
