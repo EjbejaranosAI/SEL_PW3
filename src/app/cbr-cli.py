@@ -1,9 +1,10 @@
 import random
 import re
+import logging
 from entity.query import Query
 from cbr.case_library import CaseLibrary
 from cbr.cbr import CBR
-from definitions import CASE_LIBRARY_FILE
+from definitions import CASE_LIBRARY_FILE, LOG_FILE
 
 case_library = CaseLibrary(CASE_LIBRARY_FILE)
 query = Query()
@@ -62,6 +63,12 @@ suggestion_pools = [
                 case_library.alc_types
                 ]
 
+logging.basicConfig(
+    filename=LOG_FILE,
+    format="%(asctime)s [%(name)s] - %(levelname)s: %(message)s",
+    filemode="w",
+    level=logging.INFO,
+)
 recipe_name = input(">> Name of the recipe: ")
 for message, action, suggestion_pool in zip(messages, actions, suggestion_pools):
     print("")
@@ -93,6 +100,7 @@ while True:
         score = float(score)
         cbr.evaluation(score)
         break
+
 
 
 
