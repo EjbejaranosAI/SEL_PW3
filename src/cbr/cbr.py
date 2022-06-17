@@ -447,6 +447,7 @@ class CBR:
                 > 1
             ):
                 self.case_library.remove_case(recipe)
+                self.case_library.initialize_type_sets()
                 self.logger.info(
                     f"Learning: Remove case {recipe.name} with utility {recipe.utility} from the Case Library."
                 )
