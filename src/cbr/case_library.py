@@ -127,7 +127,7 @@ class CaseLibrary:
     ingredients: set of str
         Set of the available ingredients.
 
-    ingredients_onto: dict of dict of str
+    ingredients_onto: dict
         Ontology of ingredients
 
     See Also
@@ -239,21 +239,6 @@ class CaseLibrary:
         self.taste_types = sorted(self.taste_types)
         self.garnish_types = sorted(self.garnish_types)
         self.ingredients = sorted(self.ingredients)
-
-        # Retrieve: Define weight structure
-        self.sim_weights = {
-            "ingr_match": 1.0,
-            "ingr_alc_type_match": 0.6,
-            "ingr_basic_taste_match": 0.6,
-            "alc_type_match": 0.8,
-            "basic_taste_match": 0.8,
-            "glass_type_match": 0.4,
-            "exc_ingr_match": -1.0,
-            "exc_ingr_alc_type_match": -0.6,
-            "exc_ingr_basic_taste_match": -0.6,
-            "exc_alc_type": -1.0,
-            "exc_basic_taste": -1.0,
-        }
 
 
 class ConstraintsBuilder:

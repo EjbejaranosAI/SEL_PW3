@@ -33,6 +33,19 @@ class CBR:
         self.retrieved_recipe = None
         self.sim_recipes = []
         self.adapted_recipe = None
+        self.sim_weights = {
+            "ingr_match": 1.0,
+            "ingr_alc_type_match": 0.6,
+            "ingr_basic_taste_match": 0.6,
+            "alc_type_match": 0.8,
+            "basic_taste_match": 0.8,
+            "glass_type_match": 0.4,
+            "exc_ingr_match": -1.0,
+            "exc_ingr_alc_type_match": -0.6,
+            "exc_ingr_basic_taste_match": -0.6,
+            "exc_alc_type": -1.0,
+            "exc_basic_taste": -1.0,
+        }
         self.logger = logging.getLogger("CBR")
         self.logger.setLevel(logging.INFO)
 
@@ -284,47 +297,47 @@ class CBR:
             ingredient_basic_taste = self.case_library.ingredients_onto["non-alcoholic"].get(ingredient, None)
             if ingredient in c_ingredients:
                 # Increase similarity - if constraint ingredient is used in cocktail
-                sim += self.case_library.sim_weights["ingr_match"]
-                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+                sim += self.sim_weights["ingr_match"]
+                cumulative_norm_score += self.sim_weights["ingr_match"]
             elif ingredient_alc_type is not None and ingredient_alc_type in c_ingredients_atype:
                 # Increase similarity - if constraint ingredient alc_type is used in cocktail
-                sim += self.case_library.sim_weights["ingr_alc_type_match"]
-                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+                sim += self.sim_weights["ingr_alc_type_match"]
+                cumulative_norm_score += self.sim_weights["ingr_match"]
             elif ingredient_basic_taste is not None and ingredient_basic_taste in c_ingredients_btype:
                 # Increase similarity if constraint ingredient basic_taste is used in cocktail
-                sim += self.case_library.sim_weights["ingr_basic_taste_match"]
-                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+                sim += self.sim_weights["ingr_basic_taste_match"]
+                cumulative_norm_score += self.sim_weights["ingr_match"]
             else:
                 # In case the constraint is not fulfilled we add the weight to the normalization score
-                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+                cumulative_norm_score += self.sim_weights["ingr_match"]
 
         # Increase similarity if alc_type is a match. Alc_type has a lot of importance,
         # but less than the ingredient constraints
         for alc_type in self.query.alc_types:
             if alc_type in c_ingredients_atype:
-                sim += self.case_library.sim_weights["alc_type_match"]
-                cumulative_norm_score += self.case_library.sim_weights["alc_type_match"]
+                sim += self.sim_weights["alc_type_match"]
+                cumulative_norm_score += self.sim_weights["alc_type_match"]
             # In case the constraint is not fulfilled we add the weight to the normalization score
             else:
-                cumulative_norm_score += self.case_library.sim_weights["alc_type_match"]
+                cumulative_norm_score += self.sim_weights["alc_type_match"]
 
         # Increase similarity if basic_taste is a match. Basic_taste has a lot of importance,
         # but less than the ingredient constraints
         for basic_taste in self.query.basic_tastes:
             if basic_taste in c_ingredients_btype:
-                sim += self.case_library.sim_weights["basic_taste_match"]
-                cumulative_norm_score += self.case_library.sim_weights["basic_taste_match"]
+                sim += self.sim_weights["basic_taste_match"]
+                cumulative_norm_score += self.sim_weights["basic_taste_match"]
             # In case the constraint is not fulfilled we add the weight to the normalization score
             else:
-                cumulative_norm_score += self.case_library.sim_weights["basic_taste_match"]
+                cumulative_norm_score += self.sim_weights["basic_taste_match"]
 
         # Increase similarity if glass type is a match. Glass type is not very relevant for the case
         if cocktail.glass.text == self.query.glass:
-            sim += self.case_library.sim_weights["glass_type_match"]
-            cumulative_norm_score += self.case_library.sim_weights["glass_type_match"]
+            sim += self.sim_weights["glass_type_match"]
+            cumulative_norm_score += self.sim_weights["glass_type_match"]
         # In case the constraint is not fulfilled we add the weight to the normalization score
         else:
-            cumulative_norm_score += self.case_library.sim_weights["glass_type_match"]
+            cumulative_norm_score += self.sim_weights["glass_type_match"]
 
         # If one of the excluded elements in the constraint is found in the cocktail, similarity is reduced
         for ingredient in self.query.exc_ingredients:
@@ -333,28 +346,28 @@ class CBR:
             exc_ingredient_basic_taste = self.case_library.ingredients_onto["non-alcoholic"].get(ingredient, None)
             if ingredient in c_ingredients:
                 # Decrease similarity if ingredient excluded is found in cocktail
-                sim += self.case_library.sim_weights["exc_ingr_match"]
-                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+                sim += self.sim_weights["exc_ingr_match"]
+                cumulative_norm_score += self.sim_weights["ingr_match"]
             elif exc_ingredient_alc_type is not None and exc_ingredient_alc_type in c_ingredients_atype:
                 # Decrease similarity if excluded ingredient alc_type is used in cocktail
-                sim += self.case_library.sim_weights["exc_ingr_alc_type_match"]
-                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+                sim += self.sim_weights["exc_ingr_alc_type_match"]
+                cumulative_norm_score += self.sim_weights["ingr_match"]
             elif exc_ingredient_basic_taste is not None and exc_ingredient_basic_taste in c_ingredients_btype:
                 # Decrease similarity if excluded ingredient basic_taste is used in cocktail
-                sim += self.case_library.sim_weights["exc_ingr_basic_taste_match"]
-                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+                sim += self.sim_weights["exc_ingr_basic_taste_match"]
+                cumulative_norm_score += self.sim_weights["ingr_match"]
             else:
                 # In case the constraint is not fulfilled we add the weight to the normalization score
-                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+                cumulative_norm_score += self.sim_weights["ingr_match"]
 
         # If one of the excluded alcohol_types is found in the cocktail, similarity is reduced
         for alc_type in self.query.exc_alc_types:
             if alc_type in c_ingredients_atype:
-                sim += self.case_library.sim_weights["exc_alc_type"]
-                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+                sim += self.sim_weights["exc_alc_type"]
+                cumulative_norm_score += self.sim_weights["ingr_match"]
             else:
                 # In case the constraint is not fulfilled we add the weight to the normalization score
-                cumulative_norm_score += self.case_library.sim_weights["ingr_match"]
+                cumulative_norm_score += self.sim_weights["ingr_match"]
 
         # Normalization of similarity
         if cumulative_norm_score == 0:
