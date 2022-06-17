@@ -9,9 +9,8 @@ sys.path.append(os.fspath(Path(__file__).resolve().parent.parent))
 sys.path.append(os.fspath(Path(__file__).resolve().parent.parent.parent))
 
 from entity.query import Query
-from cbr.case_library import CaseLibrary
 from cbr.cbr import CBR
-from definitions import CASE_LIBRARY_FILE, ROOT_PATH
+from definitions import ROOT_PATH
 
 output_path = os.path.join(ROOT_PATH, "system_tests")
 os.makedirs(output_path, exist_ok=True)
@@ -19,9 +18,8 @@ os.makedirs(output_path, exist_ok=True)
 N_QUERIES = 100
 MAX_N_VALUES = 5
 
-case_library = CaseLibrary(CASE_LIBRARY_FILE)
-query = Query()
 cbr = CBR()
+query = Query()
 
 actions = [
             query.set_category,
@@ -33,13 +31,13 @@ actions = [
             ]
 
 pools = [
-                case_library.drink_types,
-                case_library.glass_types,
-                case_library.ingredients,
-                case_library.ingredients,
-                case_library.taste_types,
-                case_library.alc_types
-                ]
+    cbr.case_library.drink_types,
+    cbr.case_library.glass_types,
+    cbr.case_library.ingredients,
+    cbr.case_library.ingredients,
+    cbr.case_library.taste_types,
+    cbr.case_library.alc_types
+]
 
 
 def build_query():
@@ -50,7 +48,7 @@ def build_query():
             action(random.sample(pool, random.randint(0, MAX_N_VALUES)))
 
 
-test = f"test{random.randint(0, 10000)}.txt"
+test = f"test{time.strftime('%d-%H%M%S')}.txt"
 total_time = 0
 for _ in range(N_QUERIES):
     build_query()
