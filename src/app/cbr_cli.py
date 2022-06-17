@@ -109,7 +109,3 @@ while True:
 
 print("\n- Evaluation sent.")
 print("- Done.")
-
-
-
-

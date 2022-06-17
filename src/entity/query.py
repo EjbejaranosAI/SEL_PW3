@@ -81,9 +81,11 @@ class Query:
         return self.basic_tastes
 
     def __str__(self):
-        return f"- Type of drink: {self.get_category()}\n" \
-               f"- Type of glass: {self.get_glass()}\n" \
-               f"- Ingredients: {', '.join(map(str, self.get_ingredients()))}\n" \
-               f"- Ingredients to exclude: {', '.join(map(str, self.get_exc_ingredients()))}\n" \
-               f"- Taste of the drink: {', '.join(map(str, self.get_basic_tastes()))}\n" \
-               f"- Type of alcohol: {', '.join(map(str, self.get_alc_types()))}"
+        return (
+            f"- Type of drink: {self.get_category()}\n"
+            f"- Type of glass: {self.get_glass()}\n"
+            f"- Ingredients: {', '.join(map(str, self.get_ingredients()))}\n"
+            f"- Ingredients to exclude: {', '.join(map(str, self.get_exc_ingredients()))}\n"
+            f"- Taste of the drink: {', '.join(map(str, self.get_basic_tastes()))}\n"
+            f"- Type of alcohol: {', '.join(map(str, self.get_alc_types()))}"
+        )

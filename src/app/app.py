@@ -256,7 +256,7 @@ class MainWindow:
 
     def _send_evaluation(self):
         score = self.window.score_slider.value() / 100
-        self.cbr.evaluation(score)
+        self.cbr.evaluate(score)
         self._init_sliders()
         self.window.btn_evaluate.setEnabled(False)
         self.window.btn_run.setEnabled(True)

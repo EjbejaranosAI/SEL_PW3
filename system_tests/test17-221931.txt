@@ -1,0 +1,419 @@
+--------------
+Query:
+- Type of drink: cocktail
+- Type of glass: champagne flute
+- Ingredients: 
+- Ingredients to exclude: 
+- Taste of the drink: sweet, bitter, salty
+- Type of alcohol: rum
+
+Retrieved case:
+Miami Vice
+Type of drink: cocktail
+Glass: cocktail glass
+Ingredients:
+        5 oz bacardi of 151 proof rum, frozen of pina colada mix, frozen of daiquiri mix
+Preparation:
+        0. first: frozen of pina colada mix with
+        1. 5 oz. of 5 oz bacardi of 151 proof rum with ice(set aside)
+        2. second: mix daiquiri with
+        3. 5 oz. of 5 oz bacardi of 151 proof rum with ice
+        4. third: while frozen, add pina colda mix then frozen of daiquiri mix in glass (making sure they do not get mixed together)
+
+Adapted case:
+MyRecipe2331
+Type of drink: cocktail
+Glass: cocktail glass
+Ingredients:
+        5 oz bacardi of 151 proof rum, frozen of pina colada mix, frozen of daiquiri mix, some grapefruit juice
+        1 of olive
+Preparation:
+        0. first: frozen of pina colada mix with
+        1. add 1 of olive
+        2. add some grapefruit juice to taste
+        3. 5 oz. of 5 oz bacardi of 151 proof rum with ice(set aside)
+        4. second: mix daiquiri with
+        5. 5 oz. of 5 oz bacardi of 151 proof rum with ice
+        6. third: while frozen, add pina colda mix then frozen of daiquiri mix in glass (making sure they do not get mixed together)
+--------------
+
+--------------
+Query:
+- Type of drink: shot
+- Type of glass: margarita/coupette glass
+- Ingredients: whipped-cream, butterscotch schnapps, strawberries, absolut peppar, coca-cola
+- Ingredients to exclude: lavender, pineapple juice, maraschino cherry
+- Taste of the drink: 
+- Type of alcohol: 
+
+Retrieved case:
+Mother's Milk
+Type of drink: shot
+Glass: shot glass
+Ingredients:
+        1 oz of goldschlager, 1 oz of butterscotch schnapps, 1 oz of milk
+Preparation:
+        0. shake over ice, strain
+        1. serves two
+
+Adapted case:
+MyRecipe362
+Type of drink: shot
+Glass: shot glass
+Ingredients:
+        1 oz of goldschlager, 1 oz of butterscotch schnapps, 1 oz of milk, some whipped-cream
+        some strawberries, some absolut peppar, some coca-cola
+Preparation:
+        0. shake over ice, strain
+        1. add some coca-cola to taste
+        2. add some absolut peppar to taste
+        3. add some strawberries to taste
+        4. add some whipped-cream to taste
+        5. serves two
+--------------
+
+--------------
+Query:
+- Type of drink: coffee / tea
+- Type of glass: parfait glass
+- Ingredients: egg yolk, dubonnet rouge, white rum, kummel, peppermint schnapps
+- Ingredients to exclude: raspberry syrup, kool-aid tropical berry, dark rum, añejo rum, lemon-lime soda
+- Taste of the drink: 
+- Type of alcohol: sambuca, schnapps
+
+Retrieved case:
+Fuzzy Asshole
+Type of drink: coffee / tea
+Glass: coffee mug
+Ingredients:
+        1/2 of peach schnapps, 1/2 of coffee
+Preparation:
+        0. fill coffe mug half full of 1/2 of coffee
+        1. fill the other half full of 1/2 of peach schnapps
+        2. stir and drink while hot
+
+Adapted case:
+MyRecipe5928
+Type of drink: coffee / tea
+Glass: coffee mug
+Ingredients:
+        1/2 of peach schnapps, 1/2 of coffee, some egg yolk, some dubonnet rouge
+        some white rum, some kummel, some peppermint schnapps, 2 cl of sambuca
+Preparation:
+        0. fill coffe mug half full of 1/2 of coffee
+        1. add 2 cl of sambuca
+        2. add some peppermint schnapps to taste
+        3. add some kummel to taste
+        4. add some white rum to taste
+        5. add some dubonnet rouge to taste
+        6. add some egg yolk to taste
+        7. fill the other half full of 1/2 of peach schnapps
+        8. stir and drink while hot
+--------------
+
+--------------
+Query:
+- Type of drink: ordinary drink
+- Type of glass: white wine glass
+- Ingredients: 
+- Ingredients to exclude: 
+- Taste of the drink: cream, sour, bitter, sweet
+- Type of alcohol: sweet liqueur, creamy liqueur, whisky, vodka
+
+Retrieved case:
+Russian Spring Punch
+Type of drink: ordinary drink
+Glass: highball glass
+Ingredients:
+        1 cl of sugar syrup, 1.5 cl of creme de cassis, 2.5 cl of lemon juice, 2.5 cl of vodka
+Preparation:
+        0. pour the ingredients into an highball glass, top with sparkling wine
+
+Adapted case:
+MyRecipe7876
+Type of drink: ordinary drink
+Glass: highball glass
+Ingredients:
+        1 cl of sugar syrup, 1.5 cl of creme de cassis, 2.5 cl of lemon juice, 2.5 cl of vodka
+        1/2 oz white of creme de cacao white, some scotch, 1 oz of light cream,  of schweppes russchian
+Preparation:
+        0. pour the ingredients into an highball glass, top with sparkling wine
+        1. add  of schweppes russchian
+        2. add 1 oz of light cream
+        3. add some scotch to taste
+        4. add 1/2 oz white of creme de cacao white
+--------------
+
+--------------
+Query:
+- Type of drink: coffee / tea
+- Type of glass: punch bowl
+- Ingredients: ale, godiva liqueur, tomato juice, banana liqueur
+- Ingredients to exclude: prosecco
+- Taste of the drink: water, egg
+- Type of alcohol: vodka, creamy liqueur, wine, sambuca, vermouth
+
+Retrieved case:
+MyRecipe5928
+Type of drink: coffee / tea
+Glass: coffee mug
+Ingredients:
+        1/2 of peach schnapps, 1/2 of coffee, some egg yolk, some dubonnet rouge
+        some white rum, some kummel, some peppermint schnapps, 2 cl of sambuca
+Preparation:
+        0. fill coffe mug half full of 1/2 of coffee
+        1. add 2 cl of sambuca
+        2. add some peppermint schnapps to taste
+        3. add some kummel to taste
+        4. add some white rum to taste
+        5. add some dubonnet rouge to taste
+        6. add some egg yolk to taste
+        7. fill the other half full of 1/2 of peach schnapps
+        8. stir and drink while hot
+
+Adapted case:
+MyRecipe2830
+Type of drink: coffee / tea
+Glass: coffee mug
+Ingredients:
+        1/2 of peach schnapps, 1/2 of coffee, some egg yolk, some dubonnet rouge
+        some white rum, some kummel, some peppermint schnapps, 2 cl of sambuca
+        some ale, some godiva liqueur, some tomato juice, some banana liqueur
+        some vodka, some sweet vermouth, some carbonated water
+Preparation:
+        0. fill coffe mug half full of 1/2 of coffee
+        1. add some carbonated water to taste
+        2. add some sweet vermouth to taste
+        3. add some vodka to taste
+        4. add some banana liqueur to taste
+        5. add some tomato juice to taste
+        6. add some godiva liqueur to taste
+        7. add some ale to taste
+        8. add 2 cl of sambuca
+        9. add some peppermint schnapps to taste
+        10. add some kummel to taste
+        11. add some white rum to taste
+        12. add some dubonnet rouge to taste
+        13. add some egg yolk to taste
+        14. fill the other half full of 1/2 of peach schnapps
+        15. stir and drink while hot
+--------------
+
+--------------
+Query:
+- Type of drink: other/unknown
+- Type of glass: copper mug
+- Ingredients: tonic water, irish whiskey, fruit punch frozen, chocolate syrup
+- Ingredients to exclude: wild turkey, white creme de menthe, cointreau, candy, apple juice
+- Taste of the drink: bitter
+- Type of alcohol: 
+
+Retrieved case:
+Absolut limousine
+Type of drink: other/unknown
+Glass: collins glass
+Ingredients:
+        1/3 of lime juice, top it up with of tonic water, 2/3 of absolut citron
+Preparation:
+        0. fill 2/3 of absolut citron into a glass
+        1. add 1/3 of lime juice
+        2. add ice and lime wedges
+
+Adapted case:
+MyRecipe847
+Type of drink: other/unknown
+Glass: collins glass
+Ingredients:
+        1/3 of lime juice, top it up with of tonic water, 2/3 of absolut citron, some irish whiskey
+        some fruit punch frozen, some chocolate syrup, some coffee
+Preparation:
+        0. fill 2/3 of absolut citron into a glass
+        1. add some coffee to taste
+        2. add some chocolate syrup to taste
+        3. add some fruit punch frozen to taste
+        4. add some irish whiskey to taste
+        5. add 1/3 of lime juice
+        6. add ice and lime wedges
+--------------
+
+--------------
+Query:
+- Type of drink: milk / float / shake
+- Type of glass: shot glass
+- Ingredients: maraschino liqueur
+- Ingredients to exclude: 
+- Taste of the drink: egg, bitter, sweet, salty
+- Type of alcohol: wine
+
+Retrieved case:
+Boozy Snickers Milkshake
+Type of drink: milk / float / shake
+Glass: mason jar
+Ingredients:
+        4 tablespoons of chocolate sauce, for topping of whipped-cream, 1 cup of milk, 3 cups of vanilla ice-cream
+        15 of mini-snickers bars, 4 tablespoons of caramel sauce
+Preparation:
+        0. place the snickers 15 of mini-snickers bars in a plastic bag and roll over them with a rolling pin until crushed
+        1. add crushed snickers pieces, ice cream, 1 cup of milk, 4 tablespoons of caramel sauce, 4 tablespoons of chocolate sauce, and chocolate liquor to a blender
+        2. blend until shake is thick and frothy
+        3. pour into glasses and top with chocolate liquor and whip cream
+
+Adapted case:
+MyRecipe4238
+Type of drink: milk / float / shake
+Glass: mason jar
+Ingredients:
+        4 tablespoons of chocolate sauce, for topping of whipped-cream, 1 cup of milk, 3 cups of vanilla ice-cream
+        15 of mini-snickers bars, 4 tablespoons of caramel sauce, some maraschino liqueur, some green ginger wine
+        some egg, 1 shot of coffee liqueur, some salt
+Preparation:
+        0. place the snickers 15 of mini-snickers bars in a plastic bag and roll over them with a rolling pin until crushed
+        1. add some salt to taste
+        2. add 1 shot of coffee liqueur
+        3. add some egg to taste
+        4. add some green ginger wine to taste
+        5. add 4 tablespoons of caramel sauce to taste
+        6. add crushed snickers pieces, ice cream, 1 cup of milk, 4 tablespoons of caramel sauce, 4 tablespoons of chocolate sauce, and chocolate liquor to a blender
+        7. blend until shake is thick and frothy
+        8. pour into glasses and top with chocolate liquor and whip cream
+--------------
+
+--------------
+Query:
+- Type of drink: punch / party drink
+- Type of glass: wine glass
+- Ingredients: fruit punch frozen, peychaud bitters, mountain dew
+- Ingredients to exclude: coca-cola, fresh lemon juice, fruit punch, tropicana
+- Taste of the drink: cream, bitter, sweet, salty, spicy
+- Type of alcohol: sweet liqueur, sambuca, rum
+
+Retrieved case:
+Egg Nog #4
+Type of drink: punch / party drink
+Glass: punch bowl
+Ingredients:
+        ground of nutmeg, 1/4 cup of sugar, 1/4 cup of sugar, 2 cups of milk
+        1/2 cup of light rum, 1 cup of whipped-cream, 1/2 cup of bourbon, 6 of egg white
+        1/4 tsp of salt, 1 tsp of vanilla extract
+Preparation:
+        0. in a small mixer bowl beat 6 of egg white yolks till blended
+        1. gradually add 1/4 cup of sugar, beating at high speed till thick and lemon colored
+        2. stir in 2 cups of milk, stir in 1/2 cup of light rum, 1/2 cup of bourbon, 1 tsp of vanilla extract, and 1/4 tsp of salt
+        3. chill thoroughly
+        4. whip cream
+        5. wash beaters well
+        6. in a large mixer bowl beat 6 of egg white whites till soft peaks form
+        7. gradually add remaining 1/4 cup of sugar, beating to stiff peaks
+        8. fold ingr3 mixture and 1 cup of whipped-cream into 6 of egg white whites
+        9. serve immediately
+        10. sprinkle ground of nutmeg over each serving
+        11. serve in a punch bowl or another big bowl
+        12. note: for a nonalcoholic eggnog, prepare eggnog as above, except omit the 1/2 cup of bourbon and 1/2 cup of light rum and increase the 2 cups of milk to 3 cups
+
+Adapted case:
+MyRecipe8305
+Type of drink: punch / party drink
+Glass: punch bowl
+Ingredients:
+        ground of nutmeg, 1/4 cup of sugar, 1/4 cup of sugar, 2 cups of milk
+        1/2 cup of light rum, 1 cup of whipped-cream, 1/2 cup of bourbon, 6 of egg white
+        1/4 tsp of salt, 1 tsp of vanilla extract, some fruit punch frozen, some peychaud bitters
+        some mountain dew, 1 1/2 oz of benedictine, some black sambuca, 1 quart black of tea
+Preparation:
+        0. in a small mixer bowl beat 6 of egg white yolks till blended
+        1. add 1 quart black of tea
+        2. add some black sambuca to taste
+        3. add 1 1/2 oz of benedictine
+        4. add some mountain dew to taste
+        5. add some peychaud bitters to taste
+        6. add 1 tsp of vanilla extract to taste
+        7. gradually add 1/4 cup of sugar, beating at high speed till thick and lemon colored
+        8. stir in 2 cups of milk, stir in 1/2 cup of light rum, 1/2 cup of bourbon, 1 tsp of vanilla extract, and 1/4 tsp of salt
+        9. chill thoroughly
+        10. whip cream
+        11. wash beaters well
+        12. in a large mixer bowl beat 6 of egg white whites till soft peaks form
+        13. gradually add remaining 1/4 cup of sugar, beating to stiff peaks
+        14. fold ingr3 mixture and 1 cup of whipped-cream into 6 of egg white whites
+        15. serve immediately
+        16. sprinkle ground of nutmeg over each serving
+        17. serve in a punch bowl or another big bowl
+        18. note: for a nonalcoholic eggnog, prepare eggnog as above, except omit the 1/2 cup of bourbon and 1/2 cup of light rum and increase the 2 cups of milk to 3 cups
+--------------
+
+--------------
+Query:
+- Type of drink: ordinary drink
+- Type of glass: collins glass
+- Ingredients: amaretto, milk skimmed, irish whiskey, demerara sugar, pepper
+- Ingredients to exclude: 
+- Taste of the drink: spicy
+- Type of alcohol: wine, whisky
+
+Retrieved case:
+Rum Milk Punch
+Type of drink: ordinary drink
+Glass: collins glass
+Ingredients:
+        1 cup of milk,  of nutmeg, 1 tsp of powdered sugar, 2 oz of light rum
+Preparation:
+        0. shake all ingredients (except  of nutmeg) with ice and strain into a collins glass
+        1. sprinkle  of nutmeg on top and serve
+
+Adapted case:
+MyRecipe8731
+Type of drink: ordinary drink
+Glass: collins glass
+Ingredients:
+        1 cup of milk,  of nutmeg, 1 tsp of powdered sugar, 2 oz of light rum
+        1 oz of amaretto, some milk skimmed, some irish whiskey, some demerara sugar
+        some pepper, 1 oz green ginger of green ginger wine
+Preparation:
+        0. shake all ingredients (except  of nutmeg) with ice and strain into a collins glass
+        1. add 1 oz green ginger of green ginger wine
+        2. add some pepper to taste
+        3. add some demerara sugar to taste
+        4. add some irish whiskey to taste
+        5. add some milk skimmed to taste
+        6. add 1 oz of amaretto
+        7. sprinkle  of nutmeg on top and serve
+--------------
+
+--------------
+Query:
+- Type of drink: ordinary drink
+- Type of glass: wine glass
+- Ingredients: 
+- Ingredients to exclude: 
+- Taste of the drink: sweet, water, sour
+- Type of alcohol: 
+
+Retrieved case:
+Girl From Ipanema
+Type of drink: ordinary drink
+Glass: wine glass
+Ingredients:
+        top up with of champagne, 25 ml of cachaca, 10 ml of agave syrup, 15 ml of lemon juice
+Preparation:
+        0. add the 25 ml of cachaca, 15 ml of lemon juice and 10 ml of agave syrup to your boston glass
+        1. add ice and shake until ice cold
+        2. pour into a chilled flute and top-up with top up with of champagne
+
+Adapted case:
+MyRecipe5919
+Type of drink: ordinary drink
+Glass: wine glass
+Ingredients:
+        top up with of champagne, 25 ml of cachaca, 10 ml of agave syrup, 15 ml of lemon juice
+        some water
+Preparation:
+        0. add the 25 ml of cachaca, 15 ml of lemon juice and 10 ml of agave syrup to your boston glass
+        1. add some water to taste
+        2. add ice and shake until ice cold
+        3. pour into a chilled flute and top-up with top up with of champagne
+--------------
+
+
+
+Total number of queries: 10
+Total time: 0.14952850341796875

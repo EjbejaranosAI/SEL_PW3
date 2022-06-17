@@ -109,23 +109,26 @@ class CaseLibrary:
     case_library: lxml ObjectifiedElement
         Root of the case library.
 
-    drink_types: set of str
-        Set of the available drink types.
+    drink_types: list of str
+        Sorted list of the available drink types.
 
-    glass_types: set of str
-        Set of the available glass types.
+    glass_types: list of str
+        Sorted list of the available glass types.
 
-    alc_types: set of str
-        Set of the available alcohol types.
+    alc_types: list of str
+        Sorted list of the available alcohol types.
 
-    taste_types: set of str
-        Set of the available basic tastes.
+    taste_types: list of str
+        Sorted list of the available basic tastes.
 
-    garnish_types: set of str
-        Set of the available garnish types.
+    garnish_types: list of str
+        Sorted list of the available garnish types.
 
-    ingredients: set of str
-        Set of the available ingredients.
+    ingredients: list of str
+        Sorted list of the available ingredients.
+
+    value_counter: dict
+        Counter for each of the available values in the case library.
 
     ingredients_onto: dict
         Ontology of ingredients
@@ -141,12 +144,13 @@ class CaseLibrary:
         self.case_library_path = case_library_file
         self.ET = objectify.parse(self.case_library_path)
         self.case_library = self.ET.getroot()
-        self.drink_types = set()
-        self.glass_types = set()
-        self.alc_types = set()
-        self.taste_types = set()
-        self.garnish_types = set()
-        self.ingredients = set()
+        self.drink_types = list()
+        self.glass_types = list()
+        self.alc_types = list()
+        self.taste_types = list()
+        self.garnish_types = list()
+        self.ingredients = list()
+        self.value_counter = dict()
         self.ingredients_onto = {"alcoholic": dict(), "non-alcoholic": dict()}
         self.initialize_type_sets()
 
@@ -206,39 +210,100 @@ class CaseLibrary:
         case : :class:`lxml.objectify.ObjectifiedElement`
             The case to remove from the case library
         """
+        category = case.category
+        self._decrease_counter(category, self.drink_types)
+        glass = case.glass
+        self._decrease_counter(glass, self.glass_types)
+
+        for ingredient in case.ingredients.iterchildren():
+            name = ingredient.text
+            self._decrease_counter(name, self.ingredients)
+            alc_type = ingredient.attrib["alc_type"]
+            if alc_type:
+                self._decrease_counter(alc_type, self.alc_types)
+            basic_taste = ingredient.attrib["basic_taste"]
+            if basic_taste:
+                self._decrease_counter(basic_taste, self.taste_types)
+            garnish_type = ingredient.attrib["garnish_type"]
+            if garnish_type:
+                self._decrease_counter(garnish_type, self.garnish_types)
+
         parent = case.getparent()
         parent.remove(case)
         self.ET.write(self.case_library_path, pretty_print=True, encoding="utf-8")
 
+    def _decrease_counter(self, key, value_list):
+        self.value_counter[key] -= 1
+        if self.value_counter[key] == 0:
+            value_list.remove(key)
+            self.value_counter.pop(key)
+
     def initialize_type_sets(self):
-        self.drink_types = sorted(set(self.case_library.xpath("./category/@type")))
-        self.glass_types = sorted(set(self.case_library.xpath(".//glass/@type")))
-        for ingredient in self.case_library.xpath(".//ingredient"):
-            name = ingredient.text
-            self.ingredients.add(name)
-            alc_type = ingredient.attrib["alc_type"]
-            basic_taste = ingredient.attrib["basic_taste"]
-            garnish_type = ingredient.attrib["garnish_type"]
+        drink_types = set()
+        glass_types = set()
+        ingredients = set()
+        alc_types = set()
+        taste_types = set()
+        garnish_types = set()
+        for cocktail in self.case_library.xpath(".//cocktail"):
+            drink = cocktail.category
+            glass = cocktail.glass
+            if drink in self.value_counter.keys():
+                self.value_counter[drink] += 1
+            else:
+                self.value_counter[drink] = 1
+                drink_types.add(drink)
 
-            if alc_type:
-                self.alc_types.add(alc_type)
-                if alc_type in self.ingredients_onto["alcoholic"].keys():
-                    self.ingredients_onto["alcoholic"][name] = alc_type
-                else:
-                    self.ingredients_onto["alcoholic"][name] = alc_type
-            elif basic_taste:
-                self.taste_types.add(basic_taste)
-                if basic_taste in self.ingredients_onto["non-alcoholic"].keys():
-                    self.ingredients_onto["non-alcoholic"][name] = basic_taste
-                else:
-                    self.ingredients_onto["non-alcoholic"][name] = basic_taste
-            elif garnish_type:
-                self.garnish_types.add(garnish_type)
+            if glass in self.value_counter.keys():
+                self.value_counter[glass] += 1
+            else:
+                self.value_counter[glass] = 1
+                glass_types.add(glass)
 
-        self.alc_types = sorted(self.alc_types)
-        self.taste_types = sorted(self.taste_types)
-        self.garnish_types = sorted(self.garnish_types)
-        self.ingredients = sorted(self.ingredients)
+            for ingredient in cocktail.ingredients.iterchildren():
+                name = ingredient.text
+                if name in self.value_counter.keys():
+                    self.value_counter[name] += 1
+                else:
+                    self.value_counter[name] = 1
+                    ingredients.add(name)
+
+                alc_type = ingredient.attrib["alc_type"]
+                basic_taste = ingredient.attrib["basic_taste"]
+                garnish_type = ingredient.attrib["garnish_type"]
+                if alc_type:
+                    if alc_type in self.value_counter.keys():
+                        self.value_counter[alc_type] += 1
+                    else:
+                        self.value_counter[alc_type] = 1
+                        alc_types.add(alc_type)
+                    if alc_type in self.ingredients_onto["alcoholic"].keys():
+                        self.ingredients_onto["alcoholic"][name] = alc_type
+                    else:
+                        self.ingredients_onto["alcoholic"][name] = alc_type
+                elif basic_taste:
+                    if basic_taste in self.value_counter.keys():
+                        self.value_counter[basic_taste] += 1
+                    else:
+                        self.value_counter[basic_taste] = 1
+                        taste_types.add(basic_taste)
+                    if basic_taste in self.ingredients_onto["non-alcoholic"].keys():
+                        self.ingredients_onto["non-alcoholic"][name] = basic_taste
+                    else:
+                        self.ingredients_onto["non-alcoholic"][name] = basic_taste
+                elif garnish_type:
+                    if garnish_type in self.value_counter.keys():
+                        self.value_counter[garnish_type] += 1
+                    else:
+                        self.value_counter[garnish_type] = 1
+                        garnish_types.add(garnish_type)
+
+        self.drink_types = sorted(drink_types)
+        self.glass_types = sorted(glass_types)
+        self.alc_types = sorted(alc_types)
+        self.taste_types = sorted(taste_types)
+        self.garnish_types = sorted(garnish_types)
+        self.ingredients = sorted(ingredients)
 
 
 class ConstraintsBuilder:
@@ -328,10 +393,10 @@ class ConstraintsBuilder:
         >>> builder.filter_category(exclude=["shot", "cocktail"])
         """
 
-        if include is not None and include:
+        if include is not None and len(include) > 0:
             self.include_categories = _include_to_list(self.include_categories, include)
 
-        if exclude is not None and exclude:
+        if exclude is not None and len(exclude) > 0:
             self.exclude_categories = _include_to_list(self.exclude_categories, exclude, is_exclusion=True)
 
         return self
@@ -365,10 +430,10 @@ class ConstraintsBuilder:
         >>> builder = ConstraintsBuilder().filter_glass(include="shot glass")
         >>> builder.filter_glass(exclude=["hurricane glass", "martini glass"])
         """
-        if include is not None and include:
+        if include is not None and len(include) > 0:
             self.include_glasses = _include_to_list(self.include_glasses, include)
 
-        if exclude is not None and exclude:
+        if exclude is not None and len(exclude) > 0:
             self.exclude_glasses = _include_to_list(self.exclude_glasses, exclude, is_exclusion=True)
 
         return self
@@ -401,9 +466,9 @@ class ConstraintsBuilder:
         >>> builder = ConstraintsBuilder().filter_alc_type(include="gin")
         >>> builder.filter_alc_type(exclude=["rum", "vodka"])
         """
-        if include is not None and include:
+        if include is not None and len(include) > 0:
             self.ingredient_constraints = _include_to_dict(self.ingredient_constraints, "alc_type", include)
-        if exclude is not None and exclude:
+        if exclude is not None and len(exclude) > 0:
             self.ingredient_constraints = _include_to_dict(
                 self.ingredient_constraints, "alc_type", exclude, is_exclusion=True
             )
@@ -437,9 +502,9 @@ class ConstraintsBuilder:
         >>> builder = ConstraintsBuilder().filter_taste(include="sweet")
         >>> builder.filter_taste(exclude=["sour", "salty"])
         """
-        if include is not None and include:
+        if include is not None and len(include) > 0:
             self.ingredient_constraints = _include_to_dict(self.ingredient_constraints, "basic_taste", include)
-        if exclude is not None and exclude:
+        if exclude is not None and len(exclude) > 0:
             self.ingredient_constraints = _include_to_dict(
                 self.ingredient_constraints, "basic_taste", exclude, is_exclusion=True
             )
@@ -473,9 +538,9 @@ class ConstraintsBuilder:
         >>> builder = ConstraintsBuilder().filter_garnish_type(include="slice")
         >>> builder.filter_garnish_type(exclude=["berry", "wedge"])
         """
-        if include is not None and include:
+        if include is not None and len(include) > 0:
             self.ingredient_constraints = _include_to_dict(self.ingredient_constraints, "garnish_type", include)
-        if exclude is not None and exclude:
+        if exclude is not None and len(exclude) > 0:
             self.ingredient_constraints = _include_to_dict(
                 self.ingredient_constraints, "garnish_type", exclude, is_exclusion=True
             )
@@ -509,9 +574,9 @@ class ConstraintsBuilder:
         >>> builder = ConstraintsBuilder().filter_ingredient(include="banana")
         >>> builder.filter_garnish_type(exclude=["strawberry", "coffee"])
         """
-        if include is not None and include:
+        if include is not None and len(include) > 0:
             self.ingredient_constraints = _include_to_dict(self.ingredient_constraints, "ingredient", include)
-        if exclude is not None and exclude:
+        if exclude is not None and len(exclude) > 0:
             self.ingredient_constraints = _include_to_dict(
                 self.ingredient_constraints, "ingredient", exclude, is_exclusion=True
             )

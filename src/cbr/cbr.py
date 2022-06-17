@@ -19,13 +19,24 @@ def _compute_utility(case):
 
 
 class CBR:
-    def __init__(self, seed=None):
+    def __init__(self, case_library_file=None, seed=None):
         """
         Case-Based Reasoning system.
+
+        Parameters
+        ----------
+        case_library_file : str or None
+            The path to the case library file. If None it will use the default case library.
+
+        seed : int or None
+            The seed for the internal pseudo-random number generator.
         """
         self.UTILITY_THRESHOLD = 0.8
         self.EVALUATION_THRESHOLD = 0.6
-        self.case_library = CaseLibrary(CASE_LIBRARY_PATH)
+        if case_library_file is not None:
+            self.case_library = CaseLibrary(case_library_file)
+        else:
+            self.case_library = CaseLibrary(CASE_LIBRARY_PATH)
         self.alc_types = set()
         self.basic_tastes = set()
         self.ingredients = set()
@@ -414,7 +425,7 @@ class CBR:
             if basic_taste not in self.basic_tastes:
                 self.adapt_alcohols_and_tastes(basic_taste=basic_taste)
 
-    def evaluation(self, user_score):
+    def evaluate(self, user_score):
         if user_score > self.EVALUATION_THRESHOLD:
             self.adapted_recipe.evaluation = "success"
             self.logger.info("Evaluation: success")
@@ -460,7 +471,6 @@ class CBR:
                 > 1
             ):
                 self.case_library.remove_case(recipe)
-                self.case_library.initialize_type_sets()
                 self.logger.info(
                     f"Learning: Remove case {recipe.name} with utility {recipe.utility} from the Case Library."
                 )

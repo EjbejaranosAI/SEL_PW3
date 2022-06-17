@@ -1,0 +1,375 @@
+--------------
+Query:
+- Type of drink: milk / float / shake
+- Type of glass: coffee mug
+- Ingredients: mint, st. germain
+- Ingredients to exclude: berries
+- Taste of the drink: sweet, bitter, sour, salty, water
+- Type of alcohol: sweet liqueur, vodka, vermouth
+
+Retrieved case:
+Black Forest Shake
+Type of drink: milk / float / shake
+Glass: collins glass
+Ingredients:
+         of chocolate syrup,  of vodka,  of milk,  of cherry brandy
+Preparation:
+        0. in a blender put ice cubes,  of chocolate syrup,  of cherry brandy,  of vodka, and  of milk
+        1. blend very well
+
+Adapted case:
+MyRecipe3631
+Type of drink: milk / float / shake
+Glass: collins glass
+Ingredients:
+         of chocolate syrup,  of vodka,  of milk,  of cherry brandy
+        some mint, some st. germain, 1 oz of coconut liqueur, some sweet vermouth
+        1 shot of coffee liqueur, some lime juice, some celery salt, some water
+Preparation:
+        0. in a blender put ice cubes,  of chocolate syrup,  of cherry brandy,  of vodka, and  of milk
+        1. add some water to taste
+        2. add some celery salt to taste
+        3. add some lime juice to taste
+        4. add 1 shot of coffee liqueur
+        5. add some sweet vermouth to taste
+        6. add 1 oz of coconut liqueur
+        7. add some st. germain to taste
+        8. add some mint to taste
+        9. blend very well
+--------------
+
+--------------
+Query:
+- Type of drink: ordinary drink
+- Type of glass: pint glass
+- Ingredients: chocolate sauce, absolut peppar, 7-up, raspberry syrup
+- Ingredients to exclude: brandy, sloe gin
+- Taste of the drink: egg, cream, spicy, sweet
+- Type of alcohol: whisky, vermouth, wine, schnapps
+
+Retrieved case:
+Port Wine Flip
+Type of drink: ordinary drink
+Glass: whiskey sour glass
+Ingredients:
+         of nutmeg, 1 tsp of powdered sugar, 2 tsp of light cream, 1 whole of egg
+        1 1/2 oz of port
+Preparation:
+        0. shake all ingredients (except  of nutmeg) with ice and strain into a whiskey sour glass
+        1. sprinkle  of nutmeg on top and serve
+
+Adapted case:
+MyRecipe605
+Type of drink: ordinary drink
+Glass: whiskey sour glass
+Ingredients:
+         of nutmeg, 1 tsp of powdered sugar, 2 tsp of light cream, 1 whole of egg
+        1 1/2 oz of port, some chocolate sauce, some absolut peppar, some 7-up
+        some raspberry syrup, 2 oz of blended whiskey, 1/2 oz of sweet vermouth, (claret) of red wine
+         of blueberry schnapps
+Preparation:
+        0. shake all ingredients (except  of nutmeg) with ice and strain into a whiskey sour glass
+        1. add  of blueberry schnapps
+        2. add (claret) of red wine
+        3. add 1/2 oz of sweet vermouth
+        4. add 2 oz of blended whiskey
+        5. add some raspberry syrup to taste
+        6. add some 7-up to taste
+        7. add some absolut peppar to taste
+        8. add some chocolate sauce to taste
+        9. sprinkle  of nutmeg on top and serve
+--------------
+
+--------------
+Query:
+- Type of drink: shot
+- Type of glass: copper mug
+- Ingredients: iced tea
+- Ingredients to exclude: baileys irish cream, yukon jack, corona, pina colada mix, sprite
+- Taste of the drink: sour
+- Type of alcohol: sambuca, vodka
+
+Retrieved case:
+Freddy Kruger
+Type of drink: shot
+Glass: shot glass
+Ingredients:
+        1/2 oz of vodka, 1/2 oz of jägermeister, 1/2 oz of sambuca
+Preparation:
+        0. make it an ample size shot!!
+
+Adapted case:
+MyRecipe9629
+Type of drink: shot
+Glass: shot glass
+Ingredients:
+        1/2 oz of vodka, 1/2 oz of jägermeister, 1/2 oz of sambuca, some iced tea
+         of cranberry juice
+Preparation:
+        0. make it an ample size shot!!
+        1. add  of cranberry juice
+        2. add some iced tea to taste
+--------------
+
+--------------
+Query:
+- Type of drink: soft drink / soda
+- Type of glass: brandy snifter
+- Ingredients: kool-aid tropical, cherry heering, peach nectar, benedictine
+- Ingredients to exclude: sprite, worcestershire sauce
+- Taste of the drink: spicy, water, cream
+- Type of alcohol: wine, whisky
+
+Retrieved case:
+Darkwood Sling
+Type of drink: soft drink / soda
+Glass: cocktail glass
+Ingredients:
+        1 part of soda water, 1 part of orange juice, 1 part of cherry heering
+Preparation:
+        0. there are many good cherry liqueurs you can use, but i prefere 1 part of cherry heering
+        1. add one share of the liqueur
+        2. then you add one share of 1 part of soda water
+        3. for a sour sling use tonic (most people prefer the drink without tonic)
+        4. afterwards you fill the glass with 1 part of orange juice and ice cubes
+
+Adapted case:
+MyRecipe2495
+Type of drink: soft drink / soda
+Glass: cocktail glass
+Ingredients:
+        1 part of soda water, 1 part of orange juice, 1 part of cherry heering, some kool-aid tropical
+        some peach nectar, some benedictine, some red wine, 2 oz of bourbon
+        some cinnamon, some carbonated water, 2 scoops of vanilla ice-cream
+Preparation:
+        0. there are many good cherry liqueurs you can use, but i prefere 1 part of cherry heering
+        1. add 2 scoops of vanilla ice-cream
+        2. add some carbonated water to taste
+        3. add some cinnamon to taste
+        4. add 2 oz of bourbon
+        5. add some red wine to taste
+        6. add some benedictine to taste
+        7. add some peach nectar to taste
+        8. add some kool-aid tropical to taste
+        9. add one share of the liqueur
+        10. then you add one share of 1 part of soda water
+        11. for a sour sling use tonic (most people prefer the drink without tonic)
+        12. afterwards you fill the glass with 1 part of orange juice and ice cubes
+--------------
+
+--------------
+Query:
+- Type of drink: other/unknown
+- Type of glass: irish coffee cup
+- Ingredients: chocolate ice-cream, guinness stout
+- Ingredients to exclude: turkish apple tea, lemonade, añejo rum, cherries, schweppes russchian
+- Taste of the drink: 
+- Type of alcohol: schnapps, triple sec
+
+Retrieved case:
+Bible Belt
+Type of drink: other/unknown
+Glass: highball glass
+Ingredients:
+        2 oz of sour mix, 1/2 oz of triple sec, 2 wedges of lime, 2 oz of southern comfort
+Preparation:
+        0. 2 oz of sour mix all ingredients, and pour over ice
+
+Adapted case:
+MyRecipe2311
+Type of drink: other/unknown
+Glass: highball glass
+Ingredients:
+        2 oz of sour mix, 1/2 oz of triple sec, 2 wedges of lime, 2 oz of southern comfort
+        some chocolate ice-cream, some guinness stout, some peach schnapps
+Preparation:
+        0. 2 oz of sour mix all ingredients, and pour over ice
+        1. add some peach schnapps to taste
+        2. add some guinness stout to taste
+        3. add some chocolate ice-cream to taste
+--------------
+
+--------------
+Query:
+- Type of drink: other/unknown
+- Type of glass: margarita glass
+- Ingredients: cherry liqueur
+- Ingredients to exclude: yukon jack, cherries, creme de mure, absolut kurant, apple cider
+- Taste of the drink: cream, bitter
+- Type of alcohol: wine, sweet liqueur
+
+Retrieved case:
+MyRecipe2311
+Type of drink: other/unknown
+Glass: highball glass
+Ingredients:
+        2 oz of sour mix, 1/2 oz of triple sec, 2 wedges of lime, 2 oz of southern comfort
+        some chocolate ice-cream, some guinness stout, some peach schnapps
+Preparation:
+        0. 2 oz of sour mix all ingredients, and pour over ice
+        1. add some peach schnapps to taste
+        2. add some guinness stout to taste
+        3. add some chocolate ice-cream to taste
+
+Adapted case:
+MyRecipe5853
+Type of drink: other/unknown
+Glass: highball glass
+Ingredients:
+        2 oz of sour mix, 1/2 oz of triple sec, 2 wedges of lime, 2 oz of southern comfort
+        some chocolate ice-cream, some guinness stout, some peach schnapps, some cherry liqueur
+        some red wine, some coffee hot
+Preparation:
+        0. 2 oz of sour mix all ingredients, and pour over ice
+        1. add some coffee hot to taste
+        2. add some red wine to taste
+        3. add some cherry liqueur to taste
+        4. add some peach schnapps to taste
+        5. add some guinness stout to taste
+        6. add some chocolate ice-cream to taste
+--------------
+
+--------------
+Query:
+- Type of drink: punch / party drink
+- Type of glass: highball glass
+- Ingredients: maui blue, dr. pepper
+- Ingredients to exclude: daiquiri mix
+- Taste of the drink: sour, bitter, sweet
+- Type of alcohol: vodka, triple sec, schnapps
+
+Retrieved case:
+Pink Penocha
+Type of drink: punch / party drink
+Glass: punch bowl
+Ingredients:
+        1 gal of cranberry juice, 750 ml of everclear, 1 gal of orange juice, 1750 ml of vodka
+        1750 ml of peach schnapps
+Preparation:
+        0. mix all ingredients into bowl keep iced stir frequently
+
+Adapted case:
+MyRecipe621
+Type of drink: punch / party drink
+Glass: punch bowl
+Ingredients:
+        1 gal of cranberry juice, 750 ml of everclear, 1 gal of orange juice, 1750 ml of vodka
+        1750 ml of peach schnapps, 5 oz blue of maui blue, some dr. pepper, some triple sec
+        1 quart black of tea
+Preparation:
+        0. mix all ingredients into bowl keep iced stir frequently
+        1. add 1 quart black of tea
+        2. add some triple sec to taste
+        3. add some dr. pepper to taste
+        4. add 5 oz blue of maui blue
+--------------
+
+--------------
+Query:
+- Type of drink: milk / float / shake
+- Type of glass: margarita/coupette glass
+- Ingredients: irish cream, brandy plain, kiwi liqueur
+- Ingredients to exclude: 
+- Taste of the drink: 
+- Type of alcohol: schnapps, vodka, rum, creamy liqueur
+
+Retrieved case:
+Texas Sling
+Type of drink: milk / float / shake
+Glass: wine glass
+Ingredients:
+        1/2 oz of amaretto, 1/2 oz bacardi of 151 proof rum, 1 oz of cream, 1/2 oz of irish cream
+        1/2 oz of kahlua
+Preparation:
+        0. blend with ice until smooth
+        1. serve in a tulip glass, top with whip 1 oz of cream
+
+Adapted case:
+MyRecipe1348
+Type of drink: milk / float / shake
+Glass: wine glass
+Ingredients:
+        1/2 oz of amaretto, 1/2 oz bacardi of 151 proof rum, 1 oz of cream, 1/2 oz of irish cream
+        1/2 oz of kahlua, some brandy plain, some kiwi liqueur, 1/2 oz of butterscotch schnapps
+         of vodka
+Preparation:
+        0. blend with ice until smooth
+        1. add  of vodka
+        2. add 1/2 oz of butterscotch schnapps
+        3. add some kiwi liqueur to taste
+        4. add some brandy plain to taste
+        5. serve in a tulip glass, top with whip 1 oz of cream
+--------------
+
+--------------
+Query:
+- Type of drink: coffee / tea
+- Type of glass: brandy snifter
+- Ingredients: 
+- Ingredients to exclude: kummel
+- Taste of the drink: water, sweet, sour
+- Type of alcohol: 
+
+Retrieved case:
+Kurant Tea
+Type of drink: coffee / tea
+Glass: champagne flute
+Ingredients:
+        4 cl of absolut kurant, turkish apple of turkish apple tea
+Preparation:
+        0. pour 4 cl of absolut kurant into a comfortably big tea-cup
+        1. add the not too hot(!) turkish apple of turkish apple tea and, if you like, some sugar
+        2. enjoy!
+
+Adapted case:
+MyRecipe9966
+Type of drink: coffee / tea
+Glass: champagne flute
+Ingredients:
+        4 cl of absolut kurant, turkish apple of turkish apple tea, 1/2 glass cold of water cold, some lemon
+Preparation:
+        0. pour 4 cl of absolut kurant into a comfortably big tea-cup
+        1. add some lemon to taste
+        2. add 1/2 glass cold of water cold
+        3. add the not too hot(!) turkish apple of turkish apple tea and, if you like, some sugar
+        4. enjoy!
+--------------
+
+--------------
+Query:
+- Type of drink: cocktail
+- Type of glass: hurricane glass
+- Ingredients: schweppes russchian, cream of coconut, jack daniels, apple juice, lemonade cold
+- Ingredients to exclude: mint
+- Taste of the drink: sour, bitter
+- Type of alcohol: whisky, wine
+
+Retrieved case:
+Applejack
+Type of drink: cocktail
+Glass: cocktail glass
+Ingredients:
+        1 oz of jack daniels, 2 oz of sour mix, 1/2 oz of midori melon liqueur
+Preparation:
+        0. add all ingredients into mixing glass, chill and strain into cocktail glass
+
+Adapted case:
+MyRecipe3337
+Type of drink: cocktail
+Glass: cocktail glass
+Ingredients:
+        1 oz of jack daniels, 2 oz of sour mix, 1/2 oz of midori melon liqueur, some schweppes russchian
+        1 splash of cream of coconut, some apple juice, some lemonade cold, some wine muscatel
+Preparation:
+        0. add all ingredients into mixing glass, chill and strain into cocktail glass
+        1. add some wine muscatel to taste
+        2. add some lemonade cold to taste
+        3. add some apple juice to taste
+        4. add 1 splash of cream of coconut
+        5. add some schweppes russchian to taste
+--------------
+
+
+
+Total number of queries: 10
+Total time: 0.1785297393798828

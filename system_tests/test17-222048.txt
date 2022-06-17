@@ -1,0 +1,406 @@
+--------------
+Query:
+- Type of drink: milk / float / shake
+- Type of glass: parfait glass
+- Ingredients: 
+- Ingredients to exclude: 
+- Taste of the drink: cream, water, bitter, sweet
+- Type of alcohol: vermouth
+
+Retrieved case:
+Chocolate Monkey
+Type of drink: milk / float / shake
+Glass: parfait glass
+Ingredients:
+        2 scoops of chocolate ice-cream, 1 oz of chocolate syrup, 1 piece of banana, 4 oz of chocolate milk
+        1 shot of banana liqueur, 1 of whipped-cream, 1 of cherry, 2 shots of creme de cacao
+Preparation:
+        0. blend liqeuors with 2 scoops of chocolate ice-cream, 4 oz of chocolate milk and 1 oz of chocolate syrup
+        1. pour into parfait glass, top with 1 of whipped-cream and garnish with 1 piece of banana and 1 of cherry
+
+Adapted case:
+MyRecipe775
+Type of drink: milk / float / shake
+Glass: parfait glass
+Ingredients:
+        2 scoops of chocolate ice-cream, 1 oz of chocolate syrup, 1 piece of banana, 4 oz of chocolate milk
+        1 shot of banana liqueur, 1 of whipped-cream, 1 of cherry, 2 shots of creme de cacao
+        some dry vermouth, some water, 1 shot of coffee liqueur
+Preparation:
+        0. blend liqeuors with 2 scoops of chocolate ice-cream, 4 oz of chocolate milk and 1 oz of chocolate syrup
+        1. add 1 shot of coffee liqueur
+        2. add some water to taste
+        3. add some dry vermouth to taste
+        4. pour into parfait glass, top with 1 of whipped-cream and garnish with 1 piece of banana and 1 of cherry
+--------------
+
+--------------
+Query:
+- Type of drink: ordinary drink
+- Type of glass: copper mug
+- Ingredients: 
+- Ingredients to exclude: 
+- Taste of the drink: water, sour, spicy, sweet, cream
+- Type of alcohol: triple sec
+
+Retrieved case:
+Lady Love Fizz
+Type of drink: ordinary drink
+Glass: cocktail glass
+Ingredients:
+        juice of 1/2 of lemon, 2 tsp of light cream,  of carbonated water, 1 tsp of powdered sugar
+        2 oz of gin, 1 of egg white
+Preparation:
+        0. shake all ingredients (except  of carbonated water) with ice and strain into a cocktail glass over two ice cubes
+        1. fill with  of carbonated water, stir, and serve
+
+Adapted case:
+MyRecipe4478
+Type of drink: ordinary drink
+Glass: cocktail glass
+Ingredients:
+        juice of 1/2 of lemon, 2 tsp of light cream,  of carbonated water, 1 tsp of powdered sugar
+        2 oz of gin, 1 of egg white, 1/2 oz of triple sec, some cloves
+Preparation:
+        0. shake all ingredients (except  of carbonated water) with ice and strain into a cocktail glass over two ice cubes
+        1. add some cloves to taste
+        2. add 1/2 oz of triple sec
+        3. fill with  of carbonated water, stir, and serve
+--------------
+
+--------------
+Query:
+- Type of drink: ordinary drink
+- Type of glass: cordial glass
+- Ingredients: 
+- Ingredients to exclude: mint, creme de mure, lime, creme de cassis, allspice
+- Taste of the drink: cream, water
+- Type of alcohol: 
+
+Retrieved case:
+Lady Love Fizz
+Type of drink: ordinary drink
+Glass: cocktail glass
+Ingredients:
+        juice of 1/2 of lemon, 2 tsp of light cream,  of carbonated water, 1 tsp of powdered sugar
+        2 oz of gin, 1 of egg white
+Preparation:
+        0. shake all ingredients (except  of carbonated water) with ice and strain into a cocktail glass over two ice cubes
+        1. fill with  of carbonated water, stir, and serve
+
+Adapted case:
+MyRecipe4064
+Type of drink: ordinary drink
+Glass: cocktail glass
+Ingredients:
+        juice of 1/2 of lemon, 2 tsp of light cream,  of carbonated water, 1 tsp of powdered sugar
+        2 oz of gin, 1 of egg white
+Preparation:
+        0. shake all ingredients (except  of carbonated water) with ice and strain into a cocktail glass over two ice cubes
+        1. fill with  of carbonated water, stir, and serve
+--------------
+
+--------------
+Query:
+- Type of drink: punch / party drink
+- Type of glass: beer mug
+- Ingredients: worcestershire sauce, oreo cookie, fresh lime juice
+- Ingredients to exclude: cloves, vanilla ice-cream, water cold, coconut milk, lemon vodka
+- Taste of the drink: water, sweet, bitter
+- Type of alcohol: rum, sambuca, sweet liqueur, wine, triple sec
+
+Retrieved case:
+Artillery Punch
+Type of drink: punch / party drink
+Glass: punch bowl
+Ingredients:
+        1/2 pint of lemon juice, 1 quart black of tea, 1 pint of orange juice, 1 1/2 oz of benedictine
+        1 quart of rye whiskey, 1 pint jamaican of rum jamaican, 1/2 pint of brandy, 1 fifth of red wine
+Preparation:
+        0. combine all the ingredients in a large punch bowl with a block of ice
+        1. if found too dry, sugar syrup may be added
+        2. decorate with twists of 1/2 pint of lemon juice peel
+
+Adapted case:
+MyRecipe9389
+Type of drink: punch / party drink
+Glass: punch bowl
+Ingredients:
+        1/2 pint of lemon juice, 1 quart black of tea, 1 pint of orange juice, 1 1/2 oz of benedictine
+        1 quart of rye whiskey, 1 pint jamaican of rum jamaican, 1/2 pint of brandy, 1 fifth of red wine
+        some worcestershire sauce, some oreo cookie, some fresh lime juice, some sambuca
+        1/2 part of triple sec, some tonic water
+Preparation:
+        0. combine all the ingredients in a large punch bowl with a block of ice
+        1. add some tonic water to taste
+        2. add 1/2 part of triple sec
+        3. add some sambuca to taste
+        4. add some fresh lime juice to taste
+        5. add some oreo cookie to taste
+        6. add some worcestershire sauce to taste
+        7. if found too dry, sugar syrup may be added
+        8. decorate with twists of 1/2 pint of lemon juice peel
+--------------
+
+--------------
+Query:
+- Type of drink: ordinary drink
+- Type of glass: hurricane glass
+- Ingredients: cocoa powder, coffee hazlenut, sirup of roses, orange juice
+- Ingredients to exclude: peach bitters, coffee hot, pisco
+- Taste of the drink: 
+- Type of alcohol: wine, schnapps, rum
+
+Retrieved case:
+Orange Push-up
+Type of drink: ordinary drink
+Glass: hurricane glass
+Ingredients:
+        4 oz of orange juice, 1.5 oz of spiced rum, 0.5 oz of grenadine, 1 splash of sour mix
+Preparation:
+        0. combine liquors in a blender
+        1. add a half scoop of ice and blend
+        2. garnish with an 4 oz of orange juice and cherry flag
+        3. so good it will melt in your mouth!!!
+
+Adapted case:
+MyRecipe5568
+Type of drink: ordinary drink
+Glass: hurricane glass
+Ingredients:
+        4 oz of orange juice, 1.5 oz of spiced rum, 0.5 oz of grenadine, 1 splash of sour mix
+        some cocoa powder, some coffee hazlenut, some sirup of roses, some red wine
+        some maui blue
+Preparation:
+        0. combine liquors in a blender
+        1. add some maui blue to taste
+        2. add some red wine to taste
+        3. add some sirup of roses to taste
+        4. add some coffee hazlenut to taste
+        5. add some cocoa powder to taste
+        6. add a half scoop of ice and blend
+        7. garnish with an 4 oz of orange juice and cherry flag
+        8. so good it will melt in your mouth!!!
+--------------
+
+--------------
+Query:
+- Type of drink: coffee / tea
+- Type of glass: mason jar
+- Ingredients: cointreau, tequila
+- Ingredients to exclude: creme de cacao white, cream double
+- Taste of the drink: cream, sour
+- Type of alcohol: wine, vodka
+
+Retrieved case:
+Danbooka
+Type of drink: coffee / tea
+Glass: coffee mug
+Ingredients:
+        1 part of everclear, 3 parts of coffee
+Preparation:
+        0. pour it in and mix it
+
+Adapted case:
+MyRecipe3082
+Type of drink: coffee / tea
+Glass: coffee mug
+Ingredients:
+        1 part of everclear, 3 parts of coffee, some cointreau, some tequila
+        some red wine, 1/2 oz of milk, some lemon juice
+Preparation:
+        0. pour it in and mix it
+        1. add some lemon juice to taste
+        2. add 1/2 oz of milk
+        3. add some red wine to taste
+        4. add some tequila to taste
+        5. add some cointreau to taste
+--------------
+
+--------------
+Query:
+- Type of drink: punch / party drink
+- Type of glass: brandy snifter
+- Ingredients: vanilla ice-cream, beer
+- Ingredients to exclude: yukon jack, orange curacao, creme de cacao
+- Taste of the drink: water, bitter, spicy, cream, sour
+- Type of alcohol: wine, rum, schnapps, whisky
+
+Retrieved case:
+Egg Nog #4
+Type of drink: punch / party drink
+Glass: punch bowl
+Ingredients:
+        ground of nutmeg, 1/4 cup of sugar, 1/4 cup of sugar, 6 of egg yolk
+        2 cups of milk, 1/2 cup of light rum, 1 cup of whipped-cream, 1/2 cup of bourbon
+        6 of egg white, 1/4 tsp of salt, 1 tsp of vanilla extract
+Preparation:
+        0. in a small mixer bowl beat 6 of egg white yolks till blended
+        1. gradually add 1/4 cup of sugar, beating at high speed till thick and lemon colored
+        2. stir in 2 cups of milk, stir in 1/2 cup of light rum, 1/2 cup of bourbon, 1 tsp of vanilla extract, and 1/4 tsp of salt
+        3. chill thoroughly
+        4. whip cream
+        5. wash beaters well
+        6. in a large mixer bowl beat 6 of egg white whites till soft peaks form
+        7. gradually add remaining 1/4 cup of sugar, beating to stiff peaks
+        8. fold 6 of egg yolk mixture and 1 cup of whipped-cream into 6 of egg white whites
+        9. serve immediately
+        10. sprinkle ground of nutmeg over each serving
+        11. serve in a punch bowl or another big bowl
+        12. note: for a nonalcoholic eggnog, prepare eggnog as above, except omit the 1/2 cup of bourbon and 1/2 cup of light rum and increase the 2 cups of milk to 3 cups
+
+Adapted case:
+MyRecipe8779
+Type of drink: punch / party drink
+Glass: punch bowl
+Ingredients:
+        ground of nutmeg, 1/4 cup of sugar, 1/4 cup of sugar, 6 of egg yolk
+        2 cups of milk, 1/2 cup of light rum, 1 cup of whipped-cream, 1/2 cup of bourbon
+        6 of egg white, 1/4 tsp of salt, 1 tsp of vanilla extract, some vanilla ice-cream
+        some beer, 1 l of red wine, some goldschlager, 125 ml of water
+        some iced tea, 1 tablespoon of lemon peel
+Preparation:
+        0. in a small mixer bowl beat 6 of egg white yolks till blended
+        1. add 1 tablespoon of lemon peel
+        2. add some iced tea to taste
+        3. add 125 ml of water
+        4. add some goldschlager to taste
+        5. add 1 l of red wine
+        6. add some beer to taste
+        7. add some vanilla ice-cream to taste
+        8. gradually add 1/4 cup of sugar, beating at high speed till thick and lemon colored
+        9. stir in 2 cups of milk, stir in 1/2 cup of light rum, 1/2 cup of bourbon, 1 tsp of vanilla extract, and 1/4 tsp of salt
+        10. chill thoroughly
+        11. whip cream
+        12. wash beaters well
+        13. in a large mixer bowl beat 6 of egg white whites till soft peaks form
+        14. gradually add remaining 1/4 cup of sugar, beating to stiff peaks
+        15. fold 6 of egg yolk mixture and 1 cup of whipped-cream into 6 of egg white whites
+        16. serve immediately
+        17. sprinkle ground of nutmeg over each serving
+        18. serve in a punch bowl or another big bowl
+        19. note: for a nonalcoholic eggnog, prepare eggnog as above, except omit the 1/2 cup of bourbon and 1/2 cup of light rum and increase the 2 cups of milk to 3 cups
+--------------
+
+--------------
+Query:
+- Type of drink: other/unknown
+- Type of glass: copper mug
+- Ingredients: cranberry juice, spiced rum
+- Ingredients to exclude: 
+- Taste of the drink: sour, salty, bitter, spicy, water
+- Type of alcohol: schnapps, vodka, whisky, vermouth
+
+Retrieved case:
+Absolut limousine
+Type of drink: other/unknown
+Glass: collins glass
+Ingredients:
+        1/3 of lime juice, top it up with of tonic water, 2/3 of absolut citron
+Preparation:
+        0. fill 2/3 of absolut citron into a glass
+        1. add 1/3 of lime juice
+        2. add ice and lime wedges
+
+Adapted case:
+MyRecipe5306
+Type of drink: other/unknown
+Glass: collins glass
+Ingredients:
+        1/3 of lime juice, top it up with of tonic water, 2/3 of absolut citron, some cranberry juice
+        some spiced rum, some butterscotch schnapps, 2 oz of southern comfort, some sweet vermouth
+        some tomato juice, some tonic water schweppes, some nutmeg grated
+Preparation:
+        0. fill 2/3 of absolut citron into a glass
+        1. add some nutmeg grated to taste
+        2. add some tonic water schweppes to taste
+        3. add some tomato juice to taste
+        4. add some sweet vermouth to taste
+        5. add 2 oz of southern comfort
+        6. add some butterscotch schnapps to taste
+        7. add some spiced rum to taste
+        8. add some cranberry juice to taste
+        9. add 1/3 of lime juice
+        10. add ice and lime wedges
+--------------
+
+--------------
+Query:
+- Type of drink: other/unknown
+- Type of glass: irish coffee cup
+- Ingredients: lemon vodka, green ginger wine, nutmeg
+- Ingredients to exclude: 
+- Taste of the drink: sweet, sour, egg
+- Type of alcohol: creamy liqueur
+
+Retrieved case:
+Vodka Fizz
+Type of drink: other/unknown
+Glass: white wine glass
+Ingredients:
+        2 oz of vodka,  of nutmeg, 2 oz of half-and-half, 2 oz of limeade
+Preparation:
+        0. blend all ingredients, save  of nutmeg
+        1. pour into large white wine glass and sprinkle  of nutmeg on top
+
+Adapted case:
+MyRecipe8445
+Type of drink: other/unknown
+Glass: white wine glass
+Ingredients:
+        2 oz of vodka,  of nutmeg, 2 oz of half-and-half, 2 oz of limeade
+        some lemon vodka, some green ginger wine, some kahlua, 1 part of orange juice
+        some egg white
+Preparation:
+        0. blend all ingredients, save  of nutmeg
+        1. add some egg white to taste
+        2. add 1 part of orange juice
+        3. add some kahlua to taste
+        4. add some green ginger wine to taste
+        5. add some lemon vodka to taste
+        6. pour into large white wine glass and sprinkle  of nutmeg on top
+--------------
+
+--------------
+Query:
+- Type of drink: shot
+- Type of glass: pint glass
+- Ingredients: 
+- Ingredients to exclude: surge, banana liqueur
+- Taste of the drink: water, bitter, cream, egg, sour
+- Type of alcohol: vermouth, schnapps, vodka, sweet liqueur, triple sec
+
+Retrieved case:
+Kool-Aid Shot
+Type of drink: shot
+Glass: old-fashioned glass
+Ingredients:
+         of cranberry juice, 1 shot of vodka, 1 shot of triple sec, 1 shot of sloe gin
+        1 shot of amaretto
+Preparation:
+        0. pour into a large glass with ice and stir
+        1. add a little  of cranberry juice to taste
+
+Adapted case:
+MyRecipe907
+Type of drink: shot
+Glass: old-fashioned glass
+Ingredients:
+         of cranberry juice, 1 shot of vodka, 1 shot of triple sec, 1 shot of sloe gin
+        1 shot of amaretto, some dry vermouth, 1/2 oz of peachtree schnapps, some water
+        some coffee, 1 oz of milk, some egg yolk
+Preparation:
+        0. pour into a large glass with ice and stir
+        1. add some egg yolk to taste
+        2. add 1 oz of milk
+        3. add some coffee to taste
+        4. add some water to taste
+        5. add 1/2 oz of peachtree schnapps
+        6. add some dry vermouth to taste
+        7. add a little  of cranberry juice to taste
+--------------
+
+
+
+Total number of queries: 10
+Total time: 0.16602802276611328
