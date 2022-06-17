@@ -8,10 +8,9 @@ import numpy as np
 from lxml.objectify import SubElement
 
 from definitions import CASE_LIBRARY_FILE as CASE_LIBRARY_PATH
-from definitions import USER_SCORE_THRESHOLD
+from src.cbr.case_library import CaseLibrary, ConstraintsBuilder
 from src.entity.cocktail import Cocktail
 from src.entity.query import Query
-from src.cbr.case_library import CaseLibrary, ConstraintsBuilder
 from src.utils.helper import count_ingr_ids, replace_ingredient
 
 
@@ -25,7 +24,7 @@ class CBR:
         Case-Based Reasoning system.
         """
         self.UTILITY_THRESHOLD = 0.8
-        self.USER_SCORE_THRESHOLD = USER_SCORE_THRESHOLD
+        self.EVALUATION_THRESHOLD = 0.6
         self.case_library = CaseLibrary(CASE_LIBRARY_PATH)
         self.alc_types = set()
         self.basic_tastes = set()
@@ -403,7 +402,7 @@ class CBR:
                 self.adapt_alcohols_and_tastes(basic_taste=basic_taste)
 
     def evaluation(self, user_score):
-        if user_score > self.USER_SCORE_THRESHOLD:
+        if user_score > self.EVALUATION_THRESHOLD:
             self.adapted_recipe.evaluation = "success"
             self.logger.info("Evaluation: success")
             self.retrieved_recipe.UaS += 1

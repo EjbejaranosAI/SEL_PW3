@@ -276,16 +276,17 @@ class ConstraintsBuilder:
     include_categories : list of str
         The list of drink categories to include in the search.
 
-    exclude_category : list of str
+    exclude_categories : list of str
         The list of drink categories to exclude in the search.
 
     include_glasses : list of str
         The list of glass types to include in the search.
 
-    exclude_glass : list of str
+    exclude_glasses : list of str
         The list of glass types to exclude in the search.
 
     ingredient_constraints : dict of dict of list of str
+        The constraints applied to the ingredients.
 
     Examples
     --------
@@ -309,8 +310,8 @@ class ConstraintsBuilder:
             self.include_glasses = [f"@type='{include_glass}'"]
         else:
             self.include_glasses = []
-        self.exclude_category = []
-        self.exclude_glass = []
+        self.exclude_categories = []
+        self.exclude_glasses = []
         self.ingredient_constraints = dict()
 
     def filter_category(self, include: Union[str, List[str], None] = None, exclude: Union[str, List[str], None] = None):
@@ -346,7 +347,7 @@ class ConstraintsBuilder:
             self.include_categories = _include_to_list(self.include_categories, include)
 
         if exclude is not None and exclude:
-            self.exclude_category = _include_to_list(self.exclude_category, exclude, is_exclusion=True)
+            self.exclude_categories = _include_to_list(self.exclude_categories, exclude, is_exclusion=True)
 
         return self
 
@@ -383,7 +384,7 @@ class ConstraintsBuilder:
             self.include_glasses = _include_to_list(self.include_glasses, include)
 
         if exclude is not None and exclude:
-            self.exclude_glass = _include_to_list(self.exclude_glass, exclude, is_exclusion=True)
+            self.exclude_glasses = _include_to_list(self.exclude_glasses, exclude, is_exclusion=True)
 
         return self
 
@@ -544,15 +545,15 @@ class ConstraintsBuilder:
         if self.include_categories:
             cat_constraints = str.join(" ", self.include_categories)
             constraints += f"[{cat_constraints}]"
-        if self.exclude_category:
-            cat_constraints = str.join(" ", self.exclude_category)
+        if self.exclude_categories:
+            cat_constraints = str.join(" ", self.exclude_categories)
             constraints += f"[{cat_constraints}]"
         constraints += "/glass"
         if self.include_glasses:
             glass_constraint = str.join(" ", self.include_glasses)
             constraints += f"[{glass_constraint}]"
-        if self.exclude_glass:
-            glass_constraint = str.join(" ", self.exclude_glass)
+        if self.exclude_glasses:
+            glass_constraint = str.join(" ", self.exclude_glasses)
             constraints += f"[{glass_constraint}]"
         constraints += "//cocktail"
         if self.ingredient_constraints:

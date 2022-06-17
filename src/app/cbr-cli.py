@@ -1,10 +1,16 @@
+import logging
+import os
 import random
 import re
-import logging
-from entity.query import Query
-from cbr.case_library import CaseLibrary
-from cbr.cbr import CBR
+import sys
+from pathlib import Path
+
+sys.path.append(os.fspath(Path(__file__).resolve().parent.parent.parent))
+
 from definitions import CASE_LIBRARY_FILE, LOG_FILE
+from src.cbr.case_library import CaseLibrary
+from src.cbr.cbr import CBR
+from src.entity.query import Query
 
 case_library = CaseLibrary(CASE_LIBRARY_FILE)
 query = Query()
@@ -38,30 +44,30 @@ print("- Welcome to CBR Cocktails.")
 print('- Please, enter the name of the recipe and your preferences. Write "suggest" to see examples.\n')
 
 messages = [
-            "- Type of drink (e.g.: beer, ordinary drink): ",
-            "- Type of glass (e.g.: old-fashioned glass, pint glass): ",
-            "- Ingredients (e.g: cherry, rum): ",
-            "- Ingredients to exclude (e.g: banana, vodka): ",
-            "- Taste of the drink (e.g.: sour, salty): ",
-            "- Type of alcohol (e.g.: gin, triple sec): "
-             ]
+    "- Type of drink (e.g.: beer, ordinary drink): ",
+    "- Type of glass (e.g.: old-fashioned glass, pint glass): ",
+    "- Ingredients (e.g: cherry, rum): ",
+    "- Ingredients to exclude (e.g: banana, vodka): ",
+    "- Taste of the drink (e.g.: sour, salty): ",
+    "- Type of alcohol (e.g.: gin, triple sec): ",
+]
 actions = [
-            query.set_category,
-            query.set_glass,
-            query.set_ingredients,
-            query.set_exc_ingredients,
-            query.set_basic_tastes,
-            query.set_alc_types
-            ]
+    query.set_category,
+    query.set_glass,
+    query.set_ingredients,
+    query.set_exc_ingredients,
+    query.set_basic_tastes,
+    query.set_alc_types,
+]
 
 suggestion_pools = [
-                case_library.drink_types,
-                case_library.glass_types,
-                case_library.ingredients,
-                case_library.ingredients,
-                case_library.taste_types,
-                case_library.alc_types
-                ]
+    case_library.drink_types,
+    case_library.glass_types,
+    case_library.ingredients,
+    case_library.ingredients,
+    case_library.taste_types,
+    case_library.alc_types,
+]
 
 logging.basicConfig(
     filename=LOG_FILE,
@@ -103,7 +109,3 @@ while True:
 
 print("\n- Evaluation sent.")
 print("- Done.")
-
-
-
-

@@ -64,6 +64,8 @@ class Cocktail:
     utility: float = 0.0
     derivation: str = ""
     evaluation: str = ""
+    UaS: int = 0
+    UaF: int = 0
     success_count: int = 0
     failure_count: int = 0
 
@@ -108,6 +110,8 @@ Ingredients:
         self.utility = float(element.utility)
         self.derivation = element.derivation
         self.evaluation = element.evaluation
+        UaS = element.UaS
+        UaF = element.UaF
         self.success_count = element.success_count
         self.failure_count = element.failure_count
 
