@@ -148,7 +148,7 @@ class CaseLibrary:
         self.garnish_types = set()
         self.ingredients = set()
         self.ingredients_onto = {"alcoholic": dict(), "non-alcoholic": dict()}
-        self._initialize_type_sets()
+        self.initialize_type_sets()
 
     def findall(self, constraints):
         """
@@ -210,7 +210,7 @@ class CaseLibrary:
         parent.remove(case)
         self.ET.write(self.case_library_path, pretty_print=True, encoding="utf-8")
 
-    def _initialize_type_sets(self):
+    def initialize_type_sets(self):
         self.drink_types = sorted(set(self.case_library.xpath("./category/@type")))
         self.glass_types = sorted(set(self.case_library.xpath(".//glass/@type")))
         for ingredient in self.case_library.xpath(".//ingredient"):
