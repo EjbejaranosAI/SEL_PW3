@@ -15,7 +15,7 @@ from definitions import ROOT_PATH
 output_path = os.path.join(ROOT_PATH, "system_tests")
 os.makedirs(output_path, exist_ok=True)
 
-N_QUERIES = 100
+N_QUERIES = 10
 MAX_N_VALUES = 5
 
 cbr = CBR()
