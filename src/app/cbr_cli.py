@@ -1,6 +1,13 @@
 import random
 import re
 import logging
+import os
+import sys
+from pathlib import Path
+
+sys.path.append(os.fspath(Path(__file__).resolve().parent.parent))
+sys.path.append(os.fspath(Path(__file__).resolve().parent.parent.parent))
+
 from entity.query import Query
 from cbr.case_library import CaseLibrary
 from cbr.cbr import CBR
