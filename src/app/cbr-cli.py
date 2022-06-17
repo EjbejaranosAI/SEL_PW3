@@ -34,16 +34,16 @@ def score_is_valid(score):
         return False
 
 
-print(">> Welcome to CBR Cocktails.")
-print('>> Please, enter the name of the recipe and your preferences. Write "suggest" to see examples.\n')
+print("- Welcome to CBR Cocktails.")
+print('- Please, enter the name of the recipe and your preferences. Write "suggest" to see examples.\n')
 
 messages = [
-            ">> Type of drink (e.g.: beer, ordinary drink): ",
-            ">> Type of glass (e.g.: old-fashioned glass, pint glass): ",
-            ">> Ingredients (e.g: cherry, rum): ",
-            ">> Ingredients to exclude (e.g: banana, vodka): ",
-            ">> Taste of the drink (e.g.: sour, salty): ",
-            ">> Type of alcohol (e.g.: gin, triple sec): "
+            "- Type of drink (e.g.: beer, ordinary drink): ",
+            "- Type of glass (e.g.: old-fashioned glass, pint glass): ",
+            "- Ingredients (e.g: cherry, rum): ",
+            "- Ingredients to exclude (e.g: banana, vodka): ",
+            "- Taste of the drink (e.g.: sour, salty): ",
+            "- Type of alcohol (e.g.: gin, triple sec): "
              ]
 actions = [
             query.set_category,
@@ -69,7 +69,7 @@ logging.basicConfig(
     filemode="w",
     level=logging.INFO,
 )
-recipe_name = input(">> Name of the recipe: ")
+recipe_name = input("- Name of the recipe: ")
 for message, action, suggestion_pool in zip(messages, actions, suggestion_pools):
     print("")
     while True:
@@ -91,18 +91,18 @@ for message, action, suggestion_pool in zip(messages, actions, suggestion_pools)
                 break
 
 retrieved_case, adapted_case = cbr.run_query(query, recipe_name)
-print("\n>> This is the recipe:")
+print("\n- Here is the recipe:")
 print(adapted_case)
 
 while True:
-    score = input(">> Evaluate this recipe with a score from 1 to 10 (e.g.: 7.5): ")
+    score = input("- Evaluate this recipe with a score from 1 to 10 (e.g.: 7.5): ")
     if score_is_valid(score):
         score = float(score)
         cbr.evaluation(score)
         break
 
-print("\n>> Evaluation sent.")
-print("\n>> Done.")
+print("\n- Evaluation sent.")
+print("- Done.")
 
 
 
