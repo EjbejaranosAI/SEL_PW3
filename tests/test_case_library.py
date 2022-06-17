@@ -1,6 +1,6 @@
 import pytest
 
-from src.cbr.case_library import CaseLibrary, ConstraintsBuilder
+from src.cbr.case_library import ConstraintsBuilder
 
 
 @pytest.fixture
@@ -17,7 +17,7 @@ def test_filter_category(builder):
         "or @type!='cat4'",
         "or @type!='cat7'",
         "or @type!='cat8'",
-    ] == builder.exclude_category
+    ] == builder.exclude_categories
 
 
 def test_filter_glass(builder):
@@ -25,7 +25,7 @@ def test_filter_glass(builder):
     assert ["@type='shot'", "or @type='cup'"] == builder.include_glasses and [
         "@type!='martini glass'",
         "or @type!='hurricane glass'",
-    ] == builder.exclude_glass
+    ] == builder.exclude_glasses
 
 
 # TODO

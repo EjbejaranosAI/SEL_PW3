@@ -17,5 +17,3 @@ LOG_FILE = os.path.join(LOGS_PATH, "logfile.log")
 CBR_CLI_FILE = os.path.join(ROOT_PATH, "src", "app", "cbr_cli.py")
 
 USER_MANUAL_FILE = os.path.join(ROOT_PATH, "documentation", "User-Manual.pdf")
-
-USER_SCORE_THRESHOLD = 0.65
