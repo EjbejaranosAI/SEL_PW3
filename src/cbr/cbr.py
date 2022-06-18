@@ -7,7 +7,7 @@ from typing import Tuple
 import numpy as np
 from lxml.objectify import SubElement
 
-from definitions import CASE_LIBRARY_FILE as CASE_LIBRARY_PATH
+from definitions import CASE_LIBRARY_FILE as CASE_LIBRARY_PATH, LOG_FILE
 from src.cbr.case_library import CaseLibrary, ConstraintsBuilder
 from src.entity.cocktail import Cocktail
 from src.entity.query import Query
@@ -58,7 +58,14 @@ class CBR:
             "exc_basic_taste": -1.0,
         }
         self.logger = logging.getLogger("CBR")
-        self.logger.setLevel(logging.INFO)
+        self.logger.setLevel(logging.DEBUG)
+
+        logging.basicConfig(
+            filename=LOG_FILE,
+            format="%(asctime)s [%(name)s] - %(levelname)s: %(message)s",
+            filemode="w",
+            level=logging.INFO,
+        )
 
         if seed is not None:
             random.seed(seed)
@@ -91,11 +98,11 @@ class CBR:
 
     def _search_ingredient(self, ingr_text=None, basic_taste=None, alc_type=None):
         if ingr_text:
-            return random.choice(self.case_library.findall(".//ingredient[.='{}']".format(ingr_text)))
+            return copy.deepcopy(random.choice(self.case_library.findall(".//ingredient[.='{}']".format(ingr_text))))
         if basic_taste:
-            return random.choice(self.case_library.findall(".//ingredient[@basic_taste='{}']".format(basic_taste)))
+            return copy.deepcopy(random.choice(self.case_library.findall(".//ingredient[@basic_taste='{}']".format(basic_taste))))
         if alc_type:
-            return random.choice(self.case_library.findall(".//ingredient[@alc_type='{}']".format(alc_type)))
+            return copy.deepcopy(random.choice(self.case_library.findall(".//ingredient[@alc_type='{}']".format(alc_type))))
         else:
             return
 
@@ -171,7 +178,9 @@ class CBR:
         ingr.attrib["id"] = f"ingr{len(self.adapted_recipe.ingredients.ingredient[:])}"
         measure = re.sub(r"\sof\b", "", measure)
         ingr.attrib["measure"] = measure
+        self.logger.debug("before appending {}: {}".format(ingr, len(self.case_library.ET.getroot().find(".//cocktail[name='Apple Grande']").ingredients.ingredient[:])))
         self.adapted_recipe.ingredients.append(ingr)
+        self.logger.debug("after appending {}: {}".format(ingr, len(self.case_library.ET.getroot().find(".//cocktail[name='Apple Grande']").ingredients.ingredient[:])))
         step = SubElement(self.adapted_recipe.preparation, "step")
         if measure == "some":
             step._setText(f"add {ingr.attrib['id']} to taste")

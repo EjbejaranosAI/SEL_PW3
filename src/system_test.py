@@ -82,6 +82,7 @@ def build_query():
 test = f"test{time.strftime('%d-%H%M%S')}.txt"
 total_time = 0
 for i in range(N_QUERIES):
+    print(i)
     build_query()
     name = f"MyRecipe{random.randint(0, 10000)}"
     start = time.time()
