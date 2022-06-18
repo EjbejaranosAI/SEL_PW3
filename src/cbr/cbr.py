@@ -91,6 +91,7 @@ class CBR:
         """
         self.retrieve(query)
         self.adapt(new_name)
+        self.logger.info(f"Similarity of the adapted case: {self._similarity_cocktail(self.adapted_recipe)}")
         retrieved_case = Cocktail().from_element(self.retrieved_recipe)
         adapted_case = Cocktail().from_element(self.adapted_recipe)
         return retrieved_case, adapted_case
@@ -288,7 +289,9 @@ class CBR:
 
         sorted_sim = np.flip(np.argsort(sim_list))
         self.sim_recipes = [list_recipes[i] for i in sorted_sim[:4]]
-        self.logger.info(f"Retrieve: Similarity of the next 4 most similar cases is {np.round(sim_list, 4)[sorted_sim[:4]]}")
+        self.logger.info(
+            f"Retrieve: Similarity of the next 4 most similar cases is {np.round(sim_list, 4)[sorted_sim[:4]]}"
+        )
         self.adapted_recipe = copy.deepcopy(self.retrieved_recipe)
         self.update_ingr_list()
         self.query.set_ingredients([self._search_ingredient(ingr) for ingr in self.query.get_ingredients()])
