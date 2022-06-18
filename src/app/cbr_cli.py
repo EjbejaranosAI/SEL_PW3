@@ -60,12 +60,12 @@ actions = [
 ]
 
 suggestion_pools = [
-    cbr.case_library.drink_types,
-    cbr.case_library.glass_types,
-    cbr.case_library.alc_types,
-    cbr.case_library.taste_types,
-    cbr.case_library.ingredients,
-    cbr.case_library.ingredients,
+    list(map(str, cbr.case_library.drink_types)),
+    list(map(str, cbr.case_library.glass_types)),
+    list(map(str, cbr.case_library.alc_types)),
+    list(map(str, cbr.case_library.taste_types)),
+    list(map(str, cbr.case_library.ingredients)),
+    list(map(str, cbr.case_library.ingredients)),
 ]
 
 logging.basicConfig(
@@ -74,6 +74,8 @@ logging.basicConfig(
     filemode="w",
     level=logging.INFO,
 )
+
+#TODO: "please, enter a name" if name = ""
 recipe_name = input("- Name of the recipe: ")
 for message, action, suggestion_pool in zip(messages, actions, suggestion_pools):
     print("")
@@ -88,7 +90,7 @@ for message, action, suggestion_pool in zip(messages, actions, suggestion_pools)
         elif not x:
             break
         elif x == ["suggest"]:
-            print(f"-- Suggestions: {', '.join(random.sample(suggestion_pool, 5))}")
+            print(f"-- Suggestions: {', '.join(random.sample(suggestion_pool, min(5, len(suggestion_pool))))}")
 
         else:
             if all_inputs_exist(x, suggestion_pool):
