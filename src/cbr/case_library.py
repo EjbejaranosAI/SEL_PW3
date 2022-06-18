@@ -1,5 +1,4 @@
 import uuid
-from varname import nameof
 from typing import Dict, List, Union
 
 from lxml import objectify
@@ -212,32 +211,32 @@ class CaseLibrary:
             The case to remove from the case library
         """
         category = case.category
-        self._decrease_counter(category, self.drink_types)
+        self._decrease_counter(category, self.drink_types, "drink_types")
         glass = case.glass
-        self._decrease_counter(glass, self.glass_types)
+        self._decrease_counter(glass, self.glass_types, "glass_types")
 
         for ingredient in case.ingredients.iterchildren():
             name = ingredient.text
-            self._decrease_counter(name, self.ingredients)
+            self._decrease_counter(name, self.ingredients, "ingredients")
             alc_type = ingredient.attrib["alc_type"]
             if alc_type:
-                self._decrease_counter(alc_type, self.alc_types)
+                self._decrease_counter(alc_type, self.alc_types, "alc_types")
             basic_taste = ingredient.attrib["basic_taste"]
             if basic_taste:
-                self._decrease_counter(basic_taste, self.taste_types)
+                self._decrease_counter(basic_taste, self.taste_types, "taste_types")
             garnish_type = ingredient.attrib["garnish_type"]
             if garnish_type:
-                self._decrease_counter(garnish_type, self.garnish_types)
+                self._decrease_counter(garnish_type, self.garnish_types, "garnish_types")
 
         parent = case.getparent()
         parent.remove(case)
         self.ET.write(self.case_library_path, pretty_print=True, encoding="utf-8")
 
-    def _decrease_counter(self, key, value_list):
-        self.value_counter[nameof(value_list)][key] -= 1
-        if self.value_counter[nameof(value_list)][key] == 0:
+    def _decrease_counter(self, key, value_list, types):
+        self.value_counter[types][key] -= 1
+        if self.value_counter[types][key] == 0:
             value_list.remove(key)
-            self.value_counter[nameof(value_list)].pop(key)
+            self.value_counter[types].pop(key)
 
     def initialize_type_sets(self):
         drink_types = set()
