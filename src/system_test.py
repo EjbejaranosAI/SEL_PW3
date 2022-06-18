@@ -15,6 +15,7 @@ from entity.query import Query
 output_path = os.path.join(ROOT_PATH, "system_tests")
 os.makedirs(output_path, exist_ok=True)
 
+random.seed(100)
 N_QUERIES = 200
 MAX_N_VALUES = 5
 
@@ -81,6 +82,7 @@ def build_query():
 test = f"test{time.strftime('%d-%H%M%S')}.txt"
 total_time = 0
 for _ in range(N_QUERIES):
+    print(_)
     build_query()
     name = f"MyRecipe{random.randint(0, 10000)}"
     start = time.time()

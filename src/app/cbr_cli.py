@@ -110,7 +110,7 @@ while True:
     score = input("- Evaluate this recipe with a score from 1 to 10 (e.g.: 7.5): ")
     if score_is_valid(score):
         score = float(score)
-        cbr.evaluate(score)
+        cbr.evaluate(score/10)
         break
 
 print("\n- Evaluation sent.")
