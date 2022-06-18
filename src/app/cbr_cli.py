@@ -95,7 +95,8 @@ for message, action, suggestion_pool in zip(messages, actions, suggestion_pools)
             break
         elif x == ["suggest"]:
             print(f"-- Suggestions: {', '.join(random.sample(suggestion_pool, min(5, len(suggestion_pool))))}")
-
+        elif action == query.set_exc_ingredients and any(map(lambda i: i in x, query.get_ingredients())):
+            print("-- Error. Ingredients to exclude can not be present in the ingredients to include list.")
         else:
             if all_inputs_exist(x, suggestion_pool):
                 action(x)
@@ -109,7 +110,7 @@ while True:
     score = input("- Evaluate this recipe with a score from 1 to 10 (e.g.: 7.5): ")
     if score_is_valid(score):
         score = float(score)
-        cbr.evaluation(score)
+        cbr.evaluate(score)
         break
 
 print("\n- Evaluation sent.")
