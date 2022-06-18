@@ -50,15 +50,18 @@ def fix_ingr_lists():
     """
     match = map(lambda i: i in query.get_exc_ingredients(), query.get_ingredients())
     if any(match):
-        idxs = [i for i, val in enumerate(list(match)) if val]
+        idxs = [i for i, val in enumerate(match) if val]
         exc_ingredients = query.get_exc_ingredients()
         fail_idxs = []
         for i in idxs:
-            for _ in range(10):
+            j = 0
+            while True:
                 exc_ingredients[i] = random.choice(cbr.case_library.ingredients)
                 if exc_ingredients[i] not in query.get_ingredients():
                     break
-            fail_idxs.append(i)
+                if j > 10:
+                    fail_idxs.append(i)
+                    break
         for i in fail_idxs:
             del exc_ingredients[i]
         query.set_exc_ingredients(exc_ingredients)
@@ -79,8 +82,6 @@ test = f"test{time.strftime('%d-%H%M%S')}.txt"
 total_time = 0
 for _ in range(N_QUERIES):
     build_query()
-    check = any(map(lambda i: i in query.get_exc_ingredients(), query.get_ingredients()))
-    print(check)
     name = f"MyRecipe{random.randint(0, 10000)}"
     start = time.time()
     retrieved_case, adapted_case = cbr.run_query(query, name)
