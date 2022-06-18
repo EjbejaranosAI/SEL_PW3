@@ -265,8 +265,8 @@ class CaseLibrary:
             drink_types={}, glass_types={}, ingredients={}, alc_types={}, taste_types={}, garnish_types={}
         )
         for cocktail in self.case_library.xpath(".//cocktail"):
-            drink = cocktail.category
-            glass = cocktail.glass
+            drink = cocktail.category.text
+            glass = cocktail.glass.text
             if drink in value_counter["drink_types"].keys():
                 value_counter["drink_types"][drink] += 1
             else:
