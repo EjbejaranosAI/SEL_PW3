@@ -1,4 +1,5 @@
 import uuid
+from varname import nameof
 from typing import Dict, List, Union
 
 from lxml import objectify
@@ -233,10 +234,10 @@ class CaseLibrary:
         self.ET.write(self.case_library_path, pretty_print=True, encoding="utf-8")
 
     def _decrease_counter(self, key, value_list):
-        self.value_counter[key] -= 1
-        if self.value_counter[key] == 0:
+        self.value_counter[nameof(value_list)][key] -= 1
+        if self.value_counter[nameof(value_list)][key] == 0:
             value_list.remove(key)
-            self.value_counter.pop(key)
+            self.value_counter[nameof(value_list)].pop(key)
 
     def initialize_type_sets(self):
         drink_types = set()
@@ -245,57 +246,64 @@ class CaseLibrary:
         alc_types = set()
         taste_types = set()
         garnish_types = set()
+        value_counter = dict(drink_types={},
+                             glass_types={},
+                             ingredients={},
+                             alc_types={},
+                             taste_types={},
+                             garnish_types={}
+                             )
         for cocktail in self.case_library.xpath(".//cocktail"):
             drink = cocktail.category
             glass = cocktail.glass
-            if drink in self.value_counter.keys():
-                self.value_counter[drink] += 1
+            if drink in value_counter["drink_types"].keys():
+                value_counter["drink_types"][drink] += 1
             else:
-                self.value_counter[drink] = 1
+                value_counter["drink_types"][drink] = 1
                 drink_types.add(drink)
 
-            if glass in self.value_counter.keys():
-                self.value_counter[glass] += 1
+            if glass in value_counter["glass_types"].keys():
+                value_counter["glass_types"][glass] += 1
             else:
-                self.value_counter[glass] = 1
+                value_counter["glass_types"][glass] = 1
                 glass_types.add(glass)
 
             for ingredient in cocktail.ingredients.iterchildren():
                 name = ingredient.text
-                if name in self.value_counter.keys():
-                    self.value_counter[name] += 1
+                if name in value_counter["ingredients"].keys():
+                    value_counter["ingredients"][name] += 1
                 else:
-                    self.value_counter[name] = 1
+                    value_counter["ingredients"][name] = 1
                     ingredients.add(name)
 
                 alc_type = ingredient.attrib["alc_type"]
                 basic_taste = ingredient.attrib["basic_taste"]
                 garnish_type = ingredient.attrib["garnish_type"]
                 if alc_type:
-                    if alc_type in self.value_counter.keys():
-                        self.value_counter[alc_type] += 1
+                    if alc_type in value_counter["alc_types"].keys():
+                        value_counter["alc_types"][alc_type] += 1
                     else:
-                        self.value_counter[alc_type] = 1
+                        value_counter["alc_types"][alc_type] = 1
                         alc_types.add(alc_type)
                     if alc_type in self.ingredients_onto["alcoholic"].keys():
                         self.ingredients_onto["alcoholic"][name] = alc_type
                     else:
                         self.ingredients_onto["alcoholic"][name] = alc_type
                 elif basic_taste:
-                    if basic_taste in self.value_counter.keys():
-                        self.value_counter[basic_taste] += 1
+                    if basic_taste in value_counter["taste_types"].keys():
+                        value_counter["taste_types"][basic_taste] += 1
                     else:
-                        self.value_counter[basic_taste] = 1
+                        value_counter["taste_types"][basic_taste] = 1
                         taste_types.add(basic_taste)
                     if basic_taste in self.ingredients_onto["non-alcoholic"].keys():
                         self.ingredients_onto["non-alcoholic"][name] = basic_taste
                     else:
                         self.ingredients_onto["non-alcoholic"][name] = basic_taste
                 elif garnish_type:
-                    if garnish_type in self.value_counter.keys():
-                        self.value_counter[garnish_type] += 1
+                    if garnish_type in value_counter["garnish_types"].keys():
+                        value_counter["garnish_types"][garnish_type] += 1
                     else:
-                        self.value_counter[garnish_type] = 1
+                        value_counter["garnish_types"][garnish_type] = 1
                         garnish_types.add(garnish_type)
 
         self.drink_types = sorted(drink_types)
@@ -304,6 +312,7 @@ class CaseLibrary:
         self.taste_types = sorted(taste_types)
         self.garnish_types = sorted(garnish_types)
         self.ingredients = sorted(ingredients)
+        self.value_counter = value_counter
 
 
 class ConstraintsBuilder:
