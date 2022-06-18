@@ -64,7 +64,7 @@ class CBR:
         logging.basicConfig(
             filename=LOG_FILE,
             format="%(asctime)s [%(name)s] - %(levelname)s: %(message)s",
-            filemode="w",
+            filemode="a",
             level=logging.INFO,
         )
 
@@ -281,14 +281,14 @@ class CBR:
 
         # Retrieve case with higher similarity
         self.retrieved_recipe = list_recipes[index_retrieved]
-        self.logger.info(f"Retrieve: Similarity of the case retrieved {sim_list[index_retrieved]}")
+        self.logger.info(f"Retrieve: Similarity of the case retrieved {sim_list[index_retrieved]:.4f}")
 
         list_recipes.remove(self.retrieved_recipe)
         sim_list.remove(sim_list[index_retrieved])
 
         sorted_sim = np.flip(np.argsort(sim_list))
         self.sim_recipes = [list_recipes[i] for i in sorted_sim[:4]]
-        self.logger.info(f"Retrieve: Similarity of the next 4 most similar cases is {np.array(sim_list)[sorted_sim[:4]]}")
+        self.logger.info(f"Retrieve: Similarity of the next 4 most similar cases is {np.round(sim_list, 4)[sorted_sim[:4]]}")
         self.adapted_recipe = copy.deepcopy(self.retrieved_recipe)
         self.update_ingr_list()
         self.query.set_ingredients([self._search_ingredient(ingr) for ingr in self.query.get_ingredients()])

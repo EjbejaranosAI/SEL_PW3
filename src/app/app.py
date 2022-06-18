@@ -221,7 +221,7 @@ class MainWindow:
             ]
             start_time = time.perf_counter()
             retrieved_case, adapted_case = self.cbr.run_query(query, recipe_name)
-            self.logger.info(f"The system spent {time.perf_counter() - start_time} seconds to retrieve and adapt.")
+            self.logger.info(f"The system spent {time.perf_counter() - start_time:.5f} seconds to retrieve and adapt.")
             self._reset()
             self.window.retrieved_case.setPlainText(str(retrieved_case))
             self.window.adapted_case.setPlainText(str(adapted_case))
