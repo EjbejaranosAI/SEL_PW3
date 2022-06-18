@@ -63,7 +63,7 @@ for _ in range(N_QUERIES):
 
     with open(os.path.join(output_path, test), "a", encoding="utf-8") as f:
         f.write("--------------\n")
-        f.write(f"Query:\n{str(query)}")
+        f.write(f"Query:\n{query}")
         f.write(f"\n\nRetrieved case:\n{retrieved_case}")
         f.write(f"\nAdapted case:\n{adapted_case}")
         f.write("--------------\n\n")
