@@ -84,7 +84,7 @@ Ingredients:
                 output += f"        {ingredient}"
             else:
                 if i % max_per_line == 0:
-                    output += f"\n        {ingredient}"
+                    output += f",\n        {ingredient}"
                 else:
                     output += f", {ingredient}"
 
