@@ -15,7 +15,7 @@ from entity.query import Query
 output_path = os.path.join(ROOT_PATH, "system_tests")
 os.makedirs(output_path, exist_ok=True)
 
-N_QUERIES = 10
+N_QUERIES = 200
 MAX_N_VALUES = 5
 
 tmp_case_library = "tmp_case_library.xml"
@@ -43,18 +43,44 @@ pools = [
 ]
 
 
+def fix_ingr_lists():
+    """
+    Ensures that none of ingredients to exclude in the query
+    are in the ingredients to include list.
+    """
+    match = map(lambda i: i in query.get_exc_ingredients(), query.get_ingredients())
+    if any(match):
+        idxs = [i for i, val in enumerate(list(match)) if val]
+        exc_ingredients = query.get_exc_ingredients()
+        fail_idxs = []
+        for i in idxs:
+            for _ in range(10):
+                exc_ingredients[i] = random.choice(cbr.case_library.ingredients)
+                if exc_ingredients[i] not in query.get_ingredients():
+                    break
+            fail_idxs.append(i)
+        for i in fail_idxs:
+            del exc_ingredients[i]
+        query.set_exc_ingredients(exc_ingredients)
+    else:
+        return
+
+
 def build_query():
     for action, pool in zip(actions, pools):
         if action == query.set_category or action == query.set_glass:
             action(random.choice(pool))
         else:
             action(random.sample(pool, random.randint(0, MAX_N_VALUES)))
+    fix_ingr_lists()
 
 
 test = f"test{time.strftime('%d-%H%M%S')}.txt"
 total_time = 0
 for _ in range(N_QUERIES):
     build_query()
+    check = any(map(lambda i: i in query.get_exc_ingredients(), query.get_ingredients()))
+    print(check)
     name = f"MyRecipe{random.randint(0, 10000)}"
     start = time.time()
     retrieved_case, adapted_case = cbr.run_query(query, name)
