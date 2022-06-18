@@ -46,19 +46,19 @@ class CBR:
         self.adapted_recipe = None
         self.sim_weights = {
             "ingr_match": 1.0,
-            "ingr_alc_type_match": 0.6,
-            "ingr_basic_taste_match": 0.6,
-            "alc_type_match": 0.8,
-            "basic_taste_match": 0.8,
-            "glass_type_match": 0.4,
+            "ingr_alc_type_match": 0.5,
+            "ingr_basic_taste_match": 0.5,
+            "alc_type_match": 0.85,
+            "basic_taste_match": 0.85,
+            "glass_type_match": 0.5,
             "exc_ingr_match": -1.0,
-            "exc_ingr_alc_type_match": -0.6,
-            "exc_ingr_basic_taste_match": -0.6,
+            "exc_ingr_alc_type_match": -0.5,
+            "exc_ingr_basic_taste_match": -0.5,
             "exc_alc_type": -1.0,
             "exc_basic_taste": -1.0,
         }
         self.logger = logging.getLogger("CBR")
-        self.logger.setLevel(logging.DEBUG)
+        self.logger.setLevel(logging.INFO)
 
         logging.basicConfig(
             filename=LOG_FILE,
@@ -90,8 +90,6 @@ class CBR:
         """
         self.retrieve(query)
         self.adapt(new_name)
-        # score = self.evaluate()
-        # self.learn()
         retrieved_case = Cocktail().from_element(self.retrieved_recipe)
         adapted_case = Cocktail().from_element(self.adapted_recipe)
         return retrieved_case, adapted_case
