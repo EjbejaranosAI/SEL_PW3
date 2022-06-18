@@ -20,7 +20,7 @@ def all_inputs_exist(elements, possible_values):
         if element in possible_values:
             continue
         else:
-            print(f'-- Error. "{element}" is not in the library. Please, enter another value.')
+            print(f'-- Error. "{element}" is not in the library. Another value must be specified.')
             return False
     return True
 
@@ -75,8 +75,12 @@ logging.basicConfig(
     level=logging.INFO,
 )
 
-#TODO: "please, enter a name" if name = ""
-recipe_name = input("- Name of the recipe: ")
+while True:
+    recipe_name = input("- Name of the recipe: ")
+    if recipe_name:
+        break
+    else:
+        print("-- Error. A name must be specified.")
 for message, action, suggestion_pool in zip(messages, actions, suggestion_pools):
     print("")
     while True:
@@ -84,7 +88,7 @@ for message, action, suggestion_pool in zip(messages, actions, suggestion_pools)
         x = list(set(filter(None, re.sub(" +", " ", input(message)).split(", "))))
         if (action == query.set_category or action == query.set_glass) and len(x) != 1:
             if len(x) < 1:
-                print("-- Error. You must enter at least one value.")
+                print("-- Error. A value must be specified.")
             if len(x) > 1:
                 print("-- Error. This field accepts only one value.")
         elif not x:
