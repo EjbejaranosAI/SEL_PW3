@@ -7,7 +7,8 @@ from typing import Tuple
 import numpy as np
 from lxml.objectify import SubElement
 
-from definitions import CASE_LIBRARY_FILE as CASE_LIBRARY_PATH, LOG_FILE
+from definitions import CASE_LIBRARY_FILE as CASE_LIBRARY_PATH
+from definitions import LOG_FILE
 from src.cbr.case_library import CaseLibrary, ConstraintsBuilder
 from src.entity.cocktail import Cocktail
 from src.entity.query import Query
@@ -98,9 +99,13 @@ class CBR:
         if ingr_text:
             return copy.deepcopy(random.choice(self.case_library.findall(".//ingredient[.='{}']".format(ingr_text))))
         if basic_taste:
-            return copy.deepcopy(random.choice(self.case_library.findall(".//ingredient[@basic_taste='{}']".format(basic_taste))))
+            return copy.deepcopy(
+                random.choice(self.case_library.findall(".//ingredient[@basic_taste='{}']".format(basic_taste)))
+            )
         if alc_type:
-            return copy.deepcopy(random.choice(self.case_library.findall(".//ingredient[@alc_type='{}']".format(alc_type))))
+            return copy.deepcopy(
+                random.choice(self.case_library.findall(".//ingredient[@alc_type='{}']".format(alc_type)))
+            )
         else:
             return
 
@@ -176,9 +181,19 @@ class CBR:
         ingr.attrib["id"] = f"ingr{len(self.adapted_recipe.ingredients.ingredient[:])}"
         measure = re.sub(r"\sof\b", "", measure)
         ingr.attrib["measure"] = measure
-        self.logger.debug("before appending {}: {}".format(ingr, len(self.case_library.ET.getroot().find(".//cocktail[name='Apple Grande']").ingredients.ingredient[:])))
+        self.logger.debug(
+            "before appending {}: {}".format(
+                ingr,
+                len(self.case_library.ET.getroot().find(".//cocktail[name='Apple Grande']").ingredients.ingredient[:]),
+            )
+        )
         self.adapted_recipe.ingredients.append(ingr)
-        self.logger.debug("after appending {}: {}".format(ingr, len(self.case_library.ET.getroot().find(".//cocktail[name='Apple Grande']").ingredients.ingredient[:])))
+        self.logger.debug(
+            "after appending {}: {}".format(
+                ingr,
+                len(self.case_library.ET.getroot().find(".//cocktail[name='Apple Grande']").ingredients.ingredient[:]),
+            )
+        )
         step = SubElement(self.adapted_recipe.preparation, "step")
         if measure == "some":
             step._setText(f"add {ingr.attrib['id']} to taste")
@@ -229,9 +244,7 @@ class CBR:
         self.basic_tastes = set()
         self.alc_types = set()
 
-        # 1. SEARCHING
         # Filter elements that correspond to the category constraint
-        # If category constraints is not empty
         list_recipes = self.case_library.findall(ConstraintsBuilder().from_query(self.query))
 
         # If we have less than 5 recipes matching the user constraints,
@@ -256,7 +269,6 @@ class CBR:
             list_recipes += aux_recipes
             counter += 1
 
-        # 2. SELECTION
         # Compute similarity with each of the cocktails of the searching list
         sim_list = [self._similarity_cocktail(c) for c in list_recipes]
 
@@ -303,12 +315,12 @@ class CBR:
 
         # Get cocktails ingredients and alc_type
         c_ingredients = set()
-        c_ingredients_atype = set()
-        c_ingredients_btype = set()
+        c_ingredients_alc_type = set()
+        c_ingredients_basic_type = set()
         for ingredient in cocktail.ingredients.iterchildren():
             c_ingredients.add(ingredient.text)
-            c_ingredients_atype.add(ingredient.attrib["alc_type"])
-            c_ingredients_btype.add(ingredient.attrib["basic_taste"])
+            c_ingredients_alc_type.add(ingredient.attrib["alc_type"])
+            c_ingredients_basic_type.add(ingredient.attrib["basic_taste"])
 
         # Evaluate each constraint one by one
         for ingredient in self.query.ingredients:
@@ -319,11 +331,11 @@ class CBR:
                 # Increase similarity - if constraint ingredient is used in cocktail
                 sim += self.sim_weights["ingr_match"]
                 cumulative_norm_score += self.sim_weights["ingr_match"]
-            elif ingredient_alc_type is not None and ingredient_alc_type in c_ingredients_atype:
+            elif ingredient_alc_type is not None and ingredient_alc_type in c_ingredients_alc_type:
                 # Increase similarity - if constraint ingredient alc_type is used in cocktail
                 sim += self.sim_weights["ingr_alc_type_match"]
                 cumulative_norm_score += self.sim_weights["ingr_match"]
-            elif ingredient_basic_taste is not None and ingredient_basic_taste in c_ingredients_btype:
+            elif ingredient_basic_taste is not None and ingredient_basic_taste in c_ingredients_basic_type:
                 # Increase similarity if constraint ingredient basic_taste is used in cocktail
                 sim += self.sim_weights["ingr_basic_taste_match"]
                 cumulative_norm_score += self.sim_weights["ingr_match"]
@@ -334,7 +346,7 @@ class CBR:
         # Increase similarity if alc_type is a match. Alc_type has a lot of importance,
         # but less than the ingredient constraints
         for alc_type in self.query.alc_types:
-            if alc_type in c_ingredients_atype:
+            if alc_type in c_ingredients_alc_type:
                 sim += self.sim_weights["alc_type_match"]
                 cumulative_norm_score += self.sim_weights["alc_type_match"]
             # In case the constraint is not fulfilled we add the weight to the normalization score
@@ -344,7 +356,7 @@ class CBR:
         # Increase similarity if basic_taste is a match. Basic_taste has a lot of importance,
         # but less than the ingredient constraints
         for basic_taste in self.query.basic_tastes:
-            if basic_taste in c_ingredients_btype:
+            if basic_taste in c_ingredients_basic_type:
                 sim += self.sim_weights["basic_taste_match"]
                 cumulative_norm_score += self.sim_weights["basic_taste_match"]
             # In case the constraint is not fulfilled we add the weight to the normalization score
@@ -368,11 +380,11 @@ class CBR:
                 # Decrease similarity if ingredient excluded is found in cocktail
                 sim += self.sim_weights["exc_ingr_match"]
                 cumulative_norm_score += self.sim_weights["ingr_match"]
-            elif exc_ingredient_alc_type is not None and exc_ingredient_alc_type in c_ingredients_atype:
+            elif exc_ingredient_alc_type is not None and exc_ingredient_alc_type in c_ingredients_alc_type:
                 # Decrease similarity if excluded ingredient alc_type is used in cocktail
                 sim += self.sim_weights["exc_ingr_alc_type_match"]
                 cumulative_norm_score += self.sim_weights["ingr_match"]
-            elif exc_ingredient_basic_taste is not None and exc_ingredient_basic_taste in c_ingredients_btype:
+            elif exc_ingredient_basic_taste is not None and exc_ingredient_basic_taste in c_ingredients_basic_type:
                 # Decrease similarity if excluded ingredient basic_taste is used in cocktail
                 sim += self.sim_weights["exc_ingr_basic_taste_match"]
                 cumulative_norm_score += self.sim_weights["ingr_match"]
@@ -382,7 +394,7 @@ class CBR:
 
         # If one of the excluded alcohol_types is found in the cocktail, similarity is reduced
         for alc_type in self.query.exc_alc_types:
-            if alc_type in c_ingredients_atype:
+            if alc_type in c_ingredients_alc_type:
                 sim += self.sim_weights["exc_alc_type"]
                 cumulative_norm_score += self.sim_weights["ingr_match"]
             else:
