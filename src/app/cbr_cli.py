@@ -1,4 +1,3 @@
-import logging
 import os
 import random
 import re
@@ -7,7 +6,6 @@ from pathlib import Path
 
 sys.path.append(os.fspath(Path(__file__).resolve().parent.parent.parent))
 
-from definitions import LOG_FILE
 from src.cbr.cbr import CBR
 from src.entity.query import Query
 
@@ -67,13 +65,6 @@ suggestion_pools = [
     list(map(str, cbr.case_library.ingredients)),
     list(map(str, cbr.case_library.ingredients)),
 ]
-
-logging.basicConfig(
-    filename=LOG_FILE,
-    format="%(asctime)s [%(name)s] - %(levelname)s: %(message)s",
-    filemode="w",
-    level=logging.INFO,
-)
 
 while True:
     recipe_name = input("- Name of the recipe: ")
