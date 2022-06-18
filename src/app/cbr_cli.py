@@ -94,7 +94,9 @@ for message, action, suggestion_pool in zip(messages, actions, suggestion_pools)
                 break
 
 retrieved_case, adapted_case = cbr.run_query(query, recipe_name)
-print("\n- Here is the recipe:")
+print("\n- Here is the retrieved recipe:")
+print(retrieved_case)
+print("\n- Here is the adapted recipe:")
 print(adapted_case)
 
 while True:
