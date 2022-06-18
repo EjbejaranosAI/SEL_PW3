@@ -1,7 +1,6 @@
 import os
 import re
 import sys
-import uuid
 from itertools import permutations
 from pathlib import Path
 
@@ -98,7 +97,7 @@ def create_case_base(data: DataFrame, output_file):
         ingredients_list = []
         # Initialize cocktail element with the first row of the recipe.
         first_row = df_group.iloc[0]
-        cocktail = etree.SubElement(cocktails, "cocktail", id=str(uuid.uuid1().int))
+        cocktail = etree.SubElement(cocktails, "cocktail")
         cocktail_name = etree.SubElement(cocktail, "name")
         cocktail_name.text = group_name
         cocktail_category = etree.SubElement(cocktail, "category")

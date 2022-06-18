@@ -1,5 +1,5 @@
 <cocktails>
-  <cocktail id="2865324600570384516881291589545462045">
+  <cocktail>
     <name>'57 Chevy with a White License Plate</name>
     <category>cocktail</category>
     <glass>highball glass</glass>
@@ -20,7 +20,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2870475223415436845023276837612390685">
+  <cocktail>
     <name>1-900-FUK-MEUP</name>
     <category>shot</category>
     <glass>old-fashioned glass</glass>
@@ -46,7 +46,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2874438057648075317590862857466382621">
+  <cocktail>
     <name>110 in the shade</name>
     <category>beer</category>
     <glass>beer glass</glass>
@@ -66,7 +66,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2874833802319834067053326459280394525">
+  <cocktail>
     <name>151 Florida Bushwacker</name>
     <category>milk / float / shake</category>
     <glass>beer mug</glass>
@@ -93,7 +93,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2881569146871496706660182989152291101">
+  <cocktail>
     <name>155 Belmont</name>
     <category>cocktail</category>
     <glass>white wine glass</glass>
@@ -116,7 +116,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2882757806993698214558194275638937885">
+  <cocktail>
     <name>24k nightmare</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -137,7 +137,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2883154185490757079138253967824619805">
+  <cocktail>
     <name>252</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -156,7 +156,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2884738827969204879049391681809254685">
+  <cocktail>
     <name>3 Wise Men</name>
     <category>shot</category>
     <glass>collins glass</glass>
@@ -177,7 +177,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2885927488091406386634684269170362653">
+  <cocktail>
     <name>3-Mile Long Island Iced Tea</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -205,7 +205,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2888304887563971920606702187035592989">
+  <cocktail>
     <name>410 Gone</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -224,7 +224,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2888701107604705753292771870580771101">
+  <cocktail>
     <name>50/50</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -247,7 +247,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2889889609270582232313923423788435741">
+  <cocktail>
     <name>501 Blue</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -269,7 +269,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2891078269392783743216680086661335325">
+  <cocktail>
     <name>69 Special</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -292,7 +292,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2891870630246088899152059185772202269">
+  <cocktail>
     <name>747</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -312,7 +312,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2893455431180861730048304208598632733">
+  <cocktail>
     <name>9 1/2 Weeks</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -335,7 +335,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2894644170531225749479219914629024029">
+  <cocktail>
     <name>A Day at the Beach</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -358,7 +358,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2895832830653427260666829253933107485">
+  <cocktail>
     <name>A Furlong Too Late</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -380,7 +380,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2896625191506732415163589747075811613">
+  <cocktail>
     <name>A Gilligan's Island</name>
     <category>cocktail</category>
     <glass>collins glass</glass>
@@ -401,7 +401,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2897813851628933923484376448581863709">
+  <cocktail>
     <name>A Night In Old Mandalay</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -428,7 +428,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2899399127932681837741305866797549853">
+  <cocktail>
     <name>A Piece of Ass</name>
     <category>other/unknown</category>
     <glass>highball glass</glass>
@@ -450,7 +450,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2900191171873336941023855027300960541">
+  <cocktail>
     <name>A Splash of Nash</name>
     <category>shot</category>
     <glass>highball glass</glass>
@@ -472,7 +472,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2902964553702148763428919143881345309">
+  <cocktail>
     <name>A True Amaretto Sour</name>
     <category>cocktail</category>
     <glass>old-fashioned glass</glass>
@@ -495,7 +495,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2903757152239941464373082040290347293">
+  <cocktail>
     <name>A midsummernight dream</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -519,7 +519,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2904945653905817942352494704691874077">
+  <cocktail>
     <name>A. J.</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -538,7 +538,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2905738173215448128149614480592308509">
+  <cocktail>
     <name>A.D.M. (After Dinner Mint)</name>
     <category>cocktail</category>
     <glass>irish coffee cup</glass>
@@ -559,7 +559,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2910492496791604102016650607605418269">
+  <cocktail>
     <name>A1</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -580,7 +580,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2911681156913805610496470670952991005">
+  <cocktail>
     <name>ABC</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -600,7 +600,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2912869737807844605296295192407935261">
+  <cocktail>
     <name>ACID</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -619,7 +619,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2914454617970779947255381423671314717">
+  <cocktail>
     <name>AT&amp;T</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -639,7 +639,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2915247216508572648207707094404925725">
+  <cocktail>
     <name>Abbey Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -661,7 +661,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2916039656590040323037124203996612893">
+  <cocktail>
     <name>Abbey Martini</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -682,7 +682,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2917228079027754284804673910993160477">
+  <cocktail>
     <name>Abilene</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -703,7 +703,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2918020598337384474351603326632954141">
+  <cocktail>
     <name>Absolut Evergreen</name>
     <category>other/unknown</category>
     <glass>collins glass</glass>
@@ -723,7 +723,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2918812959190689631958380837451696413">
+  <cocktail>
     <name>Absolut Sex</name>
     <category>shot</category>
     <glass>old-fashioned glass</glass>
@@ -744,7 +744,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2920793980166196296383150149118298397">
+  <cocktail>
     <name>Absolut Stress #2</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -768,7 +768,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2922378781100969123499186234720618781">
+  <cocktail>
     <name>Absolut Summertime</name>
     <category>cocktail</category>
     <glass>collins glass</glass>
@@ -793,7 +793,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2924359881304638306508371082486319389">
+  <cocktail>
     <name>Absolut limousine</name>
     <category>other/unknown</category>
     <glass>collins glass</glass>
@@ -815,7 +815,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2925548541426839810534131114364471581">
+  <cocktail>
     <name>Absolutely Cranberry Smash</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -836,7 +836,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2926341060736470000194494945618659613">
+  <cocktail>
     <name>Absolutely Fabulous</name>
     <category>cocktail</category>
     <glass>champagne flute</glass>
@@ -857,7 +857,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2927133500817937672433216369565468957">
+  <cocktail>
     <name>Absolutely Screwed Up</name>
     <category>cocktail</category>
     <glass>collins glass</glass>
@@ -879,7 +879,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2928322002483814149240848705920534813">
+  <cocktail>
     <name>Acapulco</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -903,7 +903,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2929906803418586980939015937395624221">
+  <cocktail>
     <name>Ace</name>
     <category>cocktail</category>
     <glass>martini glass</glass>
@@ -925,7 +925,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2930699243500054649862243610667616541">
+  <cocktail>
     <name>Adam</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -947,7 +947,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2931491842037847351886144517738694941">
+  <cocktail>
     <name>Adam &amp; Eve</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -968,7 +968,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2933868924597762825123341490703403293">
+  <cocktail>
     <name>Adam Bomb</name>
     <category>punch / party drink</category>
     <glass>margarita/coupette glass</glass>
@@ -993,7 +993,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2935453883988860682328831509254211869">
+  <cocktail>
     <name>Adam Sunrise</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -1017,7 +1017,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2935850262485919547390776361568536861">
+  <cocktail>
     <name>Addington</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -1038,7 +1038,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2937038684923633513686132543932696861">
+  <cocktail>
     <name>Addison</name>
     <category>cocktail</category>
     <glass>martini glass</glass>
@@ -1057,7 +1057,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2937435063420692378731470372621093149">
+  <cocktail>
     <name>Addison Special</name>
     <category>cocktail</category>
     <glass>old-fashioned glass</glass>
@@ -1079,7 +1079,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2937831204233263697448469713191799069">
+  <cocktail>
     <name>Adios Amigos Cocktail</name>
     <category>cocktail</category>
     <glass>martini glass</glass>
@@ -1103,7 +1103,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2940208286793179172725234367401920797">
+  <cocktail>
     <name>Adonis Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1123,7 +1123,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2941000806102809359078267222305900829">
+  <cocktail>
     <name>Affair</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -1145,7 +1145,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2941793246184277029259688041474525469">
+  <cocktail>
     <name>Affinity</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1168,7 +1168,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2942981747850153509410961626175473949">
+  <cocktail>
     <name>After Dinner Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1190,7 +1190,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2943774267159783695265783772301592861">
+  <cocktail>
     <name>After Five</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -1216,7 +1216,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2946151508176024198429742141676030237">
+  <cocktail>
     <name>After Supper Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1236,7 +1236,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2946547886673083061554013254314199325">
+  <cocktail>
     <name>After sex</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -1257,7 +1257,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2948133004520505947119856423879936285">
+  <cocktail>
     <name>Afternoon</name>
     <category>coffee / tea</category>
     <glass>collins glass</glass>
@@ -1281,7 +1281,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2950114104724175127323017228817107229">
+  <cocktail>
     <name>Alabama Slammer</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -1303,7 +1303,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2950906386349317769648206580259588381">
+  <cocktail>
     <name>Alaska Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1325,7 +1325,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2952094967243356765249953310363191581">
+  <cocktail>
     <name>Alexander</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1347,7 +1347,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2957245748544734116648587431727434013">
+  <cocktail>
     <name>Alfie Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1367,7 +1367,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2958038267854364301181321612243601693">
+  <cocktail>
     <name>Algonquin</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1387,7 +1387,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2958830787163994490364585357973227805">
+  <cocktail>
     <name>Alice in Wonderland</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -1407,7 +1407,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2959623148017299647710435565381191965">
+  <cocktail>
     <name>Allegheny</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1430,7 +1430,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2961603852080156253939006747100678429">
+  <cocktail>
     <name>Allies Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1450,7 +1450,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2961603931308318769419879189988083997">
+  <cocktail>
     <name>Almeria</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1472,7 +1472,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2962396292161623927919776801909737757">
+  <cocktail>
     <name>Almond Chocolate Coffee</name>
     <category>ordinary drink</category>
     <glass>coffee mug</glass>
@@ -1493,7 +1493,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2966754395697046065956949230496352541">
+  <cocktail>
     <name>Almond Joy</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1513,7 +1513,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2967546994234838768758565498218973469">
+  <cocktail>
     <name>Amaretto And Cream</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1532,7 +1532,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2967943214275572600205582334283843869">
+  <cocktail>
     <name>Amaretto Mist</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -1553,7 +1553,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2968339434316306440128936619013409053">
+  <cocktail>
     <name>Amaretto Rose</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -1574,7 +1574,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2968735654357040276584519190667692317">
+  <cocktail>
     <name>Amaretto Shake</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -1595,7 +1595,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2969527935982182917038744371914443037">
+  <cocktail>
     <name>Amaretto Sour</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -1615,7 +1615,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2969924314479241780725121013043792157">
+  <cocktail>
     <name>Amaretto Stinger</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1634,7 +1634,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2974678717283560272545224303393999133">
+  <cocktail>
     <name>Amaretto Stone Sour</name>
     <category>other/unknown</category>
     <glass>collins glass</glass>
@@ -1654,7 +1654,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2975471157365027942477821243150403869">
+  <cocktail>
     <name>Amaretto Stone Sour #3</name>
     <category>other/unknown</category>
     <glass>highball glass</glass>
@@ -1678,7 +1678,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2976263518218333101627644576296962333">
+  <cocktail>
     <name>Amaretto Sunrise</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -1699,7 +1699,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2977056037527963288324639852741363997">
+  <cocktail>
     <name>Amaretto Sunset</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -1720,7 +1720,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2977452257568697123129934635941071133">
+  <cocktail>
     <name>Amaretto Sweet &amp; Sour</name>
     <category>punch / party drink</category>
     <glass>margarita/coupette glass</glass>
@@ -1744,7 +1744,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2980225560169346432899275374225361181">
+  <cocktail>
     <name>Amaretto Tea</name>
     <category>ordinary drink</category>
     <glass>pousse cafe glass</glass>
@@ -1766,7 +1766,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2981018079478976617056521935809513757">
+  <cocktail>
     <name>Americano</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -1787,7 +1787,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2982602801185586933005289596615231773">
+  <cocktail>
     <name>Angel Face</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1807,7 +1807,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2983395320495217117483136156672821533">
+  <cocktail>
     <name>Apple Cider Punch #1</name>
     <category>punch / party drink</category>
     <glass>collins glass</glass>
@@ -1835,7 +1835,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2986565239277412836898459804713191709">
+  <cocktail>
     <name>Apple Grande</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -1854,7 +1854,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2986961617774471700574703346680957213">
+  <cocktail>
     <name>Apple Pie with A Crust</name>
     <category>other/unknown</category>
     <glass>collins glass</glass>
@@ -1875,7 +1875,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2987753899399614345095397516466555165">
+  <cocktail>
     <name>Apple Slammer</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -1894,7 +1894,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2988546260252919502133877049306482973">
+  <cocktail>
     <name>Applecar</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -1914,7 +1914,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2988942480293653334685401693983967517">
+  <cocktail>
     <name>Applejack</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -1934,7 +1934,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2990527360456588682502263665572808989">
+  <cocktail>
     <name>Apricot Lady</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -1960,7 +1960,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2992508381432095347625090919481837853">
+  <cocktail>
     <name>Apricot punch</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -1983,7 +1983,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2993300821513563018083201640757037341">
+  <cocktail>
     <name>Archbishop</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -2005,7 +2005,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2994885622448335848527397850986154269">
+  <cocktail>
     <name>Arctic Fish</name>
     <category>punch / party drink</category>
     <glass>beer pilsner</glass>
@@ -2027,7 +2027,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2996074282570537356160259709411363101">
+  <cocktail>
     <name>Arctic Mouthwash</name>
     <category>punch / party drink</category>
     <glass>cocktail glass</glass>
@@ -2048,7 +2048,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="2996866722652005026996954274362394909">
+  <cocktail>
     <name>Arise My Love</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -2068,7 +2068,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3001621283912648546380273581682952477">
+  <cocktail>
     <name>Arizona Antifreeze</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -2088,7 +2088,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3003602384116317722336821412986456349">
+  <cocktail>
     <name>Arizona Stingers</name>
     <category>cocktail</category>
     <glass>hurricane glass</glass>
@@ -2110,7 +2110,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3005583405091824390272146634188359965">
+  <cocktail>
     <name>Arizona Twister</name>
     <category>cocktail</category>
     <glass>hurricane glass</glass>
@@ -2139,7 +2139,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3008356866148798726435456336186935581">
+  <cocktail>
     <name>Army special</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -2160,7 +2160,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3009941746311734068915271274365028637">
+  <cocktail>
     <name>Arthur Tompkins</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -2183,7 +2183,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3011130327205773062715578153520433437">
+  <cocktail>
     <name>Artillery</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -2203,7 +2203,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3011922688059078220897409041759045917">
+  <cocktail>
     <name>Artillery Punch</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -2230,7 +2230,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3013903788262747402978570891309713693">
+  <cocktail>
     <name>Atlantic Sun</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -2253,7 +2253,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3016677249319721740019238095715404061">
+  <cocktail>
     <name>Atomic Lokade</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -2277,7 +2277,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3017865909441923245591703124618610973">
+  <cocktail>
     <name>Auburn Headbanger</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -2299,7 +2299,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3018262129482657082156779462213339421">
+  <cocktail>
     <name>Autodafé</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -2320,7 +2320,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3019054569564124757050935816448477469">
+  <cocktail>
     <name>Avalanche</name>
     <category>milk / float / shake</category>
     <glass>highball glass</glass>
@@ -2340,7 +2340,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3019450710376696074613887752505493789">
+  <cocktail>
     <name>Avalon</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -2366,7 +2366,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3021035590539631419995146750617028893">
+  <cocktail>
     <name>Aviation</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -2388,7 +2388,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3021828189077424121742920705534953757">
+  <cocktail>
     <name>Aztec Punch</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -2410,7 +2410,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3022620470702566764221795394261453085">
+  <cocktail>
     <name>B-52</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -2431,7 +2431,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3024205271637339591699526824936966429">
+  <cocktail>
     <name>B-53</name>
     <category>shot</category>
     <glass>collins glass</glass>
@@ -2452,7 +2452,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3024997632490644752043085534313416989">
+  <cocktail>
     <name>Baby Eskimo</name>
     <category>milk / float / shake</category>
     <glass>collins glass</glass>
@@ -2475,7 +2475,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3025790072572112421823123036692646173">
+  <cocktail>
     <name>Baby Guinness</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -2496,7 +2496,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3026978732694313931794479001629985053">
+  <cocktail>
     <name>Bacardi Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -2518,7 +2518,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3028167472044677952975887587823946013">
+  <cocktail>
     <name>Bailey's Dream Shake</name>
     <category>soft drink / soda</category>
     <glass>collins glass</glass>
@@ -2539,7 +2539,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3029356132166879460944830568441678109">
+  <cocktail>
     <name>Balmoral</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -2562,7 +2562,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3030148730704672162793654039998728477">
+  <cocktail>
     <name>Banana Daiquiri</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -2587,7 +2587,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3031337153142386125950282757062363421">
+  <cocktail>
     <name>Barracuda</name>
     <category>ordinary drink</category>
     <glass>margarita glass</glass>
@@ -2610,7 +2610,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3032129672452016312061247131995179293">
+  <cocktail>
     <name>Belgian Blue</name>
     <category>soft drink / soda</category>
     <glass>highball glass</glass>
@@ -2631,7 +2631,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3033318174117892791283653293550962973">
+  <cocktail>
     <name>Bellini</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -2651,7 +2651,7 @@
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3033714473386789142039602255768160541">
+  <cocktail>
     <name>Bellini Martini</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -2662,13 +2662,13 @@
       <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="3 oz" quantity="90.0" unit="ml" garnish_type="">vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>add ice cubes to shaker.
-add ingr3.
-add ingr1.
-add ingr2.
-shake.
-strain into glass.
-add ingr0 twist peel</step>
+      <step>add ice cubes to shaker</step>
+      <step>add ingr3</step>
+      <step>add ingr1</step>
+      <step>add ingr2</step>
+      <step>shake</step>
+      <step>strain into glass</step>
+      <step>add ingr0 twist peel</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>original</derivation>
@@ -2678,7 +2678,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3034903054280828137592090864947398941">
+  <cocktail>
     <name>Bermuda Highball</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -2703,14 +2703,14 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3036091714403029642527015071600970013">
+  <cocktail>
     <name>Berry Deadly</name>
     <category>punch / party drink</category>
     <glass>collins glass</glass>
     <ingredients>
       <ingredient id="ingr0" alc_type="" basic_taste="sweet" measure="1/2 gal" quantity="1892.5" unit="ml" garnish_type="">orange juice</ingredient>
       <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="1 gal tropical berry" quantity="3785.0" unit="ml" garnish_type="">kool-aid tropical berry</ingredient>
-      <ingredient id="ingr2" alc_type="wine" basic_taste="" measure="1 bottle boone strawberry hill" quantity="750.0" unit="ml" garnish_type="">boone's strawberry hill wine</ingredient>
+      <ingredient id="ingr2" alc_type="wine" basic_taste="" measure="1 bottle boone strawberry hill" quantity="750.0" unit="ml" garnish_type="">boon strawberry hill wine</ingredient>
       <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="2 pint" quantity="946.0" unit="ml" garnish_type="">everclear</ingredient>
     </ingredients>
     <preparation>
@@ -2726,7 +2726,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3043223041310938576645932872208058653">
+  <cocktail>
     <name>Between The Sheets</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -2747,7 +2747,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3044015402164243732491239978771515677">
+  <cocktail>
     <name>Bible Belt</name>
     <category>other/unknown</category>
     <glass>highball glass</glass>
@@ -2768,7 +2768,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3045204062286445243375419293181511965">
+  <cocktail>
     <name>Big Red</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -2787,7 +2787,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3045204141514607754557605891743779101">
+  <cocktail>
     <name>Black &amp; Tan</name>
     <category>beer</category>
     <glass>pint glass</glass>
@@ -2808,7 +2808,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3045996502367912913275646610616191261">
+  <cocktail>
     <name>Black Forest Shake</name>
     <category>milk / float / shake</category>
     <glass>collins glass</glass>
@@ -2830,7 +2830,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3047185241718276936825385650853611805">
+  <cocktail>
     <name>Black Russian</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -2850,7 +2850,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3047581620215335802271825321354692893">
+  <cocktail>
     <name>Black and Brown</name>
     <category>beer</category>
     <glass>beer pilsner</glass>
@@ -2869,7 +2869,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3048373901840478444137647510805383453">
+  <cocktail>
     <name>Blackthorn</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -2890,7 +2890,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3049166341921946114884833033162426653">
+  <cocktail>
     <name>Bleeding Surgeon</name>
     <category>soft drink / soda</category>
     <glass>collins glass</glass>
@@ -2914,7 +2914,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3050354843587822597171094316213700893">
+  <cocktail>
     <name>Blind Russian</name>
     <category>milk / float / shake</category>
     <glass>collins glass</glass>
@@ -2939,7 +2939,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3052336023019654290872136353111705885">
+  <cocktail>
     <name>Bloody Maria</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -2963,7 +2963,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3053920823954427120975747841520929053">
+  <cocktail>
     <name>Bloody Mary</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -2987,7 +2987,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3055109404848466113631577465370806557">
+  <cocktail>
     <name>Blue Lagoon</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -3009,7 +3009,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3055505783345524975809248231331039517">
+  <cocktail>
     <name>Blue Margarita</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3032,7 +3032,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3056298223426992650980938912602884381">
+  <cocktail>
     <name>Blue Mountain</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -3056,7 +3056,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3057883024361765478789403440913418525">
+  <cocktail>
     <name>Bluebird</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3081,7 +3081,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3058675464443233150118960690084808989">
+  <cocktail>
     <name>Bob Marley</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -3101,7 +3101,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3059863886880947116749553569711360285">
+  <cocktail>
     <name>Bobby Burns Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3123,7 +3123,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3060656406190577299993413831869434141">
+  <cocktail>
     <name>Boomerang</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3147,7 +3147,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3061448925500207485513280755709872413">
+  <cocktail>
     <name>Boozy Snickers Milkshake</name>
     <category>milk / float / shake</category>
     <glass>mason jar</glass>
@@ -3174,7 +3174,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3063826087288285473283060975023786269">
+  <cocktail>
     <name>Boston Sidecar</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3195,7 +3195,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3064618448141590631745522415042922781">
+  <cocktail>
     <name>Boston Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -3219,7 +3219,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3065807108263792140632073819737393437">
+  <cocktail>
     <name>Bourbon Sling</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -3245,7 +3245,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3066599548345259812838144146385766685">
+  <cocktail>
     <name>Bourbon Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -3269,7 +3269,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3067392067654890000440644422908348701">
+  <cocktail>
     <name>Boxcar</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -3293,7 +3293,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3068184507736357670269940046211942685">
+  <cocktail>
     <name>Brain Fart</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -3318,7 +3318,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3074524028388099045823765882718226717">
+  <cocktail>
     <name>Brainteaser</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -3339,7 +3339,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3075712767738463068271248914156718365">
+  <cocktail>
     <name>Bramble</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -3363,7 +3363,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3077693788713969734337861764976576797">
+  <cocktail>
     <name>Brandon and Will's Coke Float</name>
     <category>soft drink / soda</category>
     <glass>beer mug</glass>
@@ -3386,7 +3386,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3078486466479924945707606522549602589">
+  <cocktail>
     <name>Brandy Alexander</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3408,7 +3408,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3083636851640489729203910693275142429">
+  <cocktail>
     <name>Brandy Cobbler</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -3435,7 +3435,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3084429370950119916902112461879347485">
+  <cocktail>
     <name>Brandy Flip</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -3459,7 +3459,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3085618031072321426057753944309205277">
+  <cocktail>
     <name>Brandy Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -3482,7 +3482,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3086410550381951612126215597758712093">
+  <cocktail>
     <name>Brave Bull Shooter</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -3501,7 +3501,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3086806849650847960062629718265268509">
+  <cocktail>
     <name>Bruce's Puce</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -3523,7 +3523,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3088391492129295759095284029935946013">
+  <cocktail>
     <name>Bruised Heart</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -3544,7 +3544,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3090372909245614996167769924606200093">
+  <cocktail>
     <name>Bubble Gum</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -3565,7 +3565,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3091164953186270099924322945890355485">
+  <cocktail>
     <name>Buccaneer</name>
     <category>beer</category>
     <glass>beer pilsner</glass>
@@ -3584,7 +3584,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3091957551724062799114333787438549277">
+  <cocktail>
     <name>Bumble Bee #1</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -3610,7 +3610,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3093542273430673112754162214286756125">
+  <cocktail>
     <name>Butter Baby</name>
     <category>milk / float / shake</category>
     <glass>beer mug</glass>
@@ -3632,7 +3632,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3094334792740303299768942739437488413">
+  <cocktail>
     <name>Cafe Savoy</name>
     <category>coffee / tea</category>
     <glass>coffee mug</glass>
@@ -3654,7 +3654,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3095127153593608458533989779420580125">
+  <cocktail>
     <name>Caipirinha</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -3675,7 +3675,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3095523532090667322625408912036563229">
+  <cocktail>
     <name>Caipirissima</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -3696,7 +3696,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3096315655259484936445285499458128157">
+  <cocktail>
     <name>California Lemonade</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -3722,7 +3722,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3097504394609848957973471256959617309">
+  <cocktail>
     <name>California Root Beer</name>
     <category>soft drink / soda</category>
     <glass>highball glass</glass>
@@ -3742,7 +3742,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3097900773106907825771915832854939933">
+  <cocktail>
     <name>Campari Beer</name>
     <category>beer</category>
     <glass>beer mug</glass>
@@ -3763,7 +3763,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3098296993147641658845576559330691357">
+  <cocktail>
     <name>Caribbean Boilermaker</name>
     <category>beer</category>
     <glass>beer pilsner</glass>
@@ -3782,7 +3782,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3099089433229109329722240570974636317">
+  <cocktail>
     <name>Casino</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3808,7 +3808,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3100277934894985812151772617171634461">
+  <cocktail>
     <name>Casino Royale</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -3832,7 +3832,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3101466436560862288939701705156954397">
+  <cocktail>
     <name>Champagne Cocktail</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -3856,7 +3856,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3101862973514246184340768794762119453">
+  <cocktail>
     <name>Cherry Electric Lemonade</name>
     <category>cocktail</category>
     <glass>pint glass</glass>
@@ -3882,7 +3882,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3104239818389674111562064503757965597">
+  <cocktail>
     <name>Cherry Rum</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -3902,7 +3902,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3105428478511875620761053132601264413">
+  <cocktail>
     <name>Chicago Fizz</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -3926,7 +3926,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3106221077049668323374081165927745821">
+  <cocktail>
     <name>Chocolate Black Russian</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -3947,7 +3947,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3107013517131135993529043337285568797">
+  <cocktail>
     <name>Chocolate Milk</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -3969,7 +3969,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3107806036440766179811707448011884829">
+  <cocktail>
     <name>Chocolate Monkey</name>
     <category>milk / float / shake</category>
     <glass>parfait glass</glass>
@@ -3995,7 +3995,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3110182960544356624666877696754944285">
+  <cocktail>
     <name>Citrus Coke</name>
     <category>soft drink / soda</category>
     <glass>highball glass</glass>
@@ -4016,7 +4016,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3110975955222961895484539805707372829">
+  <cocktail>
     <name>City Slicker</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -4038,7 +4038,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3111372175263695731458518692209723677">
+  <cocktail>
     <name>Classic Old-Fashioned</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -4064,7 +4064,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3112560518473247183723442986676488477">
+  <cocktail>
     <name>Clove Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -4084,7 +4084,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3113352879326552338392184690589403421">
+  <cocktail>
     <name>Clover Club</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -4105,7 +4105,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3113749257823611206492933391471970589">
+  <cocktail>
     <name>Cosmopolitan</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -4128,7 +4128,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3114937601033162657961564976824289565">
+  <cocktail>
     <name>Cosmopolitan Martini</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -4149,7 +4149,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3115730358027280384114968659972426013">
+  <cocktail>
     <name>Cream Soda</name>
     <category>cocktail</category>
     <glass>highball glass</glass>
@@ -4169,7 +4169,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3116522639652423029248996804010543389">
+  <cocktail>
     <name>Cuba Libra</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -4194,7 +4194,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3117315158962053215261163462117919005">
+  <cocktail>
     <name>Cuba Libre</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -4215,7 +4215,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3117711458230949565556619362436483357">
+  <cocktail>
     <name>Daiquiri</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -4237,7 +4237,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3118503739856092205914580101648189725">
+  <cocktail>
     <name>Damned if you do</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -4258,7 +4258,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3118900039124988559968571365984143645">
+  <cocktail>
     <name>Danbooka</name>
     <category>coffee / tea</category>
     <glass>coffee mug</glass>
@@ -4277,7 +4277,7 @@ add ingr0 twist peel</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3119296338393884909940893993038874909">
+  <cocktail>
     <name>Dark Caipirinha</name>
     <category>cocktail</category>
     <glass>highball glass</glass>
@@ -4287,10 +4287,10 @@ add ingr0 twist peel</step>
       <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="2 tsp" quantity="8.0" unit="gr" garnish_type="">demerara sugar</ingredient>
     </ingredients>
     <preparation>
-      <step>muddle the ingr2 into the ingr1 wedges in an old-fashioned glass.
-fill the glass with ice cubes.
-pour the ingr0 into the glass.
-stir well</step>
+      <step>muddle the ingr2 into the ingr1 wedges in an old-fashioned glass</step>
+      <step>fill the glass with ice cubes</step>
+      <step>pour the ingr0 into the glass</step>
+      <step>stir well</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>original</derivation>
@@ -4300,7 +4300,7 @@ stir well</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3120088303106377496894486605825673501">
+  <cocktail>
     <name>Dark and Stormy</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -4320,7 +4320,7 @@ stir well</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3120880426275195107696951442909006109">
+  <cocktail>
     <name>Darkwood Sling</name>
     <category>soft drink / soda</category>
     <glass>cocktail glass</glass>
@@ -4344,7 +4344,7 @@ stir well</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3122069086397396616398292312927865117">
+  <cocktail>
     <name>Derby</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -4367,7 +4367,7 @@ stir well</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3122861526478864289401781248597526813">
+  <cocktail>
     <name>Diesel</name>
     <category>beer</category>
     <glass>pint glass</glass>
@@ -4389,7 +4389,7 @@ stir well</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3123257825747760639587743382975645981">
+  <cocktail>
     <name>Dirty Martini</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -4401,10 +4401,10 @@ stir well</step>
       <ingredient id="ingr4" alc_type="" basic_taste="salty" measure="2 tbsp" quantity="30.0" unit="ml" garnish_type="">olive brine</ingredient>
     </ingredients>
     <preparation>
-      <step>pour the ingr0, ingr2 and ingr3 ingr4 into a cocktail shaker with a handful of ice and shake well.
-rub the rim of a martini glass with the wedge of ingr1.
-strain the contents of the cocktail shaker into the glass and add the ingr3.
-a dirty martini contains a splash of ingr3 ingr4 or ingr3 juice and is typically garnished with an ingr3</step>
+      <step>pour the ingr0, ingr2 and ingr3 ingr4 into a cocktail shaker with a handful of ice and shake well</step>
+      <step>rub the rim of a martini glass with the wedge of ingr1</step>
+      <step>strain the contents of the cocktail shaker into the glass and add the ingr3</step>
+      <step>a dirty martini contains a splash of ingr3 ingr4 or ingr3 juice and is typically garnished with an ingr3</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>original</derivation>
@@ -4414,7 +4414,7 @@ a dirty martini contains a splash of ingr3 ingr4 or ingr3 juice and is typically
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3124446327413637116605919001910282525">
+  <cocktail>
     <name>Dirty Nipple</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -4434,7 +4434,7 @@ a dirty martini contains a splash of ingr3 ingr4 or ingr3 juice and is typically
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3124842547454370954232156001704184093">
+  <cocktail>
     <name>Downshift</name>
     <category>punch / party drink</category>
     <glass>hurricane glass</glass>
@@ -4458,7 +4458,7 @@ a dirty martini contains a splash of ingr3 ingr4 or ingr3 juice and is typically
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3126823568429877621343041016120576285">
+  <cocktail>
     <name>Dragonfly</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -4480,7 +4480,7 @@ a dirty martini contains a splash of ingr3 ingr4 or ingr3 juice and is typically
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3127219946926936484744564980818741533">
+  <cocktail>
     <name>Dry Rob Roy</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -4503,7 +4503,7 @@ a dirty martini contains a splash of ingr3 ingr4 or ingr3 juice and is typically
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3128408369364650450249539428579379485">
+  <cocktail>
     <name>Dubonnet Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -4525,7 +4525,7 @@ a dirty martini contains a splash of ingr3 ingr4 or ingr3 juice and is typically
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3128804747861709313142156635384678685">
+  <cocktail>
     <name>Duchamp's Punch</name>
     <category>cocktail</category>
     <glass>old-fashioned glass</glass>
@@ -4539,9 +4539,9 @@ a dirty martini contains a splash of ingr3 ingr4 or ingr3 juice and is typically
       <ingredient id="ingr6" alc_type="" basic_taste="spicy" measure="2 sprigs" quantity="0.0" unit="" garnish_type="sprigs">lavender</ingredient>
     </ingredients>
     <preparation>
-      <step>shake all ingredients.
-double strain in a chilled double old-fashioned glass with abig ice cube.
-garnish with a couple of ingr6 sprigs</step>
+      <step>shake all ingredients</step>
+      <step>double strain in a chilled double old-fashioned glass with abig ice cube</step>
+      <step>garnish with a couple of ingr6 sprigs</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>original</derivation>
@@ -4551,7 +4551,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3130785689609053464220759727537490205">
+  <cocktail>
     <name>Egg Nog #4</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -4591,7 +4591,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3133162851397131450692377354261858589">
+  <cocktail>
     <name>Egg Nog - Healthy</name>
     <category>punch / party drink</category>
     <glass>collins glass</glass>
@@ -4619,7 +4619,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3135540171641534470074954080482330909">
+  <cocktail>
     <name>Egg-Nog - Classic Cooked</name>
     <category>punch / party drink</category>
     <glass>pitcher</glass>
@@ -4650,7 +4650,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3136332611723002139356499399106988317">
+  <cocktail>
     <name>English Highball</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -4675,7 +4675,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3137125051804469811193556031287691549">
+  <cocktail>
     <name>English Rose Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -4700,7 +4700,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3138313711926671320642775914426763549">
+  <cocktail>
     <name>Espresso Martini</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -4720,7 +4720,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3138710011195567672075672195633088797">
+  <cocktail>
     <name>Fahrenheit 5000</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -4740,7 +4740,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3139898592089606661692697970914724125">
+  <cocktail>
     <name>Flaming Dr. Pepper</name>
     <category>shot</category>
     <glass>collins glass</glass>
@@ -4763,7 +4763,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3141483313796216977124959049456388381">
+  <cocktail>
     <name>Flaming Lamborghini</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -4786,7 +4786,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3143464334771723645387076718619363613">
+  <cocktail>
     <name>Flander's Flake-Out</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -4805,7 +4805,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3143860713268782509451474253471123741">
+  <cocktail>
     <name>Flying Dutchman</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -4825,7 +4825,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3144257012537678857739169144912578845">
+  <cocktail>
     <name>Flying Scotchman</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -4846,7 +4846,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3145049294162821501793740753265330461">
+  <cocktail>
     <name>Foxy Lady</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -4866,7 +4866,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3146237875056860498532083439326562589">
+  <cocktail>
     <name>Freddy Kruger</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -4886,7 +4886,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3146634253553919360570142616838310173">
+  <cocktail>
     <name>French 75</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -4912,7 +4912,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3147822755219795839041292065553352989">
+  <cocktail>
     <name>French Connection</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -4932,7 +4932,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3148219054488692189983858937329715485">
+  <cocktail>
     <name>French Martini</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -4954,7 +4954,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3149011415341997346916503878926436637">
+  <cocktail>
     <name>Frisco Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -4978,7 +4978,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3150199996236036341103838851058993437">
+  <cocktail>
     <name>Frozen Daiquiri</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -5001,7 +5001,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3150992436317504014963574665882470685">
+  <cocktail>
     <name>Frozen Mint Daiquiri</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -5024,7 +5024,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3151784876398971686870718567264127261">
+  <cocktail>
     <name>Frozen Pineapple Daiquiri</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -5047,7 +5047,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3152181175667868033682921630788323613">
+  <cocktail>
     <name>Fuzzy Asshole</name>
     <category>coffee / tea</category>
     <glass>coffee mug</glass>
@@ -5068,7 +5068,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3152973615749335709517767357190474013">
+  <cocktail>
     <name>GG</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -5089,7 +5089,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3153369835790069543656529395539347741">
+  <cocktail>
     <name>Gagliardo</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -5111,7 +5111,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3154954478268517346439274821926095133">
+  <cocktail>
     <name>Gentleman's Club</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -5133,7 +5133,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3155747076806310045016796114151901469">
+  <cocktail>
     <name>Gideon's Green Dinosaur</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -5156,7 +5156,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3157332194653732930024474404900407581">
+  <cocktail>
     <name>Gin And Tonic</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -5178,7 +5178,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3157728652378954308488880472070654237">
+  <cocktail>
     <name>Gin Cooler</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -5203,7 +5203,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3158916995588505763350129951716509981">
+  <cocktail>
     <name>Gin Daisy</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -5228,7 +5228,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3160105576482544754347790487763912989">
+  <cocktail>
     <name>Gin Fizz</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -5251,7 +5251,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3160502113435928648710214913306757405">
+  <cocktail>
     <name>Gin Rickey</name>
     <category>cocktail</category>
     <glass>highball glass</glass>
@@ -5276,7 +5276,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3161294474289233804151323953313712413">
+  <cocktail>
     <name>Gin Sling</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -5301,7 +5301,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3162086835142538960821071266662680861">
+  <cocktail>
     <name>Gin Smash</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -5326,7 +5326,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3162879275224006634979452031776164125">
+  <cocktail>
     <name>Gin Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -5350,7 +5350,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3163671715305474308980206809931680029">
+  <cocktail>
     <name>Gin Squirt</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -5375,7 +5375,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3164463917702454434851183249021307165">
+  <cocktail>
     <name>Gin Swizzle</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -5401,7 +5401,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3165652498596493428722703297284507933">
+  <cocktail>
     <name>Gin Toddy</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -5424,7 +5424,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3166048956321714806648366259030559005">
+  <cocktail>
     <name>Girl From Ipanema</name>
     <category>ordinary drink</category>
     <glass>wine glass</glass>
@@ -5447,7 +5447,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3167237378759428773602655361874364701">
+  <cocktail>
     <name>Gluehwein</name>
     <category>punch / party drink</category>
     <glass>irish coffee cup</glass>
@@ -5474,7 +5474,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3168425959653467766902499732438223133">
+  <cocktail>
     <name>Godchild</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -5494,7 +5494,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3169218241278610408647850631856752925">
+  <cocktail>
     <name>Godfather</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -5514,7 +5514,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3169218320506772926467498656232999197">
+  <cocktail>
     <name>Godmother</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -5533,7 +5533,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3169614461319344244760033731924035869">
+  <cocktail>
     <name>Golden dream</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -5555,7 +5555,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3170406742944486888199582516164004125">
+  <cocktail>
     <name>Grand Blue</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -5576,7 +5576,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3172387684691831039994820899022145821">
+  <cocktail>
     <name>Grass Skirt</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -5600,7 +5600,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3173576424042195063347527455562107165">
+  <cocktail>
     <name>Grasshopper</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -5621,7 +5621,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3183085784247969638204415230424221981">
+  <cocktail>
     <name>Green Goblin</name>
     <category>beer</category>
     <glass>pint glass</glass>
@@ -5641,7 +5641,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3183878224329437312736313289632745757">
+  <cocktail>
     <name>Grim Reaper</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -5662,7 +5662,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3184274761282821207243697328181578013">
+  <cocktail>
     <name>Grizzly Bear</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -5684,7 +5684,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3185067122136126360773872751299889437">
+  <cocktail>
     <name>H.D.</name>
     <category>coffee / tea</category>
     <glass>beer mug</glass>
@@ -5705,7 +5705,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3186255465345677813958094319703656733">
+  <cocktail>
     <name>Happy Skipper</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -5728,7 +5728,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3187048063883470514382935884081498397">
+  <cocktail>
     <name>Harvey Wallbanger</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -5749,7 +5749,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3187840583193100702193164693416544541">
+  <cocktail>
     <name>Havana Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -5771,7 +5771,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3188632785590080831497009948469332253">
+  <cocktail>
     <name>Hawaiian Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -5791,7 +5791,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3189425304899711014956198567811057949">
+  <cocktail>
     <name>Hemingway Special</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -5813,7 +5813,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3190217586524853660112181760032606493">
+  <cocktail>
     <name>Herbal flame</name>
     <category>coffee / tea</category>
     <glass>mason jar</glass>
@@ -5834,7 +5834,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3192198845184847868244194576687270173">
+  <cocktail>
     <name>Highland Fling Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -5856,7 +5856,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3192991047581827997839084957658876189">
+  <cocktail>
     <name>Horse's Neck</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -5880,7 +5880,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3193783566891458182725070233946917149">
+  <cocktail>
     <name>Hot Creamy Bush</name>
     <category>coffee / tea</category>
     <glass>irish coffee cup</glass>
@@ -5900,7 +5900,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3195764746323289875870480666818087197">
+  <cocktail>
     <name>Ice Pick #1</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -5921,7 +5921,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3196557107176595033835012873036073245">
+  <cocktail>
     <name>Iced Coffee Fillip</name>
     <category>coffee / tea</category>
     <glass>coffee mug</glass>
@@ -5940,7 +5940,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3196953564901816412310396464298035485">
+  <cocktail>
     <name>Imperial Cocktail</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -5960,7 +5960,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3197745846526959054309637792709576989">
+  <cocktail>
     <name>Imperial Fizz</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -5983,7 +5983,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3198934585877323078787681306138741021">
+  <cocktail>
     <name>Irish Coffee</name>
     <category>coffee / tea</category>
     <glass>irish coffee cup</glass>
@@ -6005,7 +6005,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3199330805918056915393571515356514589">
+  <cocktail>
     <name>Irish Curdling Cow</name>
     <category>cocktail</category>
     <glass>highball glass</glass>
@@ -6027,7 +6027,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3200915448396504713146922057877260573">
+  <cocktail>
     <name>Irish Russian</name>
     <category>beer</category>
     <glass>highball glass</glass>
@@ -6050,7 +6050,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3202104346203193765559728557534841117">
+  <cocktail>
     <name>Irish Spring</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -6074,7 +6074,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3204085050266050375842383828817905949">
+  <cocktail>
     <name>Jack Rose Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6094,7 +6094,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3204877648803843076049926711175121181">
+  <cocktail>
     <name>Jack's Vanilla Coke</name>
     <category>other/unknown</category>
     <glass>old-fashioned glass</glass>
@@ -6115,7 +6115,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3206066071241557038934087650782841117">
+  <cocktail>
     <name>Jackhammer</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -6134,7 +6134,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3206462132825965846305081956345678109">
+  <cocktail>
     <name>Jam Donut</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -6157,7 +6157,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3209235356198452643278258579608799517">
+  <cocktail>
     <name>Jamaica Kiss</name>
     <category>milk / float / shake</category>
     <glass>hurricane glass</glass>
@@ -6180,7 +6180,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3211216535630284337420371905012402461">
+  <cocktail>
     <name>Jamaican Coffee</name>
     <category>coffee / tea</category>
     <glass>champagne flute</glass>
@@ -6203,7 +6203,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3212008817255426977533167939509127453">
+  <cocktail>
     <name>Japanese Fizz</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -6227,7 +6227,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3212801257336894651589373288076642589">
+  <cocktail>
     <name>Jello shots</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -6251,7 +6251,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3213593855874687352677088422608079133">
+  <cocktail>
     <name>Jelly Bean</name>
     <category>shot</category>
     <glass>cordial glass</glass>
@@ -6270,7 +6270,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3213989996687258672892660539186317597">
+  <cocktail>
     <name>Jewel Of The Nile</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6292,7 +6292,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3214782357540563832885782902558001437">
+  <cocktail>
     <name>Jitterbug</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -6319,7 +6319,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3216367079247174147900898065614473501">
+  <cocktail>
     <name>John Collins</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -6345,7 +6345,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3217951959410109491379667696138684701">
+  <cocktail>
     <name>Kamikaze</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6366,7 +6366,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3218349050960630981068026500842096925">
+  <cocktail>
     <name>Karsk</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -6386,7 +6386,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3219141332585773624174590387633359133">
+  <cocktail>
     <name>Kentucky B And B</name>
     <category>ordinary drink</category>
     <glass>brandy snifter</glass>
@@ -6405,7 +6405,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3219537631854669974320864550295275805">
+  <cocktail>
     <name>Kentucky Colonel</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6427,7 +6427,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3219933772667241297174701623582492957">
+  <cocktail>
     <name>Kioki Coffee</name>
     <category>coffee / tea</category>
     <glass>coffee mug</glass>
@@ -6448,7 +6448,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3220330151164300160865581864339212573">
+  <cocktail>
     <name>Kir</name>
     <category>ordinary drink</category>
     <glass>wine glass</glass>
@@ -6467,7 +6467,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3221518335917526584432945985691683101">
+  <cocktail>
     <name>Kir Royale</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -6486,7 +6486,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3221914793642747961753156272533113117">
+  <cocktail>
     <name>Kiss me Quick</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -6507,7 +6507,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3223103453764949472300128564843743517">
+  <cocktail>
     <name>Kiwi Lemon</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -6528,7 +6528,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3223499673805683308694068116598393117">
+  <cocktail>
     <name>Kool First Aid</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -6548,7 +6548,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3228650138194410604720542549353531677">
+  <cocktail>
     <name>Kool-Aid Shot</name>
     <category>shot</category>
     <glass>old-fashioned glass</glass>
@@ -6571,7 +6571,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3229838798316612109742442523810695453">
+  <cocktail>
     <name>Kool-Aid Slammer</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -6593,7 +6593,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3230631317626242295364484864197101853">
+  <cocktail>
     <name>Kurant Tea</name>
     <category>coffee / tea</category>
     <glass>champagne flute</glass>
@@ -6614,7 +6614,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3232216039332852615003389469679520029">
+  <cocktail>
     <name>Lady Love Fizz</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6638,7 +6638,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3233008479414320283906069469651634461">
+  <cocktail>
     <name>Lemon Drop</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -6658,7 +6658,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3233405016367704179280114961492576541">
+  <cocktail>
     <name>Lemon Shot</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -6683,7 +6683,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3235385799658723299923894324272924957">
+  <cocktail>
     <name>Limona Corona</name>
     <category>beer</category>
     <glass>beer glass</glass>
@@ -6707,7 +6707,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3236178318968353484926691715895888157">
+  <cocktail>
     <name>Loch Lomond</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6731,7 +6731,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3236970600593496130943143911921912093">
+  <cocktail>
     <name>London Town</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6753,7 +6753,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3237366979090554992726468235510515997">
+  <cocktail>
     <name>Lone Tree Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -6772,7 +6772,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3237763199131288829575834299583007005">
+  <cocktail>
     <name>Lone Tree Cooler</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -6798,7 +6798,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3239347841609736630541377276325759261">
+  <cocktail>
     <name>Long Island Iced Tea</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -6822,7 +6822,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3240140440147529331920137536776014109">
+  <cocktail>
     <name>Long Island Tea</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -6847,7 +6847,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3240536818644588196797716279344859421">
+  <cocktail>
     <name>Long vodka</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -6869,7 +6869,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3242913425835528582775800429477726493">
+  <cocktail>
     <name>Lord And Lady</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -6889,7 +6889,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3243705786688833742512499089066002717">
+  <cocktail>
     <name>Lunch Box</name>
     <category>beer</category>
     <glass>pint glass</glass>
@@ -6911,7 +6911,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3243705865916996256349557667963177245">
+  <cocktail>
     <name>Mai Tai</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -6935,7 +6935,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3246082869248749213803859548029946141">
+  <cocktail>
     <name>Malibu Twister</name>
     <category>cocktail</category>
     <glass>highball glass</glass>
@@ -6955,7 +6955,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3246875388558379398807219889606330653">
+  <cocktail>
     <name>Manhattan</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -6977,7 +6977,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3248063969452418395612835095101409565">
+  <cocktail>
     <name>Margarita</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7001,7 +7001,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3248856488762048581680170848644073757">
+  <cocktail>
     <name>Martinez Cocktail</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -7024,7 +7024,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3250044990427925061009256026373196061">
+  <cocktail>
     <name>Martini</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -7047,7 +7047,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3250837588965717759024390315131111709">
+  <cocktail>
     <name>Mary Pickford</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -7069,7 +7069,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3251629870590860401911403720088062237">
+  <cocktail>
     <name>Miami Vice</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -7093,7 +7093,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3254403331647834740616432461783861533">
+  <cocktail>
     <name>Midnight Cowboy</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7115,7 +7115,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3255195850957464928094239323623622941">
+  <cocktail>
     <name>Midnight Manx</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -7139,7 +7139,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3257176871932971593789868155138836765">
+  <cocktail>
     <name>Midnight Mint</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -7161,7 +7161,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3262327574006186430144478997470611741">
+  <cocktail>
     <name>Mimosa</name>
     <category>ordinary drink</category>
     <glass>champagne flute</glass>
@@ -7181,7 +7181,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3263120093315816615704033893027252509">
+  <cocktail>
     <name>Mississippi Planters Punch</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -7205,7 +7205,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3264308594981693094969505726019766557">
+  <cocktail>
     <name>Mocha-Berry</name>
     <category>coffee / tea</category>
     <glass>irish coffee cup</glass>
@@ -7227,7 +7227,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3266289695185362278246936226590722333">
+  <cocktail>
     <name>Mojito</name>
     <category>cocktail</category>
     <glass>highball glass</glass>
@@ -7252,7 +7252,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3267082135266829950372504709899847965">
+  <cocktail>
     <name>Mojito #3</name>
     <category>cocktail</category>
     <glass>collins glass</glass>
@@ -7275,7 +7275,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3269459376283070450293308397614106909">
+  <cocktail>
     <name>Monkey Gland</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7296,7 +7296,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3270251895592700635843856093916006685">
+  <cocktail>
     <name>Monkey Wrench</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -7317,7 +7317,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3270648194861596988409970631359432989">
+  <cocktail>
     <name>Moranguito</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -7337,7 +7337,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3271044335674168307371853201668409629">
+  <cocktail>
     <name>Moscow Mule</name>
     <category>punch / party drink</category>
     <glass>copper mug</glass>
@@ -7360,7 +7360,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3271836775755635978105246450166630685">
+  <cocktail>
     <name>Mother's Milk</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -7381,7 +7381,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3272629215837103652245049866817210653">
+  <cocktail>
     <name>Mudslinger</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -7402,7 +7402,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3273817717502980132728182449060022557">
+  <cocktail>
     <name>Mulled Wine</name>
     <category>punch / party drink</category>
     <glass>collins glass</glass>
@@ -7427,7 +7427,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3275006298397019126281354298663471389">
+  <cocktail>
     <name>National Aquarium</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -7452,7 +7452,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3276194958519220630460236717872220445">
+  <cocktail>
     <name>Negroni</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -7472,7 +7472,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3276591337016279497164869534269933853">
+  <cocktail>
     <name>New York Lemonade</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -7495,7 +7495,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3278968498804357483871237291570989341">
+  <cocktail>
     <name>New York Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -7520,7 +7520,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3279760938885825157143534829999327517">
+  <cocktail>
     <name>Nutty Irishman</name>
     <category>milk / float / shake</category>
     <glass>highball glass</glass>
@@ -7540,7 +7540,7 @@ garnish with a couple of ingr6 sprigs</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3281345660592435471456651401139423517">
+  <cocktail>
     <name>Old Fashioned</name>
     <category>cocktail</category>
     <glass>old-fashioned glass</glass>
@@ -7552,10 +7552,9 @@ garnish with a couple of ingr6 sprigs</step>
     </ingredients>
     <preparation>
       <step>place ingr3 cube in old-fashioned glass and saturate with ingr0, add a dash of plain ingr1</step>
-      <step>muddle until dissolved.
-fill the glass with ice cubes and add whiskey.
-
-garnish with orange twist, and a cocktail cherry</step>
+      <step>muddle until dissolved</step>
+      <step>fill the glass with ice cubes and add whiskey</step>
+      <step>garnish with orange twist, and a cocktail cherry</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>original</derivation>
@@ -7565,7 +7564,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3282138100673903142854044119698082077">
+  <cocktail>
     <name>Orange Crush</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -7585,7 +7584,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3282930540755370816490851752966719773">
+  <cocktail>
     <name>Orange Oasis</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -7607,7 +7606,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3284119121649409810980209375109810461">
+  <cocktail>
     <name>Orange Push-up</name>
     <category>ordinary drink</category>
     <glass>hurricane glass</glass>
@@ -7631,7 +7630,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3284911561730877479837853378808219933">
+  <cocktail>
     <name>Orange Whip</name>
     <category>other/unknown</category>
     <glass>collins glass</glass>
@@ -7652,7 +7651,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3285307940227936344050025276433074461">
+  <cocktail>
     <name>Oreo Mudslide</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -7676,7 +7675,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3286496521121975340076236271416346909">
+  <cocktail>
     <name>Orgasm</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7698,7 +7697,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3291647064738865147518521533403597085">
+  <cocktail>
     <name>Owen's Grandmother's Revenge</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -7718,7 +7717,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3292439821732982878598300258941634845">
+  <cocktail>
     <name>Paradise</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7739,7 +7738,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3293232024129963005778979764665944349">
+  <cocktail>
     <name>Pina Colada</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -7760,7 +7759,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3294024543439593191000764688169797917">
+  <cocktail>
     <name>Pink Gin</name>
     <category>ordinary drink</category>
     <glass>white wine glass</glass>
@@ -7782,7 +7781,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3294420763480327029558683860875970845">
+  <cocktail>
     <name>Pink Lady</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7803,7 +7802,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3295213124333632185458597112921295133">
+  <cocktail>
     <name>Pink Panty Pulldowns</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -7823,7 +7822,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3296005564415099858563417040206792989">
+  <cocktail>
     <name>Pink Penocha</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -7845,7 +7844,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3297194066080976337561206170347473181">
+  <cocktail>
     <name>Pisco Sour</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -7865,7 +7864,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3297590444578035201365802301695297821">
+  <cocktail>
     <name>Planter's Punch</name>
     <category>punch / party drink</category>
     <glass>collins glass</glass>
@@ -7890,7 +7889,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3299175087056483003550131927595190557">
+  <cocktail>
     <name>Popped cherry</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -7911,7 +7910,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3299967606366113189389191475025512733">
+  <cocktail>
     <name>Poppy Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7930,7 +7929,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3304722088398594194827647287368714525">
+  <cocktail>
     <name>Port And Starboard</name>
     <category>ordinary drink</category>
     <glass>pousse cafe glass</glass>
@@ -7950,7 +7949,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3309080350390341361489477870101563677">
+  <cocktail>
     <name>Port Wine Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -7969,7 +7968,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3309476808115562740011023357544073501">
+  <cocktail>
     <name>Port Wine Flip</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -7992,7 +7991,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3310665230553276701686530747156236573">
+  <cocktail>
     <name>Porto flip</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -8013,7 +8012,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3311457670634744377478310802121656605">
+  <cocktail>
     <name>Quaker's Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -8034,7 +8033,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3312250110716212045276201518504446237">
+  <cocktail>
     <name>Quarter Deck Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -8054,7 +8053,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3313042550797679718904001952518342941">
+  <cocktail>
     <name>Queen Bee</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -8074,7 +8073,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3314231131691718712434655803984939293">
+  <cocktail>
     <name>Queen Charlotte</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -8095,7 +8094,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3315023571773186386680012336902015261">
+  <cocktail>
     <name>Queen Elizabeth</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -8115,7 +8114,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3315419950270245246855270118542641437">
+  <cocktail>
     <name>Quentin</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -8138,7 +8137,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3316608451936121727072971797747304733">
+  <cocktail>
     <name>Quick F**K</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -8159,7 +8158,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3318193252870894558179197153199884573">
+  <cocktail>
     <name>Quick-sand</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -8179,7 +8178,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3318985692952362228507266435234760989">
+  <cocktail>
     <name>Radioactive Long Island Iced Tea</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -8205,7 +8204,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3321759233237499082142039615418501405">
+  <cocktail>
     <name>Radler</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -8224,7 +8223,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3321759312465661594380320326599149853">
+  <cocktail>
     <name>Raspberry Cooler</name>
     <category>other/unknown</category>
     <glass>highball glass</glass>
@@ -8244,7 +8243,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3322551752547129269857129882625345821">
+  <cocktail>
     <name>Red Snapper</name>
     <category>shot</category>
     <glass>old-fashioned glass</glass>
@@ -8264,7 +8263,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3323344034172271911368293601420609821">
+  <cocktail>
     <name>Rose</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -8288,7 +8287,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3324532615066310903798661768925251869">
+  <cocktail>
     <name>Royal Bitch</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -8307,7 +8306,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3324928993563369767598472825668995357">
+  <cocktail>
     <name>Royal Fizz</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -8329,7 +8328,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3326513636041817570505911666738563357">
+  <cocktail>
     <name>Royal Flush</name>
     <category>shot</category>
     <glass>old-fashioned glass</glass>
@@ -8351,7 +8350,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3328494736245486748493582929986160925">
+  <cocktail>
     <name>Royal Gin Fizz</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -8374,7 +8373,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3329287810152254534758621959597426973">
+  <cocktail>
     <name>Ruby Tuesday</name>
     <category>cocktail</category>
     <glass>highball glass</glass>
@@ -8395,7 +8394,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3330080171005559693643014389705836829">
+  <cocktail>
     <name>Rum Cobbler</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -8422,7 +8421,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3331664813484007492749696620251416861">
+  <cocktail>
     <name>Rum Cooler</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -8443,7 +8442,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3336815436329059817169456776296630557">
+  <cocktail>
     <name>Rum Milk Punch</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -8465,7 +8464,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3337608034866852518758197369373034781">
+  <cocktail>
     <name>Rum Old-fashioned</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -8490,7 +8489,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3339985434339418050809148571188037917">
+  <cocktail>
     <name>Rum Punch</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -8511,7 +8510,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3342362437671171010183672742374902045">
+  <cocktail>
     <name>Rum Runner</name>
     <category>punch / party drink</category>
     <glass>cocktail glass</glass>
@@ -8533,7 +8532,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3343947317834106352174002696053164317">
+  <cocktail>
     <name>Rum Screwdriver</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -8553,7 +8552,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3344343775559327731611186282735438109">
+  <cocktail>
     <name>Rum Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -8577,7 +8576,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3345136136412632889425129376413223197">
+  <cocktail>
     <name>Rum Toddy</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -8600,7 +8599,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3346720699662918174117729325804783901">
+  <cocktail>
     <name>Russian Spring Punch</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -8621,7 +8620,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3348305579825853517498264189456976157">
+  <cocktail>
     <name>Rusty Nail</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -8643,7 +8642,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3349098336819971245924296834566949149">
+  <cocktail>
     <name>Salty Dog</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -8665,7 +8664,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3349494556860705083281443756625463581">
+  <cocktail>
     <name>San Francisco</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -8687,7 +8686,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3351475340151724208319047505859152157">
+  <cocktail>
     <name>Sangria #1</name>
     <category>punch / party drink</category>
     <glass>pitcher</glass>
@@ -8712,7 +8711,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3352663921045763201598344203123132701">
+  <cocktail>
     <name>Sangria - The World's Best</name>
     <category>punch / party drink</category>
     <glass>pitcher</glass>
@@ -8739,7 +8738,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3354644942021269865249901753765562653">
+  <cocktail>
     <name>Sazerac</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -8765,7 +8764,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3355437619787225082231694596995647773">
+  <cocktail>
     <name>Scooter</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -8785,7 +8784,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3356229980640530236994730418106632477">
+  <cocktail>
     <name>Scotch Cobbler</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -8808,7 +8807,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3356626279909426587719435657908947229">
+  <cocktail>
     <name>Scotch Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -8831,7 +8830,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3357022579178322938928840807607011613">
+  <cocktail>
     <name>Screaming Orgasm</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -8855,7 +8854,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3358606983972283195799267761454418205">
+  <cocktail>
     <name>Screwdriver</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -8875,7 +8874,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3359003204013017033494747605519141149">
+  <cocktail>
     <name>Sea breeze</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -8896,7 +8895,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3359795644094484703285762631990085917">
+  <cocktail>
     <name>Sex on the Beach</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -8918,7 +8917,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3360588084175952375797514783346231581">
+  <cocktail>
     <name>Shanghai Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -8939,7 +8938,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3362172964338887722172943399199803677">
+  <cocktail>
     <name>Shark Attack</name>
     <category>cocktail</category>
     <glass>pitcher</glass>
@@ -8965,7 +8964,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3362569105151459040112227379118967069">
+  <cocktail>
     <name>Sherry Eggnog</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -8989,7 +8988,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3363757844501823062925346405304600861">
+  <cocktail>
     <name>Sherry Flip</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -9012,7 +9011,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3364550205355128221326164825424103709">
+  <cocktail>
     <name>Shot-gun</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -9032,7 +9031,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3365738944705492243351153916819900701">
+  <cocktail>
     <name>Sidecar</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -9053,7 +9052,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3366135006289901052394109584044034333">
+  <cocktail>
     <name>Sidecar Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -9073,7 +9072,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3366927050230556151835651212353833245">
+  <cocktail>
     <name>Singapore Sling</name>
     <category>ordinary drink</category>
     <glass>hurricane glass</glass>
@@ -9099,7 +9098,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3367719886452836392812120317816572189">
+  <cocktail>
     <name>Sloe Gin Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -9119,7 +9118,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3368908705031362931539583251024021789">
+  <cocktail>
     <name>Smut</name>
     <category>punch / party drink</category>
     <glass>beer mug</glass>
@@ -9140,7 +9139,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3370096810556426841308169390311967005">
+  <cocktail>
     <name>Snake Bite (UK)</name>
     <category>beer</category>
     <glass>pint glass</glass>
@@ -9161,7 +9160,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3375247987998616762417891662657587485">
+  <cocktail>
     <name>Snakebite and Black</name>
     <category>beer</category>
     <glass>pint glass</glass>
@@ -9182,7 +9181,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3375644128811188086148523288398498077">
+  <cocktail>
     <name>Snowball</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -9204,7 +9203,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3376436568892655757426570616831838493">
+  <cocktail>
     <name>Sol Y Sombra</name>
     <category>ordinary drink</category>
     <glass>brandy snifter</glass>
@@ -9225,7 +9224,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3376832788933389592602849419336190237">
+  <cocktail>
     <name>Space Odyssey</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -9250,7 +9249,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3379210029949630095861101905908697373">
+  <cocktail>
     <name>Spritz</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -9270,7 +9269,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3379606249990363931544880091422361885">
+  <cocktail>
     <name>Stinger</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -9290,7 +9289,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3384360811251007447690111266663532829">
+  <cocktail>
     <name>Stone Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -9310,7 +9309,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3385945691413942792474924789125187869">
+  <cocktail>
     <name>Strawberry Daiquiri</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -9334,7 +9333,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3387134272307981786663104186187876637">
+  <cocktail>
     <name>Strawberry Margarita</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -9358,7 +9357,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3387926712389449457243375047355500829">
+  <cocktail>
     <name>Sunny Holiday Punch</name>
     <category>punch / party drink</category>
     <glass>punch bowl</glass>
@@ -9381,7 +9380,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3389907733364956124945638987840981277">
+  <cocktail>
     <name>Surf City Lifesaver</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -9402,7 +9401,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3391888437427812733377033337298061597">
+  <cocktail>
     <name>Swedish Coffee</name>
     <category>coffee / tea</category>
     <glass>coffee mug</glass>
@@ -9424,7 +9423,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3391888516655975245505257332584843549">
+  <cocktail>
     <name>Sweet Tooth</name>
     <category>milk / float / shake</category>
     <glass>highball glass</glass>
@@ -9443,7 +9442,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3392680798281117888652072141045729565">
+  <cocktail>
     <name>Talos Coffee</name>
     <category>coffee / tea</category>
     <glass>brandy snifter</glass>
@@ -9462,7 +9461,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3393077018321851723484107047032949021">
+  <cocktail>
     <name>Tennesee Mud</name>
     <category>coffee / tea</category>
     <glass>coffee mug</glass>
@@ -9484,7 +9483,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3393869458403319396839721178567641373">
+  <cocktail>
     <name>Tequila Fizz</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -9507,7 +9506,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3395058514666333475231602526268000541">
+  <cocktail>
     <name>Tequila Sour</name>
     <category>ordinary drink</category>
     <glass>whiskey sour glass</glass>
@@ -9530,7 +9529,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3395850479378826064578013916072085789">
+  <cocktail>
     <name>Tequila Sunrise</name>
     <category>cocktail</category>
     <glass>highball glass</glass>
@@ -9553,7 +9552,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3396246699419559896234729609786394909">
+  <cocktail>
     <name>Tequila Surprise</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -9573,7 +9572,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3396642919460293735979065809327982877">
+  <cocktail>
     <name>Texas Rattlesnake</name>
     <category>shot</category>
     <glass>highball glass</glass>
@@ -9595,7 +9594,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3398623940435800398022275343045724445">
+  <cocktail>
     <name>Texas Sling</name>
     <category>milk / float / shake</category>
     <glass>wine glass</glass>
@@ -9618,7 +9617,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3400604961411307064034844998337136925">
+  <cocktail>
     <name>The Evil Blue Thing</name>
     <category>cocktail</category>
     <glass>old-fashioned glass</glass>
@@ -9638,7 +9637,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3402586299299463787449008924321483037">
+  <cocktail>
     <name>Thriller</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -9660,7 +9659,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3404171337918724159367226174316316957">
+  <cocktail>
     <name>Tom Collins</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -9687,7 +9686,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3405756218081659502574090977338034461">
+  <cocktail>
     <name>Tommy's Margarita</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -9707,7 +9706,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3406548420478639632932341495148939549">
+  <cocktail>
     <name>Turf Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -9730,7 +9729,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3407341019016432334682930199833970973">
+  <cocktail>
     <name>Turkeyball</name>
     <category>shot</category>
     <glass>shot glass</glass>
@@ -9750,7 +9749,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3408133538326062521605949882577029405">
+  <cocktail>
     <name>Tuxedo Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -9774,7 +9773,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3409322119220101513442968799175608605">
+  <cocktail>
     <name>Valencia Cocktail</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -9794,7 +9793,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3409718339260835346963048838714460445">
+  <cocktail>
     <name>Vampiro</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -9822,7 +9821,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3412095580277075849680587895025797405">
+  <cocktail>
     <name>Van Vleet</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -9842,7 +9841,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3412887941130381006456451274594683165">
+  <cocktail>
     <name>Vermouth Cassis</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -9863,7 +9862,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3414472979749641380374266759142017309">
+  <cocktail>
     <name>Vesper</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -9883,7 +9882,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3414869041334050189677586779823507741">
+  <cocktail>
     <name>Vesuvio</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -9905,7 +9904,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3415661322959192830645222318590495005">
+  <cocktail>
     <name>Veteran</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -9925,7 +9924,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3416453842268823016424327695981447453">
+  <cocktail>
     <name>Victor</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -9945,7 +9944,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3416850062309556851402729589858208029">
+  <cocktail>
     <name>Victory Collins</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -9968,7 +9967,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3418831083285063517941375976621836573">
+  <cocktail>
     <name>Vodka And Tonic</name>
     <category>ordinary drink</category>
     <glass>highball glass</glass>
@@ -9988,7 +9987,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3419227303325797355540028428698093853">
+  <cocktail>
     <name>Vodka Fizz</name>
     <category>other/unknown</category>
     <glass>white wine glass</glass>
@@ -10010,7 +10009,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3419623523366531192229235231022221597">
+  <cocktail>
     <name>Vodka Martini</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -10030,7 +10029,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3420415963447998863615368950512453917">
+  <cocktail>
     <name>Vodka Russian</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -10049,7 +10048,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3420812183488732698294844419122497821">
+  <cocktail>
     <name>Waikiki Beachcomber</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -10069,7 +10068,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3421604465113875343401006540466260253">
+  <cocktail>
     <name>Whiskey Sour</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -10093,7 +10092,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3422396984423505529578680484879501597">
+  <cocktail>
     <name>Whisky Mac</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -10112,7 +10111,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3422793283692401876657440351348689181">
+  <cocktail>
     <name>White Lady</name>
     <category>ordinary drink</category>
     <glass>cocktail glass</glass>
@@ -10133,7 +10132,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3423585644545707033877471244166990109">
+  <cocktail>
     <name>White Russian</name>
     <category>ordinary drink</category>
     <glass>old-fashioned glass</glass>
@@ -10154,7 +10153,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3424378084627174706536716283319519517">
+  <cocktail>
     <name>Whitecap Margarita</name>
     <category>other/unknown</category>
     <glass>margarita/coupette glass</glass>
@@ -10175,7 +10174,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3426755325643415210177493263241808157">
+  <cocktail>
     <name>Wine Cooler</name>
     <category>punch / party drink</category>
     <glass>collins glass</glass>
@@ -10196,7 +10195,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3431906106944792562969991469277219101">
+  <cocktail>
     <name>Wine Punch</name>
     <category>punch / party drink</category>
     <glass>collins glass</glass>
@@ -10218,7 +10217,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3433094767066994070518410834689231133">
+  <cocktail>
     <name>Yellow Bird</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -10239,7 +10238,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3433887127920299226548647000951589149">
+  <cocktail>
     <name>Zambeer</name>
     <category>soft drink / soda</category>
     <glass>collins glass</glass>
@@ -10259,7 +10258,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3434283347961033064472966001082075421">
+  <cocktail>
     <name>Zenmeister</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -10278,7 +10277,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3435075788042500735451242479318567197">
+  <cocktail>
     <name>Ziemes Martini Apfelsaft</name>
     <category>ordinary drink</category>
     <glass>collins glass</glass>
@@ -10298,7 +10297,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3435471928855072059194821953988167965">
+  <cocktail>
     <name>Zima Blaster</name>
     <category>ordinary drink</category>
     <glass>hurricane glass</glass>
@@ -10319,7 +10318,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3436660588977273566092189698268432669">
+  <cocktail>
     <name>Zimadori Zinger</name>
     <category>punch / party drink</category>
     <glass>collins glass</glass>
@@ -10340,7 +10339,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3438245469140208908021158107023771933">
+  <cocktail>
     <name>Zinger</name>
     <category>soft drink / soda</category>
     <glass>highball glass</glass>
@@ -10361,7 +10360,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3438641609952780229323223633705142557">
+  <cocktail>
     <name>Zipperhead</name>
     <category>shot</category>
     <glass>whiskey sour glass</glass>
@@ -10383,7 +10382,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3440622710156449410517739306617243933">
+  <cocktail>
     <name>Zippy's Revenge</name>
     <category>cocktail</category>
     <glass>old-fashioned glass</glass>
@@ -10405,7 +10404,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3441019009425345762999974301000894749">
+  <cocktail>
     <name>Zizi Coin-coin</name>
     <category>punch / party drink</category>
     <glass>margarita/coupette glass</glass>
@@ -10425,7 +10424,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3441415150237917082205051251187878173">
+  <cocktail>
     <name>Zorbatini</name>
     <category>cocktail</category>
     <glass>cocktail glass</glass>
@@ -10445,7 +10444,7 @@ garnish with orange twist, and a cocktail cherry</step>
     <success_count>0</success_count>
     <failure_count>0</failure_count>
   </cocktail>
-  <cocktail id="3441811291050488406599963821965936925">
+  <cocktail>
     <name>Zorro</name>
     <category>coffee / tea</category>
     <glass>coffee mug</glass>

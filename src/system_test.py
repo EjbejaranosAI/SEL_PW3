@@ -17,6 +17,7 @@ os.makedirs(output_path, exist_ok=True)
 
 N_QUERIES = 200
 MAX_N_VALUES = 5
+random.seed(2022)
 
 tmp_case_library = "tmp_case_library.xml"
 shutil.copyfile(CASE_LIBRARY_FILE, tmp_case_library)
@@ -80,7 +81,7 @@ def build_query():
 
 test = f"test{time.strftime('%d-%H%M%S')}.txt"
 total_time = 0
-for _ in range(N_QUERIES):
+for i in range(N_QUERIES):
     build_query()
     name = f"MyRecipe{random.randint(0, 10000)}"
     start = time.time()

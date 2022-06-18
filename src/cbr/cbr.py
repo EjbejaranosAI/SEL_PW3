@@ -200,11 +200,13 @@ class CBR:
                 if ingr.text not in self.query.get_exc_ingredients():
                     self.include_ingredient(ingr, ingr.attrib["measure"])
                     return
+        counter = 0
         while True:
             ingr = self._search_ingredient(basic_taste=basic_taste, alc_type=alc_type)
-            if ingr.text not in self.query.get_exc_ingredients():
+            if counter > 10 or ingr.text not in self.query.get_exc_ingredients():
                 self.include_ingredient(ingr)
                 return
+            counter += 1
 
     def retrieve(self, query: Query):
         """

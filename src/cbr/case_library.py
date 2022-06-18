@@ -1,4 +1,3 @@
-import uuid
 from typing import Dict, List, Union
 
 from lxml import objectify
@@ -194,10 +193,24 @@ class CaseLibrary:
         drink_type = case.category
         glass_type = case.glass
         parent = self.case_library.find(f"./category[@type='{drink_type}']/glass[@type='{glass_type}']")
-        case.set("id", str(uuid.uuid1().int))
         case.derivation = "adapted"
         parent.append(case)
         self.ET.write(self.case_library_path, pretty_print=True, encoding="utf-8")
+
+        self._increase_counter(glass_type, "glass_types")
+        self._increase_counter(drink_type, "drink_types")
+        for ingredient in case.ingredients.iterchildren():
+            name = ingredient.text
+            self._increase_counter(name, "ingredients")
+            alc_type = ingredient.attrib["alc_type"]
+            if alc_type:
+                self._increase_counter(alc_type, "alc_types")
+            basic_taste = ingredient.attrib["basic_taste"]
+            if basic_taste:
+                self._increase_counter(basic_taste, "taste_types")
+            garnish_type = ingredient.attrib["garnish_type"]
+            if garnish_type:
+                self._increase_counter(garnish_type, "garnish_types")
 
     def remove_case(self, case):
         """
@@ -238,6 +251,9 @@ class CaseLibrary:
             value_list.remove(key)
             self.value_counter[types].pop(key)
 
+    def _increase_counter(self, key, types):
+        self.value_counter[types][key] += 1
+
     def initialize_type_sets(self):
         drink_types = set()
         glass_types = set()
@@ -245,13 +261,9 @@ class CaseLibrary:
         alc_types = set()
         taste_types = set()
         garnish_types = set()
-        value_counter = dict(drink_types={},
-                             glass_types={},
-                             ingredients={},
-                             alc_types={},
-                             taste_types={},
-                             garnish_types={}
-                             )
+        value_counter = dict(
+            drink_types={}, glass_types={}, ingredients={}, alc_types={}, taste_types={}, garnish_types={}
+        )
         for cocktail in self.case_library.xpath(".//cocktail"):
             drink = cocktail.category
             glass = cocktail.glass
@@ -298,7 +310,7 @@ class CaseLibrary:
                         self.ingredients_onto["non-alcoholic"][name] = basic_taste
                     else:
                         self.ingredients_onto["non-alcoholic"][name] = basic_taste
-                elif garnish_type:
+                if garnish_type:
                     if garnish_type in value_counter["garnish_types"].keys():
                         value_counter["garnish_types"][garnish_type] += 1
                     else:
