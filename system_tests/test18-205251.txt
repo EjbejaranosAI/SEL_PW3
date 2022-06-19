@@ -1,0 +1,2507 @@
+--------------
+Query:
+- Type of drink: soft drink / soda
+- Type of glass: cordial glass
+- Ingredients: vanilla extract, kool-aid tropical berry, yukon jack
+- Ingredients to exclude: 
+- Taste of the drink: spicy, sour, water, bitter
+- Type of alcohol: creamy liqueur, triple sec, prosecco
+
+Retrieved case:
+Belgian Blue
+Type of drink: soft drink / soda
+Glass: highball glass
+Ingredients:
+        fill with of sprite, 1 cl of blue curacao, 1 cl of coconut liqueur, 2 cl of vodka
+Preparation:
+        0. just pour all ingredients in the glass and stir
+
+Adapted case:
+MyRecipe9005
+Type of drink: soft drink / soda
+Glass: highball glass
+Ingredients:
+        fill with of sprite, 1 cl of blue curacao, 1 cl of coconut liqueur, 2 cl of vodka,
+        some vanilla extract, some kool-aid tropical berry, some yukon jack, 3/4 oz of kahlua,
+        some prosecco, some anisette, 1/2 glass of cranberry juice, some water,
+        some schweppes russchian
+Preparation:
+        0. just pour all ingredients in the glass and stir
+        1. add some schweppes russchian to taste
+        2. add some water to taste
+        3. add 1/2 glass of cranberry juice
+        4. add some anisette to taste
+        5. add some prosecco to taste
+        6. add 3/4 oz of kahlua
+        7. add some yukon jack to taste
+        8. add some kool-aid tropical berry to taste
+        9. add some vanilla extract to taste
+--------------
+
+--------------
+Query:
+- Type of drink: coffee / tea
+- Type of glass: beer glass
+- Ingredients: 
+- Ingredients to exclude: sherry cream
+- Taste of the drink: cream, water, sour
+- Type of alcohol: 
+
+Retrieved case:
+Jamaican Coffee
+Type of drink: coffee / tea
+Glass: champagne flute
+Ingredients:
+        1/6 glass of rum, 1/6 glass strong black of coffee, 1/2 glass cold of water cold,  of whipped-cream
+Preparation:
+        0. stir the 1/6 glass of rum, 1/6 glass strong black of coffee and 1/2 glass cold of water cold together
+        1. top with the  of whipped-cream
+        2. sprinkle with a pinch of well ground 1/6 glass strong black of coffee and drink with a straw
+
+Adapted case:
+MyRecipe9201
+Type of drink: coffee / tea
+Glass: champagne flute
+Ingredients:
+        1/6 glass of rum, 1/6 glass strong black of coffee, 1/2 glass cold of water cold,  of whipped-cream,
+        some lemon juice
+Preparation:
+        0. stir the 1/6 glass of rum, 1/6 glass strong black of coffee and 1/2 glass cold of water cold together
+        1. add some lemon juice to taste
+        2. top with the  of whipped-cream
+        3. sprinkle with a pinch of well ground 1/6 glass strong black of coffee and drink with a straw
+--------------
+
+--------------
+Query:
+- Type of drink: shot
+- Type of glass: copper mug
+- Ingredients: 
+- Ingredients to exclude: lemon peel, pineapple syrup, grand marnier, 151 proof rum light
+- Taste of the drink: egg, bitter, sour
+- Type of alcohol: absinthe, port, vermouth, vodka, whisky
+
+Retrieved case:
+Bruised Heart
+Type of drink: shot
+Glass: shot glass
+Ingredients:
+        1/2 oz of peachtree schnapps, 1/2 oz of chambord raspberry liqueur, 1/2 oz of vodka, 1/2 oz of cranberry juice
+Preparation:
+        0. pour all ingredients in a mixing tin over ice, stir, and strain into shot glass
+
+Adapted case:
+MyRecipe5277
+Type of drink: shot
+Glass: shot glass
+Ingredients:
+        1/2 oz of peachtree schnapps, 1/2 oz of chambord raspberry liqueur, 1/2 oz of vodka, 1/2 oz of cranberry juice,
+        some absinthe, some port, some dry vermouth, 1 shot of crown royal,
+        some egg, some coffee
+Preparation:
+        0. pour all ingredients in a mixing tin over ice, stir, and strain into shot glass
+        1. add some coffee to taste
+        2. add some egg to taste
+        3. add 1 shot of crown royal
+        4. add some dry vermouth to taste
+        5. add some port to taste
+        6. add some absinthe to taste
+--------------
+
+--------------
+Query:
+- Type of drink: cocktail
+- Type of glass: margarita glass
+- Ingredients: prosecco, water cold, chocolate liqueur
+- Ingredients to exclude: grenadine, pineapple juice, coffee cold, caramel sauce, crown royal
+- Taste of the drink: cream
+- Type of alcohol: brandy, pisco, bitters
+
+Retrieved case:
+Midnight Mint
+Type of drink: cocktail
+Glass: cocktail glass
+Ingredients:
+        3/4 oz double of cream double, 3/4 oz of white creme de menthe, 1 oz of baileys irish cream
+Preparation:
+        0. if available, rim cocktail (martini) glass with sugar syrup then dip into chocolate flakes or powder
+        1. add ingredients into shaker with ice
+        2. shake well then strain into cocktail glass
+
+Adapted case:
+MyRecipe2706
+Type of drink: cocktail
+Glass: cocktail glass
+Ingredients:
+        3/4 oz double of cream double, 3/4 oz of white creme de menthe, 1 oz of baileys irish cream, some prosecco,
+        some water cold, some chocolate liqueur, 1 shot of cognac, some pisco,
+        some angostura bitters
+Preparation:
+        0. if available, rim cocktail (martini) glass with sugar syrup then dip into chocolate flakes or powder
+        1. add some angostura bitters to taste
+        2. add some pisco to taste
+        3. add 1 shot of cognac
+        4. add some chocolate liqueur to taste
+        5. add some water cold to taste
+        6. add some prosecco to taste
+        7. add ingredients into shaker with ice
+        8. shake well then strain into cocktail glass
+--------------
+
+--------------
+Query:
+- Type of drink: other/unknown
+- Type of glass: old-fashioned glass
+- Ingredients: lemonade cold, green chartreuse, lavender, st. germain, candy
+- Ingredients to exclude: spiced rum, orange peel, ouzo
+- Taste of the drink: mint, sweet, water
+- Type of alcohol: triple sec
+
+Retrieved case:
+Amaretto Stone Sour
+Type of drink: other/unknown
+Glass: collins glass
+Ingredients:
+        1 part of sour mix, 1 part of orange juice, 1 part of amaretto
+Preparation:
+        0. shake and serve over ice
+
+Adapted case:
+MyRecipe2372
+Type of drink: other/unknown
+Glass: collins glass
+Ingredients:
+        1 part of sour mix, 1 part of orange juice, 1 part of amaretto, some lemonade cold,
+        some green chartreuse, some lavender, some st. germain, some candy,
+        some blue curacao, some mint, some carbonated water
+Preparation:
+        0. shake and serve over ice
+        1. add some carbonated water to taste
+        2. add some mint to taste
+        3. add some blue curacao to taste
+        4. add some candy to taste
+        5. add some st. germain to taste
+        6. add some lavender to taste
+        7. add some green chartreuse to taste
+        8. add some lemonade cold to taste
+--------------
+
+--------------
+Query:
+- Type of drink: ordinary drink
+- Type of glass: shot glass
+- Ingredients: 
+- Ingredients to exclude: creme de banana, cider
+- Taste of the drink: sweet
+- Type of alcohol: creamy liqueur, campari, absinthe, brandy, gin
+
+Retrieved case:
+Gentleman's Club
+Type of drink: ordinary drink
+Glass: old-fashioned glass
+Ingredients:
+        1 1/2 oz of gin, 1 oz of sweet vermouth, 1 oz of brandy, 1 oz of club soda
+Preparation:
+        0. in an old-fashioned glass almost filled with ice cubes, combine all of the ingredients
+        1. stir well
+
+Adapted case:
+MyRecipe274
+Type of drink: ordinary drink
+Glass: old-fashioned glass
+Ingredients:
+        1 1/2 oz of gin, 1 oz of sweet vermouth, 1 oz of brandy, 1 oz of club soda,
+        1/2 oz of kahlua, some campari, some absinthe
+Preparation:
+        0. in an old-fashioned glass almost filled with ice cubes, combine all of the ingredients
+        1. add some absinthe to taste
+        2. add some campari to taste
+        3. add 1/2 oz of kahlua
+        4. stir well
+--------------
+
+--------------
+Query:
+- Type of drink: punch / party drink
+- Type of glass: whiskey sour glass
+- Ingredients: 
+- Ingredients to exclude: cointreau, pina colada mix, dubonnet rouge, coconut liqueur
+- Taste of the drink: salty
+- Type of alcohol: rum, ouzo
+
+Retrieved case:
+Egg Nog #4
+Type of drink: punch / party drink
+Glass: punch bowl
+Ingredients:
+        ground of nutmeg, 1/4 cup of sugar, 1/4 cup of sugar, 6 of egg yolk,
+        2 cups of milk, 1/2 cup of light rum, 1 cup of whipped-cream, 1/2 cup of bourbon,
+        6 of egg white, 1/4 tsp of salt, 1 tsp of vanilla extract
+Preparation:
+        0. in a small mixer bowl beat 6 of egg white yolks till blended
+        1. gradually add 1/4 cup of sugar, beating at high speed till thick and lemon colored
+        2. stir in 2 cups of milk, stir in 1/2 cup of light rum, 1/2 cup of bourbon, 1 tsp of vanilla extract, and 1/4 tsp of salt
+        3. chill thoroughly
+        4. whip cream
+        5. wash beaters well
+        6. in a large mixer bowl beat 6 of egg white whites till soft peaks form
+        7. gradually add remaining 1/4 cup of sugar, beating to stiff peaks
+        8. fold 6 of egg yolk mixture and 1 cup of whipped-cream into 6 of egg white whites
+        9. serve immediately
+        10. sprinkle ground of nutmeg over each serving
+        11. serve in a punch bowl or another big bowl
+        12. note: for a nonalcoholic eggnog, prepare eggnog as above, except omit the 1/2 cup of bourbon and 1/2 cup of light rum and increase the 2 cups of milk to 3 cups
+
+Adapted case:
+MyRecipe7508
+Type of drink: punch / party drink
+Glass: punch bowl
+Ingredients:
+        ground of nutmeg, 1/4 cup of sugar, 1/4 cup of sugar, 6 of egg yolk,
+        2 cups of milk, 1/2 cup of light rum, 1 cup of whipped-cream, 1/2 cup of bourbon,
+        6 of egg white, 1/4 tsp of salt, 1 tsp of vanilla extract, some ouzo
+Preparation:
+        0. in a small mixer bowl beat 6 of egg white yolks till blended
+        1. add some ouzo to taste
+        2. gradually add 1/4 cup of sugar, beating at high speed till thick and lemon colored
+        3. stir in 2 cups of milk, stir in 1/2 cup of light rum, 1/2 cup of bourbon, 1 tsp of vanilla extract, and 1/4 tsp of salt
+        4. chill thoroughly
+        5. whip cream
+        6. wash beaters well
+        7. in a large mixer bowl beat 6 of egg white whites till soft peaks form
+        8. gradually add remaining 1/4 cup of sugar, beating to stiff peaks
+        9. fold 6 of egg yolk mixture and 1 cup of whipped-cream into 6 of egg white whites
+        10. serve immediately
+        11. sprinkle ground of nutmeg over each serving
+        12. serve in a punch bowl or another big bowl
+        13. note: for a nonalcoholic eggnog, prepare eggnog as above, except omit the 1/2 cup of bourbon and 1/2 cup of light rum and increase the 2 cups of milk to 3 cups
+--------------
+
+--------------
+Query:
+- Type of drink: soft drink / soda
+- Type of glass: pousse cafe glass
+- Ingredients: spiced rum
+- Ingredients to exclude: light rum jamaican, ginger beer, peychaud bitters, sprite, banana liqueur
+- Taste of the drink: 
+- Type of alcohol: 
+
+Retrieved case:
+Bailey's Dream Shake
+Type of drink: soft drink / soda
+Glass: collins glass
+Ingredients:
+         of cream, 2 scoops of vanilla ice-cream, 2 oz of baileys irish cream
+Preparation:
+        0. blend ingredients for 30 seconds
+        1. definitely refreshing for a hot summer's day !
+
+Adapted case:
+MyRecipe7846
+Type of drink: soft drink / soda
+Glass: collins glass
+Ingredients:
+         of cream, 2 scoops of vanilla ice-cream, 2 oz of baileys irish cream, some spiced rum
+Preparation:
+        0. blend ingredients for 30 seconds
+        1. add some spiced rum to taste
+        2. definitely refreshing for a hot summer's day !
+--------------
+
+--------------
+Query:
+- Type of drink: milk / float / shake
+- Type of glass: coffee mug
+- Ingredients: 
+- Ingredients to exclude: jello
+- Taste of the drink: salty, water, egg, mint
+- Type of alcohol: pisco, triple sec, gin, vodka, cider
+
+Retrieved case:
+Butter Baby
+Type of drink: milk / float / shake
+Glass: beer mug
+Ingredients:
+        2 parts of vodka, 2 scoops of vanilla ice-cream, 1 part of butterscotch schnapps, full glass of milk
+Preparation:
+        0. blend together in a blender
+        1. serve in a chilled beer mug with fresh blueberries and caramel for topping
+
+Adapted case:
+MyRecipe2273
+Type of drink: milk / float / shake
+Glass: beer mug
+Ingredients:
+        2 parts of vodka, 2 scoops of vanilla ice-cream, 1 part of butterscotch schnapps, full glass of milk,
+        some pisco, 1 oz of cointreau, some gin, some apple cider,
+        some tomato juice, some carbonated water, some egg white, some mint
+Preparation:
+        0. blend together in a blender
+        1. add some mint to taste
+        2. add some egg white to taste
+        3. add some carbonated water to taste
+        4. add some tomato juice to taste
+        5. add some apple cider to taste
+        6. add some gin to taste
+        7. add 1 oz of cointreau
+        8. add some pisco to taste
+        9. serve in a chilled beer mug with fresh blueberries and caramel for topping
+--------------
+
+--------------
+Query:
+- Type of drink: beer
+- Type of glass: whiskey sour glass
+- Ingredients: milk skimmed, banana liqueur, dark rum jamaican, sherry dry
+- Ingredients to exclude: crown royal
+- Taste of the drink: sweet, bitter, water, sour, spicy
+- Type of alcohol: whisky, wine, bitters
+
+Retrieved case:
+Lunch Box
+Type of drink: beer
+Glass: pint glass
+Ingredients:
+        1 shot of amaretto, 3/4 bottle of beer, 1 oz of orange juice
+Preparation:
+        0. fill a pint glass almost full with 3/4 bottle of beer
+        1. then fill the rest with 1 oz of orange juice (careful not to fill it to the top)
+        2. then take the shot of 1 shot of amaretto and drop it in
+
+Adapted case:
+MyRecipe436
+Type of drink: beer
+Glass: pint glass
+Ingredients:
+        1 shot of amaretto, 3/4 bottle of beer, 1 oz of orange juice, some milk skimmed,
+        some banana liqueur, some dark rum jamaican, some sherry dry, some blended whiskey,
+        1/2 pint sweet or dry of white or red wine, some bitters, some coffee, some water,
+        some lime juice, some cinnamon
+Preparation:
+        0. fill a pint glass almost full with 3/4 bottle of beer
+        1. add some cinnamon to taste
+        2. add some lime juice to taste
+        3. add some water to taste
+        4. add some coffee to taste
+        5. add some bitters to taste
+        6. add 1/2 pint sweet or dry of white or red wine
+        7. add some blended whiskey to taste
+        8. add some sherry dry to taste
+        9. add some dark rum jamaican to taste
+        10. add some banana liqueur to taste
+        11. add some milk skimmed to taste
+        12. then fill the rest with 1 oz of orange juice (careful not to fill it to the top)
+        13. then take the shot of 1 shot of amaretto and drop it in
+--------------
+
+--------------
+Query:
+- Type of drink: beer
+- Type of glass: champagne flute
+- Ingredients: irish cream, dry vermouth
+- Ingredients to exclude: light rum, galliano
+- Taste of the drink: bitter, egg, sweet
+- Type of alcohol: 
+
+Retrieved case:
+Black and Brown
+Type of drink: beer
+Glass: beer pilsner
+Ingredients:
+        1/2 of guinness stout, 1/2 of root beer
+Preparation:
+        0. carefully to avoid explosive head formation: pour 1/2 of root beer glass half full of favorite root 1/2 of root beer and top off with 1/2 of guinness stout
+
+Adapted case:
+MyRecipe5044
+Type of drink: beer
+Glass: beer pilsner
+Ingredients:
+        1/2 of guinness stout, 1/2 of root beer, some irish cream, some dry vermouth,
+        some coffee, some egg
+Preparation:
+        0. carefully to avoid explosive head formation: pour 1/2 of root beer glass half full of favorite root 1/2 of root beer and top off with 1/2 of guinness stout
+        1. add some egg to taste
+        2. add some coffee to taste
+        3. add some dry vermouth to taste
+        4. add some irish cream to taste
+--------------
+
+--------------
+Query:
+- Type of drink: punch / party drink
+- Type of glass: shot glass
+- Ingredients: chambord raspberry liqueur, anisette, white or red wine
+- Ingredients to exclude: 
+- Taste of the drink: sour, water, sweet
+- Type of alcohol: prosecco, schnapps, ouzo, aperol
+
+Retrieved case:
+Mulled Wine
+Type of drink: punch / party drink
+Glass: collins glass
+Ingredients:
+        3 cups of water, 750 ml of red wine, 1/4 cup of brandy, 2 of cinnamon,
+        12 of cloves, 1 of lemon peel, 1 cup of sugar
+Preparation:
+        0. simmer 3 cups of water with, 1 cup of sugar, 12 of cloves, 2 of cinnamon sticks, and 1 of lemon peel in a stainless steel pot for 10 minutes
+        1. add 750 ml of red wine heat to a "coffee temperature" (do not boil) then add the 1/4 cup of brandy
+
+Adapted case:
+MyRecipe5451
+Type of drink: punch / party drink
+Glass: collins glass
+Ingredients:
+        3 cups of water, 750 ml of red wine, 1/4 cup of brandy, 2 of cinnamon,
+        12 of cloves, 1 of lemon peel, 1 cup of sugar, some chambord raspberry liqueur,
+        some anisette, some white or red wine, some prosecco, 1750 ml of peach schnapps,
+        some ouzo, some aperol
+Preparation:
+        0. simmer 3 cups of water with, 1 cup of sugar, 12 of cloves, 2 of cinnamon sticks, and 1 of lemon peel in a stainless steel pot for 10 minutes
+        1. add some aperol to taste
+        2. add some ouzo to taste
+        3. add 1750 ml of peach schnapps
+        4. add some prosecco to taste
+        5. add some white or red wine to taste
+        6. add some anisette to taste
+        7. add some chambord raspberry liqueur to taste
+        8. add 750 ml of red wine heat to a "coffee temperature" (do not boil) then add the 1/4 cup of brandy
+--------------
+
+--------------
+Query:
+- Type of drink: other/unknown
+- Type of glass: cordial glass
+- Ingredients: 
+- Ingredients to exclude: kiwi liqueur, brown sugar
+- Taste of the drink: mint, sour, sweet, cream
+- Type of alcohol: gin, vermouth, creamy liqueur, aperol
+
+Retrieved case:
+Whitecap Margarita
+Type of drink: other/unknown
+Glass: margarita/coupette glass
+Ingredients:
+        3 tablespoon fresh of lime juice fresh, 2 oz of tequila, 1/4 cup of cream of coconut
+Preparation:
+        0. place all ingredients in a blender and blend until smooth
+        1. this makes one drink
+
+Adapted case:
+MyRecipe978
+Type of drink: other/unknown
+Glass: margarita/coupette glass
+Ingredients:
+        3 tablespoon fresh of lime juice fresh, 2 oz of tequila, 1/4 cup of cream of coconut, some gin,
+        some sweet vermouth red, some baileys irish cream, some aperol, some mint,
+        1 part of orange juice
+Preparation:
+        0. place all ingredients in a blender and blend until smooth
+        1. add 1 part of orange juice
+        2. add some mint to taste
+        3. add some aperol to taste
+        4. add some baileys irish cream to taste
+        5. add some sweet vermouth red to taste
+        6. add some gin to taste
+        7. this makes one drink
+--------------
+
+--------------
+Query:
+- Type of drink: soft drink / soda
+- Type of glass: martini glass
+- Ingredients: kirschwasser, tomato juice, white creme de menthe, strawberry schnapps, whisky
+- Ingredients to exclude: angostura bitters, club soda, butterscotch schnapps
+- Taste of the drink: water, cream, mint, sour
+- Type of alcohol: vermouth, pisco, wine, absinthe
+
+Retrieved case:
+MyRecipe9005
+Type of drink: soft drink / soda
+Glass: highball glass
+Ingredients:
+        fill with of sprite, 1 cl of blue curacao, 1 cl of coconut liqueur, 2 cl of vodka,
+        some vanilla extract, some kool-aid tropical berry, some yukon jack, 3/4 oz of kahlua,
+        some prosecco, some anisette, 1/2 glass of cranberry juice, some water,
+        some schweppes russchian
+Preparation:
+        0. just pour all ingredients in the glass and stir
+        1. add some schweppes russchian to taste
+        2. add some water to taste
+        3. add 1/2 glass of cranberry juice
+        4. add some anisette to taste
+        5. add some prosecco to taste
+        6. add 3/4 oz of kahlua
+        7. add some yukon jack to taste
+        8. add some kool-aid tropical berry to taste
+        9. add some vanilla extract to taste
+
+Adapted case:
+MyRecipe3484
+Type of drink: soft drink / soda
+Glass: highball glass
+Ingredients:
+        fill with of sprite, 1 cl of blue curacao, 1 cl of coconut liqueur, 2 cl of vodka,
+        some vanilla extract, some kool-aid tropical berry, some yukon jack, 3/4 oz of kahlua,
+        some prosecco, some anisette, 1/2 glass of cranberry juice, some water,
+        some schweppes russchian, some kirschwasser, some tomato juice, some white creme de menthe,
+        some strawberry schnapps, some whisky, some dry vermouth, some pisco,
+        some red wine, some absinthe, 2 scoops of vanilla ice-cream, some mint
+Preparation:
+        0. just pour all ingredients in the glass and stir
+        1. add some mint to taste
+        2. add 2 scoops of vanilla ice-cream
+        3. add some absinthe to taste
+        4. add some red wine to taste
+        5. add some pisco to taste
+        6. add some dry vermouth to taste
+        7. add some whisky to taste
+        8. add some strawberry schnapps to taste
+        9. add some white creme de menthe to taste
+        10. add some tomato juice to taste
+        11. add some kirschwasser to taste
+        12. add some schweppes russchian to taste
+        13. add some water to taste
+        14. add 1/2 glass of cranberry juice
+        15. add some anisette to taste
+        16. add some prosecco to taste
+        17. add 3/4 oz of kahlua
+        18. add some yukon jack to taste
+        19. add some kool-aid tropical berry to taste
+        20. add some vanilla extract to taste
+--------------
+
+--------------
+Query:
+- Type of drink: punch / party drink
+- Type of glass: pitcher
+- Ingredients: coffee liqueur, sprite, surge, schweppes russchian
+- Ingredients to exclude: tabasco sauce, cream of coconut, powdered sugar
+- Taste of the drink: mint, bitter, salty, egg
+- Type of alcohol: rum, schnapps, gin, vermouth
+
+Retrieved case:
+Egg-Nog - Classic Cooked
+Type of drink: punch / party drink
+Glass: pitcher
+Ingredients:
+        1/4 tsp of salt, 1 qt of milk, 1 tsp of vanilla extract, 6 of egg,
+        1/4 cup of sugar
+Preparation:
+        0. in large saucepan, beat together eggs, 1/4 cup of sugar and 1/4 tsp of salt, if desired
+        1. stir in 2 cups of the 1 qt of milk
+        2. cook over low heat, stirring constantly, until mixture is thick enough to coat a metal spoon and reaches 160 degrees f
+        3. remove from heat
+        4. stir in remaining 2 cups 1 qt of milk and 1 tsp of vanilla extract
+        5. cover and regfigerate until thoroughly chilled, several hours or overnight
+        6. just before serving, pour into bowl or pitcher
+        7. garnish or add stir-ins, if desired
+        8. choose 1 or several of: chocolate curls, cinnamon sticks, extracts of flavorings, flavored brandy or liqueur, fruit juice or nectar, ground nutmeg, maraschino cherries, orange slices, peppermint sticks or candy canes, plain brandy, run or whiskey, sherbet or ice-cream, whipped-cream, whipped
+        9. serve immediately
+
+Adapted case:
+MyRecipe3613
+Type of drink: punch / party drink
+Glass: pitcher
+Ingredients:
+        1/4 tsp of salt, 1 qt of milk, 1 tsp of vanilla extract, 6 of egg,
+        1/4 cup of sugar, some coffee liqueur, some sprite, some surge,
+        some schweppes russchian, some light rum, some maui blue, some gin,
+        some dry vermouth, some mint
+Preparation:
+        0. in large saucepan, beat together eggs, 1/4 cup of sugar and 1/4 tsp of salt, if desired
+        1. add some mint to taste
+        2. add some dry vermouth to taste
+        3. add some gin to taste
+        4. add some maui blue to taste
+        5. add some light rum to taste
+        6. add some schweppes russchian to taste
+        7. add some surge to taste
+        8. add some sprite to taste
+        9. add some coffee liqueur to taste
+        10. stir in 2 cups of the 1 qt of milk
+        11. cook over low heat, stirring constantly, until mixture is thick enough to coat a metal spoon and reaches 160 degrees f
+        12. remove from heat
+        13. stir in remaining 2 cups 1 qt of milk and 1 tsp of vanilla extract
+        14. cover and regfigerate until thoroughly chilled, several hours or overnight
+        15. just before serving, pour into bowl or pitcher
+        16. garnish or add stir-ins, if desired
+        17. choose 1 or several of: chocolate curls, cinnamon sticks, extracts of flavorings, flavored brandy or liqueur, fruit juice or nectar, ground nutmeg, maraschino cherries, orange slices, peppermint sticks or candy canes, plain brandy, run or whiskey, sherbet or ice-cream, whipped-cream, whipped
+        18. serve immediately
+--------------
+
+--------------
+Query:
+- Type of drink: cocktail
+- Type of glass: parfait glass
+- Ingredients: blackberry brandy, pepsi cola
+- Ingredients to exclude: 
+- Taste of the drink: sour
+- Type of alcohol: pisco, vermouth
+
+Retrieved case:
+Adios Amigos Cocktail
+Type of drink: cocktail
+Glass: martini glass
+Ingredients:
+        1/2 shot of gin, 1/2 shot of water, 1/4 shot of sugar syrup, 1/2 shot of dry vermouth,
+        1/4 shot of fresh lime juice, 1/2 shot of cognac, 1 shot of rum
+Preparation:
+        0. shake together all the ingredients and strain into a cold glass
+
+Adapted case:
+MyRecipe710
+Type of drink: cocktail
+Glass: martini glass
+Ingredients:
+        1/2 shot of gin, 1/2 shot of water, 1/4 shot of sugar syrup, 1/2 shot of dry vermouth,
+        1/4 shot of fresh lime juice, 1/2 shot of cognac, 1 shot of rum, some blackberry brandy,
+        some pepsi cola, 2 oz of pisco
+Preparation:
+        0. shake together all the ingredients and strain into a cold glass
+        1. add 2 oz of pisco
+        2. add some pepsi cola to taste
+        3. add some blackberry brandy to taste
+--------------
+
+--------------
+Query:
+- Type of drink: punch / party drink
+- Type of glass: copper mug
+- Ingredients: vermouth, lime juice cordial, chocolate sauce, absolut citron
+- Ingredients to exclude: water, chocolate ice-cream, sambuca
+- Taste of the drink: sour, egg, sweet, water
+- Type of alcohol: bitters
+
+Retrieved case:
+Moscow Mule
+Type of drink: punch / party drink
+Glass: copper mug
+Ingredients:
+        2 oz of vodka, 2 oz of lime juice, 8 oz of ginger ale
+Preparation:
+        0. combine 2 oz of vodka and 8 oz of ginger ale beer in a highball glass filled with ice
+        1. add 2 oz of lime juice
+        2. stir gently
+        3. garnish
+
+Adapted case:
+MyRecipe7810
+Type of drink: punch / party drink
+Glass: copper mug
+Ingredients:
+        2 oz of vodka, 2 oz of lime juice, 8 oz of ginger ale, some vermouth,
+        some lime juice cordial, some chocolate sauce, some absolut citron, some angostura bitters,
+        some egg, some tonic water
+Preparation:
+        0. combine 2 oz of vodka and 8 oz of ginger ale beer in a highball glass filled with ice
+        1. add some tonic water to taste
+        2. add some egg to taste
+        3. add some angostura bitters to taste
+        4. add some absolut citron to taste
+        5. add some chocolate sauce to taste
+        6. add some lime juice cordial to taste
+        7. add some vermouth to taste
+        8. add 2 oz of lime juice
+        9. stir gently
+        10. garnish
+--------------
+
+--------------
+Query:
+- Type of drink: beer
+- Type of glass: martini glass
+- Ingredients: 
+- Ingredients to exclude: coca-cola, tia maria, peychaud bitters
+- Taste of the drink: bitter, cream, sour, sweet
+- Type of alcohol: rum, pisco, tequila, absinthe, beer
+
+Retrieved case:
+Caribbean Boilermaker
+Type of drink: beer
+Glass: beer pilsner
+Ingredients:
+        1 shot of light rum, 1 bottle of corona
+Preparation:
+        0. pour the 1 bottle of corona into an 18oz beer glass pour the 1 shot of light rum into the beer
+
+Adapted case:
+MyRecipe8022
+Type of drink: beer
+Glass: beer pilsner
+Ingredients:
+        1 shot of light rum, 1 bottle of corona, some pisco, 1.5 oz of tequila,
+        some absinthe, some iced tea, some milk skimmed, some lime juice,
+        1/2 of root beer
+Preparation:
+        0. pour the 1 bottle of corona into an 18oz beer glass pour the 1 shot of light rum into the beer
+        1. add 1/2 of root beer
+        2. add some lime juice to taste
+        3. add some milk skimmed to taste
+        4. add some iced tea to taste
+        5. add some absinthe to taste
+        6. add 1.5 oz of tequila
+        7. add some pisco to taste
+--------------
+
+--------------
+Query:
+- Type of drink: beer
+- Type of glass: pousse cafe glass
+- Ingredients: midori melon liqueur
+- Ingredients to exclude: cranberry juice, tropicana, light cream
+- Taste of the drink: cream, sour, mint, salty, egg
+- Type of alcohol: 
+
+Retrieved case:
+MyRecipe5044
+Type of drink: beer
+Glass: beer pilsner
+Ingredients:
+        1/2 of guinness stout, 1/2 of root beer, some irish cream, some dry vermouth,
+        some coffee, some egg
+Preparation:
+        0. carefully to avoid explosive head formation: pour 1/2 of root beer glass half full of favorite root 1/2 of root beer and top off with 1/2 of guinness stout
+        1. add some egg to taste
+        2. add some coffee to taste
+        3. add some dry vermouth to taste
+        4. add some irish cream to taste
+
+Adapted case:
+MyRecipe5787
+Type of drink: beer
+Glass: beer pilsner
+Ingredients:
+        1/2 of guinness stout, 1/2 of root beer, some irish cream, some dry vermouth,
+        some coffee, some egg, some midori melon liqueur, some milk skimmed,
+        some lime juice, some mint, some worcestershire sauce
+Preparation:
+        0. carefully to avoid explosive head formation: pour 1/2 of root beer glass half full of favorite root 1/2 of root beer and top off with 1/2 of guinness stout
+        1. add some worcestershire sauce to taste
+        2. add some mint to taste
+        3. add some lime juice to taste
+        4. add some milk skimmed to taste
+        5. add some midori melon liqueur to taste
+        6. add some egg to taste
+        7. add some coffee to taste
+        8. add some dry vermouth to taste
+        9. add some irish cream to taste
+--------------
+
+--------------
+Query:
+- Type of drink: ordinary drink
+- Type of glass: brandy snifter
+- Ingredients: 
+- Ingredients to exclude: jägermeister, peach bitters, mini-snickers bars, orange juice frozen
+- Taste of the drink: sour, egg, cream, salty, bitter
+- Type of alcohol: rum
+
+Retrieved case:
+Quarter Deck Cocktail
+Type of drink: ordinary drink
+Glass: cocktail glass
+Ingredients:
+        juice of 1/2 of lime, 1/3 oz cream of sherry cream, 1 1/2 of light rum
+Preparation:
+        0. stir all ingredients with ice, strain into a cocktail glass, and serve
+
+Adapted case:
+MyRecipe325
+Type of drink: ordinary drink
+Glass: cocktail glass
+Ingredients:
+        juice of 1/2 of lime, 1/3 oz cream of sherry cream, 1 1/2 of light rum, some egg,
+        1/4 tsp of salt,  of grapefruit juice
+Preparation:
+        0. stir all ingredients with ice, strain into a cocktail glass, and serve
+        1. add  of grapefruit juice
+        2. add 1/4 tsp of salt
+        3. add some egg to taste
+--------------
+
+--------------
+Query:
+- Type of drink: coffee / tea
+- Type of glass: mason jar
+- Ingredients: dr. pepper, orange peel, cranberry vodka
+- Ingredients to exclude: 
+- Taste of the drink: spicy, sweet
+- Type of alcohol: cachaca, campari
+
+Retrieved case:
+Kurant Tea
+Type of drink: coffee / tea
+Glass: champagne flute
+Ingredients:
+        4 cl of absolut kurant, turkish apple of turkish apple tea
+Preparation:
+        0. pour 4 cl of absolut kurant into a comfortably big tea-cup
+        1. add the not too hot(!) turkish apple of turkish apple tea and, if you like, some sugar
+        2. enjoy!
+
+Adapted case:
+MyRecipe5155
+Type of drink: coffee / tea
+Glass: champagne flute
+Ingredients:
+        4 cl of absolut kurant, turkish apple of turkish apple tea, some dr. pepper, some orange peel,
+        some cranberry vodka, some cachaca, some campari
+Preparation:
+        0. pour 4 cl of absolut kurant into a comfortably big tea-cup
+        1. add some campari to taste
+        2. add some cachaca to taste
+        3. add some cranberry vodka to taste
+        4. add some orange peel to taste
+        5. add some dr. pepper to taste
+        6. add the not too hot(!) turkish apple of turkish apple tea and, if you like, some sugar
+        7. enjoy!
+--------------
+
+--------------
+Query:
+- Type of drink: shot
+- Type of glass: cocktail glass
+- Ingredients: sirup of roses, agave syrup
+- Ingredients to exclude: 
+- Taste of the drink: bitter, sour, spicy, sweet, water
+- Type of alcohol: prosecco, vermouth, aperol, cider, sweet liqueur
+
+Retrieved case:
+Lemon Shot
+Type of drink: shot
+Glass: shot glass
+Ingredients:
+        1/2 oz of absolut citron,  of 151 proof rum, 1/2 oz of galliano, bacardi of sugar,
+        wedge of lemon
+Preparation:
+        0. mix 1/2 oz of galliano and 1/2 oz of absolut citron in a shot glass, lay wedge of lemon wedge sprinkled with bacardi of sugar over glass and pour a  of 151 proof rum over wedge and glass
+        1. light  of 151 proof rum with a lighter and let burn for a second
+        2. do shot quickly and suck on wedge of lemon
+        3. if it is done correctly, this will taste like 1 shot of sweet lemonade
+
+Adapted case:
+MyRecipe3224
+Type of drink: shot
+Glass: shot glass
+Ingredients:
+        1/2 oz of absolut citron,  of 151 proof rum, 1/2 oz of galliano, bacardi of sugar,
+        wedge of lemon, some sirup of roses, some agave syrup, some prosecco,
+        some dry vermouth, some aperol, some cider, some coffee,
+        some nutmeg, some carbonated water
+Preparation:
+        0. mix 1/2 oz of galliano and 1/2 oz of absolut citron in a shot glass, lay wedge of lemon wedge sprinkled with bacardi of sugar over glass and pour a  of 151 proof rum over wedge and glass
+        1. add some carbonated water to taste
+        2. add some nutmeg to taste
+        3. add some coffee to taste
+        4. add some cider to taste
+        5. add some aperol to taste
+        6. add some dry vermouth to taste
+        7. add some prosecco to taste
+        8. add some agave syrup to taste
+        9. add some sirup of roses to taste
+        10. light  of 151 proof rum with a lighter and let burn for a second
+        11. do shot quickly and suck on wedge of lemon
+        12. if it is done correctly, this will taste like 1 shot of sweet lemonade
+--------------
+
+--------------
+Query:
+- Type of drink: cocktail
+- Type of glass: brandy snifter
+- Ingredients: coffee brandy, butterscotch schnapps
+- Ingredients to exclude: grenadine, gin, pisang ambon, peppermint schnapps
+- Taste of the drink: sweet, cream, bitter, salty, sour
+- Type of alcohol: cachaca, port, creamy liqueur
+
+Retrieved case:
+Dark Caipirinha
+Type of drink: cocktail
+Glass: highball glass
+Ingredients:
+        2 1/2 oz of cachaca, 1 of lime, 2 tsp of demerara sugar
+Preparation:
+        0. muddle the 2 tsp of demerara sugar into the 1 of lime wedges in an old-fashioned glass
+        1. fill the glass with ice cubes
+        2. pour the 2 1/2 oz of cachaca into the glass
+        3. stir well
+
+Adapted case:
+MyRecipe728
+Type of drink: cocktail
+Glass: highball glass
+Ingredients:
+        2 1/2 oz of cachaca, 1 of lime, 2 tsp of demerara sugar, some coffee brandy,
+        some butterscotch schnapps, some port, 1 oz of baileys irish cream, 3/4 oz double of cream double,
+        some coffee, some salt
+Preparation:
+        0. muddle the 2 tsp of demerara sugar into the 1 of lime wedges in an old-fashioned glass
+        1. add some salt to taste
+        2. add some coffee to taste
+        3. add 3/4 oz double of cream double
+        4. add 1 oz of baileys irish cream
+        5. add some port to taste
+        6. add some butterscotch schnapps to taste
+        7. add some coffee brandy to taste
+        8. fill the glass with ice cubes
+        9. pour the 2 1/2 oz of cachaca into the glass
+        10. stir well
+--------------
+
+--------------
+Query:
+- Type of drink: punch / party drink
+- Type of glass: cordial glass
+- Ingredients: sherry cream, tequila, corona, cinnamon
+- Ingredients to exclude: white or red wine, cherry
+- Taste of the drink: cream
+- Type of alcohol: pisco, aperol, gin, sambuca
+
+Retrieved case:
+MyRecipe3613
+Type of drink: punch / party drink
+Glass: pitcher
+Ingredients:
+        1/4 tsp of salt, 1 qt of milk, 1 tsp of vanilla extract, 6 of egg,
+        1/4 cup of sugar, some coffee liqueur, some sprite, some surge,
+        some schweppes russchian, some light rum, some maui blue, some gin,
+        some dry vermouth, some mint
+Preparation:
+        0. in large saucepan, beat together eggs, 1/4 cup of sugar and 1/4 tsp of salt, if desired
+        1. add some mint to taste
+        2. add some dry vermouth to taste
+        3. add some gin to taste
+        4. add some maui blue to taste
+        5. add some light rum to taste
+        6. add some schweppes russchian to taste
+        7. add some surge to taste
+        8. add some sprite to taste
+        9. add some coffee liqueur to taste
+        10. stir in 2 cups of the 1 qt of milk
+        11. cook over low heat, stirring constantly, until mixture is thick enough to coat a metal spoon and reaches 160 degrees f
+        12. remove from heat
+        13. stir in remaining 2 cups 1 qt of milk and 1 tsp of vanilla extract
+        14. cover and regfigerate until thoroughly chilled, several hours or overnight
+        15. just before serving, pour into bowl or pitcher
+        16. garnish or add stir-ins, if desired
+        17. choose 1 or several of: chocolate curls, cinnamon sticks, extracts of flavorings, flavored brandy or liqueur, fruit juice or nectar, ground nutmeg, maraschino cherries, orange slices, peppermint sticks or candy canes, plain brandy, run or whiskey, sherbet or ice-cream, whipped-cream, whipped
+        18. serve immediately
+
+Adapted case:
+MyRecipe1499
+Type of drink: punch / party drink
+Glass: pitcher
+Ingredients:
+        1/4 tsp of salt, 1 qt of milk, 1 tsp of vanilla extract, 6 of egg,
+        1/4 cup of sugar, some coffee liqueur, some sprite, some surge,
+        some schweppes russchian, some light rum, some maui blue, some gin,
+        some dry vermouth, some mint, some sherry cream, 3 oz of tequila,
+        some corona, some cinnamon, some pisco, some aperol,
+        some sambuca
+Preparation:
+        0. in large saucepan, beat together eggs, 1/4 cup of sugar and 1/4 tsp of salt, if desired
+        1. add some sambuca to taste
+        2. add some aperol to taste
+        3. add some pisco to taste
+        4. add some cinnamon to taste
+        5. add some corona to taste
+        6. add 3 oz of tequila
+        7. add some sherry cream to taste
+        8. add some mint to taste
+        9. add some dry vermouth to taste
+        10. add some gin to taste
+        11. add some maui blue to taste
+        12. add some light rum to taste
+        13. add some schweppes russchian to taste
+        14. add some surge to taste
+        15. add some sprite to taste
+        16. add some coffee liqueur to taste
+        17. stir in 2 cups of the 1 qt of milk
+        18. cook over low heat, stirring constantly, until mixture is thick enough to coat a metal spoon and reaches 160 degrees f
+        19. remove from heat
+        20. stir in remaining 2 cups 1 qt of milk and 1 tsp of vanilla extract
+        21. cover and regfigerate until thoroughly chilled, several hours or overnight
+        22. just before serving, pour into bowl or pitcher
+        23. garnish or add stir-ins, if desired
+        24. choose 1 or several of: chocolate curls, cinnamon sticks, extracts of flavorings, flavored brandy or liqueur, fruit juice or nectar, ground nutmeg, maraschino cherries, orange slices, peppermint sticks or candy canes, plain brandy, run or whiskey, sherbet or ice-cream, whipped-cream, whipped
+        25. serve immediately
+--------------
+
+--------------
+Query:
+- Type of drink: punch / party drink
+- Type of glass: copper mug
+- Ingredients: light cream, banana, grenadine
+- Ingredients to exclude: 
+- Taste of the drink: sweet, water
+- Type of alcohol: champagne, beer, brandy
+
+Retrieved case:
+MyRecipe5451
+Type of drink: punch / party drink
+Glass: collins glass
+Ingredients:
+        3 cups of water, 750 ml of red wine, 1/4 cup of brandy, 2 of cinnamon,
+        12 of cloves, 1 of lemon peel, 1 cup of sugar, some chambord raspberry liqueur,
+        some anisette, some white or red wine, some prosecco, 1750 ml of peach schnapps,
+        some ouzo, some aperol
+Preparation:
+        0. simmer 3 cups of water with, 1 cup of sugar, 12 of cloves, 2 of cinnamon sticks, and 1 of lemon peel in a stainless steel pot for 10 minutes
+        1. add some aperol to taste
+        2. add some ouzo to taste
+        3. add 1750 ml of peach schnapps
+        4. add some prosecco to taste
+        5. add some white or red wine to taste
+        6. add some anisette to taste
+        7. add some chambord raspberry liqueur to taste
+        8. add 750 ml of red wine heat to a "coffee temperature" (do not boil) then add the 1/4 cup of brandy
+
+Adapted case:
+MyRecipe6132
+Type of drink: punch / party drink
+Glass: collins glass
+Ingredients:
+        3 cups of water, 750 ml of red wine, 1/4 cup of brandy, 2 of cinnamon,
+        12 of cloves, 1 of lemon peel, 1 cup of sugar, some chambord raspberry liqueur,
+        some anisette, some white or red wine, some prosecco, 1750 ml of peach schnapps,
+        some ouzo, some aperol, some light cream, some banana,
+        some grenadine, some champagne, 12 oz of zima
+Preparation:
+        0. simmer 3 cups of water with, 1 cup of sugar, 12 of cloves, 2 of cinnamon sticks, and 1 of lemon peel in a stainless steel pot for 10 minutes
+        1. add 12 oz of zima
+        2. add some champagne to taste
+        3. add some grenadine to taste
+        4. add some banana to taste
+        5. add some light cream to taste
+        6. add some aperol to taste
+        7. add some ouzo to taste
+        8. add 1750 ml of peach schnapps
+        9. add some prosecco to taste
+        10. add some white or red wine to taste
+        11. add some anisette to taste
+        12. add some chambord raspberry liqueur to taste
+        13. add 750 ml of red wine heat to a "coffee temperature" (do not boil) then add the 1/4 cup of brandy
+--------------
+
+--------------
+Query:
+- Type of drink: ordinary drink
+- Type of glass: margarita/coupette glass
+- Ingredients: lemonade
+- Ingredients to exclude: peach nectar
+- Taste of the drink: 
+- Type of alcohol: 
+
+Retrieved case:
+Archbishop
+Type of drink: ordinary drink
+Glass: old-fashioned glass
+Ingredients:
+        1 tsp of benedictine, 1 of lime, 2 oz of gin, 1 oz green ginger of green ginger wine
+Preparation:
+        0. in an old-fashioned glass almost filled with ice cubes, combine all of the ingredients
+        1. stir well
+
+Adapted case:
+MyRecipe7358
+Type of drink: ordinary drink
+Glass: old-fashioned glass
+Ingredients:
+        1 tsp of benedictine, 1 of lime, 2 oz of gin, 1 oz green ginger of green ginger wine,
+        some lemonade
+Preparation:
+        0. in an old-fashioned glass almost filled with ice cubes, combine all of the ingredients
+        1. add some lemonade to taste
+        2. stir well
+--------------
+
+--------------
+Query:
+- Type of drink: ordinary drink
+- Type of glass: beer pilsner
+- Ingredients: rum jamaican, whiskey, lemon-lime soda, drambuie
+- Ingredients to exclude: sweet vermouth red, grape soda, 151 proof rum light, midori melon liqueur, sweet and sour
+- Taste of the drink: sweet, mint, bitter
+- Type of alcohol: cider
+
+Retrieved case:
+Scotch Cobbler
+Type of drink: ordinary drink
+Glass: old-fashioned glass
+Ingredients:
+        4 dashes of curacao, 1 of mint, 4 dashes of brandy, 2 oz of scotch,
+        1 slice of orange
+Preparation:
+        0. pour 2 oz of scotch, 4 dashes of brandy, and 4 dashes of curacao over ice in an old-fashioned glass
+        1. add the 1 slice of orange slice, top with the 1 of mint sprig, and serve
+
+Adapted case:
+MyRecipe7615
+Type of drink: ordinary drink
+Glass: old-fashioned glass
+Ingredients:
+        4 dashes of curacao, 1 of mint, 4 dashes of brandy, 2 oz of scotch,
+        1 slice of orange, some rum jamaican, 12 oz of whiskey, some lemon-lime soda,
+        1/2 oz of drambuie, some cider, some schweppes russchian
+Preparation:
+        0. pour 2 oz of scotch, 4 dashes of brandy, and 4 dashes of curacao over ice in an old-fashioned glass
+        1. add some schweppes russchian to taste
+        2. add some cider to taste
+        3. add 1/2 oz of drambuie
+        4. add some lemon-lime soda to taste
+        5. add 12 oz of whiskey
+        6. add some rum jamaican to taste
+        7. add the 1 slice of orange slice, top with the 1 of mint sprig, and serve
+--------------
+
+--------------
+Query:
+- Type of drink: ordinary drink
+- Type of glass: white wine glass
+- Ingredients: kool-aid tropical, cream double, campari, chocolate sauce, white creme de menthe
+- Ingredients to exclude: banana, lillet blanc, dark rum, kool-aid tropical, lemon juice sweetened
+- Taste of the drink: 
+- Type of alcohol: wine, prosecco
+
+Retrieved case:
+Spritz
+Type of drink: ordinary drink
+Glass: old-fashioned glass
+Ingredients:
+        splash of soda water, 6 cl of prosecco, 4 cl of campari
+Preparation:
+        0. build into glass over ice, garnish and serve
+
+Adapted case:
+MyRecipe30
+Type of drink: ordinary drink
+Glass: old-fashioned glass
+Ingredients:
+        splash of soda water, 6 cl of prosecco, 4 cl of campari, some kool-aid tropical,
+        some cream double, some chocolate sauce, some white creme de menthe, 2 oz of red wine
+Preparation:
+        0. build into glass over ice, garnish and serve
+        1. add 2 oz of red wine
+        2. add some white creme de menthe to taste
+        3. add some chocolate sauce to taste
+        4. add some cream double to taste
+        5. add some kool-aid tropical to taste
+--------------
+
+--------------
+Query:
+- Type of drink: ordinary drink
+- Type of glass: champagne flute
+- Ingredients: sambuca
+- Ingredients to exclude: tabasco sauce, banana, berries
+- Taste of the drink: cream, spicy, mint
+- Type of alcohol: schnapps, creamy liqueur, prosecco, whisky, cider
+
+Retrieved case:
+Chocolate Black Russian
+Type of drink: ordinary drink
+Glass: champagne flute
+Ingredients:
+        5 oz of chocolate ice-cream, 1 oz of kahlua, 1/2 oz of vodka
+Preparation:
+        0. combine all ingredients in an electric blender and blend at a low speed for a short length of time
+        1. pour into a chilled champagne flute and serve
+
+Adapted case:
+MyRecipe9377
+Type of drink: ordinary drink
+Glass: champagne flute
+Ingredients:
+        5 oz of chocolate ice-cream, 1 oz of kahlua, 1/2 oz of vodka, some sambuca,
+        1 oz of peach schnapps, some prosecco, some blended whiskey, some apple cider,
+        some anisette, some mint
+Preparation:
+        0. combine all ingredients in an electric blender and blend at a low speed for a short length of time
+        1. add some mint to taste
+        2. add some anisette to taste
+        3. add some apple cider to taste
+        4. add some blended whiskey to taste
+        5. add some prosecco to taste
+        6. add 1 oz of peach schnapps
+        7. add some sambuca to taste
+        8. pour into a chilled champagne flute and serve
+--------------
+
+--------------
+Query:
+- Type of drink: shot
+- Type of glass: brandy snifter
+- Ingredients: gin dry, worcestershire sauce, absolut vodka, peach vodka, half-and-half
+- Ingredients to exclude: banana liqueur, malibu rum, apple schnapps, vanilla vodka, rub light or dark
+- Taste of the drink: spicy, sour
+- Type of alcohol: aperol, champagne, cachaca, rum
+
+Retrieved case:
+MyRecipe3224
+Type of drink: shot
+Glass: shot glass
+Ingredients:
+        1/2 oz of absolut citron,  of 151 proof rum, 1/2 oz of galliano, bacardi of sugar,
+        wedge of lemon, some sirup of roses, some agave syrup, some prosecco,
+        some dry vermouth, some aperol, some cider, some coffee,
+        some nutmeg, some carbonated water
+Preparation:
+        0. mix 1/2 oz of galliano and 1/2 oz of absolut citron in a shot glass, lay wedge of lemon wedge sprinkled with bacardi of sugar over glass and pour a  of 151 proof rum over wedge and glass
+        1. add some carbonated water to taste
+        2. add some nutmeg to taste
+        3. add some coffee to taste
+        4. add some cider to taste
+        5. add some aperol to taste
+        6. add some dry vermouth to taste
+        7. add some prosecco to taste
+        8. add some agave syrup to taste
+        9. add some sirup of roses to taste
+        10. light  of 151 proof rum with a lighter and let burn for a second
+        11. do shot quickly and suck on wedge of lemon
+        12. if it is done correctly, this will taste like 1 shot of sweet lemonade
+
+Adapted case:
+MyRecipe8440
+Type of drink: shot
+Glass: shot glass
+Ingredients:
+        1/2 oz of absolut citron,  of 151 proof rum, 1/2 oz of galliano, bacardi of sugar,
+        wedge of lemon, some sirup of roses, some agave syrup, some prosecco,
+        some dry vermouth, some aperol, some cider, some coffee,
+        some nutmeg, some carbonated water, some gin dry, some worcestershire sauce,
+        some absolut vodka, some peach vodka, some half-and-half, some champagne,
+        some cachaca
+Preparation:
+        0. mix 1/2 oz of galliano and 1/2 oz of absolut citron in a shot glass, lay wedge of lemon wedge sprinkled with bacardi of sugar over glass and pour a  of 151 proof rum over wedge and glass
+        1. add some cachaca to taste
+        2. add some champagne to taste
+        3. add some half-and-half to taste
+        4. add some peach vodka to taste
+        5. add some absolut vodka to taste
+        6. add some worcestershire sauce to taste
+        7. add some gin dry to taste
+        8. add some carbonated water to taste
+        9. add some nutmeg to taste
+        10. add some coffee to taste
+        11. add some cider to taste
+        12. add some aperol to taste
+        13. add some dry vermouth to taste
+        14. add some prosecco to taste
+        15. add some agave syrup to taste
+        16. add some sirup of roses to taste
+        17. light  of 151 proof rum with a lighter and let burn for a second
+        18. do shot quickly and suck on wedge of lemon
+        19. if it is done correctly, this will taste like 1 shot of sweet lemonade
+--------------
+
+--------------
+Query:
+- Type of drink: beer
+- Type of glass: champagne flute
+- Ingredients: orange, jim beam, chocolate liqueur, pineapple
+- Ingredients to exclude: milk skimmed, brandy, berries, gin, fresh lime juice
+- Taste of the drink: egg
+- Type of alcohol: bitters, brandy, cachaca, champagne
+
+Retrieved case:
+MyRecipe5044
+Type of drink: beer
+Glass: beer pilsner
+Ingredients:
+        1/2 of guinness stout, 1/2 of root beer, some irish cream, some dry vermouth,
+        some coffee, some egg
+Preparation:
+        0. carefully to avoid explosive head formation: pour 1/2 of root beer glass half full of favorite root 1/2 of root beer and top off with 1/2 of guinness stout
+        1. add some egg to taste
+        2. add some coffee to taste
+        3. add some dry vermouth to taste
+        4. add some irish cream to taste
+
+Adapted case:
+MyRecipe6947
+Type of drink: beer
+Glass: beer pilsner
+Ingredients:
+        1/2 of guinness stout, 1/2 of root beer, some irish cream, some dry vermouth,
+        some coffee, some egg, some orange, some jim beam,
+        some chocolate liqueur, some pineapple, some bitters, some sherry dry,
+        some cachaca, some champagne
+Preparation:
+        0. carefully to avoid explosive head formation: pour 1/2 of root beer glass half full of favorite root 1/2 of root beer and top off with 1/2 of guinness stout
+        1. add some champagne to taste
+        2. add some cachaca to taste
+        3. add some sherry dry to taste
+        4. add some bitters to taste
+        5. add some pineapple to taste
+        6. add some chocolate liqueur to taste
+        7. add some jim beam to taste
+        8. add some orange to taste
+        9. add some egg to taste
+        10. add some coffee to taste
+        11. add some dry vermouth to taste
+        12. add some irish cream to taste
+--------------
+
+--------------
+Query:
+- Type of drink: soft drink / soda
+- Type of glass: coffee mug
+- Ingredients: maraschino liqueur, firewater, spiced rum, apple juice
+- Ingredients to exclude: 151 proof rum, lime peel
+- Taste of the drink: egg, cream, spicy, bitter, mint
+- Type of alcohol: wine, prosecco
+
+Retrieved case:
+MyRecipe3484
+Type of drink: soft drink / soda
+Glass: highball glass
+Ingredients:
+        fill with of sprite, 1 cl of blue curacao, 1 cl of coconut liqueur, 2 cl of vodka,
+        some vanilla extract, some kool-aid tropical berry, some yukon jack, 3/4 oz of kahlua,
+        some prosecco, some anisette, 1/2 glass of cranberry juice, some water,
+        some schweppes russchian, some kirschwasser, some tomato juice, some white creme de menthe,
+        some strawberry schnapps, some whisky, some dry vermouth, some pisco,
+        some red wine, some absinthe, 2 scoops of vanilla ice-cream, some mint
+Preparation:
+        0. just pour all ingredients in the glass and stir
+        1. add some mint to taste
+        2. add 2 scoops of vanilla ice-cream
+        3. add some absinthe to taste
+        4. add some red wine to taste
+        5. add some pisco to taste
+        6. add some dry vermouth to taste
+        7. add some whisky to taste
+        8. add some strawberry schnapps to taste
+        9. add some white creme de menthe to taste
+        10. add some tomato juice to taste
+        11. add some kirschwasser to taste
+        12. add some schweppes russchian to taste
+        13. add some water to taste
+        14. add 1/2 glass of cranberry juice
+        15. add some anisette to taste
+        16. add some prosecco to taste
+        17. add 3/4 oz of kahlua
+        18. add some yukon jack to taste
+        19. add some kool-aid tropical berry to taste
+        20. add some vanilla extract to taste
+
+Adapted case:
+MyRecipe7331
+Type of drink: soft drink / soda
+Glass: highball glass
+Ingredients:
+        fill with of sprite, 1 cl of blue curacao, 1 cl of coconut liqueur, 2 cl of vodka,
+        some vanilla extract, some kool-aid tropical berry, some yukon jack, 3/4 oz of kahlua,
+        some prosecco, some anisette, 1/2 glass of cranberry juice, some water,
+        some schweppes russchian, some kirschwasser, some tomato juice, some white creme de menthe,
+        some strawberry schnapps, some whisky, some dry vermouth, some pisco,
+        some red wine, some absinthe, 2 scoops of vanilla ice-cream, some mint,
+        some maraschino liqueur, some firewater, some spiced rum, some apple juice,
+        some egg
+Preparation:
+        0. just pour all ingredients in the glass and stir
+        1. add some egg to taste
+        2. add some apple juice to taste
+        3. add some spiced rum to taste
+        4. add some firewater to taste
+        5. add some maraschino liqueur to taste
+        6. add some mint to taste
+        7. add 2 scoops of vanilla ice-cream
+        8. add some absinthe to taste
+        9. add some red wine to taste
+        10. add some pisco to taste
+        11. add some dry vermouth to taste
+        12. add some whisky to taste
+        13. add some strawberry schnapps to taste
+        14. add some white creme de menthe to taste
+        15. add some tomato juice to taste
+        16. add some kirschwasser to taste
+        17. add some schweppes russchian to taste
+        18. add some water to taste
+        19. add 1/2 glass of cranberry juice
+        20. add some anisette to taste
+        21. add some prosecco to taste
+        22. add 3/4 oz of kahlua
+        23. add some yukon jack to taste
+        24. add some kool-aid tropical berry to taste
+        25. add some vanilla extract to taste
+--------------
+
+--------------
+Query:
+- Type of drink: cocktail
+- Type of glass: white wine glass
+- Ingredients: port, blackcurrant cordial, strawberries
+- Ingredients to exclude: red wine, yellow chartreuse, wild turkey
+- Taste of the drink: 
+- Type of alcohol: sweet liqueur, cider
+
+Retrieved case:
+MyRecipe728
+Type of drink: cocktail
+Glass: highball glass
+Ingredients:
+        2 1/2 oz of cachaca, 1 of lime, 2 tsp of demerara sugar, some coffee brandy,
+        some butterscotch schnapps, some port, 1 oz of baileys irish cream, 3/4 oz double of cream double,
+        some coffee, some salt
+Preparation:
+        0. muddle the 2 tsp of demerara sugar into the 1 of lime wedges in an old-fashioned glass
+        1. add some salt to taste
+        2. add some coffee to taste
+        3. add 3/4 oz double of cream double
+        4. add 1 oz of baileys irish cream
+        5. add some port to taste
+        6. add some butterscotch schnapps to taste
+        7. add some coffee brandy to taste
+        8. fill the glass with ice cubes
+        9. pour the 2 1/2 oz of cachaca into the glass
+        10. stir well
+
+Adapted case:
+MyRecipe3300
+Type of drink: cocktail
+Glass: highball glass
+Ingredients:
+        2 1/2 oz of cachaca, 1 of lime, 2 tsp of demerara sugar, some coffee brandy,
+        some butterscotch schnapps, some port, 1 oz of baileys irish cream, 3/4 oz double of cream double,
+        some coffee, some salt, some blackcurrant cordial, some strawberries,
+        1 jigger of amaretto, some apple cider
+Preparation:
+        0. muddle the 2 tsp of demerara sugar into the 1 of lime wedges in an old-fashioned glass
+        1. add some apple cider to taste
+        2. add 1 jigger of amaretto
+        3. add some strawberries to taste
+        4. add some blackcurrant cordial to taste
+        5. add some salt to taste
+        6. add some coffee to taste
+        7. add 3/4 oz double of cream double
+        8. add 1 oz of baileys irish cream
+        9. add some port to taste
+        10. add some butterscotch schnapps to taste
+        11. add some coffee brandy to taste
+        12. fill the glass with ice cubes
+        13. pour the 2 1/2 oz of cachaca into the glass
+        14. stir well
+--------------
+
+--------------
+Query:
+- Type of drink: soft drink / soda
+- Type of glass: champagne flute
+- Ingredients: 
+- Ingredients to exclude: spiced rum, bourbon blended, chocolate sauce, melon liqueur
+- Taste of the drink: salty, egg
+- Type of alcohol: beer, tequila, pisco
+
+Retrieved case:
+MyRecipe3484
+Type of drink: soft drink / soda
+Glass: highball glass
+Ingredients:
+        fill with of sprite, 1 cl of blue curacao, 1 cl of coconut liqueur, 2 cl of vodka,
+        some vanilla extract, some kool-aid tropical berry, some yukon jack, 3/4 oz of kahlua,
+        some prosecco, some anisette, 1/2 glass of cranberry juice, some water,
+        some schweppes russchian, some kirschwasser, some tomato juice, some white creme de menthe,
+        some strawberry schnapps, some whisky, some dry vermouth, some pisco,
+        some red wine, some absinthe, 2 scoops of vanilla ice-cream, some mint
+Preparation:
+        0. just pour all ingredients in the glass and stir
+        1. add some mint to taste
+        2. add 2 scoops of vanilla ice-cream
+        3. add some absinthe to taste
+        4. add some red wine to taste
+        5. add some pisco to taste
+        6. add some dry vermouth to taste
+        7. add some whisky to taste
+        8. add some strawberry schnapps to taste
+        9. add some white creme de menthe to taste
+        10. add some tomato juice to taste
+        11. add some kirschwasser to taste
+        12. add some schweppes russchian to taste
+        13. add some water to taste
+        14. add 1/2 glass of cranberry juice
+        15. add some anisette to taste
+        16. add some prosecco to taste
+        17. add 3/4 oz of kahlua
+        18. add some yukon jack to taste
+        19. add some kool-aid tropical berry to taste
+        20. add some vanilla extract to taste
+
+Adapted case:
+MyRecipe5912
+Type of drink: soft drink / soda
+Glass: highball glass
+Ingredients:
+        fill with of sprite, 1 cl of blue curacao, 1 cl of coconut liqueur, 2 cl of vodka,
+        some vanilla extract, some kool-aid tropical berry, some yukon jack, 3/4 oz of kahlua,
+        some prosecco, some anisette, 1/2 glass of cranberry juice, some water,
+        some schweppes russchian, some kirschwasser, some tomato juice, some white creme de menthe,
+        some strawberry schnapps, some whisky, some dry vermouth, some pisco,
+        some red wine, some absinthe, 2 scoops of vanilla ice-cream, some mint,
+        some ale, some tequila, some egg
+Preparation:
+        0. just pour all ingredients in the glass and stir
+        1. add some egg to taste
+        2. add some tequila to taste
+        3. add some ale to taste
+        4. add some mint to taste
+        5. add 2 scoops of vanilla ice-cream
+        6. add some absinthe to taste
+        7. add some red wine to taste
+        8. add some pisco to taste
+        9. add some dry vermouth to taste
+        10. add some whisky to taste
+        11. add some strawberry schnapps to taste
+        12. add some white creme de menthe to taste
+        13. add some tomato juice to taste
+        14. add some kirschwasser to taste
+        15. add some schweppes russchian to taste
+        16. add some water to taste
+        17. add 1/2 glass of cranberry juice
+        18. add some anisette to taste
+        19. add some prosecco to taste
+        20. add 3/4 oz of kahlua
+        21. add some yukon jack to taste
+        22. add some kool-aid tropical berry to taste
+        23. add some vanilla extract to taste
+--------------
+
+--------------
+Query:
+- Type of drink: shot
+- Type of glass: copper mug
+- Ingredients: 
+- Ingredients to exclude: 
+- Taste of the drink: bitter, salty
+- Type of alcohol: ouzo, cider, sweet liqueur, beer
+
+Retrieved case:
+MyRecipe8440
+Type of drink: shot
+Glass: shot glass
+Ingredients:
+        1/2 oz of absolut citron,  of 151 proof rum, 1/2 oz of galliano, bacardi of sugar,
+        wedge of lemon, some sirup of roses, some agave syrup, some prosecco,
+        some dry vermouth, some aperol, some cider, some coffee,
+        some nutmeg, some carbonated water, some gin dry, some worcestershire sauce,
+        some absolut vodka, some peach vodka, some half-and-half, some champagne,
+        some cachaca
+Preparation:
+        0. mix 1/2 oz of galliano and 1/2 oz of absolut citron in a shot glass, lay wedge of lemon wedge sprinkled with bacardi of sugar over glass and pour a  of 151 proof rum over wedge and glass
+        1. add some cachaca to taste
+        2. add some champagne to taste
+        3. add some half-and-half to taste
+        4. add some peach vodka to taste
+        5. add some absolut vodka to taste
+        6. add some worcestershire sauce to taste
+        7. add some gin dry to taste
+        8. add some carbonated water to taste
+        9. add some nutmeg to taste
+        10. add some coffee to taste
+        11. add some cider to taste
+        12. add some aperol to taste
+        13. add some dry vermouth to taste
+        14. add some prosecco to taste
+        15. add some agave syrup to taste
+        16. add some sirup of roses to taste
+        17. light  of 151 proof rum with a lighter and let burn for a second
+        18. do shot quickly and suck on wedge of lemon
+        19. if it is done correctly, this will taste like 1 shot of sweet lemonade
+
+Adapted case:
+MyRecipe7606
+Type of drink: shot
+Glass: shot glass
+Ingredients:
+        1/2 oz of absolut citron,  of 151 proof rum, 1/2 oz of galliano, bacardi of sugar,
+        wedge of lemon, some sirup of roses, some agave syrup, some prosecco,
+        some dry vermouth, some aperol, some cider, some coffee,
+        some nutmeg, some carbonated water, some gin dry, some worcestershire sauce,
+        some absolut vodka, some peach vodka, some half-and-half, some champagne,
+        some cachaca, some ouzo, 1 oz of beer
+Preparation:
+        0. mix 1/2 oz of galliano and 1/2 oz of absolut citron in a shot glass, lay wedge of lemon wedge sprinkled with bacardi of sugar over glass and pour a  of 151 proof rum over wedge and glass
+        1. add 1 oz of beer
+        2. add some ouzo to taste
+        3. add some cachaca to taste
+        4. add some champagne to taste
+        5. add some half-and-half to taste
+        6. add some peach vodka to taste
+        7. add some absolut vodka to taste
+        8. add some worcestershire sauce to taste
+        9. add some gin dry to taste
+        10. add some carbonated water to taste
+        11. add some nutmeg to taste
+        12. add some coffee to taste
+        13. add some cider to taste
+        14. add some aperol to taste
+        15. add some dry vermouth to taste
+        16. add some prosecco to taste
+        17. add some agave syrup to taste
+        18. add some sirup of roses to taste
+        19. light  of 151 proof rum with a lighter and let burn for a second
+        20. do shot quickly and suck on wedge of lemon
+        21. if it is done correctly, this will taste like 1 shot of sweet lemonade
+--------------
+
+--------------
+Query:
+- Type of drink: punch / party drink
+- Type of glass: wine glass
+- Ingredients: st. germain, mini-snickers bars, cream
+- Ingredients to exclude: angostura bitters
+- Taste of the drink: sweet
+- Type of alcohol: aperol, pisco
+
+Retrieved case:
+MyRecipe1499
+Type of drink: punch / party drink
+Glass: pitcher
+Ingredients:
+        1/4 tsp of salt, 1 qt of milk, 1 tsp of vanilla extract, 6 of egg,
+        1/4 cup of sugar, some coffee liqueur, some sprite, some surge,
+        some schweppes russchian, some light rum, some maui blue, some gin,
+        some dry vermouth, some mint, some sherry cream, 3 oz of tequila,
+        some corona, some cinnamon, some pisco, some aperol,
+        some sambuca
+Preparation:
+        0. in large saucepan, beat together eggs, 1/4 cup of sugar and 1/4 tsp of salt, if desired
+        1. add some sambuca to taste
+        2. add some aperol to taste
+        3. add some pisco to taste
+        4. add some cinnamon to taste
+        5. add some corona to taste
+        6. add 3 oz of tequila
+        7. add some sherry cream to taste
+        8. add some mint to taste
+        9. add some dry vermouth to taste
+        10. add some gin to taste
+        11. add some maui blue to taste
+        12. add some light rum to taste
+        13. add some schweppes russchian to taste
+        14. add some surge to taste
+        15. add some sprite to taste
+        16. add some coffee liqueur to taste
+        17. stir in 2 cups of the 1 qt of milk
+        18. cook over low heat, stirring constantly, until mixture is thick enough to coat a metal spoon and reaches 160 degrees f
+        19. remove from heat
+        20. stir in remaining 2 cups 1 qt of milk and 1 tsp of vanilla extract
+        21. cover and regfigerate until thoroughly chilled, several hours or overnight
+        22. just before serving, pour into bowl or pitcher
+        23. garnish or add stir-ins, if desired
+        24. choose 1 or several of: chocolate curls, cinnamon sticks, extracts of flavorings, flavored brandy or liqueur, fruit juice or nectar, ground nutmeg, maraschino cherries, orange slices, peppermint sticks or candy canes, plain brandy, run or whiskey, sherbet or ice-cream, whipped-cream, whipped
+        25. serve immediately
+
+Adapted case:
+MyRecipe8700
+Type of drink: punch / party drink
+Glass: pitcher
+Ingredients:
+        1/4 tsp of salt, 1 qt of milk, 1 tsp of vanilla extract, 6 of egg,
+        1/4 cup of sugar, some coffee liqueur, some sprite, some surge,
+        some schweppes russchian, some light rum, some maui blue, some gin,
+        some dry vermouth, some mint, some sherry cream, 3 oz of tequila,
+        some corona, some cinnamon, some pisco, some aperol,
+        some sambuca, some st. germain, some mini-snickers bars, some cream
+Preparation:
+        0. in large saucepan, beat together eggs, 1/4 cup of sugar and 1/4 tsp of salt, if desired
+        1. add some cream to taste
+        2. add some mini-snickers bars to taste
+        3. add some st. germain to taste
+        4. add some sambuca to taste
+        5. add some aperol to taste
+        6. add some pisco to taste
+        7. add some cinnamon to taste
+        8. add some corona to taste
+        9. add 3 oz of tequila
+        10. add some sherry cream to taste
+        11. add some mint to taste
+        12. add some dry vermouth to taste
+        13. add some gin to taste
+        14. add some maui blue to taste
+        15. add some light rum to taste
+        16. add some schweppes russchian to taste
+        17. add some surge to taste
+        18. add some sprite to taste
+        19. add some coffee liqueur to taste
+        20. stir in 2 cups of the 1 qt of milk
+        21. cook over low heat, stirring constantly, until mixture is thick enough to coat a metal spoon and reaches 160 degrees f
+        22. remove from heat
+        23. stir in remaining 2 cups 1 qt of milk and 1 tsp of vanilla extract
+        24. cover and regfigerate until thoroughly chilled, several hours or overnight
+        25. just before serving, pour into bowl or pitcher
+        26. garnish or add stir-ins, if desired
+        27. choose 1 or several of: chocolate curls, cinnamon sticks, extracts of flavorings, flavored brandy or liqueur, fruit juice or nectar, ground nutmeg, maraschino cherries, orange slices, peppermint sticks or candy canes, plain brandy, run or whiskey, sherbet or ice-cream, whipped-cream, whipped
+        28. serve immediately
+--------------
+
+--------------
+Query:
+- Type of drink: punch / party drink
+- Type of glass: whiskey sour glass
+- Ingredients: beer, sherry cream, blackcurrant cordial, strawberry schnapps
+- Ingredients to exclude: kummel, curacao, lemon vodka, campari, bourbon blended
+- Taste of the drink: 
+- Type of alcohol: whisky, champagne, cider, sweet liqueur
+
+Retrieved case:
+MyRecipe8700
+Type of drink: punch / party drink
+Glass: pitcher
+Ingredients:
+        1/4 tsp of salt, 1 qt of milk, 1 tsp of vanilla extract, 6 of egg,
+        1/4 cup of sugar, some coffee liqueur, some sprite, some surge,
+        some schweppes russchian, some light rum, some maui blue, some gin,
+        some dry vermouth, some mint, some sherry cream, 3 oz of tequila,
+        some corona, some cinnamon, some pisco, some aperol,
+        some sambuca, some st. germain, some mini-snickers bars, some cream
+Preparation:
+        0. in large saucepan, beat together eggs, 1/4 cup of sugar and 1/4 tsp of salt, if desired
+        1. add some cream to taste
+        2. add some mini-snickers bars to taste
+        3. add some st. germain to taste
+        4. add some sambuca to taste
+        5. add some aperol to taste
+        6. add some pisco to taste
+        7. add some cinnamon to taste
+        8. add some corona to taste
+        9. add 3 oz of tequila
+        10. add some sherry cream to taste
+        11. add some mint to taste
+        12. add some dry vermouth to taste
+        13. add some gin to taste
+        14. add some maui blue to taste
+        15. add some light rum to taste
+        16. add some schweppes russchian to taste
+        17. add some surge to taste
+        18. add some sprite to taste
+        19. add some coffee liqueur to taste
+        20. stir in 2 cups of the 1 qt of milk
+        21. cook over low heat, stirring constantly, until mixture is thick enough to coat a metal spoon and reaches 160 degrees f
+        22. remove from heat
+        23. stir in remaining 2 cups 1 qt of milk and 1 tsp of vanilla extract
+        24. cover and regfigerate until thoroughly chilled, several hours or overnight
+        25. just before serving, pour into bowl or pitcher
+        26. garnish or add stir-ins, if desired
+        27. choose 1 or several of: chocolate curls, cinnamon sticks, extracts of flavorings, flavored brandy or liqueur, fruit juice or nectar, ground nutmeg, maraschino cherries, orange slices, peppermint sticks or candy canes, plain brandy, run or whiskey, sherbet or ice-cream, whipped-cream, whipped
+        28. serve immediately
+
+Adapted case:
+MyRecipe3807
+Type of drink: punch / party drink
+Glass: pitcher
+Ingredients:
+        1/4 tsp of salt, 1 qt of milk, 1 tsp of vanilla extract, 6 of egg,
+        1/4 cup of sugar, some coffee liqueur, some sprite, some surge,
+        some schweppes russchian, some light rum, some maui blue, some gin,
+        some dry vermouth, some mint, some sherry cream, 3 oz of tequila,
+        some corona, some cinnamon, some pisco, some aperol,
+        some sambuca, some st. germain, some mini-snickers bars, some cream,
+        some beer, some blackcurrant cordial, some strawberry schnapps, some bourbon,
+        some champagne, some apple cider, some chambord raspberry liqueur
+Preparation:
+        0. in large saucepan, beat together eggs, 1/4 cup of sugar and 1/4 tsp of salt, if desired
+        1. add some chambord raspberry liqueur to taste
+        2. add some apple cider to taste
+        3. add some champagne to taste
+        4. add some bourbon to taste
+        5. add some strawberry schnapps to taste
+        6. add some blackcurrant cordial to taste
+        7. add some beer to taste
+        8. add some cream to taste
+        9. add some mini-snickers bars to taste
+        10. add some st. germain to taste
+        11. add some sambuca to taste
+        12. add some aperol to taste
+        13. add some pisco to taste
+        14. add some cinnamon to taste
+        15. add some corona to taste
+        16. add 3 oz of tequila
+        17. add some sherry cream to taste
+        18. add some mint to taste
+        19. add some dry vermouth to taste
+        20. add some gin to taste
+        21. add some maui blue to taste
+        22. add some light rum to taste
+        23. add some schweppes russchian to taste
+        24. add some surge to taste
+        25. add some sprite to taste
+        26. add some coffee liqueur to taste
+        27. stir in 2 cups of the 1 qt of milk
+        28. cook over low heat, stirring constantly, until mixture is thick enough to coat a metal spoon and reaches 160 degrees f
+        29. remove from heat
+        30. stir in remaining 2 cups 1 qt of milk and 1 tsp of vanilla extract
+        31. cover and regfigerate until thoroughly chilled, several hours or overnight
+        32. just before serving, pour into bowl or pitcher
+        33. garnish or add stir-ins, if desired
+        34. choose 1 or several of: chocolate curls, cinnamon sticks, extracts of flavorings, flavored brandy or liqueur, fruit juice or nectar, ground nutmeg, maraschino cherries, orange slices, peppermint sticks or candy canes, plain brandy, run or whiskey, sherbet or ice-cream, whipped-cream, whipped
+        35. serve immediately
+--------------
+
+--------------
+Query:
+- Type of drink: coffee / tea
+- Type of glass: beer mug
+- Ingredients: apfelkorn, chocolate sauce
+- Ingredients to exclude: nutmeg ground
+- Taste of the drink: cream, salty, sweet
+- Type of alcohol: gin, brandy, schnapps
+
+Retrieved case:
+Cafe Savoy
+Type of drink: coffee / tea
+Glass: coffee mug
+Ingredients:
+        1/2 oz of triple sec,  of coffee, 1/2 oz of milk,  of brandy
+Preparation:
+        0. fill mug almost to top with  of coffee.add 1/2 oz of milk, 1/2 oz of triple sec and  of brandy
+        1. stir
+
+Adapted case:
+MyRecipe3400
+Type of drink: coffee / tea
+Glass: coffee mug
+Ingredients:
+        1/2 oz of triple sec,  of coffee, 1/2 oz of milk,  of brandy,
+        some apfelkorn, some chocolate sauce, some gin, some peachtree schnapps,
+        some salt
+Preparation:
+        0. fill mug almost to top with  of coffee.add 1/2 oz of milk, 1/2 oz of triple sec and  of brandy
+        1. add some salt to taste
+        2. add some peachtree schnapps to taste
+        3. add some gin to taste
+        4. add some chocolate sauce to taste
+        5. add some apfelkorn to taste
+        6. stir
+--------------
+
+--------------
+Query:
+- Type of drink: coffee / tea
+- Type of glass: white wine glass
+- Ingredients: nutmeg ground
+- Ingredients to exclude: blue curacao, prosecco, cocoa powder
+- Taste of the drink: spicy, bitter, sweet
+- Type of alcohol: bitters, campari, vodka
+
+Retrieved case:
+MyRecipe5155
+Type of drink: coffee / tea
+Glass: champagne flute
+Ingredients:
+        4 cl of absolut kurant, turkish apple of turkish apple tea, some dr. pepper, some orange peel,
+        some cranberry vodka, some cachaca, some campari
+Preparation:
+        0. pour 4 cl of absolut kurant into a comfortably big tea-cup
+        1. add some campari to taste
+        2. add some cachaca to taste
+        3. add some cranberry vodka to taste
+        4. add some orange peel to taste
+        5. add some dr. pepper to taste
+        6. add the not too hot(!) turkish apple of turkish apple tea and, if you like, some sugar
+        7. enjoy!
+
+Adapted case:
+MyRecipe1555
+Type of drink: coffee / tea
+Glass: champagne flute
+Ingredients:
+        4 cl of absolut kurant, turkish apple of turkish apple tea, some dr. pepper, some orange peel,
+        some cranberry vodka, some cachaca, some campari, some nutmeg ground,
+        some bitters, 3 parts of coffee
+Preparation:
+        0. pour 4 cl of absolut kurant into a comfortably big tea-cup
+        1. add 3 parts of coffee
+        2. add some bitters to taste
+        3. add some nutmeg ground to taste
+        4. add some campari to taste
+        5. add some cachaca to taste
+        6. add some cranberry vodka to taste
+        7. add some orange peel to taste
+        8. add some dr. pepper to taste
+        9. add the not too hot(!) turkish apple of turkish apple tea and, if you like, some sugar
+        10. enjoy!
+--------------
+
+--------------
+Query:
+- Type of drink: beer
+- Type of glass: parfait glass
+- Ingredients: guinness stout, tonic water schweppes, sherry dry, green chartreuse
+- Ingredients to exclude: olive, orange spiral
+- Taste of the drink: salty, cream, spicy, mint
+- Type of alcohol: whisky, sweet liqueur
+
+Retrieved case:
+MyRecipe6947
+Type of drink: beer
+Glass: beer pilsner
+Ingredients:
+        1/2 of guinness stout, 1/2 of root beer, some irish cream, some dry vermouth,
+        some coffee, some egg, some orange, some jim beam,
+        some chocolate liqueur, some pineapple, some bitters, some sherry dry,
+        some cachaca, some champagne
+Preparation:
+        0. carefully to avoid explosive head formation: pour 1/2 of root beer glass half full of favorite root 1/2 of root beer and top off with 1/2 of guinness stout
+        1. add some champagne to taste
+        2. add some cachaca to taste
+        3. add some sherry dry to taste
+        4. add some bitters to taste
+        5. add some pineapple to taste
+        6. add some chocolate liqueur to taste
+        7. add some jim beam to taste
+        8. add some orange to taste
+        9. add some egg to taste
+        10. add some coffee to taste
+        11. add some dry vermouth to taste
+        12. add some irish cream to taste
+
+Adapted case:
+MyRecipe6918
+Type of drink: beer
+Glass: beer pilsner
+Ingredients:
+        1/2 of guinness stout, 1/2 of root beer, some irish cream, some dry vermouth,
+        some coffee, some egg, some orange, some jim beam,
+        some chocolate liqueur, some pineapple, some bitters, some sherry dry,
+        some cachaca, some champagne, some tonic water schweppes, some green chartreuse,
+        some worcestershire sauce, some milk skimmed, some cinnamon, some mint
+Preparation:
+        0. carefully to avoid explosive head formation: pour 1/2 of root beer glass half full of favorite root 1/2 of root beer and top off with 1/2 of guinness stout
+        1. add some mint to taste
+        2. add some cinnamon to taste
+        3. add some milk skimmed to taste
+        4. add some worcestershire sauce to taste
+        5. add some green chartreuse to taste
+        6. add some tonic water schweppes to taste
+        7. add some champagne to taste
+        8. add some cachaca to taste
+        9. add some sherry dry to taste
+        10. add some bitters to taste
+        11. add some pineapple to taste
+        12. add some chocolate liqueur to taste
+        13. add some jim beam to taste
+        14. add some orange to taste
+        15. add some egg to taste
+        16. add some coffee to taste
+        17. add some dry vermouth to taste
+        18. add some irish cream to taste
+--------------
+
+--------------
+Query:
+- Type of drink: soft drink / soda
+- Type of glass: old-fashioned glass
+- Ingredients: lime juice fresh, coffee liqueur, pina colada mix, sambuca white
+- Ingredients to exclude: anis
+- Taste of the drink: salty, sweet, spicy, cream, water
+- Type of alcohol: bitters, schnapps
+
+Retrieved case:
+MyRecipe3484
+Type of drink: soft drink / soda
+Glass: highball glass
+Ingredients:
+        fill with of sprite, 1 cl of blue curacao, 1 cl of coconut liqueur, 2 cl of vodka,
+        some vanilla extract, some kool-aid tropical berry, some yukon jack, 3/4 oz of kahlua,
+        some prosecco, some anisette, 1/2 glass of cranberry juice, some water,
+        some schweppes russchian, some kirschwasser, some tomato juice, some white creme de menthe,
+        some strawberry schnapps, some whisky, some dry vermouth, some pisco,
+        some red wine, some absinthe, 2 scoops of vanilla ice-cream, some mint
+Preparation:
+        0. just pour all ingredients in the glass and stir
+        1. add some mint to taste
+        2. add 2 scoops of vanilla ice-cream
+        3. add some absinthe to taste
+        4. add some red wine to taste
+        5. add some pisco to taste
+        6. add some dry vermouth to taste
+        7. add some whisky to taste
+        8. add some strawberry schnapps to taste
+        9. add some white creme de menthe to taste
+        10. add some tomato juice to taste
+        11. add some kirschwasser to taste
+        12. add some schweppes russchian to taste
+        13. add some water to taste
+        14. add 1/2 glass of cranberry juice
+        15. add some anisette to taste
+        16. add some prosecco to taste
+        17. add 3/4 oz of kahlua
+        18. add some yukon jack to taste
+        19. add some kool-aid tropical berry to taste
+        20. add some vanilla extract to taste
+
+Adapted case:
+MyRecipe3840
+Type of drink: soft drink / soda
+Glass: highball glass
+Ingredients:
+        fill with of sprite, 1 cl of blue curacao, 1 cl of coconut liqueur, 2 cl of vodka,
+        some vanilla extract, some kool-aid tropical berry, some yukon jack, 3/4 oz of kahlua,
+        some prosecco, some anisette, 1/2 glass of cranberry juice, some water,
+        some schweppes russchian, some kirschwasser, some tomato juice, some white creme de menthe,
+        some strawberry schnapps, some whisky, some dry vermouth, some pisco,
+        some red wine, some absinthe, 2 scoops of vanilla ice-cream, some mint,
+        some lime juice fresh, some coffee liqueur, some pina colada mix, some sambuca white,
+        some orange bitters
+Preparation:
+        0. just pour all ingredients in the glass and stir
+        1. add some orange bitters to taste
+        2. add some sambuca white to taste
+        3. add some pina colada mix to taste
+        4. add some coffee liqueur to taste
+        5. add some lime juice fresh to taste
+        6. add some mint to taste
+        7. add 2 scoops of vanilla ice-cream
+        8. add some absinthe to taste
+        9. add some red wine to taste
+        10. add some pisco to taste
+        11. add some dry vermouth to taste
+        12. add some whisky to taste
+        13. add some strawberry schnapps to taste
+        14. add some white creme de menthe to taste
+        15. add some tomato juice to taste
+        16. add some kirschwasser to taste
+        17. add some schweppes russchian to taste
+        18. add some water to taste
+        19. add 1/2 glass of cranberry juice
+        20. add some anisette to taste
+        21. add some prosecco to taste
+        22. add 3/4 oz of kahlua
+        23. add some yukon jack to taste
+        24. add some kool-aid tropical berry to taste
+        25. add some vanilla extract to taste
+--------------
+
+--------------
+Query:
+- Type of drink: ordinary drink
+- Type of glass: margarita/coupette glass
+- Ingredients: kool-aid grape, pisang ambon, fruit juice
+- Ingredients to exclude: tonic water, sweet vermouth, iced tea, blue curacao
+- Taste of the drink: 
+- Type of alcohol: absinthe
+
+Retrieved case:
+Avalon
+Type of drink: ordinary drink
+Glass: highball glass
+Ingredients:
+         of lemonade, 1 part of pisang ambon, 6 parts of apple juice, 3 parts of vodka,
+        1 1/2 part of lemon juice
+Preparation:
+        0. fill a tall glass with ice
+        1. layer the finlandia 3 parts of vodka, 1 1/2 part of lemon juice and 6 parts of apple juice juices, 1 part of pisang ambon, and top up with  of lemonade
+        2. stir slightly and garnish with a spiralled cucumber skin and a red cherry
+        3. the cucumber provides zest and looks attractive
+        4. this drink, created by timo haimi, took first prize in the 1991 finlandia 3 parts of vodka long drink competition
+
+Adapted case:
+MyRecipe1088
+Type of drink: ordinary drink
+Glass: highball glass
+Ingredients:
+         of lemonade, 1 part of pisang ambon, 6 parts of apple juice, 3 parts of vodka,
+        1 1/2 part of lemon juice, some kool-aid grape, some fruit juice, some absinthe
+Preparation:
+        0. fill a tall glass with ice
+        1. add some absinthe to taste
+        2. add some fruit juice to taste
+        3. add some kool-aid grape to taste
+        4. layer the finlandia 3 parts of vodka, 1 1/2 part of lemon juice and 6 parts of apple juice juices, 1 part of pisang ambon, and top up with  of lemonade
+        5. stir slightly and garnish with a spiralled cucumber skin and a red cherry
+        6. the cucumber provides zest and looks attractive
+        7. this drink, created by timo haimi, took first prize in the 1991 finlandia 3 parts of vodka long drink competition
+--------------
+
+--------------
+Query:
+- Type of drink: shot
+- Type of glass: parfait glass
+- Ingredients: dark rum jamaican
+- Ingredients to exclude: bitters
+- Taste of the drink: water, egg
+- Type of alcohol: 
+
+Retrieved case:
+MyRecipe7606
+Type of drink: shot
+Glass: shot glass
+Ingredients:
+        1/2 oz of absolut citron,  of 151 proof rum, 1/2 oz of galliano, bacardi of sugar,
+        wedge of lemon, some sirup of roses, some agave syrup, some prosecco,
+        some dry vermouth, some aperol, some cider, some coffee,
+        some nutmeg, some carbonated water, some gin dry, some worcestershire sauce,
+        some absolut vodka, some peach vodka, some half-and-half, some champagne,
+        some cachaca, some ouzo, 1 oz of beer
+Preparation:
+        0. mix 1/2 oz of galliano and 1/2 oz of absolut citron in a shot glass, lay wedge of lemon wedge sprinkled with bacardi of sugar over glass and pour a  of 151 proof rum over wedge and glass
+        1. add 1 oz of beer
+        2. add some ouzo to taste
+        3. add some cachaca to taste
+        4. add some champagne to taste
+        5. add some half-and-half to taste
+        6. add some peach vodka to taste
+        7. add some absolut vodka to taste
+        8. add some worcestershire sauce to taste
+        9. add some gin dry to taste
+        10. add some carbonated water to taste
+        11. add some nutmeg to taste
+        12. add some coffee to taste
+        13. add some cider to taste
+        14. add some aperol to taste
+        15. add some dry vermouth to taste
+        16. add some prosecco to taste
+        17. add some agave syrup to taste
+        18. add some sirup of roses to taste
+        19. light  of 151 proof rum with a lighter and let burn for a second
+        20. do shot quickly and suck on wedge of lemon
+        21. if it is done correctly, this will taste like 1 shot of sweet lemonade
+
+Adapted case:
+MyRecipe6480
+Type of drink: shot
+Glass: shot glass
+Ingredients:
+        1/2 oz of absolut citron,  of 151 proof rum, 1/2 oz of galliano, bacardi of sugar,
+        wedge of lemon, some sirup of roses, some agave syrup, some prosecco,
+        some dry vermouth, some aperol, some cider, some coffee,
+        some nutmeg, some carbonated water, some gin dry, some worcestershire sauce,
+        some absolut vodka, some peach vodka, some half-and-half, some champagne,
+        some cachaca, some ouzo, 1 oz of beer, some dark rum jamaican,
+        some egg white
+Preparation:
+        0. mix 1/2 oz of galliano and 1/2 oz of absolut citron in a shot glass, lay wedge of lemon wedge sprinkled with bacardi of sugar over glass and pour a  of 151 proof rum over wedge and glass
+        1. add some egg white to taste
+        2. add some dark rum jamaican to taste
+        3. add 1 oz of beer
+        4. add some ouzo to taste
+        5. add some cachaca to taste
+        6. add some champagne to taste
+        7. add some half-and-half to taste
+        8. add some peach vodka to taste
+        9. add some absolut vodka to taste
+        10. add some worcestershire sauce to taste
+        11. add some gin dry to taste
+        12. add some carbonated water to taste
+        13. add some nutmeg to taste
+        14. add some coffee to taste
+        15. add some cider to taste
+        16. add some aperol to taste
+        17. add some dry vermouth to taste
+        18. add some prosecco to taste
+        19. add some agave syrup to taste
+        20. add some sirup of roses to taste
+        21. light  of 151 proof rum with a lighter and let burn for a second
+        22. do shot quickly and suck on wedge of lemon
+        23. if it is done correctly, this will taste like 1 shot of sweet lemonade
+--------------
+
+--------------
+Query:
+- Type of drink: milk / float / shake
+- Type of glass: white wine glass
+- Ingredients: pisco, tea
+- Ingredients to exclude: vermouth, peach vodka, tonic water, lime juice, creme de cassis
+- Taste of the drink: bitter
+- Type of alcohol: 
+
+Retrieved case:
+Jamaica Kiss
+Type of drink: milk / float / shake
+Glass: hurricane glass
+Ingredients:
+        1 shot jamaican of light rum jamaican,  of milk, 1 shot of coffee liqueur
+Preparation:
+        0. fill a tumbler with ice cubes
+        1. add 1 shot of tia maria and 1 shot of 1 shot jamaican of light rum jamaican
+        2. fill the tumbler with  of milk
+        3. blend until smooth and serve immediately
+
+Adapted case:
+MyRecipe7320
+Type of drink: milk / float / shake
+Glass: hurricane glass
+Ingredients:
+        1 shot jamaican of light rum jamaican,  of milk, 1 shot of coffee liqueur, some pisco,
+        some tea
+Preparation:
+        0. fill a tumbler with ice cubes
+        1. add some tea to taste
+        2. add some pisco to taste
+        3. add 1 shot of tia maria and 1 shot of 1 shot jamaican of light rum jamaican
+        4. fill the tumbler with  of milk
+        5. blend until smooth and serve immediately
+--------------
+
+--------------
+Query:
+- Type of drink: coffee / tea
+- Type of glass: beer glass
+- Ingredients: 
+- Ingredients to exclude: lemon peel, curacao, lemon, irish whiskey
+- Taste of the drink: sweet, mint
+- Type of alcohol: cachaca, rum, aperol
+
+Retrieved case:
+MyRecipe5155
+Type of drink: coffee / tea
+Glass: champagne flute
+Ingredients:
+        4 cl of absolut kurant, turkish apple of turkish apple tea, some dr. pepper, some orange peel,
+        some cranberry vodka, some cachaca, some campari
+Preparation:
+        0. pour 4 cl of absolut kurant into a comfortably big tea-cup
+        1. add some campari to taste
+        2. add some cachaca to taste
+        3. add some cranberry vodka to taste
+        4. add some orange peel to taste
+        5. add some dr. pepper to taste
+        6. add the not too hot(!) turkish apple of turkish apple tea and, if you like, some sugar
+        7. enjoy!
+
+Adapted case:
+MyRecipe6520
+Type of drink: coffee / tea
+Glass: champagne flute
+Ingredients:
+        4 cl of absolut kurant, turkish apple of turkish apple tea, some dr. pepper, some orange peel,
+        some cranberry vodka, some cachaca, some campari, 1/6 glass of rum,
+        some aperol, some mint
+Preparation:
+        0. pour 4 cl of absolut kurant into a comfortably big tea-cup
+        1. add some mint to taste
+        2. add some aperol to taste
+        3. add 1/6 glass of rum
+        4. add some campari to taste
+        5. add some cachaca to taste
+        6. add some cranberry vodka to taste
+        7. add some orange peel to taste
+        8. add some dr. pepper to taste
+        9. add the not too hot(!) turkish apple of turkish apple tea and, if you like, some sugar
+        10. enjoy!
+--------------
+
+--------------
+Query:
+- Type of drink: other/unknown
+- Type of glass: irish coffee cup
+- Ingredients: egg, jim beam, dubonnet rouge, gold tequila
+- Ingredients to exclude: pisco, wine muscatel
+- Taste of the drink: egg, mint, sour, water, cream
+- Type of alcohol: aperol, triple sec, vermouth
+
+Retrieved case:
+MyRecipe978
+Type of drink: other/unknown
+Glass: margarita/coupette glass
+Ingredients:
+        3 tablespoon fresh of lime juice fresh, 2 oz of tequila, 1/4 cup of cream of coconut, some gin,
+        some sweet vermouth red, some baileys irish cream, some aperol, some mint,
+        1 part of orange juice
+Preparation:
+        0. place all ingredients in a blender and blend until smooth
+        1. add 1 part of orange juice
+        2. add some mint to taste
+        3. add some aperol to taste
+        4. add some baileys irish cream to taste
+        5. add some sweet vermouth red to taste
+        6. add some gin to taste
+        7. this makes one drink
+
+Adapted case:
+MyRecipe190
+Type of drink: other/unknown
+Glass: margarita/coupette glass
+Ingredients:
+        3 tablespoon fresh of lime juice fresh, 2 oz of tequila, 1/4 cup of cream of coconut, some gin,
+        some sweet vermouth red, some baileys irish cream, some aperol, some mint,
+        1 part of orange juice, some egg, some jim beam, some dubonnet rouge,
+        some gold tequila, some blue curacao, top it up with of tonic water
+Preparation:
+        0. place all ingredients in a blender and blend until smooth
+        1. add top it up with of tonic water
+        2. add some blue curacao to taste
+        3. add some gold tequila to taste
+        4. add some dubonnet rouge to taste
+        5. add some jim beam to taste
+        6. add some egg to taste
+        7. add 1 part of orange juice
+        8. add some mint to taste
+        9. add some aperol to taste
+        10. add some baileys irish cream to taste
+        11. add some sweet vermouth red to taste
+        12. add some gin to taste
+        13. this makes one drink
+--------------
+
+--------------
+Query:
+- Type of drink: punch / party drink
+- Type of glass: old-fashioned glass
+- Ingredients: 
+- Ingredients to exclude: tonic water schweppes, worcestershire sauce, melon liqueur
+- Taste of the drink: 
+- Type of alcohol: triple sec, absinthe, sweet liqueur, whisky
+
+Retrieved case:
+Zizi Coin-coin
+Type of drink: punch / party drink
+Glass: margarita/coupette glass
+Ingredients:
+        2 cl of lemon juice, 5 cl of cointreau, or lime of lemon
+Preparation:
+        0. pour 5cl of 5 cl of cointreau on ice, add 2cl of fresh 2 cl of lemon juice (or lime) juice, stir gently, and finally add slices of 2 cl of lemon juice/lime in glass
+
+Adapted case:
+MyRecipe5011
+Type of drink: punch / party drink
+Glass: margarita/coupette glass
+Ingredients:
+        2 cl of lemon juice, 5 cl of cointreau, or lime of lemon, some absinthe,
+         of midori melon liqueur, 1 quart of rye whiskey
+Preparation:
+        0. pour 5cl of 5 cl of cointreau on ice, add 2cl of fresh 2 cl of lemon juice (or lime) juice, stir gently, and finally add slices of 2 cl of lemon juice/lime in glass
+        1. add 1 quart of rye whiskey
+        2. add  of midori melon liqueur
+        3. add some absinthe to taste
+--------------
+
+--------------
+Query:
+- Type of drink: milk / float / shake
+- Type of glass: shot glass
+- Ingredients: rub light or dark, apple brandy, aquavit, brandy plain
+- Ingredients to exclude: 
+- Taste of the drink: sweet, salty, mint, water
+- Type of alcohol: bitters, champagne, campari, ouzo, brandy
+
+Retrieved case:
+Black Forest Shake
+Type of drink: milk / float / shake
+Glass: collins glass
+Ingredients:
+         of chocolate syrup,  of vodka,  of milk,  of cherry brandy
+Preparation:
+        0. in a blender put ice cubes,  of chocolate syrup,  of cherry brandy,  of vodka, and  of milk
+        1. blend very well
+
+Adapted case:
+MyRecipe1800
+Type of drink: milk / float / shake
+Glass: collins glass
+Ingredients:
+         of chocolate syrup,  of vodka,  of milk,  of cherry brandy,
+        some rub light or dark, some apple brandy, some aquavit, some brandy plain,
+        some orange bitters, some champagne, some campari, some ouzo,
+        some tomato juice, some mint, some carbonated water
+Preparation:
+        0. in a blender put ice cubes,  of chocolate syrup,  of cherry brandy,  of vodka, and  of milk
+        1. add some carbonated water to taste
+        2. add some mint to taste
+        3. add some tomato juice to taste
+        4. add some ouzo to taste
+        5. add some campari to taste
+        6. add some champagne to taste
+        7. add some orange bitters to taste
+        8. add some brandy plain to taste
+        9. add some aquavit to taste
+        10. add some apple brandy to taste
+        11. add some rub light or dark to taste
+        12. blend very well
+--------------
+
+--------------
+Query:
+- Type of drink: beer
+- Type of glass: pitcher
+- Ingredients: apfelkorn
+- Ingredients to exclude: hot chocolate, green ginger wine, daiquiri mix, chocolate sauce
+- Taste of the drink: mint, spicy, sour
+- Type of alcohol: whisky
+
+Retrieved case:
+MyRecipe5787
+Type of drink: beer
+Glass: beer pilsner
+Ingredients:
+        1/2 of guinness stout, 1/2 of root beer, some irish cream, some dry vermouth,
+        some coffee, some egg, some midori melon liqueur, some lime juice
+Preparation:
+        0. carefully to avoid explosive head formation: pour 1/2 of root beer glass half full of favorite root 1/2 of root beer and top off with 1/2 of guinness stout
+        1. add ingr10 to taste
+        2. add ingr9 to taste
+        3. add some lime juice to taste
+        4. add ingr7 to taste
+        5. add some midori melon liqueur to taste
+        6. add some egg to taste
+        7. add some coffee to taste
+        8. add some dry vermouth to taste
+        9. add some irish cream to taste
+
+Adapted case:
+MyRecipe6686
+Type of drink: beer
+Glass: beer pilsner
+Ingredients:
+        1/2 of guinness stout, 1/2 of root beer, some irish cream, some dry vermouth,
+        some coffee, some egg, some midori melon liqueur, some lime juice,
+        some apfelkorn, some bourbon, some mint, some cinnamon
+Preparation:
+        0. carefully to avoid explosive head formation: pour 1/2 of root beer glass half full of favorite root 1/2 of root beer and top off with 1/2 of guinness stout
+        1. add some cinnamon to taste
+        2. add some mint to taste
+        3. add some bourbon to taste
+        4. add some lime juice to taste
+        5. add some mint to taste
+        6. add some bourbon to taste
+        7. add some lime juice to taste
+        8. add ingr7 to taste
+        9. add some midori melon liqueur to taste
+        10. add some egg to taste
+        11. add some coffee to taste
+        12. add some dry vermouth to taste
+        13. add some irish cream to taste
+--------------
+
+--------------
+Query:
+- Type of drink: cocktail
+- Type of glass: irish coffee cup
+- Ingredients: light cream, cherry, tennessee whiskey
+- Ingredients to exclude: nutmeg grated, coffee brandy, amaretto
+- Taste of the drink: sour, sweet, mint, cream
+- Type of alcohol: aperol
+
+Retrieved case:
+Mojito #3
+Type of drink: cocktail
+Glass: collins glass
+Ingredients:
+        1/8 l jamaican of dark rum jamaican, 1/8 l of club soda, 3 cl of lemon juice, 8 drops of angostura bitters,
+        1/2 handful of mint
+Preparation:
+        0. put 1/2 handful of mint with 3 cl of lemon juice in a glass, mash the 1/2 handful of mint with a spoon, ice, 1/8 l jamaican of dark rum jamaican and fill up with 1/8 l of club soda
+        1. top it with 8 drops of angostura bitters
+
+Adapted case:
+MyRecipe9421
+Type of drink: cocktail
+Glass: collins glass
+Ingredients:
+        1/8 l jamaican of dark rum jamaican, 1/8 l of club soda, 3 cl of lemon juice, 8 drops of angostura bitters,
+        1/2 handful of mint, some light cream, some cherry, some tennessee whiskey,
+        some aperol
+Preparation:
+        0. put 1/2 handful of mint with 3 cl of lemon juice in a glass, mash the 1/2 handful of mint with a spoon, ice, 1/8 l jamaican of dark rum jamaican and fill up with 1/8 l of club soda
+        1. add some aperol to taste
+        2. add some tennessee whiskey to taste
+        3. add some cherry to taste
+        4. add some light cream to taste
+        5. top it with 8 drops of angostura bitters
+--------------
+
+
+
+Total number of queries: 50
+Total time: 1.3768062591552734

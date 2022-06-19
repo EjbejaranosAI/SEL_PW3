@@ -15,7 +15,7 @@ from entity.query import Query
 output_path = os.path.join(ROOT_PATH, "system_tests")
 os.makedirs(output_path, exist_ok=True)
 
-N_QUERIES = 200
+N_QUERIES = 300
 MAX_N_VALUES = 5
 random.seed(2022)
 

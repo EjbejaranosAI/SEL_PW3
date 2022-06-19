@@ -14658,4 +14658,4 @@ Preparation:
 
 
 Total number of queries: 200
-Total time: 21.347943544387817
+Total time: 21.347943544387817 seconds
